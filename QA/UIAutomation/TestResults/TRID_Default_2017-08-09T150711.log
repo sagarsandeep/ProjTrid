@@ -1,0 +1,159 @@
+﻿VS filter: testpath:TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Giving+inputs+from+Excel+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+138
+Discovering target: Default
+Discovering tests from assembly: F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\bin\Debug\TRID.dll
+Appdomain Disposed
+Test Suite Dump
+#0: TRID/Default - 
+#1: Default - 
+#2: TRID - 
+#3: AmortizationValidation - 
+#97: Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 138 - TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Giving+inputs+from+Excel+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+138
+End: Test Suite Dump
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #97 from normal test queue 
+Thread#0:Scheduler: considering testitem #97 for thread
+Thread#0:Scheduler: using testitem #97 for thread
+Thread#0:Scheduler: Test #97 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread #0: creating new test thread executor for TRID, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null (target: Default)
+Loading SpecRun type 'TechTalk.SpecRun.Framework.TestAssemblyExecutor' from: C:\Users\sandees\AppData\Local\Temp\VisualStudioTestExplorerExtensions\SpecRun.Runner.1.5.2\tools\TechTalk.SpecRun.Framework.Executor.dll
+Thread#0: Test #97/0 is started on thread #0
+Thread#0:B:Given user is at TRID application homepage
+Thread#0:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (97.9s)
+Thread#0:B:And user have closing disclosure data from excel sheet ClosingDisclosure for the scenario 124
+Thread#0:T:done: CardsValidationSteps.GivenUserHaveClosingDisclosureDataFromExcelSheetForTheScenario("ClosingDisclosure", 124) (1.6s)
+Thread#0:B:And user have Mortgage Insurance data from excel sheet MortgageInsurance for the scenario 124
+Thread#0:T:done: CardsValidationSteps.GivenUserHaveMortgageInsuranceDataFromExcelSheetForTheScenarioMortgageInsurance("MortgageInsurance", 124) (0.7s)
+Thread#0:B:And user have variable loan data from excel sheet ARMTerms for the scenario 2
+Thread#0:T:done: CardsValidationSteps.GivenUserHaveVariableLoanDataFromExcelSheetForTheScenario("ARMTerms", 2) (0.7s)
+Thread#0:B:And user have Prepaid Charges data from excel sheet PrepaidCharges for the scenario 124
+Thread#0:T:done: CardsValidationSteps.GivenUserHavePrepaidChargesDataFromExcelSheetPrepaidChargesForTheScenario("PrepaidCharges", 124) (0.7s)
+Thread#0:B:And user have Export data from excel sheet Export for the scenario 124
+Thread#0:T:done: CardsValidationSteps.GivenUserHaveExportDataFromExcelSheetExportForTheScenario("Export", 124) (0.6s)
+Thread#0:B:And user have Escrow Grid data from excel sheet EscrowGrid for the scenario 124
+Thread#0:T:done: CardsValidationSteps.GivenUserHaveEscrowGridDataFromExcelSheetForTheScenario("EscrowGrid", 124) (0.6s)
+Thread#0:B:And user have Payment Schedule data from excel sheet PaymentSchedule for the scenario 124
+Thread#0:T:done: AmortizationValidationSteps.GivenUserHavePaymentScheduleDataFromExcelSheetForTheScenario("PaymentSchedule", 124) (0.6s)
+Thread#0:B:When user navigate to Loan Inputs Page
+Thread#0:T:done: CardsValidationSteps.WhenUserNavigateToLoanInputsPage() (2.1s)
+Thread#0:B:And user selects Calculation Method
+Thread#0:T:done: CardsValidationSteps.WhenUserSelectsCalculationMethodInClosingDisclosurePage() (0.1s)
+Thread#0:B:And user selects loan type
+Thread#0:T:done: CardsValidationSteps.WhenUserSelectsLoanTypeInClosingDisclosurePage() (1.7s)
+Thread#0:B:And user selects Frequency of Payments
+Thread#0:T:done: CardsValidationSteps.WhenUserSelectsFrequencyOfPaymentsInClosingDisclosurePage() (0.1s)
+Thread#0:B:And user selects Loan Term
+Thread#0:T:done: CardsValidationSteps.WhenUserSelectsLoanTermInClosingDisclosurePage() (0.1s)
+Thread#0:B:And user selects Repayment Term Type
+Thread#0:T:done: CardsValidationSteps.WhenUserSelectsRepaymentTermTypeInClosingDisclosurePage() (0.1s)
+Thread#0:B:And user enters Loan detail input values for computation
+Thread#0:T:done: CardsValidationSteps.WhenUserEntersLoanDetailInputValuesForComputationforClosingDisclosurepage() (1.9s)
+Thread#0:B:And user enters pmi rate values
+Thread#0:T:done: CardsValidationSteps.WhenUserEntersPmiRateValues() (0.3s)
+Thread#0:B:And user enters other pmi input values
+Thread#0:T:done: CardsValidationSteps.WhenUserEntersOtherPmiInputValues() (0.0s)
+Thread#0:B:And user enters Escrow Grid Input values
+Thread#0:T:done: CardsValidationSteps.WhenUserEntersEscrowGridInputValues() (4.1s)
+Thread#0:B:And user enters all input values for Prepaid Charges
+Thread#0:T:done: CardsValidationSteps.WhenUserEntersAllInputValuesForPrepaidCharges() (3.4s)
+Thread#0:B:And user enters input value for prepaid custom fields
+Thread#0:T:done: CardsValidationSteps.WhenUserEntersInputValueForPrepaidCustomFields() (0.0s)
+Thread#0:B:And user navigates to Disclosure Inputs Page
+Thread#0:T:done: CardsValidationSteps.WhenUserNavigatesToDisclosureInputsPage() (0.4s)
+Thread#0:B:And user enters disclosed input values for Closing Disclosure Loan Terms & Projected Payments
+Thread#0:T:done: CardsValidationSteps.WhenUserEntersDisclosedInputValuesForClosingDisclosureLoanTermsProjectedPayments() (0.6s)
+Thread#0:B:And user enters disclosed input values for Closing Disclosure Loan Calculations
+Thread#0:T:done: CardsValidationSteps.WhenUserEntersDisclosedInputValuesForClosingDisclosureLoanCalculations() (0.8s)
+Thread#0:B:And user enters disclosed input values for Property Cost and Escrow
+Thread#0:T:done: CardsValidationSteps.WhenUserEntersDisclosedInputValuesForPropertyCostAndEscrow() (0.3s)
+Thread#0:B:And user navigates to Loan Estimate Cards Page
+Thread#0:T:done: CardsValidationSteps.WhenUserNavigatesToLoanEstimateCardsPage() (1.4s)
+Thread#0:B:And user enters disclsoed input values for Loan Estimate - Comparisons
+Thread#0:T:done: CardsValidationSteps.WhenUserEntersDisclsoedInputValuesForLoanEstimate_Comparisons() (1.6s)
+Thread#0:B:And user navigates to Amortization Page
+Thread#0:T:done: AmortizationValidationSteps.WhenUserNavigatesToAmortizationPage() (0.3s)
+Thread#0:B:Then updated/computed Payment Stream Number value should display on Payment Schedule Grid
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :1
+Thread#0:T:ActualValue Row 1 :1
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :2
+Thread#0:T:ActualValue Row 2 :2
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 3 :3
+Thread#0:T:ActualValue Row 3 :3
+Thread#0:T:============================================================
+Thread#0:T:done: AmortizationValidationSteps.ThenUpdatedComputedPaymentStreamNumberValueShouldDisplayOnPaymentScheduleGrid() (0.7s)
+Thread#0:B:And updated/computed Number of Payments value should display on Payment Schedule Grid
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :36
+Thread#0:T:ActualValue Row 1 :36
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :323
+Thread#0:T:ActualValue Row 2 :323
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 3 :1
+Thread#0:T:ActualValue Row 3 :1
+Thread#0:T:============================================================
+Thread#0:T:done: AmortizationValidationSteps.ThenUpdatedComputedNumberOfPaymentsValueShouldDisplayOnPaymentScheduleGrid() (0.2s)
+Thread#0:B:And updated/computed Payment Amount value should display on Payment Schedule Grid
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :606.68
+Thread#0:T:ActualValue Row 1 :606.68
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :573.02
+Thread#0:T:ActualValue Row 2 :573.02
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 3 :573.82
+Thread#0:T:ActualValue Row 3 :573.82
+Thread#0:T:============================================================
+Thread#0:T:done: AmortizationValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnPaymentScheduleGrid() (0.2s)
+Thread#0:B:And updated/computed Principal and Interest Payment value should display on Payment Schedule Grid
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :606.68
+Thread#0:T:ActualValue Row 1 :606.68
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :573.02
+Thread#0:T:ActualValue Row 2 :573.02
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 3 :573.82
+Thread#0:T:ActualValue Row 3 :573.82
+Thread#0:T:============================================================
+Thread#0:T:done: AmortizationValidationSteps.ThenUpdatedComputedPrincipalAndInterestPaymentPaymentValueShouldDisplayOnPaymentScheduleGrid() (0.2s)
+Thread#0:B:And updated/computed PMI Payment value should display on Payment Schedule Grid
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :0
+Thread#0:T:ActualValue Row 1 :0
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :0
+Thread#0:T:ActualValue Row 2 :0
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 3 :0
+Thread#0:T:ActualValue Row 3 :0
+Thread#0:T:============================================================
+Thread#0:T:done: AmortizationValidationSteps.ThenUpdatedComputedPmiPaymentValueShouldDisplayOnPaymentScheduleGrid() (0.2s)
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: at the end of normal test queue
+Thread#0:Scheduler: enumerator for thread is at end
+Thread#0:Scheduler: No more tests for thread 
+Thread#0: Test #97/0 is finished on thread #0 as Succeeded within 132.6003829 seconds
+Appdomain Disposed
+Thread#-1:Scheduler: get next test for thread
+Thread#:Scheduler: at the end of normal test queue
+Thread#-1:Scheduler: enumerator for thread is at end
+Total: 1
+Succeeded: 1
+Ignored: 0
+Pending: 0
+Skipped: 0
+Failed: 0

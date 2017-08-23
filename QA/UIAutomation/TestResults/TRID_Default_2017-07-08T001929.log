@@ -1,0 +1,701 @@
+﻿VS filter: testpath:TestAssembly:TRID/Feature:CardsValidation/Scenario:Giving+inputs+from+Excel+file+and+validating+cards+value+on+Closing+Disclosure+page%2c+022 | testpath:TestAssembly:TRID/Feature:CardsValidation/Scenario:Giving+inputs+from+Excel+file+and+validating+cards+value+on+Closing+Disclosure+page%2c+042 | testpath:TestAssembly:TRID/Feature:CardsValidation/Scenario:Giving+inputs+from+Excel+file+and+validating+cards+value+on+Closing+Disclosure+page%2c+041 | testpath:TestAssembly:TRID/Feature:CardsValidation/Scenario:Giving+inputs+from+Excel+file+and+validating+cards+value+on+Closing+Disclosure+page%2c+021 | testpath:TestAssembly:TRID/Feature:CardsValidation/Scenario:Giving+inputs+from+Excel+file+and+validating+cards+value+on+Closing+Disclosure+page%2c+020 | testpath:TestAssembly:TRID/Feature:CardsValidation/Scenario:Giving+inputs+from+Excel+file+and+validating+cards+value+on+Closing+Disclosure+page%2c+044
+Discovering target: Default
+Discovering tests from assembly: F:\Projects\TRID QA\QA\UI Automation\SpecFramework\bin\Debug\TRID.dll
+Appdomain Disposed
+Test Suite Dump
+#0: TRID/Default - 
+#1: Default - 
+#2: TRID - 
+#122: CardsValidation - 
+#255: Giving inputs from Excel file and validating cards value on Closing Disclosure page, 020 - TestAssembly:TRID/Feature:CardsValidation/Scenario:Giving+inputs+from+Excel+file+and+validating+cards+value+on+Closing+Disclosure+page%2c+020
+#256: Giving inputs from Excel file and validating cards value on Closing Disclosure page, 021 - TestAssembly:TRID/Feature:CardsValidation/Scenario:Giving+inputs+from+Excel+file+and+validating+cards+value+on+Closing+Disclosure+page%2c+021
+#257: Giving inputs from Excel file and validating cards value on Closing Disclosure page, 022 - TestAssembly:TRID/Feature:CardsValidation/Scenario:Giving+inputs+from+Excel+file+and+validating+cards+value+on+Closing+Disclosure+page%2c+022
+#263: Giving inputs from Excel file and validating cards value on Closing Disclosure page, 041 - TestAssembly:TRID/Feature:CardsValidation/Scenario:Giving+inputs+from+Excel+file+and+validating+cards+value+on+Closing+Disclosure+page%2c+041
+#264: Giving inputs from Excel file and validating cards value on Closing Disclosure page, 042 - TestAssembly:TRID/Feature:CardsValidation/Scenario:Giving+inputs+from+Excel+file+and+validating+cards+value+on+Closing+Disclosure+page%2c+042
+#266: Giving inputs from Excel file and validating cards value on Closing Disclosure page, 044 - TestAssembly:TRID/Feature:CardsValidation/Scenario:Giving+inputs+from+Excel+file+and+validating+cards+value+on+Closing+Disclosure+page%2c+044
+End: Test Suite Dump
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #255 from normal test queue 
+Thread#0:Scheduler: considering testitem #255 for thread
+Thread#0:Scheduler: using testitem #255 for thread
+Thread#0:Scheduler: Test #255 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread #0: creating new test thread executor for TRID, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null (target: Default)
+Thread#1:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #256 from normal test queue 
+Thread#1:Scheduler: considering testitem #256 for thread
+Thread#1:Scheduler: using testitem #256 for thread
+Thread#1:Scheduler: Test #256 is scheduled for thread
+Thread#1:Scheduler: with testItemExecutionIndex 1
+Thread #1: creating new test thread executor for TRID, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null (target: Default)
+Thread#2:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #257 from normal test queue 
+Thread#2:Scheduler: considering testitem #257 for thread
+Thread#2:Scheduler: using testitem #257 for thread
+Thread#2:Scheduler: Test #257 is scheduled for thread
+Thread#2:Scheduler: with testItemExecutionIndex 2
+Thread #2: creating new test thread executor for TRID, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null (target: Default)
+Thread#3:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #263 from normal test queue 
+Thread#3:Scheduler: considering testitem #263 for thread
+Thread#3:Scheduler: using testitem #263 for thread
+Thread#3:Scheduler: Test #263 is scheduled for thread
+Thread#3:Scheduler: with testItemExecutionIndex 3
+Thread #3: creating new test thread executor for TRID, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null (target: Default)
+Loading SpecRun type 'TechTalk.SpecRun.Framework.TestAssemblyExecutor' from: C:\Users\sandees\AppData\Local\Temp\VisualStudioTestExplorerExtensions\SpecRun.Runner.1.5.2\tools\TechTalk.SpecRun.Framework.Executor.dll
+Loading SpecRun type 'TechTalk.SpecRun.Framework.TestAssemblyExecutor' from: C:\Users\sandees\AppData\Local\Temp\VisualStudioTestExplorerExtensions\SpecRun.Runner.1.5.2\tools\TechTalk.SpecRun.Framework.Executor.dll
+Loading SpecRun type 'TechTalk.SpecRun.Framework.TestAssemblyExecutor' from: C:\Users\sandees\AppData\Local\Temp\VisualStudioTestExplorerExtensions\SpecRun.Runner.1.5.2\tools\TechTalk.SpecRun.Framework.Executor.dll
+Loading SpecRun type 'TechTalk.SpecRun.Framework.TestAssemblyExecutor' from: C:\Users\sandees\AppData\Local\Temp\VisualStudioTestExplorerExtensions\SpecRun.Runner.1.5.2\tools\TechTalk.SpecRun.Framework.Executor.dll
+Thread#4:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #264 from normal test queue 
+Thread#4:Scheduler: considering testitem #264 for thread
+Thread#4:Scheduler: using testitem #264 for thread
+Thread#4:Scheduler: Test #264 is scheduled for thread
+Thread#4:Scheduler: with testItemExecutionIndex 4
+Thread #4: creating new test thread executor for TRID, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null (target: Default)
+Thread#5:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #266 from normal test queue 
+Thread#5:Scheduler: considering testitem #266 for thread
+Thread#5:Scheduler: using testitem #266 for thread
+Thread#5:Scheduler: Test #266 is scheduled for thread
+Thread#5:Scheduler: with testItemExecutionIndex 5
+Thread #5: creating new test thread executor for TRID, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null (target: Default)
+Loading SpecRun type 'TechTalk.SpecRun.Framework.TestAssemblyExecutor' from: C:\Users\sandees\AppData\Local\Temp\VisualStudioTestExplorerExtensions\SpecRun.Runner.1.5.2\tools\TechTalk.SpecRun.Framework.Executor.dll
+Thread#6:Scheduler: get next test for thread
+Thread#:Scheduler: at the end of normal test queue
+Thread#6:Scheduler: enumerator for thread is at end
+Thread#6:Scheduler: No more tests for thread 
+Loading SpecRun type 'TechTalk.SpecRun.Framework.TestAssemblyExecutor' from: C:\Users\sandees\AppData\Local\Temp\VisualStudioTestExplorerExtensions\SpecRun.Runner.1.5.2\tools\TechTalk.SpecRun.Framework.Executor.dll
+Thread#0: Test #255/0 is started on thread #0
+Thread#1: Test #256/0 is started on thread #1
+Thread#7:Scheduler: get next test for thread
+Thread#:Scheduler: at the end of normal test queue
+Thread#7:Scheduler: enumerator for thread is at end
+Thread#7:Scheduler: No more tests for thread 
+Thread#2: Test #257/0 is started on thread #2
+Thread#8:Scheduler: get next test for thread
+Thread#:Scheduler: at the end of normal test queue
+Thread#8:Scheduler: enumerator for thread is at end
+Thread#8:Scheduler: No more tests for thread 
+Thread#3: Test #263/0 is started on thread #3
+Thread#9:Scheduler: get next test for thread
+Thread#:Scheduler: at the end of normal test queue
+Thread#9:Scheduler: enumerator for thread is at end
+Thread#9:Scheduler: No more tests for thread 
+Thread#5: Test #266/0 is started on thread #5
+Thread#1:B:Given user is at TRID application homepage
+Thread#4: Test #264/0 is started on thread #4
+Thread#0:B:Given user is at TRID application homepage
+Thread#2:B:Given user is at TRID application homepage
+Thread#3:B:Given user is at TRID application homepage
+Thread#5:B:Given user is at TRID application homepage
+Thread#4:B:Given user is at TRID application homepage
+Thread#2:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (22.4s)
+Thread#2:B:And user have closing disclosure data from excel sheet ClosingDisclosure for the scenario 19
+Thread#1:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (23.5s)
+Thread#1:B:And user have closing disclosure data from excel sheet ClosingDisclosure for the scenario 18
+Thread#4:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (24.0s)
+Thread#4:B:And user have closing disclosure data from excel sheet ClosingDisclosure for the scenario 26
+Thread#5:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (24.2s)
+Thread#5:B:And user have closing disclosure data from excel sheet ClosingDisclosure for the scenario 28
+Thread#3:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (24.7s)
+Thread#3:B:And user have closing disclosure data from excel sheet ClosingDisclosure for the scenario 25
+Thread#0:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (25.4s)
+Thread#0:B:And user have closing disclosure data from excel sheet ClosingDisclosure for the scenario 17
+Thread#2:T:done: CardsValidationSteps.GivenUserHaveClosingDisclosureDataFromExcelSheetForTheScenario("ClosingDisclosure", 19) (9.3s)
+Thread#2:B:And user have Mortgage Insurance data from excel sheet MortgageInsurance for the scenario 19
+Thread#1:T:done: CardsValidationSteps.GivenUserHaveClosingDisclosureDataFromExcelSheetForTheScenario("ClosingDisclosure", 18) (8.9s)
+Thread#1:B:And user have Mortgage Insurance data from excel sheet MortgageInsurance for the scenario 18
+Thread#4:T:done: CardsValidationSteps.GivenUserHaveClosingDisclosureDataFromExcelSheetForTheScenario("ClosingDisclosure", 26) (10.0s)
+Thread#4:B:And user have Mortgage Insurance data from excel sheet MortgageInsurance for the scenario 26
+Thread#2:T:done: CardsValidationSteps.GivenUserHaveMortgageInsuranceDataFromExcelSheetForTheScenarioMortgageInsurance("MortgageInsurance", 19) (2.6s)
+Thread#2:B:And user have variable loan data from excel sheet ARM Terms for the scenario 1
+Thread#1:T:done: CardsValidationSteps.GivenUserHaveMortgageInsuranceDataFromExcelSheetForTheScenarioMortgageInsurance("MortgageInsurance", 18) (3.0s)
+Thread#1:B:And user have variable loan data from excel sheet ARM Terms for the scenario 1
+Thread#5:T:done: CardsValidationSteps.GivenUserHaveClosingDisclosureDataFromExcelSheetForTheScenario("ClosingDisclosure", 28) (11.0s)
+Thread#5:B:And user have Mortgage Insurance data from excel sheet MortgageInsurance for the scenario 28
+Thread#0:T:done: CardsValidationSteps.GivenUserHaveClosingDisclosureDataFromExcelSheetForTheScenario("ClosingDisclosure", 17) (11.6s)
+Thread#0:B:And user have Mortgage Insurance data from excel sheet MortgageInsurance for the scenario 17
+Thread#4:T:done: CardsValidationSteps.GivenUserHaveMortgageInsuranceDataFromExcelSheetForTheScenarioMortgageInsurance("MortgageInsurance", 26) (2.8s)
+Thread#4:B:And user have variable loan data from excel sheet ARM Terms for the scenario 1
+Thread#3:T:done: CardsValidationSteps.GivenUserHaveClosingDisclosureDataFromExcelSheetForTheScenario("ClosingDisclosure", 25) (12.2s)
+Thread#3:B:And user have Mortgage Insurance data from excel sheet MortgageInsurance for the scenario 25
+Thread#2:T:done: CardsValidationSteps.GivenUserHaveVariableLoanDataFromExcelSheetForTheScenario("ARM Terms", 1) (4.1s)
+Thread#2:B:And user have Prepaid Charges data from excel sheet PrepaidCharges for the scenario 19
+Thread#5:T:done: CardsValidationSteps.GivenUserHaveMortgageInsuranceDataFromExcelSheetForTheScenarioMortgageInsurance("MortgageInsurance", 28) (3.6s)
+Thread#5:B:And user have variable loan data from excel sheet ARM Terms for the scenario 1
+Thread#1:T:done: CardsValidationSteps.GivenUserHaveVariableLoanDataFromExcelSheetForTheScenario("ARM Terms", 1) (3.8s)
+Thread#1:B:And user have Prepaid Charges data from excel sheet PrepaidCharges for the scenario 18
+Thread#0:T:done: CardsValidationSteps.GivenUserHaveMortgageInsuranceDataFromExcelSheetForTheScenarioMortgageInsurance("MortgageInsurance", 17) (3.3s)
+Thread#0:B:And user have variable loan data from excel sheet ARM Terms for the scenario 1
+Thread#3:T:done: CardsValidationSteps.GivenUserHaveMortgageInsuranceDataFromExcelSheetForTheScenarioMortgageInsurance("MortgageInsurance", 25) (4.1s)
+Thread#3:B:And user have variable loan data from excel sheet ARM Terms for the scenario 1
+Thread#4:T:done: CardsValidationSteps.GivenUserHaveVariableLoanDataFromExcelSheetForTheScenario("ARM Terms", 1) (4.4s)
+Thread#4:B:And user have Prepaid Charges data from excel sheet PrepaidCharges for the scenario 26
+Thread#2:T:done: CardsValidationSteps.GivenUserHavePrepaidChargesDataFromExcelSheetPrepaidChargesForTheScenario("PrepaidCharges", 19) (3.9s)
+Thread#2:B:And user have Export data from excel sheet Export for the scenario 19
+Thread#5:T:done: CardsValidationSteps.GivenUserHaveVariableLoanDataFromExcelSheetForTheScenario("ARM Terms", 1) (4.1s)
+Thread#5:B:And user have Prepaid Charges data from excel sheet PrepaidCharges for the scenario 28
+Thread#1:T:done: CardsValidationSteps.GivenUserHavePrepaidChargesDataFromExcelSheetPrepaidChargesForTheScenario("PrepaidCharges", 18) (5.3s)
+Thread#1:B:And user have Export data from excel sheet Export for the scenario 18
+Thread#0:T:done: CardsValidationSteps.GivenUserHaveVariableLoanDataFromExcelSheetForTheScenario("ARM Terms", 1) (4.5s)
+Thread#0:B:And user have Prepaid Charges data from excel sheet PrepaidCharges for the scenario 17
+Thread#3:T:done: CardsValidationSteps.GivenUserHaveVariableLoanDataFromExcelSheetForTheScenario("ARM Terms", 1) (4.3s)
+Thread#3:B:And user have Prepaid Charges data from excel sheet PrepaidCharges for the scenario 25
+Thread#2:T:done: CardsValidationSteps.GivenUserHaveExportDataFromExcelSheetExportForTheScenario("Export", 19) (3.7s)
+Thread#2:B:And user have Escrow Grid data from excel sheet EscrowGrid for the scenario 19
+Thread#4:T:done: CardsValidationSteps.GivenUserHavePrepaidChargesDataFromExcelSheetPrepaidChargesForTheScenario("PrepaidCharges", 26) (4.8s)
+Thread#4:B:And user have Export data from excel sheet Export for the scenario 26
+Thread#1:T:done: CardsValidationSteps.GivenUserHaveExportDataFromExcelSheetExportForTheScenario("Export", 18) (3.0s)
+Thread#1:B:And user have Escrow Grid data from excel sheet EscrowGrid for the scenario 18
+Thread#5:T:done: CardsValidationSteps.GivenUserHavePrepaidChargesDataFromExcelSheetPrepaidChargesForTheScenario("PrepaidCharges", 28) (4.3s)
+Thread#5:B:And user have Export data from excel sheet Export for the scenario 28
+Thread#0:T:done: CardsValidationSteps.GivenUserHavePrepaidChargesDataFromExcelSheetPrepaidChargesForTheScenario("PrepaidCharges", 17) (5.9s)
+Thread#0:B:And user have Export data from excel sheet Export for the scenario 17
+Thread#3:T:done: CardsValidationSteps.GivenUserHavePrepaidChargesDataFromExcelSheetPrepaidChargesForTheScenario("PrepaidCharges", 25) (5.8s)
+Thread#3:B:And user have Export data from excel sheet Export for the scenario 25
+Thread#2:T:done: CardsValidationSteps.GivenUserHaveEscrowGridDataFromExcelSheetForTheScenario("EscrowGrid", 19) (5.7s)
+Thread#2:B:When user navigate to Loan Inputs Page
+Thread#4:T:done: CardsValidationSteps.GivenUserHaveExportDataFromExcelSheetExportForTheScenario("Export", 26) (5.6s)
+Thread#4:B:And user have Escrow Grid data from excel sheet EscrowGrid for the scenario 26
+Thread#1:T:done: CardsValidationSteps.GivenUserHaveEscrowGridDataFromExcelSheetForTheScenario("EscrowGrid", 18) (5.5s)
+Thread#1:B:When user navigate to Loan Inputs Page
+Thread#5:T:done: CardsValidationSteps.GivenUserHaveExportDataFromExcelSheetExportForTheScenario("Export", 28) (6.1s)
+Thread#5:B:And user have Escrow Grid data from excel sheet EscrowGrid for the scenario 28
+Thread#0:T:done: CardsValidationSteps.GivenUserHaveExportDataFromExcelSheetExportForTheScenario("Export", 17) (4.5s)
+Thread#0:B:And user have Escrow Grid data from excel sheet EscrowGrid for the scenario 17
+Thread#2:T:done: CardsValidationSteps.WhenUserNavigateToLoanInputsPage() (3.6s)
+Thread#2:B:And user selects Calculation Method
+Thread#3:T:done: CardsValidationSteps.GivenUserHaveExportDataFromExcelSheetExportForTheScenario("Export", 25) (4.6s)
+Thread#3:B:And user have Escrow Grid data from excel sheet EscrowGrid for the scenario 25
+Thread#2:T:done: CardsValidationSteps.WhenUserSelectsCalculationMethodInClosingDisclosurePage() (0.8s)
+Thread#2:B:And user selects loan type
+Thread#2:T:done: CardsValidationSteps.WhenUserSelectsLoanTypeInClosingDisclosurePage() (0.5s)
+Thread#2:B:And user selects Frequency of Payments
+Thread#2:T:done: CardsValidationSteps.WhenUserSelectsFrequencyOfPaymentsInClosingDisclosurePage() (0.3s)
+Thread#2:B:And user selects Loan Term
+Thread#1:T:done: CardsValidationSteps.WhenUserNavigateToLoanInputsPage() (4.2s)
+Thread#1:B:And user selects Calculation Method
+Thread#4:T:done: CardsValidationSteps.GivenUserHaveEscrowGridDataFromExcelSheetForTheScenario("EscrowGrid", 26) (5.4s)
+Thread#4:B:When user navigate to Loan Inputs Page
+Thread#2:T:done: CardsValidationSteps.WhenUserSelectsLoanTermInClosingDisclosurePage() (0.3s)
+Thread#2:B:And user selects Repayment Term Type
+Thread#2:T:done: CardsValidationSteps.WhenUserSelectsRepaymentTermTypeInClosingDisclosurePage() (0.3s)
+Thread#2:B:And user enters Loan detail input values for computation
+Thread#1:T:done: CardsValidationSteps.WhenUserSelectsCalculationMethodInClosingDisclosurePage() (0.6s)
+Thread#1:B:And user selects loan type
+Thread#5:T:done: CardsValidationSteps.GivenUserHaveEscrowGridDataFromExcelSheetForTheScenario("EscrowGrid", 28) (4.2s)
+Thread#5:B:When user navigate to Loan Inputs Page
+Thread#1:T:done: CardsValidationSteps.WhenUserSelectsLoanTypeInClosingDisclosurePage() (0.5s)
+Thread#1:B:And user selects Frequency of Payments
+Thread#1:T:done: CardsValidationSteps.WhenUserSelectsFrequencyOfPaymentsInClosingDisclosurePage() (0.3s)
+Thread#1:B:And user selects Loan Term
+Thread#0:T:done: CardsValidationSteps.GivenUserHaveEscrowGridDataFromExcelSheetForTheScenario("EscrowGrid", 17) (3.6s)
+Thread#0:B:When user navigate to Loan Inputs Page
+Thread#1:T:done: CardsValidationSteps.WhenUserSelectsLoanTermInClosingDisclosurePage() (0.6s)
+Thread#1:B:And user selects Repayment Term Type
+Thread#3:T:done: CardsValidationSteps.GivenUserHaveEscrowGridDataFromExcelSheetForTheScenario("EscrowGrid", 25) (3.9s)
+Thread#3:B:When user navigate to Loan Inputs Page
+Thread#1:T:done: CardsValidationSteps.WhenUserSelectsRepaymentTermTypeInClosingDisclosurePage() (1.4s)
+Thread#1:B:And user enters Loan detail input values for computation
+Thread#4:T:done: CardsValidationSteps.WhenUserNavigateToLoanInputsPage() (3.8s)
+Thread#4:B:And user selects Calculation Method
+Thread#5:T:done: CardsValidationSteps.WhenUserNavigateToLoanInputsPage() (3.7s)
+Thread#5:B:And user selects Calculation Method
+Thread#4:T:done: CardsValidationSteps.WhenUserSelectsCalculationMethodInClosingDisclosurePage() (0.6s)
+Thread#4:B:And user selects loan type
+Thread#5:T:done: CardsValidationSteps.WhenUserSelectsCalculationMethodInClosingDisclosurePage() (0.6s)
+Thread#5:B:And user selects loan type
+Thread#4:T:done: CardsValidationSteps.WhenUserSelectsLoanTypeInClosingDisclosurePage() (0.6s)
+Thread#4:B:And user selects Frequency of Payments
+Thread#5:T:done: CardsValidationSteps.WhenUserSelectsLoanTypeInClosingDisclosurePage() (0.4s)
+Thread#5:B:And user selects Frequency of Payments
+Thread#0:T:done: CardsValidationSteps.WhenUserNavigateToLoanInputsPage() (3.8s)
+Thread#0:B:And user selects Calculation Method
+Thread#4:T:done: CardsValidationSteps.WhenUserSelectsFrequencyOfPaymentsInClosingDisclosurePage() (0.3s)
+Thread#4:B:And user selects Loan Term
+Thread#5:T:done: CardsValidationSteps.WhenUserSelectsFrequencyOfPaymentsInClosingDisclosurePage() (0.2s)
+Thread#5:B:And user selects Loan Term
+Thread#4:T:done: CardsValidationSteps.WhenUserSelectsLoanTermInClosingDisclosurePage() (0.2s)
+Thread#4:B:And user selects Repayment Term Type
+Thread#0:T:done: CardsValidationSteps.WhenUserSelectsCalculationMethodInClosingDisclosurePage() (0.4s)
+Thread#0:B:And user selects loan type
+Thread#5:T:done: CardsValidationSteps.WhenUserSelectsLoanTermInClosingDisclosurePage() (0.4s)
+Thread#5:B:And user selects Repayment Term Type
+Thread#4:T:done: CardsValidationSteps.WhenUserSelectsRepaymentTermTypeInClosingDisclosurePage() (0.4s)
+Thread#4:B:And user enters Loan detail input values for computation
+Thread#0:T:done: CardsValidationSteps.WhenUserSelectsLoanTypeInClosingDisclosurePage() (0.5s)
+Thread#0:B:And user selects Frequency of Payments
+Thread#5:T:done: CardsValidationSteps.WhenUserSelectsRepaymentTermTypeInClosingDisclosurePage() (0.4s)
+Thread#5:B:And user enters Loan detail input values for computation
+Thread#0:T:done: CardsValidationSteps.WhenUserSelectsFrequencyOfPaymentsInClosingDisclosurePage() (0.4s)
+Thread#0:B:And user selects Loan Term
+Thread#3:T:done: CardsValidationSteps.WhenUserNavigateToLoanInputsPage() (4.1s)
+Thread#3:B:And user selects Calculation Method
+Thread#0:T:done: CardsValidationSteps.WhenUserSelectsLoanTermInClosingDisclosurePage() (0.3s)
+Thread#0:B:And user selects Repayment Term Type
+Thread#3:T:done: CardsValidationSteps.WhenUserSelectsCalculationMethodInClosingDisclosurePage() (0.5s)
+Thread#3:B:And user selects loan type
+Thread#0:T:done: CardsValidationSteps.WhenUserSelectsRepaymentTermTypeInClosingDisclosurePage() (0.3s)
+Thread#0:B:And user enters Loan detail input values for computation
+Thread#3:T:done: CardsValidationSteps.WhenUserSelectsLoanTypeInClosingDisclosurePage() (0.3s)
+Thread#3:B:And user selects Frequency of Payments
+Thread#3:T:done: CardsValidationSteps.WhenUserSelectsFrequencyOfPaymentsInClosingDisclosurePage() (0.3s)
+Thread#3:B:And user selects Loan Term
+Thread#3:T:done: CardsValidationSteps.WhenUserSelectsLoanTermInClosingDisclosurePage() (0.3s)
+Thread#3:B:And user selects Repayment Term Type
+Thread#3:T:done: CardsValidationSteps.WhenUserSelectsRepaymentTermTypeInClosingDisclosurePage() (0.3s)
+Thread#3:B:And user enters Loan detail input values for computation
+Thread#2:T:done: CardsValidationSteps.WhenUserEntersLoanDetailInputValuesForComputationforClosingDisclosurepage() (11.9s)
+Thread#2:B:And user enters pmi rate values
+Thread#1:T:done: CardsValidationSteps.WhenUserEntersLoanDetailInputValuesForComputationforClosingDisclosurepage() (9.2s)
+Thread#1:B:And user enters pmi rate values
+Thread#2:T:done: CardsValidationSteps.WhenUserEntersPmiRateValues() (0.3s)
+Thread#2:B:And user enters other pmi input values
+Thread#1:T:done: CardsValidationSteps.WhenUserEntersPmiRateValues() (0.4s)
+Thread#1:B:And user enters other pmi input values
+Thread#2:T:error: unknown error: Element <md-radio-button value="Percentage" aria-label="Percentage" ng-repeat="allowedValue in  column.AllowedValues.AllowedValue" class="ng-scope" id="radio_88" role="radio" aria-checked="false">...</md-radio-button> is not clickable at point (400, 15). Other element would receive the click: <a href="" ng-click="loadViews(page)" data-toggle="collapse" data-target="#navbar" class="ng-binding" tabindex="0">...</a>
+Thread#2:T:  (Session info: chrome=59.0.3071.115)
+Thread#2:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#2:B:And user enters Escrow Grid Input values
+Thread#2:T:skipped because of previous errors
+Thread#2:B:And user enters all input values for Prepaid Charges
+Thread#2:T:skipped because of previous errors
+Thread#2:B:And user enters input value for prepaid custom fields
+Thread#2:T:skipped because of previous errors
+Thread#2:B:And user navigates to Disclosure Inputs Page
+Thread#2:T:skipped because of previous errors
+Thread#2:B:And user enters disclosed input values for closing disclousre section
+Thread#2:T:skipped because of previous errors
+Thread#2:B:And user enters disclsoed input values for Loan Estimate
+Thread#2:T:skipped because of previous errors
+Thread#2:B:And user enters disclosed input values for Prepaid Charges
+Thread#2:T:skipped because of previous errors
+Thread#2:B:And user enters disclosed input values for Escrow Property
+Thread#2:T:skipped because of previous errors
+Thread#2:B:And user navigates to Export Page
+Thread#2:T:skipped because of previous errors
+Thread#2:B:And user enters all input values for Export Page
+Thread#2:T:skipped because of previous errors
+Thread#2:B:And user clicks on Export button to generate JSON file
+Thread#2:T:skipped because of previous errors
+Thread#2:B:And user navigates to Closing Disclosure Cards Page
+Thread#2:T:skipped because of previous errors
+Thread#2:B:Then updated/computed Principal and Interest value should display on Closing Disclosure
+Thread#2:T:skipped because of previous errors
+Thread#2:B:And updated/computed Mortgage Insurance value should display on Closing Disclosure
+Thread#2:T:skipped because of previous errors
+Thread#2:B:And updated/computed Scheduled PMI Termination Date value should display on Closing Disclosure
+Thread#2:T:skipped because of previous errors
+Thread#2:B:And updated/computed Estimated Total Monthly Payment value should display on Closing Disclosure
+Thread#2:T:skipped because of previous errors
+Thread#2:B:And updated/computed APR value should display on Closing Disclosure
+Thread#2:T:skipped because of previous errors
+Thread#2:B:And APRWIN info value should display on Closing Disclosure
+Thread#2:T:skipped because of previous errors
+Thread#2:B:And updated/computed Balloon Amount value should display on Closing Disclosure
+Thread#2:T:skipped because of previous errors
+Thread#2:B:And updated/computed Total of Payments value should display on Closing Disclosure
+Thread#2:T:skipped because of previous errors
+Thread#2:B:And updated/computed Finance Charge value should display on Closing Disclosure
+Thread#2:T:skipped because of previous errors
+Thread#2:B:And updated/computed Prepaid Charges value should display on Closing Disclosure
+Thread#2:T:skipped because of previous errors
+Thread#2:B:And updated/computed Amount Financed value should display on Closing Disclosure
+Thread#2:T:skipped because of previous errors
+Thread#2:B:And updated/computed TIP value should display on Closing Disclosure
+Thread#2:T:skipped because of previous errors
+Thread#2:B:And updated/computed Escrow Property Costs over one year 11 Months value should display on Closing Disclosure
+Thread#2:T:skipped because of previous errors
+Thread#2:B:And updated/computed Escrow Property Costs over one year 12 Months value should display on Closing Disclosure
+Thread#2:T:skipped because of previous errors
+Thread#2:B:And updated/computed Initial Escrow Payment value should display on Closing Disclosure
+Thread#2:T:skipped because of previous errors
+Thread#2:B:And updated/computed Non Escrow Property Costs over one year value should display on Closing Disclosure
+Thread#2:T:skipped because of previous errors
+Thread#2:B:And updated/computed Estimated Escrow value should display on Closing Disclosure
+Thread#2:T:skipped because of previous errors
+Thread#2:B:And updated/computed Estimated Taxes, Insurance & Assessments value should display on Closing Disclosure
+Thread#2:T:skipped because of previous errors
+Thread#2:Scheduler: reschedule tests for testitem #2
+Thread#2:Scheduler: get next test for thread
+Thread#:Scheduler: at the end of normal test queue
+Thread#2:Scheduler: enumerator for thread is at end
+Thread#2:Scheduler: No more tests for thread 
+Thread#1:T:error: unknown error: Element <md-radio-button value="Percentage" aria-label="Percentage" ng-repeat="allowedValue in  column.AllowedValues.AllowedValue" class="ng-scope" id="radio_88" role="radio" aria-checked="false">...</md-radio-button> is not clickable at point (400, 15). Other element would receive the click: <a href="" ng-click="loadViews(page)" data-toggle="collapse" data-target="#navbar" class="ng-binding" tabindex="0">...</a>
+Thread#1:T:  (Session info: chrome=59.0.3071.115)
+Thread#1:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#1:B:And user enters Escrow Grid Input values
+Thread#1:T:skipped because of previous errors
+Thread#1:B:And user enters all input values for Prepaid Charges
+Thread#1:T:skipped because of previous errors
+Thread#1:B:And user enters input value for prepaid custom fields
+Thread#1:T:skipped because of previous errors
+Thread#1:B:And user navigates to Disclosure Inputs Page
+Thread#1:T:skipped because of previous errors
+Thread#1:B:And user enters disclosed input values for closing disclousre section
+Thread#1:T:skipped because of previous errors
+Thread#1:B:And user enters disclsoed input values for Loan Estimate
+Thread#1:T:skipped because of previous errors
+Thread#1:B:And user enters disclosed input values for Prepaid Charges
+Thread#1:T:skipped because of previous errors
+Thread#1:B:And user enters disclosed input values for Escrow Property
+Thread#1:T:skipped because of previous errors
+Thread#1:B:And user navigates to Export Page
+Thread#1:T:skipped because of previous errors
+Thread#1:B:And user enters all input values for Export Page
+Thread#1:T:skipped because of previous errors
+Thread#1:B:And user clicks on Export button to generate JSON file
+Thread#1:T:skipped because of previous errors
+Thread#1:B:And user navigates to Closing Disclosure Cards Page
+Thread#1:T:skipped because of previous errors
+Thread#1:B:Then updated/computed Principal and Interest value should display on Closing Disclosure
+Thread#1:T:skipped because of previous errors
+Thread#1:B:And updated/computed Mortgage Insurance value should display on Closing Disclosure
+Thread#1:T:skipped because of previous errors
+Thread#1:B:And updated/computed Scheduled PMI Termination Date value should display on Closing Disclosure
+Thread#1:T:skipped because of previous errors
+Thread#1:B:And updated/computed Estimated Total Monthly Payment value should display on Closing Disclosure
+Thread#1:T:skipped because of previous errors
+Thread#1:B:And updated/computed APR value should display on Closing Disclosure
+Thread#1:T:skipped because of previous errors
+Thread#1:B:And APRWIN info value should display on Closing Disclosure
+Thread#1:T:skipped because of previous errors
+Thread#1:B:And updated/computed Balloon Amount value should display on Closing Disclosure
+Thread#1:T:skipped because of previous errors
+Thread#1:B:And updated/computed Total of Payments value should display on Closing Disclosure
+Thread#1:T:skipped because of previous errors
+Thread#1:B:And updated/computed Finance Charge value should display on Closing Disclosure
+Thread#1:T:skipped because of previous errors
+Thread#1:B:And updated/computed Prepaid Charges value should display on Closing Disclosure
+Thread#1:T:skipped because of previous errors
+Thread#1:B:And updated/computed Amount Financed value should display on Closing Disclosure
+Thread#1:T:skipped because of previous errors
+Thread#1:B:And updated/computed TIP value should display on Closing Disclosure
+Thread#1:T:skipped because of previous errors
+Thread#1:B:And updated/computed Escrow Property Costs over one year 11 Months value should display on Closing Disclosure
+Thread#1:T:skipped because of previous errors
+Thread#1:B:And updated/computed Escrow Property Costs over one year 12 Months value should display on Closing Disclosure
+Thread#1:T:skipped because of previous errors
+Thread#1:B:And updated/computed Initial Escrow Payment value should display on Closing Disclosure
+Thread#1:T:skipped because of previous errors
+Thread#1:B:And updated/computed Non Escrow Property Costs over one year value should display on Closing Disclosure
+Thread#1:T:skipped because of previous errors
+Thread#1:B:And updated/computed Estimated Escrow value should display on Closing Disclosure
+Thread#1:T:skipped because of previous errors
+Thread#1:B:And updated/computed Estimated Taxes, Insurance & Assessments value should display on Closing Disclosure
+Thread#1:T:skipped because of previous errors
+Thread#1:Scheduler: reschedule tests for testitem #1
+Thread#1:Scheduler: get next test for thread
+Thread#:Scheduler: at the end of normal test queue
+Thread#1:Scheduler: enumerator for thread is at end
+Thread#1:Scheduler: No more tests for thread 
+Thread#4:T:done: CardsValidationSteps.WhenUserEntersLoanDetailInputValuesForComputationforClosingDisclosurepage() (7.9s)
+Thread#4:B:And user enters pmi rate values
+Thread#5:T:done: CardsValidationSteps.WhenUserEntersLoanDetailInputValuesForComputationforClosingDisclosurepage() (8.0s)
+Thread#5:B:And user enters pmi rate values
+Thread#4:T:done: CardsValidationSteps.WhenUserEntersPmiRateValues() (0.5s)
+Thread#4:B:And user enters other pmi input values
+Thread#5:T:done: CardsValidationSteps.WhenUserEntersPmiRateValues() (0.3s)
+Thread#5:B:And user enters other pmi input values
+Thread#4:T:error: unknown error: Element <md-radio-button value="Percentage" aria-label="Percentage" ng-repeat="allowedValue in  column.AllowedValues.AllowedValue" class="ng-scope" id="radio_88" role="radio" aria-checked="false">...</md-radio-button> is not clickable at point (400, 15). Other element would receive the click: <a href="" ng-click="loadViews(page)" data-toggle="collapse" data-target="#navbar" class="ng-binding" tabindex="0">...</a>
+Thread#4:T:  (Session info: chrome=59.0.3071.115)
+Thread#4:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#4:B:And user enters Escrow Grid Input values
+Thread#4:T:skipped because of previous errors
+Thread#4:B:And user enters all input values for Prepaid Charges
+Thread#4:T:skipped because of previous errors
+Thread#4:B:And user enters input value for prepaid custom fields
+Thread#4:T:skipped because of previous errors
+Thread#4:B:And user navigates to Disclosure Inputs Page
+Thread#4:T:skipped because of previous errors
+Thread#4:B:And user enters disclosed input values for closing disclousre section
+Thread#4:T:skipped because of previous errors
+Thread#4:B:And user enters disclsoed input values for Loan Estimate
+Thread#4:T:skipped because of previous errors
+Thread#4:B:And user enters disclosed input values for Prepaid Charges
+Thread#4:T:skipped because of previous errors
+Thread#4:B:And user enters disclosed input values for Escrow Property
+Thread#4:T:skipped because of previous errors
+Thread#4:B:And user navigates to Export Page
+Thread#4:T:skipped because of previous errors
+Thread#4:B:And user enters all input values for Export Page
+Thread#4:T:skipped because of previous errors
+Thread#4:B:And user clicks on Export button to generate JSON file
+Thread#4:T:skipped because of previous errors
+Thread#4:B:And user navigates to Closing Disclosure Cards Page
+Thread#4:T:skipped because of previous errors
+Thread#4:B:Then updated/computed Principal and Interest value should display on Closing Disclosure
+Thread#4:T:skipped because of previous errors
+Thread#4:B:And updated/computed Mortgage Insurance value should display on Closing Disclosure
+Thread#4:T:skipped because of previous errors
+Thread#4:B:And updated/computed Scheduled PMI Termination Date value should display on Closing Disclosure
+Thread#4:T:skipped because of previous errors
+Thread#4:B:And updated/computed Estimated Total Monthly Payment value should display on Closing Disclosure
+Thread#4:T:skipped because of previous errors
+Thread#4:B:And updated/computed APR value should display on Closing Disclosure
+Thread#4:T:skipped because of previous errors
+Thread#4:B:And APRWIN info value should display on Closing Disclosure
+Thread#4:T:skipped because of previous errors
+Thread#4:B:And updated/computed Balloon Amount value should display on Closing Disclosure
+Thread#4:T:skipped because of previous errors
+Thread#4:B:And updated/computed Total of Payments value should display on Closing Disclosure
+Thread#4:T:skipped because of previous errors
+Thread#4:B:And updated/computed Finance Charge value should display on Closing Disclosure
+Thread#4:T:skipped because of previous errors
+Thread#4:B:And updated/computed Prepaid Charges value should display on Closing Disclosure
+Thread#4:T:skipped because of previous errors
+Thread#4:B:And updated/computed Amount Financed value should display on Closing Disclosure
+Thread#4:T:skipped because of previous errors
+Thread#4:B:And updated/computed TIP value should display on Closing Disclosure
+Thread#4:T:skipped because of previous errors
+Thread#4:B:And updated/computed Escrow Property Costs over one year 11 Months value should display on Closing Disclosure
+Thread#4:T:skipped because of previous errors
+Thread#4:B:And updated/computed Escrow Property Costs over one year 12 Months value should display on Closing Disclosure
+Thread#4:T:skipped because of previous errors
+Thread#4:B:And updated/computed Initial Escrow Payment value should display on Closing Disclosure
+Thread#4:T:skipped because of previous errors
+Thread#4:B:And updated/computed Non Escrow Property Costs over one year value should display on Closing Disclosure
+Thread#4:T:skipped because of previous errors
+Thread#4:B:And updated/computed Estimated Escrow value should display on Closing Disclosure
+Thread#4:T:skipped because of previous errors
+Thread#4:B:And updated/computed Estimated Taxes, Insurance & Assessments value should display on Closing Disclosure
+Thread#4:T:skipped because of previous errors
+Thread#4:Scheduler: reschedule tests for testitem #4
+Thread#4:Scheduler: get next test for thread
+Thread#:Scheduler: at the end of normal test queue
+Thread#4:Scheduler: enumerator for thread is at end
+Thread#4:Scheduler: No more tests for thread 
+Thread#5:T:error: unknown error: Element <md-radio-button value="Percentage" aria-label="Percentage" ng-repeat="allowedValue in  column.AllowedValues.AllowedValue" class="ng-scope" id="radio_88" role="radio" aria-checked="false">...</md-radio-button> is not clickable at point (400, 15). Other element would receive the click: <a href="" ng-click="loadViews(page)" data-toggle="collapse" data-target="#navbar" class="ng-binding" tabindex="0">...</a>
+Thread#5:T:  (Session info: chrome=59.0.3071.115)
+Thread#5:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#5:B:And user enters Escrow Grid Input values
+Thread#5:T:skipped because of previous errors
+Thread#5:B:And user enters all input values for Prepaid Charges
+Thread#5:T:skipped because of previous errors
+Thread#5:B:And user enters input value for prepaid custom fields
+Thread#5:T:skipped because of previous errors
+Thread#5:B:And user navigates to Disclosure Inputs Page
+Thread#5:T:skipped because of previous errors
+Thread#5:B:And user enters disclosed input values for closing disclousre section
+Thread#0:T:done: CardsValidationSteps.WhenUserEntersLoanDetailInputValuesForComputationforClosingDisclosurepage() (7.6s)
+Thread#5:T:skipped because of previous errors
+Thread#0:B:And user enters pmi rate values
+Thread#5:B:And user enters disclsoed input values for Loan Estimate
+Thread#5:T:skipped because of previous errors
+Thread#5:B:And user enters disclosed input values for Prepaid Charges
+Thread#5:T:skipped because of previous errors
+Thread#5:B:And user enters disclosed input values for Escrow Property
+Thread#5:T:skipped because of previous errors
+Thread#5:B:And user navigates to Export Page
+Thread#5:T:skipped because of previous errors
+Thread#5:B:And user enters all input values for Export Page
+Thread#5:T:skipped because of previous errors
+Thread#5:B:And user clicks on Export button to generate JSON file
+Thread#5:T:skipped because of previous errors
+Thread#5:B:And user navigates to Closing Disclosure Cards Page
+Thread#5:T:skipped because of previous errors
+Thread#5:B:Then updated/computed Principal and Interest value should display on Closing Disclosure
+Thread#5:T:skipped because of previous errors
+Thread#5:B:And updated/computed Mortgage Insurance value should display on Closing Disclosure
+Thread#5:T:skipped because of previous errors
+Thread#5:B:And updated/computed Scheduled PMI Termination Date value should display on Closing Disclosure
+Thread#5:T:skipped because of previous errors
+Thread#5:B:And updated/computed Estimated Total Monthly Payment value should display on Closing Disclosure
+Thread#5:T:skipped because of previous errors
+Thread#5:B:And updated/computed APR value should display on Closing Disclosure
+Thread#5:T:skipped because of previous errors
+Thread#5:B:And APRWIN info value should display on Closing Disclosure
+Thread#5:T:skipped because of previous errors
+Thread#5:B:And updated/computed Balloon Amount value should display on Closing Disclosure
+Thread#5:T:skipped because of previous errors
+Thread#5:B:And updated/computed Total of Payments value should display on Closing Disclosure
+Thread#5:T:skipped because of previous errors
+Thread#5:B:And updated/computed Finance Charge value should display on Closing Disclosure
+Thread#5:T:skipped because of previous errors
+Thread#5:B:And updated/computed Prepaid Charges value should display on Closing Disclosure
+Thread#5:T:skipped because of previous errors
+Thread#5:B:And updated/computed Amount Financed value should display on Closing Disclosure
+Thread#5:T:skipped because of previous errors
+Thread#5:B:And updated/computed TIP value should display on Closing Disclosure
+Thread#5:T:skipped because of previous errors
+Thread#5:B:And updated/computed Escrow Property Costs over one year 11 Months value should display on Closing Disclosure
+Thread#5:T:skipped because of previous errors
+Thread#5:B:And updated/computed Escrow Property Costs over one year 12 Months value should display on Closing Disclosure
+Thread#5:T:skipped because of previous errors
+Thread#5:B:And updated/computed Initial Escrow Payment value should display on Closing Disclosure
+Thread#5:T:skipped because of previous errors
+Thread#5:B:And updated/computed Non Escrow Property Costs over one year value should display on Closing Disclosure
+Thread#5:T:skipped because of previous errors
+Thread#5:B:And updated/computed Estimated Escrow value should display on Closing Disclosure
+Thread#5:T:skipped because of previous errors
+Thread#5:B:And updated/computed Estimated Taxes, Insurance & Assessments value should display on Closing Disclosure
+Thread#5:T:skipped because of previous errors
+Thread#5:Scheduler: reschedule tests for testitem #5
+Thread#5:Scheduler: get next test for thread
+Thread#:Scheduler: at the end of normal test queue
+Thread#5:Scheduler: enumerator for thread is at end
+Thread#5:Scheduler: No more tests for thread 
+Thread#0:T:done: CardsValidationSteps.WhenUserEntersPmiRateValues() (0.4s)
+Thread#0:B:And user enters other pmi input values
+Thread#0:T:error: unknown error: Element <md-radio-button value="Percentage" aria-label="Percentage" ng-repeat="allowedValue in  column.AllowedValues.AllowedValue" class="ng-scope" id="radio_88" role="radio" aria-checked="false">...</md-radio-button> is not clickable at point (400, 15). Other element would receive the click: <a href="" ng-click="loadViews(page)" data-toggle="collapse" data-target="#navbar" class="ng-binding" tabindex="0">...</a>
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:B:And user enters Escrow Grid Input values
+Thread#0:T:skipped because of previous errors
+Thread#0:B:And user enters all input values for Prepaid Charges
+Thread#0:T:skipped because of previous errors
+Thread#0:B:And user enters input value for prepaid custom fields
+Thread#0:T:skipped because of previous errors
+Thread#0:B:And user navigates to Disclosure Inputs Page
+Thread#0:T:skipped because of previous errors
+Thread#0:B:And user enters disclosed input values for closing disclousre section
+Thread#0:T:skipped because of previous errors
+Thread#0:B:And user enters disclsoed input values for Loan Estimate
+Thread#0:T:skipped because of previous errors
+Thread#0:B:And user enters disclosed input values for Prepaid Charges
+Thread#0:T:skipped because of previous errors
+Thread#0:B:And user enters disclosed input values for Escrow Property
+Thread#0:T:skipped because of previous errors
+Thread#0:B:And user navigates to Export Page
+Thread#0:T:skipped because of previous errors
+Thread#0:B:And user enters all input values for Export Page
+Thread#0:T:skipped because of previous errors
+Thread#0:B:And user clicks on Export button to generate JSON file
+Thread#0:T:skipped because of previous errors
+Thread#0:B:And user navigates to Closing Disclosure Cards Page
+Thread#0:T:skipped because of previous errors
+Thread#0:B:Then updated/computed Principal and Interest value should display on Closing Disclosure
+Thread#0:T:skipped because of previous errors
+Thread#0:B:And updated/computed Mortgage Insurance value should display on Closing Disclosure
+Thread#0:T:skipped because of previous errors
+Thread#0:B:And updated/computed Scheduled PMI Termination Date value should display on Closing Disclosure
+Thread#0:T:skipped because of previous errors
+Thread#0:B:And updated/computed Estimated Total Monthly Payment value should display on Closing Disclosure
+Thread#0:T:skipped because of previous errors
+Thread#3:T:done: CardsValidationSteps.WhenUserEntersLoanDetailInputValuesForComputationforClosingDisclosurepage() (7.0s)
+Thread#0:B:And updated/computed APR value should display on Closing Disclosure
+Thread#3:B:And user enters pmi rate values
+Thread#0:T:skipped because of previous errors
+Thread#0:B:And APRWIN info value should display on Closing Disclosure
+Thread#0:T:skipped because of previous errors
+Thread#0:B:And updated/computed Balloon Amount value should display on Closing Disclosure
+Thread#0:T:skipped because of previous errors
+Thread#0:B:And updated/computed Total of Payments value should display on Closing Disclosure
+Thread#0:T:skipped because of previous errors
+Thread#0:B:And updated/computed Finance Charge value should display on Closing Disclosure
+Thread#0:T:skipped because of previous errors
+Thread#0:B:And updated/computed Prepaid Charges value should display on Closing Disclosure
+Thread#0:T:skipped because of previous errors
+Thread#0:B:And updated/computed Amount Financed value should display on Closing Disclosure
+Thread#0:T:skipped because of previous errors
+Thread#0:B:And updated/computed TIP value should display on Closing Disclosure
+Thread#0:T:skipped because of previous errors
+Thread#0:B:And updated/computed Escrow Property Costs over one year 11 Months value should display on Closing Disclosure
+Thread#0:T:skipped because of previous errors
+Thread#0:B:And updated/computed Escrow Property Costs over one year 12 Months value should display on Closing Disclosure
+Thread#0:T:skipped because of previous errors
+Thread#0:B:And updated/computed Initial Escrow Payment value should display on Closing Disclosure
+Thread#0:T:skipped because of previous errors
+Thread#0:B:And updated/computed Non Escrow Property Costs over one year value should display on Closing Disclosure
+Thread#0:T:skipped because of previous errors
+Thread#0:B:And updated/computed Estimated Escrow value should display on Closing Disclosure
+Thread#0:T:skipped because of previous errors
+Thread#0:B:And updated/computed Estimated Taxes, Insurance & Assessments value should display on Closing Disclosure
+Thread#0:T:skipped because of previous errors
+Thread#0:Scheduler: reschedule tests for testitem #0
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: at the end of normal test queue
+Thread#0:Scheduler: enumerator for thread is at end
+Thread#0:Scheduler: No more tests for thread 
+Thread#3:T:done: CardsValidationSteps.WhenUserEntersPmiRateValues() (0.4s)
+Thread#3:B:And user enters other pmi input values
+Thread#3:T:error: unknown error: Element <md-radio-button value="Percentage" aria-label="Percentage" ng-repeat="allowedValue in  column.AllowedValues.AllowedValue" class="ng-scope" id="radio_88" role="radio" aria-checked="false">...</md-radio-button> is not clickable at point (400, 15). Other element would receive the click: <a href="" ng-click="loadViews(page)" data-toggle="collapse" data-target="#navbar" class="ng-binding" tabindex="0">...</a>
+Thread#3:T:  (Session info: chrome=59.0.3071.115)
+Thread#3:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#3:B:And user enters Escrow Grid Input values
+Thread#3:T:skipped because of previous errors
+Thread#3:B:And user enters all input values for Prepaid Charges
+Thread#3:T:skipped because of previous errors
+Thread#3:B:And user enters input value for prepaid custom fields
+Thread#3:T:skipped because of previous errors
+Thread#3:B:And user navigates to Disclosure Inputs Page
+Thread#3:T:skipped because of previous errors
+Thread#3:B:And user enters disclosed input values for closing disclousre section
+Thread#3:T:skipped because of previous errors
+Thread#3:B:And user enters disclsoed input values for Loan Estimate
+Thread#3:T:skipped because of previous errors
+Thread#3:B:And user enters disclosed input values for Prepaid Charges
+Thread#3:T:skipped because of previous errors
+Thread#3:B:And user enters disclosed input values for Escrow Property
+Thread#3:T:skipped because of previous errors
+Thread#3:B:And user navigates to Export Page
+Thread#3:T:skipped because of previous errors
+Thread#3:B:And user enters all input values for Export Page
+Thread#3:T:skipped because of previous errors
+Thread#3:B:And user clicks on Export button to generate JSON file
+Thread#3:T:skipped because of previous errors
+Thread#3:B:And user navigates to Closing Disclosure Cards Page
+Thread#3:T:skipped because of previous errors
+Thread#3:B:Then updated/computed Principal and Interest value should display on Closing Disclosure
+Thread#3:T:skipped because of previous errors
+Thread#3:B:And updated/computed Mortgage Insurance value should display on Closing Disclosure
+Thread#3:T:skipped because of previous errors
+Thread#3:B:And updated/computed Scheduled PMI Termination Date value should display on Closing Disclosure
+Thread#3:T:skipped because of previous errors
+Thread#3:B:And updated/computed Estimated Total Monthly Payment value should display on Closing Disclosure
+Thread#3:T:skipped because of previous errors
+Thread#3:B:And updated/computed APR value should display on Closing Disclosure
+Thread#3:T:skipped because of previous errors
+Thread#3:B:And APRWIN info value should display on Closing Disclosure
+Thread#3:T:skipped because of previous errors
+Thread#3:B:And updated/computed Balloon Amount value should display on Closing Disclosure
+Thread#3:T:skipped because of previous errors
+Thread#3:B:And updated/computed Total of Payments value should display on Closing Disclosure
+Thread#3:T:skipped because of previous errors
+Thread#3:B:And updated/computed Finance Charge value should display on Closing Disclosure
+Thread#3:T:skipped because of previous errors
+Thread#3:B:And updated/computed Prepaid Charges value should display on Closing Disclosure
+Thread#3:T:skipped because of previous errors
+Thread#3:B:And updated/computed Amount Financed value should display on Closing Disclosure
+Thread#3:T:skipped because of previous errors
+Thread#3:B:And updated/computed TIP value should display on Closing Disclosure
+Thread#3:T:skipped because of previous errors
+Thread#3:B:And updated/computed Escrow Property Costs over one year 11 Months value should display on Closing Disclosure
+Thread#3:T:skipped because of previous errors
+Thread#3:B:And updated/computed Escrow Property Costs over one year 12 Months value should display on Closing Disclosure
+Thread#3:T:skipped because of previous errors
+Thread#3:B:And updated/computed Initial Escrow Payment value should display on Closing Disclosure
+Thread#3:T:skipped because of previous errors
+Thread#3:B:And updated/computed Non Escrow Property Costs over one year value should display on Closing Disclosure
+Thread#3:T:skipped because of previous errors
+Thread#3:B:And updated/computed Estimated Escrow value should display on Closing Disclosure
+Thread#3:T:skipped because of previous errors
+Thread#3:B:And updated/computed Estimated Taxes, Insurance & Assessments value should display on Closing Disclosure
+Thread#3:T:skipped because of previous errors
+Thread#3:Scheduler: reschedule tests for testitem #3
+Thread#3:Scheduler: get next test for thread
+Thread#:Scheduler: at the end of normal test queue
+Thread#3:Scheduler: enumerator for thread is at end
+Thread#3:Scheduler: No more tests for thread 
+Thread#2: Test #257/0 is finished on thread #2 as Failed within 78.7538885 seconds
+Appdomain Disposed
+Thread#4: Test #264/0 is finished on thread #4 as Failed within 78.6171847 seconds
+Appdomain Disposed
+Thread#1: Test #256/0 is finished on thread #1 as Failed within 78.960509 seconds
+Appdomain Disposed
+Thread#5: Test #266/0 is finished on thread #5 as Failed within 78.9211414 seconds
+Appdomain Disposed
+Thread#0: Test #255/0 is finished on thread #0 as Failed within 79.1657316 seconds
+Appdomain Disposed
+Thread#3: Test #263/0 is finished on thread #3 as Failed within 79.744665 seconds
+Appdomain Disposed
+Thread#-1:Scheduler: get next test for thread
+Thread#:Scheduler: at the end of normal test queue
+Thread#-1:Scheduler: enumerator for thread is at end
+Total: 6
+Succeeded: 0
+Ignored: 0
+Pending: 0
+Skipped: 0
+Failed: 6

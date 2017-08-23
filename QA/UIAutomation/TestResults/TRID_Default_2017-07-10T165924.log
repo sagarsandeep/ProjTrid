@@ -1,0 +1,1454 @@
+﻿VS filter: testpath:TestAssembly:TRID/Feature:EscrowInfoCardsValidation/Scenario:Uploading+JSON+file+and+validating+Escrow+Info+cards+value+on+Escrow+Info+page%2c+003 | testpath:TestAssembly:TRID/Feature:EscrowInfoCardsValidation/Scenario:Uploading+JSON+file+and+validating+Escrow+Info+cards+value+on+Escrow+Info+page%2c+004 | testpath:TestAssembly:TRID/Feature:EscrowInfoCardsValidation/Scenario:Uploading+JSON+file+and+validating+Escrow+Info+cards+value+on+Escrow+Info+page%2c+001 | testpath:TestAssembly:TRID/Feature:EscrowInfoCardsValidation/Scenario:Uploading+JSON+file+and+validating+Escrow+Info+cards+value+on+Escrow+Info+page%2c+002
+Discovering target: Default
+Discovering tests from assembly: F:\Projects\TRID QA\QA\UI Automation\SpecFramework\bin\Debug\TRID.dll
+Appdomain Disposed
+Test Suite Dump
+#0: TRID/Default - 
+#1: Default - 
+#2: TRID - 
+#359: EscrowInfoCardsValidation - 
+#419: Uploading JSON file and validating Escrow Info cards value on Escrow Info page, 001 - TestAssembly:TRID/Feature:EscrowInfoCardsValidation/Scenario:Uploading+JSON+file+and+validating+Escrow+Info+cards+value+on+Escrow+Info+page%2c+001
+#420: Uploading JSON file and validating Escrow Info cards value on Escrow Info page, 002 - TestAssembly:TRID/Feature:EscrowInfoCardsValidation/Scenario:Uploading+JSON+file+and+validating+Escrow+Info+cards+value+on+Escrow+Info+page%2c+002
+#421: Uploading JSON file and validating Escrow Info cards value on Escrow Info page, 003 - TestAssembly:TRID/Feature:EscrowInfoCardsValidation/Scenario:Uploading+JSON+file+and+validating+Escrow+Info+cards+value+on+Escrow+Info+page%2c+003
+#422: Uploading JSON file and validating Escrow Info cards value on Escrow Info page, 004 - TestAssembly:TRID/Feature:EscrowInfoCardsValidation/Scenario:Uploading+JSON+file+and+validating+Escrow+Info+cards+value+on+Escrow+Info+page%2c+004
+End: Test Suite Dump
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #419 from normal test queue 
+Thread#0:Scheduler: considering testitem #419 for thread
+Thread#0:Scheduler: using testitem #419 for thread
+Thread#0:Scheduler: Test #419 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread #0: creating new test thread executor for TRID, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null (target: Default)
+Loading SpecRun type 'TechTalk.SpecRun.Framework.TestAssemblyExecutor' from: C:\Users\sandees\AppData\Local\Temp\VisualStudioTestExplorerExtensions\SpecRun.Runner.1.5.2\tools\TechTalk.SpecRun.Framework.Executor.dll
+Thread#0: Test #419/0 is started on thread #0
+Thread#0:B:Given user is at TRID application homepage
+Thread#0:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (33.3s)
+Thread#0:B:And user have Escrow Info data from excel sheet EscrowInfo for the scenario 2
+Thread#0:T:done: EscrowInfoCardsValidationSteps.GivenUserHaveEscrowInfoDataFromExcelSheetForTheScenario("EscrowInfo", 2) (0.8s)
+Thread#0:B:When user upload json file for the scenario
+Thread#0:T:done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (1.9s)
+Thread#0:B:And user navigates to Escrow Info Cards Page
+Thread#0:T:done: EscrowInfoCardsValidationSteps.WhenUserNavigatesToEscrowInfoCardsPage() (1.0s)
+Thread#0:B:Then updated/computed Insurance Initial Deposit value should display on Escrow Info
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedInfoValue :0
+Thread#0:T:ActualInfoValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedInsuranceInitialDepositValueShouldDisplayOnEscrowInfo() (0.1s)
+Thread#0:B:And updated/computed Insurance Period Deposit value should display on Escrow Info
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedInfoValue :0
+Thread#0:T:ActualInfoValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedInsurancePeriodDepositValueShouldDisplayOnEscrowInfo() (0.1s)
+Thread#0:B:And updated/computed Insurance Low Balance value should display on Escrow Info
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedInfoValue :0
+Thread#0:T:ActualInfoValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedInsuranceLowBalanceValueShouldDisplayOnEscrowInfo() (0.1s)
+Thread#0:B:And updated/computed Insurance Cushion value should display on Escrow Info
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedInfoValue :0
+Thread#0:T:ActualInfoValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedInsuranceCushionValueShouldDisplayOnEscrowInfo() (0.1s)
+Thread#0:B:And updated/computed Insurance Total Annual Disbursed value should display on Escrow Info
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedInfoValue :0
+Thread#0:T:ActualInfoValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedInsuranceTotalAnnualDisbursedValueShouldDisplayOnEscrowInfo() (0.1s)
+Thread#0:B:And updated/computed Tax Initial Deposit value should display on Escrow Info
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedInfoValue :1200
+Thread#0:T:ActualInfoValue :1200
+Thread#0:T:============================================================
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedTaxInitialDepositValueShouldDisplayOnEscrowInfo() (0.1s)
+Thread#0:B:And updated/computed Tax Period Deposit value should display on Escrow Info
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedInfoValue :200
+Thread#0:T:ActualInfoValue :200
+Thread#0:T:============================================================
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedTaxPeriodDepositValueShouldDisplayOnEscrowInfo() (0.1s)
+Thread#0:B:And updated/computed Tax Low Balance value should display on Escrow Info
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedInfoValue :400
+Thread#0:T:ActualInfoValue :400
+Thread#0:T:============================================================
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedTaxLowBalanceValueShouldDisplayOnEscrowInfo() (0.1s)
+Thread#0:B:And updated/computed Tax Cushion value should display on Escrow Info
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedInfoValue :400
+Thread#0:T:ActualInfoValue :400
+Thread#0:T:============================================================
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedTaxCushionValueShouldDisplayOnEscrowInfo() (0.1s)
+Thread#0:B:And updated/computed Tax Total Annual Disbursed value should display on Escrow Info
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedInfoValue :2400
+Thread#0:T:ActualInfoValue :2400
+Thread#0:T:============================================================
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedTaxTotalAnnualDisbursedValueShouldDisplayOnEscrowInfo() (0.1s)
+Thread#0:B:And updated/computed PMI Initial Deposit value should display on Escrow Info
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedInfoValue :0
+Thread#0:T:ActualInfoValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedPmiInitialDepositValueShouldDisplayOnEscrowInfo() (0.1s)
+Thread#0:B:And updated/computed PMI Period Deposit value should display on Escrow Info
+Thread#0:T:NUnit.Framework.AssertionException:   PMI Period Deposit value does not match as expected with the difference of 40.39
+Thread#0:T:  Expected: 40.390000000000001d
+Thread#0:T:  But was:  0.0d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.EscrowInfoCardsValidationSteps.ThenUpdatedComputedPmiPeriodDepositValueShouldDisplayOnEscrowInfo() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\EscrowInfoCardsValidationSteps.cs:line 432
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedPmiPeriodDepositValueShouldDisplayOnEscrowInfo() (0.1s)
+Thread#0:B:And updated/computed PMI Low Balance value should display on Escrow Info
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedInfoValue :0
+Thread#0:T:ActualInfoValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedPmiLowBalanceValueShouldDisplayOnEscrowInfo() (0.1s)
+Thread#0:B:And updated/computed PMI Cushion value should display on Escrow Info
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedInfoValue :0
+Thread#0:T:ActualInfoValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedPmiCushionValueShouldDisplayOnEscrowInfo() (0.1s)
+Thread#0:B:And updated/computed PMI Total Annual Disbursed value should display on Escrow Info
+Thread#0:T:NUnit.Framework.AssertionException:   PMI Total Annual Disbursed value does not match as expected with the difference of 484.68
+Thread#0:T:  Expected: 484.68000000000001d
+Thread#0:T:  But was:  0.0d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.EscrowInfoCardsValidationSteps.ThenUpdatedComputedPmiTotalAnnualDisbursedValueShouldDisplayOnEscrowInfo() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\EscrowInfoCardsValidationSteps.cs:line 533
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedPmiTotalAnnualDisbursedValueShouldDisplayOnEscrowInfo() (0.1s)
+Thread#0:B:And updated/computed Other1 Initial Deposit value should display on Escrow Info
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedOther1InitialDepositValueShouldDisplayOnEscrowInfo() (0.0s)
+Thread#0:B:And updated/computed Other1 Period Deposit value should display on Escrow Info
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedOther1PeriodDepositValueShouldDisplayOnEscrowInfo() (0.0s)
+Thread#0:B:And updated/computed Other1 Low Balance value should display on Escrow Info
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedOther1LowBalanceValueShouldDisplayOnEscrowInfo() (0.0s)
+Thread#0:B:And updated/computed Other1 Cushion value should display on Escrow Info
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedOther1CushionValueShouldDisplayOnEscrowInfo() (0.0s)
+Thread#0:B:And updated/computed Other1 Total Annual Disbursed value should display on Escrow Info
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedOther1TotalAnnualDisbursedValueShouldDisplayOnEscrowInfo() (0.0s)
+Thread#0:B:And updated/computed Other2 Initial Deposit value should display on Escrow Info
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedOther2InitialDepositValueShouldDisplayOnEscrowInfo() (0.0s)
+Thread#0:B:And updated/computed Other2 Period Deposit value should display on Escrow Info
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedOther2PeriodDepositValueShouldDisplayOnEscrowInfo() (0.0s)
+Thread#0:B:And updated/computed Other2 Low Balance value should display on Escrow Info
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedOther2LowBalanceValueShouldDisplayOnEscrowInfo() (0.0s)
+Thread#0:B:And updated/computed Other2 Cushion value should display on Escrow Info
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedOther2CushionValueShouldDisplayOnEscrowInfo() (0.0s)
+Thread#0:B:And updated/computed Other2 Total Annual Disbursed value should display on Escrow Info
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedOther2TotalAnnualDisbursedValueShouldDisplayOnEscrowInfo() (0.0s)
+Thread#0:B:And updated/computed Aggregate Initial Deposit value should display on Escrow Info
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedInfoValue :1200
+Thread#0:T:ActualInfoValue :1200
+Thread#0:T:============================================================
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedAggregateInitialDepositValueShouldDisplayOnEscrowInfo() (0.1s)
+Thread#0:B:And updated/computed Aggregate Period Deposit value should display on Escrow Info
+Thread#0:T:NUnit.Framework.AssertionException:   Aggregate Period Deposit value does not match as expected with the difference of 959.61
+Thread#0:T:  Expected: 240.38999999999999d
+Thread#0:T:  But was:  1200.0d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.EscrowInfoCardsValidationSteps.ThenUpdatedComputedAggregatePeriodDepositValueShouldDisplayOnEscrowInfo() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\EscrowInfoCardsValidationSteps.cs:line 945
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedAggregatePeriodDepositValueShouldDisplayOnEscrowInfo() (0.0s)
+Thread#0:B:And updated/computed Aggregate Low Balance value should display on Escrow Info
+Thread#0:T:NUnit.Framework.AssertionException:   Aggregate Low Balance value does not match as expected with the difference of 800
+Thread#0:T:  Expected: 400.0d
+Thread#0:T:  But was:  1200.0d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.EscrowInfoCardsValidationSteps.ThenUpdatedComputedAggregateLowBalanceValueShouldDisplayOnEscrowInfo() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\EscrowInfoCardsValidationSteps.cs:line 980
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedAggregateLowBalanceValueShouldDisplayOnEscrowInfo() (0.0s)
+Thread#0:B:And updated/computed Aggregate Cushion value should display on Escrow Info
+Thread#0:T:NUnit.Framework.AssertionException:   Aggregate Cushion value does not match as expected with the difference of 800
+Thread#0:T:  Expected: 400.0d
+Thread#0:T:  But was:  1200.0d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.EscrowInfoCardsValidationSteps.ThenUpdatedComputedAggregateCushionValueShouldDisplayOnEscrowInfo() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\EscrowInfoCardsValidationSteps.cs:line 1015
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedAggregateCushionValueShouldDisplayOnEscrowInfo() (0.0s)
+Thread#0:B:And updated/computed Aggregate Total Annual Disbursed value should display on Escrow Info
+Thread#0:T:NUnit.Framework.AssertionException:   Aggregate Total Annual Disbursed value does not match as expected with the difference of 1684.68
+Thread#0:T:  Expected: 2884.6799999999998d
+Thread#0:T:  But was:  1200.0d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.EscrowInfoCardsValidationSteps.ThenUpdatedComputedAggregateTotalAnnualDisbursedValueShouldDisplayOnEscrowInfo() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\EscrowInfoCardsValidationSteps.cs:line 1053
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedAggregateTotalAnnualDisbursedValueShouldDisplayOnEscrowInfo() (0.0s)
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #420 from normal test queue 
+Thread#0:Scheduler: considering testitem #420 for thread
+Thread#0:Scheduler: using testitem #420 for thread
+Thread#0:Scheduler: Test #420 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #419/0 is finished on thread #0 as Succeeded within 38.6445418 seconds
+Thread#0: Test #420/0 is started on thread #0
+Thread#0:B:Given user is at TRID application homepage
+Thread#0:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (2.0s)
+Thread#0:B:And user have Escrow Info data from excel sheet EscrowInfo for the scenario 3
+Thread#0:T:done: EscrowInfoCardsValidationSteps.GivenUserHaveEscrowInfoDataFromExcelSheetForTheScenario("EscrowInfo", 3) (0.8s)
+Thread#0:B:When user upload json file for the scenario
+Thread#0:T:done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (1.9s)
+Thread#0:B:And user navigates to Escrow Info Cards Page
+Thread#0:T:done: EscrowInfoCardsValidationSteps.WhenUserNavigatesToEscrowInfoCardsPage() (0.5s)
+Thread#0:B:Then updated/computed Insurance Initial Deposit value should display on Escrow Info
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedInfoValue :150
+Thread#0:T:ActualInfoValue :150
+Thread#0:T:============================================================
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedInsuranceInitialDepositValueShouldDisplayOnEscrowInfo() (0.0s)
+Thread#0:B:And updated/computed Insurance Period Deposit value should display on Escrow Info
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedInfoValue :150
+Thread#0:T:ActualInfoValue :150
+Thread#0:T:============================================================
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedInsurancePeriodDepositValueShouldDisplayOnEscrowInfo() (0.1s)
+Thread#0:B:And updated/computed Insurance Low Balance value should display on Escrow Info
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedInfoValue :150
+Thread#0:T:ActualInfoValue :150
+Thread#0:T:============================================================
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedInsuranceLowBalanceValueShouldDisplayOnEscrowInfo() (0.0s)
+Thread#0:B:And updated/computed Insurance Cushion value should display on Escrow Info
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedInfoValue :150
+Thread#0:T:ActualInfoValue :150
+Thread#0:T:============================================================
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedInsuranceCushionValueShouldDisplayOnEscrowInfo() (0.0s)
+Thread#0:B:And updated/computed Insurance Total Annual Disbursed value should display on Escrow Info
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedInfoValue :900
+Thread#0:T:ActualInfoValue :900
+Thread#0:T:============================================================
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedInsuranceTotalAnnualDisbursedValueShouldDisplayOnEscrowInfo() (0.1s)
+Thread#0:B:And updated/computed Tax Initial Deposit value should display on Escrow Info
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedInfoValue :1200
+Thread#0:T:ActualInfoValue :1200
+Thread#0:T:============================================================
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedTaxInitialDepositValueShouldDisplayOnEscrowInfo() (0.0s)
+Thread#0:B:And updated/computed Tax Period Deposit value should display on Escrow Info
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedInfoValue :400
+Thread#0:T:ActualInfoValue :400
+Thread#0:T:============================================================
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedTaxPeriodDepositValueShouldDisplayOnEscrowInfo() (0.0s)
+Thread#0:B:And updated/computed Tax Low Balance value should display on Escrow Info
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedInfoValue :400
+Thread#0:T:ActualInfoValue :400
+Thread#0:T:============================================================
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedTaxLowBalanceValueShouldDisplayOnEscrowInfo() (0.0s)
+Thread#0:B:And updated/computed Tax Cushion value should display on Escrow Info
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedInfoValue :400
+Thread#0:T:ActualInfoValue :400
+Thread#0:T:============================================================
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedTaxCushionValueShouldDisplayOnEscrowInfo() (0.0s)
+Thread#0:B:And updated/computed Tax Total Annual Disbursed value should display on Escrow Info
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedInfoValue :2400
+Thread#0:T:ActualInfoValue :2400
+Thread#0:T:============================================================
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedTaxTotalAnnualDisbursedValueShouldDisplayOnEscrowInfo() (0.0s)
+Thread#0:B:And updated/computed PMI Initial Deposit value should display on Escrow Info
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedInfoValue :0
+Thread#0:T:ActualInfoValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedPmiInitialDepositValueShouldDisplayOnEscrowInfo() (0.0s)
+Thread#0:B:And updated/computed PMI Period Deposit value should display on Escrow Info
+Thread#0:T:NUnit.Framework.AssertionException:   PMI Period Deposit value does not match as expected with the difference of 80.78
+Thread#0:T:  Expected: 80.780000000000001d
+Thread#0:T:  But was:  0.0d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.EscrowInfoCardsValidationSteps.ThenUpdatedComputedPmiPeriodDepositValueShouldDisplayOnEscrowInfo() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\EscrowInfoCardsValidationSteps.cs:line 432
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedPmiPeriodDepositValueShouldDisplayOnEscrowInfo() (0.1s)
+Thread#0:B:And updated/computed PMI Low Balance value should display on Escrow Info
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedInfoValue :0
+Thread#0:T:ActualInfoValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedPmiLowBalanceValueShouldDisplayOnEscrowInfo() (0.0s)
+Thread#0:B:And updated/computed PMI Cushion value should display on Escrow Info
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedInfoValue :0
+Thread#0:T:ActualInfoValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedPmiCushionValueShouldDisplayOnEscrowInfo() (0.0s)
+Thread#0:B:And updated/computed PMI Total Annual Disbursed value should display on Escrow Info
+Thread#0:T:NUnit.Framework.AssertionException:   PMI Total Annual Disbursed value does not match as expected with the difference of 484.68
+Thread#0:T:  Expected: 484.68000000000001d
+Thread#0:T:  But was:  0.0d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.EscrowInfoCardsValidationSteps.ThenUpdatedComputedPmiTotalAnnualDisbursedValueShouldDisplayOnEscrowInfo() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\EscrowInfoCardsValidationSteps.cs:line 533
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedPmiTotalAnnualDisbursedValueShouldDisplayOnEscrowInfo() (0.1s)
+Thread#0:B:And updated/computed Other1 Initial Deposit value should display on Escrow Info
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedInfoValue :0
+Thread#0:T:ActualInfoValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedOther1InitialDepositValueShouldDisplayOnEscrowInfo() (0.1s)
+Thread#0:B:And updated/computed Other1 Period Deposit value should display on Escrow Info
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedInfoValue :0
+Thread#0:T:ActualInfoValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedOther1PeriodDepositValueShouldDisplayOnEscrowInfo() (0.1s)
+Thread#0:B:And updated/computed Other1 Low Balance value should display on Escrow Info
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedInfoValue :0
+Thread#0:T:ActualInfoValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedOther1LowBalanceValueShouldDisplayOnEscrowInfo() (0.1s)
+Thread#0:B:And updated/computed Other1 Cushion value should display on Escrow Info
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedInfoValue :0
+Thread#0:T:ActualInfoValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedOther1CushionValueShouldDisplayOnEscrowInfo() (0.1s)
+Thread#0:B:And updated/computed Other1 Total Annual Disbursed value should display on Escrow Info
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedInfoValue :0
+Thread#0:T:ActualInfoValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedOther1TotalAnnualDisbursedValueShouldDisplayOnEscrowInfo() (0.1s)
+Thread#0:B:And updated/computed Other2 Initial Deposit value should display on Escrow Info
+Thread#0:T:OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//td[div[div[span[text()='Other2']]]]/following-sibling::td[1]//span"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.EscrowInfoCardsValidationSteps.ThenUpdatedComputedOther2InitialDepositValueShouldDisplayOnEscrowInfo() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\EscrowInfoCardsValidationSteps.cs:line 737
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedOther2InitialDepositValueShouldDisplayOnEscrowInfo() (0.1s)
+Thread#0:B:And updated/computed Other2 Period Deposit value should display on Escrow Info
+Thread#0:T:OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//td[div[div[span[text()='Other2']]]]/following-sibling::td[2]//span"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.EscrowInfoCardsValidationSteps.ThenUpdatedComputedOther2PeriodDepositValueShouldDisplayOnEscrowInfo() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\EscrowInfoCardsValidationSteps.cs:line 771
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedOther2PeriodDepositValueShouldDisplayOnEscrowInfo() (0.1s)
+Thread#0:B:And updated/computed Other2 Low Balance value should display on Escrow Info
+Thread#0:T:OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//td[div[div[span[text()='Other2']]]]/following-sibling::td[3]//span"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.EscrowInfoCardsValidationSteps.ThenUpdatedComputedOther2LowBalanceValueShouldDisplayOnEscrowInfo() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\EscrowInfoCardsValidationSteps.cs:line 805
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedOther2LowBalanceValueShouldDisplayOnEscrowInfo() (0.1s)
+Thread#0:B:And updated/computed Other2 Cushion value should display on Escrow Info
+Thread#0:T:OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//td[div[div[span[text()='Other2']]]]/following-sibling::td[4]//span"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.EscrowInfoCardsValidationSteps.ThenUpdatedComputedOther2CushionValueShouldDisplayOnEscrowInfo() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\EscrowInfoCardsValidationSteps.cs:line 839
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedOther2CushionValueShouldDisplayOnEscrowInfo() (0.1s)
+Thread#0:B:And updated/computed Other2 Total Annual Disbursed value should display on Escrow Info
+Thread#0:T:OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//td[div[div[span[text()='Other2']]]]/following-sibling::td[5]//span"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.EscrowInfoCardsValidationSteps.ThenUpdatedComputedOther2TotalAnnualDisbursedValueShouldDisplayOnEscrowInfo() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\EscrowInfoCardsValidationSteps.cs:line 872
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedOther2TotalAnnualDisbursedValueShouldDisplayOnEscrowInfo() (0.1s)
+Thread#0:B:And updated/computed Aggregate Initial Deposit value should display on Escrow Info
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedInfoValue :750
+Thread#0:T:ActualInfoValue :750
+Thread#0:T:============================================================
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedAggregateInitialDepositValueShouldDisplayOnEscrowInfo() (0.0s)
+Thread#0:B:And updated/computed Aggregate Period Deposit value should display on Escrow Info
+Thread#0:T:NUnit.Framework.AssertionException:   Aggregate Period Deposit value does not match as expected with the difference of 119.22
+Thread#0:T:  Expected: 630.77999999999997d
+Thread#0:T:  But was:  750.0d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.EscrowInfoCardsValidationSteps.ThenUpdatedComputedAggregatePeriodDepositValueShouldDisplayOnEscrowInfo() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\EscrowInfoCardsValidationSteps.cs:line 945
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedAggregatePeriodDepositValueShouldDisplayOnEscrowInfo() (0.0s)
+Thread#0:B:And updated/computed Aggregate Low Balance value should display on Escrow Info
+Thread#0:T:NUnit.Framework.AssertionException:   Aggregate Low Balance value does not match as expected with the difference of 200
+Thread#0:T:  Expected: 550.0d
+Thread#0:T:  But was:  750.0d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.EscrowInfoCardsValidationSteps.ThenUpdatedComputedAggregateLowBalanceValueShouldDisplayOnEscrowInfo() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\EscrowInfoCardsValidationSteps.cs:line 980
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedAggregateLowBalanceValueShouldDisplayOnEscrowInfo() (0.0s)
+Thread#0:B:And updated/computed Aggregate Cushion value should display on Escrow Info
+Thread#0:T:NUnit.Framework.AssertionException:   Aggregate Cushion value does not match as expected with the difference of 200
+Thread#0:T:  Expected: 550.0d
+Thread#0:T:  But was:  750.0d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.EscrowInfoCardsValidationSteps.ThenUpdatedComputedAggregateCushionValueShouldDisplayOnEscrowInfo() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\EscrowInfoCardsValidationSteps.cs:line 1015
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedAggregateCushionValueShouldDisplayOnEscrowInfo() (0.0s)
+Thread#0:B:And updated/computed Aggregate Total Annual Disbursed value should display on Escrow Info
+Thread#0:T:NUnit.Framework.AssertionException:   Aggregate Total Annual Disbursed value does not match as expected with the difference of 3034.68
+Thread#0:T:  Expected: 3784.6799999999998d
+Thread#0:T:  But was:  750.0d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.EscrowInfoCardsValidationSteps.ThenUpdatedComputedAggregateTotalAnnualDisbursedValueShouldDisplayOnEscrowInfo() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\EscrowInfoCardsValidationSteps.cs:line 1053
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedAggregateTotalAnnualDisbursedValueShouldDisplayOnEscrowInfo() (0.0s)
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #421 from normal test queue 
+Thread#0:Scheduler: considering testitem #421 for thread
+Thread#0:Scheduler: using testitem #421 for thread
+Thread#0:Scheduler: Test #421 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #420/0 is finished on thread #0 as Succeeded within 7.0847764 seconds
+Thread#0: Test #421/0 is started on thread #0
+Thread#0:B:Given user is at TRID application homepage
+Thread#0:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (1.2s)
+Thread#0:B:And user have Escrow Info data from excel sheet EscrowInfo for the scenario 4
+Thread#0:T:done: EscrowInfoCardsValidationSteps.GivenUserHaveEscrowInfoDataFromExcelSheetForTheScenario("EscrowInfo", 4) (0.9s)
+Thread#0:B:When user upload json file for the scenario
+Thread#0:T:done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (1.9s)
+Thread#0:B:And user navigates to Escrow Info Cards Page
+Thread#0:T:done: EscrowInfoCardsValidationSteps.WhenUserNavigatesToEscrowInfoCardsPage() (0.7s)
+Thread#0:B:Then updated/computed Insurance Initial Deposit value should display on Escrow Info
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedInfoValue :149.88
+Thread#0:T:ActualInfoValue :149.88
+Thread#0:T:============================================================
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedInsuranceInitialDepositValueShouldDisplayOnEscrowInfo() (0.0s)
+Thread#0:B:And updated/computed Insurance Period Deposit value should display on Escrow Info
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedInfoValue :34.62
+Thread#0:T:ActualInfoValue :34.62
+Thread#0:T:============================================================
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedInsurancePeriodDepositValueShouldDisplayOnEscrowInfo() (0.0s)
+Thread#0:B:And updated/computed Insurance Low Balance value should display on Escrow Info
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedInfoValue :150
+Thread#0:T:ActualInfoValue :150
+Thread#0:T:============================================================
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedInsuranceLowBalanceValueShouldDisplayOnEscrowInfo() (0.0s)
+Thread#0:B:And updated/computed Insurance Cushion value should display on Escrow Info
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedInfoValue :150
+Thread#0:T:ActualInfoValue :150
+Thread#0:T:============================================================
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedInsuranceCushionValueShouldDisplayOnEscrowInfo() (0.0s)
+Thread#0:B:And updated/computed Insurance Total Annual Disbursed value should display on Escrow Info
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedInfoValue :900
+Thread#0:T:ActualInfoValue :900
+Thread#0:T:============================================================
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedInsuranceTotalAnnualDisbursedValueShouldDisplayOnEscrowInfo() (0.0s)
+Thread#0:B:And updated/computed Tax Initial Deposit value should display on Escrow Info
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedInfoValue :1230.73
+Thread#0:T:ActualInfoValue :1230.73
+Thread#0:T:============================================================
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedTaxInitialDepositValueShouldDisplayOnEscrowInfo() (0.0s)
+Thread#0:B:And updated/computed Tax Period Deposit value should display on Escrow Info
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedInfoValue :92.31
+Thread#0:T:ActualInfoValue :92.31
+Thread#0:T:============================================================
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedTaxPeriodDepositValueShouldDisplayOnEscrowInfo() (0.0s)
+Thread#0:B:And updated/computed Tax Low Balance value should display on Escrow Info
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedInfoValue :400
+Thread#0:T:ActualInfoValue :400
+Thread#0:T:============================================================
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedTaxLowBalanceValueShouldDisplayOnEscrowInfo() (0.0s)
+Thread#0:B:And updated/computed Tax Cushion value should display on Escrow Info
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedInfoValue :400
+Thread#0:T:ActualInfoValue :400
+Thread#0:T:============================================================
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedTaxCushionValueShouldDisplayOnEscrowInfo() (0.0s)
+Thread#0:B:And updated/computed Tax Total Annual Disbursed value should display on Escrow Info
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedInfoValue :2400
+Thread#0:T:ActualInfoValue :2400
+Thread#0:T:============================================================
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedTaxTotalAnnualDisbursedValueShouldDisplayOnEscrowInfo() (0.0s)
+Thread#0:B:And updated/computed PMI Initial Deposit value should display on Escrow Info
+Thread#0:T:NUnit.Framework.AssertionException:   PMI Initial Deposit value does not match as expected with the difference of 15.55
+Thread#0:T:  Expected: 15.550000000000001d
+Thread#0:T:  But was:  0.0d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.EscrowInfoCardsValidationSteps.ThenUpdatedComputedPmiInitialDepositValueShouldDisplayOnEscrowInfo() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\EscrowInfoCardsValidationSteps.cs:line 398
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedPmiInitialDepositValueShouldDisplayOnEscrowInfo() (0.1s)
+Thread#0:B:And updated/computed PMI Period Deposit value should display on Escrow Info
+Thread#0:T:NUnit.Framework.AssertionException:   PMI Period Deposit value does not match as expected with the difference of 18.64
+Thread#0:T:  Expected: 18.640000000000001d
+Thread#0:T:  But was:  0.0d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.EscrowInfoCardsValidationSteps.ThenUpdatedComputedPmiPeriodDepositValueShouldDisplayOnEscrowInfo() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\EscrowInfoCardsValidationSteps.cs:line 432
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedPmiPeriodDepositValueShouldDisplayOnEscrowInfo() (0.1s)
+Thread#0:B:And updated/computed PMI Low Balance value should display on Escrow Info
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedInfoValue :0
+Thread#0:T:ActualInfoValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedPmiLowBalanceValueShouldDisplayOnEscrowInfo() (0.0s)
+Thread#0:B:And updated/computed PMI Cushion value should display on Escrow Info
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedInfoValue :0
+Thread#0:T:ActualInfoValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedPmiCushionValueShouldDisplayOnEscrowInfo() (0.0s)
+Thread#0:B:And updated/computed PMI Total Annual Disbursed value should display on Escrow Info
+Thread#0:T:NUnit.Framework.AssertionException:   PMI Total Annual Disbursed value does not match as expected with the difference of 484.68
+Thread#0:T:  Expected: 484.68000000000001d
+Thread#0:T:  But was:  0.0d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.EscrowInfoCardsValidationSteps.ThenUpdatedComputedPmiTotalAnnualDisbursedValueShouldDisplayOnEscrowInfo() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\EscrowInfoCardsValidationSteps.cs:line 533
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedPmiTotalAnnualDisbursedValueShouldDisplayOnEscrowInfo() (0.1s)
+Thread#0:B:And updated/computed Other1 Initial Deposit value should display on Escrow Info
+Thread#0:T:OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//td[div[div[span[text()='Other1']]]]/following-sibling::td[1]//span"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.EscrowInfoCardsValidationSteps.ThenUpdatedComputedOther1InitialDepositValueShouldDisplayOnEscrowInfo() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\EscrowInfoCardsValidationSteps.cs:line 565
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedOther1InitialDepositValueShouldDisplayOnEscrowInfo() (0.1s)
+Thread#0:B:And updated/computed Other1 Period Deposit value should display on Escrow Info
+Thread#0:T:OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//td[div[div[span[text()='Other1']]]]/following-sibling::td[2]//span"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.EscrowInfoCardsValidationSteps.ThenUpdatedComputedOther1PeriodDepositValueShouldDisplayOnEscrowInfo() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\EscrowInfoCardsValidationSteps.cs:line 599
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedOther1PeriodDepositValueShouldDisplayOnEscrowInfo() (0.1s)
+Thread#0:B:And updated/computed Other1 Low Balance value should display on Escrow Info
+Thread#0:T:OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//td[div[div[span[text()='Other1']]]]/following-sibling::td[3]//span"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.EscrowInfoCardsValidationSteps.ThenUpdatedComputedOther1LowBalanceValueShouldDisplayOnEscrowInfo() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\EscrowInfoCardsValidationSteps.cs:line 634
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedOther1LowBalanceValueShouldDisplayOnEscrowInfo() (0.1s)
+Thread#0:B:And updated/computed Other1 Cushion value should display on Escrow Info
+Thread#0:T:OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//td[div[div[span[text()='Other1']]]]/following-sibling::td[4]//span"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.EscrowInfoCardsValidationSteps.ThenUpdatedComputedOther1CushionValueShouldDisplayOnEscrowInfo() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\EscrowInfoCardsValidationSteps.cs:line 669
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedOther1CushionValueShouldDisplayOnEscrowInfo() (0.1s)
+Thread#0:B:And updated/computed Other1 Total Annual Disbursed value should display on Escrow Info
+Thread#0:T:OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//td[div[div[span[text()='Other1']]]]/following-sibling::td[5]//span"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.EscrowInfoCardsValidationSteps.ThenUpdatedComputedOther1TotalAnnualDisbursedValueShouldDisplayOnEscrowInfo() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\EscrowInfoCardsValidationSteps.cs:line 702
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedOther1TotalAnnualDisbursedValueShouldDisplayOnEscrowInfo() (0.1s)
+Thread#0:B:And updated/computed Other2 Initial Deposit value should display on Escrow Info
+Thread#0:T:OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//td[div[div[span[text()='Other2']]]]/following-sibling::td[1]//span"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.EscrowInfoCardsValidationSteps.ThenUpdatedComputedOther2InitialDepositValueShouldDisplayOnEscrowInfo() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\EscrowInfoCardsValidationSteps.cs:line 737
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedOther2InitialDepositValueShouldDisplayOnEscrowInfo() (0.1s)
+Thread#0:B:And updated/computed Other2 Period Deposit value should display on Escrow Info
+Thread#0:T:OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//td[div[div[span[text()='Other2']]]]/following-sibling::td[2]//span"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.EscrowInfoCardsValidationSteps.ThenUpdatedComputedOther2PeriodDepositValueShouldDisplayOnEscrowInfo() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\EscrowInfoCardsValidationSteps.cs:line 771
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedOther2PeriodDepositValueShouldDisplayOnEscrowInfo() (0.1s)
+Thread#0:B:And updated/computed Other2 Low Balance value should display on Escrow Info
+Thread#0:T:OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//td[div[div[span[text()='Other2']]]]/following-sibling::td[3]//span"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.EscrowInfoCardsValidationSteps.ThenUpdatedComputedOther2LowBalanceValueShouldDisplayOnEscrowInfo() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\EscrowInfoCardsValidationSteps.cs:line 805
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedOther2LowBalanceValueShouldDisplayOnEscrowInfo() (0.1s)
+Thread#0:B:And updated/computed Other2 Cushion value should display on Escrow Info
+Thread#0:T:OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//td[div[div[span[text()='Other2']]]]/following-sibling::td[4]//span"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.EscrowInfoCardsValidationSteps.ThenUpdatedComputedOther2CushionValueShouldDisplayOnEscrowInfo() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\EscrowInfoCardsValidationSteps.cs:line 839
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedOther2CushionValueShouldDisplayOnEscrowInfo() (0.1s)
+Thread#0:B:And updated/computed Other2 Total Annual Disbursed value should display on Escrow Info
+Thread#0:T:OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//td[div[div[span[text()='Other2']]]]/following-sibling::td[5]//span"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.EscrowInfoCardsValidationSteps.ThenUpdatedComputedOther2TotalAnnualDisbursedValueShouldDisplayOnEscrowInfo() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\EscrowInfoCardsValidationSteps.cs:line 872
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedOther2TotalAnnualDisbursedValueShouldDisplayOnEscrowInfo() (0.1s)
+Thread#0:B:And updated/computed Aggregate Initial Deposit value should display on Escrow Info
+Thread#0:T:NUnit.Framework.AssertionException:   Aggregate Initial Deposit value does not match as expected with the difference of 6.2399999999999
+Thread#0:T:  Expected: 798.42999999999995d
+Thread#0:T:  But was:  792.19000000000005d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.EscrowInfoCardsValidationSteps.ThenUpdatedComputedAggregateInitialDepositValueShouldDisplayOnEscrowInfo() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\EscrowInfoCardsValidationSteps.cs:line 910
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedAggregateInitialDepositValueShouldDisplayOnEscrowInfo() (0.1s)
+Thread#0:B:And updated/computed Aggregate Period Deposit value should display on Escrow Info
+Thread#0:T:NUnit.Framework.AssertionException:   Aggregate Period Deposit value does not match as expected with the difference of 646.62
+Thread#0:T:  Expected: 145.56999999999999d
+Thread#0:T:  But was:  792.19000000000005d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.EscrowInfoCardsValidationSteps.ThenUpdatedComputedAggregatePeriodDepositValueShouldDisplayOnEscrowInfo() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\EscrowInfoCardsValidationSteps.cs:line 945
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedAggregatePeriodDepositValueShouldDisplayOnEscrowInfo() (0.0s)
+Thread#0:B:And updated/computed Aggregate Low Balance value should display on Escrow Info
+Thread#0:T:NUnit.Framework.AssertionException:   Aggregate Low Balance value does not match as expected with the difference of 242.19
+Thread#0:T:  Expected: 550.0d
+Thread#0:T:  But was:  792.19000000000005d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.EscrowInfoCardsValidationSteps.ThenUpdatedComputedAggregateLowBalanceValueShouldDisplayOnEscrowInfo() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\EscrowInfoCardsValidationSteps.cs:line 980
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedAggregateLowBalanceValueShouldDisplayOnEscrowInfo() (0.0s)
+Thread#0:B:And updated/computed Aggregate Cushion value should display on Escrow Info
+Thread#0:T:NUnit.Framework.AssertionException:   Aggregate Cushion value does not match as expected with the difference of 242.19
+Thread#0:T:  Expected: 550.0d
+Thread#0:T:  But was:  792.19000000000005d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.EscrowInfoCardsValidationSteps.ThenUpdatedComputedAggregateCushionValueShouldDisplayOnEscrowInfo() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\EscrowInfoCardsValidationSteps.cs:line 1015
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedAggregateCushionValueShouldDisplayOnEscrowInfo() (0.0s)
+Thread#0:B:And updated/computed Aggregate Total Annual Disbursed value should display on Escrow Info
+Thread#0:T:NUnit.Framework.AssertionException:   Aggregate Total Annual Disbursed value does not match as expected with the difference of 2992.49
+Thread#0:T:  Expected: 3784.6799999999998d
+Thread#0:T:  But was:  792.19000000000005d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.EscrowInfoCardsValidationSteps.ThenUpdatedComputedAggregateTotalAnnualDisbursedValueShouldDisplayOnEscrowInfo() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\EscrowInfoCardsValidationSteps.cs:line 1053
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedAggregateTotalAnnualDisbursedValueShouldDisplayOnEscrowInfo() (0.0s)
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #422 from normal test queue 
+Thread#0:Scheduler: considering testitem #422 for thread
+Thread#0:Scheduler: using testitem #422 for thread
+Thread#0:Scheduler: Test #422 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #421/0 is finished on thread #0 as Succeeded within 6.570366 seconds
+Thread#0: Test #422/0 is started on thread #0
+Thread#0:B:Given user is at TRID application homepage
+Thread#0:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (1.2s)
+Thread#0:B:And user have Escrow Info data from excel sheet EscrowInfo for the scenario 5
+Thread#0:T:done: EscrowInfoCardsValidationSteps.GivenUserHaveEscrowInfoDataFromExcelSheetForTheScenario("EscrowInfo", 5) (0.8s)
+Thread#0:B:When user upload json file for the scenario
+Thread#0:T:done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (1.8s)
+Thread#0:B:And user navigates to Escrow Info Cards Page
+Thread#0:T:done: EscrowInfoCardsValidationSteps.WhenUserNavigatesToEscrowInfoCardsPage() (0.9s)
+Thread#0:B:Then updated/computed Insurance Initial Deposit value should display on Escrow Info
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedInfoValue :150
+Thread#0:T:ActualInfoValue :150
+Thread#0:T:============================================================
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedInsuranceInitialDepositValueShouldDisplayOnEscrowInfo() (0.0s)
+Thread#0:B:And updated/computed Insurance Period Deposit value should display on Escrow Info
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedInfoValue :37.5
+Thread#0:T:ActualInfoValue :37.5
+Thread#0:T:============================================================
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedInsurancePeriodDepositValueShouldDisplayOnEscrowInfo() (0.0s)
+Thread#0:B:And updated/computed Insurance Low Balance value should display on Escrow Info
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedInfoValue :150
+Thread#0:T:ActualInfoValue :150
+Thread#0:T:============================================================
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedInsuranceLowBalanceValueShouldDisplayOnEscrowInfo() (0.0s)
+Thread#0:B:And updated/computed Insurance Cushion value should display on Escrow Info
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedInfoValue :150
+Thread#0:T:ActualInfoValue :150
+Thread#0:T:============================================================
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedInsuranceCushionValueShouldDisplayOnEscrowInfo() (0.0s)
+Thread#0:B:And updated/computed Insurance Total Annual Disbursed value should display on Escrow Info
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedInfoValue :900
+Thread#0:T:ActualInfoValue :900
+Thread#0:T:============================================================
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedInsuranceTotalAnnualDisbursedValueShouldDisplayOnEscrowInfo() (0.0s)
+Thread#0:B:And updated/computed Tax Initial Deposit value should display on Escrow Info
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedInfoValue :1200
+Thread#0:T:ActualInfoValue :1200
+Thread#0:T:============================================================
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedTaxInitialDepositValueShouldDisplayOnEscrowInfo() (0.0s)
+Thread#0:B:And updated/computed Tax Period Deposit value should display on Escrow Info
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedInfoValue :100
+Thread#0:T:ActualInfoValue :100
+Thread#0:T:============================================================
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedTaxPeriodDepositValueShouldDisplayOnEscrowInfo() (0.0s)
+Thread#0:B:And updated/computed Tax Low Balance value should display on Escrow Info
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedInfoValue :400
+Thread#0:T:ActualInfoValue :400
+Thread#0:T:============================================================
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedTaxLowBalanceValueShouldDisplayOnEscrowInfo() (0.0s)
+Thread#0:B:And updated/computed Tax Cushion value should display on Escrow Info
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedInfoValue :400
+Thread#0:T:ActualInfoValue :400
+Thread#0:T:============================================================
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedTaxCushionValueShouldDisplayOnEscrowInfo() (0.0s)
+Thread#0:B:And updated/computed Tax Total Annual Disbursed value should display on Escrow Info
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedInfoValue :2400
+Thread#0:T:ActualInfoValue :2400
+Thread#0:T:============================================================
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedTaxTotalAnnualDisbursedValueShouldDisplayOnEscrowInfo() (0.0s)
+Thread#0:B:And updated/computed PMI Initial Deposit value should display on Escrow Info
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedInfoValue :0
+Thread#0:T:ActualInfoValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedPmiInitialDepositValueShouldDisplayOnEscrowInfo() (0.0s)
+Thread#0:B:And updated/computed PMI Period Deposit value should display on Escrow Info
+Thread#0:T:NUnit.Framework.AssertionException:   PMI Period Deposit value does not match as expected with the difference of 20.2
+Thread#0:T:  Expected: 20.199999999999999d
+Thread#0:T:  But was:  0.0d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.EscrowInfoCardsValidationSteps.ThenUpdatedComputedPmiPeriodDepositValueShouldDisplayOnEscrowInfo() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\EscrowInfoCardsValidationSteps.cs:line 432
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedPmiPeriodDepositValueShouldDisplayOnEscrowInfo() (0.1s)
+Thread#0:B:And updated/computed PMI Low Balance value should display on Escrow Info
+Thread#0:T:NUnit.Framework.AssertionException:   PMI Low Balance value does not match as expected with the difference of 0.01
+Thread#0:T:  Expected: 0.01d
+Thread#0:T:  But was:  0.0d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.EscrowInfoCardsValidationSteps.ThenUpdatedComputedPmiLowBalanceValueShouldDisplayOnEscrowInfo() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\EscrowInfoCardsValidationSteps.cs:line 466
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedPmiLowBalanceValueShouldDisplayOnEscrowInfo() (0.1s)
+Thread#0:B:And updated/computed PMI Cushion value should display on Escrow Info
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedInfoValue :0
+Thread#0:T:ActualInfoValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedPmiCushionValueShouldDisplayOnEscrowInfo() (0.0s)
+Thread#0:B:And updated/computed PMI Total Annual Disbursed value should display on Escrow Info
+Thread#0:T:NUnit.Framework.AssertionException:   PMI Total Annual Disbursed value does not match as expected with the difference of 484.68
+Thread#0:T:  Expected: 484.68000000000001d
+Thread#0:T:  But was:  0.0d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.EscrowInfoCardsValidationSteps.ThenUpdatedComputedPmiTotalAnnualDisbursedValueShouldDisplayOnEscrowInfo() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\EscrowInfoCardsValidationSteps.cs:line 533
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedPmiTotalAnnualDisbursedValueShouldDisplayOnEscrowInfo() (0.1s)
+Thread#0:B:And updated/computed Other1 Initial Deposit value should display on Escrow Info
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedInfoValue :0
+Thread#0:T:ActualInfoValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedOther1InitialDepositValueShouldDisplayOnEscrowInfo() (0.0s)
+Thread#0:B:And updated/computed Other1 Period Deposit value should display on Escrow Info
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedInfoValue :0
+Thread#0:T:ActualInfoValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedOther1PeriodDepositValueShouldDisplayOnEscrowInfo() (0.0s)
+Thread#0:B:And updated/computed Other1 Low Balance value should display on Escrow Info
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedInfoValue :0
+Thread#0:T:ActualInfoValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedOther1LowBalanceValueShouldDisplayOnEscrowInfo() (0.0s)
+Thread#0:B:And updated/computed Other1 Cushion value should display on Escrow Info
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedInfoValue :0
+Thread#0:T:ActualInfoValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedOther1CushionValueShouldDisplayOnEscrowInfo() (0.0s)
+Thread#0:B:And updated/computed Other1 Total Annual Disbursed value should display on Escrow Info
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedInfoValue :0
+Thread#0:T:ActualInfoValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedOther1TotalAnnualDisbursedValueShouldDisplayOnEscrowInfo() (0.1s)
+Thread#0:B:And updated/computed Other2 Initial Deposit value should display on Escrow Info
+Thread#0:T:OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//td[div[div[span[text()='Other2']]]]/following-sibling::td[1]//span"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.EscrowInfoCardsValidationSteps.ThenUpdatedComputedOther2InitialDepositValueShouldDisplayOnEscrowInfo() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\EscrowInfoCardsValidationSteps.cs:line 737
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedOther2InitialDepositValueShouldDisplayOnEscrowInfo() (0.1s)
+Thread#0:B:And updated/computed Other2 Period Deposit value should display on Escrow Info
+Thread#0:T:OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//td[div[div[span[text()='Other2']]]]/following-sibling::td[2]//span"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.EscrowInfoCardsValidationSteps.ThenUpdatedComputedOther2PeriodDepositValueShouldDisplayOnEscrowInfo() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\EscrowInfoCardsValidationSteps.cs:line 771
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedOther2PeriodDepositValueShouldDisplayOnEscrowInfo() (0.1s)
+Thread#0:B:And updated/computed Other2 Low Balance value should display on Escrow Info
+Thread#0:T:OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//td[div[div[span[text()='Other2']]]]/following-sibling::td[3]//span"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.EscrowInfoCardsValidationSteps.ThenUpdatedComputedOther2LowBalanceValueShouldDisplayOnEscrowInfo() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\EscrowInfoCardsValidationSteps.cs:line 805
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedOther2LowBalanceValueShouldDisplayOnEscrowInfo() (0.1s)
+Thread#0:B:And updated/computed Other2 Cushion value should display on Escrow Info
+Thread#0:T:OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//td[div[div[span[text()='Other2']]]]/following-sibling::td[4]//span"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.EscrowInfoCardsValidationSteps.ThenUpdatedComputedOther2CushionValueShouldDisplayOnEscrowInfo() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\EscrowInfoCardsValidationSteps.cs:line 839
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedOther2CushionValueShouldDisplayOnEscrowInfo() (0.1s)
+Thread#0:B:And updated/computed Other2 Total Annual Disbursed value should display on Escrow Info
+Thread#0:T:OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//td[div[div[span[text()='Other2']]]]/following-sibling::td[5]//span"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.EscrowInfoCardsValidationSteps.ThenUpdatedComputedOther2TotalAnnualDisbursedValueShouldDisplayOnEscrowInfo() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\EscrowInfoCardsValidationSteps.cs:line 872
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedOther2TotalAnnualDisbursedValueShouldDisplayOnEscrowInfo() (0.1s)
+Thread#0:B:And updated/computed Aggregate Initial Deposit value should display on Escrow Info
+Thread#0:T:NUnit.Framework.AssertionException:   Aggregate Initial Deposit value does not match as expected with the difference of 0.0800000000000409
+Thread#0:T:  Expected: 749.91999999999996d
+Thread#0:T:  But was:  750.0d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.EscrowInfoCardsValidationSteps.ThenUpdatedComputedAggregateInitialDepositValueShouldDisplayOnEscrowInfo() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\EscrowInfoCardsValidationSteps.cs:line 910
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedAggregateInitialDepositValueShouldDisplayOnEscrowInfo() (0.1s)
+Thread#0:B:And updated/computed Aggregate Period Deposit value should display on Escrow Info
+Thread#0:T:NUnit.Framework.AssertionException:   Aggregate Period Deposit value does not match as expected with the difference of 592.3
+Thread#0:T:  Expected: 157.69999999999999d
+Thread#0:T:  But was:  750.0d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.EscrowInfoCardsValidationSteps.ThenUpdatedComputedAggregatePeriodDepositValueShouldDisplayOnEscrowInfo() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\EscrowInfoCardsValidationSteps.cs:line 945
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedAggregatePeriodDepositValueShouldDisplayOnEscrowInfo() (0.0s)
+Thread#0:B:And updated/computed Aggregate Low Balance value should display on Escrow Info
+Thread#0:T:NUnit.Framework.AssertionException:   Aggregate Low Balance value does not match as expected with the difference of 200
+Thread#0:T:  Expected: 550.0d
+Thread#0:T:  But was:  750.0d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.EscrowInfoCardsValidationSteps.ThenUpdatedComputedAggregateLowBalanceValueShouldDisplayOnEscrowInfo() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\EscrowInfoCardsValidationSteps.cs:line 980
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedAggregateLowBalanceValueShouldDisplayOnEscrowInfo() (0.1s)
+Thread#0:B:And updated/computed Aggregate Cushion value should display on Escrow Info
+Thread#0:T:NUnit.Framework.AssertionException:   Aggregate Cushion value does not match as expected with the difference of 200
+Thread#0:T:  Expected: 550.0d
+Thread#0:T:  But was:  750.0d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.EscrowInfoCardsValidationSteps.ThenUpdatedComputedAggregateCushionValueShouldDisplayOnEscrowInfo() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\EscrowInfoCardsValidationSteps.cs:line 1015
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedAggregateCushionValueShouldDisplayOnEscrowInfo() (0.0s)
+Thread#0:B:And updated/computed Aggregate Total Annual Disbursed value should display on Escrow Info
+Thread#0:T:NUnit.Framework.AssertionException:   Aggregate Total Annual Disbursed value does not match as expected with the difference of 3034.68
+Thread#0:T:  Expected: 3784.6799999999998d
+Thread#0:T:  But was:  750.0d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.EscrowInfoCardsValidationSteps.ThenUpdatedComputedAggregateTotalAnnualDisbursedValueShouldDisplayOnEscrowInfo() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\EscrowInfoCardsValidationSteps.cs:line 1053
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedAggregateTotalAnnualDisbursedValueShouldDisplayOnEscrowInfo() (0.0s)
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: at the end of normal test queue
+Thread#0:Scheduler: enumerator for thread is at end
+Thread#0:Scheduler: No more tests for thread 
+Thread#0:T:##########################################################
+Thread#0:T:##########################################################
+Thread#0:T:====================================================================================
+Thread#0:T:Scenario Number : 4
+Thread#0:T:The total number of cards Failue: 48
+Thread#0:T:Name of cards Failed: || PMIPeriodDeposit || : NUnit.Framework.AssertionException:   PMI Period Deposit value does not match as expected with the difference of 40.39
+Thread#0:T:  Expected: 40.390000000000001d
+Thread#0:T:  But was:  0.0d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.EscrowInfoCardsValidationSteps.ThenUpdatedComputedPmiPeriodDepositValueShouldDisplayOnEscrowInfo() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\EscrowInfoCardsValidationSteps.cs:line 432 
+Thread#0:T: ====================================================================================
+Thread#0:T:|| PMITotalAnnualDisbursed || : NUnit.Framework.AssertionException:   PMI Total Annual Disbursed value does not match as expected with the difference of 484.68
+Thread#0:T:  Expected: 484.68000000000001d
+Thread#0:T:  But was:  0.0d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.EscrowInfoCardsValidationSteps.ThenUpdatedComputedPmiTotalAnnualDisbursedValueShouldDisplayOnEscrowInfo() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\EscrowInfoCardsValidationSteps.cs:line 533 
+Thread#0:T: ====================================================================================
+Thread#0:T:|| AggregatePeriodDeposit || : NUnit.Framework.AssertionException:   Aggregate Period Deposit value does not match as expected with the difference of 959.61
+Thread#0:T:  Expected: 240.38999999999999d
+Thread#0:T:  But was:  1200.0d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.EscrowInfoCardsValidationSteps.ThenUpdatedComputedAggregatePeriodDepositValueShouldDisplayOnEscrowInfo() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\EscrowInfoCardsValidationSteps.cs:line 945 
+Thread#0:T: ====================================================================================
+Thread#0:T:|| AggregateLowBalance || : NUnit.Framework.AssertionException:   Aggregate Low Balance value does not match as expected with the difference of 800
+Thread#0:T:  Expected: 400.0d
+Thread#0:T:  But was:  1200.0d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.EscrowInfoCardsValidationSteps.ThenUpdatedComputedAggregateLowBalanceValueShouldDisplayOnEscrowInfo() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\EscrowInfoCardsValidationSteps.cs:line 980 
+Thread#0:T: ====================================================================================
+Thread#0:T:|| AggregateCushion || : NUnit.Framework.AssertionException:   Aggregate Cushion value does not match as expected with the difference of 800
+Thread#0:T:  Expected: 400.0d
+Thread#0:T:  But was:  1200.0d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.EscrowInfoCardsValidationSteps.ThenUpdatedComputedAggregateCushionValueShouldDisplayOnEscrowInfo() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\EscrowInfoCardsValidationSteps.cs:line 1015 
+Thread#0:T: ====================================================================================
+Thread#0:T:|| AggregateTotalAnnualDisbursed || : NUnit.Framework.AssertionException:   Aggregate Total Annual Disbursed value does not match as expected with the difference of 1684.68
+Thread#0:T:  Expected: 2884.6799999999998d
+Thread#0:T:  But was:  1200.0d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.EscrowInfoCardsValidationSteps.ThenUpdatedComputedAggregateTotalAnnualDisbursedValueShouldDisplayOnEscrowInfo() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\EscrowInfoCardsValidationSteps.cs:line 1053 
+Thread#0:T: ====================================================================================
+Thread#0:T:|| PMIPeriodDeposit || : NUnit.Framework.AssertionException:   PMI Period Deposit value does not match as expected with the difference of 80.78
+Thread#0:T:  Expected: 80.780000000000001d
+Thread#0:T:  But was:  0.0d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.EscrowInfoCardsValidationSteps.ThenUpdatedComputedPmiPeriodDepositValueShouldDisplayOnEscrowInfo() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\EscrowInfoCardsValidationSteps.cs:line 432 
+Thread#0:T: ====================================================================================
+Thread#0:T:|| PMITotalAnnualDisbursed || : NUnit.Framework.AssertionException:   PMI Total Annual Disbursed value does not match as expected with the difference of 484.68
+Thread#0:T:  Expected: 484.68000000000001d
+Thread#0:T:  But was:  0.0d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.EscrowInfoCardsValidationSteps.ThenUpdatedComputedPmiTotalAnnualDisbursedValueShouldDisplayOnEscrowInfo() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\EscrowInfoCardsValidationSteps.cs:line 533 
+Thread#0:T: ====================================================================================
+Thread#0:T:|| Other2InitialDeposit || : OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//td[div[div[span[text()='Other2']]]]/following-sibling::td[1]//span"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.EscrowInfoCardsValidationSteps.ThenUpdatedComputedOther2InitialDepositValueShouldDisplayOnEscrowInfo() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\EscrowInfoCardsValidationSteps.cs:line 737 
+Thread#0:T: ====================================================================================
+Thread#0:T:|| Other2PeriodDeposit || : OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//td[div[div[span[text()='Other2']]]]/following-sibling::td[2]//span"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.EscrowInfoCardsValidationSteps.ThenUpdatedComputedOther2PeriodDepositValueShouldDisplayOnEscrowInfo() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\EscrowInfoCardsValidationSteps.cs:line 771 
+Thread#0:T: ====================================================================================
+Thread#0:T:|| Other2LowBalance || : OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//td[div[div[span[text()='Other2']]]]/following-sibling::td[3]//span"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.EscrowInfoCardsValidationSteps.ThenUpdatedComputedOther2LowBalanceValueShouldDisplayOnEscrowInfo() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\EscrowInfoCardsValidationSteps.cs:line 805 
+Thread#0:T: ====================================================================================
+Thread#0:T:|| Other2Cushion || : OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//td[div[div[span[text()='Other2']]]]/following-sibling::td[4]//span"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.EscrowInfoCardsValidationSteps.ThenUpdatedComputedOther2CushionValueShouldDisplayOnEscrowInfo() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\EscrowInfoCardsValidationSteps.cs:line 839 
+Thread#0:T: ====================================================================================
+Thread#0:T:|| Other2TotalAnnualDisbursed || : OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//td[div[div[span[text()='Other2']]]]/following-sibling::td[5]//span"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.EscrowInfoCardsValidationSteps.ThenUpdatedComputedOther2TotalAnnualDisbursedValueShouldDisplayOnEscrowInfo() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\EscrowInfoCardsValidationSteps.cs:line 872 
+Thread#0:T: ====================================================================================
+Thread#0:T:|| AggregatePeriodDeposit || : NUnit.Framework.AssertionException:   Aggregate Period Deposit value does not match as expected with the difference of 119.22
+Thread#0:T:  Expected: 630.77999999999997d
+Thread#0:T:  But was:  750.0d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.EscrowInfoCardsValidationSteps.ThenUpdatedComputedAggregatePeriodDepositValueShouldDisplayOnEscrowInfo() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\EscrowInfoCardsValidationSteps.cs:line 945 
+Thread#0:T: ====================================================================================
+Thread#0:T:|| AggregateLowBalance || : NUnit.Framework.AssertionException:   Aggregate Low Balance value does not match as expected with the difference of 200
+Thread#0:T:  Expected: 550.0d
+Thread#0:T:  But was:  750.0d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.EscrowInfoCardsValidationSteps.ThenUpdatedComputedAggregateLowBalanceValueShouldDisplayOnEscrowInfo() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\EscrowInfoCardsValidationSteps.cs:line 980 
+Thread#0:T: ====================================================================================
+Thread#0:T:|| AggregateCushion || : NUnit.Framework.AssertionException:   Aggregate Cushion value does not match as expected with the difference of 200
+Thread#0:T:  Expected: 550.0d
+Thread#0:T:  But was:  750.0d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.EscrowInfoCardsValidationSteps.ThenUpdatedComputedAggregateCushionValueShouldDisplayOnEscrowInfo() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\EscrowInfoCardsValidationSteps.cs:line 1015 
+Thread#0:T: ====================================================================================
+Thread#0:T:|| AggregateTotalAnnualDisbursed || : NUnit.Framework.AssertionException:   Aggregate Total Annual Disbursed value does not match as expected with the difference of 3034.68
+Thread#0:T:  Expected: 3784.6799999999998d
+Thread#0:T:  But was:  750.0d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.EscrowInfoCardsValidationSteps.ThenUpdatedComputedAggregateTotalAnnualDisbursedValueShouldDisplayOnEscrowInfo() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\EscrowInfoCardsValidationSteps.cs:line 1053 
+Thread#0:T: ====================================================================================
+Thread#0:T:|| PMIInitialDeposit || : NUnit.Framework.AssertionException:   PMI Initial Deposit value does not match as expected with the difference of 15.55
+Thread#0:T:  Expected: 15.550000000000001d
+Thread#0:T:  But was:  0.0d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.EscrowInfoCardsValidationSteps.ThenUpdatedComputedPmiInitialDepositValueShouldDisplayOnEscrowInfo() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\EscrowInfoCardsValidationSteps.cs:line 398 
+Thread#0:T: ====================================================================================
+Thread#0:T:|| PMIPeriodDeposit || : NUnit.Framework.AssertionException:   PMI Period Deposit value does not match as expected with the difference of 18.64
+Thread#0:T:  Expected: 18.640000000000001d
+Thread#0:T:  But was:  0.0d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.EscrowInfoCardsValidationSteps.ThenUpdatedComputedPmiPeriodDepositValueShouldDisplayOnEscrowInfo() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\EscrowInfoCardsValidationSteps.cs:line 432 
+Thread#0:T: ====================================================================================
+Thread#0:T:|| PMITotalAnnualDisbursed || : NUnit.Framework.AssertionException:   PMI Total Annual Disbursed value does not match as expected with the difference of 484.68
+Thread#0:T:  Expected: 484.68000000000001d
+Thread#0:T:  But was:  0.0d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.EscrowInfoCardsValidationSteps.ThenUpdatedComputedPmiTotalAnnualDisbursedValueShouldDisplayOnEscrowInfo() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\EscrowInfoCardsValidationSteps.cs:line 533 
+Thread#0:T: ====================================================================================
+Thread#0:T:|| Other1InitialDeposit || : OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//td[div[div[span[text()='Other1']]]]/following-sibling::td[1]//span"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.EscrowInfoCardsValidationSteps.ThenUpdatedComputedOther1InitialDepositValueShouldDisplayOnEscrowInfo() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\EscrowInfoCardsValidationSteps.cs:line 565 
+Thread#0:T: ====================================================================================
+Thread#0:T:|| Other1PeriodDeposit || : OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//td[div[div[span[text()='Other1']]]]/following-sibling::td[2]//span"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.EscrowInfoCardsValidationSteps.ThenUpdatedComputedOther1PeriodDepositValueShouldDisplayOnEscrowInfo() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\EscrowInfoCardsValidationSteps.cs:line 599 
+Thread#0:T: ====================================================================================
+Thread#0:T:|| Other1LowBalance || : OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//td[div[div[span[text()='Other1']]]]/following-sibling::td[3]//span"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.EscrowInfoCardsValidationSteps.ThenUpdatedComputedOther1LowBalanceValueShouldDisplayOnEscrowInfo() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\EscrowInfoCardsValidationSteps.cs:line 634 
+Thread#0:T: ====================================================================================
+Thread#0:T:|| Other1Cushion || : OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//td[div[div[span[text()='Other1']]]]/following-sibling::td[4]//span"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.EscrowInfoCardsValidationSteps.ThenUpdatedComputedOther1CushionValueShouldDisplayOnEscrowInfo() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\EscrowInfoCardsValidationSteps.cs:line 669 
+Thread#0:T: ====================================================================================
+Thread#0:T:|| Other1TotalAnnualDisbursed || : OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//td[div[div[span[text()='Other1']]]]/following-sibling::td[5]//span"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.EscrowInfoCardsValidationSteps.ThenUpdatedComputedOther1TotalAnnualDisbursedValueShouldDisplayOnEscrowInfo() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\EscrowInfoCardsValidationSteps.cs:line 702 
+Thread#0:T: ====================================================================================
+Thread#0:T:|| Other2InitialDeposit || : OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//td[div[div[span[text()='Other2']]]]/following-sibling::td[1]//span"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.EscrowInfoCardsValidationSteps.ThenUpdatedComputedOther2InitialDepositValueShouldDisplayOnEscrowInfo() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\EscrowInfoCardsValidationSteps.cs:line 737 
+Thread#0:T: ====================================================================================
+Thread#0:T:|| Other2PeriodDeposit || : OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//td[div[div[span[text()='Other2']]]]/following-sibling::td[2]//span"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.EscrowInfoCardsValidationSteps.ThenUpdatedComputedOther2PeriodDepositValueShouldDisplayOnEscrowInfo() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\EscrowInfoCardsValidationSteps.cs:line 771 
+Thread#0:T: ====================================================================================
+Thread#0:T:|| Other2LowBalance || : OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//td[div[div[span[text()='Other2']]]]/following-sibling::td[3]//span"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.EscrowInfoCardsValidationSteps.ThenUpdatedComputedOther2LowBalanceValueShouldDisplayOnEscrowInfo() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\EscrowInfoCardsValidationSteps.cs:line 805 
+Thread#0:T: ====================================================================================
+Thread#0:T:|| Other2Cushion || : OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//td[div[div[span[text()='Other2']]]]/following-sibling::td[4]//span"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.EscrowInfoCardsValidationSteps.ThenUpdatedComputedOther2CushionValueShouldDisplayOnEscrowInfo() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\EscrowInfoCardsValidationSteps.cs:line 839 
+Thread#0:T: ====================================================================================
+Thread#0:T:|| Other2TotalAnnualDisbursed || : OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//td[div[div[span[text()='Other2']]]]/following-sibling::td[5]//span"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.EscrowInfoCardsValidationSteps.ThenUpdatedComputedOther2TotalAnnualDisbursedValueShouldDisplayOnEscrowInfo() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\EscrowInfoCardsValidationSteps.cs:line 872 
+Thread#0:T: ====================================================================================
+Thread#0:T:|| AggregateInitialDeposit || : NUnit.Framework.AssertionException:   Aggregate Initial Deposit value does not match as expected with the difference of 6.2399999999999
+Thread#0:T:  Expected: 798.42999999999995d
+Thread#0:T:  But was:  792.19000000000005d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.EscrowInfoCardsValidationSteps.ThenUpdatedComputedAggregateInitialDepositValueShouldDisplayOnEscrowInfo() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\EscrowInfoCardsValidationSteps.cs:line 910 
+Thread#0:T: ====================================================================================
+Thread#0:T:|| AggregatePeriodDeposit || : NUnit.Framework.AssertionException:   Aggregate Period Deposit value does not match as expected with the difference of 646.62
+Thread#0:T:  Expected: 145.56999999999999d
+Thread#0:T:  But was:  792.19000000000005d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.EscrowInfoCardsValidationSteps.ThenUpdatedComputedAggregatePeriodDepositValueShouldDisplayOnEscrowInfo() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\EscrowInfoCardsValidationSteps.cs:line 945 
+Thread#0:T: ====================================================================================
+Thread#0:T:|| AggregateLowBalance || : NUnit.Framework.AssertionException:   Aggregate Low Balance value does not match as expected with the difference of 242.19
+Thread#0:T:  Expected: 550.0d
+Thread#0:T:  But was:  792.19000000000005d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.EscrowInfoCardsValidationSteps.ThenUpdatedComputedAggregateLowBalanceValueShouldDisplayOnEscrowInfo() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\EscrowInfoCardsValidationSteps.cs:line 980 
+Thread#0:T: ====================================================================================
+Thread#0:T:|| AggregateCushion || : NUnit.Framework.AssertionException:   Aggregate Cushion value does not match as expected with the difference of 242.19
+Thread#0:T:  Expected: 550.0d
+Thread#0:T:  But was:  792.19000000000005d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.EscrowInfoCardsValidationSteps.ThenUpdatedComputedAggregateCushionValueShouldDisplayOnEscrowInfo() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\EscrowInfoCardsValidationSteps.cs:line 1015 
+Thread#0:T: ====================================================================================
+Thread#0:T:|| AggregateTotalAnnualDisbursed || : NUnit.Framework.AssertionException:   Aggregate Total Annual Disbursed value does not match as expected with the difference of 2992.49
+Thread#0:T:  Expected: 3784.6799999999998d
+Thread#0:T:  But was:  792.19000000000005d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.EscrowInfoCardsValidationSteps.ThenUpdatedComputedAggregateTotalAnnualDisbursedValueShouldDisplayOnEscrowInfo() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\EscrowInfoCardsValidationSteps.cs:line 1053 
+Thread#0:T: ====================================================================================
+Thread#0:T:|| PMIPeriodDeposit || : NUnit.Framework.AssertionException:   PMI Period Deposit value does not match as expected with the difference of 20.2
+Thread#0:T:  Expected: 20.199999999999999d
+Thread#0:T:  But was:  0.0d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.EscrowInfoCardsValidationSteps.ThenUpdatedComputedPmiPeriodDepositValueShouldDisplayOnEscrowInfo() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\EscrowInfoCardsValidationSteps.cs:line 432 
+Thread#0:T: ====================================================================================
+Thread#0:T:|| PMILowBalance || : NUnit.Framework.AssertionException:   PMI Low Balance value does not match as expected with the difference of 0.01
+Thread#0:T:  Expected: 0.01d
+Thread#0:T:  But was:  0.0d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.EscrowInfoCardsValidationSteps.ThenUpdatedComputedPmiLowBalanceValueShouldDisplayOnEscrowInfo() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\EscrowInfoCardsValidationSteps.cs:line 466 
+Thread#0:T: ====================================================================================
+Thread#0:T:|| PMITotalAnnualDisbursed || : NUnit.Framework.AssertionException:   PMI Total Annual Disbursed value does not match as expected with the difference of 484.68
+Thread#0:T:  Expected: 484.68000000000001d
+Thread#0:T:  But was:  0.0d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.EscrowInfoCardsValidationSteps.ThenUpdatedComputedPmiTotalAnnualDisbursedValueShouldDisplayOnEscrowInfo() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\EscrowInfoCardsValidationSteps.cs:line 533 
+Thread#0:T: ====================================================================================
+Thread#0:T:|| Other2InitialDeposit || : OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//td[div[div[span[text()='Other2']]]]/following-sibling::td[1]//span"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.EscrowInfoCardsValidationSteps.ThenUpdatedComputedOther2InitialDepositValueShouldDisplayOnEscrowInfo() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\EscrowInfoCardsValidationSteps.cs:line 737 
+Thread#0:T: ====================================================================================
+Thread#0:T:|| Other2PeriodDeposit || : OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//td[div[div[span[text()='Other2']]]]/following-sibling::td[2]//span"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.EscrowInfoCardsValidationSteps.ThenUpdatedComputedOther2PeriodDepositValueShouldDisplayOnEscrowInfo() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\EscrowInfoCardsValidationSteps.cs:line 771 
+Thread#0:T: ====================================================================================
+Thread#0:T:|| Other2LowBalance || : OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//td[div[div[span[text()='Other2']]]]/following-sibling::td[3]//span"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.EscrowInfoCardsValidationSteps.ThenUpdatedComputedOther2LowBalanceValueShouldDisplayOnEscrowInfo() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\EscrowInfoCardsValidationSteps.cs:line 805 
+Thread#0:T: ====================================================================================
+Thread#0:T:|| Other2Cushion || : OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//td[div[div[span[text()='Other2']]]]/following-sibling::td[4]//span"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.EscrowInfoCardsValidationSteps.ThenUpdatedComputedOther2CushionValueShouldDisplayOnEscrowInfo() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\EscrowInfoCardsValidationSteps.cs:line 839 
+Thread#0:T: ====================================================================================
+Thread#0:T:|| Other2TotalAnnualDisbursed || : OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//td[div[div[span[text()='Other2']]]]/following-sibling::td[5]//span"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.EscrowInfoCardsValidationSteps.ThenUpdatedComputedOther2TotalAnnualDisbursedValueShouldDisplayOnEscrowInfo() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\EscrowInfoCardsValidationSteps.cs:line 872 
+Thread#0:T: ====================================================================================
+Thread#0:T:|| AggregateInitialDeposit || : NUnit.Framework.AssertionException:   Aggregate Initial Deposit value does not match as expected with the difference of 0.0800000000000409
+Thread#0:T:  Expected: 749.91999999999996d
+Thread#0:T:  But was:  750.0d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.EscrowInfoCardsValidationSteps.ThenUpdatedComputedAggregateInitialDepositValueShouldDisplayOnEscrowInfo() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\EscrowInfoCardsValidationSteps.cs:line 910 
+Thread#0:T: ====================================================================================
+Thread#0:T:|| AggregatePeriodDeposit || : NUnit.Framework.AssertionException:   Aggregate Period Deposit value does not match as expected with the difference of 592.3
+Thread#0:T:  Expected: 157.69999999999999d
+Thread#0:T:  But was:  750.0d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.EscrowInfoCardsValidationSteps.ThenUpdatedComputedAggregatePeriodDepositValueShouldDisplayOnEscrowInfo() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\EscrowInfoCardsValidationSteps.cs:line 945 
+Thread#0:T: ====================================================================================
+Thread#0:T:|| AggregateLowBalance || : NUnit.Framework.AssertionException:   Aggregate Low Balance value does not match as expected with the difference of 200
+Thread#0:T:  Expected: 550.0d
+Thread#0:T:  But was:  750.0d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.EscrowInfoCardsValidationSteps.ThenUpdatedComputedAggregateLowBalanceValueShouldDisplayOnEscrowInfo() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\EscrowInfoCardsValidationSteps.cs:line 980 
+Thread#0:T: ====================================================================================
+Thread#0:T:|| AggregateCushion || : NUnit.Framework.AssertionException:   Aggregate Cushion value does not match as expected with the difference of 200
+Thread#0:T:  Expected: 550.0d
+Thread#0:T:  But was:  750.0d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.EscrowInfoCardsValidationSteps.ThenUpdatedComputedAggregateCushionValueShouldDisplayOnEscrowInfo() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\EscrowInfoCardsValidationSteps.cs:line 1015 
+Thread#0:T: ====================================================================================
+Thread#0:T:|| AggregateTotalAnnualDisbursed || : NUnit.Framework.AssertionException:   Aggregate Total Annual Disbursed value does not match as expected with the difference of 3034.68
+Thread#0:T:  Expected: 3784.6799999999998d
+Thread#0:T:  But was:  750.0d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.EscrowInfoCardsValidationSteps.ThenUpdatedComputedAggregateTotalAnnualDisbursedValueShouldDisplayOnEscrowInfo() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\EscrowInfoCardsValidationSteps.cs:line 1053 
+Thread#0:T: ====================================================================================
+Thread#0:T:====================================================================================
+Thread#0:T:##########################################################
+Thread#0:T:##########################################################
+Thread#0: Test #422/0 is finished on thread #0 as CleanupFailed within 12.7589456 seconds
+Appdomain Disposed
+Thread#-1:Scheduler: get next test for thread
+Thread#:Scheduler: at the end of normal test queue
+Thread#-1:Scheduler: enumerator for thread is at end
+Total: 4
+Succeeded: 3
+Ignored: 0
+Pending: 0
+Skipped: 0
+Failed: 1

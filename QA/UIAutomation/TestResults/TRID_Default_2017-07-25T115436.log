@@ -1,0 +1,2693 @@
+﻿VS filter: testpath:TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+095 | testpath:TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+004 | testpath:TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+053 | testpath:TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+045 | testpath:TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+054 | testpath:TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+117 | testpath:TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+075 | testpath:TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+001 | testpath:TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+077 | testpath:TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+116 | testpath:TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+041 | testpath:TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+002 | testpath:TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+111 | testpath:TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+013 | testpath:TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+047 | testpath:TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+056 | testpath:TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+073 | testpath:TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+113 | testpath:TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+052 | testpath:TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+021 | testpath:TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+091 | testpath:TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+046 | testpath:TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+097 | testpath:TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+048 | testpath:TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+040 | testpath:TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+008 | testpath:TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+094 | testpath:TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+044 | testpath:TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+070 | testpath:TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+006 | testpath:TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+055 | testpath:TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+057 | testpath:TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+007 | testpath:TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+022 | testpath:TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+019 | testpath:TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+072 | testpath:TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+050 | testpath:TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+112 | testpath:TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+074 | testpath:TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+096 | testpath:TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+043 | testpath:TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+016 | testpath:TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+114 | testpath:TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+012 | testpath:TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+092 | testpath:TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+071 | testpath:TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+076 | testpath:TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+020 | testpath:TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+042 | testpath:TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+011 | testpath:TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+017 | testpath:TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+093 | testpath:TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+115 | testpath:TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+051 | testpath:TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+110 | testpath:TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+090 | testpath:TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+003 | testpath:TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+009 | testpath:TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+014
+Discovering target: Default
+Discovering tests from assembly: F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\bin\Debug\TRID.dll
+Appdomain Disposed
+Test Suite Dump
+#0: TRID/Default - 
+#1: Default - 
+#2: TRID - 
+#142: CardsValidation - 
+#143: Uploading JSON file and Validating cards value on Loan Estimate page, 074 - TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+074
+#144: Uploading JSON file and Validating cards value on Loan Estimate page, 075 - TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+075
+#145: Uploading JSON file and Validating cards value on Loan Estimate page, 076 - TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+076
+#146: Uploading JSON file and Validating cards value on Loan Estimate page, 077 - TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+077
+#147: Uploading JSON file and Validating cards value on Loan Estimate page, 090 - TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+090
+#148: Uploading JSON file and Validating cards value on Loan Estimate page, 091 - TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+091
+#149: Uploading JSON file and Validating cards value on Loan Estimate page, 092 - TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+092
+#150: Uploading JSON file and Validating cards value on Loan Estimate page, 093 - TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+093
+#151: Uploading JSON file and Validating cards value on Loan Estimate page, 094 - TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+094
+#152: Uploading JSON file and Validating cards value on Loan Estimate page, 095 - TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+095
+#153: Uploading JSON file and Validating cards value on Loan Estimate page, 096 - TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+096
+#154: Uploading JSON file and Validating cards value on Loan Estimate page, 097 - TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+097
+#155: Uploading JSON file and Validating cards value on Loan Estimate page, 110 - TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+110
+#156: Uploading JSON file and Validating cards value on Loan Estimate page, 111 - TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+111
+#157: Uploading JSON file and Validating cards value on Loan Estimate page, 112 - TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+112
+#158: Uploading JSON file and Validating cards value on Loan Estimate page, 113 - TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+113
+#159: Uploading JSON file and Validating cards value on Loan Estimate page, 114 - TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+114
+#160: Uploading JSON file and Validating cards value on Loan Estimate page, 115 - TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+115
+#161: Uploading JSON file and Validating cards value on Loan Estimate page, 116 - TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+116
+#162: Uploading JSON file and Validating cards value on Loan Estimate page, 117 - TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+117
+#260: Uploading JSON file and Validating cards value on Loan Estimate page, 001 - TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+001
+#261: Uploading JSON file and Validating cards value on Loan Estimate page, 002 - TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+002
+#262: Uploading JSON file and Validating cards value on Loan Estimate page, 003 - TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+003
+#263: Uploading JSON file and Validating cards value on Loan Estimate page, 004 - TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+004
+#264: Uploading JSON file and Validating cards value on Loan Estimate page, 006 - TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+006
+#265: Uploading JSON file and Validating cards value on Loan Estimate page, 007 - TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+007
+#266: Uploading JSON file and Validating cards value on Loan Estimate page, 008 - TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+008
+#267: Uploading JSON file and Validating cards value on Loan Estimate page, 009 - TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+009
+#268: Uploading JSON file and Validating cards value on Loan Estimate page, 011 - TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+011
+#269: Uploading JSON file and Validating cards value on Loan Estimate page, 012 - TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+012
+#270: Uploading JSON file and Validating cards value on Loan Estimate page, 013 - TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+013
+#271: Uploading JSON file and Validating cards value on Loan Estimate page, 014 - TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+014
+#272: Uploading JSON file and Validating cards value on Loan Estimate page, 016 - TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+016
+#273: Uploading JSON file and Validating cards value on Loan Estimate page, 017 - TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+017
+#274: Uploading JSON file and Validating cards value on Loan Estimate page, 019 - TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+019
+#275: Uploading JSON file and Validating cards value on Loan Estimate page, 020 - TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+020
+#276: Uploading JSON file and Validating cards value on Loan Estimate page, 021 - TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+021
+#277: Uploading JSON file and Validating cards value on Loan Estimate page, 022 - TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+022
+#278: Uploading JSON file and Validating cards value on Loan Estimate page, 040 - TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+040
+#279: Uploading JSON file and Validating cards value on Loan Estimate page, 041 - TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+041
+#280: Uploading JSON file and Validating cards value on Loan Estimate page, 042 - TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+042
+#281: Uploading JSON file and Validating cards value on Loan Estimate page, 043 - TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+043
+#282: Uploading JSON file and Validating cards value on Loan Estimate page, 044 - TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+044
+#283: Uploading JSON file and Validating cards value on Loan Estimate page, 045 - TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+045
+#284: Uploading JSON file and Validating cards value on Loan Estimate page, 046 - TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+046
+#285: Uploading JSON file and Validating cards value on Loan Estimate page, 047 - TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+047
+#286: Uploading JSON file and Validating cards value on Loan Estimate page, 048 - TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+048
+#287: Uploading JSON file and Validating cards value on Loan Estimate page, 050 - TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+050
+#288: Uploading JSON file and Validating cards value on Loan Estimate page, 051 - TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+051
+#289: Uploading JSON file and Validating cards value on Loan Estimate page, 052 - TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+052
+#290: Uploading JSON file and Validating cards value on Loan Estimate page, 053 - TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+053
+#291: Uploading JSON file and Validating cards value on Loan Estimate page, 054 - TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+054
+#292: Uploading JSON file and Validating cards value on Loan Estimate page, 055 - TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+055
+#293: Uploading JSON file and Validating cards value on Loan Estimate page, 056 - TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+056
+#294: Uploading JSON file and Validating cards value on Loan Estimate page, 057 - TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+057
+#295: Uploading JSON file and Validating cards value on Loan Estimate page, 070 - TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+070
+#296: Uploading JSON file and Validating cards value on Loan Estimate page, 071 - TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+071
+#297: Uploading JSON file and Validating cards value on Loan Estimate page, 072 - TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+072
+#298: Uploading JSON file and Validating cards value on Loan Estimate page, 073 - TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+073
+End: Test Suite Dump
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #143 from normal test queue 
+Thread#0:Scheduler: considering testitem #143 for thread
+Thread#0:Scheduler: using testitem #143 for thread
+Thread#0:Scheduler: Test #143 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread #0: creating new test thread executor for TRID, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null (target: Default)
+Loading SpecRun type 'TechTalk.SpecRun.Framework.TestAssemblyExecutor' from: C:\Users\sandees\AppData\Local\Temp\VisualStudioTestExplorerExtensions\SpecRun.Runner.1.5.2\tools\TechTalk.SpecRun.Framework.Executor.dll
+Thread#0: Test #143/0 is started on thread #0
+Thread#0:B:Given user is at TRID application homepage
+Thread#0:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (40.2s)
+Thread#0:B:And user have closing disclosure data from excel sheet ClosingDisclosure for the scenario 55
+Thread#0:T:done: CardsValidationSteps.GivenUserHaveClosingDisclosureDataFromExcelSheetForTheScenario("ClosingDisclosure", 55) (1.4s)
+Thread#0:B:When user upload json file for the scenario
+Thread#0:T:done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (2.1s)
+Thread#0:B:And user navigates to Loan Estimate Cards Page
+Thread#0:T:done: CardsValidationSteps.WhenUserNavigatesToLoanEstimateCardsPage() (1.4s)
+Thread#0:B:Then updated/computed in 5 Years value should display on Loan Estimate
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :42325.51
+Thread#0:T:ActualComputedValue :42325.51
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :42325.51
+Thread#0:T:ActualDisclosedValue :42325.51
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsValueShouldDisplayOnLoanEstimate() (1.4s)
+Thread#0:B:And updated/computed in 5 Years principal value should display on Loan Estimate
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :16061.61
+Thread#0:T:ActualComputedValue :16061.61
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :16061.61
+Thread#0:T:ActualDisclosedValue :16061.61
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsPrincipalValueShouldDisplayOnLoanEstimate() (1.4s)
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #144 from normal test queue 
+Thread#0:Scheduler: considering testitem #144 for thread
+Thread#0:Scheduler: using testitem #144 for thread
+Thread#0:Scheduler: Test #144 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #143/0 is finished on thread #0 as Succeeded within 48.5026491 seconds
+Thread#0: Test #144/0 is started on thread #0
+Thread#0:B:Given user is at TRID application homepage
+Thread#0:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (2.1s)
+Thread#0:B:And user have closing disclosure data from excel sheet ClosingDisclosure for the scenario 56
+Thread#0:T:done: CardsValidationSteps.GivenUserHaveClosingDisclosureDataFromExcelSheetForTheScenario("ClosingDisclosure", 56) (1.2s)
+Thread#0:B:When user upload json file for the scenario
+Thread#0:T:done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (2.1s)
+Thread#0:B:And user navigates to Loan Estimate Cards Page
+Thread#0:T:done: CardsValidationSteps.WhenUserNavigatesToLoanEstimateCardsPage() (0.7s)
+Thread#0:B:Then updated/computed in 5 Years value should display on Loan Estimate
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :39642.2
+Thread#0:T:ActualComputedValue :39642.2
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :39642.2
+Thread#0:T:ActualDisclosedValue :39642.2
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsValueShouldDisplayOnLoanEstimate() (1.3s)
+Thread#0:B:And updated/computed in 5 Years principal value should display on Loan Estimate
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :12756.35
+Thread#0:T:ActualComputedValue :12756.35
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :12756.35
+Thread#0:T:ActualDisclosedValue :12756.35
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsPrincipalValueShouldDisplayOnLoanEstimate() (1.3s)
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #145 from normal test queue 
+Thread#0:Scheduler: considering testitem #145 for thread
+Thread#0:Scheduler: using testitem #145 for thread
+Thread#0:Scheduler: Test #145 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #144/0 is finished on thread #0 as Succeeded within 10.24924 seconds
+Thread#0: Test #145/0 is started on thread #0
+Thread#0:B:Given user is at TRID application homepage
+Thread#0:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (1.9s)
+Thread#0:B:And user have closing disclosure data from excel sheet ClosingDisclosure for the scenario 57
+Thread#0:T:done: CardsValidationSteps.GivenUserHaveClosingDisclosureDataFromExcelSheetForTheScenario("ClosingDisclosure", 57) (1.1s)
+Thread#0:B:When user upload json file for the scenario
+Thread#0:T:done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (2.1s)
+Thread#0:B:And user navigates to Loan Estimate Cards Page
+Thread#0:T:done: CardsValidationSteps.WhenUserNavigatesToLoanEstimateCardsPage() (0.4s)
+Thread#0:B:Then updated/computed in 5 Years value should display on Loan Estimate
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :39789.04
+Thread#0:T:ActualComputedValue :39789.04
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :39789.04
+Thread#0:T:ActualDisclosedValue :39789.04
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsValueShouldDisplayOnLoanEstimate() (1.3s)
+Thread#0:B:And updated/computed in 5 Years principal value should display on Loan Estimate
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :13010.29
+Thread#0:T:ActualComputedValue :13010.29
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :13010.29
+Thread#0:T:ActualDisclosedValue :13010.29
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsPrincipalValueShouldDisplayOnLoanEstimate() (1.2s)
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #146 from normal test queue 
+Thread#0:Scheduler: considering testitem #146 for thread
+Thread#0:Scheduler: using testitem #146 for thread
+Thread#0:Scheduler: Test #146 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #145/0 is finished on thread #0 as Succeeded within 9.6997588 seconds
+Thread#0: Test #146/0 is started on thread #0
+Thread#0:B:Given user is at TRID application homepage
+Thread#0:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (1.3s)
+Thread#0:B:And user have closing disclosure data from excel sheet ClosingDisclosure for the scenario 58
+Thread#0:T:done: CardsValidationSteps.GivenUserHaveClosingDisclosureDataFromExcelSheetForTheScenario("ClosingDisclosure", 58) (1.1s)
+Thread#0:B:When user upload json file for the scenario
+Thread#0:T:done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (2.1s)
+Thread#0:B:And user navigates to Loan Estimate Cards Page
+Thread#0:T:done: CardsValidationSteps.WhenUserNavigatesToLoanEstimateCardsPage() (0.6s)
+Thread#0:B:Then updated/computed in 5 Years value should display on Loan Estimate
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :39399.42
+Thread#0:T:ActualComputedValue :39399.42
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :39399.42
+Thread#0:T:ActualDisclosedValue :39399.42
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsValueShouldDisplayOnLoanEstimate() (1.3s)
+Thread#0:B:And updated/computed in 5 Years principal value should display on Loan Estimate
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :12873.96
+Thread#0:T:ActualComputedValue :12873.96
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :12873.96
+Thread#0:T:ActualDisclosedValue :12873.96
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsPrincipalValueShouldDisplayOnLoanEstimate() (1.2s)
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #147 from normal test queue 
+Thread#0:Scheduler: considering testitem #147 for thread
+Thread#0:Scheduler: using testitem #147 for thread
+Thread#0:Scheduler: Test #147 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #146/0 is finished on thread #0 as Succeeded within 9.1564084 seconds
+Thread#0: Test #147/0 is started on thread #0
+Thread#0:B:Given user is at TRID application homepage
+Thread#0:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (1.3s)
+Thread#0:B:And user have closing disclosure data from excel sheet ClosingDisclosure for the scenario 71
+Thread#0:T:done: CardsValidationSteps.GivenUserHaveClosingDisclosureDataFromExcelSheetForTheScenario("ClosingDisclosure", 71) (1.1s)
+Thread#0:B:When user upload json file for the scenario
+Thread#0:T:done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (2.0s)
+Thread#0:B:And user navigates to Loan Estimate Cards Page
+Thread#0:T:done: CardsValidationSteps.WhenUserNavigatesToLoanEstimateCardsPage() (0.3s)
+Thread#0:B:Then updated/computed in 5 Years value should display on Loan Estimate
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :37840.8
+Thread#0:T:ActualComputedValue :37840.8
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :37840.8
+Thread#0:T:ActualDisclosedValue :37840.8
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsValueShouldDisplayOnLoanEstimate() (1.2s)
+Thread#0:B:And updated/computed in 5 Years principal value should display on Loan Estimate
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :13028.53
+Thread#0:T:ActualComputedValue :13028.53
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :13028.53
+Thread#0:T:ActualDisclosedValue :13028.53
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsPrincipalValueShouldDisplayOnLoanEstimate() (1.3s)
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #148 from normal test queue 
+Thread#0:Scheduler: considering testitem #148 for thread
+Thread#0:Scheduler: using testitem #148 for thread
+Thread#0:Scheduler: Test #148 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #147/0 is finished on thread #0 as Succeeded within 8.8978481 seconds
+Thread#0: Test #148/0 is started on thread #0
+Thread#0:B:Given user is at TRID application homepage
+Thread#0:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (1.3s)
+Thread#0:B:And user have closing disclosure data from excel sheet ClosingDisclosure for the scenario 72
+Thread#0:T:done: CardsValidationSteps.GivenUserHaveClosingDisclosureDataFromExcelSheetForTheScenario("ClosingDisclosure", 72) (1.0s)
+Thread#0:B:When user upload json file for the scenario
+Thread#0:T:done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (2.0s)
+Thread#0:B:And user navigates to Loan Estimate Cards Page
+Thread#0:T:done: CardsValidationSteps.WhenUserNavigatesToLoanEstimateCardsPage() (0.5s)
+Thread#0:B:Then updated/computed in 5 Years value should display on Loan Estimate
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :40744.2
+Thread#0:T:ActualComputedValue :40744.2
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :40744.2
+Thread#0:T:ActualDisclosedValue :40744.2
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsValueShouldDisplayOnLoanEstimate() (1.3s)
+Thread#0:B:And updated/computed in 5 Years principal value should display on Loan Estimate
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :16414.12
+Thread#0:T:ActualComputedValue :16414.12
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :16414.12
+Thread#0:T:ActualDisclosedValue :16414.12
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsPrincipalValueShouldDisplayOnLoanEstimate() (1.2s)
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #149 from normal test queue 
+Thread#0:Scheduler: considering testitem #149 for thread
+Thread#0:Scheduler: using testitem #149 for thread
+Thread#0:Scheduler: Test #149 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #148/0 is finished on thread #0 as Succeeded within 8.9925038 seconds
+Thread#0: Test #149/0 is started on thread #0
+Thread#0:B:Given user is at TRID application homepage
+Thread#0:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (1.2s)
+Thread#0:B:And user have closing disclosure data from excel sheet ClosingDisclosure for the scenario 73
+Thread#0:T:done: CardsValidationSteps.GivenUserHaveClosingDisclosureDataFromExcelSheetForTheScenario("ClosingDisclosure", 73) (1.1s)
+Thread#0:B:When user upload json file for the scenario
+Thread#0:T:done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (2.1s)
+Thread#0:B:And user navigates to Loan Estimate Cards Page
+Thread#0:T:done: CardsValidationSteps.WhenUserNavigatesToLoanEstimateCardsPage() (0.5s)
+Thread#0:B:Then updated/computed in 5 Years value should display on Loan Estimate
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :37474.76
+Thread#0:T:ActualComputedValue :37474.76
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :37474.76
+Thread#0:T:ActualDisclosedValue :37474.76
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsValueShouldDisplayOnLoanEstimate() (1.3s)
+Thread#0:B:And updated/computed in 5 Years principal value should display on Loan Estimate
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :12861.83
+Thread#0:T:ActualComputedValue :12861.83
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :12861.83
+Thread#0:T:ActualDisclosedValue :12861.83
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsPrincipalValueShouldDisplayOnLoanEstimate() (1.2s)
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #150 from normal test queue 
+Thread#0:Scheduler: considering testitem #150 for thread
+Thread#0:Scheduler: using testitem #150 for thread
+Thread#0:Scheduler: Test #150 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #149/0 is finished on thread #0 as Succeeded within 9.2014134 seconds
+Thread#0: Test #150/0 is started on thread #0
+Thread#0:B:Given user is at TRID application homepage
+Thread#0:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (1.4s)
+Thread#0:B:And user have closing disclosure data from excel sheet ClosingDisclosure for the scenario 74
+Thread#0:T:done: CardsValidationSteps.GivenUserHaveClosingDisclosureDataFromExcelSheetForTheScenario("ClosingDisclosure", 74) (1.1s)
+Thread#0:B:When user upload json file for the scenario
+Thread#0:T:done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (2.0s)
+Thread#0:B:And user navigates to Loan Estimate Cards Page
+Thread#0:T:done: CardsValidationSteps.WhenUserNavigatesToLoanEstimateCardsPage() (0.4s)
+Thread#0:B:Then updated/computed in 5 Years value should display on Loan Estimate
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :38074.55
+Thread#0:T:ActualComputedValue :38074.55
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :38074.55
+Thread#0:T:ActualDisclosedValue :38074.55
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsValueShouldDisplayOnLoanEstimate() (1.3s)
+Thread#0:B:And updated/computed in 5 Years principal value should display on Loan Estimate
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :12926.22
+Thread#0:T:ActualComputedValue :12926.22
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :12926.22
+Thread#0:T:ActualDisclosedValue :12926.22
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsPrincipalValueShouldDisplayOnLoanEstimate() (1.2s)
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #151 from normal test queue 
+Thread#0:Scheduler: considering testitem #151 for thread
+Thread#0:Scheduler: using testitem #151 for thread
+Thread#0:Scheduler: Test #151 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #150/0 is finished on thread #0 as Succeeded within 9.0018473 seconds
+Thread#0: Test #151/0 is started on thread #0
+Thread#0:B:Given user is at TRID application homepage
+Thread#0:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (1.3s)
+Thread#0:B:And user have closing disclosure data from excel sheet ClosingDisclosure for the scenario 75
+Thread#0:T:done: CardsValidationSteps.GivenUserHaveClosingDisclosureDataFromExcelSheetForTheScenario("ClosingDisclosure", 75) (1.1s)
+Thread#0:B:When user upload json file for the scenario
+Thread#0:T:done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (2.1s)
+Thread#0:B:And user navigates to Loan Estimate Cards Page
+Thread#0:T:done: CardsValidationSteps.WhenUserNavigatesToLoanEstimateCardsPage() (1.3s)
+Thread#0:B:Then updated/computed in 5 Years value should display on Loan Estimate
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :40744.2
+Thread#0:T:ActualComputedValue :40744.2
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :40744.2
+Thread#0:T:ActualDisclosedValue :40744.2
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsValueShouldDisplayOnLoanEstimate() (1.2s)
+Thread#0:B:And updated/computed in 5 Years principal value should display on Loan Estimate
+Thread#0:T:NUnit.Framework.AssertionException:   Computed value does not match as expected with the difference of 0.0100000000002183
+Thread#0:T:  Expected: 16061.6d
+Thread#0:T:  But was:  16061.610000000001d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.CardsValidationSteps.ThenUpdatedComputedIn5YearsPrincipalValueShouldDisplayOnLoanEstimate() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\CardsValidationSteps.cs:line 1468
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsPrincipalValueShouldDisplayOnLoanEstimate() (0.6s)
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #152 from normal test queue 
+Thread#0:Scheduler: considering testitem #152 for thread
+Thread#0:Scheduler: using testitem #152 for thread
+Thread#0:Scheduler: Test #152 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #151/0 is finished on thread #0 as Succeeded within 9.3113586 seconds
+Thread#0: Test #152/0 is started on thread #0
+Thread#0:B:Given user is at TRID application homepage
+Thread#0:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (1.2s)
+Thread#0:B:And user have closing disclosure data from excel sheet ClosingDisclosure for the scenario 76
+Thread#0:T:done: CardsValidationSteps.GivenUserHaveClosingDisclosureDataFromExcelSheetForTheScenario("ClosingDisclosure", 76) (1.2s)
+Thread#0:B:When user upload json file for the scenario
+Thread#0:T:done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (2.1s)
+Thread#0:B:And user navigates to Loan Estimate Cards Page
+Thread#0:T:done: CardsValidationSteps.WhenUserNavigatesToLoanEstimateCardsPage() (1.0s)
+Thread#0:B:Then updated/computed in 5 Years value should display on Loan Estimate
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :37475.71
+Thread#0:T:ActualComputedValue :37475.71
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :37475.71
+Thread#0:T:ActualDisclosedValue :37475.71
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsValueShouldDisplayOnLoanEstimate() (1.2s)
+Thread#0:B:And updated/computed in 5 Years principal value should display on Loan Estimate
+Thread#0:T:NUnit.Framework.AssertionException:   Computed value does not match as expected with the difference of 82.2099999999991
+Thread#0:T:  Expected: 12506.389999999999d
+Thread#0:T:  But was:  12424.18d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.CardsValidationSteps.ThenUpdatedComputedIn5YearsPrincipalValueShouldDisplayOnLoanEstimate() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\CardsValidationSteps.cs:line 1468
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsPrincipalValueShouldDisplayOnLoanEstimate() (0.6s)
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #153 from normal test queue 
+Thread#0:Scheduler: considering testitem #153 for thread
+Thread#0:Scheduler: using testitem #153 for thread
+Thread#0:Scheduler: Test #153 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #152/0 is finished on thread #0 as Succeeded within 9.0235866 seconds
+Thread#0: Test #153/0 is started on thread #0
+Thread#0:B:Given user is at TRID application homepage
+Thread#0:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (1.2s)
+Thread#0:B:And user have closing disclosure data from excel sheet ClosingDisclosure for the scenario 77
+Thread#0:T:done: CardsValidationSteps.GivenUserHaveClosingDisclosureDataFromExcelSheetForTheScenario("ClosingDisclosure", 77) (1.0s)
+Thread#0:B:When user upload json file for the scenario
+Thread#0:T:done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (2.0s)
+Thread#0:B:And user navigates to Loan Estimate Cards Page
+Thread#0:T:done: CardsValidationSteps.WhenUserNavigatesToLoanEstimateCardsPage() (0.4s)
+Thread#0:B:Then updated/computed in 5 Years value should display on Loan Estimate
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :37809.93
+Thread#0:T:ActualComputedValue :37809.93
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :37809.93
+Thread#0:T:ActualDisclosedValue :37809.93
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsValueShouldDisplayOnLoanEstimate() (1.2s)
+Thread#0:B:And updated/computed in 5 Years principal value should display on Loan Estimate
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :13010.29
+Thread#0:T:ActualComputedValue :13010.29
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :13010.29
+Thread#0:T:ActualDisclosedValue :13010.29
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsPrincipalValueShouldDisplayOnLoanEstimate() (1.3s)
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #154 from normal test queue 
+Thread#0:Scheduler: considering testitem #154 for thread
+Thread#0:Scheduler: using testitem #154 for thread
+Thread#0:Scheduler: Test #154 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #153/0 is finished on thread #0 as Succeeded within 8.7943954 seconds
+Thread#0: Test #154/0 is started on thread #0
+Thread#0:B:Given user is at TRID application homepage
+Thread#0:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (1.3s)
+Thread#0:B:And user have closing disclosure data from excel sheet ClosingDisclosure for the scenario 78
+Thread#0:T:done: CardsValidationSteps.GivenUserHaveClosingDisclosureDataFromExcelSheetForTheScenario("ClosingDisclosure", 78) (1.1s)
+Thread#0:B:When user upload json file for the scenario
+Thread#0:T:done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (2.0s)
+Thread#0:B:And user navigates to Loan Estimate Cards Page
+Thread#0:T:done: CardsValidationSteps.WhenUserNavigatesToLoanEstimateCardsPage() (1.0s)
+Thread#0:B:Then updated/computed in 5 Years value should display on Loan Estimate
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :37460.22
+Thread#0:T:ActualComputedValue :37460.22
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :37460.22
+Thread#0:T:ActualDisclosedValue :37460.22
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsValueShouldDisplayOnLoanEstimate() (1.3s)
+Thread#0:B:And updated/computed in 5 Years principal value should display on Loan Estimate
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :12873.96
+Thread#0:T:ActualComputedValue :12873.96
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :12873.96
+Thread#0:T:ActualDisclosedValue :12873.96
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsPrincipalValueShouldDisplayOnLoanEstimate() (1.2s)
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #155 from normal test queue 
+Thread#0:Scheduler: considering testitem #155 for thread
+Thread#0:Scheduler: using testitem #155 for thread
+Thread#0:Scheduler: Test #155 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #154/0 is finished on thread #0 as Succeeded within 9.6101452 seconds
+Thread#0: Test #155/0 is started on thread #0
+Thread#0:B:Given user is at TRID application homepage
+Thread#0:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (1.3s)
+Thread#0:B:And user have closing disclosure data from excel sheet ClosingDisclosure for the scenario 91
+Thread#0:T:done: CardsValidationSteps.GivenUserHaveClosingDisclosureDataFromExcelSheetForTheScenario("ClosingDisclosure", 91) (1.1s)
+Thread#0:B:When user upload json file for the scenario
+Thread#0:T:done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (2.1s)
+Thread#0:B:And user navigates to Loan Estimate Cards Page
+Thread#0:T:done: CardsValidationSteps.WhenUserNavigatesToLoanEstimateCardsPage() (0.4s)
+Thread#0:B:Then updated/computed in 5 Years value should display on Loan Estimate
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :39819.91
+Thread#0:T:ActualComputedValue :39819.91
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :39819.91
+Thread#0:T:ActualDisclosedValue :39819.91
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsValueShouldDisplayOnLoanEstimate() (1.3s)
+Thread#0:B:And updated/computed in 5 Years principal value should display on Loan Estimate
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :13028.53
+Thread#0:T:ActualComputedValue :13028.53
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :13028.53
+Thread#0:T:ActualDisclosedValue :13028.53
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsPrincipalValueShouldDisplayOnLoanEstimate() (1.3s)
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #156 from normal test queue 
+Thread#0:Scheduler: considering testitem #156 for thread
+Thread#0:Scheduler: using testitem #156 for thread
+Thread#0:Scheduler: Test #156 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #155/0 is finished on thread #0 as Succeeded within 9.1568816 seconds
+Thread#0: Test #156/0 is started on thread #0
+Thread#0:B:Given user is at TRID application homepage
+Thread#0:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (1.3s)
+Thread#0:B:And user have closing disclosure data from excel sheet ClosingDisclosure for the scenario 92
+Thread#0:T:done: CardsValidationSteps.GivenUserHaveClosingDisclosureDataFromExcelSheetForTheScenario("ClosingDisclosure", 92) (1.1s)
+Thread#0:B:When user upload json file for the scenario
+Thread#0:T:done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (2.0s)
+Thread#0:B:And user navigates to Loan Estimate Cards Page
+Thread#0:T:done: CardsValidationSteps.WhenUserNavigatesToLoanEstimateCardsPage() (0.6s)
+Thread#0:B:Then updated/computed in 5 Years value should display on Loan Estimate
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :42288.23
+Thread#0:T:ActualComputedValue :42288.23
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :42288.23
+Thread#0:T:ActualDisclosedValue :42288.23
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsValueShouldDisplayOnLoanEstimate() (1.3s)
+Thread#0:B:And updated/computed in 5 Years principal value should display on Loan Estimate
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :16414.12
+Thread#0:T:ActualComputedValue :16414.12
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :16414.12
+Thread#0:T:ActualDisclosedValue :16414.12
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsPrincipalValueShouldDisplayOnLoanEstimate() (1.2s)
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #157 from normal test queue 
+Thread#0:Scheduler: considering testitem #157 for thread
+Thread#0:Scheduler: using testitem #157 for thread
+Thread#0:Scheduler: Test #157 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #156/0 is finished on thread #0 as Succeeded within 9.2049702 seconds
+Thread#0: Test #157/0 is started on thread #0
+Thread#0:B:Given user is at TRID application homepage
+Thread#0:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (1.3s)
+Thread#0:B:And user have closing disclosure data from excel sheet ClosingDisclosure for the scenario 93
+Thread#0:T:done: CardsValidationSteps.GivenUserHaveClosingDisclosureDataFromExcelSheetForTheScenario("ClosingDisclosure", 93) (1.0s)
+Thread#0:B:When user upload json file for the scenario
+Thread#0:T:done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (2.1s)
+Thread#0:B:And user navigates to Loan Estimate Cards Page
+Thread#0:T:done: CardsValidationSteps.WhenUserNavigatesToLoanEstimateCardsPage() (0.7s)
+Thread#0:B:Then updated/computed in 5 Years value should display on Loan Estimate
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :39413.96
+Thread#0:T:ActualComputedValue :39413.96
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :39413.96
+Thread#0:T:ActualDisclosedValue :39413.96
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsValueShouldDisplayOnLoanEstimate() (1.3s)
+Thread#0:B:And updated/computed in 5 Years principal value should display on Loan Estimate
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :12861.83
+Thread#0:T:ActualComputedValue :12861.83
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :12861.83
+Thread#0:T:ActualDisclosedValue :12861.83
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsPrincipalValueShouldDisplayOnLoanEstimate() (1.2s)
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #158 from normal test queue 
+Thread#0:Scheduler: considering testitem #158 for thread
+Thread#0:Scheduler: using testitem #158 for thread
+Thread#0:Scheduler: Test #158 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #157/0 is finished on thread #0 as Succeeded within 9.3051001 seconds
+Thread#0: Test #158/0 is started on thread #0
+Thread#0:B:Given user is at TRID application homepage
+Thread#0:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (1.3s)
+Thread#0:B:And user have closing disclosure data from excel sheet ClosingDisclosure for the scenario 94
+Thread#0:T:done: CardsValidationSteps.GivenUserHaveClosingDisclosureDataFromExcelSheetForTheScenario("ClosingDisclosure", 94) (1.1s)
+Thread#0:B:When user upload json file for the scenario
+Thread#0:T:done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (2.0s)
+Thread#0:B:And user navigates to Loan Estimate Cards Page
+Thread#0:T:done: CardsValidationSteps.WhenUserNavigatesToLoanEstimateCardsPage() (0.4s)
+Thread#0:B:Then updated/computed in 5 Years value should display on Loan Estimate
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :40053.66
+Thread#0:T:ActualComputedValue :40053.66
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :40053.66
+Thread#0:T:ActualDisclosedValue :40053.66
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsValueShouldDisplayOnLoanEstimate() (1.3s)
+Thread#0:B:And updated/computed in 5 Years principal value should display on Loan Estimate
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :12926.22
+Thread#0:T:ActualComputedValue :12926.22
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :12926.22
+Thread#0:T:ActualDisclosedValue :12926.22
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsPrincipalValueShouldDisplayOnLoanEstimate() (1.2s)
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #159 from normal test queue 
+Thread#0:Scheduler: considering testitem #159 for thread
+Thread#0:Scheduler: using testitem #159 for thread
+Thread#0:Scheduler: Test #159 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #158/0 is finished on thread #0 as Succeeded within 8.9965764 seconds
+Thread#0: Test #159/0 is started on thread #0
+Thread#0:B:Given user is at TRID application homepage
+Thread#0:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (1.3s)
+Thread#0:B:And user have closing disclosure data from excel sheet ClosingDisclosure for the scenario 95
+Thread#0:T:done: CardsValidationSteps.GivenUserHaveClosingDisclosureDataFromExcelSheetForTheScenario("ClosingDisclosure", 95) (1.0s)
+Thread#0:B:When user upload json file for the scenario
+Thread#0:T:done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (2.1s)
+Thread#0:B:And user navigates to Loan Estimate Cards Page
+Thread#0:T:done: CardsValidationSteps.WhenUserNavigatesToLoanEstimateCardsPage() (1.2s)
+Thread#0:B:Then updated/computed in 5 Years value should display on Loan Estimate
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :42325.51
+Thread#0:T:ActualComputedValue :42325.51
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :42325.51
+Thread#0:T:ActualDisclosedValue :42325.51
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsValueShouldDisplayOnLoanEstimate() (1.3s)
+Thread#0:B:And updated/computed in 5 Years principal value should display on Loan Estimate
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :16061.61
+Thread#0:T:ActualComputedValue :16061.61
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :16061.61
+Thread#0:T:ActualDisclosedValue :16061.61
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsPrincipalValueShouldDisplayOnLoanEstimate() (1.2s)
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #160 from normal test queue 
+Thread#0:Scheduler: considering testitem #160 for thread
+Thread#0:Scheduler: using testitem #160 for thread
+Thread#0:Scheduler: Test #160 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #159/0 is finished on thread #0 as Succeeded within 9.8308 seconds
+Thread#0: Test #160/0 is started on thread #0
+Thread#0:B:Given user is at TRID application homepage
+Thread#0:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (1.3s)
+Thread#0:B:And user have closing disclosure data from excel sheet ClosingDisclosure for the scenario 96
+Thread#0:T:done: CardsValidationSteps.GivenUserHaveClosingDisclosureDataFromExcelSheetForTheScenario("ClosingDisclosure", 96) (1.1s)
+Thread#0:B:When user upload json file for the scenario
+Thread#0:T:done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (2.0s)
+Thread#0:B:And user navigates to Loan Estimate Cards Page
+Thread#0:T:done: CardsValidationSteps.WhenUserNavigatesToLoanEstimateCardsPage() (1.1s)
+Thread#0:B:Then updated/computed in 5 Years value should display on Loan Estimate
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :39642.2
+Thread#0:T:ActualComputedValue :39642.2
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :39642.2
+Thread#0:T:ActualDisclosedValue :39642.2
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsValueShouldDisplayOnLoanEstimate() (1.3s)
+Thread#0:B:And updated/computed in 5 Years principal value should display on Loan Estimate
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :12756.35
+Thread#0:T:ActualComputedValue :12756.35
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :12756.35
+Thread#0:T:ActualDisclosedValue :12756.35
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsPrincipalValueShouldDisplayOnLoanEstimate() (1.2s)
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #161 from normal test queue 
+Thread#0:Scheduler: considering testitem #161 for thread
+Thread#0:Scheduler: using testitem #161 for thread
+Thread#0:Scheduler: Test #161 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #160/0 is finished on thread #0 as Succeeded within 9.6796467 seconds
+Thread#0: Test #161/0 is started on thread #0
+Thread#0:B:Given user is at TRID application homepage
+Thread#0:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (1.3s)
+Thread#0:B:And user have closing disclosure data from excel sheet ClosingDisclosure for the scenario 97
+Thread#0:T:done: CardsValidationSteps.GivenUserHaveClosingDisclosureDataFromExcelSheetForTheScenario("ClosingDisclosure", 97) (1.1s)
+Thread#0:B:When user upload json file for the scenario
+Thread#0:T:done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (2.0s)
+Thread#0:B:And user navigates to Loan Estimate Cards Page
+Thread#0:T:done: CardsValidationSteps.WhenUserNavigatesToLoanEstimateCardsPage() (0.4s)
+Thread#0:B:Then updated/computed in 5 Years value should display on Loan Estimate
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :39789.04
+Thread#0:T:ActualComputedValue :39789.04
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :39789.04
+Thread#0:T:ActualDisclosedValue :39789.04
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsValueShouldDisplayOnLoanEstimate() (1.2s)
+Thread#0:B:And updated/computed in 5 Years principal value should display on Loan Estimate
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :13010.29
+Thread#0:T:ActualComputedValue :13010.29
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :13010.29
+Thread#0:T:ActualDisclosedValue :13010.29
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsPrincipalValueShouldDisplayOnLoanEstimate() (1.2s)
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #162 from normal test queue 
+Thread#0:Scheduler: considering testitem #162 for thread
+Thread#0:Scheduler: using testitem #162 for thread
+Thread#0:Scheduler: Test #162 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #161/0 is finished on thread #0 as Succeeded within 8.9434782 seconds
+Thread#0: Test #162/0 is started on thread #0
+Thread#0:B:Given user is at TRID application homepage
+Thread#0:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (1.3s)
+Thread#0:B:And user have closing disclosure data from excel sheet ClosingDisclosure for the scenario 98
+Thread#0:T:done: CardsValidationSteps.GivenUserHaveClosingDisclosureDataFromExcelSheetForTheScenario("ClosingDisclosure", 98) (1.0s)
+Thread#0:B:When user upload json file for the scenario
+Thread#0:T:done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (2.0s)
+Thread#0:B:And user navigates to Loan Estimate Cards Page
+Thread#0:T:done: CardsValidationSteps.WhenUserNavigatesToLoanEstimateCardsPage() (1.2s)
+Thread#0:B:Then updated/computed in 5 Years value should display on Loan Estimate
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :39399.42
+Thread#0:T:ActualComputedValue :39399.42
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :39399.42
+Thread#0:T:ActualDisclosedValue :39399.42
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsValueShouldDisplayOnLoanEstimate() (1.3s)
+Thread#0:B:And updated/computed in 5 Years principal value should display on Loan Estimate
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :12873.96
+Thread#0:T:ActualComputedValue :12873.96
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :12873.96
+Thread#0:T:ActualDisclosedValue :12873.96
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsPrincipalValueShouldDisplayOnLoanEstimate() (1.2s)
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #260 from normal test queue 
+Thread#0:Scheduler: considering testitem #260 for thread
+Thread#0:Scheduler: using testitem #260 for thread
+Thread#0:Scheduler: Test #260 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #162/0 is finished on thread #0 as Succeeded within 9.7643919 seconds
+Thread#0: Test #260/0 is started on thread #0
+Thread#0:B:Given user is at TRID application homepage
+Thread#0:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (1.4s)
+Thread#0:B:And user have closing disclosure data from excel sheet ClosingDisclosure for the scenario 2
+Thread#0:T:done: CardsValidationSteps.GivenUserHaveClosingDisclosureDataFromExcelSheetForTheScenario("ClosingDisclosure", 2) (1.1s)
+Thread#0:B:When user upload json file for the scenario
+Thread#0:T:done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (2.1s)
+Thread#0:B:And user navigates to Loan Estimate Cards Page
+Thread#0:T:done: CardsValidationSteps.WhenUserNavigatesToLoanEstimateCardsPage() (0.4s)
+Thread#0:B:Then updated/computed in 5 Years value should display on Loan Estimate
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :38353.32
+Thread#0:T:ActualComputedValue :38353.32
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :38353.32
+Thread#0:T:ActualDisclosedValue :38353.32
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsValueShouldDisplayOnLoanEstimate() (1.2s)
+Thread#0:B:And updated/computed in 5 Years principal value should display on Loan Estimate
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :12996.63
+Thread#0:T:ActualComputedValue :12996.63
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :12996.63
+Thread#0:T:ActualDisclosedValue :12996.63
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsPrincipalValueShouldDisplayOnLoanEstimate() (1.3s)
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #261 from normal test queue 
+Thread#0:Scheduler: considering testitem #261 for thread
+Thread#0:Scheduler: using testitem #261 for thread
+Thread#0:Scheduler: Test #261 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #260/0 is finished on thread #0 as Succeeded within 9.1477633 seconds
+Thread#0: Test #261/0 is started on thread #0
+Thread#0:B:Given user is at TRID application homepage
+Thread#0:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (1.3s)
+Thread#0:B:And user have closing disclosure data from excel sheet ClosingDisclosure for the scenario 3
+Thread#0:T:done: CardsValidationSteps.GivenUserHaveClosingDisclosureDataFromExcelSheetForTheScenario("ClosingDisclosure", 3) (1.1s)
+Thread#0:B:When user upload json file for the scenario
+Thread#0:T:done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (3.0s)
+Thread#0:B:And user navigates to Loan Estimate Cards Page
+Thread#0:T:done: CardsValidationSteps.WhenUserNavigatesToLoanEstimateCardsPage() (0.4s)
+Thread#0:B:Then updated/computed in 5 Years value should display on Loan Estimate
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :38383.62
+Thread#0:T:ActualComputedValue :38383.62
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :38383.62
+Thread#0:T:ActualDisclosedValue :38383.62
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsValueShouldDisplayOnLoanEstimate() (1.3s)
+Thread#0:B:And updated/computed in 5 Years principal value should display on Loan Estimate
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :13008.15
+Thread#0:T:ActualComputedValue :13008.15
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :13008.15
+Thread#0:T:ActualDisclosedValue :13008.15
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsPrincipalValueShouldDisplayOnLoanEstimate() (1.2s)
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #262 from normal test queue 
+Thread#0:Scheduler: considering testitem #262 for thread
+Thread#0:Scheduler: using testitem #262 for thread
+Thread#0:Scheduler: Test #262 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #261/0 is finished on thread #0 as Succeeded within 9.8772743 seconds
+Thread#0: Test #262/0 is started on thread #0
+Thread#0:B:Given user is at TRID application homepage
+Thread#0:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (1.3s)
+Thread#0:B:And user have closing disclosure data from excel sheet ClosingDisclosure for the scenario 4
+Thread#0:T:done: CardsValidationSteps.GivenUserHaveClosingDisclosureDataFromExcelSheetForTheScenario("ClosingDisclosure", 4) (1.1s)
+Thread#0:B:When user upload json file for the scenario
+Thread#0:T:done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (2.0s)
+Thread#0:B:And user navigates to Loan Estimate Cards Page
+Thread#0:T:done: CardsValidationSteps.WhenUserNavigatesToLoanEstimateCardsPage() (1.1s)
+Thread#0:B:Then updated/computed in 5 Years value should display on Loan Estimate
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :40978.23
+Thread#0:T:ActualComputedValue :40978.23
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :40978.23
+Thread#0:T:ActualDisclosedValue :40978.23
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsValueShouldDisplayOnLoanEstimate() (1.3s)
+Thread#0:B:And updated/computed in 5 Years principal value should display on Loan Estimate
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :16414.12
+Thread#0:T:ActualComputedValue :16414.12
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :16414.12
+Thread#0:T:ActualDisclosedValue :16414.12
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsPrincipalValueShouldDisplayOnLoanEstimate() (1.2s)
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #263 from normal test queue 
+Thread#0:Scheduler: considering testitem #263 for thread
+Thread#0:Scheduler: using testitem #263 for thread
+Thread#0:Scheduler: Test #263 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #262/0 is finished on thread #0 as Succeeded within 9.7017004 seconds
+Thread#0: Test #263/0 is started on thread #0
+Thread#0:B:Given user is at TRID application homepage
+Thread#0:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (1.4s)
+Thread#0:B:And user have closing disclosure data from excel sheet ClosingDisclosure for the scenario 5
+Thread#0:T:done: CardsValidationSteps.GivenUserHaveClosingDisclosureDataFromExcelSheetForTheScenario("ClosingDisclosure", 5) (1.2s)
+Thread#0:B:When user upload json file for the scenario
+Thread#0:T:done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (2.1s)
+Thread#0:B:And user navigates to Loan Estimate Cards Page
+Thread#0:T:done: CardsValidationSteps.WhenUserNavigatesToLoanEstimateCardsPage() (0.7s)
+Thread#0:B:Then updated/computed in 5 Years value should display on Loan Estimate
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :38023.63
+Thread#0:T:ActualComputedValue :38023.63
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :38023.63
+Thread#0:T:ActualDisclosedValue :38023.63
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsValueShouldDisplayOnLoanEstimate() (1.2s)
+Thread#0:B:And updated/computed in 5 Years principal value should display on Loan Estimate
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :12891.92
+Thread#0:T:ActualComputedValue :12891.92
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :12891.92
+Thread#0:T:ActualDisclosedValue :12891.92
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsPrincipalValueShouldDisplayOnLoanEstimate() (1.3s)
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #264 from normal test queue 
+Thread#0:Scheduler: considering testitem #264 for thread
+Thread#0:Scheduler: using testitem #264 for thread
+Thread#0:Scheduler: Test #264 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #263/0 is finished on thread #0 as Succeeded within 9.5151803 seconds
+Thread#0: Test #264/0 is started on thread #0
+Thread#0:B:Given user is at TRID application homepage
+Thread#0:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (1.4s)
+Thread#0:B:And user have closing disclosure data from excel sheet ClosingDisclosure for the scenario 6
+Thread#0:T:done: CardsValidationSteps.GivenUserHaveClosingDisclosureDataFromExcelSheetForTheScenario("ClosingDisclosure", 6) (1.0s)
+Thread#0:B:When user upload json file for the scenario
+Thread#0:T:done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (2.0s)
+Thread#0:B:And user navigates to Loan Estimate Cards Page
+Thread#0:T:done: CardsValidationSteps.WhenUserNavigatesToLoanEstimateCardsPage() (1.0s)
+Thread#0:B:Then updated/computed in 5 Years value should display on Loan Estimate
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :38340.72
+Thread#0:T:ActualComputedValue :38340.72
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :38340.72
+Thread#0:T:ActualDisclosedValue :38340.72
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsValueShouldDisplayOnLoanEstimate() (1.2s)
+Thread#0:B:And updated/computed in 5 Years principal value should display on Loan Estimate
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :13008.6
+Thread#0:T:ActualComputedValue :13008.6
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :13008.6
+Thread#0:T:ActualDisclosedValue :13008.6
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsPrincipalValueShouldDisplayOnLoanEstimate() (1.2s)
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #265 from normal test queue 
+Thread#0:Scheduler: considering testitem #265 for thread
+Thread#0:Scheduler: using testitem #265 for thread
+Thread#0:Scheduler: Test #265 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #264/0 is finished on thread #0 as Succeeded within 9.6030828 seconds
+Thread#0: Test #265/0 is started on thread #0
+Thread#0:B:Given user is at TRID application homepage
+Thread#0:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (1.3s)
+Thread#0:B:And user have closing disclosure data from excel sheet ClosingDisclosure for the scenario 7
+Thread#0:T:done: CardsValidationSteps.GivenUserHaveClosingDisclosureDataFromExcelSheetForTheScenario("ClosingDisclosure", 7) (1.1s)
+Thread#0:B:When user upload json file for the scenario
+Thread#0:T:done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (2.0s)
+Thread#0:B:And user navigates to Loan Estimate Cards Page
+Thread#0:T:done: CardsValidationSteps.WhenUserNavigatesToLoanEstimateCardsPage() (0.5s)
+Thread#0:B:Then updated/computed in 5 Years value should display on Loan Estimate
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :38411.41
+Thread#0:T:ActualComputedValue :38411.41
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :38411.41
+Thread#0:T:ActualDisclosedValue :38411.41
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsValueShouldDisplayOnLoanEstimate() (2.2s)
+Thread#0:B:And updated/computed in 5 Years principal value should display on Loan Estimate
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :13020.15
+Thread#0:T:ActualComputedValue :13020.15
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :13020.15
+Thread#0:T:ActualDisclosedValue :13020.15
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsPrincipalValueShouldDisplayOnLoanEstimate() (1.9s)
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #266 from normal test queue 
+Thread#0:Scheduler: considering testitem #266 for thread
+Thread#0:Scheduler: using testitem #266 for thread
+Thread#0:Scheduler: Test #266 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #265/0 is finished on thread #0 as Succeeded within 11.279259 seconds
+Thread#0: Test #266/0 is started on thread #0
+Thread#0:B:Given user is at TRID application homepage
+Thread#0:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (1.4s)
+Thread#0:B:And user have closing disclosure data from excel sheet ClosingDisclosure for the scenario 8
+Thread#0:T:done: CardsValidationSteps.GivenUserHaveClosingDisclosureDataFromExcelSheetForTheScenario("ClosingDisclosure", 8) (1.0s)
+Thread#0:B:When user upload json file for the scenario
+Thread#0:T:done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (1.9s)
+Thread#0:B:And user navigates to Loan Estimate Cards Page
+Thread#0:T:done: CardsValidationSteps.WhenUserNavigatesToLoanEstimateCardsPage() (0.6s)
+Thread#0:B:Then updated/computed in 5 Years value should display on Loan Estimate
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :40978.23
+Thread#0:T:ActualComputedValue :40978.23
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :40978.23
+Thread#0:T:ActualDisclosedValue :40978.23
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsValueShouldDisplayOnLoanEstimate() (1.3s)
+Thread#0:B:And updated/computed in 5 Years principal value should display on Loan Estimate
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :16439.52
+Thread#0:T:ActualComputedValue :16439.52
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :16439.52
+Thread#0:T:ActualDisclosedValue :16439.52
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsPrincipalValueShouldDisplayOnLoanEstimate() (1.3s)
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #267 from normal test queue 
+Thread#0:Scheduler: considering testitem #267 for thread
+Thread#0:Scheduler: using testitem #267 for thread
+Thread#0:Scheduler: Test #267 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #266/0 is finished on thread #0 as Succeeded within 9.267658 seconds
+Thread#0: Test #267/0 is started on thread #0
+Thread#0:B:Given user is at TRID application homepage
+Thread#0:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (1.2s)
+Thread#0:B:And user have closing disclosure data from excel sheet ClosingDisclosure for the scenario 9
+Thread#0:T:done: CardsValidationSteps.GivenUserHaveClosingDisclosureDataFromExcelSheetForTheScenario("ClosingDisclosure", 9) (0.9s)
+Thread#0:B:When user upload json file for the scenario
+Thread#0:T:done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (2.0s)
+Thread#0:B:And user navigates to Loan Estimate Cards Page
+Thread#0:T:done: CardsValidationSteps.WhenUserNavigatesToLoanEstimateCardsPage() (1.0s)
+Thread#0:B:Then updated/computed in 5 Years value should display on Loan Estimate
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :38050.94
+Thread#0:T:ActualComputedValue :38050.94
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :38050.94
+Thread#0:T:ActualDisclosedValue :38050.94
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsValueShouldDisplayOnLoanEstimate() (1.1s)
+Thread#0:B:And updated/computed in 5 Years principal value should display on Loan Estimate
+Thread#0:T:NUnit.Framework.AssertionException:   Computed value does not match as expected with the difference of 0.0100000000002183
+Thread#0:T:  Expected: 12889.07d
+Thread#0:T:  But was:  12889.06d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.CardsValidationSteps.ThenUpdatedComputedIn5YearsPrincipalValueShouldDisplayOnLoanEstimate() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\CardsValidationSteps.cs:line 1468
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsPrincipalValueShouldDisplayOnLoanEstimate() (0.6s)
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #268 from normal test queue 
+Thread#0:Scheduler: considering testitem #268 for thread
+Thread#0:Scheduler: using testitem #268 for thread
+Thread#0:Scheduler: Test #268 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #267/0 is finished on thread #0 as Succeeded within 8.2423672 seconds
+Thread#0: Test #268/0 is started on thread #0
+Thread#0:B:Given user is at TRID application homepage
+Thread#0:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (1.2s)
+Thread#0:B:And user have closing disclosure data from excel sheet ClosingDisclosure for the scenario 10
+Thread#0:T:done: CardsValidationSteps.GivenUserHaveClosingDisclosureDataFromExcelSheetForTheScenario("ClosingDisclosure", 10) (0.8s)
+Thread#0:B:When user upload json file for the scenario
+Thread#0:T:done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (2.0s)
+Thread#0:B:And user navigates to Loan Estimate Cards Page
+Thread#0:T:done: CardsValidationSteps.WhenUserNavigatesToLoanEstimateCardsPage() (0.4s)
+Thread#0:B:Then updated/computed in 5 Years value should display on Loan Estimate
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :38586.12
+Thread#0:T:ActualComputedValue :38586.12
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :38586.12
+Thread#0:T:ActualDisclosedValue :38586.12
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsValueShouldDisplayOnLoanEstimate() (1.1s)
+Thread#0:B:And updated/computed in 5 Years principal value should display on Loan Estimate
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :12894.35
+Thread#0:T:ActualComputedValue :12894.35
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :12894.35
+Thread#0:T:ActualDisclosedValue :12894.35
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsPrincipalValueShouldDisplayOnLoanEstimate() (1.1s)
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #269 from normal test queue 
+Thread#0:Scheduler: considering testitem #269 for thread
+Thread#0:Scheduler: using testitem #269 for thread
+Thread#0:Scheduler: Test #269 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #268/0 is finished on thread #0 as Succeeded within 8.1166513 seconds
+Thread#0: Test #269/0 is started on thread #0
+Thread#0:B:Given user is at TRID application homepage
+Thread#0:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (1.2s)
+Thread#0:B:And user have closing disclosure data from excel sheet ClosingDisclosure for the scenario 11
+Thread#0:T:done: CardsValidationSteps.GivenUserHaveClosingDisclosureDataFromExcelSheetForTheScenario("ClosingDisclosure", 11) (0.9s)
+Thread#0:B:When user upload json file for the scenario
+Thread#0:T:done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (2.0s)
+Thread#0:B:And user navigates to Loan Estimate Cards Page
+Thread#0:T:done: CardsValidationSteps.WhenUserNavigatesToLoanEstimateCardsPage() (0.3s)
+Thread#0:B:Then updated/computed in 5 Years value should display on Loan Estimate
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :38657.11
+Thread#0:T:ActualComputedValue :38657.11
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :38657.11
+Thread#0:T:ActualDisclosedValue :38657.11
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsValueShouldDisplayOnLoanEstimate() (1.1s)
+Thread#0:B:And updated/computed in 5 Years principal value should display on Loan Estimate
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :12906.1
+Thread#0:T:ActualComputedValue :12906.1
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :12906.1
+Thread#0:T:ActualDisclosedValue :12906.1
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsPrincipalValueShouldDisplayOnLoanEstimate() (1.1s)
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #270 from normal test queue 
+Thread#0:Scheduler: considering testitem #270 for thread
+Thread#0:Scheduler: using testitem #270 for thread
+Thread#0:Scheduler: Test #270 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #269/0 is finished on thread #0 as Succeeded within 8.2316789 seconds
+Thread#0: Test #270/0 is started on thread #0
+Thread#0:B:Given user is at TRID application homepage
+Thread#0:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (1.3s)
+Thread#0:B:And user have closing disclosure data from excel sheet ClosingDisclosure for the scenario 12
+Thread#0:T:done: CardsValidationSteps.GivenUserHaveClosingDisclosureDataFromExcelSheetForTheScenario("ClosingDisclosure", 12) (0.9s)
+Thread#0:B:When user upload json file for the scenario
+Thread#0:T:done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (2.0s)
+Thread#0:B:And user navigates to Loan Estimate Cards Page
+Thread#0:T:done: CardsValidationSteps.WhenUserNavigatesToLoanEstimateCardsPage() (1.0s)
+Thread#0:B:Then updated/computed in 5 Years value should display on Loan Estimate
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :41015.51
+Thread#0:T:ActualComputedValue :41015.51
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :41015.51
+Thread#0:T:ActualDisclosedValue :41015.51
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsValueShouldDisplayOnLoanEstimate() (1.2s)
+Thread#0:B:And updated/computed in 5 Years principal value should display on Loan Estimate
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :16061.61
+Thread#0:T:ActualComputedValue :16061.61
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :16061.61
+Thread#0:T:ActualDisclosedValue :16061.61
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsPrincipalValueShouldDisplayOnLoanEstimate() (1.1s)
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #271 from normal test queue 
+Thread#0:Scheduler: considering testitem #271 for thread
+Thread#0:Scheduler: using testitem #271 for thread
+Thread#0:Scheduler: Test #271 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #270/0 is finished on thread #0 as Succeeded within 9.0826731 seconds
+Thread#0: Test #271/0 is started on thread #0
+Thread#0:B:Given user is at TRID application homepage
+Thread#0:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (1.2s)
+Thread#0:B:And user have closing disclosure data from excel sheet ClosingDisclosure for the scenario 13
+Thread#0:T:done: CardsValidationSteps.GivenUserHaveClosingDisclosureDataFromExcelSheetForTheScenario("ClosingDisclosure", 13) (0.9s)
+Thread#0:B:When user upload json file for the scenario
+Thread#0:T:done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (2.0s)
+Thread#0:B:And user navigates to Loan Estimate Cards Page
+Thread#0:T:done: CardsValidationSteps.WhenUserNavigatesToLoanEstimateCardsPage() (0.5s)
+Thread#0:B:Then updated/computed in 5 Years value should display on Loan Estimate
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :38287.75
+Thread#0:T:ActualComputedValue :38287.75
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :38287.75
+Thread#0:T:ActualDisclosedValue :38287.75
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsValueShouldDisplayOnLoanEstimate() (1.1s)
+Thread#0:B:And updated/computed in 5 Years principal value should display on Loan Estimate
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :12767.98
+Thread#0:T:ActualComputedValue :12767.98
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :12767.98
+Thread#0:T:ActualDisclosedValue :12767.98
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsPrincipalValueShouldDisplayOnLoanEstimate() (1.2s)
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #272 from normal test queue 
+Thread#0:Scheduler: considering testitem #272 for thread
+Thread#0:Scheduler: using testitem #272 for thread
+Thread#0:Scheduler: Test #272 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #271/0 is finished on thread #0 as Succeeded within 8.3100565 seconds
+Thread#0: Test #272/0 is started on thread #0
+Thread#0:B:Given user is at TRID application homepage
+Thread#0:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (1.2s)
+Thread#0:B:And user have closing disclosure data from excel sheet ClosingDisclosure for the scenario 14
+Thread#0:T:done: CardsValidationSteps.GivenUserHaveClosingDisclosureDataFromExcelSheetForTheScenario("ClosingDisclosure", 14) (0.9s)
+Thread#0:B:When user upload json file for the scenario
+Thread#0:T:done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (1.9s)
+Thread#0:B:And user navigates to Loan Estimate Cards Page
+Thread#0:T:done: CardsValidationSteps.WhenUserNavigatesToLoanEstimateCardsPage() (0.4s)
+Thread#0:B:Then updated/computed in 5 Years value should display on Loan Estimate
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :38339.52
+Thread#0:T:ActualComputedValue :38339.52
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :38339.52
+Thread#0:T:ActualDisclosedValue :38339.52
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsValueShouldDisplayOnLoanEstimate() (1.2s)
+Thread#0:B:And updated/computed in 5 Years principal value should display on Loan Estimate
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :12998.59
+Thread#0:T:ActualComputedValue :12998.59
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :12998.59
+Thread#0:T:ActualDisclosedValue :12998.59
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsPrincipalValueShouldDisplayOnLoanEstimate() (1.2s)
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #273 from normal test queue 
+Thread#0:Scheduler: considering testitem #273 for thread
+Thread#0:Scheduler: using testitem #273 for thread
+Thread#0:Scheduler: Test #273 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #272/0 is finished on thread #0 as Succeeded within 8.2701793 seconds
+Thread#0: Test #273/0 is started on thread #0
+Thread#0:B:Given user is at TRID application homepage
+Thread#0:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (1.2s)
+Thread#0:B:And user have closing disclosure data from excel sheet ClosingDisclosure for the scenario 15
+Thread#0:T:done: CardsValidationSteps.GivenUserHaveClosingDisclosureDataFromExcelSheetForTheScenario("ClosingDisclosure", 15) (1.0s)
+Thread#0:B:When user upload json file for the scenario
+Thread#0:T:done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (2.0s)
+Thread#0:B:And user navigates to Loan Estimate Cards Page
+Thread#0:T:done: CardsValidationSteps.WhenUserNavigatesToLoanEstimateCardsPage() (0.4s)
+Thread#0:B:Then updated/computed in 5 Years value should display on Loan Estimate
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :38410.81
+Thread#0:T:ActualComputedValue :38410.81
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :38410.81
+Thread#0:T:ActualDisclosedValue :38410.81
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsValueShouldDisplayOnLoanEstimate() (1.2s)
+Thread#0:B:And updated/computed in 5 Years principal value should display on Loan Estimate
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :13010.29
+Thread#0:T:ActualComputedValue :13010.29
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :13010.29
+Thread#0:T:ActualDisclosedValue :13010.29
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsPrincipalValueShouldDisplayOnLoanEstimate() (1.2s)
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #274 from normal test queue 
+Thread#0:Scheduler: considering testitem #274 for thread
+Thread#0:Scheduler: using testitem #274 for thread
+Thread#0:Scheduler: Test #274 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #273/0 is finished on thread #0 as Succeeded within 8.6435866 seconds
+Thread#0: Test #274/0 is started on thread #0
+Thread#0:B:Given user is at TRID application homepage
+Thread#0:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (1.3s)
+Thread#0:B:And user have closing disclosure data from excel sheet ClosingDisclosure for the scenario 16
+Thread#0:T:done: CardsValidationSteps.GivenUserHaveClosingDisclosureDataFromExcelSheetForTheScenario("ClosingDisclosure", 16) (1.0s)
+Thread#0:B:When user upload json file for the scenario
+Thread#0:T:done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (1.9s)
+Thread#0:B:And user navigates to Loan Estimate Cards Page
+Thread#0:T:done: CardsValidationSteps.WhenUserNavigatesToLoanEstimateCardsPage() (2.0s)
+Thread#0:B:Then updated/computed in 5 Years value should display on Loan Estimate
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :38021.19
+Thread#0:T:ActualComputedValue :38021.19
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :38021.19
+Thread#0:T:ActualDisclosedValue :38021.19
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsValueShouldDisplayOnLoanEstimate() (1.2s)
+Thread#0:B:And updated/computed in 5 Years principal value should display on Loan Estimate
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :12873.96
+Thread#0:T:ActualComputedValue :12873.96
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :12873.96
+Thread#0:T:ActualDisclosedValue :12873.96
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsPrincipalValueShouldDisplayOnLoanEstimate() (1.2s)
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #275 from normal test queue 
+Thread#0:Scheduler: considering testitem #275 for thread
+Thread#0:Scheduler: using testitem #275 for thread
+Thread#0:Scheduler: Test #275 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #274/0 is finished on thread #0 as Succeeded within 10.274482 seconds
+Thread#0: Test #275/0 is started on thread #0
+Thread#0:B:Given user is at TRID application homepage
+Thread#0:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (1.3s)
+Thread#0:B:And user have closing disclosure data from excel sheet ClosingDisclosure for the scenario 17
+Thread#0:T:done: CardsValidationSteps.GivenUserHaveClosingDisclosureDataFromExcelSheetForTheScenario("ClosingDisclosure", 17) (0.8s)
+Thread#0:B:When user upload json file for the scenario
+Thread#0:T:done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (2.0s)
+Thread#0:B:And user navigates to Loan Estimate Cards Page
+Thread#0:T:done: CardsValidationSteps.WhenUserNavigatesToLoanEstimateCardsPage() (0.4s)
+Thread#0:B:Then updated/computed in 5 Years value should display on Loan Estimate
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :36414.6
+Thread#0:T:ActualComputedValue :36414.6
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :36414.6
+Thread#0:T:ActualDisclosedValue :36414.6
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsValueShouldDisplayOnLoanEstimate() (1.4s)
+Thread#0:B:And updated/computed in 5 Years principal value should display on Loan Estimate
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :12996.63
+Thread#0:T:ActualComputedValue :12996.63
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :12996.63
+Thread#0:T:ActualDisclosedValue :12996.63
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsPrincipalValueShouldDisplayOnLoanEstimate() (1.3s)
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #276 from normal test queue 
+Thread#0:Scheduler: considering testitem #276 for thread
+Thread#0:Scheduler: using testitem #276 for thread
+Thread#0:Scheduler: Test #276 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #275/0 is finished on thread #0 as Succeeded within 8.7117429 seconds
+Thread#0: Test #276/0 is started on thread #0
+Thread#0:B:Given user is at TRID application homepage
+Thread#0:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (1.3s)
+Thread#0:B:And user have closing disclosure data from excel sheet ClosingDisclosure for the scenario 18
+Thread#0:T:done: CardsValidationSteps.GivenUserHaveClosingDisclosureDataFromExcelSheetForTheScenario("ClosingDisclosure", 18) (1.0s)
+Thread#0:B:When user upload json file for the scenario
+Thread#0:T:done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (2.0s)
+Thread#0:B:And user navigates to Loan Estimate Cards Page
+Thread#0:T:done: CardsValidationSteps.WhenUserNavigatesToLoanEstimateCardsPage() (0.4s)
+Thread#0:B:Then updated/computed in 5 Years value should display on Loan Estimate
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :36647.4
+Thread#0:T:ActualComputedValue :36647.4
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :36647.4
+Thread#0:T:ActualDisclosedValue :36647.4
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsValueShouldDisplayOnLoanEstimate() (1.3s)
+Thread#0:B:And updated/computed in 5 Years principal value should display on Loan Estimate
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :12894.35
+Thread#0:T:ActualComputedValue :12894.35
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :12894.35
+Thread#0:T:ActualDisclosedValue :12894.35
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsPrincipalValueShouldDisplayOnLoanEstimate() (1.3s)
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #277 from normal test queue 
+Thread#0:Scheduler: considering testitem #277 for thread
+Thread#0:Scheduler: using testitem #277 for thread
+Thread#0:Scheduler: Test #277 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #276/0 is finished on thread #0 as Succeeded within 8.7546845 seconds
+Thread#0: Test #277/0 is started on thread #0
+Thread#0:B:Given user is at TRID application homepage
+Thread#0:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (1.3s)
+Thread#0:B:And user have closing disclosure data from excel sheet ClosingDisclosure for the scenario 19
+Thread#0:T:done: CardsValidationSteps.GivenUserHaveClosingDisclosureDataFromExcelSheetForTheScenario("ClosingDisclosure", 19) (1.0s)
+Thread#0:B:When user upload json file for the scenario
+Thread#0:T:done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (2.0s)
+Thread#0:B:And user navigates to Loan Estimate Cards Page
+Thread#0:T:done: CardsValidationSteps.WhenUserNavigatesToLoanEstimateCardsPage() (0.4s)
+Thread#0:B:Then updated/computed in 5 Years value should display on Loan Estimate
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :36647.4
+Thread#0:T:ActualComputedValue :36647.4
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :36647.4
+Thread#0:T:ActualDisclosedValue :36647.4
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsValueShouldDisplayOnLoanEstimate() (1.2s)
+Thread#0:B:And updated/computed in 5 Years principal value should display on Loan Estimate
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :12894.35
+Thread#0:T:ActualComputedValue :12894.35
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :12894.35
+Thread#0:T:ActualDisclosedValue :12894.35
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsPrincipalValueShouldDisplayOnLoanEstimate() (1.3s)
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #278 from normal test queue 
+Thread#0:Scheduler: considering testitem #278 for thread
+Thread#0:Scheduler: using testitem #278 for thread
+Thread#0:Scheduler: Test #278 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #277/0 is finished on thread #0 as Succeeded within 8.8287822 seconds
+Thread#0: Test #278/0 is started on thread #0
+Thread#0:B:Given user is at TRID application homepage
+Thread#0:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (1.2s)
+Thread#0:B:And user have closing disclosure data from excel sheet ClosingDisclosure for the scenario 20
+Thread#0:T:done: CardsValidationSteps.GivenUserHaveClosingDisclosureDataFromExcelSheetForTheScenario("ClosingDisclosure", 20) (0.9s)
+Thread#0:B:When user upload json file for the scenario
+Thread#0:T:done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (2.0s)
+Thread#0:B:And user navigates to Loan Estimate Cards Page
+Thread#0:T:done: CardsValidationSteps.WhenUserNavigatesToLoanEstimateCardsPage() (0.4s)
+Thread#0:B:Then updated/computed in 5 Years value should display on Loan Estimate
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :38353.32
+Thread#0:T:ActualComputedValue :38353.32
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :38353.32
+Thread#0:T:ActualDisclosedValue :38353.32
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsValueShouldDisplayOnLoanEstimate() (1.2s)
+Thread#0:B:And updated/computed in 5 Years principal value should display on Loan Estimate
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :12996.63
+Thread#0:T:ActualComputedValue :12996.63
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :12996.63
+Thread#0:T:ActualDisclosedValue :12996.63
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsPrincipalValueShouldDisplayOnLoanEstimate() (1.2s)
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #279 from normal test queue 
+Thread#0:Scheduler: considering testitem #279 for thread
+Thread#0:Scheduler: using testitem #279 for thread
+Thread#0:Scheduler: Test #279 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #278/0 is finished on thread #0 as Succeeded within 8.4261784 seconds
+Thread#0: Test #279/0 is started on thread #0
+Thread#0:B:Given user is at TRID application homepage
+Thread#0:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (1.3s)
+Thread#0:B:And user have closing disclosure data from excel sheet ClosingDisclosure for the scenario 21
+Thread#0:T:done: CardsValidationSteps.GivenUserHaveClosingDisclosureDataFromExcelSheetForTheScenario("ClosingDisclosure", 21) (0.9s)
+Thread#0:B:When user upload json file for the scenario
+Thread#0:T:done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (2.0s)
+Thread#0:B:And user navigates to Loan Estimate Cards Page
+Thread#0:T:done: CardsValidationSteps.WhenUserNavigatesToLoanEstimateCardsPage() (0.3s)
+Thread#0:B:Then updated/computed in 5 Years value should display on Loan Estimate
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :36414.6
+Thread#0:T:ActualComputedValue :36414.6
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :36414.6
+Thread#0:T:ActualDisclosedValue :36414.6
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsValueShouldDisplayOnLoanEstimate() (1.1s)
+Thread#0:B:And updated/computed in 5 Years principal value should display on Loan Estimate
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :12996.63
+Thread#0:T:ActualComputedValue :12996.63
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :12996.63
+Thread#0:T:ActualDisclosedValue :12996.63
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsPrincipalValueShouldDisplayOnLoanEstimate() (1.1s)
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #280 from normal test queue 
+Thread#0:Scheduler: considering testitem #280 for thread
+Thread#0:Scheduler: using testitem #280 for thread
+Thread#0:Scheduler: Test #280 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #279/0 is finished on thread #0 as Succeeded within 8.3635066 seconds
+Thread#0: Test #280/0 is started on thread #0
+Thread#0:B:Given user is at TRID application homepage
+Thread#0:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (1.2s)
+Thread#0:B:And user have closing disclosure data from excel sheet ClosingDisclosure for the scenario 22
+Thread#0:T:done: CardsValidationSteps.GivenUserHaveClosingDisclosureDataFromExcelSheetForTheScenario("ClosingDisclosure", 22) (0.9s)
+Thread#0:B:When user upload json file for the scenario
+Thread#0:T:done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (2.0s)
+Thread#0:B:And user navigates to Loan Estimate Cards Page
+Thread#0:T:done: CardsValidationSteps.WhenUserNavigatesToLoanEstimateCardsPage() (0.3s)
+Thread#0:B:Then updated/computed in 5 Years value should display on Loan Estimate
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :37724.6
+Thread#0:T:ActualComputedValue :37724.6
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :37724.6
+Thread#0:T:ActualDisclosedValue :37724.6
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsValueShouldDisplayOnLoanEstimate() (1.2s)
+Thread#0:B:And updated/computed in 5 Years principal value should display on Loan Estimate
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :12996.63
+Thread#0:T:ActualComputedValue :12996.63
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :12996.63
+Thread#0:T:ActualDisclosedValue :12996.63
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsPrincipalValueShouldDisplayOnLoanEstimate() (1.1s)
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #281 from normal test queue 
+Thread#0:Scheduler: considering testitem #281 for thread
+Thread#0:Scheduler: using testitem #281 for thread
+Thread#0:Scheduler: Test #281 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #280/0 is finished on thread #0 as Succeeded within 8.2690836 seconds
+Thread#0: Test #281/0 is started on thread #0
+Thread#0:B:Given user is at TRID application homepage
+Thread#0:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (1.2s)
+Thread#0:B:And user have closing disclosure data from excel sheet ClosingDisclosure for the scenario 23
+Thread#0:T:done: CardsValidationSteps.GivenUserHaveClosingDisclosureDataFromExcelSheetForTheScenario("ClosingDisclosure", 23) (0.9s)
+Thread#0:B:When user upload json file for the scenario
+Thread#0:T:done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (2.0s)
+Thread#0:B:And user navigates to Loan Estimate Cards Page
+Thread#0:T:done: CardsValidationSteps.WhenUserNavigatesToLoanEstimateCardsPage() (0.4s)
+Thread#0:B:Then updated/computed in 5 Years value should display on Loan Estimate
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :39663.32
+Thread#0:T:ActualComputedValue :39663.32
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :39663.32
+Thread#0:T:ActualDisclosedValue :39663.32
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsValueShouldDisplayOnLoanEstimate() (1.1s)
+Thread#0:B:And updated/computed in 5 Years principal value should display on Loan Estimate
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :12996.63
+Thread#0:T:ActualComputedValue :12996.63
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :12996.63
+Thread#0:T:ActualDisclosedValue :12996.63
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsPrincipalValueShouldDisplayOnLoanEstimate() (1.1s)
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #282 from normal test queue 
+Thread#0:Scheduler: considering testitem #282 for thread
+Thread#0:Scheduler: using testitem #282 for thread
+Thread#0:Scheduler: Test #282 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #281/0 is finished on thread #0 as Succeeded within 8.1822768 seconds
+Thread#0: Test #282/0 is started on thread #0
+Thread#0:B:Given user is at TRID application homepage
+Thread#0:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (1.2s)
+Thread#0:B:And user have closing disclosure data from excel sheet ClosingDisclosure for the scenario 24
+Thread#0:T:done: CardsValidationSteps.GivenUserHaveClosingDisclosureDataFromExcelSheetForTheScenario("ClosingDisclosure", 24) (0.9s)
+Thread#0:B:When user upload json file for the scenario
+Thread#0:T:done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (2.0s)
+Thread#0:B:And user navigates to Loan Estimate Cards Page
+Thread#0:T:done: CardsValidationSteps.WhenUserNavigatesToLoanEstimateCardsPage() (0.3s)
+Thread#0:B:Then updated/computed in 5 Years value should display on Loan Estimate
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :37724.6
+Thread#0:T:ActualComputedValue :37724.6
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :37724.6
+Thread#0:T:ActualDisclosedValue :37724.6
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsValueShouldDisplayOnLoanEstimate() (1.2s)
+Thread#0:B:And updated/computed in 5 Years principal value should display on Loan Estimate
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :12996.63
+Thread#0:T:ActualComputedValue :12996.63
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :12996.63
+Thread#0:T:ActualDisclosedValue :12996.63
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsPrincipalValueShouldDisplayOnLoanEstimate() (1.2s)
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #283 from normal test queue 
+Thread#0:Scheduler: considering testitem #283 for thread
+Thread#0:Scheduler: using testitem #283 for thread
+Thread#0:Scheduler: Test #283 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #282/0 is finished on thread #0 as Succeeded within 8.315643 seconds
+Thread#0: Test #283/0 is started on thread #0
+Thread#0:B:Given user is at TRID application homepage
+Thread#0:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (1.3s)
+Thread#0:B:And user have closing disclosure data from excel sheet ClosingDisclosure for the scenario 25
+Thread#0:T:done: CardsValidationSteps.GivenUserHaveClosingDisclosureDataFromExcelSheetForTheScenario("ClosingDisclosure", 25) (0.9s)
+Thread#0:B:When user upload json file for the scenario
+Thread#0:T:done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (2.0s)
+Thread#0:B:And user navigates to Loan Estimate Cards Page
+Thread#0:T:done: CardsValidationSteps.WhenUserNavigatesToLoanEstimateCardsPage() (0.3s)
+Thread#0:B:Then updated/computed in 5 Years value should display on Loan Estimate
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :154402.21
+Thread#0:T:ActualComputedValue :154402.21
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :154402.21
+Thread#0:T:ActualDisclosedValue :154402.21
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsValueShouldDisplayOnLoanEstimate() (1.1s)
+Thread#0:B:And updated/computed in 5 Years principal value should display on Loan Estimate
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :131000
+Thread#0:T:ActualComputedValue :131000
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :131000
+Thread#0:T:ActualDisclosedValue :131000
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsPrincipalValueShouldDisplayOnLoanEstimate() (1.1s)
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #284 from normal test queue 
+Thread#0:Scheduler: considering testitem #284 for thread
+Thread#0:Scheduler: using testitem #284 for thread
+Thread#0:Scheduler: Test #284 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #283/0 is finished on thread #0 as Succeeded within 8.3053656 seconds
+Thread#0: Test #284/0 is started on thread #0
+Thread#0:B:Given user is at TRID application homepage
+Thread#0:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (1.4s)
+Thread#0:B:And user have closing disclosure data from excel sheet ClosingDisclosure for the scenario 26
+Thread#0:T:done: CardsValidationSteps.GivenUserHaveClosingDisclosureDataFromExcelSheetForTheScenario("ClosingDisclosure", 26) (0.9s)
+Thread#0:B:When user upload json file for the scenario
+Thread#0:T:done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (2.0s)
+Thread#0:B:And user navigates to Loan Estimate Cards Page
+Thread#0:T:done: CardsValidationSteps.WhenUserNavigatesToLoanEstimateCardsPage() (0.4s)
+Thread#0:B:Then updated/computed in 5 Years value should display on Loan Estimate
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :38379.93
+Thread#0:T:ActualComputedValue :38379.93
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :38379.93
+Thread#0:T:ActualDisclosedValue :38379.93
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsValueShouldDisplayOnLoanEstimate() (1.2s)
+Thread#0:B:And updated/computed in 5 Years principal value should display on Loan Estimate
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :12998.59
+Thread#0:T:ActualComputedValue :12998.59
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :12998.59
+Thread#0:T:ActualDisclosedValue :12998.59
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsPrincipalValueShouldDisplayOnLoanEstimate() (1.1s)
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #285 from normal test queue 
+Thread#0:Scheduler: considering testitem #285 for thread
+Thread#0:Scheduler: using testitem #285 for thread
+Thread#0:Scheduler: Test #285 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #284/0 is finished on thread #0 as Succeeded within 8.4572598 seconds
+Thread#0: Test #285/0 is started on thread #0
+Thread#0:B:Given user is at TRID application homepage
+Thread#0:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (1.2s)
+Thread#0:B:And user have closing disclosure data from excel sheet ClosingDisclosure for the scenario 27
+Thread#0:T:done: CardsValidationSteps.GivenUserHaveClosingDisclosureDataFromExcelSheetForTheScenario("ClosingDisclosure", 27) (0.9s)
+Thread#0:B:When user upload json file for the scenario
+Thread#0:T:done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (2.0s)
+Thread#0:B:And user navigates to Loan Estimate Cards Page
+Thread#0:T:done: CardsValidationSteps.WhenUserNavigatesToLoanEstimateCardsPage() (0.5s)
+Thread#0:B:Then updated/computed in 5 Years value should display on Loan Estimate
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :38824.2
+Thread#0:T:ActualComputedValue :38824.2
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :38824.2
+Thread#0:T:ActualDisclosedValue :38824.2
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsValueShouldDisplayOnLoanEstimate() (1.2s)
+Thread#0:B:And updated/computed in 5 Years principal value should display on Loan Estimate
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :12998.59
+Thread#0:T:ActualComputedValue :12998.59
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :12998.59
+Thread#0:T:ActualDisclosedValue :12998.59
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsPrincipalValueShouldDisplayOnLoanEstimate() (1.1s)
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #286 from normal test queue 
+Thread#0:Scheduler: considering testitem #286 for thread
+Thread#0:Scheduler: using testitem #286 for thread
+Thread#0:Scheduler: Test #286 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #285/0 is finished on thread #0 as Succeeded within 8.35783 seconds
+Thread#0: Test #286/0 is started on thread #0
+Thread#0:B:Given user is at TRID application homepage
+Thread#0:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (1.2s)
+Thread#0:B:And user have closing disclosure data from excel sheet ClosingDisclosure for the scenario 28
+Thread#0:T:done: CardsValidationSteps.GivenUserHaveClosingDisclosureDataFromExcelSheetForTheScenario("ClosingDisclosure", 28) (0.9s)
+Thread#0:B:When user upload json file for the scenario
+Thread#0:T:done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (2.0s)
+Thread#0:B:And user navigates to Loan Estimate Cards Page
+Thread#0:T:done: CardsValidationSteps.WhenUserNavigatesToLoanEstimateCardsPage() (0.4s)
+Thread#0:B:Then updated/computed in 5 Years value should display on Loan Estimate
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :38410.81
+Thread#0:T:ActualComputedValue :38410.81
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :38410.81
+Thread#0:T:ActualDisclosedValue :38410.81
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsValueShouldDisplayOnLoanEstimate() (1.1s)
+Thread#0:B:And updated/computed in 5 Years principal value should display on Loan Estimate
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :13010.29
+Thread#0:T:ActualComputedValue :13010.29
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :13010.29
+Thread#0:T:ActualDisclosedValue :13010.29
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsPrincipalValueShouldDisplayOnLoanEstimate() (1.2s)
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #287 from normal test queue 
+Thread#0:Scheduler: considering testitem #287 for thread
+Thread#0:Scheduler: using testitem #287 for thread
+Thread#0:Scheduler: Test #287 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #286/0 is finished on thread #0 as Succeeded within 8.2149779 seconds
+Thread#0: Test #287/0 is started on thread #0
+Thread#0:B:Given user is at TRID application homepage
+Thread#0:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (1.2s)
+Thread#0:B:And user have closing disclosure data from excel sheet ClosingDisclosure for the scenario 31
+Thread#0:T:done: CardsValidationSteps.GivenUserHaveClosingDisclosureDataFromExcelSheetForTheScenario("ClosingDisclosure", 31) (0.9s)
+Thread#0:B:When user upload json file for the scenario
+Thread#0:T:done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (2.0s)
+Thread#0:B:And user navigates to Loan Estimate Cards Page
+Thread#0:T:done: CardsValidationSteps.WhenUserNavigatesToLoanEstimateCardsPage() (0.3s)
+Thread#0:B:Then updated/computed in 5 Years value should display on Loan Estimate
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :37840.8
+Thread#0:T:ActualComputedValue :37840.8
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :37840.8
+Thread#0:T:ActualDisclosedValue :37840.8
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsValueShouldDisplayOnLoanEstimate() (1.2s)
+Thread#0:B:And updated/computed in 5 Years principal value should display on Loan Estimate
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :13028.53
+Thread#0:T:ActualComputedValue :13028.53
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :13028.53
+Thread#0:T:ActualDisclosedValue :13028.53
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsPrincipalValueShouldDisplayOnLoanEstimate() (1.2s)
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #288 from normal test queue 
+Thread#0:Scheduler: considering testitem #288 for thread
+Thread#0:Scheduler: using testitem #288 for thread
+Thread#0:Scheduler: Test #288 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #287/0 is finished on thread #0 as Succeeded within 8.3302168 seconds
+Thread#0: Test #288/0 is started on thread #0
+Thread#0:B:Given user is at TRID application homepage
+Thread#0:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (1.2s)
+Thread#0:B:And user have closing disclosure data from excel sheet ClosingDisclosure for the scenario 32
+Thread#0:T:done: CardsValidationSteps.GivenUserHaveClosingDisclosureDataFromExcelSheetForTheScenario("ClosingDisclosure", 32) (0.8s)
+Thread#0:B:When user upload json file for the scenario
+Thread#0:T:done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (2.0s)
+Thread#0:B:And user navigates to Loan Estimate Cards Page
+Thread#0:T:done: CardsValidationSteps.WhenUserNavigatesToLoanEstimateCardsPage() (1.3s)
+Thread#0:B:Then updated/computed in 5 Years value should display on Loan Estimate
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :40744.2
+Thread#0:T:ActualComputedValue :40744.2
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :40744.2
+Thread#0:T:ActualDisclosedValue :40744.2
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsValueShouldDisplayOnLoanEstimate() (1.1s)
+Thread#0:B:And updated/computed in 5 Years principal value should display on Loan Estimate
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :16414.12
+Thread#0:T:ActualComputedValue :16414.12
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :16414.12
+Thread#0:T:ActualDisclosedValue :16414.12
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsPrincipalValueShouldDisplayOnLoanEstimate() (1.1s)
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #289 from normal test queue 
+Thread#0:Scheduler: considering testitem #289 for thread
+Thread#0:Scheduler: using testitem #289 for thread
+Thread#0:Scheduler: Test #289 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #288/0 is finished on thread #0 as Succeeded within 9.0974742 seconds
+Thread#0: Test #289/0 is started on thread #0
+Thread#0:B:Given user is at TRID application homepage
+Thread#0:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (1.2s)
+Thread#0:B:And user have closing disclosure data from excel sheet ClosingDisclosure for the scenario 33
+Thread#0:T:done: CardsValidationSteps.GivenUserHaveClosingDisclosureDataFromExcelSheetForTheScenario("ClosingDisclosure", 33) (0.9s)
+Thread#0:B:When user upload json file for the scenario
+Thread#0:T:done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (2.0s)
+Thread#0:B:And user navigates to Loan Estimate Cards Page
+Thread#0:T:done: CardsValidationSteps.WhenUserNavigatesToLoanEstimateCardsPage() (0.4s)
+Thread#0:B:Then updated/computed in 5 Years value should display on Loan Estimate
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :37474.76
+Thread#0:T:ActualComputedValue :37474.76
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :37474.76
+Thread#0:T:ActualDisclosedValue :37474.76
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsValueShouldDisplayOnLoanEstimate() (1.1s)
+Thread#0:B:And updated/computed in 5 Years principal value should display on Loan Estimate
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :12861.83
+Thread#0:T:ActualComputedValue :12861.83
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :12861.83
+Thread#0:T:ActualDisclosedValue :12861.83
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsPrincipalValueShouldDisplayOnLoanEstimate() (1.1s)
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #290 from normal test queue 
+Thread#0:Scheduler: considering testitem #290 for thread
+Thread#0:Scheduler: using testitem #290 for thread
+Thread#0:Scheduler: Test #290 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #289/0 is finished on thread #0 as Succeeded within 8.2122125 seconds
+Thread#0: Test #290/0 is started on thread #0
+Thread#0:B:Given user is at TRID application homepage
+Thread#0:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (1.2s)
+Thread#0:B:And user have closing disclosure data from excel sheet ClosingDisclosure for the scenario 34
+Thread#0:T:done: CardsValidationSteps.GivenUserHaveClosingDisclosureDataFromExcelSheetForTheScenario("ClosingDisclosure", 34) (0.9s)
+Thread#0:B:When user upload json file for the scenario
+Thread#0:T:done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (2.0s)
+Thread#0:B:And user navigates to Loan Estimate Cards Page
+Thread#0:T:done: CardsValidationSteps.WhenUserNavigatesToLoanEstimateCardsPage() (0.3s)
+Thread#0:B:Then updated/computed in 5 Years value should display on Loan Estimate
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :38074.55
+Thread#0:T:ActualComputedValue :38074.55
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :38074.55
+Thread#0:T:ActualDisclosedValue :38074.55
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsValueShouldDisplayOnLoanEstimate() (1.2s)
+Thread#0:B:And updated/computed in 5 Years principal value should display on Loan Estimate
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :12926.22
+Thread#0:T:ActualComputedValue :12926.22
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :12926.22
+Thread#0:T:ActualDisclosedValue :12926.22
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsPrincipalValueShouldDisplayOnLoanEstimate() (1.1s)
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #291 from normal test queue 
+Thread#0:Scheduler: considering testitem #291 for thread
+Thread#0:Scheduler: using testitem #291 for thread
+Thread#0:Scheduler: Test #291 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #290/0 is finished on thread #0 as Succeeded within 8.1785324 seconds
+Thread#0: Test #291/0 is started on thread #0
+Thread#0:B:Given user is at TRID application homepage
+Thread#0:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (1.2s)
+Thread#0:B:And user have closing disclosure data from excel sheet ClosingDisclosure for the scenario 35
+Thread#0:T:done: CardsValidationSteps.GivenUserHaveClosingDisclosureDataFromExcelSheetForTheScenario("ClosingDisclosure", 35) (0.9s)
+Thread#0:B:When user upload json file for the scenario
+Thread#0:T:done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (2.0s)
+Thread#0:B:And user navigates to Loan Estimate Cards Page
+Thread#0:T:done: CardsValidationSteps.WhenUserNavigatesToLoanEstimateCardsPage() (0.9s)
+Thread#0:B:Then updated/computed in 5 Years value should display on Loan Estimate
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :40744.2
+Thread#0:T:ActualComputedValue :40744.2
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :40744.2
+Thread#0:T:ActualDisclosedValue :40744.2
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsValueShouldDisplayOnLoanEstimate() (1.1s)
+Thread#0:B:And updated/computed in 5 Years principal value should display on Loan Estimate
+Thread#0:T:NUnit.Framework.AssertionException:   Computed value does not match as expected with the difference of 0.0100000000002183
+Thread#0:T:  Expected: 16061.6d
+Thread#0:T:  But was:  16061.610000000001d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.CardsValidationSteps.ThenUpdatedComputedIn5YearsPrincipalValueShouldDisplayOnLoanEstimate() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\CardsValidationSteps.cs:line 1468
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsPrincipalValueShouldDisplayOnLoanEstimate() (0.6s)
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #292 from normal test queue 
+Thread#0:Scheduler: considering testitem #292 for thread
+Thread#0:Scheduler: using testitem #292 for thread
+Thread#0:Scheduler: Test #292 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #291/0 is finished on thread #0 as Succeeded within 8.1981749 seconds
+Thread#0: Test #292/0 is started on thread #0
+Thread#0:B:Given user is at TRID application homepage
+Thread#0:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (1.2s)
+Thread#0:B:And user have closing disclosure data from excel sheet ClosingDisclosure for the scenario 36
+Thread#0:T:done: CardsValidationSteps.GivenUserHaveClosingDisclosureDataFromExcelSheetForTheScenario("ClosingDisclosure", 36) (0.9s)
+Thread#0:B:When user upload json file for the scenario
+Thread#0:T:done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (2.0s)
+Thread#0:B:And user navigates to Loan Estimate Cards Page
+Thread#0:T:done: CardsValidationSteps.WhenUserNavigatesToLoanEstimateCardsPage() (0.4s)
+Thread#0:B:Then updated/computed in 5 Years value should display on Loan Estimate
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :37475.71
+Thread#0:T:ActualComputedValue :37475.71
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :37475.71
+Thread#0:T:ActualDisclosedValue :37475.71
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsValueShouldDisplayOnLoanEstimate() (1.1s)
+Thread#0:B:And updated/computed in 5 Years principal value should display on Loan Estimate
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :12506.39
+Thread#0:T:ActualComputedValue :12506.39
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :12506.39
+Thread#0:T:ActualDisclosedValue :12506.39
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsPrincipalValueShouldDisplayOnLoanEstimate() (1.1s)
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #293 from normal test queue 
+Thread#0:Scheduler: considering testitem #293 for thread
+Thread#0:Scheduler: using testitem #293 for thread
+Thread#0:Scheduler: Test #293 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #292/0 is finished on thread #0 as Succeeded within 8.2352173 seconds
+Thread#0: Test #293/0 is started on thread #0
+Thread#0:B:Given user is at TRID application homepage
+Thread#0:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (1.2s)
+Thread#0:B:And user have closing disclosure data from excel sheet ClosingDisclosure for the scenario 37
+Thread#0:T:done: CardsValidationSteps.GivenUserHaveClosingDisclosureDataFromExcelSheetForTheScenario("ClosingDisclosure", 37) (1.0s)
+Thread#0:B:When user upload json file for the scenario
+Thread#0:T:done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (2.0s)
+Thread#0:B:And user navigates to Loan Estimate Cards Page
+Thread#0:T:done: CardsValidationSteps.WhenUserNavigatesToLoanEstimateCardsPage() (0.3s)
+Thread#0:B:Then updated/computed in 5 Years value should display on Loan Estimate
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :37809.93
+Thread#0:T:ActualComputedValue :37809.93
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :37809.93
+Thread#0:T:ActualDisclosedValue :37809.93
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsValueShouldDisplayOnLoanEstimate() (1.1s)
+Thread#0:B:And updated/computed in 5 Years principal value should display on Loan Estimate
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :13010.29
+Thread#0:T:ActualComputedValue :13010.29
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :13010.29
+Thread#0:T:ActualDisclosedValue :13010.29
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsPrincipalValueShouldDisplayOnLoanEstimate() (1.1s)
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #294 from normal test queue 
+Thread#0:Scheduler: considering testitem #294 for thread
+Thread#0:Scheduler: using testitem #294 for thread
+Thread#0:Scheduler: Test #294 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #293/0 is finished on thread #0 as Succeeded within 8.3507232 seconds
+Thread#0: Test #294/0 is started on thread #0
+Thread#0:B:Given user is at TRID application homepage
+Thread#0:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (1.2s)
+Thread#0:B:And user have closing disclosure data from excel sheet ClosingDisclosure for the scenario 38
+Thread#0:T:done: CardsValidationSteps.GivenUserHaveClosingDisclosureDataFromExcelSheetForTheScenario("ClosingDisclosure", 38) (0.9s)
+Thread#0:B:When user upload json file for the scenario
+Thread#0:T:done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (2.0s)
+Thread#0:B:And user navigates to Loan Estimate Cards Page
+Thread#0:T:done: CardsValidationSteps.WhenUserNavigatesToLoanEstimateCardsPage() (0.9s)
+Thread#0:B:Then updated/computed in 5 Years value should display on Loan Estimate
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :37460.22
+Thread#0:T:ActualComputedValue :37460.22
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :37460.22
+Thread#0:T:ActualDisclosedValue :37460.22
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsValueShouldDisplayOnLoanEstimate() (1.1s)
+Thread#0:B:And updated/computed in 5 Years principal value should display on Loan Estimate
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :12873.96
+Thread#0:T:ActualComputedValue :12873.96
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :12873.96
+Thread#0:T:ActualDisclosedValue :12873.96
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsPrincipalValueShouldDisplayOnLoanEstimate() (1.2s)
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #295 from normal test queue 
+Thread#0:Scheduler: considering testitem #295 for thread
+Thread#0:Scheduler: using testitem #295 for thread
+Thread#0:Scheduler: Test #295 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #294/0 is finished on thread #0 as Succeeded within 8.9224166 seconds
+Thread#0: Test #295/0 is started on thread #0
+Thread#0:B:Given user is at TRID application homepage
+Thread#0:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (1.2s)
+Thread#0:B:And user have closing disclosure data from excel sheet ClosingDisclosure for the scenario 51
+Thread#0:T:done: CardsValidationSteps.GivenUserHaveClosingDisclosureDataFromExcelSheetForTheScenario("ClosingDisclosure", 51) (0.8s)
+Thread#0:B:When user upload json file for the scenario
+Thread#0:T:done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (2.0s)
+Thread#0:B:And user navigates to Loan Estimate Cards Page
+Thread#0:T:done: CardsValidationSteps.WhenUserNavigatesToLoanEstimateCardsPage() (0.4s)
+Thread#0:B:Then updated/computed in 5 Years value should display on Loan Estimate
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :39819.91
+Thread#0:T:ActualComputedValue :39819.91
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :39819.91
+Thread#0:T:ActualDisclosedValue :39819.91
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsValueShouldDisplayOnLoanEstimate() (1.1s)
+Thread#0:B:And updated/computed in 5 Years principal value should display on Loan Estimate
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :13028.53
+Thread#0:T:ActualComputedValue :13028.53
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :13028.53
+Thread#0:T:ActualDisclosedValue :13028.53
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsPrincipalValueShouldDisplayOnLoanEstimate() (1.1s)
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #296 from normal test queue 
+Thread#0:Scheduler: considering testitem #296 for thread
+Thread#0:Scheduler: using testitem #296 for thread
+Thread#0:Scheduler: Test #296 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #295/0 is finished on thread #0 as Succeeded within 8.1196968 seconds
+Thread#0: Test #296/0 is started on thread #0
+Thread#0:B:Given user is at TRID application homepage
+Thread#0:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (1.2s)
+Thread#0:B:And user have closing disclosure data from excel sheet ClosingDisclosure for the scenario 52
+Thread#0:T:done: CardsValidationSteps.GivenUserHaveClosingDisclosureDataFromExcelSheetForTheScenario("ClosingDisclosure", 52) (0.9s)
+Thread#0:B:When user upload json file for the scenario
+Thread#0:T:done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (2.0s)
+Thread#0:B:And user navigates to Loan Estimate Cards Page
+Thread#0:T:done: CardsValidationSteps.WhenUserNavigatesToLoanEstimateCardsPage() (1.0s)
+Thread#0:B:Then updated/computed in 5 Years value should display on Loan Estimate
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :42288.23
+Thread#0:T:ActualComputedValue :42288.23
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :42288.23
+Thread#0:T:ActualDisclosedValue :42288.23
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsValueShouldDisplayOnLoanEstimate() (1.2s)
+Thread#0:B:And updated/computed in 5 Years principal value should display on Loan Estimate
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :16414.12
+Thread#0:T:ActualComputedValue :16414.12
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :16414.12
+Thread#0:T:ActualDisclosedValue :16414.12
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsPrincipalValueShouldDisplayOnLoanEstimate() (1.1s)
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #297 from normal test queue 
+Thread#0:Scheduler: considering testitem #297 for thread
+Thread#0:Scheduler: using testitem #297 for thread
+Thread#0:Scheduler: Test #297 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #296/0 is finished on thread #0 as Succeeded within 8.9218177 seconds
+Thread#0: Test #297/0 is started on thread #0
+Thread#0:B:Given user is at TRID application homepage
+Thread#0:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (1.2s)
+Thread#0:B:And user have closing disclosure data from excel sheet ClosingDisclosure for the scenario 53
+Thread#0:T:done: CardsValidationSteps.GivenUserHaveClosingDisclosureDataFromExcelSheetForTheScenario("ClosingDisclosure", 53) (0.9s)
+Thread#0:B:When user upload json file for the scenario
+Thread#0:T:done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (2.0s)
+Thread#0:B:And user navigates to Loan Estimate Cards Page
+Thread#0:T:done: CardsValidationSteps.WhenUserNavigatesToLoanEstimateCardsPage() (1.0s)
+Thread#0:B:Then updated/computed in 5 Years value should display on Loan Estimate
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :39413.96
+Thread#0:T:ActualComputedValue :39413.96
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :39413.96
+Thread#0:T:ActualDisclosedValue :39413.96
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsValueShouldDisplayOnLoanEstimate() (1.1s)
+Thread#0:B:And updated/computed in 5 Years principal value should display on Loan Estimate
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :12861.83
+Thread#0:T:ActualComputedValue :12861.83
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :12861.83
+Thread#0:T:ActualDisclosedValue :12861.83
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsPrincipalValueShouldDisplayOnLoanEstimate() (1.1s)
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #298 from normal test queue 
+Thread#0:Scheduler: considering testitem #298 for thread
+Thread#0:Scheduler: using testitem #298 for thread
+Thread#0:Scheduler: Test #298 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #297/0 is finished on thread #0 as Succeeded within 8.9505131 seconds
+Thread#0: Test #298/0 is started on thread #0
+Thread#0:B:Given user is at TRID application homepage
+Thread#0:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (1.2s)
+Thread#0:B:And user have closing disclosure data from excel sheet ClosingDisclosure for the scenario 54
+Thread#0:T:done: CardsValidationSteps.GivenUserHaveClosingDisclosureDataFromExcelSheetForTheScenario("ClosingDisclosure", 54) (0.8s)
+Thread#0:B:When user upload json file for the scenario
+Thread#0:T:done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (2.0s)
+Thread#0:B:And user navigates to Loan Estimate Cards Page
+Thread#0:T:done: CardsValidationSteps.WhenUserNavigatesToLoanEstimateCardsPage() (0.4s)
+Thread#0:B:Then updated/computed in 5 Years value should display on Loan Estimate
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :40053.66
+Thread#0:T:ActualComputedValue :40053.66
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :40053.66
+Thread#0:T:ActualDisclosedValue :40053.66
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsValueShouldDisplayOnLoanEstimate() (1.1s)
+Thread#0:B:And updated/computed in 5 Years principal value should display on Loan Estimate
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :12926.22
+Thread#0:T:ActualComputedValue :12926.22
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :12926.22
+Thread#0:T:ActualDisclosedValue :12926.22
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsPrincipalValueShouldDisplayOnLoanEstimate() (1.1s)
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: at the end of normal test queue
+Thread#0:Scheduler: enumerator for thread is at end
+Thread#0:Scheduler: No more tests for thread 
+Thread#0:T:##########################################################
+Thread#0:T:##########################################################
+Thread#0:T:====================================================================================
+Thread#0:T:Scenario Number : 73
+Thread#0:T:The total number of cards Failue: 4
+Thread#0:T:Name of cards Failed: || In5YearsPrincipal || : NUnit.Framework.AssertionException:   Computed value does not match as expected with the difference of 0.0100000000002183
+Thread#0:T:  Expected: 16061.6d
+Thread#0:T:  But was:  16061.610000000001d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.CardsValidationSteps.ThenUpdatedComputedIn5YearsPrincipalValueShouldDisplayOnLoanEstimate() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\CardsValidationSteps.cs:line 1468 
+Thread#0:T: ====================================================================================
+Thread#0:T:|| In5YearsPrincipal || : NUnit.Framework.AssertionException:   Computed value does not match as expected with the difference of 82.2099999999991
+Thread#0:T:  Expected: 12506.389999999999d
+Thread#0:T:  But was:  12424.18d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.CardsValidationSteps.ThenUpdatedComputedIn5YearsPrincipalValueShouldDisplayOnLoanEstimate() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\CardsValidationSteps.cs:line 1468 
+Thread#0:T: ====================================================================================
+Thread#0:T:|| In5YearsPrincipal || : NUnit.Framework.AssertionException:   Computed value does not match as expected with the difference of 0.0100000000002183
+Thread#0:T:  Expected: 12889.07d
+Thread#0:T:  But was:  12889.06d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.CardsValidationSteps.ThenUpdatedComputedIn5YearsPrincipalValueShouldDisplayOnLoanEstimate() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\CardsValidationSteps.cs:line 1468 
+Thread#0:T: ====================================================================================
+Thread#0:T:|| In5YearsPrincipal || : NUnit.Framework.AssertionException:   Computed value does not match as expected with the difference of 0.0100000000002183
+Thread#0:T:  Expected: 16061.6d
+Thread#0:T:  But was:  16061.610000000001d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.CardsValidationSteps.ThenUpdatedComputedIn5YearsPrincipalValueShouldDisplayOnLoanEstimate() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\CardsValidationSteps.cs:line 1468 
+Thread#0:T: ====================================================================================
+Thread#0:T:====================================================================================
+Thread#0:T:##########################################################
+Thread#0:T:##########################################################
+Thread#0: Test #298/0 is finished on thread #0 as CleanupFailed within 19.4823122 seconds
+Appdomain Disposed
+Thread#-1:Scheduler: get next test for thread
+Thread#:Scheduler: at the end of normal test queue
+Thread#-1:Scheduler: enumerator for thread is at end
+Total: 59
+Succeeded: 58
+Ignored: 0
+Pending: 0
+Skipped: 0
+Failed: 1

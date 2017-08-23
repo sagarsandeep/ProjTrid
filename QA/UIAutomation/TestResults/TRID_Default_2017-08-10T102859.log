@@ -1,0 +1,956 @@
+﻿VS filter: testpath:TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+142 | testpath:TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+145 | testpath:TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+147 | testpath:TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+139 | testpath:TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+143 | testpath:TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+144 | testpath:TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+141 | testpath:TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+146 | testpath:TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+138 | testpath:TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+140
+Discovering target: Default
+Discovering tests from assembly: F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\bin\Debug\TRID.dll
+Appdomain Disposed
+Test Suite Dump
+#0: TRID/Default - 
+#1: Default - 
+#2: TRID - 
+#3: AmortizationValidation - 
+#22: Uploading JSON file and validating Payment Schedule values on Amortization page, 138 - TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+138
+#23: Uploading JSON file and validating Payment Schedule values on Amortization page, 139 - TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+139
+#24: Uploading JSON file and validating Payment Schedule values on Amortization page, 140 - TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+140
+#25: Uploading JSON file and validating Payment Schedule values on Amortization page, 141 - TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+141
+#26: Uploading JSON file and validating Payment Schedule values on Amortization page, 142 - TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+142
+#27: Uploading JSON file and validating Payment Schedule values on Amortization page, 143 - TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+143
+#28: Uploading JSON file and validating Payment Schedule values on Amortization page, 144 - TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+144
+#29: Uploading JSON file and validating Payment Schedule values on Amortization page, 145 - TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+145
+#30: Uploading JSON file and validating Payment Schedule values on Amortization page, 146 - TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+146
+#31: Uploading JSON file and validating Payment Schedule values on Amortization page, 147 - TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+147
+End: Test Suite Dump
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #22 from normal test queue 
+Thread#0:Scheduler: considering testitem #22 for thread
+Thread#0:Scheduler: using testitem #22 for thread
+Thread#0:Scheduler: Test #22 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread #0: creating new test thread executor for TRID, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null (target: Default)
+Loading SpecRun type 'TechTalk.SpecRun.Framework.TestAssemblyExecutor' from: C:\Users\sandees\AppData\Local\Temp\VisualStudioTestExplorerExtensions\SpecRun.Runner.1.5.2\tools\TechTalk.SpecRun.Framework.Executor.dll
+Thread#0: Test #22/0 is started on thread #0
+Thread#0:B:Given user is at TRID application homepage
+Thread#0:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (62.7s)
+Thread#0:B:And user have Payment Schedule data from excel sheet PaymentSchedule for the scenario 124
+Thread#0:T:done: AmortizationValidationSteps.GivenUserHavePaymentScheduleDataFromExcelSheetForTheScenario("PaymentSchedule", 124) (0.8s)
+Thread#0:B:When user upload json file for the scenario
+Thread#0:T:done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (2.1s)
+Thread#0:B:And user navigates to Amortization Page
+Thread#0:T:done: AmortizationValidationSteps.WhenUserNavigatesToAmortizationPage() (1.4s)
+Thread#0:B:Then updated/computed Payment Stream Number value should display on Payment Schedule Grid
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :1
+Thread#0:T:ActualValue Row 1 :1
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :2
+Thread#0:T:ActualValue Row 2 :2
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 3 :3
+Thread#0:T:ActualValue Row 3 :3
+Thread#0:T:============================================================
+Thread#0:T:done: AmortizationValidationSteps.ThenUpdatedComputedPaymentStreamNumberValueShouldDisplayOnPaymentScheduleGrid() (1.1s)
+Thread#0:B:And updated/computed Number of Payments value should display on Payment Schedule Grid
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :36
+Thread#0:T:ActualValue Row 1 :36
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :323
+Thread#0:T:ActualValue Row 2 :323
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 3 :1
+Thread#0:T:ActualValue Row 3 :1
+Thread#0:T:============================================================
+Thread#0:T:done: AmortizationValidationSteps.ThenUpdatedComputedNumberOfPaymentsValueShouldDisplayOnPaymentScheduleGrid() (1.1s)
+Thread#0:B:And updated/computed Payment Amount value should display on Payment Schedule Grid
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :606.68
+Thread#0:T:ActualValue Row 1 :606.68
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :573.02
+Thread#0:T:ActualValue Row 2 :573.02
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 3 :573.82
+Thread#0:T:ActualValue Row 3 :573.82
+Thread#0:T:============================================================
+Thread#0:T:done: AmortizationValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnPaymentScheduleGrid() (1.5s)
+Thread#0:B:And updated/computed Principal and Interest Payment value should display on Payment Schedule Grid
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :606.68
+Thread#0:T:ActualValue Row 1 :606.68
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :573.02
+Thread#0:T:ActualValue Row 2 :573.02
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 3 :573.82
+Thread#0:T:ActualValue Row 3 :573.82
+Thread#0:T:============================================================
+Thread#0:T:done: AmortizationValidationSteps.ThenUpdatedComputedPrincipalAndInterestPaymentPaymentValueShouldDisplayOnPaymentScheduleGrid() (1.2s)
+Thread#0:B:And updated/computed PMI Payment value should display on Payment Schedule Grid
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :0
+Thread#0:T:ActualValue Row 1 :0
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :0
+Thread#0:T:ActualValue Row 2 :0
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 3 :0
+Thread#0:T:ActualValue Row 3 :0
+Thread#0:T:============================================================
+Thread#0:T:done: AmortizationValidationSteps.ThenUpdatedComputedPmiPaymentValueShouldDisplayOnPaymentScheduleGrid() (1.1s)
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #23 from normal test queue 
+Thread#0:Scheduler: considering testitem #23 for thread
+Thread#0:Scheduler: using testitem #23 for thread
+Thread#0:Scheduler: Test #23 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #22/0 is finished on thread #0 as Succeeded within 74.1880257 seconds
+Thread#0: Test #23/0 is started on thread #0
+Thread#0:B:Given user is at TRID application homepage
+Thread#0:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (2.0s)
+Thread#0:B:And user have Payment Schedule data from excel sheet PaymentSchedule for the scenario 125
+Thread#0:T:done: AmortizationValidationSteps.GivenUserHavePaymentScheduleDataFromExcelSheetForTheScenario("PaymentSchedule", 125) (0.6s)
+Thread#0:B:When user upload json file for the scenario
+Thread#0:T:done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (2.1s)
+Thread#0:B:And user navigates to Amortization Page
+Thread#0:T:done: AmortizationValidationSteps.WhenUserNavigatesToAmortizationPage() (1.0s)
+Thread#0:B:Then updated/computed Payment Stream Number value should display on Payment Schedule Grid
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :1
+Thread#0:T:ActualValue Row 1 :1
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :2
+Thread#0:T:ActualValue Row 2 :2
+Thread#0:T:============================================================
+Thread#0:T:done: AmortizationValidationSteps.ThenUpdatedComputedPaymentStreamNumberValueShouldDisplayOnPaymentScheduleGrid() (0.8s)
+Thread#0:B:And updated/computed Number of Payments value should display on Payment Schedule Grid
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :359
+Thread#0:T:ActualValue Row 1 :359
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :1
+Thread#0:T:ActualValue Row 2 :1
+Thread#0:T:============================================================
+Thread#0:T:done: AmortizationValidationSteps.ThenUpdatedComputedNumberOfPaymentsValueShouldDisplayOnPaymentScheduleGrid() (0.8s)
+Thread#0:B:And updated/computed Payment Amount value should display on Payment Schedule Grid
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :606.68
+Thread#0:T:ActualValue Row 1 :606.68
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :607.6
+Thread#0:T:ActualValue Row 2 :607.6
+Thread#0:T:============================================================
+Thread#0:T:done: AmortizationValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnPaymentScheduleGrid() (0.7s)
+Thread#0:B:And updated/computed Principal and Interest Payment value should display on Payment Schedule Grid
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :606.68
+Thread#0:T:ActualValue Row 1 :606.68
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :607.6
+Thread#0:T:ActualValue Row 2 :607.6
+Thread#0:T:============================================================
+Thread#0:T:done: AmortizationValidationSteps.ThenUpdatedComputedPrincipalAndInterestPaymentPaymentValueShouldDisplayOnPaymentScheduleGrid() (0.7s)
+Thread#0:B:And updated/computed PMI Payment value should display on Payment Schedule Grid
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :0
+Thread#0:T:ActualValue Row 1 :0
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :0
+Thread#0:T:ActualValue Row 2 :0
+Thread#0:T:============================================================
+Thread#0:T:done: AmortizationValidationSteps.ThenUpdatedComputedPmiPaymentValueShouldDisplayOnPaymentScheduleGrid() (0.8s)
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #24 from normal test queue 
+Thread#0:Scheduler: considering testitem #24 for thread
+Thread#0:Scheduler: using testitem #24 for thread
+Thread#0:Scheduler: Test #24 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #23/0 is finished on thread #0 as Succeeded within 11.5250467 seconds
+Thread#0: Test #24/0 is started on thread #0
+Thread#0:B:Given user is at TRID application homepage
+Thread#0:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (1.2s)
+Thread#0:B:And user have Payment Schedule data from excel sheet PaymentSchedule for the scenario 126
+Thread#0:T:done: AmortizationValidationSteps.GivenUserHavePaymentScheduleDataFromExcelSheetForTheScenario("PaymentSchedule", 126) (0.6s)
+Thread#0:B:When user upload json file for the scenario
+Thread#0:T:done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (2.0s)
+Thread#0:B:And user navigates to Amortization Page
+Thread#0:T:done: AmortizationValidationSteps.WhenUserNavigatesToAmortizationPage() (1.1s)
+Thread#0:B:Then updated/computed Payment Stream Number value should display on Payment Schedule Grid
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :1
+Thread#0:T:ActualValue Row 1 :1
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :2
+Thread#0:T:ActualValue Row 2 :2
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 3 :3
+Thread#0:T:ActualValue Row 3 :3
+Thread#0:T:============================================================
+Thread#0:T:done: AmortizationValidationSteps.ThenUpdatedComputedPaymentStreamNumberValueShouldDisplayOnPaymentScheduleGrid() (1.1s)
+Thread#0:B:And updated/computed Number of Payments value should display on Payment Schedule Grid
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :36
+Thread#0:T:ActualValue Row 1 :36
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :323
+Thread#0:T:ActualValue Row 2 :323
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 3 :1
+Thread#0:T:ActualValue Row 3 :1
+Thread#0:T:============================================================
+Thread#0:T:done: AmortizationValidationSteps.ThenUpdatedComputedNumberOfPaymentsValueShouldDisplayOnPaymentScheduleGrid() (1.1s)
+Thread#0:B:And updated/computed Payment Amount value should display on Payment Schedule Grid
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :606.68
+Thread#0:T:ActualValue Row 1 :606.68
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :623.9
+Thread#0:T:ActualValue Row 2 :623.9
+Thread#0:T:============================================================
+Thread#0:T:NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 3 with the difference of 0.00999999999999091
+Thread#0:T:  Expected: 626.36000000000001d
+Thread#0:T:  But was:  626.35000000000002d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 132
+Thread#0:T:done: AmortizationValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnPaymentScheduleGrid() (1.3s)
+Thread#0:B:And updated/computed Principal and Interest Payment value should display on Payment Schedule Grid
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :606.68
+Thread#0:T:ActualValue Row 1 :606.68
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :623.9
+Thread#0:T:ActualValue Row 2 :623.9
+Thread#0:T:============================================================
+Thread#0:T:NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 3 with the difference of 0.00999999999999091
+Thread#0:T:  Expected: 626.36000000000001d
+Thread#0:T:  But was:  626.35000000000002d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedPrincipalAndInterestPaymentPaymentValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 166
+Thread#0:T:done: AmortizationValidationSteps.ThenUpdatedComputedPrincipalAndInterestPaymentPaymentValueShouldDisplayOnPaymentScheduleGrid() (1.3s)
+Thread#0:B:And updated/computed PMI Payment value should display on Payment Schedule Grid
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :0
+Thread#0:T:ActualValue Row 1 :0
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :0
+Thread#0:T:ActualValue Row 2 :0
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 3 :0
+Thread#0:T:ActualValue Row 3 :0
+Thread#0:T:============================================================
+Thread#0:T:done: AmortizationValidationSteps.ThenUpdatedComputedPmiPaymentValueShouldDisplayOnPaymentScheduleGrid() (1.1s)
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #25 from normal test queue 
+Thread#0:Scheduler: considering testitem #25 for thread
+Thread#0:Scheduler: using testitem #25 for thread
+Thread#0:Scheduler: Test #25 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #24/0 is finished on thread #0 as Succeeded within 13.0872481 seconds
+Thread#0: Test #25/0 is started on thread #0
+Thread#0:B:Given user is at TRID application homepage
+Thread#0:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (1.7s)
+Thread#0:B:And user have Payment Schedule data from excel sheet PaymentSchedule for the scenario 127
+Thread#0:T:done: AmortizationValidationSteps.GivenUserHavePaymentScheduleDataFromExcelSheetForTheScenario("PaymentSchedule", 127) (0.6s)
+Thread#0:B:When user upload json file for the scenario
+Thread#0:T:done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (2.0s)
+Thread#0:B:And user navigates to Amortization Page
+Thread#0:T:done: AmortizationValidationSteps.WhenUserNavigatesToAmortizationPage() (1.0s)
+Thread#0:B:Then updated/computed Payment Stream Number value should display on Payment Schedule Grid
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :1
+Thread#0:T:ActualValue Row 1 :1
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :2
+Thread#0:T:ActualValue Row 2 :2
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 3 :3
+Thread#0:T:ActualValue Row 3 :3
+Thread#0:T:============================================================
+Thread#0:T:done: AmortizationValidationSteps.ThenUpdatedComputedPaymentStreamNumberValueShouldDisplayOnPaymentScheduleGrid() (1.1s)
+Thread#0:B:And updated/computed Number of Payments value should display on Payment Schedule Grid
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :36
+Thread#0:T:ActualValue Row 1 :36
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :323
+Thread#0:T:ActualValue Row 2 :323
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 3 :1
+Thread#0:T:ActualValue Row 3 :1
+Thread#0:T:============================================================
+Thread#0:T:done: AmortizationValidationSteps.ThenUpdatedComputedNumberOfPaymentsValueShouldDisplayOnPaymentScheduleGrid() (1.1s)
+Thread#0:B:And updated/computed Payment Amount value should display on Payment Schedule Grid
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :606.68
+Thread#0:T:ActualValue Row 1 :606.68
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :623.9
+Thread#0:T:ActualValue Row 2 :623.9
+Thread#0:T:============================================================
+Thread#0:T:NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 3 with the difference of 0.00999999999999091
+Thread#0:T:  Expected: 626.36000000000001d
+Thread#0:T:  But was:  626.35000000000002d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 132
+Thread#0:T:done: AmortizationValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnPaymentScheduleGrid() (1.3s)
+Thread#0:B:And updated/computed Principal and Interest Payment value should display on Payment Schedule Grid
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :606.68
+Thread#0:T:ActualValue Row 1 :606.68
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :623.9
+Thread#0:T:ActualValue Row 2 :623.9
+Thread#0:T:============================================================
+Thread#0:T:NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 3 with the difference of 0.00999999999999091
+Thread#0:T:  Expected: 626.36000000000001d
+Thread#0:T:  But was:  626.35000000000002d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedPrincipalAndInterestPaymentPaymentValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 166
+Thread#0:T:done: AmortizationValidationSteps.ThenUpdatedComputedPrincipalAndInterestPaymentPaymentValueShouldDisplayOnPaymentScheduleGrid() (1.3s)
+Thread#0:B:And updated/computed PMI Payment value should display on Payment Schedule Grid
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :0
+Thread#0:T:ActualValue Row 1 :0
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :0
+Thread#0:T:ActualValue Row 2 :0
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 3 :0
+Thread#0:T:ActualValue Row 3 :0
+Thread#0:T:============================================================
+Thread#0:T:done: AmortizationValidationSteps.ThenUpdatedComputedPmiPaymentValueShouldDisplayOnPaymentScheduleGrid() (1.1s)
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #26 from normal test queue 
+Thread#0:Scheduler: considering testitem #26 for thread
+Thread#0:Scheduler: using testitem #26 for thread
+Thread#0:Scheduler: Test #26 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #25/0 is finished on thread #0 as Succeeded within 13.4579515 seconds
+Thread#0: Test #26/0 is started on thread #0
+Thread#0:B:Given user is at TRID application homepage
+Thread#0:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (1.5s)
+Thread#0:B:And user have Payment Schedule data from excel sheet PaymentSchedule for the scenario 128
+Thread#0:T:done: AmortizationValidationSteps.GivenUserHavePaymentScheduleDataFromExcelSheetForTheScenario("PaymentSchedule", 128) (0.6s)
+Thread#0:B:When user upload json file for the scenario
+Thread#0:T:done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (2.0s)
+Thread#0:B:And user navigates to Amortization Page
+Thread#0:T:done: AmortizationValidationSteps.WhenUserNavigatesToAmortizationPage() (1.0s)
+Thread#0:B:Then updated/computed Payment Stream Number value should display on Payment Schedule Grid
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :1
+Thread#0:T:ActualValue Row 1 :1
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :2
+Thread#0:T:ActualValue Row 2 :2
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 3 :3
+Thread#0:T:ActualValue Row 3 :3
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 4 :4
+Thread#0:T:ActualValue Row 4 :4
+Thread#0:T:============================================================
+Thread#0:T:done: AmortizationValidationSteps.ThenUpdatedComputedPaymentStreamNumberValueShouldDisplayOnPaymentScheduleGrid() (1.5s)
+Thread#0:B:And updated/computed Number of Payments value should display on Payment Schedule Grid
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :36
+Thread#0:T:ActualValue Row 1 :36
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :36
+Thread#0:T:ActualValue Row 2 :36
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 3 :287
+Thread#0:T:ActualValue Row 3 :287
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 4 :1
+Thread#0:T:ActualValue Row 4 :1
+Thread#0:T:============================================================
+Thread#0:T:done: AmortizationValidationSteps.ThenUpdatedComputedNumberOfPaymentsValueShouldDisplayOnPaymentScheduleGrid() (2.6s)
+Thread#0:B:And updated/computed Payment Amount value should display on Payment Schedule Grid
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :606.68
+Thread#0:T:ActualValue Row 1 :606.68
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :751.43
+Thread#0:T:ActualValue Row 2 :751.43
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 3 :804.88
+Thread#0:T:ActualValue Row 3 :804.88
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 4 :804.21
+Thread#0:T:ActualValue Row 4 :804.21
+Thread#0:T:============================================================
+Thread#0:T:done: AmortizationValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnPaymentScheduleGrid() (1.5s)
+Thread#0:B:And updated/computed Principal and Interest Payment value should display on Payment Schedule Grid
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :606.68
+Thread#0:T:ActualValue Row 1 :606.68
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :751.43
+Thread#0:T:ActualValue Row 2 :751.43
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 3 :804.88
+Thread#0:T:ActualValue Row 3 :804.88
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 4 :804.21
+Thread#0:T:ActualValue Row 4 :804.21
+Thread#0:T:============================================================
+Thread#0:T:done: AmortizationValidationSteps.ThenUpdatedComputedPrincipalAndInterestPaymentPaymentValueShouldDisplayOnPaymentScheduleGrid() (1.5s)
+Thread#0:B:And updated/computed PMI Payment value should display on Payment Schedule Grid
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :0
+Thread#0:T:ActualValue Row 1 :0
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :0
+Thread#0:T:ActualValue Row 2 :0
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 3 :0
+Thread#0:T:ActualValue Row 3 :0
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 4 :0
+Thread#0:T:ActualValue Row 4 :0
+Thread#0:T:============================================================
+Thread#0:T:done: AmortizationValidationSteps.ThenUpdatedComputedPmiPaymentValueShouldDisplayOnPaymentScheduleGrid() (1.5s)
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #27 from normal test queue 
+Thread#0:Scheduler: considering testitem #27 for thread
+Thread#0:Scheduler: using testitem #27 for thread
+Thread#0:Scheduler: Test #27 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #26/0 is finished on thread #0 as Succeeded within 15.8087209 seconds
+Thread#0: Test #27/0 is started on thread #0
+Thread#0:B:Given user is at TRID application homepage
+Thread#0:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (1.9s)
+Thread#0:B:And user have Payment Schedule data from excel sheet PaymentSchedule for the scenario 129
+Thread#0:T:done: AmortizationValidationSteps.GivenUserHavePaymentScheduleDataFromExcelSheetForTheScenario("PaymentSchedule", 129) (0.6s)
+Thread#0:B:When user upload json file for the scenario
+Thread#0:T:done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (2.1s)
+Thread#0:B:And user navigates to Amortization Page
+Thread#0:T:done: AmortizationValidationSteps.WhenUserNavigatesToAmortizationPage() (1.0s)
+Thread#0:B:Then updated/computed Payment Stream Number value should display on Payment Schedule Grid
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :1
+Thread#0:T:ActualValue Row 1 :1
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :2
+Thread#0:T:ActualValue Row 2 :2
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 3 :3
+Thread#0:T:ActualValue Row 3 :3
+Thread#0:T:============================================================
+Thread#0:T:done: AmortizationValidationSteps.ThenUpdatedComputedPaymentStreamNumberValueShouldDisplayOnPaymentScheduleGrid() (1.1s)
+Thread#0:B:And updated/computed Number of Payments value should display on Payment Schedule Grid
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :36
+Thread#0:T:ActualValue Row 1 :36
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :323
+Thread#0:T:ActualValue Row 2 :323
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 3 :1
+Thread#0:T:ActualValue Row 3 :1
+Thread#0:T:============================================================
+Thread#0:T:done: AmortizationValidationSteps.ThenUpdatedComputedNumberOfPaymentsValueShouldDisplayOnPaymentScheduleGrid() (1.1s)
+Thread#0:B:And updated/computed Payment Amount value should display on Payment Schedule Grid
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :606.68
+Thread#0:T:ActualValue Row 1 :606.68
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :641.38
+Thread#0:T:ActualValue Row 2 :641.38
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 3 :643.49
+Thread#0:T:ActualValue Row 3 :643.49
+Thread#0:T:============================================================
+Thread#0:T:done: AmortizationValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnPaymentScheduleGrid() (1.1s)
+Thread#0:B:And updated/computed Principal and Interest Payment value should display on Payment Schedule Grid
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :606.68
+Thread#0:T:ActualValue Row 1 :606.68
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :641.38
+Thread#0:T:ActualValue Row 2 :641.38
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 3 :643.49
+Thread#0:T:ActualValue Row 3 :643.49
+Thread#0:T:============================================================
+Thread#0:T:done: AmortizationValidationSteps.ThenUpdatedComputedPrincipalAndInterestPaymentPaymentValueShouldDisplayOnPaymentScheduleGrid() (1.1s)
+Thread#0:B:And updated/computed PMI Payment value should display on Payment Schedule Grid
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :0
+Thread#0:T:ActualValue Row 1 :0
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :0
+Thread#0:T:ActualValue Row 2 :0
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 3 :0
+Thread#0:T:ActualValue Row 3 :0
+Thread#0:T:============================================================
+Thread#0:T:done: AmortizationValidationSteps.ThenUpdatedComputedPmiPaymentValueShouldDisplayOnPaymentScheduleGrid() (1.1s)
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #28 from normal test queue 
+Thread#0:Scheduler: considering testitem #28 for thread
+Thread#0:Scheduler: using testitem #28 for thread
+Thread#0:Scheduler: Test #28 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #27/0 is finished on thread #0 as Succeeded within 13.1272444 seconds
+Thread#0: Test #28/0 is started on thread #0
+Thread#0:B:Given user is at TRID application homepage
+Thread#0:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (1.4s)
+Thread#0:B:And user have Payment Schedule data from excel sheet PaymentSchedule for the scenario 130
+Thread#0:T:done: AmortizationValidationSteps.GivenUserHavePaymentScheduleDataFromExcelSheetForTheScenario("PaymentSchedule", 130) (0.6s)
+Thread#0:B:When user upload json file for the scenario
+Thread#0:T:done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (2.0s)
+Thread#0:B:And user navigates to Amortization Page
+Thread#0:T:done: AmortizationValidationSteps.WhenUserNavigatesToAmortizationPage() (1.0s)
+Thread#0:B:Then updated/computed Payment Stream Number value should display on Payment Schedule Grid
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :1
+Thread#0:T:ActualValue Row 1 :1
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :2
+Thread#0:T:ActualValue Row 2 :2
+Thread#0:T:============================================================
+Thread#0:T:done: AmortizationValidationSteps.ThenUpdatedComputedPaymentStreamNumberValueShouldDisplayOnPaymentScheduleGrid() (0.7s)
+Thread#0:B:And updated/computed Number of Payments value should display on Payment Schedule Grid
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :359
+Thread#0:T:ActualValue Row 1 :359
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :1
+Thread#0:T:ActualValue Row 2 :1
+Thread#0:T:============================================================
+Thread#0:T:done: AmortizationValidationSteps.ThenUpdatedComputedNumberOfPaymentsValueShouldDisplayOnPaymentScheduleGrid() (0.7s)
+Thread#0:B:And updated/computed Payment Amount value should display on Payment Schedule Grid
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :606.68
+Thread#0:T:ActualValue Row 1 :606.68
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :607.6
+Thread#0:T:ActualValue Row 2 :607.6
+Thread#0:T:============================================================
+Thread#0:T:done: AmortizationValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnPaymentScheduleGrid() (0.8s)
+Thread#0:B:And updated/computed Principal and Interest Payment value should display on Payment Schedule Grid
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :606.68
+Thread#0:T:ActualValue Row 1 :606.68
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :607.6
+Thread#0:T:ActualValue Row 2 :607.6
+Thread#0:T:============================================================
+Thread#0:T:done: AmortizationValidationSteps.ThenUpdatedComputedPrincipalAndInterestPaymentPaymentValueShouldDisplayOnPaymentScheduleGrid() (0.8s)
+Thread#0:B:And updated/computed PMI Payment value should display on Payment Schedule Grid
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :0
+Thread#0:T:ActualValue Row 1 :0
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :0
+Thread#0:T:ActualValue Row 2 :0
+Thread#0:T:============================================================
+Thread#0:T:done: AmortizationValidationSteps.ThenUpdatedComputedPmiPaymentValueShouldDisplayOnPaymentScheduleGrid() (0.8s)
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #29 from normal test queue 
+Thread#0:Scheduler: considering testitem #29 for thread
+Thread#0:Scheduler: using testitem #29 for thread
+Thread#0:Scheduler: Test #29 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #28/0 is finished on thread #0 as Succeeded within 10.7081151 seconds
+Thread#0: Test #29/0 is started on thread #0
+Thread#0:B:Given user is at TRID application homepage
+Thread#0:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (1.5s)
+Thread#0:B:And user have Payment Schedule data from excel sheet PaymentSchedule for the scenario 131
+Thread#0:T:done: AmortizationValidationSteps.GivenUserHavePaymentScheduleDataFromExcelSheetForTheScenario("PaymentSchedule", 131) (0.6s)
+Thread#0:B:When user upload json file for the scenario
+Thread#0:T:done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (2.1s)
+Thread#0:B:And user navigates to Amortization Page
+Thread#0:T:done: AmortizationValidationSteps.WhenUserNavigatesToAmortizationPage() (1.0s)
+Thread#0:B:Then updated/computed Payment Stream Number value should display on Payment Schedule Grid
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :1
+Thread#0:T:ActualValue Row 1 :1
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :2
+Thread#0:T:ActualValue Row 2 :2
+Thread#0:T:============================================================
+Thread#0:T:done: AmortizationValidationSteps.ThenUpdatedComputedPaymentStreamNumberValueShouldDisplayOnPaymentScheduleGrid() (0.7s)
+Thread#0:B:And updated/computed Number of Payments value should display on Payment Schedule Grid
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :359
+Thread#0:T:ActualValue Row 1 :359
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :1
+Thread#0:T:ActualValue Row 2 :1
+Thread#0:T:============================================================
+Thread#0:T:done: AmortizationValidationSteps.ThenUpdatedComputedNumberOfPaymentsValueShouldDisplayOnPaymentScheduleGrid() (0.7s)
+Thread#0:B:And updated/computed Payment Amount value should display on Payment Schedule Grid
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :606.68
+Thread#0:T:ActualValue Row 1 :606.68
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :607.6
+Thread#0:T:ActualValue Row 2 :607.6
+Thread#0:T:============================================================
+Thread#0:T:done: AmortizationValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnPaymentScheduleGrid() (0.7s)
+Thread#0:B:And updated/computed Principal and Interest Payment value should display on Payment Schedule Grid
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :606.68
+Thread#0:T:ActualValue Row 1 :606.68
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :607.6
+Thread#0:T:ActualValue Row 2 :607.6
+Thread#0:T:============================================================
+Thread#0:T:done: AmortizationValidationSteps.ThenUpdatedComputedPrincipalAndInterestPaymentPaymentValueShouldDisplayOnPaymentScheduleGrid() (0.7s)
+Thread#0:B:And updated/computed PMI Payment value should display on Payment Schedule Grid
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :0
+Thread#0:T:ActualValue Row 1 :0
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :0
+Thread#0:T:ActualValue Row 2 :0
+Thread#0:T:============================================================
+Thread#0:T:done: AmortizationValidationSteps.ThenUpdatedComputedPmiPaymentValueShouldDisplayOnPaymentScheduleGrid() (0.7s)
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #30 from normal test queue 
+Thread#0:Scheduler: considering testitem #30 for thread
+Thread#0:Scheduler: using testitem #30 for thread
+Thread#0:Scheduler: Test #30 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #29/0 is finished on thread #0 as Succeeded within 10.8856456 seconds
+Thread#0: Test #30/0 is started on thread #0
+Thread#0:B:Given user is at TRID application homepage
+Thread#0:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (1.2s)
+Thread#0:B:And user have Payment Schedule data from excel sheet PaymentSchedule for the scenario 132
+Thread#0:T:done: AmortizationValidationSteps.GivenUserHavePaymentScheduleDataFromExcelSheetForTheScenario("PaymentSchedule", 132) (0.6s)
+Thread#0:B:When user upload json file for the scenario
+Thread#0:T:done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (2.0s)
+Thread#0:B:And user navigates to Amortization Page
+Thread#0:T:done: AmortizationValidationSteps.WhenUserNavigatesToAmortizationPage() (1.0s)
+Thread#0:B:Then updated/computed Payment Stream Number value should display on Payment Schedule Grid
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :1
+Thread#0:T:ActualValue Row 1 :1
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :2
+Thread#0:T:ActualValue Row 2 :2
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 3 :3
+Thread#0:T:ActualValue Row 3 :3
+Thread#0:T:============================================================
+Thread#0:T:done: AmortizationValidationSteps.ThenUpdatedComputedPaymentStreamNumberValueShouldDisplayOnPaymentScheduleGrid() (1.3s)
+Thread#0:B:And updated/computed Number of Payments value should display on Payment Schedule Grid
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :36
+Thread#0:T:ActualValue Row 1 :36
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :323
+Thread#0:T:ActualValue Row 2 :323
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 3 :1
+Thread#0:T:ActualValue Row 3 :1
+Thread#0:T:============================================================
+Thread#0:T:done: AmortizationValidationSteps.ThenUpdatedComputedNumberOfPaymentsValueShouldDisplayOnPaymentScheduleGrid() (1.1s)
+Thread#0:B:And updated/computed Payment Amount value should display on Payment Schedule Grid
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :606.68
+Thread#0:T:ActualValue Row 1 :606.68
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :623.9
+Thread#0:T:ActualValue Row 2 :623.9
+Thread#0:T:============================================================
+Thread#0:T:NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 3 with the difference of 0.00999999999999091
+Thread#0:T:  Expected: 626.36000000000001d
+Thread#0:T:  But was:  626.35000000000002d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 132
+Thread#0:T:done: AmortizationValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnPaymentScheduleGrid() (1.3s)
+Thread#0:B:And updated/computed Principal and Interest Payment value should display on Payment Schedule Grid
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :606.68
+Thread#0:T:ActualValue Row 1 :606.68
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :623.9
+Thread#0:T:ActualValue Row 2 :623.9
+Thread#0:T:============================================================
+Thread#0:T:NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 3 with the difference of 0.00999999999999091
+Thread#0:T:  Expected: 626.36000000000001d
+Thread#0:T:  But was:  626.35000000000002d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedPrincipalAndInterestPaymentPaymentValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 166
+Thread#0:T:done: AmortizationValidationSteps.ThenUpdatedComputedPrincipalAndInterestPaymentPaymentValueShouldDisplayOnPaymentScheduleGrid() (1.3s)
+Thread#0:B:And updated/computed PMI Payment value should display on Payment Schedule Grid
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :0
+Thread#0:T:ActualValue Row 1 :0
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :0
+Thread#0:T:ActualValue Row 2 :0
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 3 :0
+Thread#0:T:ActualValue Row 3 :0
+Thread#0:T:============================================================
+Thread#0:T:done: AmortizationValidationSteps.ThenUpdatedComputedPmiPaymentValueShouldDisplayOnPaymentScheduleGrid() (1.1s)
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #31 from normal test queue 
+Thread#0:Scheduler: considering testitem #31 for thread
+Thread#0:Scheduler: using testitem #31 for thread
+Thread#0:Scheduler: Test #31 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #30/0 is finished on thread #0 as Succeeded within 12.9141209 seconds
+Thread#0: Test #31/0 is started on thread #0
+Thread#0:B:Given user is at TRID application homepage
+Thread#0:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (1.7s)
+Thread#0:B:And user have Payment Schedule data from excel sheet PaymentSchedule for the scenario 133
+Thread#0:T:done: AmortizationValidationSteps.GivenUserHavePaymentScheduleDataFromExcelSheetForTheScenario("PaymentSchedule", 133) (0.6s)
+Thread#0:B:When user upload json file for the scenario
+Thread#0:T:done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (2.1s)
+Thread#0:B:And user navigates to Amortization Page
+Thread#0:T:done: AmortizationValidationSteps.WhenUserNavigatesToAmortizationPage() (1.0s)
+Thread#0:B:Then updated/computed Payment Stream Number value should display on Payment Schedule Grid
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :1
+Thread#0:T:ActualValue Row 1 :1
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :2
+Thread#0:T:ActualValue Row 2 :2
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 3 :3
+Thread#0:T:ActualValue Row 3 :3
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 4 :4
+Thread#0:T:ActualValue Row 4 :4
+Thread#0:T:============================================================
+Thread#0:T:done: AmortizationValidationSteps.ThenUpdatedComputedPaymentStreamNumberValueShouldDisplayOnPaymentScheduleGrid() (1.5s)
+Thread#0:B:And updated/computed Number of Payments value should display on Payment Schedule Grid
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :36
+Thread#0:T:ActualValue Row 1 :36
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :36
+Thread#0:T:ActualValue Row 2 :36
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 3 :287
+Thread#0:T:ActualValue Row 3 :287
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 4 :1
+Thread#0:T:ActualValue Row 4 :1
+Thread#0:T:============================================================
+Thread#0:T:done: AmortizationValidationSteps.ThenUpdatedComputedNumberOfPaymentsValueShouldDisplayOnPaymentScheduleGrid() (1.5s)
+Thread#0:B:And updated/computed Payment Amount value should display on Payment Schedule Grid
+Thread#0:T:NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 1 with the difference of 0.0900000000000318
+Thread#0:T:  Expected: 828.10000000000002d
+Thread#0:T:  But was:  828.00999999999999d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 132
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :674.12
+Thread#0:T:ActualValue Row 2 :674.12
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 3 :593.59
+Thread#0:T:ActualValue Row 3 :593.59
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 4 :591.93
+Thread#0:T:ActualValue Row 4 :591.93
+Thread#0:T:============================================================
+Thread#0:T:done: AmortizationValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnPaymentScheduleGrid() (1.7s)
+Thread#0:B:And updated/computed Principal and Interest Payment value should display on Payment Schedule Grid
+Thread#0:T:NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 1 with the difference of 0.0900000000000318
+Thread#0:T:  Expected: 828.10000000000002d
+Thread#0:T:  But was:  828.00999999999999d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedPrincipalAndInterestPaymentPaymentValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 166
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :674.12
+Thread#0:T:ActualValue Row 2 :674.12
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 3 :593.59
+Thread#0:T:ActualValue Row 3 :593.59
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 4 :591.93
+Thread#0:T:ActualValue Row 4 :591.93
+Thread#0:T:============================================================
+Thread#0:T:done: AmortizationValidationSteps.ThenUpdatedComputedPrincipalAndInterestPaymentPaymentValueShouldDisplayOnPaymentScheduleGrid() (1.7s)
+Thread#0:B:And updated/computed PMI Payment value should display on Payment Schedule Grid
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :0
+Thread#0:T:ActualValue Row 1 :0
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :0
+Thread#0:T:ActualValue Row 2 :0
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 3 :0
+Thread#0:T:ActualValue Row 3 :0
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 4 :0
+Thread#0:T:ActualValue Row 4 :0
+Thread#0:T:============================================================
+Thread#0:T:done: AmortizationValidationSteps.ThenUpdatedComputedPmiPaymentValueShouldDisplayOnPaymentScheduleGrid() (1.5s)
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: at the end of normal test queue
+Thread#0:Scheduler: enumerator for thread is at end
+Thread#0:Scheduler: No more tests for thread 
+Thread#0:T:##########################################################
+Thread#0:T:##########################################################
+Thread#0:T:====================================================================================
+Thread#0:T:Scenario Number : 147
+Thread#0:T:The total number of cards Failue: 8
+Thread#0:T:Name of cards Failed: || PaymentAmount[2] || : NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 3 with the difference of 0.00999999999999091
+Thread#0:T:  Expected: 626.36000000000001d
+Thread#0:T:  But was:  626.35000000000002d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 132 
+Thread#0:T: ====================================================================================
+Thread#0:T:|| PaymentSchedulePrincipalandInterestPayment[2] || : NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 3 with the difference of 0.00999999999999091
+Thread#0:T:  Expected: 626.36000000000001d
+Thread#0:T:  But was:  626.35000000000002d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedPrincipalAndInterestPaymentPaymentValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 166 
+Thread#0:T: ====================================================================================
+Thread#0:T:|| PaymentAmount[2] || : NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 3 with the difference of 0.00999999999999091
+Thread#0:T:  Expected: 626.36000000000001d
+Thread#0:T:  But was:  626.35000000000002d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 132 
+Thread#0:T: ====================================================================================
+Thread#0:T:|| PaymentSchedulePrincipalandInterestPayment[2] || : NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 3 with the difference of 0.00999999999999091
+Thread#0:T:  Expected: 626.36000000000001d
+Thread#0:T:  But was:  626.35000000000002d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedPrincipalAndInterestPaymentPaymentValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 166 
+Thread#0:T: ====================================================================================
+Thread#0:T:|| PaymentAmount[2] || : NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 3 with the difference of 0.00999999999999091
+Thread#0:T:  Expected: 626.36000000000001d
+Thread#0:T:  But was:  626.35000000000002d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 132 
+Thread#0:T: ====================================================================================
+Thread#0:T:|| PaymentSchedulePrincipalandInterestPayment[2] || : NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 3 with the difference of 0.00999999999999091
+Thread#0:T:  Expected: 626.36000000000001d
+Thread#0:T:  But was:  626.35000000000002d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedPrincipalAndInterestPaymentPaymentValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 166 
+Thread#0:T: ====================================================================================
+Thread#0:T:|| PaymentAmount[0] || : NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 1 with the difference of 0.0900000000000318
+Thread#0:T:  Expected: 828.10000000000002d
+Thread#0:T:  But was:  828.00999999999999d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 132 
+Thread#0:T: ====================================================================================
+Thread#0:T:|| PaymentSchedulePrincipalandInterestPayment[0] || : NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 1 with the difference of 0.0900000000000318
+Thread#0:T:  Expected: 828.10000000000002d
+Thread#0:T:  But was:  828.00999999999999d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedPrincipalAndInterestPaymentPaymentValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 166 
+Thread#0:T: ====================================================================================
+Thread#0:T:====================================================================================
+Thread#0:T:##########################################################
+Thread#0:T:##########################################################
+Thread#0: Test #31/0 is finished on thread #0 as CleanupFailed within 20.7125979 seconds
+Appdomain Disposed
+Thread#-1:Scheduler: get next test for thread
+Thread#:Scheduler: at the end of normal test queue
+Thread#-1:Scheduler: enumerator for thread is at end
+Total: 10
+Succeeded: 9
+Ignored: 0
+Pending: 0
+Skipped: 0
+Failed: 1

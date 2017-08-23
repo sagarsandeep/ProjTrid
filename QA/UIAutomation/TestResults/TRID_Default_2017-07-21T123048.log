@@ -1,0 +1,114 @@
+﻿VS filter: testpath:TestAssembly:TRID/Feature:EscrowInfoCardsValidation/Scenario:Uploading+JSON+file+and+validating+Escrow+Info+cards+value+on+Escrow+Info+page%2c+020
+Discovering target: Default
+Discovering tests from assembly: F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\bin\Debug\TRID.dll
+Appdomain Disposed
+Test Suite Dump
+#0: TRID/Default - 
+#1: Default - 
+#2: TRID - 
+#401: EscrowInfoCardsValidation - 
+#406: Uploading JSON file and validating Escrow Info cards value on Escrow Info page, 020 - TestAssembly:TRID/Feature:EscrowInfoCardsValidation/Scenario:Uploading+JSON+file+and+validating+Escrow+Info+cards+value+on+Escrow+Info+page%2c+020
+End: Test Suite Dump
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #406 from normal test queue 
+Thread#0:Scheduler: considering testitem #406 for thread
+Thread#0:Scheduler: using testitem #406 for thread
+Thread#0:Scheduler: Test #406 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread #0: creating new test thread executor for TRID, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null (target: Default)
+Loading SpecRun type 'TechTalk.SpecRun.Framework.TestAssemblyExecutor' from: C:\Users\sandees\AppData\Local\Temp\VisualStudioTestExplorerExtensions\SpecRun.Runner.1.5.2\tools\TechTalk.SpecRun.Framework.Executor.dll
+Thread#0: Test #406/0 is started on thread #0
+Thread#0:B:Given user is at TRID application homepage
+Thread#0:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (36.3s)
+Thread#0:B:And user have Escrow Info data from excel sheet EscrowInfo for the scenario 17
+Thread#0:T:done: EscrowInfoCardsValidationSteps.GivenUserHaveEscrowInfoDataFromExcelSheetForTheScenario("EscrowInfo", 17) (0.9s)
+Thread#0:B:When user upload json file for the scenario
+Thread#0:T:done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (2.0s)
+Thread#0:B:And user navigates to Escrow Info Cards Page
+Thread#0:T:done: EscrowInfoCardsValidationSteps.WhenUserNavigatesToEscrowInfoCardsPage() (1.0s)
+Thread#0:B:Then updated/computed Insurance Initial Deposit value should display on Escrow Info
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedInsuranceInitialDepositValueShouldDisplayOnEscrowInfo() (310.0s)
+Thread#0:B:And updated/computed Insurance Period Deposit value should display on Escrow Info
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedInfoValue :0
+Thread#0:T:ActualInfoValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedInsurancePeriodDepositValueShouldDisplayOnEscrowInfo() (47.8s)
+Thread#0:B:And updated/computed Insurance Low Balance value should display on Escrow Info
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedInfoValue :0
+Thread#0:T:ActualInfoValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedInsuranceLowBalanceValueShouldDisplayOnEscrowInfo() (0.4s)
+Thread#0:B:And updated/computed Insurance Cushion value should display on Escrow Info
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedInfoValue :0
+Thread#0:T:ActualInfoValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedInsuranceCushionValueShouldDisplayOnEscrowInfo() (0.1s)
+Thread#0:B:And updated/computed Insurance Total Annual Disbursed value should display on Escrow Info
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedInfoValue :0
+Thread#0:T:ActualInfoValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedInsuranceTotalAnnualDisbursedValueShouldDisplayOnEscrowInfo() (0.1s)
+Thread#0:B:And updated/computed Tax Initial Deposit value should display on Escrow Info
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedInfoValue :1200
+Thread#0:T:ActualInfoValue :1200
+Thread#0:T:============================================================
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedTaxInitialDepositValueShouldDisplayOnEscrowInfo() (38.0s)
+Thread#0:B:And updated/computed Tax Period Deposit value should display on Escrow Info
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedInfoValue :200
+Thread#0:T:ActualInfoValue :200
+Thread#0:T:============================================================
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedTaxPeriodDepositValueShouldDisplayOnEscrowInfo() (0.1s)
+Thread#0:B:And updated/computed Tax Low Balance value should display on Escrow Info
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedInfoValue :400
+Thread#0:T:ActualInfoValue :400
+Thread#0:T:============================================================
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedTaxLowBalanceValueShouldDisplayOnEscrowInfo() (0.1s)
+Thread#0:B:And updated/computed Tax Cushion value should display on Escrow Info
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedInfoValue :400
+Thread#0:T:ActualInfoValue :400
+Thread#0:T:============================================================
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedTaxCushionValueShouldDisplayOnEscrowInfo() (0.1s)
+Thread#0:B:And updated/computed Tax Total Annual Disbursed value should display on Escrow Info
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedInfoValue :2400
+Thread#0:T:ActualInfoValue :2400
+Thread#0:T:============================================================
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedTaxTotalAnnualDisbursedValueShouldDisplayOnEscrowInfo() (0.1s)
+Thread#0:B:And updated/computed PMI Initial Deposit value should display on Escrow Info
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedInfoValue :0
+Thread#0:T:ActualInfoValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedPmiInitialDepositValueShouldDisplayOnEscrowInfo() (0.1s)
+Thread#0:B:And updated/computed PMI Period Deposit value should display on Escrow Info
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedInfoValue :0
+Thread#0:T:ActualInfoValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedPmiPeriodDepositValueShouldDisplayOnEscrowInfo() (0.1s)
+Thread#0:B:And updated/computed PMI Low Balance value should display on Escrow Info
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedInfoValue :0
+Thread#0:T:ActualInfoValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedPmiLowBalanceValueShouldDisplayOnEscrowInfo() (0.1s)
+Thread#0:B:And updated/computed PMI Cushion value should display on Escrow Info
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedInfoValue :0
+Thread#0:T:ActualInfoValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedPmiCushionValueShouldDisplayOnEscrowInfo() (0.1s)
+Thread#0:B:And updated/computed PMI Total Annual Disbursed value should display on Escrow Info
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedInfoValue :0
+Thread#0:T:ActualInfoValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedCompute

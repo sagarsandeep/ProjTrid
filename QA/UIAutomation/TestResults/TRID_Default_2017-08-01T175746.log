@@ -1,0 +1,164 @@
+﻿VS filter: testpath:TestAssembly:TRID/Feature:CardsValidation/Scenario:Giving+inputs+from+Excel+file+and+validating+cards+value+on+Closing+Disclosure+page%2c+095 | testpath:TestAssembly:TRID/Feature:CardsValidation/Scenario:Giving+inputs+from+Excel+file+and+validating+cards+value+on+Closing+Disclosure+page%2c+093 | testpath:TestAssembly:TRID/Feature:CardsValidation/Scenario:Giving+inputs+from+Excel+file+and+validating+cards+value+on+Closing+Disclosure+page%2c+091 | testpath:TestAssembly:TRID/Feature:CardsValidation/Scenario:Giving+inputs+from+Excel+file+and+validating+cards+value+on+Closing+Disclosure+page%2c+094 | testpath:TestAssembly:TRID/Feature:CardsValidation/Scenario:Giving+inputs+from+Excel+file+and+validating+cards+value+on+Closing+Disclosure+page%2c+092
+Discovering target: Default
+Discovering tests from assembly: F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\bin\Debug\TRID.dll
+Appdomain Disposed
+Test Suite Dump
+#0: TRID/Default - 
+#1: Default - 
+#2: TRID - 
+#150: CardsValidation - 
+#371: Giving inputs from Excel file and validating cards value on Closing Disclosure page, 091 - TestAssembly:TRID/Feature:CardsValidation/Scenario:Giving+inputs+from+Excel+file+and+validating+cards+value+on+Closing+Disclosure+page%2c+091
+#372: Giving inputs from Excel file and validating cards value on Closing Disclosure page, 092 - TestAssembly:TRID/Feature:CardsValidation/Scenario:Giving+inputs+from+Excel+file+and+validating+cards+value+on+Closing+Disclosure+page%2c+092
+#373: Giving inputs from Excel file and validating cards value on Closing Disclosure page, 093 - TestAssembly:TRID/Feature:CardsValidation/Scenario:Giving+inputs+from+Excel+file+and+validating+cards+value+on+Closing+Disclosure+page%2c+093
+#374: Giving inputs from Excel file and validating cards value on Closing Disclosure page, 094 - TestAssembly:TRID/Feature:CardsValidation/Scenario:Giving+inputs+from+Excel+file+and+validating+cards+value+on+Closing+Disclosure+page%2c+094
+#375: Giving inputs from Excel file and validating cards value on Closing Disclosure page, 095 - TestAssembly:TRID/Feature:CardsValidation/Scenario:Giving+inputs+from+Excel+file+and+validating+cards+value+on+Closing+Disclosure+page%2c+095
+End: Test Suite Dump
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #371 from normal test queue 
+Thread#0:Scheduler: considering testitem #371 for thread
+Thread#0:Scheduler: using testitem #371 for thread
+Thread#0:Scheduler: Test #371 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread #0: creating new test thread executor for TRID, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null (target: Default)
+Thread#1:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #372 from normal test queue 
+Thread#1:Scheduler: considering testitem #372 for thread
+Thread#1:Scheduler: using testitem #372 for thread
+Thread#1:Scheduler: Test #372 is scheduled for thread
+Thread#1:Scheduler: with testItemExecutionIndex 1
+Thread #1: creating new test thread executor for TRID, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null (target: Default)
+Thread#2:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #373 from normal test queue 
+Thread#2:Scheduler: considering testitem #373 for thread
+Thread#2:Scheduler: using testitem #373 for thread
+Thread#2:Scheduler: Test #373 is scheduled for thread
+Thread#2:Scheduler: with testItemExecutionIndex 2
+Thread #2: creating new test thread executor for TRID, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null (target: Default)
+Thread#3:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #374 from normal test queue 
+Thread#3:Scheduler: considering testitem #374 for thread
+Thread#3:Scheduler: using testitem #374 for thread
+Thread#3:Scheduler: Test #374 is scheduled for thread
+Thread#3:Scheduler: with testItemExecutionIndex 3
+Thread #3: creating new test thread executor for TRID, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null (target: Default)
+Loading SpecRun type 'TechTalk.SpecRun.Framework.TestAssemblyExecutor' from: C:\Users\sandees\AppData\Local\Temp\VisualStudioTestExplorerExtensions\SpecRun.Runner.1.5.2\tools\TechTalk.SpecRun.Framework.Executor.dll
+Loading SpecRun type 'TechTalk.SpecRun.Framework.TestAssemblyExecutor' from: C:\Users\sandees\AppData\Local\Temp\VisualStudioTestExplorerExtensions\SpecRun.Runner.1.5.2\tools\TechTalk.SpecRun.Framework.Executor.dll
+Loading SpecRun type 'TechTalk.SpecRun.Framework.TestAssemblyExecutor' from: C:\Users\sandees\AppData\Local\Temp\VisualStudioTestExplorerExtensions\SpecRun.Runner.1.5.2\tools\TechTalk.SpecRun.Framework.Executor.dll
+Loading SpecRun type 'TechTalk.SpecRun.Framework.TestAssemblyExecutor' from: C:\Users\sandees\AppData\Local\Temp\VisualStudioTestExplorerExtensions\SpecRun.Runner.1.5.2\tools\TechTalk.SpecRun.Framework.Executor.dll
+Thread#4:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #375 from normal test queue 
+Thread#4:Scheduler: considering testitem #375 for thread
+Thread#4:Scheduler: using testitem #375 for thread
+Thread#4:Scheduler: Test #375 is scheduled for thread
+Thread#4:Scheduler: with testItemExecutionIndex 4
+Thread #4: creating new test thread executor for TRID, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null (target: Default)
+Loading SpecRun type 'TechTalk.SpecRun.Framework.TestAssemblyExecutor' from: C:\Users\sandees\AppData\Local\Temp\VisualStudioTestExplorerExtensions\SpecRun.Runner.1.5.2\tools\TechTalk.SpecRun.Framework.Executor.dll
+Thread#3: Test #374/0 is started on thread #3
+Thread#0: Test #371/0 is started on thread #0
+Thread#1: Test #372/0 is started on thread #1
+Thread#5:Scheduler: get next test for thread
+Thread#:Scheduler: at the end of normal test queue
+Thread#5:Scheduler: enumerator for thread is at end
+Thread#5:Scheduler: No more tests for thread 
+Thread#2: Test #373/0 is started on thread #2
+Thread#6:Scheduler: get next test for thread
+Thread#:Scheduler: at the end of normal test queue
+Thread#6:Scheduler: enumerator for thread is at end
+Thread#6:Scheduler: No more tests for thread 
+Thread#7:Scheduler: get next test for thread
+Thread#:Scheduler: at the end of normal test queue
+Thread#7:Scheduler: enumerator for thread is at end
+Thread#7:Scheduler: No more tests for thread 
+Thread#4: Test #375/0 is started on thread #4
+Thread#8:Scheduler: get next test for thread
+Thread#:Scheduler: at the end of normal test queue
+Thread#8:Scheduler: enumerator for thread is at end
+Thread#8:Scheduler: No more tests for thread 
+Thread#3:B:Given user is at TRID application homepage
+Thread#1:B:Given user is at TRID application homepage
+Thread#9:Scheduler: get next test for thread
+Thread#:Scheduler: at the end of normal test queue
+Thread#9:Scheduler: enumerator for thread is at end
+Thread#9:Scheduler: No more tests for thread 
+Thread#0:B:Given user is at TRID application homepage
+Thread#2:B:Given user is at TRID application homepage
+Thread#4:B:Given user is at TRID application homepage
+Thread#3:T:System.NullReferenceException: Object reference not set to an instance of an object.
+Thread#3:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.GetElementsFromResponse(Response response)
+Thread#3:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElements(String mechanism, String value)
+Thread#3:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementsByXPath(String xpath)
+Thread#3:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__d(ISearchContext context)
+Thread#3:T:   at OpenQA.Selenium.By.FindElements(ISearchContext context)
+Thread#3:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElements(By by)
+Thread#3:T:   at OpenQA.Selenium.Support.UI.ExpectedConditions.<>c__DisplayClass17.<VisibilityOfAllElementsLocatedBy>b__15(IWebDriver driver)
+Thread#3:T:   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)
+Thread#3:T:   at TRID.ActionClasses.UIActions.WebDriverWait(By element, Int32 timeoutInSeconds, String errorMessage) in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\ActionClasses\UIActions.cs:line 60: Unable to load StartNewLoanTextelement
+Thread#3:T:error: Object reference not set to an instance of an object.
+Thread#3:B:And user have closing disclosure data from excel sheet ClosingDisclosure for the scenario 80
+Thread#3:T:skipped because of previous errors
+Thread#3:B:And user have Mortgage Insurance data from excel sheet MortgageInsurance for the scenario 80
+Thread#3:T:skipped because of previous errors
+Thread#3:B:And user have variable loan data from excel sheet ARMTerms for the scenario 1
+Thread#3:T:skipped because of previous errors
+Thread#3:B:And user have Prepaid Charges data from excel sheet PrepaidCharges for the scenario 80
+Thread#3:T:skipped because of previous errors
+Thread#3:B:And user have Export data from excel sheet Export for the scenario 80
+Thread#3:T:skipped because of previous errors
+Thread#3:B:And user have Escrow Grid data from excel sheet EscrowGrid for the scenario 80
+Thread#3:T:skipped because of previous errors
+Thread#3:B:When user navigate to Loan Inputs Page
+Thread#3:T:skipped because of previous errors
+Thread#3:B:And user selects Calculation Method
+Thread#3:T:skipped because of previous errors
+Thread#3:B:And user selects loan type
+Thread#3:T:skipped because of previous errors
+Thread#3:B:And user selects Frequency of Payments
+Thread#3:T:skipped because of previous errors
+Thread#3:B:And user selects Loan Term
+Thread#3:T:skipped because of previous errors
+Thread#3:B:And user selects Repayment Term Type
+Thread#3:T:skipped because of previous errors
+Thread#3:B:And user enters Loan detail input values for computation
+Thread#3:T:skipped because of previous errors
+Thread#3:B:And user enters pmi rate values
+Thread#3:T:skipped because of previous errors
+Thread#3:B:And user enters other pmi input values
+Thread#3:T:skipped because of previous errors
+Thread#3:B:And user enters Escrow Grid Input values
+Thread#3:T:skipped because of previous errors
+Thread#3:B:And user enters all input values for Prepaid Charges
+Thread#3:T:skipped because of previous errors
+Thread#3:B:And user enters input value for prepaid custom fields
+Thread#3:T:skipped because of previous errors
+Thread#3:B:And user navigates to Disclosure Inputs Page
+Thread#3:T:skipped because of previous errors
+Thread#3:B:And user enters disclosed input values for Closing Disclosure Loan Terms & Projected Payments
+Thread#3:T:skipped because of previous errors
+Thread#3:B:And user enters disclosed input values for Closing Disclosure Loan Calculations
+Thread#3:T:skipped because of previous errors
+Thread#3:B:And user enters disclosed input values for Property Cost and Escrow
+Thread#3:T:skipped because of previous errors
+Thread#3:B:And user navigates to Loan Estimate Cards Page
+Thread#3:T:skipped because of previous errors
+Thread#3:B:And user enters disclsoed input values for Loan Estimate - Comparisons
+Thread#3:T:skipped because of previous errors
+Thread#3:B:And user navigates to Export Page
+Thread#3:T:skipped because of previous errors
+Thread#3:B:And user enters all input values for Export Page
+Thread#3:T:skipped because of previous errors
+Thread#3:B:And user clicks on Export button to generate JSON file
+Thread#3:T:skipped because of previous errors
+Thread#3:B:And user navigates to Closing Disclosure Cards Page
+Thread#3:T:skipped because of previous errors
+Thread#3:B:Then updated/computed Principal and Interest value should display on Closing Disclosure
+Thread#3:T:skipped because of previous errors
+Thread#3:B:And updated/computed Mortgage Insurance value should display on Closing Disclosure
+Thread#3:T:skipped because of previous errors
+Thread#3:B:And updated/computed Estimated Total Monthly Payment value should display on Closing Disclosure
+Thread#3:T:skipped because of previous errors
+Thread#3:B:And updated/computed APR value should display on Closing Disclosure
+Thread#3:T:skipped because of previous errors
+Thread#3:B:And APRWIN info value should display on Closing Disclosure
+Thread#3:T:skipped because of previous errors
+Thread#3:B:And updated/computed Balloon Amount value should display on Closing Disclosure
+Thre

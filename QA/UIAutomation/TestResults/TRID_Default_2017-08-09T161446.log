@@ -1,0 +1,1302 @@
+﻿VS filter: testpath:TestAssembly:TRID/Feature:VariableLoanPaymentScheuledValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+Worst+Case+on+Arms+page%2c+141 | testpath:TestAssembly:TRID/Feature:VariableLoanPaymentScheuledValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+Worst+Case+on+Arms+page%2c+138 | testpath:TestAssembly:TRID/Feature:VariableLoanPaymentScheuledValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+Worst+Case+on+Arms+page%2c+147 | testpath:TestAssembly:TRID/Feature:VariableLoanPaymentScheuledValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+Worst+Case+on+Arms+page%2c+146 | testpath:TestAssembly:TRID/Feature:VariableLoanPaymentScheuledValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+Worst+Case+on+Arms+page%2c+143 | testpath:TestAssembly:TRID/Feature:VariableLoanPaymentScheuledValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+Worst+Case+on+Arms+page%2c+139 | testpath:TestAssembly:TRID/Feature:VariableLoanPaymentScheuledValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+Worst+Case+on+Arms+page%2c+145 | testpath:TestAssembly:TRID/Feature:VariableLoanPaymentScheuledValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+Worst+Case+on+Arms+page%2c+140 | testpath:TestAssembly:TRID/Feature:VariableLoanPaymentScheuledValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+Worst+Case+on+Arms+page%2c+144 | testpath:TestAssembly:TRID/Feature:VariableLoanPaymentScheuledValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+Worst+Case+on+Arms+page%2c+142
+Discovering target: Default
+Discovering tests from assembly: F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\bin\Debug\TRID.dll
+Appdomain Disposed
+Test Suite Dump
+#0: TRID/Default - 
+#1: Default - 
+#2: TRID - 
+#606: VariableLoanPaymentScheuledValidation - 
+#637: Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 138 - TestAssembly:TRID/Feature:VariableLoanPaymentScheuledValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+Worst+Case+on+Arms+page%2c+138
+#638: Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 139 - TestAssembly:TRID/Feature:VariableLoanPaymentScheuledValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+Worst+Case+on+Arms+page%2c+139
+#639: Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 140 - TestAssembly:TRID/Feature:VariableLoanPaymentScheuledValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+Worst+Case+on+Arms+page%2c+140
+#640: Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 141 - TestAssembly:TRID/Feature:VariableLoanPaymentScheuledValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+Worst+Case+on+Arms+page%2c+141
+#641: Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 142 - TestAssembly:TRID/Feature:VariableLoanPaymentScheuledValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+Worst+Case+on+Arms+page%2c+142
+#642: Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 143 - TestAssembly:TRID/Feature:VariableLoanPaymentScheuledValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+Worst+Case+on+Arms+page%2c+143
+#643: Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 144 - TestAssembly:TRID/Feature:VariableLoanPaymentScheuledValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+Worst+Case+on+Arms+page%2c+144
+#644: Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 145 - TestAssembly:TRID/Feature:VariableLoanPaymentScheuledValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+Worst+Case+on+Arms+page%2c+145
+#645: Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 146 - TestAssembly:TRID/Feature:VariableLoanPaymentScheuledValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+Worst+Case+on+Arms+page%2c+146
+#646: Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 147 - TestAssembly:TRID/Feature:VariableLoanPaymentScheuledValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+Worst+Case+on+Arms+page%2c+147
+End: Test Suite Dump
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #637 from normal test queue 
+Thread#0:Scheduler: considering testitem #637 for thread
+Thread#0:Scheduler: using testitem #637 for thread
+Thread#0:Scheduler: Test #637 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread #0: creating new test thread executor for TRID, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null (target: Default)
+Loading SpecRun type 'TechTalk.SpecRun.Framework.TestAssemblyExecutor' from: C:\Users\sandees\AppData\Local\Temp\VisualStudioTestExplorerExtensions\SpecRun.Runner.1.5.2\tools\TechTalk.SpecRun.Framework.Executor.dll
+Thread#0: Test #637/0 is started on thread #0
+Thread#0:B:Given user is at TRID application homepage
+Thread#0:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (73.3s)
+Thread#0:B:And user have ARM Worst Case variable loan data from excel sheet ARMWorstCase for the scenario 2
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.GivenUserHaveARMWorstCaseVariableLoanDataFromExcelSheetForTheScenario("ARMWorstCase", 2) (0.8s)
+Thread#0:B:When user upload json file for the scenario
+Thread#0:T:done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (2.0s)
+Thread#0:B:And user navigates to ARM Page
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.WhenUserNavigatesToARMPage() (1.9s)
+Thread#0:B:Then updated/computed Payment Stream Number value should display on ARM Worst Case
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :1
+Thread#0:T:ActualValue Row 1 :1
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :2
+Thread#0:T:ActualValue Row 2 :2
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 3 :3
+Thread#0:T:ActualValue Row 3 :3
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 4 :4
+Thread#0:T:ActualValue Row 4 :4
+Thread#0:T:============================================================
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPaymentStreamNumberValueShouldDisplayOnArmWorstCase() (1.1s)
+Thread#0:B:And updated/computed Number of Payments value should display on ARM Worst Case
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :36
+Thread#0:T:ActualValue Row 1 :36
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :36
+Thread#0:T:ActualValue Row 2 :36
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 3 :36
+Thread#0:T:ActualValue Row 3 :36
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 4 :251
+Thread#0:T:ActualValue Row 4 :251
+Thread#0:T:============================================================
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedNumberOfPaymentsValueShouldDisplayOnArmWorstCase() (1.1s)
+Thread#0:B:And updated/computed Payment Amount value should display on ARM Worst Case
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :606.68
+Thread#0:T:ActualValue Row 1 :606.68
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :751.43
+Thread#0:T:ActualValue Row 2 :751.43
+Thread#0:T:============================================================
+Thread#0:T:NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 3 with the difference of 0.00999999999999091
+Thread#0:T:  Expected: 897.75d
+Thread#0:T:  But was:  897.74000000000001d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnArmWorstCase() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\VariableLoanPaymentScheuledValidationSteps.cs:line 379
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 4 :1042.01
+Thread#0:T:ActualValue Row 4 :1042.01
+Thread#0:T:============================================================
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnArmWorstCase() (1.2s)
+Thread#0:B:And updated/computed Period Payment value should display on ARM Worst Case
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :606.68
+Thread#0:T:ActualValue Row 1 :606.68
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :751.43
+Thread#0:T:ActualValue Row 2 :751.43
+Thread#0:T:============================================================
+Thread#0:T:NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 3 with the difference of 0.00999999999999091
+Thread#0:T:  Expected: 897.75d
+Thread#0:T:  But was:  897.74000000000001d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPeriodPaymentValueShouldDisplayOnArmWorstCase() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\VariableLoanPaymentScheuledValidationSteps.cs:line 413
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 4 :1042.01
+Thread#0:T:ActualValue Row 4 :1042.01
+Thread#0:T:============================================================
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPeriodPaymentValueShouldDisplayOnArmWorstCase() (1.2s)
+Thread#0:B:And updated/computed Period PMI value should display on ARM Worst Case
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :0
+Thread#0:T:ActualValue Row 1 :0
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :0
+Thread#0:T:ActualValue Row 2 :0
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 3 :0
+Thread#0:T:ActualValue Row 3 :0
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 4 :0
+Thread#0:T:ActualValue Row 4 :0
+Thread#0:T:============================================================
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPeriodPmiValueShouldDisplayOnArmWorstCase() (1.1s)
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #638 from normal test queue 
+Thread#0:Scheduler: considering testitem #638 for thread
+Thread#0:Scheduler: using testitem #638 for thread
+Thread#0:Scheduler: Test #638 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #637/0 is finished on thread #0 as Succeeded within 84.4354362 seconds
+Thread#0: Test #638/0 is started on thread #0
+Thread#0:B:Given user is at TRID application homepage
+Thread#0:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (2.0s)
+Thread#0:B:And user have ARM Worst Case variable loan data from excel sheet ARMWorstCase for the scenario 3
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.GivenUserHaveARMWorstCaseVariableLoanDataFromExcelSheetForTheScenario("ARMWorstCase", 3) (0.7s)
+Thread#0:B:When user upload json file for the scenario
+Thread#0:T:done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (2.0s)
+Thread#0:B:And user navigates to ARM Page
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.WhenUserNavigatesToARMPage() (1.2s)
+Thread#0:B:Then updated/computed Payment Stream Number value should display on ARM Worst Case
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :1
+Thread#0:T:ActualValue Row 1 :1
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :2
+Thread#0:T:ActualValue Row 2 :2
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 3 :3
+Thread#0:T:ActualValue Row 3 :3
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 4 :4
+Thread#0:T:ActualValue Row 4 :4
+Thread#0:T:============================================================
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPaymentStreamNumberValueShouldDisplayOnArmWorstCase() (1.1s)
+Thread#0:B:And updated/computed Number of Payments value should display on ARM Worst Case
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :36
+Thread#0:T:ActualValue Row 1 :36
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :36
+Thread#0:T:ActualValue Row 2 :36
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 3 :36
+Thread#0:T:ActualValue Row 3 :36
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 4 :251
+Thread#0:T:ActualValue Row 4 :251
+Thread#0:T:============================================================
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedNumberOfPaymentsValueShouldDisplayOnArmWorstCase() (1.0s)
+Thread#0:B:And updated/computed Payment Amount value should display on ARM Worst Case
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :606.68
+Thread#0:T:ActualValue Row 1 :606.68
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :751.43
+Thread#0:T:ActualValue Row 2 :751.43
+Thread#0:T:============================================================
+Thread#0:T:NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 3 with the difference of 0.00999999999999091
+Thread#0:T:  Expected: 897.75d
+Thread#0:T:  But was:  897.74000000000001d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnArmWorstCase() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\VariableLoanPaymentScheuledValidationSteps.cs:line 379
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 4 :1042.01
+Thread#0:T:ActualValue Row 4 :1042.01
+Thread#0:T:============================================================
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnArmWorstCase() (1.1s)
+Thread#0:B:And updated/computed Period Payment value should display on ARM Worst Case
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :606.68
+Thread#0:T:ActualValue Row 1 :606.68
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :751.43
+Thread#0:T:ActualValue Row 2 :751.43
+Thread#0:T:============================================================
+Thread#0:T:NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 3 with the difference of 0.00999999999999091
+Thread#0:T:  Expected: 897.75d
+Thread#0:T:  But was:  897.74000000000001d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPeriodPaymentValueShouldDisplayOnArmWorstCase() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\VariableLoanPaymentScheuledValidationSteps.cs:line 413
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 4 :1042.01
+Thread#0:T:ActualValue Row 4 :1042.01
+Thread#0:T:============================================================
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPeriodPaymentValueShouldDisplayOnArmWorstCase() (1.2s)
+Thread#0:B:And updated/computed Period PMI value should display on ARM Worst Case
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :0
+Thread#0:T:ActualValue Row 1 :0
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :0
+Thread#0:T:ActualValue Row 2 :0
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 3 :0
+Thread#0:T:ActualValue Row 3 :0
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 4 :0
+Thread#0:T:ActualValue Row 4 :0
+Thread#0:T:============================================================
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPeriodPmiValueShouldDisplayOnArmWorstCase() (1.1s)
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #639 from normal test queue 
+Thread#0:Scheduler: considering testitem #639 for thread
+Thread#0:Scheduler: using testitem #639 for thread
+Thread#0:Scheduler: Test #639 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #638/0 is finished on thread #0 as Succeeded within 12.7616132 seconds
+Thread#0: Test #639/0 is started on thread #0
+Thread#0:B:Given user is at TRID application homepage
+Thread#0:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (2.0s)
+Thread#0:B:And user have ARM Worst Case variable loan data from excel sheet ARMWorstCase for the scenario 4
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.GivenUserHaveARMWorstCaseVariableLoanDataFromExcelSheetForTheScenario("ARMWorstCase", 4) (0.7s)
+Thread#0:B:When user upload json file for the scenario
+Thread#0:T:done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (2.1s)
+Thread#0:B:And user navigates to ARM Page
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.WhenUserNavigatesToARMPage() (1.1s)
+Thread#0:B:Then updated/computed Payment Stream Number value should display on ARM Worst Case
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :1
+Thread#0:T:ActualValue Row 1 :1
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :2
+Thread#0:T:ActualValue Row 2 :2
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 3 :3
+Thread#0:T:ActualValue Row 3 :3
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 4 :4
+Thread#0:T:ActualValue Row 4 :4
+Thread#0:T:============================================================
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPaymentStreamNumberValueShouldDisplayOnArmWorstCase() (1.1s)
+Thread#0:B:And updated/computed Number of Payments value should display on ARM Worst Case
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :36
+Thread#0:T:ActualValue Row 1 :36
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :36
+Thread#0:T:ActualValue Row 2 :36
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 3 :36
+Thread#0:T:ActualValue Row 3 :36
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 4 :251
+Thread#0:T:ActualValue Row 4 :251
+Thread#0:T:============================================================
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedNumberOfPaymentsValueShouldDisplayOnArmWorstCase() (1.1s)
+Thread#0:B:And updated/computed Payment Amount value should display on ARM Worst Case
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :606.68
+Thread#0:T:ActualValue Row 1 :606.68
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :751.43
+Thread#0:T:ActualValue Row 2 :751.43
+Thread#0:T:============================================================
+Thread#0:T:NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 3 with the difference of 0.00999999999999091
+Thread#0:T:  Expected: 897.75d
+Thread#0:T:  But was:  897.74000000000001d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnArmWorstCase() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\VariableLoanPaymentScheuledValidationSteps.cs:line 379
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 4 :1042.01
+Thread#0:T:ActualValue Row 4 :1042.01
+Thread#0:T:============================================================
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnArmWorstCase() (1.2s)
+Thread#0:B:And updated/computed Period Payment value should display on ARM Worst Case
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :606.68
+Thread#0:T:ActualValue Row 1 :606.68
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :751.43
+Thread#0:T:ActualValue Row 2 :751.43
+Thread#0:T:============================================================
+Thread#0:T:NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 3 with the difference of 0.00999999999999091
+Thread#0:T:  Expected: 897.75d
+Thread#0:T:  But was:  897.74000000000001d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPeriodPaymentValueShouldDisplayOnArmWorstCase() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\VariableLoanPaymentScheuledValidationSteps.cs:line 413
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 4 :1042.01
+Thread#0:T:ActualValue Row 4 :1042.01
+Thread#0:T:============================================================
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPeriodPaymentValueShouldDisplayOnArmWorstCase() (1.2s)
+Thread#0:B:And updated/computed Period PMI value should display on ARM Worst Case
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :0
+Thread#0:T:ActualValue Row 1 :0
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :0
+Thread#0:T:ActualValue Row 2 :0
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 3 :0
+Thread#0:T:ActualValue Row 3 :0
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 4 :0
+Thread#0:T:ActualValue Row 4 :0
+Thread#0:T:============================================================
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPeriodPmiValueShouldDisplayOnArmWorstCase() (1.0s)
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #640 from normal test queue 
+Thread#0:Scheduler: considering testitem #640 for thread
+Thread#0:Scheduler: using testitem #640 for thread
+Thread#0:Scheduler: Test #640 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #639/0 is finished on thread #0 as Succeeded within 12.83663 seconds
+Thread#0: Test #640/0 is started on thread #0
+Thread#0:B:Given user is at TRID application homepage
+Thread#0:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (1.7s)
+Thread#0:B:And user have ARM Worst Case variable loan data from excel sheet ARMWorstCase for the scenario 5
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.GivenUserHaveARMWorstCaseVariableLoanDataFromExcelSheetForTheScenario("ARMWorstCase", 5) (0.6s)
+Thread#0:B:When user upload json file for the scenario
+Thread#0:T:done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (2.1s)
+Thread#0:B:And user navigates to ARM Page
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.WhenUserNavigatesToARMPage() (1.2s)
+Thread#0:B:Then updated/computed Payment Stream Number value should display on ARM Worst Case
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :1
+Thread#0:T:ActualValue Row 1 :1
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :2
+Thread#0:T:ActualValue Row 2 :2
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 3 :3
+Thread#0:T:ActualValue Row 3 :3
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 4 :4
+Thread#0:T:ActualValue Row 4 :4
+Thread#0:T:============================================================
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPaymentStreamNumberValueShouldDisplayOnArmWorstCase() (1.0s)
+Thread#0:B:And updated/computed Number of Payments value should display on ARM Worst Case
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :36
+Thread#0:T:ActualValue Row 1 :36
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :36
+Thread#0:T:ActualValue Row 2 :36
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 3 :36
+Thread#0:T:ActualValue Row 3 :36
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 4 :251
+Thread#0:T:ActualValue Row 4 :251
+Thread#0:T:============================================================
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedNumberOfPaymentsValueShouldDisplayOnArmWorstCase() (1.0s)
+Thread#0:B:And updated/computed Payment Amount value should display on ARM Worst Case
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :606.68
+Thread#0:T:ActualValue Row 1 :606.68
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :751.43
+Thread#0:T:ActualValue Row 2 :751.43
+Thread#0:T:============================================================
+Thread#0:T:NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 3 with the difference of 0.00999999999999091
+Thread#0:T:  Expected: 897.75d
+Thread#0:T:  But was:  897.74000000000001d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnArmWorstCase() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\VariableLoanPaymentScheuledValidationSteps.cs:line 379
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 4 :1042.01
+Thread#0:T:ActualValue Row 4 :1042.01
+Thread#0:T:============================================================
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnArmWorstCase() (1.2s)
+Thread#0:B:And updated/computed Period Payment value should display on ARM Worst Case
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :606.68
+Thread#0:T:ActualValue Row 1 :606.68
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :751.43
+Thread#0:T:ActualValue Row 2 :751.43
+Thread#0:T:============================================================
+Thread#0:T:NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 3 with the difference of 0.00999999999999091
+Thread#0:T:  Expected: 897.75d
+Thread#0:T:  But was:  897.74000000000001d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPeriodPaymentValueShouldDisplayOnArmWorstCase() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\VariableLoanPaymentScheuledValidationSteps.cs:line 413
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 4 :1042.01
+Thread#0:T:ActualValue Row 4 :1042.01
+Thread#0:T:============================================================
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPeriodPaymentValueShouldDisplayOnArmWorstCase() (2.2s)
+Thread#0:B:And updated/computed Period PMI value should display on ARM Worst Case
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :0
+Thread#0:T:ActualValue Row 1 :0
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :0
+Thread#0:T:ActualValue Row 2 :0
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 3 :0
+Thread#0:T:ActualValue Row 3 :0
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 4 :0
+Thread#0:T:ActualValue Row 4 :0
+Thread#0:T:============================================================
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPeriodPmiValueShouldDisplayOnArmWorstCase() (1.0s)
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #641 from normal test queue 
+Thread#0:Scheduler: considering testitem #641 for thread
+Thread#0:Scheduler: using testitem #641 for thread
+Thread#0:Scheduler: Test #641 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #640/0 is finished on thread #0 as Succeeded within 13.4810112 seconds
+Thread#0: Test #641/0 is started on thread #0
+Thread#0:B:Given user is at TRID application homepage
+Thread#0:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (1.8s)
+Thread#0:B:And user have ARM Worst Case variable loan data from excel sheet ARMWorstCase for the scenario 6
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.GivenUserHaveARMWorstCaseVariableLoanDataFromExcelSheetForTheScenario("ARMWorstCase", 6) (0.6s)
+Thread#0:B:When user upload json file for the scenario
+Thread#0:T:done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (2.1s)
+Thread#0:B:And user navigates to ARM Page
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.WhenUserNavigatesToARMPage() (1.2s)
+Thread#0:B:Then updated/computed Payment Stream Number value should display on ARM Worst Case
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :1
+Thread#0:T:ActualValue Row 1 :1
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :2
+Thread#0:T:ActualValue Row 2 :2
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 3 :3
+Thread#0:T:ActualValue Row 3 :3
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 4 :4
+Thread#0:T:ActualValue Row 4 :4
+Thread#0:T:============================================================
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPaymentStreamNumberValueShouldDisplayOnArmWorstCase() (1.1s)
+Thread#0:B:And updated/computed Number of Payments value should display on ARM Worst Case
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :36
+Thread#0:T:ActualValue Row 1 :36
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :36
+Thread#0:T:ActualValue Row 2 :36
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 3 :36
+Thread#0:T:ActualValue Row 3 :36
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 4 :251
+Thread#0:T:ActualValue Row 4 :251
+Thread#0:T:============================================================
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedNumberOfPaymentsValueShouldDisplayOnArmWorstCase() (1.0s)
+Thread#0:B:And updated/computed Payment Amount value should display on ARM Worst Case
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :606.68
+Thread#0:T:ActualValue Row 1 :606.68
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :751.43
+Thread#0:T:ActualValue Row 2 :751.43
+Thread#0:T:============================================================
+Thread#0:T:NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 3 with the difference of 0.00999999999999091
+Thread#0:T:  Expected: 897.75d
+Thread#0:T:  But was:  897.74000000000001d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnArmWorstCase() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\VariableLoanPaymentScheuledValidationSteps.cs:line 379
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 4 :1042.01
+Thread#0:T:ActualValue Row 4 :1042.01
+Thread#0:T:============================================================
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnArmWorstCase() (1.2s)
+Thread#0:B:And updated/computed Period Payment value should display on ARM Worst Case
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :606.68
+Thread#0:T:ActualValue Row 1 :606.68
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :751.43
+Thread#0:T:ActualValue Row 2 :751.43
+Thread#0:T:============================================================
+Thread#0:T:NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 3 with the difference of 0.00999999999999091
+Thread#0:T:  Expected: 897.75d
+Thread#0:T:  But was:  897.74000000000001d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPeriodPaymentValueShouldDisplayOnArmWorstCase() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\VariableLoanPaymentScheuledValidationSteps.cs:line 413
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 4 :1042.01
+Thread#0:T:ActualValue Row 4 :1042.01
+Thread#0:T:============================================================
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPeriodPaymentValueShouldDisplayOnArmWorstCase() (1.2s)
+Thread#0:B:And updated/computed Period PMI value should display on ARM Worst Case
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :0
+Thread#0:T:ActualValue Row 1 :0
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :0
+Thread#0:T:ActualValue Row 2 :0
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 3 :0
+Thread#0:T:ActualValue Row 3 :0
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 4 :0
+Thread#0:T:ActualValue Row 4 :0
+Thread#0:T:============================================================
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPeriodPmiValueShouldDisplayOnArmWorstCase() (1.0s)
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #642 from normal test queue 
+Thread#0:Scheduler: considering testitem #642 for thread
+Thread#0:Scheduler: using testitem #642 for thread
+Thread#0:Scheduler: Test #642 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #641/0 is finished on thread #0 as Succeeded within 12.5541082 seconds
+Thread#0: Test #642/0 is started on thread #0
+Thread#0:B:Given user is at TRID application homepage
+Thread#0:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (1.8s)
+Thread#0:B:And user have ARM Worst Case variable loan data from excel sheet ARMWorstCase for the scenario 7
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.GivenUserHaveARMWorstCaseVariableLoanDataFromExcelSheetForTheScenario("ARMWorstCase", 7) (0.6s)
+Thread#0:B:When user upload json file for the scenario
+Thread#0:T:done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (2.2s)
+Thread#0:B:And user navigates to ARM Page
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.WhenUserNavigatesToARMPage() (1.1s)
+Thread#0:B:Then updated/computed Payment Stream Number value should display on ARM Worst Case
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :1
+Thread#0:T:ActualValue Row 1 :1
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :2
+Thread#0:T:ActualValue Row 2 :2
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 3 :3
+Thread#0:T:ActualValue Row 3 :3
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 4 :4
+Thread#0:T:ActualValue Row 4 :4
+Thread#0:T:============================================================
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPaymentStreamNumberValueShouldDisplayOnArmWorstCase() (1.1s)
+Thread#0:B:And updated/computed Number of Payments value should display on ARM Worst Case
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :36
+Thread#0:T:ActualValue Row 1 :36
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :36
+Thread#0:T:ActualValue Row 2 :36
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 3 :36
+Thread#0:T:ActualValue Row 3 :36
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 4 :251
+Thread#0:T:ActualValue Row 4 :251
+Thread#0:T:============================================================
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedNumberOfPaymentsValueShouldDisplayOnArmWorstCase() (1.1s)
+Thread#0:B:And updated/computed Payment Amount value should display on ARM Worst Case
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :606.68
+Thread#0:T:ActualValue Row 1 :606.68
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :751.43
+Thread#0:T:ActualValue Row 2 :751.43
+Thread#0:T:============================================================
+Thread#0:T:NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 3 with the difference of 0.00999999999999091
+Thread#0:T:  Expected: 897.75d
+Thread#0:T:  But was:  897.74000000000001d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnArmWorstCase() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\VariableLoanPaymentScheuledValidationSteps.cs:line 379
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 4 :1042.01
+Thread#0:T:ActualValue Row 4 :1042.01
+Thread#0:T:============================================================
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnArmWorstCase() (1.2s)
+Thread#0:B:And updated/computed Period Payment value should display on ARM Worst Case
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :606.68
+Thread#0:T:ActualValue Row 1 :606.68
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :751.43
+Thread#0:T:ActualValue Row 2 :751.43
+Thread#0:T:============================================================
+Thread#0:T:NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 3 with the difference of 0.00999999999999091
+Thread#0:T:  Expected: 897.75d
+Thread#0:T:  But was:  897.74000000000001d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPeriodPaymentValueShouldDisplayOnArmWorstCase() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\VariableLoanPaymentScheuledValidationSteps.cs:line 413
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 4 :1042.01
+Thread#0:T:ActualValue Row 4 :1042.01
+Thread#0:T:============================================================
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPeriodPaymentValueShouldDisplayOnArmWorstCase() (1.2s)
+Thread#0:B:And updated/computed Period PMI value should display on ARM Worst Case
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :0
+Thread#0:T:ActualValue Row 1 :0
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :0
+Thread#0:T:ActualValue Row 2 :0
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 3 :0
+Thread#0:T:ActualValue Row 3 :0
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 4 :0
+Thread#0:T:ActualValue Row 4 :0
+Thread#0:T:============================================================
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPeriodPmiValueShouldDisplayOnArmWorstCase() (1.1s)
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #643 from normal test queue 
+Thread#0:Scheduler: considering testitem #643 for thread
+Thread#0:Scheduler: using testitem #643 for thread
+Thread#0:Scheduler: Test #643 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #642/0 is finished on thread #0 as Succeeded within 12.6445948 seconds
+Thread#0: Test #643/0 is started on thread #0
+Thread#0:B:Given user is at TRID application homepage
+Thread#0:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (1.8s)
+Thread#0:B:And user have ARM Worst Case variable loan data from excel sheet ARMWorstCase for the scenario 8
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.GivenUserHaveARMWorstCaseVariableLoanDataFromExcelSheetForTheScenario("ARMWorstCase", 8) (0.7s)
+Thread#0:B:When user upload json file for the scenario
+Thread#0:T:done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (2.0s)
+Thread#0:B:And user navigates to ARM Page
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.WhenUserNavigatesToARMPage() (1.2s)
+Thread#0:B:Then updated/computed Payment Stream Number value should display on ARM Worst Case
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :1
+Thread#0:T:ActualValue Row 1 :1
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :2
+Thread#0:T:ActualValue Row 2 :2
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 3 :3
+Thread#0:T:ActualValue Row 3 :3
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 4 :4
+Thread#0:T:ActualValue Row 4 :4
+Thread#0:T:============================================================
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPaymentStreamNumberValueShouldDisplayOnArmWorstCase() (1.1s)
+Thread#0:B:And updated/computed Number of Payments value should display on ARM Worst Case
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :36
+Thread#0:T:ActualValue Row 1 :36
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :36
+Thread#0:T:ActualValue Row 2 :36
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 3 :36
+Thread#0:T:ActualValue Row 3 :36
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 4 :251
+Thread#0:T:ActualValue Row 4 :251
+Thread#0:T:============================================================
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedNumberOfPaymentsValueShouldDisplayOnArmWorstCase() (1.1s)
+Thread#0:B:And updated/computed Payment Amount value should display on ARM Worst Case
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :606.68
+Thread#0:T:ActualValue Row 1 :606.68
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :751.43
+Thread#0:T:ActualValue Row 2 :751.43
+Thread#0:T:============================================================
+Thread#0:T:NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 3 with the difference of 0.00999999999999091
+Thread#0:T:  Expected: 897.75d
+Thread#0:T:  But was:  897.74000000000001d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnArmWorstCase() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\VariableLoanPaymentScheuledValidationSteps.cs:line 379
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 4 :1042.01
+Thread#0:T:ActualValue Row 4 :1042.01
+Thread#0:T:============================================================
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnArmWorstCase() (1.1s)
+Thread#0:B:And updated/computed Period Payment value should display on ARM Worst Case
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :606.68
+Thread#0:T:ActualValue Row 1 :606.68
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :751.43
+Thread#0:T:ActualValue Row 2 :751.43
+Thread#0:T:============================================================
+Thread#0:T:NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 3 with the difference of 0.00999999999999091
+Thread#0:T:  Expected: 897.75d
+Thread#0:T:  But was:  897.74000000000001d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPeriodPaymentValueShouldDisplayOnArmWorstCase() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\VariableLoanPaymentScheuledValidationSteps.cs:line 413
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 4 :1042.01
+Thread#0:T:ActualValue Row 4 :1042.01
+Thread#0:T:============================================================
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPeriodPaymentValueShouldDisplayOnArmWorstCase() (1.2s)
+Thread#0:B:And updated/computed Period PMI value should display on ARM Worst Case
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :0
+Thread#0:T:ActualValue Row 1 :0
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :0
+Thread#0:T:ActualValue Row 2 :0
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 3 :0
+Thread#0:T:ActualValue Row 3 :0
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 4 :0
+Thread#0:T:ActualValue Row 4 :0
+Thread#0:T:============================================================
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPeriodPmiValueShouldDisplayOnArmWorstCase() (1.1s)
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #644 from normal test queue 
+Thread#0:Scheduler: considering testitem #644 for thread
+Thread#0:Scheduler: using testitem #644 for thread
+Thread#0:Scheduler: Test #644 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #643/0 is finished on thread #0 as Succeeded within 12.6425682 seconds
+Thread#0: Test #644/0 is started on thread #0
+Thread#0:B:Given user is at TRID application homepage
+Thread#0:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (1.8s)
+Thread#0:B:And user have ARM Worst Case variable loan data from excel sheet ARMWorstCase for the scenario 9
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.GivenUserHaveARMWorstCaseVariableLoanDataFromExcelSheetForTheScenario("ARMWorstCase", 9) (0.6s)
+Thread#0:B:When user upload json file for the scenario
+Thread#0:T:done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (2.1s)
+Thread#0:B:And user navigates to ARM Page
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.WhenUserNavigatesToARMPage() (1.2s)
+Thread#0:B:Then updated/computed Payment Stream Number value should display on ARM Worst Case
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :1
+Thread#0:T:ActualValue Row 1 :1
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :2
+Thread#0:T:ActualValue Row 2 :2
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 3 :3
+Thread#0:T:ActualValue Row 3 :3
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 4 :4
+Thread#0:T:ActualValue Row 4 :4
+Thread#0:T:============================================================
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPaymentStreamNumberValueShouldDisplayOnArmWorstCase() (1.0s)
+Thread#0:B:And updated/computed Number of Payments value should display on ARM Worst Case
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :36
+Thread#0:T:ActualValue Row 1 :36
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :36
+Thread#0:T:ActualValue Row 2 :36
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 3 :36
+Thread#0:T:ActualValue Row 3 :36
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 4 :251
+Thread#0:T:ActualValue Row 4 :251
+Thread#0:T:============================================================
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedNumberOfPaymentsValueShouldDisplayOnArmWorstCase() (1.1s)
+Thread#0:B:And updated/computed Payment Amount value should display on ARM Worst Case
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :606.68
+Thread#0:T:ActualValue Row 1 :606.68
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :751.43
+Thread#0:T:ActualValue Row 2 :751.43
+Thread#0:T:============================================================
+Thread#0:T:NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 3 with the difference of 0.00999999999999091
+Thread#0:T:  Expected: 897.75d
+Thread#0:T:  But was:  897.74000000000001d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnArmWorstCase() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\VariableLoanPaymentScheuledValidationSteps.cs:line 379
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 4 :1042.01
+Thread#0:T:ActualValue Row 4 :1042.01
+Thread#0:T:============================================================
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnArmWorstCase() (1.2s)
+Thread#0:B:And updated/computed Period Payment value should display on ARM Worst Case
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :606.68
+Thread#0:T:ActualValue Row 1 :606.68
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :751.43
+Thread#0:T:ActualValue Row 2 :751.43
+Thread#0:T:============================================================
+Thread#0:T:NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 3 with the difference of 0.00999999999999091
+Thread#0:T:  Expected: 897.75d
+Thread#0:T:  But was:  897.74000000000001d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPeriodPaymentValueShouldDisplayOnArmWorstCase() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\VariableLoanPaymentScheuledValidationSteps.cs:line 413
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 4 :1042.01
+Thread#0:T:ActualValue Row 4 :1042.01
+Thread#0:T:============================================================
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPeriodPaymentValueShouldDisplayOnArmWorstCase() (1.2s)
+Thread#0:B:And updated/computed Period PMI value should display on ARM Worst Case
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :0
+Thread#0:T:ActualValue Row 1 :0
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :0
+Thread#0:T:ActualValue Row 2 :0
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 3 :0
+Thread#0:T:ActualValue Row 3 :0
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 4 :0
+Thread#0:T:ActualValue Row 4 :0
+Thread#0:T:============================================================
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPeriodPmiValueShouldDisplayOnArmWorstCase() (1.1s)
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #645 from normal test queue 
+Thread#0:Scheduler: considering testitem #645 for thread
+Thread#0:Scheduler: using testitem #645 for thread
+Thread#0:Scheduler: Test #645 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #644/0 is finished on thread #0 as Succeeded within 12.7062382 seconds
+Thread#0: Test #645/0 is started on thread #0
+Thread#0:B:Given user is at TRID application homepage
+Thread#0:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (1.9s)
+Thread#0:B:And user have ARM Worst Case variable loan data from excel sheet ARMWorstCase for the scenario 10
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.GivenUserHaveARMWorstCaseVariableLoanDataFromExcelSheetForTheScenario("ARMWorstCase", 10) (0.6s)
+Thread#0:B:When user upload json file for the scenario
+Thread#0:T:done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (2.0s)
+Thread#0:B:And user navigates to ARM Page
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.WhenUserNavigatesToARMPage() (1.1s)
+Thread#0:B:Then updated/computed Payment Stream Number value should display on ARM Worst Case
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :1
+Thread#0:T:ActualValue Row 1 :1
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :2
+Thread#0:T:ActualValue Row 2 :2
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 3 :3
+Thread#0:T:ActualValue Row 3 :3
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 4 :4
+Thread#0:T:ActualValue Row 4 :4
+Thread#0:T:============================================================
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPaymentStreamNumberValueShouldDisplayOnArmWorstCase() (1.0s)
+Thread#0:B:And updated/computed Number of Payments value should display on ARM Worst Case
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :36
+Thread#0:T:ActualValue Row 1 :36
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :36
+Thread#0:T:ActualValue Row 2 :36
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 3 :36
+Thread#0:T:ActualValue Row 3 :36
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 4 :251
+Thread#0:T:ActualValue Row 4 :251
+Thread#0:T:============================================================
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedNumberOfPaymentsValueShouldDisplayOnArmWorstCase() (1.1s)
+Thread#0:B:And updated/computed Payment Amount value should display on ARM Worst Case
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :606.68
+Thread#0:T:ActualValue Row 1 :606.68
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :751.43
+Thread#0:T:ActualValue Row 2 :751.43
+Thread#0:T:============================================================
+Thread#0:T:NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 3 with the difference of 0.00999999999999091
+Thread#0:T:  Expected: 897.75d
+Thread#0:T:  But was:  897.74000000000001d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnArmWorstCase() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\VariableLoanPaymentScheuledValidationSteps.cs:line 379
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 4 :1042.01
+Thread#0:T:ActualValue Row 4 :1042.01
+Thread#0:T:============================================================
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnArmWorstCase() (1.1s)
+Thread#0:B:And updated/computed Period Payment value should display on ARM Worst Case
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :606.68
+Thread#0:T:ActualValue Row 1 :606.68
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :751.43
+Thread#0:T:ActualValue Row 2 :751.43
+Thread#0:T:============================================================
+Thread#0:T:NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 3 with the difference of 0.00999999999999091
+Thread#0:T:  Expected: 897.75d
+Thread#0:T:  But was:  897.74000000000001d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPeriodPaymentValueShouldDisplayOnArmWorstCase() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\VariableLoanPaymentScheuledValidationSteps.cs:line 413
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 4 :1042.01
+Thread#0:T:ActualValue Row 4 :1042.01
+Thread#0:T:============================================================
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPeriodPaymentValueShouldDisplayOnArmWorstCase() (1.2s)
+Thread#0:B:And updated/computed Period PMI value should display on ARM Worst Case
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :0
+Thread#0:T:ActualValue Row 1 :0
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :0
+Thread#0:T:ActualValue Row 2 :0
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 3 :0
+Thread#0:T:ActualValue Row 3 :0
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 4 :0
+Thread#0:T:ActualValue Row 4 :0
+Thread#0:T:============================================================
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPeriodPmiValueShouldDisplayOnArmWorstCase() (1.2s)
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #646 from normal test queue 
+Thread#0:Scheduler: considering testitem #646 for thread
+Thread#0:Scheduler: using testitem #646 for thread
+Thread#0:Scheduler: Test #646 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #645/0 is finished on thread #0 as Succeeded within 12.8042374 seconds
+Thread#0: Test #646/0 is started on thread #0
+Thread#0:B:Given user is at TRID application homepage
+Thread#0:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (1.8s)
+Thread#0:B:And user have ARM Worst Case variable loan data from excel sheet ARMWorstCase for the scenario 11
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.GivenUserHaveARMWorstCaseVariableLoanDataFromExcelSheetForTheScenario("ARMWorstCase", 11) (0.6s)
+Thread#0:B:When user upload json file for the scenario
+Thread#0:T:done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (2.0s)
+Thread#0:B:And user navigates to ARM Page
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.WhenUserNavigatesToARMPage() (1.1s)
+Thread#0:B:Then updated/computed Payment Stream Number value should display on ARM Worst Case
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :1
+Thread#0:T:ActualValue Row 1 :1
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :2
+Thread#0:T:ActualValue Row 2 :2
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 3 :3
+Thread#0:T:ActualValue Row 3 :3
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 4 :4
+Thread#0:T:ActualValue Row 4 :4
+Thread#0:T:============================================================
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPaymentStreamNumberValueShouldDisplayOnArmWorstCase() (1.1s)
+Thread#0:B:And updated/computed Number of Payments value should display on ARM Worst Case
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :36
+Thread#0:T:ActualValue Row 1 :36
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :36
+Thread#0:T:ActualValue Row 2 :36
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 3 :36
+Thread#0:T:ActualValue Row 3 :36
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 4 :251
+Thread#0:T:ActualValue Row 4 :251
+Thread#0:T:============================================================
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedNumberOfPaymentsValueShouldDisplayOnArmWorstCase() (1.2s)
+Thread#0:B:And updated/computed Payment Amount value should display on ARM Worst Case
+Thread#0:T:NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 1 with the difference of 0.0900000000000318
+Thread#0:T:  Expected: 828.10000000000002d
+Thread#0:T:  But was:  828.00999999999999d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnArmWorstCase() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\VariableLoanPaymentScheuledValidationSteps.cs:line 379
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :995.83
+Thread#0:T:ActualValue Row 2 :995.83
+Thread#0:T:============================================================
+Thread#0:T:NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 3 with the difference of 0.299999999999955
+Thread#0:T:  Expected: 1163.3900000000001d
+Thread#0:T:  But was:  1163.6900000000001d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnArmWorstCase() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\VariableLoanPaymentScheuledValidationSteps.cs:line 379
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 4 :1328.71
+Thread#0:T:ActualValue Row 4 :1328.71
+Thread#0:T:============================================================
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnArmWorstCase() (1.5s)
+Thread#0:B:And updated/computed Period Payment value should display on ARM Worst Case
+Thread#0:T:NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 1 with the difference of 0.0900000000000318
+Thread#0:T:  Expected: 828.10000000000002d
+Thread#0:T:  But was:  828.00999999999999d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPeriodPaymentValueShouldDisplayOnArmWorstCase() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\VariableLoanPaymentScheuledValidationSteps.cs:line 413
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :995.83
+Thread#0:T:ActualValue Row 2 :995.83
+Thread#0:T:============================================================
+Thread#0:T:NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 3 with the difference of 0.299999999999955
+Thread#0:T:  Expected: 1163.3900000000001d
+Thread#0:T:  But was:  1163.6900000000001d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPeriodPaymentValueShouldDisplayOnArmWorstCase() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\VariableLoanPaymentScheuledValidationSteps.cs:line 413
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 4 :1328.71
+Thread#0:T:ActualValue Row 4 :1328.71
+Thread#0:T:============================================================
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPeriodPaymentValueShouldDisplayOnArmWorstCase() (1.3s)
+Thread#0:B:And updated/computed Period PMI value should display on ARM Worst Case
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :0
+Thread#0:T:ActualValue Row 1 :0
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :0
+Thread#0:T:ActualValue Row 2 :0
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 3 :0
+Thread#0:T:ActualValue Row 3 :0
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 4 :0
+Thread#0:T:ActualValue Row 4 :0
+Thread#0:T:============================================================
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPeriodPmiValueShouldDisplayOnArmWorstCase() (1.1s)
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: at the end of normal test queue
+Thread#0:Scheduler: enumerator for thread is at end
+Thread#0:Scheduler: No more tests for thread 
+Thread#0:T:##########################################################
+Thread#0:T:##########################################################
+Thread#0:T:====================================================================================
+Thread#0:T:Scenario Number : 147
+Thread#0:T:The total number of cards Failue: 22
+Thread#0:T:Name of cards Failed: || AwcPaymentAmount[2] || : NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 3 with the difference of 0.00999999999999091
+Thread#0:T:  Expected: 897.75d
+Thread#0:T:  But was:  897.74000000000001d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnArmWorstCase() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\VariableLoanPaymentScheuledValidationSteps.cs:line 379 
+Thread#0:T: ====================================================================================
+Thread#0:T:|| AwcPaymentSchedulePeriodPayment[2] || : NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 3 with the difference of 0.00999999999999091
+Thread#0:T:  Expected: 897.75d
+Thread#0:T:  But was:  897.74000000000001d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPeriodPaymentValueShouldDisplayOnArmWorstCase() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\VariableLoanPaymentScheuledValidationSteps.cs:line 413 
+Thread#0:T: ====================================================================================
+Thread#0:T:|| AwcPaymentAmount[2] || : NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 3 with the difference of 0.00999999999999091
+Thread#0:T:  Expected: 897.75d
+Thread#0:T:  But was:  897.74000000000001d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnArmWorstCase() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\VariableLoanPaymentScheuledValidationSteps.cs:line 379 
+Thread#0:T: ====================================================================================
+Thread#0:T:|| AwcPaymentSchedulePeriodPayment[2] || : NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 3 with the difference of 0.00999999999999091
+Thread#0:T:  Expected: 897.75d
+Thread#0:T:  But was:  897.74000000000001d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPeriodPaymentValueShouldDisplayOnArmWorstCase() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\VariableLoanPaymentScheuledValidationSteps.cs:line 413 
+Thread#0:T: ====================================================================================
+Thread#0:T:|| AwcPaymentAmount[2] || : NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 3 with the difference of 0.00999999999999091
+Thread#0:T:  Expected: 897.75d
+Thread#0:T:  But was:  897.74000000000001d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnArmWorstCase() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\VariableLoanPaymentScheuledValidationSteps.cs:line 379 
+Thread#0:T: ====================================================================================
+Thread#0:T:|| AwcPaymentSchedulePeriodPayment[2] || : NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 3 with the difference of 0.00999999999999091
+Thread#0:T:  Expected: 897.75d
+Thread#0:T:  But was:  897.74000000000001d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPeriodPaymentValueShouldDisplayOnArmWorstCase() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\VariableLoanPaymentScheuledValidationSteps.cs:line 413 
+Thread#0:T: ====================================================================================
+Thread#0:T:|| AwcPaymentAmount[2] || : NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 3 with the difference of 0.00999999999999091
+Thread#0:T:  Expected: 897.75d
+Thread#0:T:  But was:  897.74000000000001d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnArmWorstCase() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\VariableLoanPaymentScheuledValidationSteps.cs:line 379 
+Thread#0:T: ====================================================================================
+Thread#0:T:|| AwcPaymentSchedulePeriodPayment[2] || : NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 3 with the difference of 0.00999999999999091
+Thread#0:T:  Expected: 897.75d
+Thread#0:T:  But was:  897.74000000000001d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPeriodPaymentValueShouldDisplayOnArmWorstCase() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\VariableLoanPaymentScheuledValidationSteps.cs:line 413 
+Thread#0:T: ====================================================================================
+Thread#0:T:|| AwcPaymentAmount[2] || : NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 3 with the difference of 0.00999999999999091
+Thread#0:T:  Expected: 897.75d
+Thread#0:T:  But was:  897.74000000000001d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnArmWorstCase() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\VariableLoanPaymentScheuledValidationSteps.cs:line 379 
+Thread#0:T: ====================================================================================
+Thread#0:T:|| AwcPaymentSchedulePeriodPayment[2] || : NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 3 with the difference of 0.00999999999999091
+Thread#0:T:  Expected: 897.75d
+Thread#0:T:  But was:  897.74000000000001d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPeriodPaymentValueShouldDisplayOnArmWorstCase() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\VariableLoanPaymentScheuledValidationSteps.cs:line 413 
+Thread#0:T: ====================================================================================
+Thread#0:T:|| AwcPaymentAmount[2] || : NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 3 with the difference of 0.00999999999999091
+Thread#0:T:  Expected: 897.75d
+Thread#0:T:  But was:  897.74000000000001d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnArmWorstCase() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\VariableLoanPaymentScheuledValidationSteps.cs:line 379 
+Thread#0:T: ====================================================================================
+Thread#0:T:|| AwcPaymentSchedulePeriodPayment[2] || : NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 3 with the difference of 0.00999999999999091
+Thread#0:T:  Expected: 897.75d
+Thread#0:T:  But was:  897.74000000000001d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPeriodPaymentValueShouldDisplayOnArmWorstCase() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\VariableLoanPaymentScheuledValidationSteps.cs:line 413 
+Thread#0:T: ====================================================================================
+Thread#0:T:|| AwcPaymentAmount[2] || : NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 3 with the difference of 0.00999999999999091
+Thread#0:T:  Expected: 897.75d
+Thread#0:T:  But was:  897.74000000000001d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnArmWorstCase() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\VariableLoanPaymentScheuledValidationSteps.cs:line 379 
+Thread#0:T: ====================================================================================
+Thread#0:T:|| AwcPaymentSchedulePeriodPayment[2] || : NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 3 with the difference of 0.00999999999999091
+Thread#0:T:  Expected: 897.75d
+Thread#0:T:  But was:  897.74000000000001d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPeriodPaymentValueShouldDisplayOnArmWorstCase() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\VariableLoanPaymentScheuledValidationSteps.cs:line 413 
+Thread#0:T: ====================================================================================
+Thread#0:T:|| AwcPaymentAmount[2] || : NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 3 with the difference of 0.00999999999999091
+Thread#0:T:  Expected: 897.75d
+Thread#0:T:  But was:  897.74000000000001d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnArmWorstCase() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\VariableLoanPaymentScheuledValidationSteps.cs:line 379 
+Thread#0:T: ====================================================================================
+Thread#0:T:|| AwcPaymentSchedulePeriodPayment[2] || : NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 3 with the difference of 0.00999999999999091
+Thread#0:T:  Expected: 897.75d
+Thread#0:T:  But was:  897.74000000000001d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPeriodPaymentValueShouldDisplayOnArmWorstCase() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\VariableLoanPaymentScheuledValidationSteps.cs:line 413 
+Thread#0:T: ====================================================================================
+Thread#0:T:|| AwcPaymentAmount[2] || : NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 3 with the difference of 0.00999999999999091
+Thread#0:T:  Expected: 897.75d
+Thread#0:T:  But was:  897.74000000000001d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnArmWorstCase() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\VariableLoanPaymentScheuledValidationSteps.cs:line 379 
+Thread#0:T: ====================================================================================
+Thread#0:T:|| AwcPaymentSchedulePeriodPayment[2] || : NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 3 with the difference of 0.00999999999999091
+Thread#0:T:  Expected: 897.75d
+Thread#0:T:  But was:  897.74000000000001d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPeriodPaymentValueShouldDisplayOnArmWorstCase() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\VariableLoanPaymentScheuledValidationSteps.cs:line 413 
+Thread#0:T: ====================================================================================
+Thread#0:T:|| AwcPaymentAmount[0] || : NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 1 with the difference of 0.0900000000000318
+Thread#0:T:  Expected: 828.10000000000002d
+Thread#0:T:  But was:  828.00999999999999d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnArmWorstCase() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\VariableLoanPaymentScheuledValidationSteps.cs:line 379 
+Thread#0:T: ====================================================================================
+Thread#0:T:|| AwcPaymentAmount[2] || : NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 3 with the difference of 0.299999999999955
+Thread#0:T:  Expected: 1163.3900000000001d
+Thread#0:T:  But was:  1163.6900000000001d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnArmWorstCase() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\VariableLoanPaymentScheuledValidationSteps.cs:line 379 
+Thread#0:T: ====================================================================================
+Thread#0:T:|| AwcPaymentSchedulePeriodPayment[0] || : NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 1 with the difference of 0.0900000000000318
+Thread#0:T:  Expected: 828.10000000000002d
+Thread#0:T:  But was:  828.00999999999999d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPeriodPaymentValueShouldDisplayOnArmWorstCase() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\VariableLoanPaymentScheuledValidationSteps.cs:line 413 
+Thread#0:T: ====================================================================================
+Thread#0:T:|| AwcPaymentSchedulePeriodPayment[2] || : NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 3 with the difference of 0.299999999999955
+Thread#0:T:  Expected: 1163.3900000000001d
+Thread#0:T:  But was:  1163.6900000000001d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPeriodPaymentValueShouldDisplayOnArmWorstCase() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\VariableLoanPaymentScheuledValidationSteps.cs:line 413 
+Thread#0:T: ====================================================================================
+Thread#0:T:====================================================================================
+Thread#0:T:##########################################################
+Thread#0:T:##########################################################
+Thread#0: Test #646/0 is finished on thread #0 as CleanupFailed within 28.7883169 seconds
+Appdomain Disposed
+Thread#-1:Scheduler: get next test for thread
+Thread#:Scheduler: at the end of normal test queue
+Thread#-1:Scheduler: enumerator for thread is at end
+Total: 10
+Succeeded: 9
+Ignored: 0
+Pending: 0
+Skipped: 0
+Failed: 1

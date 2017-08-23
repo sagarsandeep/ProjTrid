@@ -1,0 +1,686 @@
+﻿VS filter: testpath:TestAssembly:TRID/Feature:VariableLoanPaymentScheuledValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+Best+Case+on+Arms+page%2c+140 | testpath:TestAssembly:TRID/Feature:VariableLoanPaymentScheuledValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+Best+Case+on+Arms+page%2c+143 | testpath:TestAssembly:TRID/Feature:VariableLoanPaymentScheuledValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+Best+Case+on+Arms+page%2c+145 | testpath:TestAssembly:TRID/Feature:VariableLoanPaymentScheuledValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+Best+Case+on+Arms+page%2c+139 | testpath:TestAssembly:TRID/Feature:VariableLoanPaymentScheuledValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+Best+Case+on+Arms+page%2c+144 | testpath:TestAssembly:TRID/Feature:VariableLoanPaymentScheuledValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+Best+Case+on+Arms+page%2c+147 | testpath:TestAssembly:TRID/Feature:VariableLoanPaymentScheuledValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+Best+Case+on+Arms+page%2c+138 | testpath:TestAssembly:TRID/Feature:VariableLoanPaymentScheuledValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+Best+Case+on+Arms+page%2c+146 | testpath:TestAssembly:TRID/Feature:VariableLoanPaymentScheuledValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+Best+Case+on+Arms+page%2c+142 | testpath:TestAssembly:TRID/Feature:VariableLoanPaymentScheuledValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+Best+Case+on+Arms+page%2c+141
+Discovering target: Default
+Discovering tests from assembly: F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\bin\Debug\TRID.dll
+Appdomain Disposed
+Test Suite Dump
+#0: TRID/Default - 
+#1: Default - 
+#2: TRID - 
+#606: VariableLoanPaymentScheuledValidation - 
+#627: Uploading JSON file and validating Payment Schedule Best Case on Arms page, 138 - TestAssembly:TRID/Feature:VariableLoanPaymentScheuledValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+Best+Case+on+Arms+page%2c+138
+#628: Uploading JSON file and validating Payment Schedule Best Case on Arms page, 139 - TestAssembly:TRID/Feature:VariableLoanPaymentScheuledValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+Best+Case+on+Arms+page%2c+139
+#629: Uploading JSON file and validating Payment Schedule Best Case on Arms page, 140 - TestAssembly:TRID/Feature:VariableLoanPaymentScheuledValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+Best+Case+on+Arms+page%2c+140
+#630: Uploading JSON file and validating Payment Schedule Best Case on Arms page, 141 - TestAssembly:TRID/Feature:VariableLoanPaymentScheuledValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+Best+Case+on+Arms+page%2c+141
+#631: Uploading JSON file and validating Payment Schedule Best Case on Arms page, 142 - TestAssembly:TRID/Feature:VariableLoanPaymentScheuledValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+Best+Case+on+Arms+page%2c+142
+#632: Uploading JSON file and validating Payment Schedule Best Case on Arms page, 143 - TestAssembly:TRID/Feature:VariableLoanPaymentScheuledValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+Best+Case+on+Arms+page%2c+143
+#633: Uploading JSON file and validating Payment Schedule Best Case on Arms page, 144 - TestAssembly:TRID/Feature:VariableLoanPaymentScheuledValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+Best+Case+on+Arms+page%2c+144
+#634: Uploading JSON file and validating Payment Schedule Best Case on Arms page, 145 - TestAssembly:TRID/Feature:VariableLoanPaymentScheuledValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+Best+Case+on+Arms+page%2c+145
+#635: Uploading JSON file and validating Payment Schedule Best Case on Arms page, 146 - TestAssembly:TRID/Feature:VariableLoanPaymentScheuledValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+Best+Case+on+Arms+page%2c+146
+#636: Uploading JSON file and validating Payment Schedule Best Case on Arms page, 147 - TestAssembly:TRID/Feature:VariableLoanPaymentScheuledValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+Best+Case+on+Arms+page%2c+147
+End: Test Suite Dump
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #627 from normal test queue 
+Thread#0:Scheduler: considering testitem #627 for thread
+Thread#0:Scheduler: using testitem #627 for thread
+Thread#0:Scheduler: Test #627 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread #0: creating new test thread executor for TRID, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null (target: Default)
+Loading SpecRun type 'TechTalk.SpecRun.Framework.TestAssemblyExecutor' from: C:\Users\sandees\AppData\Local\Temp\VisualStudioTestExplorerExtensions\SpecRun.Runner.1.5.2\tools\TechTalk.SpecRun.Framework.Executor.dll
+Thread#0: Test #627/0 is started on thread #0
+Thread#0:B:Given user is at TRID application homepage
+Thread#0:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (55.9s)
+Thread#0:B:And user have ARM Best Case variable loan data from excel sheet ARMBestCase for the scenario 2
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.GivenUserHaveARMBestCaseVariableLoanDataFromExcelSheetForTheScenario("ARMBestCase", 2) (0.9s)
+Thread#0:B:When user upload json file for the scenario
+Thread#0:T:done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (2.0s)
+Thread#0:B:And user navigates to ARM Page
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.WhenUserNavigatesToARMPage() (1.5s)
+Thread#0:B:Then updated/computed Payment Stream Number value should display on ARM Best Case
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :1
+Thread#0:T:ActualValue Row 1 :1
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :2
+Thread#0:T:ActualValue Row 2 :2
+Thread#0:T:============================================================
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPaymentStreamNumberValueShouldDisplayOnArmBestCase() (0.8s)
+Thread#0:B:And updated/computed Number of Payments value should display on ARM Best Case
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :36
+Thread#0:T:ActualValue Row 1 :36
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :323
+Thread#0:T:ActualValue Row 2 :323
+Thread#0:T:============================================================
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedNumberOfPaymentsValueShouldDisplayOnArmBestCase() (0.8s)
+Thread#0:B:And updated/computed Payment Amount value should display on ARM Best Case
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :606.68
+Thread#0:T:ActualValue Row 1 :606.68
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :524.54
+Thread#0:T:ActualValue Row 2 :524.54
+Thread#0:T:============================================================
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnArmBestCase() (0.8s)
+Thread#0:B:And updated/computed Principal and Interest Payment value should display on ARM Best Case
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :606.68
+Thread#0:T:ActualValue Row 1 :606.68
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :524.54
+Thread#0:T:ActualValue Row 2 :524.54
+Thread#0:T:============================================================
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPeriodPaymentValueShouldDisplayOnArmBestCase() (0.8s)
+Thread#0:B:And updated/computed PMI Payment value should display on ARM Best Case
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :0
+Thread#0:T:ActualValue Row 1 :0
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :0
+Thread#0:T:ActualValue Row 2 :0
+Thread#0:T:============================================================
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPmiPaymentValueShouldDisplayOnArmBestCase() (0.8s)
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #628 from normal test queue 
+Thread#0:Scheduler: considering testitem #628 for thread
+Thread#0:Scheduler: using testitem #628 for thread
+Thread#0:Scheduler: Test #628 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #627/0 is finished on thread #0 as Succeeded within 65.5949092 seconds
+Thread#0: Test #628/0 is started on thread #0
+Thread#0:B:Given user is at TRID application homepage
+Thread#0:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (2.3s)
+Thread#0:B:And user have ARM Best Case variable loan data from excel sheet ARMBestCase for the scenario 3
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.GivenUserHaveARMBestCaseVariableLoanDataFromExcelSheetForTheScenario("ARMBestCase", 3) (0.6s)
+Thread#0:B:When user upload json file for the scenario
+Thread#0:T:done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (2.0s)
+Thread#0:B:And user navigates to ARM Page
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.WhenUserNavigatesToARMPage() (1.1s)
+Thread#0:B:Then updated/computed Payment Stream Number value should display on ARM Best Case
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :1
+Thread#0:T:ActualValue Row 1 :1
+Thread#0:T:============================================================
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPaymentStreamNumberValueShouldDisplayOnArmBestCase() (0.4s)
+Thread#0:B:And updated/computed Number of Payments value should display on ARM Best Case
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :359
+Thread#0:T:ActualValue Row 1 :359
+Thread#0:T:============================================================
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedNumberOfPaymentsValueShouldDisplayOnArmBestCase() (0.4s)
+Thread#0:B:And updated/computed Payment Amount value should display on ARM Best Case
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :606.68
+Thread#0:T:ActualValue Row 1 :606.68
+Thread#0:T:============================================================
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnArmBestCase() (0.4s)
+Thread#0:B:And updated/computed Principal and Interest Payment value should display on ARM Best Case
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :606.68
+Thread#0:T:ActualValue Row 1 :606.68
+Thread#0:T:============================================================
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPeriodPaymentValueShouldDisplayOnArmBestCase() (0.4s)
+Thread#0:B:And updated/computed PMI Payment value should display on ARM Best Case
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :0
+Thread#0:T:ActualValue Row 1 :0
+Thread#0:T:============================================================
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPmiPaymentValueShouldDisplayOnArmBestCase() (0.4s)
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #629 from normal test queue 
+Thread#0:Scheduler: considering testitem #629 for thread
+Thread#0:Scheduler: using testitem #629 for thread
+Thread#0:Scheduler: Test #629 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #628/0 is finished on thread #0 as Succeeded within 10.3134963 seconds
+Thread#0: Test #629/0 is started on thread #0
+Thread#0:B:Given user is at TRID application homepage
+Thread#0:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (1.9s)
+Thread#0:B:And user have ARM Best Case variable loan data from excel sheet ARMBestCase for the scenario 4
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.GivenUserHaveARMBestCaseVariableLoanDataFromExcelSheetForTheScenario("ARMBestCase", 4) (0.6s)
+Thread#0:B:When user upload json file for the scenario
+Thread#0:T:done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (2.0s)
+Thread#0:B:And user navigates to ARM Page
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.WhenUserNavigatesToARMPage() (1.1s)
+Thread#0:B:Then updated/computed Payment Stream Number value should display on ARM Best Case
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :1
+Thread#0:T:ActualValue Row 1 :1
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :2
+Thread#0:T:ActualValue Row 2 :2
+Thread#0:T:============================================================
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPaymentStreamNumberValueShouldDisplayOnArmBestCase() (0.8s)
+Thread#0:B:And updated/computed Number of Payments value should display on ARM Best Case
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :36
+Thread#0:T:ActualValue Row 1 :36
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :323
+Thread#0:T:ActualValue Row 2 :323
+Thread#0:T:============================================================
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedNumberOfPaymentsValueShouldDisplayOnArmBestCase() (0.8s)
+Thread#0:B:And updated/computed Payment Amount value should display on ARM Best Case
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :606.68
+Thread#0:T:ActualValue Row 1 :606.68
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :623.9
+Thread#0:T:ActualValue Row 2 :623.9
+Thread#0:T:============================================================
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnArmBestCase() (0.8s)
+Thread#0:B:And updated/computed Principal and Interest Payment value should display on ARM Best Case
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :606.68
+Thread#0:T:ActualValue Row 1 :606.68
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :623.9
+Thread#0:T:ActualValue Row 2 :623.9
+Thread#0:T:============================================================
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPeriodPaymentValueShouldDisplayOnArmBestCase() (0.8s)
+Thread#0:B:And updated/computed PMI Payment value should display on ARM Best Case
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :0
+Thread#0:T:ActualValue Row 1 :0
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :0
+Thread#0:T:ActualValue Row 2 :0
+Thread#0:T:============================================================
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPmiPaymentValueShouldDisplayOnArmBestCase() (0.8s)
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #630 from normal test queue 
+Thread#0:Scheduler: considering testitem #630 for thread
+Thread#0:Scheduler: using testitem #630 for thread
+Thread#0:Scheduler: Test #630 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #629/0 is finished on thread #0 as Succeeded within 11.9367223 seconds
+Thread#0: Test #630/0 is started on thread #0
+Thread#0:B:Given user is at TRID application homepage
+Thread#0:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (1.4s)
+Thread#0:B:And user have ARM Best Case variable loan data from excel sheet ARMBestCase for the scenario 5
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.GivenUserHaveARMBestCaseVariableLoanDataFromExcelSheetForTheScenario("ARMBestCase", 5) (0.6s)
+Thread#0:B:When user upload json file for the scenario
+Thread#0:T:done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (2.0s)
+Thread#0:B:And user navigates to ARM Page
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.WhenUserNavigatesToARMPage() (1.1s)
+Thread#0:B:Then updated/computed Payment Stream Number value should display on ARM Best Case
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :1
+Thread#0:T:ActualValue Row 1 :1
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :2
+Thread#0:T:ActualValue Row 2 :2
+Thread#0:T:============================================================
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPaymentStreamNumberValueShouldDisplayOnArmBestCase() (0.8s)
+Thread#0:B:And updated/computed Number of Payments value should display on ARM Best Case
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :36
+Thread#0:T:ActualValue Row 1 :36
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :323
+Thread#0:T:ActualValue Row 2 :323
+Thread#0:T:============================================================
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedNumberOfPaymentsValueShouldDisplayOnArmBestCase() (0.9s)
+Thread#0:B:And updated/computed Payment Amount value should display on ARM Best Case
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :606.68
+Thread#0:T:ActualValue Row 1 :606.68
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :589.72
+Thread#0:T:ActualValue Row 2 :589.72
+Thread#0:T:============================================================
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnArmBestCase() (0.8s)
+Thread#0:B:And updated/computed Principal and Interest Payment value should display on ARM Best Case
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :606.68
+Thread#0:T:ActualValue Row 1 :606.68
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :589.72
+Thread#0:T:ActualValue Row 2 :589.72
+Thread#0:T:============================================================
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPeriodPaymentValueShouldDisplayOnArmBestCase() (0.8s)
+Thread#0:B:And updated/computed PMI Payment value should display on ARM Best Case
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :0
+Thread#0:T:ActualValue Row 1 :0
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :0
+Thread#0:T:ActualValue Row 2 :0
+Thread#0:T:============================================================
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPmiPaymentValueShouldDisplayOnArmBestCase() (0.8s)
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #631 from normal test queue 
+Thread#0:Scheduler: considering testitem #631 for thread
+Thread#0:Scheduler: using testitem #631 for thread
+Thread#0:Scheduler: Test #631 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #630/0 is finished on thread #0 as Succeeded within 11.5342002 seconds
+Thread#0: Test #631/0 is started on thread #0
+Thread#0:B:Given user is at TRID application homepage
+Thread#0:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (1.2s)
+Thread#0:B:And user have ARM Best Case variable loan data from excel sheet ARMBestCase for the scenario 6
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.GivenUserHaveARMBestCaseVariableLoanDataFromExcelSheetForTheScenario("ARMBestCase", 6) (0.6s)
+Thread#0:B:When user upload json file for the scenario
+Thread#0:T:done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (2.0s)
+Thread#0:B:And user navigates to ARM Page
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.WhenUserNavigatesToARMPage() (1.1s)
+Thread#0:B:Then updated/computed Payment Stream Number value should display on ARM Best Case
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :1
+Thread#0:T:ActualValue Row 1 :1
+Thread#0:T:============================================================
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPaymentStreamNumberValueShouldDisplayOnArmBestCase() (0.4s)
+Thread#0:B:And updated/computed Number of Payments value should display on ARM Best Case
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :359
+Thread#0:T:ActualValue Row 1 :359
+Thread#0:T:============================================================
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedNumberOfPaymentsValueShouldDisplayOnArmBestCase() (0.4s)
+Thread#0:B:And updated/computed Payment Amount value should display on ARM Best Case
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :606.68
+Thread#0:T:ActualValue Row 1 :606.68
+Thread#0:T:============================================================
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnArmBestCase() (0.4s)
+Thread#0:B:And updated/computed Principal and Interest Payment value should display on ARM Best Case
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :606.68
+Thread#0:T:ActualValue Row 1 :606.68
+Thread#0:T:============================================================
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPeriodPaymentValueShouldDisplayOnArmBestCase() (0.4s)
+Thread#0:B:And updated/computed PMI Payment value should display on ARM Best Case
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :0
+Thread#0:T:ActualValue Row 1 :0
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :0
+Thread#0:T:ActualValue Row 2 :0
+Thread#0:T:============================================================
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPmiPaymentValueShouldDisplayOnArmBestCase() (0.8s)
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #632 from normal test queue 
+Thread#0:Scheduler: considering testitem #632 for thread
+Thread#0:Scheduler: using testitem #632 for thread
+Thread#0:Scheduler: Test #632 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #631/0 is finished on thread #0 as Succeeded within 9.6452499 seconds
+Thread#0: Test #632/0 is started on thread #0
+Thread#0:B:Given user is at TRID application homepage
+Thread#0:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (1.2s)
+Thread#0:B:And user have ARM Best Case variable loan data from excel sheet ARMBestCase for the scenario 7
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.GivenUserHaveARMBestCaseVariableLoanDataFromExcelSheetForTheScenario("ARMBestCase", 7) (0.6s)
+Thread#0:B:When user upload json file for the scenario
+Thread#0:T:done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (2.0s)
+Thread#0:B:And user navigates to ARM Page
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.WhenUserNavigatesToARMPage() (1.1s)
+Thread#0:B:Then updated/computed Payment Stream Number value should display on ARM Best Case
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :1
+Thread#0:T:ActualValue Row 1 :1
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :2
+Thread#0:T:ActualValue Row 2 :2
+Thread#0:T:============================================================
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPaymentStreamNumberValueShouldDisplayOnArmBestCase() (0.8s)
+Thread#0:B:And updated/computed Number of Payments value should display on ARM Best Case
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :36
+Thread#0:T:ActualValue Row 1 :36
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :323
+Thread#0:T:ActualValue Row 2 :323
+Thread#0:T:============================================================
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedNumberOfPaymentsValueShouldDisplayOnArmBestCase() (0.8s)
+Thread#0:B:And updated/computed Payment Amount value should display on ARM Best Case
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :606.68
+Thread#0:T:ActualValue Row 1 :606.68
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :641.38
+Thread#0:T:ActualValue Row 2 :641.38
+Thread#0:T:============================================================
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnArmBestCase() (0.8s)
+Thread#0:B:And updated/computed Principal and Interest Payment value should display on ARM Best Case
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :606.68
+Thread#0:T:ActualValue Row 1 :606.68
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :641.38
+Thread#0:T:ActualValue Row 2 :641.38
+Thread#0:T:============================================================
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPeriodPaymentValueShouldDisplayOnArmBestCase() (0.8s)
+Thread#0:B:And updated/computed PMI Payment value should display on ARM Best Case
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :0
+Thread#0:T:ActualValue Row 1 :0
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :0
+Thread#0:T:ActualValue Row 2 :0
+Thread#0:T:============================================================
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPmiPaymentValueShouldDisplayOnArmBestCase() (1.8s)
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #633 from normal test queue 
+Thread#0:Scheduler: considering testitem #633 for thread
+Thread#0:Scheduler: using testitem #633 for thread
+Thread#0:Scheduler: Test #633 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #632/0 is finished on thread #0 as Succeeded within 12.4110305 seconds
+Thread#0: Test #633/0 is started on thread #0
+Thread#0:B:Given user is at TRID application homepage
+Thread#0:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (1.5s)
+Thread#0:B:And user have ARM Best Case variable loan data from excel sheet ARMBestCase for the scenario 8
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.GivenUserHaveARMBestCaseVariableLoanDataFromExcelSheetForTheScenario("ARMBestCase", 8) (0.6s)
+Thread#0:B:When user upload json file for the scenario
+Thread#0:T:done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (2.0s)
+Thread#0:B:And user navigates to ARM Page
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.WhenUserNavigatesToARMPage() (1.2s)
+Thread#0:B:Then updated/computed Payment Stream Number value should display on ARM Best Case
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :1
+Thread#0:T:ActualValue Row 1 :1
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :2
+Thread#0:T:ActualValue Row 2 :2
+Thread#0:T:============================================================
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPaymentStreamNumberValueShouldDisplayOnArmBestCase() (0.8s)
+Thread#0:B:And updated/computed Number of Payments value should display on ARM Best Case
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :36
+Thread#0:T:ActualValue Row 1 :36
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :323
+Thread#0:T:ActualValue Row 2 :323
+Thread#0:T:============================================================
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedNumberOfPaymentsValueShouldDisplayOnArmBestCase() (0.8s)
+Thread#0:B:And updated/computed Payment Amount value should display on ARM Best Case
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :606.68
+Thread#0:T:ActualValue Row 1 :606.68
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :589.72
+Thread#0:T:ActualValue Row 2 :589.72
+Thread#0:T:============================================================
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnArmBestCase() (0.8s)
+Thread#0:B:And updated/computed Principal and Interest Payment value should display on ARM Best Case
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :606.68
+Thread#0:T:ActualValue Row 1 :606.68
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :589.72
+Thread#0:T:ActualValue Row 2 :589.72
+Thread#0:T:============================================================
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPeriodPaymentValueShouldDisplayOnArmBestCase() (0.8s)
+Thread#0:B:And updated/computed PMI Payment value should display on ARM Best Case
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :0
+Thread#0:T:ActualValue Row 1 :0
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :0
+Thread#0:T:ActualValue Row 2 :0
+Thread#0:T:============================================================
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPmiPaymentValueShouldDisplayOnArmBestCase() (0.8s)
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #634 from normal test queue 
+Thread#0:Scheduler: considering testitem #634 for thread
+Thread#0:Scheduler: using testitem #634 for thread
+Thread#0:Scheduler: Test #634 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #633/0 is finished on thread #0 as Succeeded within 11.6786412 seconds
+Thread#0: Test #634/0 is started on thread #0
+Thread#0:B:Given user is at TRID application homepage
+Thread#0:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (1.6s)
+Thread#0:B:And user have ARM Best Case variable loan data from excel sheet ARMBestCase for the scenario 9
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.GivenUserHaveARMBestCaseVariableLoanDataFromExcelSheetForTheScenario("ARMBestCase", 9) (0.6s)
+Thread#0:B:When user upload json file for the scenario
+Thread#0:T:done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (2.0s)
+Thread#0:B:And user navigates to ARM Page
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.WhenUserNavigatesToARMPage() (1.2s)
+Thread#0:B:Then updated/computed Payment Stream Number value should display on ARM Best Case
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :1
+Thread#0:T:ActualValue Row 1 :1
+Thread#0:T:============================================================
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPaymentStreamNumberValueShouldDisplayOnArmBestCase() (0.4s)
+Thread#0:B:And updated/computed Number of Payments value should display on ARM Best Case
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :359
+Thread#0:T:ActualValue Row 1 :359
+Thread#0:T:============================================================
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedNumberOfPaymentsValueShouldDisplayOnArmBestCase() (0.5s)
+Thread#0:B:And updated/computed Payment Amount value should display on ARM Best Case
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :606.68
+Thread#0:T:ActualValue Row 1 :606.68
+Thread#0:T:============================================================
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnArmBestCase() (0.4s)
+Thread#0:B:And updated/computed Principal and Interest Payment value should display on ARM Best Case
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :606.68
+Thread#0:T:ActualValue Row 1 :606.68
+Thread#0:T:============================================================
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPeriodPaymentValueShouldDisplayOnArmBestCase() (0.4s)
+Thread#0:B:And updated/computed PMI Payment value should display on ARM Best Case
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :0
+Thread#0:T:ActualValue Row 1 :0
+Thread#0:T:============================================================
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPmiPaymentValueShouldDisplayOnArmBestCase() (0.4s)
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #635 from normal test queue 
+Thread#0:Scheduler: considering testitem #635 for thread
+Thread#0:Scheduler: using testitem #635 for thread
+Thread#0:Scheduler: Test #635 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #634/0 is finished on thread #0 as Succeeded within 9.6557759 seconds
+Thread#0: Test #635/0 is started on thread #0
+Thread#0:B:Given user is at TRID application homepage
+Thread#0:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (1.3s)
+Thread#0:B:And user have ARM Best Case variable loan data from excel sheet ARMBestCase for the scenario 10
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.GivenUserHaveARMBestCaseVariableLoanDataFromExcelSheetForTheScenario("ARMBestCase", 10) (0.6s)
+Thread#0:B:When user upload json file for the scenario
+Thread#0:T:done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (2.0s)
+Thread#0:B:And user navigates to ARM Page
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.WhenUserNavigatesToARMPage() (1.1s)
+Thread#0:B:Then updated/computed Payment Stream Number value should display on ARM Best Case
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :1
+Thread#0:T:ActualValue Row 1 :1
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :2
+Thread#0:T:ActualValue Row 2 :2
+Thread#0:T:============================================================
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPaymentStreamNumberValueShouldDisplayOnArmBestCase() (0.8s)
+Thread#0:B:And updated/computed Number of Payments value should display on ARM Best Case
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :36
+Thread#0:T:ActualValue Row 1 :36
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :323
+Thread#0:T:ActualValue Row 2 :323
+Thread#0:T:============================================================
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedNumberOfPaymentsValueShouldDisplayOnArmBestCase() (0.8s)
+Thread#0:B:And updated/computed Payment Amount value should display on ARM Best Case
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :606.68
+Thread#0:T:ActualValue Row 1 :606.68
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :623.9
+Thread#0:T:ActualValue Row 2 :623.9
+Thread#0:T:============================================================
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnArmBestCase() (0.8s)
+Thread#0:B:And updated/computed Principal and Interest Payment value should display on ARM Best Case
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :606.68
+Thread#0:T:ActualValue Row 1 :606.68
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :623.9
+Thread#0:T:ActualValue Row 2 :623.9
+Thread#0:T:============================================================
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPeriodPaymentValueShouldDisplayOnArmBestCase() (0.8s)
+Thread#0:B:And updated/computed PMI Payment value should display on ARM Best Case
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :0
+Thread#0:T:ActualValue Row 1 :0
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :0
+Thread#0:T:ActualValue Row 2 :0
+Thread#0:T:============================================================
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPmiPaymentValueShouldDisplayOnArmBestCase() (0.8s)
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #636 from normal test queue 
+Thread#0:Scheduler: considering testitem #636 for thread
+Thread#0:Scheduler: using testitem #636 for thread
+Thread#0:Scheduler: Test #636 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #635/0 is finished on thread #0 as Succeeded within 11.3251376 seconds
+Thread#0: Test #636/0 is started on thread #0
+Thread#0:B:Given user is at TRID application homepage
+Thread#0:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (1.2s)
+Thread#0:B:And user have ARM Best Case variable loan data from excel sheet ARMBestCase for the scenario 11
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.GivenUserHaveARMBestCaseVariableLoanDataFromExcelSheetForTheScenario("ARMBestCase", 11) (0.6s)
+Thread#0:B:When user upload json file for the scenario
+Thread#0:T:done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (2.0s)
+Thread#0:B:And user navigates to ARM Page
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.WhenUserNavigatesToARMPage() (1.1s)
+Thread#0:B:Then updated/computed Payment Stream Number value should display on ARM Best Case
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :1
+Thread#0:T:ActualValue Row 1 :1
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :2
+Thread#0:T:ActualValue Row 2 :2
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 3 :3
+Thread#0:T:ActualValue Row 3 :3
+Thread#0:T:============================================================
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPaymentStreamNumberValueShouldDisplayOnArmBestCase() (1.3s)
+Thread#0:B:And updated/computed Number of Payments value should display on ARM Best Case
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :36
+Thread#0:T:ActualValue Row 1 :36
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :36
+Thread#0:T:ActualValue Row 2 :36
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 3 :287
+Thread#0:T:ActualValue Row 3 :287
+Thread#0:T:============================================================
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedNumberOfPaymentsValueShouldDisplayOnArmBestCase() (1.4s)
+Thread#0:B:And updated/computed Payment Amount value should display on ARM Best Case
+Thread#0:T:NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 1 with the difference of 0.0900000000000318
+Thread#0:T:  Expected: 828.10000000000002d
+Thread#0:T:  But was:  828.00999999999999d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnArmBestCase() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\VariableLoanPaymentScheuledValidationSteps.cs:line 136
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :674.12
+Thread#0:T:ActualValue Row 2 :674.12
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 3 :548.02
+Thread#0:T:ActualValue Row 3 :548.02
+Thread#0:T:============================================================
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnArmBestCase() (1.6s)
+Thread#0:B:And updated/computed Principal and Interest Payment value should display on ARM Best Case
+Thread#0:T:NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 1 with the difference of 0.0900000000000318
+Thread#0:T:  Expected: 828.10000000000002d
+Thread#0:T:  But was:  828.00999999999999d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPeriodPaymentValueShouldDisplayOnArmBestCase() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\VariableLoanPaymentScheuledValidationSteps.cs:line 170
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :674.12
+Thread#0:T:ActualValue Row 2 :674.12
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 3 :548.02
+Thread#0:T:ActualValue Row 3 :548.02
+Thread#0:T:============================================================
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPeriodPaymentValueShouldDisplayOnArmBestCase() (1.5s)
+Thread#0:B:And updated/computed PMI Payment value should display on ARM Best Case
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :0
+Thread#0:T:ActualValue Row 1 :0
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :0
+Thread#0:T:ActualValue Row 2 :0
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 3 :0
+Thread#0:T:ActualValue Row 3 :0
+Thread#0:T:============================================================
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPmiPaymentValueShouldDisplayOnArmBestCase() (1.3s)
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: at the end of normal test queue
+Thread#0:Scheduler: enumerator for thread is at end
+Thread#0:Scheduler: No more tests for thread 
+Thread#0:T:##########################################################
+Thread#0:T:##########################################################
+Thread#0:T:====================================================================================
+Thread#0:T:Scenario Number : 147
+Thread#0:T:The total number of cards Failue: 2
+Thread#0:T:Name of cards Failed: || AbcPaymentAmount[0] || : NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 1 with the difference of 0.0900000000000318
+Thread#0:T:  Expected: 828.10000000000002d
+Thread#0:T:  But was:  828.00999999999999d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnArmBestCase() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\VariableLoanPaymentScheuledValidationSteps.cs:line 136 
+Thread#0:T: ====================================================================================
+Thread#0:T:|| AbcPaymentSchedulePrincipalAndInterestPayment[0] || : NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 1 with the difference of 0.0900000000000318
+Thread#0:T:  Expected: 828.10000000000002d
+Thread#0:T:  But was:  828.00999999999999d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPeriodPaymentValueShouldDisplayOnArmBestCase() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\VariableLoanPaymentScheuledValidationSteps.cs:line 170 
+Thread#0:T: ====================================================================================
+Thread#0:T:====================================================================================
+Thread#0:T:##########################################################
+Thread#0:T:##########################################################
+Thread#0: Test #636/0 is finished on thread #0 as CleanupFailed within 22.5283956 seconds
+Appdomain Disposed
+Thread#-1:Scheduler: get next test for thread
+Thread#:Scheduler: at the end of normal test queue
+Thread#-1:Scheduler: enumerator for thread is at end
+Total: 10
+Succeeded: 9
+Ignored: 0
+Pending: 0
+Skipped: 0
+Failed: 1

@@ -1,0 +1,1 @@
+start /d "F:\Projects\TRID\SpecFramework" runtests.cmd

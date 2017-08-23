@@ -1,0 +1,128 @@
+﻿VS filter: testpath:TestAssembly:TRID/Feature:VariableLoanPaymentScheuledValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+Best+Case+on+Arms+page%2c+138
+Discovering target: Default
+Discovering tests from assembly: F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\bin\Debug\TRID.dll
+Appdomain Disposed
+Test Suite Dump
+#0: TRID/Default - 
+#1: Default - 
+#2: TRID - 
+#558: VariableLoanPaymentScheuledValidation - 
+#579: Uploading JSON file and validating Payment Schedule Best Case on Arms page, 138 - TestAssembly:TRID/Feature:VariableLoanPaymentScheuledValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+Best+Case+on+Arms+page%2c+138
+End: Test Suite Dump
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #579 from normal test queue 
+Thread#0:Scheduler: considering testitem #579 for thread
+Thread#0:Scheduler: using testitem #579 for thread
+Thread#0:Scheduler: Test #579 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread #0: creating new test thread executor for TRID, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null (target: Default)
+Loading SpecRun type 'TechTalk.SpecRun.Framework.TestAssemblyExecutor' from: C:\Users\sandees\AppData\Local\Temp\VisualStudioTestExplorerExtensions\SpecRun.Runner.1.5.2\tools\TechTalk.SpecRun.Framework.Executor.dll
+Thread#0: Test #579/0 is started on thread #0
+Thread#0:B:Given user is at TRID application homepage
+Thread#0:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (30.7s)
+Thread#0:B:And user have ARM Best Case variable loan data from excel sheet ARMBestCase for the scenario 2
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.GivenUserHaveARMBestCaseVariableLoanDataFromExcelSheetForTheScenario("ARMBestCase", 2) (0.8s)
+Thread#0:B:When user upload json file for the scenario
+Thread#0:T:done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (2.0s)
+Thread#0:B:And user navigates to ARM Page
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.WhenUserNavigatesToARMPage() (1.1s)
+Thread#0:B:Then updated/computed Payment Stream Number value should display on ARM Best Case
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :1
+Thread#0:T:ActualValue Row 1 :1
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :2
+Thread#0:T:ActualValue Row 2 :2
+Thread#0:T:============================================================
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPaymentStreamNumberValueShouldDisplayOnArmBestCase() (0.2s)
+Thread#0:B:And updated/computed Number of Payments value should display on ARM Best Case
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :36
+Thread#0:T:ActualValue Row 1 :36
+Thread#0:T:============================================================
+Thread#0:T:NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 2 with the difference of 1
+Thread#0:T:  Expected: 323.0d
+Thread#0:T:  But was:  324.0d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedNumberOfPaymentsValueShouldDisplayOnArmBestCase() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\VariableLoanPaymentScheuledValidationSteps.cs:line 102
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedNumberOfPaymentsValueShouldDisplayOnArmBestCase() (0.9s)
+Thread#0:B:And updated/computed Payment Amount value should display on ARM Best Case
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :606.68
+Thread#0:T:ActualValue Row 1 :606.68
+Thread#0:T:============================================================
+Thread#0:T:NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 2 with the difference of 48.48
+Thread#0:T:  Expected: 573.01999999999998d
+Thread#0:T:  But was:  524.53999999999996d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnArmBestCase() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\VariableLoanPaymentScheuledValidationSteps.cs:line 136
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnArmBestCase() (0.2s)
+Thread#0:B:And updated/computed Period Payment value should display on ARM Best Case
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :606.68
+Thread#0:T:ActualValue Row 1 :606.68
+Thread#0:T:============================================================
+Thread#0:T:NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 2 with the difference of 48.48
+Thread#0:T:  Expected: 573.01999999999998d
+Thread#0:T:  But was:  524.53999999999996d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPeriodPaymentValueShouldDisplayOnArmBestCase() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\VariableLoanPaymentScheuledValidationSteps.cs:line 170
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPeriodPaymentValueShouldDisplayOnArmBestCase() (0.2s)
+Thread#0:B:And updated/computed Period PMI value should display on ARM Best Case
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :0
+Thread#0:T:ActualValue Row 1 :0
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :0
+Thread#0:T:ActualValue Row 2 :0
+Thread#0:T:============================================================
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPeriodPmiValueShouldDisplayOnArmBestCase() (0.2s)
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: at the end of normal test queue
+Thread#0:Scheduler: enumerator for thread is at end
+Thread#0:Scheduler: No more tests for thread 
+Thread#0:T:##########################################################
+Thread#0:T:##########################################################
+Thread#0:T:====================================================================================
+Thread#0:T:Scenario Number : 138
+Thread#0:T:The total number of cards Failue: 3
+Thread#0:T:Name of cards Failed: || AbcPaymentScheduleNumberOfPayments[1] || : NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 2 with the difference of 1
+Thread#0:T:  Expected: 323.0d
+Thread#0:T:  But was:  324.0d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedNumberOfPaymentsValueShouldDisplayOnArmBestCase() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\VariableLoanPaymentScheuledValidationSteps.cs:line 102 
+Thread#0:T: ====================================================================================
+Thread#0:T:|| AbcPaymentAmount[1] || : NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 2 with the difference of 48.48
+Thread#0:T:  Expected: 573.01999999999998d
+Thread#0:T:  But was:  524.53999999999996d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnArmBestCase() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\VariableLoanPaymentScheuledValidationSteps.cs:line 136 
+Thread#0:T: ====================================================================================
+Thread#0:T:|| AbcPaymentSchedulePeriodPayment[1] || : NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 2 with the difference of 48.48
+Thread#0:T:  Expected: 573.01999999999998d
+Thread#0:T:  But was:  524.53999999999996d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPeriodPaymentValueShouldDisplayOnArmBestCase() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\VariableLoanPaymentScheuledValidationSteps.cs:line 170 
+Thread#0:T: ====================================================================================
+Thread#0:T:====================================================================================
+Thread#0:T:##########################################################
+Thread#0:T:##########################################################
+Thread#0: Test #579/0 is finished on thread #0 as CleanupFailed within 43.3190808 seconds
+Appdomain Disposed
+Thread#-1:Scheduler: get next test for thread
+Thread#:Scheduler: at the end of normal test queue
+Thread#-1:Scheduler: enumerator for thread is at end
+Total: 1
+Succeeded: 0
+Ignored: 0
+Pending: 0
+Skipped: 0
+Failed: 1

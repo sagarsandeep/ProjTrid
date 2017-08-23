@@ -1,0 +1,51 @@
+﻿VS filter: testpath:TestAssembly:TRID/Feature:CardsValidation/Scenario:Giving+inputs+from+Excel+file+and+validating+cards+value+on+Closing+Disclosure+page%2c+110
+Discovering target: Default
+Discovering tests from assembly: F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\bin\Debug\TRID.dll
+Appdomain Disposed
+Test Suite Dump
+#0: TRID/Default - 
+#1: Default - 
+#2: TRID - 
+#136: CardsValidation - 
+#372: Giving inputs from Excel file and validating cards value on Closing Disclosure page, 110 - TestAssembly:TRID/Feature:CardsValidation/Scenario:Giving+inputs+from+Excel+file+and+validating+cards+value+on+Closing+Disclosure+page%2c+110
+End: Test Suite Dump
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #372 from normal test queue 
+Thread#0:Scheduler: considering testitem #372 for thread
+Thread#0:Scheduler: using testitem #372 for thread
+Thread#0:Scheduler: Test #372 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread #0: creating new test thread executor for TRID, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null (target: Default)
+Loading SpecRun type 'TechTalk.SpecRun.Framework.TestAssemblyExecutor' from: C:\Users\sandees\AppData\Local\Temp\VisualStudioTestExplorerExtensions\SpecRun.Runner.1.5.2\tools\TechTalk.SpecRun.Framework.Executor.dll
+Thread#0: Test #372/0 is started on thread #0
+Thread#0:B:Given user is at TRID application homepage
+Thread#0:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (24.8s)
+Thread#0:B:And user have closing disclosure data from excel sheet ClosingDisclosure for the scenario 88
+Thread#0:T:done: CardsValidationSteps.GivenUserHaveClosingDisclosureDataFromExcelSheetForTheScenario("ClosingDisclosure", 88) (1.4s)
+Thread#0:B:And user have Mortgage Insurance data from excel sheet MortgageInsurance for the scenario 88
+Thread#0:T:done: CardsValidationSteps.GivenUserHaveMortgageInsuranceDataFromExcelSheetForTheScenarioMortgageInsurance("MortgageInsurance", 88) (1.1s)
+Thread#0:B:And user have variable loan data from excel sheet ARMTerms for the scenario 1
+Thread#0:T:done: CardsValidationSteps.GivenUserHaveVariableLoanDataFromExcelSheetForTheScenario("ARMTerms", 1) (0.9s)
+Thread#0:B:And user have Prepaid Charges data from excel sheet PrepaidCharges for the scenario 88
+Thread#0:T:done: CardsValidationSteps.GivenUserHavePrepaidChargesDataFromExcelSheetPrepaidChargesForTheScenario("PrepaidCharges", 88) (0.9s)
+Thread#0:B:And user have Export data from excel sheet Export for the scenario 88
+Thread#0:T:done: CardsValidationSteps.GivenUserHaveExportDataFromExcelSheetExportForTheScenario("Export", 88) (0.9s)
+Thread#0:B:And user have Escrow Grid data from excel sheet EscrowGrid for the scenario 88
+Thread#0:T:done: CardsValidationSteps.GivenUserHaveEscrowGridDataFromExcelSheetForTheScenario("EscrowGrid", 88) (0.8s)
+Thread#0:B:When user navigate to Loan Inputs Page
+Thread#0:T:done: CardsValidationSteps.WhenUserNavigateToLoanInputsPage() (1.7s)
+Thread#0:B:And user selects Calculation Method
+Thread#0:T:done: CardsValidationSteps.WhenUserSelectsCalculationMethodInClosingDisclosurePage() (0.1s)
+Thread#0:B:And user selects loan type
+Thread#0:T:done: CardsValidationSteps.WhenUserSelectsLoanTypeInClosingDisclosurePage() (0.1s)
+Thread#0:B:And user selects Frequency of Payments
+Thread#0:T:done: CardsValidationSteps.WhenUserSelectsFrequencyOfPaymentsInClosingDisclosurePage() (5.3s)
+Thread#0:B:And user selects Loan Term
+Thread#0:T:done: CardsValidationSteps.WhenUserSelectsLoanTermInClosingDisclosurePage() (0.1s)
+Thread#0:B:And user selects Repayment Term Type
+Thread#0:T:done: CardsValidationSteps.WhenUserSelectsRepaymentTermTypeInClosingDisclosurePage() (0.1s)
+Thread#0:B:And user enters Loan detail input values for computation
+Thread#0:T:done: CardsValidationSteps.WhenUserEntersLoanDetailInputValuesForComputationforClosingDisclosurepage() (2.8s)
+Thread#0:B:And user enters pmi rate values
+Thread#0:T:done: CardsValidationSteps.WhenUserEntersPmiRateValues() (2.4s)
+Thread#0:B:And user enters oth

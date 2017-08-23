@@ -1,0 +1,57 @@
+﻿VS filter: testpath:TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+001
+Discovering target: Default
+Discovering tests from assembly: F:\Projects\TRID QA\QA\UI Automation\SpecFramework\bin\Debug\TRID.dll
+Appdomain Disposed
+Test Suite Dump
+#0: TRID/Default - 
+#1: Default - 
+#2: TRID - 
+#3: AmortizationValidation - 
+#104: Uploading JSON file and validating Payment Schedule values on Amortization page, 001 - TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+001
+End: Test Suite Dump
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #104 from normal test queue 
+Thread#0:Scheduler: considering testitem #104 for thread
+Thread#0:Scheduler: using testitem #104 for thread
+Thread#0:Scheduler: Test #104 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread #0: creating new test thread executor for TRID, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null (target: Default)
+Loading SpecRun type 'TechTalk.SpecRun.Framework.TestAssemblyExecutor' from: C:\Users\sandees\AppData\Local\Temp\VisualStudioTestExplorerExtensions\SpecRun.Runner.1.5.2\tools\TechTalk.SpecRun.Framework.Executor.dll
+Thread#0: Test #104/0 is started on thread #0
+Thread#0:B:Given user is at TRID application homepage
+Thread#0:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (44.3s)
+Thread#0:B:And user have Payment Schedule data from excel sheet PaymentSchedule for the scenario 2
+Thread#0:T:done: AmortizationValidationSteps.GivenUserHavePaymentScheduleDataFromExcelSheetForTheScenario("PaymentSchedule", 2) (0.7s)
+Thread#0:B:When user upload json file for the scenario
+Thread#0:T:done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (1.9s)
+Thread#0:B:And user navigates to Amortization Page
+Thread#0:T:done: AmortizationValidationSteps.WhenUserNavigatesToAmortizationPage() (1.8s)
+Thread#0:B:Then updated/computed Payment Stream Number value should display on Payment Schedule Grid
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :1
+Thread#0:T:ActualValue Row 1 :1
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :2
+Thread#0:T:ActualValue Row 2 :2
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 3 :3
+Thread#0:T:ActualValue Row 3 :3
+Thread#0:T:============================================================
+Thread#0:T:done: AmortizationValidationSteps.ThenUpdatedComputedPaymentStreamNumberValueShouldDisplayOnPaymentScheduleGrid() (3.8s)
+Thread#0:B:And updated/computed Number of Payments value should display on Payment Schedule Grid
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :48
+Thread#0:T:ActualValue Row 1 :48
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :311
+Thread#0:T:ActualValue Row 2 :311
+Thread#0:T:============================================================
+Thread#0:T:NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 3 with the difference of 1
+Thread#0:T:  Expected: 2.0d
+Thread#0:T:  But was:  1.0d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedNumberOfPaymentsValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefin

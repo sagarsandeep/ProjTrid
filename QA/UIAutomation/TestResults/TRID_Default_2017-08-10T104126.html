@@ -1,0 +1,3285 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		<title>TRID Test Execution Report</title>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.6.2.min.js"></script>
+        <script type="text/javascript">
+            /**
+            * jQuery.fn.sortElements
+            * --------------
+            * #author James Padolsey (http://james.padolsey.com)
+            * #version 0.11
+            * #updated 18-MAR-2010
+            * #url https://raw.github.com/jamespadolsey/jQuery-Plugins/master/sortElements/jquery.sortElements.js
+            * --------------
+            * #param Function comparator:
+            *   Exactly the same behaviour as [1,2,3].sort(comparator)
+            *   
+            * #param Function getSortable
+            *   A function that should return the element that is
+            *   to be sorted. The comparator will run on the
+            *   current collection, but you may want the actual
+            *   resulting sort to occur on a parent or another
+            *   associated element.
+            *   
+            *   E.g. $('td').sortElements(comparator, function(){
+            *      return this.parentNode; 
+            *   })
+            *   
+            *   The <td>'s parent (<tr>) will be sorted instead
+            *   of the <td> itself.
+            */
+            jQuery.fn.sortElements = (function () {
+
+                var sort = [].sort;
+
+                return function (comparator, getSortable) {
+
+                    getSortable = getSortable || function () { return this; };
+
+                    var placements = this.map(function () {
+
+                        var sortElement = getSortable.call(this),
+                parentNode = sortElement.parentNode,
+
+                        // Since the element itself will change position, we have
+                        // to have some way of storing it's original position in
+                        // the DOM. The easiest way is to have a 'flag' node:
+                nextSibling = parentNode.insertBefore(
+                    document.createTextNode(''),
+                    sortElement.nextSibling
+                );
+
+                        return function () {
+
+                            if (parentNode === this) {
+                                throw new Error(
+                        "You can't sort elements if any one is a descendant of another."
+                    );
+                            }
+
+                            // Insert before flag:
+                            parentNode.insertBefore(this, nextSibling);
+                            // Remove flag:
+                            parentNode.removeChild(nextSibling);
+
+                        };
+
+                    });
+
+                    return sort.call(this, comparator).each(function (i) {
+                        placements[i].call(getSortable.call(this));
+                    });
+
+                };
+
+            })();
+        </script>
+        <script type="text/javascript">
+            jQuery.fn.setBarSizes = (function () {
+                return function (metricName, maxBarSize, min) {
+                    var max = Math.max.apply(Math, $.makeArray($(this).map(function () { return Number($(this).attr('data-sr-' + metricName)); })));
+                    var scale = 1.0;
+                    while (max > 0.0 && max <= 10.0) {
+                        scale = scale * 10.0;
+                        max = max * 10.0;
+                    }
+                    max = (Math.ceil(max / 2) * 2) / scale;
+
+                    this.each(function () {
+                        var barAnchor = $(this).find('a');
+                        var actual = $(this).attr('data-sr-' + metricName);
+                        var newHeight = Math.max(Math.round(maxBarSize * (actual - min) / (max - min)), 2);
+                        barAnchor.css({ height: newHeight });
+                    });
+
+                    var unit = "";
+                    if (metricName.substr(metricName.length - 4, 4) === "time")
+                        unit = "s";
+
+                    $('#testview .scale-min-label').each(function () {
+                        $(this).text(min.toString() + unit);
+                    });
+                    $('#testview .scale-max-label').each(function () {
+                        $(this).text(max.toString() + unit);
+                    });
+                    var mid = max / 2;
+                    $('#testview .scale-mid-label').each(function () {
+                        $(this).text(mid.toString() + unit);
+                    });
+                };
+            })();
+
+            function getComparer(metricName, isDesc) {
+                return function (a, b) {
+                    var aNumber = Number($(a).attr('data-sr-' + metricName));
+                    var bNumber = Number($(b).attr('data-sr-' + metricName));
+                    var result = aNumber > bNumber ? 1 : (aNumber < bNumber ? -1 : 0);
+                    if (isDesc)
+                        result = -1 * result;
+
+                    if (result == 0 && metricName != "order")
+                        result = getComparer("order", false)(a, b);
+
+                    return result;
+                };
+            }
+
+            var currentSort = "";
+            function doSort(allowToggleDesc) {
+                var newSort = $("input[name='barSortOrder']:checked").val();
+                if (allowToggleDesc && currentSort == newSort) {
+                    $('#barSortDesc').click();
+                    doSort(false);
+                    return;
+                }
+                currentSort = newSort;
+                $('#testview td.testview-item').sortElements(getComparer(newSort, $('#barSortDesc').is(':checked')));
+            }
+
+
+            function doSetHeights(allowSort) {
+                var selectedMetric = $("input[name='barHeight']:checked").val();
+                $('#testview td.testview-item').setBarSizes(selectedMetric, 60, 0.0);
+
+                if (allowSort && currentSort != selectedMetric) {
+                    var $radios = $("input[name='barSortOrder']");
+                    $radios.filter('[value=' + selectedMetric + ']').attr('checked', true);
+                    $("#barSortDesc").attr("checked", [true]);
+                    doSort(false);
+                }
+            }
+
+            $(document).ready(function () {
+                $("input[name='barSortOrder']").click(function () { doSort(true); return true; });
+                $("input[name='barSortDesc']").change(function () { doSort(false); });
+                $("input[name='barHeight']").change(function () { doSetHeights(true); });
+
+                doSort(false);
+                doSetHeights(false);
+
+                $("div.scrollable").css({ 'overflow': 'auto' });
+            });
+        </script>
+
+        <style type="text/css">
+            body 
+            {
+                color: #000000;
+                font-family: Arial,Liberation Sans,DejaVu Sans,sans-serif;
+                line-height: 130%;
+            }
+            h1 {
+                font-family: Trebuchet MS,Liberation Sans,DejaVu Sans,sans-serif;
+                font-size: 170%;
+                font-weight: bold;
+            }            
+            h2 {
+                font-family: Trebuchet MS,Liberation Sans,DejaVu Sans,sans-serif;
+                font-size: 130%;
+                font-weight: bold;
+                margin-bottom: 5px;
+            }            
+            h3 {
+                font-family: Trebuchet MS,Liberation Sans,DejaVu Sans,sans-serif;
+                font-size: 120%;
+                font-weight: bold;
+                margin-bottom: 5px;
+            }            
+            a.bar
+            {
+                text-decoration: none;
+                display: block;
+                line-height: 1px;
+            }
+            .description
+            {
+                font-style: italic;
+            }
+            .log 
+            {
+                width: 600px;
+                white-space: pre-wrap;
+                display: block;
+                margin: 0px;
+            }
+            .errorMessage 
+            {
+                width: 600px;
+                color: Red;
+                font-weight: bold;
+            }
+            .stackTrace 
+            {
+                width: 600px;
+                white-space: pre-wrap;
+                font-style: italic;
+                color: Red;
+                display: block;
+            }
+            table.testEvents
+            {
+                border: solid 1px #e8eef4;
+                border-collapse: collapse;
+            }
+            table.testEvents td
+            {
+                vertical-align: top;
+                padding: 5px;
+                border: solid 1px #e8eef4;
+            }
+            table.testEvents th
+            {
+                padding: 6px 5px;
+                text-align: left;
+                background-color: #e8eef4;
+                border: solid 1px #e8eef4;                
+            }
+            .comment
+            {
+                font-style: italic;
+                font-size: smaller;
+            }
+            .startupBar
+            {
+                background-color: #EEEEEE;
+                cursor: default;
+            }
+            
+            .colorSucceeded
+            {
+                background-color: #90ED7B;
+            }
+            .colorIgnored
+            {
+                background-color: #FFFF85;
+            }
+            .colorPending
+            {
+                background-color: #D47BED;
+            }
+            .colorNothingToRun
+            {
+                background-color: #CCCCFF;
+            }
+            .colorSkipped
+            {
+                background-color: #CCCCFF;
+            }
+            .colorInconclusive
+            {
+                background-color: #7BEDED;
+            }
+            .colorCleanupFailed
+            {
+                background-color: #FFCCCC;
+            }
+            .colorRandomlyFailed
+            {
+                background-color: #EDB07B;
+            }
+            .colorFailed
+            {
+                background-color: #ED5F5F;
+            }
+            .colorInitializationFailed
+            {
+                background-color: #FF0000;
+            }
+            .colorFrameworkError
+            {
+                background-color: #FF0000;
+            }
+            ul.subNodeLinks
+            {
+                padding-left: 20px;
+                margin: 0px;
+            }
+            ul.subNodeLinks li
+            {
+                list-style: none;
+            }
+            
+            /* views general */
+            div.scrollable
+            {
+                /*overflow: auto; - thsi has to be set from js, because of an IE9 bug */
+            }
+            div.viewbox
+            {
+                position: relative;
+                border: 3px solid #e8eef4;
+            }
+            div.viewbox table
+            {
+                border: 0px;
+            }
+                        
+            /* testview */
+            #testview
+            {
+                padding-top: 23px;
+            }
+            
+            table.testview-items td
+            {
+                vertical-align: bottom;
+                padding: 0px 1px 0px 1px;
+            }
+            td.right-padding, td.left-padding
+            {
+                width: 25px;
+                min-width: 25px;
+            }
+            table.testview-items a.bar
+            {
+                width: 5px;
+            }
+            table.testview-items tr.testview-items-row
+            {
+                height: 60px;
+            }
+            
+            /* scale */
+            table.vertical-scale 
+            {
+                position: absolute;
+                top: 23px;
+                left: 0px;
+                width: 100%;
+                z-index: -100;
+            }
+            table.vertical-scale td, tr.horizontal-scale td
+            {
+                font-size: 60%;
+                line-height: normal;
+            }
+            table.vertical-scale tr.scale-max, table.vertical-scale tr.scale-mid 
+            {
+                height: 30px;
+            }
+            tr.horizontal-scale, table.vertical-scale tr.scale-min 
+            {
+                height: 12px;
+            }
+            
+            td.scale-max-label, td.scale-mid-label, td.scale-min-label
+            {
+                border-top: solid 1px #E6E6E6;
+                text-align: left;
+                vertical-align: top;
+            }
+            td.scale-10-label
+            {
+                border-left: solid 1px #E6E6E6;
+                text-align: left;
+                vertical-align: bottom;
+                padding-left: 1px;
+            }
+            tr.scale-mid td, tr.scale-min td, tr.scale-max td
+            {
+                border-top: solid 1px #E6E6E6;
+            }
+           
+            
+            /* bar-control */
+            #bar-control
+            {
+                font-size: 60%;
+                line-height: normal;
+                position: absolute;
+                right: 0px;
+                top: 0px;
+            }
+            #bar-control label
+            {
+                font-weight: bold;
+                vertical-align: middle;
+            }
+            #bar-control .option
+            {
+                vertical-align: middle;
+                text-transform: lowercase;
+            }
+            #bar-control input[type="checkbox"]
+            {
+                padding: 0 2px 0 3px;
+            }
+            #bar-control input
+            {
+                vertical-align: top;
+                height: 12px;
+                margin: 0px;
+                padding: 0px;
+            }
+            #bar-control div
+            {
+                float: right;
+                margin: 3px 5px 3px 5px;
+            }
+            
+            
+            /* timeline view */
+            #timelineview
+            {
+                padding-top: 5px;
+            }
+            table.timelineview a
+            {
+                height: 20px;
+            }
+            table.timelineview td
+            {
+                vertical-align: bottom;
+                padding: 0px 1px 0px 0px;
+                border: 0px;
+            }
+            tr.thread-items-row
+            {
+                height: 25px;
+            }
+            tr.thread-items-row td
+            {
+                vertical-align: bottom;
+            }
+            td.thread-label
+            {
+                padding: 0px 6px 0px 6px;
+                text-align: right;
+                line-height: 18px;
+                vertical-align: bottom;
+            }
+            th.thread-label
+            {
+                padding: 3px 6px 0px 6px;
+                line-height: 18px;
+                text-align: left;
+                vertical-align: bottom;
+            }
+        </style>
+	</head>
+	<body>
+        <h1>TRID Test Execution Report</h1>
+        <ul>
+            <li>Project: TRID</li>
+            <li>Configuration: Default</li>
+            <li>Test Assemblies: F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\bin\Debug\TRID.dll</li>
+            <li>Start Time: 8/10/2017 10:41:39 AM</li>
+            <li>Duration: 00:04:09.3997558</li>
+            <li>Test Threads: 1</li>
+        </ul>
+
+        <h2>Result: 1 failed (test cleanup falied for 1)</h2>
+        <table class="testEvents">
+                <tr>
+        <th colspan="2">Success rate</th>
+        <th>Tests</th>
+        <th>Succeeded</th>
+        <th>Failed</th>
+        <th>Pending</th>
+        <th>Ignored</th>
+        <th>Skipped</th>
+    </tr>
+
+                <tr>
+            <td>
+            90%
+    </td>
+    <td>
+        <table class="timelineview" cellpadding="0" cellspacing="0">
+            <tr>
+                    <td>
+                        <a class="bar colorSucceeded" 
+                                style="width: 179px;" 
+                                title="9 succeeded" 
+                                                        />
+                    </td>
+                    <td>
+                        <a class="bar colorCleanupFailed" 
+                                style="width: 19px;" 
+                                title="test cleanup falied for 1" 
+                                                    href="#error_summary"
+                                />
+                    </td>
+            </tr>
+        </table>
+    </td>
+    <td>10</td>
+    <td>9</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+
+    </tr>
+
+        </table>
+        
+        <h2>Test Timeline Summary</h2>
+
+        <div id="timelineview" class="viewbox">
+            <div class="scrollable">
+                <table cellpadding="0" cellspacing="0">
+                    <tr>
+                        <th class="thread-label" colspan="2">thread</th>
+                    </tr>
+                        <tr class="thread-items-row">
+                            <td class="thread-label" title="Machine: SLBLR-LT-231">#0</td>
+                            <td colspan="1">
+                                <table class="timelineview" cellpadding="0" cellspacing="0">
+                                    <tr>
+
+                                            <td>
+        <a
+            class="bar startupBar" 
+            style="width: 3px;" 
+                title="test thread startup" 
+        >&nbsp;</a>
+    </td>
+
+    <td>
+        <a
+            class="bar colorSucceeded" 
+            style="width: 13px;" 
+                title="Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 138 (in VariableLoanPaymentScheuledValidation)" 
+                href="#t-1716210275.0"
+        >&nbsp;</a>
+    </td>
+    <td>
+        <a
+            class="bar colorSucceeded" 
+            style="width: 4px;" 
+                title="Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 139 (in VariableLoanPaymentScheuledValidation)" 
+                href="#t336573853.0"
+        >&nbsp;</a>
+    </td>
+    <td>
+        <a
+            class="bar colorSucceeded" 
+            style="width: 4px;" 
+                title="Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 140 (in VariableLoanPaymentScheuledValidation)" 
+                href="#t-589899860.0"
+        >&nbsp;</a>
+    </td>
+    <td>
+        <a
+            class="bar colorSucceeded" 
+            style="width: 4px;" 
+                title="Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 141 (in VariableLoanPaymentScheuledValidation)" 
+                href="#t1261033388.0"
+        >&nbsp;</a>
+    </td>
+    <td>
+        <a
+            class="bar colorSucceeded" 
+            style="width: 5px;" 
+                title="Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 142 (in VariableLoanPaymentScheuledValidation)" 
+                href="#t-182921300.0"
+        >&nbsp;</a>
+    </td>
+    <td>
+        <a
+            class="bar colorSucceeded" 
+            style="width: 4px;" 
+                title="Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 143 (in VariableLoanPaymentScheuledValidation)" 
+                href="#t1618204588.0"
+        >&nbsp;</a>
+    </td>
+    <td>
+        <a
+            class="bar colorSucceeded" 
+            style="width: 3px;" 
+                title="Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 144 (in VariableLoanPaymentScheuledValidation)" 
+                href="#t-2111645780.0"
+        >&nbsp;</a>
+    </td>
+    <td>
+        <a
+            class="bar colorSucceeded" 
+            style="width: 4px;" 
+                title="Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 145 (in VariableLoanPaymentScheuledValidation)" 
+                href="#t2122700716.0"
+        >&nbsp;</a>
+    </td>
+    <td>
+        <a
+            class="bar colorSucceeded" 
+            style="width: 4px;" 
+                title="Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 146 (in VariableLoanPaymentScheuledValidation)" 
+                href="#t-1686841428.0"
+        >&nbsp;</a>
+    </td>
+    <td>
+        <a
+            class="bar colorCleanupFailed" 
+            style="width: 11px;" 
+                title="Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 147 (in VariableLoanPaymentScheuledValidation)" 
+                href="#t399497132.0"
+        >&nbsp;</a>
+    </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    <tr class="horizontal-scale">
+                        <td>&nbsp;</td>
+                        <td class="scale-10-label">0s</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <h2>Test Result View</h2>
+        <div id="testview" class="viewbox">
+            <div id="bar-control">
+                <div id="bar-control-sort">
+                    <label>sort by:</label>
+                    <span class="option"><input type="radio" name="barSortOrder" value="exectime" />Time</span>
+                    <span class="option"><input type="radio" name="barSortOrder" value="acttime" />Act Time</span>
+                    <span class="option"><input type="radio" name="barSortOrder" value="order" />Execution</span>
+                    <span class="option"><input type="radio" name="barSortOrder" value="rescode" checked="checked" />Result</span>
+                    <span class="option"><input type="checkbox" name="barSortDesc" id="barSortDesc" checked="checked" />desc</span>
+                </div>
+                <div id="bar-control-heights">
+                    <label>heights:</label>
+                    <span class="option"><input type="radio" checked="checked" name="barHeight" value="exectime" />Time</span>
+                    <span class="option"><input type="radio" name="barHeight" value="acttime" />Act Time</span>
+                    
+                </div>
+            </div>
+            <table class="vertical-scale" cellpadding="0" cellspacing="0">
+                <tr class="scale-max">
+                    <td class="left-padding scale-max-label">&nbsp;</td>
+                    <td colspan="10">&nbsp;</td>
+                    <td class="right-padding">&nbsp;</td>
+                </tr>
+                <tr class="scale-mid">
+                    <td class="left-padding scale-mid-label">&nbsp;</td>
+                    <td colspan="10">&nbsp;</td>
+                    <td class="right-padding">&nbsp;</td>
+                </tr>
+                <tr class="scale-min">
+                    <td class="left-padding scale-min-label">&nbsp;</td>
+                    <td colspan="10">&nbsp;</td>
+                    <td class="right-padding">&nbsp;</td>
+                </tr>
+            </table>
+            <div class="scrollable">
+                <table class="testview-items" cellpadding="0" cellspacing="0">
+                    <tr class="testview-items-row">
+                        <td class="left-padding">&nbsp;</td>
+    <td class="testview-item" 
+        data-sr-exectime="64.1984462" data-sr-rescode="110" data-sr-order="0" data-sr-acttime="3.636">
+        <a
+            class="bar colorSucceeded" 
+            style="height: 60px;"
+            title="Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 138 (in VariableLoanPaymentScheuledValidation)"
+            href="#t-1716210275.0">&nbsp;</a>
+    </td>
+    <td class="testview-item" 
+        data-sr-exectime="18.2140397" data-sr-rescode="110" data-sr-order="1" data-sr-acttime="3.861">
+        <a
+            class="bar colorSucceeded" 
+            style="height: 17px;"
+            title="Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 139 (in VariableLoanPaymentScheuledValidation)"
+            href="#t336573853.0">&nbsp;</a>
+    </td>
+    <td class="testview-item" 
+        data-sr-exectime="18.3963666" data-sr-rescode="110" data-sr-order="2" data-sr-acttime="3.848">
+        <a
+            class="bar colorSucceeded" 
+            style="height: 17px;"
+            title="Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 140 (in VariableLoanPaymentScheuledValidation)"
+            href="#t-589899860.0">&nbsp;</a>
+    </td>
+    <td class="testview-item" 
+        data-sr-exectime="17.6994764" data-sr-rescode="110" data-sr-order="3" data-sr-acttime="3.79">
+        <a
+            class="bar colorSucceeded" 
+            style="height: 17px;"
+            title="Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 141 (in VariableLoanPaymentScheuledValidation)"
+            href="#t1261033388.0">&nbsp;</a>
+    </td>
+    <td class="testview-item" 
+        data-sr-exectime="18.2992231" data-sr-rescode="110" data-sr-order="4" data-sr-acttime="3.643">
+        <a
+            class="bar colorSucceeded" 
+            style="height: 17px;"
+            title="Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 142 (in VariableLoanPaymentScheuledValidation)"
+            href="#t-182921300.0">&nbsp;</a>
+    </td>
+    <td class="testview-item" 
+        data-sr-exectime="17.5635418" data-sr-rescode="110" data-sr-order="5" data-sr-acttime="3.696">
+        <a
+            class="bar colorSucceeded" 
+            style="height: 16px;"
+            title="Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 143 (in VariableLoanPaymentScheuledValidation)"
+            href="#t1618204588.0">&nbsp;</a>
+    </td>
+    <td class="testview-item" 
+        data-sr-exectime="17.2261242" data-sr-rescode="110" data-sr-order="6" data-sr-acttime="3.664">
+        <a
+            class="bar colorSucceeded" 
+            style="height: 16px;"
+            title="Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 144 (in VariableLoanPaymentScheuledValidation)"
+            href="#t-2111645780.0">&nbsp;</a>
+    </td>
+    <td class="testview-item" 
+        data-sr-exectime="17.3112879" data-sr-rescode="110" data-sr-order="7" data-sr-acttime="3.66">
+        <a
+            class="bar colorSucceeded" 
+            style="height: 16px;"
+            title="Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 145 (in VariableLoanPaymentScheuledValidation)"
+            href="#t2122700716.0">&nbsp;</a>
+    </td>
+    <td class="testview-item" 
+        data-sr-exectime="17.2194821" data-sr-rescode="110" data-sr-order="8" data-sr-acttime="3.732">
+        <a
+            class="bar colorSucceeded" 
+            style="height: 16px;"
+            title="Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 146 (in VariableLoanPaymentScheuledValidation)"
+            href="#t-1686841428.0">&nbsp;</a>
+    </td>
+    <td class="testview-item" 
+        data-sr-exectime="41.9229011" data-sr-rescode="420" data-sr-order="9" data-sr-acttime="3.908">
+        <a
+            class="bar colorCleanupFailed" 
+            style="height: 39px;"
+            title="Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 147 (in VariableLoanPaymentScheuledValidation)"
+            href="#t399497132.0">&nbsp;</a>
+    </td>
+                        <td class="right-padding">&nbsp;</td>
+                    </tr>
+                    <tr class="horizontal-scale">
+                        <td class="left-padding">&nbsp;</td>
+                        <td colspan="10">&nbsp;</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <h2>Feature Summary</h2>
+        <table class="testEvents">
+                <tr>
+            <th>Feature</th>
+        <th colspan="2">Success rate</th>
+        <th>Tests</th>
+        <th>Succeeded</th>
+        <th>Failed</th>
+        <th>Pending</th>
+        <th>Ignored</th>
+        <th>Skipped</th>
+    </tr>
+
+    <tr>
+            <td><a href="#f1164203344">VariableLoanPaymentScheuledValidation</a></td>
+            <td>
+            90%
+    </td>
+    <td>
+        <table class="timelineview" cellpadding="0" cellspacing="0">
+            <tr>
+                    <td>
+                        <a class="bar colorSucceeded" 
+                                style="width: 179px;" 
+                                title="9 succeeded" 
+                                                        />
+                    </td>
+                    <td>
+                        <a class="bar colorCleanupFailed" 
+                                style="width: 19px;" 
+                                title="test cleanup falied for 1" 
+                                                    href="#error_summary"
+                                />
+                    </td>
+            </tr>
+        </table>
+    </td>
+    <td>10</td>
+    <td>9</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+
+    </tr>
+        </table>
+
+        <a name="error_summary" />
+        <h2>Error Summary</h2>
+        <table class="testEvents">
+                <tr>
+            <th>Test</th>
+        <th colspan="2">Success rate</th>
+        <th>Tests</th>
+        <th>Succeeded</th>
+        <th>Failed</th>
+        <th>Pending</th>
+        <th>Ignored</th>
+        <th>Skipped</th>
+    </tr>
+
+                <tr>
+                    <td>
+                        <a href="#t399497132.0">Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 147 (in TRID, VariableLoanPaymentScheuledValidation)</a>
+                    </td>
+                        <td>
+            0%
+    </td>
+    <td>
+        <table class="timelineview" cellpadding="0" cellspacing="0">
+            <tr>
+                    <td>
+                        <a class="bar colorCleanupFailed" 
+                                style="width: 199px;" 
+                                title="test cleanup falied for 1" 
+                                                    href="#error_summary"
+                                />
+                    </td>
+            </tr>
+        </table>
+    </td>
+    <td>1</td>
+    <td>0</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+
+                </tr>
+                <tr>
+                    <td colspan="9" style="padding-left: 20px;"><div class="errorMessage">Error: Test Case failed</div></td>
+                </tr>
+        </table>
+
+        <h2>Scenario Summary</h2>
+            <a name="f1164203344" />
+            <h3>Feature: VariableLoanPaymentScheuledValidation</h3>
+            <table class="testEvents">
+                    <tr>
+            <th>Test</th>
+        <th colspan="2">Success rate</th>
+        <th>Tests</th>
+        <th>Succeeded</th>
+        <th>Failed</th>
+        <th>Pending</th>
+        <th>Ignored</th>
+        <th>Skipped</th>
+    </tr>
+
+                    <tr>
+                        <td>
+                                    <a href="#t-1716210275.0">Scenario: Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 138</a>
+
+                        </td>
+                            <td>
+            100%
+    </td>
+    <td>
+        <table class="timelineview" cellpadding="0" cellspacing="0">
+            <tr>
+                    <td>
+                        <a class="bar colorSucceeded" 
+                                style="width: 199px;" 
+                                title="1 succeeded" 
+                                                        />
+                    </td>
+            </tr>
+        </table>
+    </td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                                    <a href="#t336573853.0">Scenario: Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 139</a>
+
+                        </td>
+                            <td>
+            100%
+    </td>
+    <td>
+        <table class="timelineview" cellpadding="0" cellspacing="0">
+            <tr>
+                    <td>
+                        <a class="bar colorSucceeded" 
+                                style="width: 199px;" 
+                                title="1 succeeded" 
+                                                        />
+                    </td>
+            </tr>
+        </table>
+    </td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                                    <a href="#t-589899860.0">Scenario: Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 140</a>
+
+                        </td>
+                            <td>
+            100%
+    </td>
+    <td>
+        <table class="timelineview" cellpadding="0" cellspacing="0">
+            <tr>
+                    <td>
+                        <a class="bar colorSucceeded" 
+                                style="width: 199px;" 
+                                title="1 succeeded" 
+                                                        />
+                    </td>
+            </tr>
+        </table>
+    </td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                                    <a href="#t1261033388.0">Scenario: Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 141</a>
+
+                        </td>
+                            <td>
+            100%
+    </td>
+    <td>
+        <table class="timelineview" cellpadding="0" cellspacing="0">
+            <tr>
+                    <td>
+                        <a class="bar colorSucceeded" 
+                                style="width: 199px;" 
+                                title="1 succeeded" 
+                                                        />
+                    </td>
+            </tr>
+        </table>
+    </td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                                    <a href="#t-182921300.0">Scenario: Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 142</a>
+
+                        </td>
+                            <td>
+            100%
+    </td>
+    <td>
+        <table class="timelineview" cellpadding="0" cellspacing="0">
+            <tr>
+                    <td>
+                        <a class="bar colorSucceeded" 
+                                style="width: 199px;" 
+                                title="1 succeeded" 
+                                                        />
+                    </td>
+            </tr>
+        </table>
+    </td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                                    <a href="#t1618204588.0">Scenario: Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 143</a>
+
+                        </td>
+                            <td>
+            100%
+    </td>
+    <td>
+        <table class="timelineview" cellpadding="0" cellspacing="0">
+            <tr>
+                    <td>
+                        <a class="bar colorSucceeded" 
+                                style="width: 199px;" 
+                                title="1 succeeded" 
+                                                        />
+                    </td>
+            </tr>
+        </table>
+    </td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                                    <a href="#t-2111645780.0">Scenario: Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 144</a>
+
+                        </td>
+                            <td>
+            100%
+    </td>
+    <td>
+        <table class="timelineview" cellpadding="0" cellspacing="0">
+            <tr>
+                    <td>
+                        <a class="bar colorSucceeded" 
+                                style="width: 199px;" 
+                                title="1 succeeded" 
+                                                        />
+                    </td>
+            </tr>
+        </table>
+    </td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                                    <a href="#t2122700716.0">Scenario: Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 145</a>
+
+                        </td>
+                            <td>
+            100%
+    </td>
+    <td>
+        <table class="timelineview" cellpadding="0" cellspacing="0">
+            <tr>
+                    <td>
+                        <a class="bar colorSucceeded" 
+                                style="width: 199px;" 
+                                title="1 succeeded" 
+                                                        />
+                    </td>
+            </tr>
+        </table>
+    </td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                                    <a href="#t-1686841428.0">Scenario: Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 146</a>
+
+                        </td>
+                            <td>
+            100%
+    </td>
+    <td>
+        <table class="timelineview" cellpadding="0" cellspacing="0">
+            <tr>
+                    <td>
+                        <a class="bar colorSucceeded" 
+                                style="width: 199px;" 
+                                title="1 succeeded" 
+                                                        />
+                    </td>
+            </tr>
+        </table>
+    </td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                                    <a href="#t399497132.0">Scenario: Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 147</a>
+
+                        </td>
+                            <td>
+            0%
+    </td>
+    <td>
+        <table class="timelineview" cellpadding="0" cellspacing="0">
+            <tr>
+                    <td>
+                        <a class="bar colorCleanupFailed" 
+                                style="width: 199px;" 
+                                title="test cleanup falied for 1" 
+                                                    href="#error_summary"
+                                />
+                    </td>
+            </tr>
+        </table>
+    </td>
+    <td>1</td>
+    <td>0</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+
+                    </tr>
+            </table>
+
+        <h2>Execution Details</h2>
+            <a name="t-1716210275.0" />
+            <h3>Scenario: Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 138 (in TRID, VariableLoanPaymentScheuledValidation)</h3>
+            <ul>
+                <li>Status: Succeeded</li>
+                <li>Start time: 8/10/2017 10:41:40 AM</li>
+                <li>Execution time (sec): 64.1984462</li>
+                <li>Thread: #0</li>
+            </ul>
+            <table class="testEvents">
+                <tr>
+                    <th>Steps</th>
+                    <th>Trace</th>
+                    <th>Result</th>
+                </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">Given user is at TRID application homepage</pre>
+                        </td>
+                        <td>
+                            <!-- [TestArrange: Scenario - Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 138] -->
+                            <pre class="log">done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (48.8s)</pre>
+                        </td>
+                        <td>Succeeded in 48.805s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And user have ARM Worst Case variable loan data from excel sheet ARMWorstCase for the scenario 2</pre>
+                        </td>
+                        <td>
+                            <!-- [TestArrange: Scenario - Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 138] -->
+                            <pre class="log">done: VariableLoanPaymentScheuledValidationSteps.GivenUserHaveARMWorstCaseVariableLoanDataFromExcelSheetForTheScenario(&quot;ARMWorstCase&quot;, 2) (0.7s)</pre>
+                        </td>
+                        <td>Succeeded in 0.736s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">When user upload json file for the scenario</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAct: Scenario - Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 138] -->
+                            <pre class="log">done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (2.1s)</pre>
+                        </td>
+                        <td>Succeeded in 2.086s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And user navigates to ARM Page</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAct: Scenario - Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 138] -->
+                            <pre class="log">done: VariableLoanPaymentScheuledValidationSteps.WhenUserNavigatesToARMPage() (1.5s)</pre>
+                        </td>
+                        <td>Succeeded in 1.55s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">Then updated/computed Payment Stream Number value should display on ARM Worst Case</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAssert: Scenario - Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 138] -->
+                            <pre class="log">===========================================================
+ExpectedValue Row 1 :1
+ActualValue Row 1 :1
+============================================================
+===========================================================
+ExpectedValue Row 2 :2
+ActualValue Row 2 :2
+============================================================
+===========================================================
+ExpectedValue Row 3 :3
+ActualValue Row 3 :3
+============================================================
+===========================================================
+ExpectedValue Row 4 :4
+ActualValue Row 4 :4
+============================================================
+done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPaymentStreamNumberValueShouldDisplayOnArmWorstCase() (1.9s)</pre>
+                        </td>
+                        <td>Succeeded in 1.977s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And updated/computed Number of Payments value should display on ARM Worst Case</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAssert: Scenario - Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 138] -->
+                            <pre class="log">===========================================================
+ExpectedValue Row 1 :36
+ActualValue Row 1 :36
+============================================================
+===========================================================
+ExpectedValue Row 2 :36
+ActualValue Row 2 :36
+============================================================
+===========================================================
+ExpectedValue Row 3 :36
+ActualValue Row 3 :36
+============================================================
+===========================================================
+ExpectedValue Row 4 :251
+ActualValue Row 4 :251
+============================================================
+done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedNumberOfPaymentsValueShouldDisplayOnArmWorstCase() (1.9s)</pre>
+                        </td>
+                        <td>Succeeded in 2.103s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And updated/computed Payment Amount value should display on ARM Worst Case</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAssert: Scenario - Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 138] -->
+                            <pre class="log">===========================================================
+ExpectedValue Row 1 :606.68
+ActualValue Row 1 :606.68
+============================================================
+===========================================================
+ExpectedValue Row 2 :751.43
+ActualValue Row 2 :751.43
+============================================================
+NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 3 with the difference of 0.00999999999999091
+  Expected: 897.75d
+  But was:  897.74000000000001d
+
+   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+   at TRID.StepDefinitions.VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnArmWorstCase() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\VariableLoanPaymentScheuledValidationSteps.cs:line 379
+===========================================================
+ExpectedValue Row 4 :1042.01
+ActualValue Row 4 :1042.01
+============================================================
+done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnArmWorstCase() (2.1s)</pre>
+                        </td>
+                        <td>Succeeded in 2.309s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And updated/computed Period Payment value should display on ARM Worst Case</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAssert: Scenario - Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 138] -->
+                            <pre class="log">===========================================================
+ExpectedValue Row 1 :606.68
+ActualValue Row 1 :606.68
+============================================================
+===========================================================
+ExpectedValue Row 2 :751.43
+ActualValue Row 2 :751.43
+============================================================
+NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 3 with the difference of 0.00999999999999091
+  Expected: 897.75d
+  But was:  897.74000000000001d
+
+   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+   at TRID.StepDefinitions.VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPeriodPaymentValueShouldDisplayOnArmWorstCase() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\VariableLoanPaymentScheuledValidationSteps.cs:line 413
+===========================================================
+ExpectedValue Row 4 :1042.01
+ActualValue Row 4 :1042.01
+============================================================
+done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPeriodPaymentValueShouldDisplayOnArmWorstCase() (2.0s)</pre>
+                        </td>
+                        <td>Succeeded in 2.254s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And updated/computed Period PMI value should display on ARM Worst Case</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAssert: Scenario - Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 138] -->
+                            <pre class="log">===========================================================
+ExpectedValue Row 1 :0
+ActualValue Row 1 :0
+============================================================
+===========================================================
+ExpectedValue Row 2 :0
+ActualValue Row 2 :0
+============================================================
+===========================================================
+ExpectedValue Row 3 :0
+ActualValue Row 3 :0
+============================================================
+===========================================================
+ExpectedValue Row 4 :0
+ActualValue Row 4 :0
+============================================================
+done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPeriodPmiValueShouldDisplayOnArmWorstCase() (1.8s)</pre>
+                        </td>
+                        <td>Succeeded in 2.045s</td>
+                    </tr>
+            </table>
+            <a name="t336573853.0" />
+            <h3>Scenario: Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 139 (in TRID, VariableLoanPaymentScheuledValidation)</h3>
+            <ul>
+                <li>Status: Succeeded</li>
+                <li>Start time: 8/10/2017 10:42:44 AM</li>
+                <li>Execution time (sec): 18.2140397</li>
+                <li>Thread: #0</li>
+            </ul>
+            <table class="testEvents">
+                <tr>
+                    <th>Steps</th>
+                    <th>Trace</th>
+                    <th>Result</th>
+                </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">Given user is at TRID application homepage</pre>
+                        </td>
+                        <td>
+                            <!-- [TestArrange: Scenario - Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 139] -->
+                            <pre class="log">done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (2.1s)</pre>
+                        </td>
+                        <td>Succeeded in 2.352s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And user have ARM Worst Case variable loan data from excel sheet ARMWorstCase for the scenario 3</pre>
+                        </td>
+                        <td>
+                            <!-- [TestArrange: Scenario - Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 139] -->
+                            <pre class="log">done: VariableLoanPaymentScheuledValidationSteps.GivenUserHaveARMWorstCaseVariableLoanDataFromExcelSheetForTheScenario(&quot;ARMWorstCase&quot;, 3) (0.6s)</pre>
+                        </td>
+                        <td>Succeeded in 0.906s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">When user upload json file for the scenario</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAct: Scenario - Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 139] -->
+                            <pre class="log">done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (2.1s)</pre>
+                        </td>
+                        <td>Succeeded in 2.409s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And user navigates to ARM Page</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAct: Scenario - Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 139] -->
+                            <pre class="log">done: VariableLoanPaymentScheuledValidationSteps.WhenUserNavigatesToARMPage() (1.2s)</pre>
+                        </td>
+                        <td>Succeeded in 1.452s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">Then updated/computed Payment Stream Number value should display on ARM Worst Case</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAssert: Scenario - Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 139] -->
+                            <pre class="log">===========================================================
+ExpectedValue Row 1 :1
+ActualValue Row 1 :1
+============================================================
+===========================================================
+ExpectedValue Row 2 :2
+ActualValue Row 2 :2
+============================================================
+===========================================================
+ExpectedValue Row 3 :3
+ActualValue Row 3 :3
+============================================================
+===========================================================
+ExpectedValue Row 4 :4
+ActualValue Row 4 :4
+============================================================
+done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPaymentStreamNumberValueShouldDisplayOnArmWorstCase() (1.8s)</pre>
+                        </td>
+                        <td>Succeeded in 1.993s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And updated/computed Number of Payments value should display on ARM Worst Case</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAssert: Scenario - Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 139] -->
+                            <pre class="log">===========================================================
+ExpectedValue Row 1 :36
+ActualValue Row 1 :36
+============================================================
+===========================================================
+ExpectedValue Row 2 :36
+ActualValue Row 2 :36
+============================================================
+===========================================================
+ExpectedValue Row 3 :36
+ActualValue Row 3 :36
+============================================================
+===========================================================
+ExpectedValue Row 4 :251
+ActualValue Row 4 :251
+============================================================
+done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedNumberOfPaymentsValueShouldDisplayOnArmWorstCase() (1.8s)</pre>
+                        </td>
+                        <td>Succeeded in 2.054s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And updated/computed Payment Amount value should display on ARM Worst Case</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAssert: Scenario - Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 139] -->
+                            <pre class="log">===========================================================
+ExpectedValue Row 1 :606.68
+ActualValue Row 1 :606.68
+============================================================
+===========================================================
+ExpectedValue Row 2 :751.43
+ActualValue Row 2 :751.43
+============================================================
+NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 3 with the difference of 0.00999999999999091
+  Expected: 897.75d
+  But was:  897.74000000000001d
+
+   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+   at TRID.StepDefinitions.VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnArmWorstCase() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\VariableLoanPaymentScheuledValidationSteps.cs:line 379
+===========================================================
+ExpectedValue Row 4 :1042.01
+ActualValue Row 4 :1042.01
+============================================================
+done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnArmWorstCase() (2.2s)</pre>
+                        </td>
+                        <td>Succeeded in 2.373s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And updated/computed Period Payment value should display on ARM Worst Case</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAssert: Scenario - Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 139] -->
+                            <pre class="log">===========================================================
+ExpectedValue Row 1 :606.68
+ActualValue Row 1 :606.68
+============================================================
+===========================================================
+ExpectedValue Row 2 :751.43
+ActualValue Row 2 :751.43
+============================================================
+NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 3 with the difference of 0.00999999999999091
+  Expected: 897.75d
+  But was:  897.74000000000001d
+
+   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+   at TRID.StepDefinitions.VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPeriodPaymentValueShouldDisplayOnArmWorstCase() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\VariableLoanPaymentScheuledValidationSteps.cs:line 413
+===========================================================
+ExpectedValue Row 4 :1042.01
+ActualValue Row 4 :1042.01
+============================================================
+done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPeriodPaymentValueShouldDisplayOnArmWorstCase() (2.1s)</pre>
+                        </td>
+                        <td>Succeeded in 2.327s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And updated/computed Period PMI value should display on ARM Worst Case</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAssert: Scenario - Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 139] -->
+                            <pre class="log">===========================================================
+ExpectedValue Row 1 :0
+ActualValue Row 1 :0
+============================================================
+===========================================================
+ExpectedValue Row 2 :0
+ActualValue Row 2 :0
+============================================================
+===========================================================
+ExpectedValue Row 3 :0
+ActualValue Row 3 :0
+============================================================
+===========================================================
+ExpectedValue Row 4 :0
+ActualValue Row 4 :0
+============================================================
+done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPeriodPmiValueShouldDisplayOnArmWorstCase() (1.8s)</pre>
+                        </td>
+                        <td>Succeeded in 2.04s</td>
+                    </tr>
+            </table>
+            <a name="t-589899860.0" />
+            <h3>Scenario: Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 140 (in TRID, VariableLoanPaymentScheuledValidation)</h3>
+            <ul>
+                <li>Status: Succeeded</li>
+                <li>Start time: 8/10/2017 10:43:02 AM</li>
+                <li>Execution time (sec): 18.3963666</li>
+                <li>Thread: #0</li>
+            </ul>
+            <table class="testEvents">
+                <tr>
+                    <th>Steps</th>
+                    <th>Trace</th>
+                    <th>Result</th>
+                </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">Given user is at TRID application homepage</pre>
+                        </td>
+                        <td>
+                            <!-- [TestArrange: Scenario - Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 140] -->
+                            <pre class="log">done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (1.9s)</pre>
+                        </td>
+                        <td>Succeeded in 2.176s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And user have ARM Worst Case variable loan data from excel sheet ARMWorstCase for the scenario 4</pre>
+                        </td>
+                        <td>
+                            <!-- [TestArrange: Scenario - Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 140] -->
+                            <pre class="log">done: VariableLoanPaymentScheuledValidationSteps.GivenUserHaveARMWorstCaseVariableLoanDataFromExcelSheetForTheScenario(&quot;ARMWorstCase&quot;, 4) (0.6s)</pre>
+                        </td>
+                        <td>Succeeded in 1.008s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">When user upload json file for the scenario</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAct: Scenario - Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 140] -->
+                            <pre class="log">done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (2.1s)</pre>
+                        </td>
+                        <td>Succeeded in 2.365s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And user navigates to ARM Page</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAct: Scenario - Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 140] -->
+                            <pre class="log">done: VariableLoanPaymentScheuledValidationSteps.WhenUserNavigatesToARMPage() (1.3s)</pre>
+                        </td>
+                        <td>Succeeded in 1.483s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">Then updated/computed Payment Stream Number value should display on ARM Worst Case</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAssert: Scenario - Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 140] -->
+                            <pre class="log">===========================================================
+ExpectedValue Row 1 :1
+ActualValue Row 1 :1
+============================================================
+===========================================================
+ExpectedValue Row 2 :2
+ActualValue Row 2 :2
+============================================================
+===========================================================
+ExpectedValue Row 3 :3
+ActualValue Row 3 :3
+============================================================
+===========================================================
+ExpectedValue Row 4 :4
+ActualValue Row 4 :4
+============================================================
+done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPaymentStreamNumberValueShouldDisplayOnArmWorstCase() (1.9s)</pre>
+                        </td>
+                        <td>Succeeded in 2.074s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And updated/computed Number of Payments value should display on ARM Worst Case</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAssert: Scenario - Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 140] -->
+                            <pre class="log">===========================================================
+ExpectedValue Row 1 :36
+ActualValue Row 1 :36
+============================================================
+===========================================================
+ExpectedValue Row 2 :36
+ActualValue Row 2 :36
+============================================================
+===========================================================
+ExpectedValue Row 3 :36
+ActualValue Row 3 :36
+============================================================
+===========================================================
+ExpectedValue Row 4 :251
+ActualValue Row 4 :251
+============================================================
+done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedNumberOfPaymentsValueShouldDisplayOnArmWorstCase() (1.9s)</pre>
+                        </td>
+                        <td>Succeeded in 2.093s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And updated/computed Payment Amount value should display on ARM Worst Case</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAssert: Scenario - Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 140] -->
+                            <pre class="log">===========================================================
+ExpectedValue Row 1 :606.68
+ActualValue Row 1 :606.68
+============================================================
+===========================================================
+ExpectedValue Row 2 :751.43
+ActualValue Row 2 :751.43
+============================================================
+NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 3 with the difference of 0.00999999999999091
+  Expected: 897.75d
+  But was:  897.74000000000001d
+
+   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+   at TRID.StepDefinitions.VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnArmWorstCase() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\VariableLoanPaymentScheuledValidationSteps.cs:line 379
+===========================================================
+ExpectedValue Row 4 :1042.01
+ActualValue Row 4 :1042.01
+============================================================
+done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnArmWorstCase() (2.2s)</pre>
+                        </td>
+                        <td>Succeeded in 2.394s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And updated/computed Period Payment value should display on ARM Worst Case</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAssert: Scenario - Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 140] -->
+                            <pre class="log">===========================================================
+ExpectedValue Row 1 :606.68
+ActualValue Row 1 :606.68
+============================================================
+===========================================================
+ExpectedValue Row 2 :751.43
+ActualValue Row 2 :751.43
+============================================================
+NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 3 with the difference of 0.00999999999999091
+  Expected: 897.75d
+  But was:  897.74000000000001d
+
+   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+   at TRID.StepDefinitions.VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPeriodPaymentValueShouldDisplayOnArmWorstCase() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\VariableLoanPaymentScheuledValidationSteps.cs:line 413
+===========================================================
+ExpectedValue Row 4 :1042.01
+ActualValue Row 4 :1042.01
+============================================================
+done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPeriodPaymentValueShouldDisplayOnArmWorstCase() (2.1s)</pre>
+                        </td>
+                        <td>Succeeded in 2.317s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And updated/computed Period PMI value should display on ARM Worst Case</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAssert: Scenario - Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 140] -->
+                            <pre class="log">===========================================================
+ExpectedValue Row 1 :0
+ActualValue Row 1 :0
+============================================================
+===========================================================
+ExpectedValue Row 2 :0
+ActualValue Row 2 :0
+============================================================
+===========================================================
+ExpectedValue Row 3 :0
+ActualValue Row 3 :0
+============================================================
+===========================================================
+ExpectedValue Row 4 :0
+ActualValue Row 4 :0
+============================================================
+done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPeriodPmiValueShouldDisplayOnArmWorstCase() (2.0s)</pre>
+                        </td>
+                        <td>Succeeded in 2.177s</td>
+                    </tr>
+            </table>
+            <a name="t1261033388.0" />
+            <h3>Scenario: Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 141 (in TRID, VariableLoanPaymentScheuledValidation)</h3>
+            <ul>
+                <li>Status: Succeeded</li>
+                <li>Start time: 8/10/2017 10:43:21 AM</li>
+                <li>Execution time (sec): 17.6994764</li>
+                <li>Thread: #0</li>
+            </ul>
+            <table class="testEvents">
+                <tr>
+                    <th>Steps</th>
+                    <th>Trace</th>
+                    <th>Result</th>
+                </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">Given user is at TRID application homepage</pre>
+                        </td>
+                        <td>
+                            <!-- [TestArrange: Scenario - Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 141] -->
+                            <pre class="log">done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (1.9s)</pre>
+                        </td>
+                        <td>Succeeded in 2.159s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And user have ARM Worst Case variable loan data from excel sheet ARMWorstCase for the scenario 5</pre>
+                        </td>
+                        <td>
+                            <!-- [TestArrange: Scenario - Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 141] -->
+                            <pre class="log">done: VariableLoanPaymentScheuledValidationSteps.GivenUserHaveARMWorstCaseVariableLoanDataFromExcelSheetForTheScenario(&quot;ARMWorstCase&quot;, 5) (0.6s)</pre>
+                        </td>
+                        <td>Succeeded in 0.946s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">When user upload json file for the scenario</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAct: Scenario - Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 141] -->
+                            <pre class="log">done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (2.1s)</pre>
+                        </td>
+                        <td>Succeeded in 2.339s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And user navigates to ARM Page</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAct: Scenario - Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 141] -->
+                            <pre class="log">done: VariableLoanPaymentScheuledValidationSteps.WhenUserNavigatesToARMPage() (1.2s)</pre>
+                        </td>
+                        <td>Succeeded in 1.45s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">Then updated/computed Payment Stream Number value should display on ARM Worst Case</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAssert: Scenario - Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 141] -->
+                            <pre class="log">===========================================================
+ExpectedValue Row 1 :1
+ActualValue Row 1 :1
+============================================================
+===========================================================
+ExpectedValue Row 2 :2
+ActualValue Row 2 :2
+============================================================
+===========================================================
+ExpectedValue Row 3 :3
+ActualValue Row 3 :3
+============================================================
+===========================================================
+ExpectedValue Row 4 :4
+ActualValue Row 4 :4
+============================================================
+done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPaymentStreamNumberValueShouldDisplayOnArmWorstCase() (1.8s)</pre>
+                        </td>
+                        <td>Succeeded in 2.011s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And updated/computed Number of Payments value should display on ARM Worst Case</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAssert: Scenario - Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 141] -->
+                            <pre class="log">===========================================================
+ExpectedValue Row 1 :36
+ActualValue Row 1 :36
+============================================================
+===========================================================
+ExpectedValue Row 2 :36
+ActualValue Row 2 :36
+============================================================
+===========================================================
+ExpectedValue Row 3 :36
+ActualValue Row 3 :36
+============================================================
+===========================================================
+ExpectedValue Row 4 :251
+ActualValue Row 4 :251
+============================================================
+done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedNumberOfPaymentsValueShouldDisplayOnArmWorstCase() (1.9s)</pre>
+                        </td>
+                        <td>Succeeded in 2.097s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And updated/computed Payment Amount value should display on ARM Worst Case</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAssert: Scenario - Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 141] -->
+                            <pre class="log">===========================================================
+ExpectedValue Row 1 :606.68
+ActualValue Row 1 :606.68
+============================================================
+===========================================================
+ExpectedValue Row 2 :751.43
+ActualValue Row 2 :751.43
+============================================================
+NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 3 with the difference of 0.00999999999999091
+  Expected: 897.75d
+  But was:  897.74000000000001d
+
+   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+   at TRID.StepDefinitions.VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnArmWorstCase() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\VariableLoanPaymentScheuledValidationSteps.cs:line 379
+===========================================================
+ExpectedValue Row 4 :1042.01
+ActualValue Row 4 :1042.01
+============================================================
+done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnArmWorstCase() (2.0s)</pre>
+                        </td>
+                        <td>Succeeded in 2.221s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And updated/computed Period Payment value should display on ARM Worst Case</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAssert: Scenario - Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 141] -->
+                            <pre class="log">===========================================================
+ExpectedValue Row 1 :606.68
+ActualValue Row 1 :606.68
+============================================================
+===========================================================
+ExpectedValue Row 2 :751.43
+ActualValue Row 2 :751.43
+============================================================
+NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 3 with the difference of 0.00999999999999091
+  Expected: 897.75d
+  But was:  897.74000000000001d
+
+   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+   at TRID.StepDefinitions.VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPeriodPaymentValueShouldDisplayOnArmWorstCase() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\VariableLoanPaymentScheuledValidationSteps.cs:line 413
+===========================================================
+ExpectedValue Row 4 :1042.01
+ActualValue Row 4 :1042.01
+============================================================
+done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPeriodPaymentValueShouldDisplayOnArmWorstCase() (2.0s)</pre>
+                        </td>
+                        <td>Succeeded in 2.198s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And updated/computed Period PMI value should display on ARM Worst Case</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAssert: Scenario - Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 141] -->
+                            <pre class="log">===========================================================
+ExpectedValue Row 1 :0
+ActualValue Row 1 :0
+============================================================
+===========================================================
+ExpectedValue Row 2 :0
+ActualValue Row 2 :0
+============================================================
+===========================================================
+ExpectedValue Row 3 :0
+ActualValue Row 3 :0
+============================================================
+===========================================================
+ExpectedValue Row 4 :0
+ActualValue Row 4 :0
+============================================================
+done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPeriodPmiValueShouldDisplayOnArmWorstCase() (1.8s)</pre>
+                        </td>
+                        <td>Succeeded in 1.982s</td>
+                    </tr>
+            </table>
+            <a name="t-182921300.0" />
+            <h3>Scenario: Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 142 (in TRID, VariableLoanPaymentScheuledValidation)</h3>
+            <ul>
+                <li>Status: Succeeded</li>
+                <li>Start time: 8/10/2017 10:43:39 AM</li>
+                <li>Execution time (sec): 18.2992231</li>
+                <li>Thread: #0</li>
+            </ul>
+            <table class="testEvents">
+                <tr>
+                    <th>Steps</th>
+                    <th>Trace</th>
+                    <th>Result</th>
+                </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">Given user is at TRID application homepage</pre>
+                        </td>
+                        <td>
+                            <!-- [TestArrange: Scenario - Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 142] -->
+                            <pre class="log">done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (2.8s)</pre>
+                        </td>
+                        <td>Succeeded in 3.06s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And user have ARM Worst Case variable loan data from excel sheet ARMWorstCase for the scenario 6</pre>
+                        </td>
+                        <td>
+                            <!-- [TestArrange: Scenario - Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 142] -->
+                            <pre class="log">done: VariableLoanPaymentScheuledValidationSteps.GivenUserHaveARMWorstCaseVariableLoanDataFromExcelSheetForTheScenario(&quot;ARMWorstCase&quot;, 6) (0.6s)</pre>
+                        </td>
+                        <td>Succeeded in 0.984s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">When user upload json file for the scenario</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAct: Scenario - Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 142] -->
+                            <pre class="log">done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (2.1s)</pre>
+                        </td>
+                        <td>Succeeded in 2.338s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And user navigates to ARM Page</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAct: Scenario - Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 142] -->
+                            <pre class="log">done: VariableLoanPaymentScheuledValidationSteps.WhenUserNavigatesToARMPage() (1.1s)</pre>
+                        </td>
+                        <td>Succeeded in 1.305s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">Then updated/computed Payment Stream Number value should display on ARM Worst Case</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAssert: Scenario - Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 142] -->
+                            <pre class="log">===========================================================
+ExpectedValue Row 1 :1
+ActualValue Row 1 :1
+============================================================
+===========================================================
+ExpectedValue Row 2 :2
+ActualValue Row 2 :2
+============================================================
+===========================================================
+ExpectedValue Row 3 :3
+ActualValue Row 3 :3
+============================================================
+===========================================================
+ExpectedValue Row 4 :4
+ActualValue Row 4 :4
+============================================================
+done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPaymentStreamNumberValueShouldDisplayOnArmWorstCase() (1.7s)</pre>
+                        </td>
+                        <td>Succeeded in 1.953s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And updated/computed Number of Payments value should display on ARM Worst Case</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAssert: Scenario - Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 142] -->
+                            <pre class="log">===========================================================
+ExpectedValue Row 1 :36
+ActualValue Row 1 :36
+============================================================
+===========================================================
+ExpectedValue Row 2 :36
+ActualValue Row 2 :36
+============================================================
+===========================================================
+ExpectedValue Row 3 :36
+ActualValue Row 3 :36
+============================================================
+===========================================================
+ExpectedValue Row 4 :251
+ActualValue Row 4 :251
+============================================================
+done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedNumberOfPaymentsValueShouldDisplayOnArmWorstCase() (1.7s)</pre>
+                        </td>
+                        <td>Succeeded in 1.944s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And updated/computed Payment Amount value should display on ARM Worst Case</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAssert: Scenario - Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 142] -->
+                            <pre class="log">===========================================================
+ExpectedValue Row 1 :606.68
+ActualValue Row 1 :606.68
+============================================================
+===========================================================
+ExpectedValue Row 2 :751.43
+ActualValue Row 2 :751.43
+============================================================
+NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 3 with the difference of 0.00999999999999091
+  Expected: 897.75d
+  But was:  897.74000000000001d
+
+   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+   at TRID.StepDefinitions.VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnArmWorstCase() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\VariableLoanPaymentScheuledValidationSteps.cs:line 379
+===========================================================
+ExpectedValue Row 4 :1042.01
+ActualValue Row 4 :1042.01
+============================================================
+done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnArmWorstCase() (2.0s)</pre>
+                        </td>
+                        <td>Succeeded in 2.191s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And updated/computed Period Payment value should display on ARM Worst Case</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAssert: Scenario - Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 142] -->
+                            <pre class="log">===========================================================
+ExpectedValue Row 1 :606.68
+ActualValue Row 1 :606.68
+============================================================
+===========================================================
+ExpectedValue Row 2 :751.43
+ActualValue Row 2 :751.43
+============================================================
+NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 3 with the difference of 0.00999999999999091
+  Expected: 897.75d
+  But was:  897.74000000000001d
+
+   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+   at TRID.StepDefinitions.VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPeriodPaymentValueShouldDisplayOnArmWorstCase() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\VariableLoanPaymentScheuledValidationSteps.cs:line 413
+===========================================================
+ExpectedValue Row 4 :1042.01
+ActualValue Row 4 :1042.01
+============================================================
+done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPeriodPaymentValueShouldDisplayOnArmWorstCase() (2.0s)</pre>
+                        </td>
+                        <td>Succeeded in 2.2s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And updated/computed Period PMI value should display on ARM Worst Case</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAssert: Scenario - Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 142] -->
+                            <pre class="log">===========================================================
+ExpectedValue Row 1 :0
+ActualValue Row 1 :0
+============================================================
+===========================================================
+ExpectedValue Row 2 :0
+ActualValue Row 2 :0
+============================================================
+===========================================================
+ExpectedValue Row 3 :0
+ActualValue Row 3 :0
+============================================================
+===========================================================
+ExpectedValue Row 4 :0
+ActualValue Row 4 :0
+============================================================
+done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPeriodPmiValueShouldDisplayOnArmWorstCase() (1.8s)</pre>
+                        </td>
+                        <td>Succeeded in 1.983s</td>
+                    </tr>
+            </table>
+            <a name="t1618204588.0" />
+            <h3>Scenario: Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 143 (in TRID, VariableLoanPaymentScheuledValidation)</h3>
+            <ul>
+                <li>Status: Succeeded</li>
+                <li>Start time: 8/10/2017 10:43:57 AM</li>
+                <li>Execution time (sec): 17.5635418</li>
+                <li>Thread: #0</li>
+            </ul>
+            <table class="testEvents">
+                <tr>
+                    <th>Steps</th>
+                    <th>Trace</th>
+                    <th>Result</th>
+                </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">Given user is at TRID application homepage</pre>
+                        </td>
+                        <td>
+                            <!-- [TestArrange: Scenario - Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 143] -->
+                            <pre class="log">done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (1.5s)</pre>
+                        </td>
+                        <td>Succeeded in 1.837s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And user have ARM Worst Case variable loan data from excel sheet ARMWorstCase for the scenario 7</pre>
+                        </td>
+                        <td>
+                            <!-- [TestArrange: Scenario - Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 143] -->
+                            <pre class="log">done: VariableLoanPaymentScheuledValidationSteps.GivenUserHaveARMWorstCaseVariableLoanDataFromExcelSheetForTheScenario(&quot;ARMWorstCase&quot;, 7) (0.6s)</pre>
+                        </td>
+                        <td>Succeeded in 0.958s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">When user upload json file for the scenario</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAct: Scenario - Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 143] -->
+                            <pre class="log">done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (2.1s)</pre>
+                        </td>
+                        <td>Succeeded in 2.372s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And user navigates to ARM Page</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAct: Scenario - Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 143] -->
+                            <pre class="log">done: VariableLoanPaymentScheuledValidationSteps.WhenUserNavigatesToARMPage() (1.1s)</pre>
+                        </td>
+                        <td>Succeeded in 1.324s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">Then updated/computed Payment Stream Number value should display on ARM Worst Case</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAssert: Scenario - Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 143] -->
+                            <pre class="log">===========================================================
+ExpectedValue Row 1 :1
+ActualValue Row 1 :1
+============================================================
+===========================================================
+ExpectedValue Row 2 :2
+ActualValue Row 2 :2
+============================================================
+===========================================================
+ExpectedValue Row 3 :3
+ActualValue Row 3 :3
+============================================================
+===========================================================
+ExpectedValue Row 4 :4
+ActualValue Row 4 :4
+============================================================
+done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPaymentStreamNumberValueShouldDisplayOnArmWorstCase() (1.9s)</pre>
+                        </td>
+                        <td>Succeeded in 2.061s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And updated/computed Number of Payments value should display on ARM Worst Case</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAssert: Scenario - Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 143] -->
+                            <pre class="log">===========================================================
+ExpectedValue Row 1 :36
+ActualValue Row 1 :36
+============================================================
+===========================================================
+ExpectedValue Row 2 :36
+ActualValue Row 2 :36
+============================================================
+===========================================================
+ExpectedValue Row 3 :36
+ActualValue Row 3 :36
+============================================================
+===========================================================
+ExpectedValue Row 4 :251
+ActualValue Row 4 :251
+============================================================
+done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedNumberOfPaymentsValueShouldDisplayOnArmWorstCase() (1.9s)</pre>
+                        </td>
+                        <td>Succeeded in 2.087s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And updated/computed Payment Amount value should display on ARM Worst Case</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAssert: Scenario - Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 143] -->
+                            <pre class="log">===========================================================
+ExpectedValue Row 1 :606.68
+ActualValue Row 1 :606.68
+============================================================
+===========================================================
+ExpectedValue Row 2 :751.43
+ActualValue Row 2 :751.43
+============================================================
+NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 3 with the difference of 0.00999999999999091
+  Expected: 897.75d
+  But was:  897.74000000000001d
+
+   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+   at TRID.StepDefinitions.VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnArmWorstCase() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\VariableLoanPaymentScheuledValidationSteps.cs:line 379
+===========================================================
+ExpectedValue Row 4 :1042.01
+ActualValue Row 4 :1042.01
+============================================================
+done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnArmWorstCase() (2.1s)</pre>
+                        </td>
+                        <td>Succeeded in 2.276s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And updated/computed Period Payment value should display on ARM Worst Case</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAssert: Scenario - Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 143] -->
+                            <pre class="log">===========================================================
+ExpectedValue Row 1 :606.68
+ActualValue Row 1 :606.68
+============================================================
+===========================================================
+ExpectedValue Row 2 :751.43
+ActualValue Row 2 :751.43
+============================================================
+NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 3 with the difference of 0.00999999999999091
+  Expected: 897.75d
+  But was:  897.74000000000001d
+
+   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+   at TRID.StepDefinitions.VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPeriodPaymentValueShouldDisplayOnArmWorstCase() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\VariableLoanPaymentScheuledValidationSteps.cs:line 413
+===========================================================
+ExpectedValue Row 4 :1042.01
+ActualValue Row 4 :1042.01
+============================================================
+done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPeriodPaymentValueShouldDisplayOnArmWorstCase() (2.1s)</pre>
+                        </td>
+                        <td>Succeeded in 2.349s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And updated/computed Period PMI value should display on ARM Worst Case</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAssert: Scenario - Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 143] -->
+                            <pre class="log">===========================================================
+ExpectedValue Row 1 :0
+ActualValue Row 1 :0
+============================================================
+===========================================================
+ExpectedValue Row 2 :0
+ActualValue Row 2 :0
+============================================================
+===========================================================
+ExpectedValue Row 3 :0
+ActualValue Row 3 :0
+============================================================
+===========================================================
+ExpectedValue Row 4 :0
+ActualValue Row 4 :0
+============================================================
+done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPeriodPmiValueShouldDisplayOnArmWorstCase() (1.8s)</pre>
+                        </td>
+                        <td>Succeeded in 1.993s</td>
+                    </tr>
+            </table>
+            <a name="t-2111645780.0" />
+            <h3>Scenario: Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 144 (in TRID, VariableLoanPaymentScheuledValidation)</h3>
+            <ul>
+                <li>Status: Succeeded</li>
+                <li>Start time: 8/10/2017 10:44:15 AM</li>
+                <li>Execution time (sec): 17.2261242</li>
+                <li>Thread: #0</li>
+            </ul>
+            <table class="testEvents">
+                <tr>
+                    <th>Steps</th>
+                    <th>Trace</th>
+                    <th>Result</th>
+                </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">Given user is at TRID application homepage</pre>
+                        </td>
+                        <td>
+                            <!-- [TestArrange: Scenario - Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 144] -->
+                            <pre class="log">done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (1.5s)</pre>
+                        </td>
+                        <td>Succeeded in 1.793s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And user have ARM Worst Case variable loan data from excel sheet ARMWorstCase for the scenario 8</pre>
+                        </td>
+                        <td>
+                            <!-- [TestArrange: Scenario - Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 144] -->
+                            <pre class="log">done: VariableLoanPaymentScheuledValidationSteps.GivenUserHaveARMWorstCaseVariableLoanDataFromExcelSheetForTheScenario(&quot;ARMWorstCase&quot;, 8) (0.6s)</pre>
+                        </td>
+                        <td>Succeeded in 1.004s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">When user upload json file for the scenario</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAct: Scenario - Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 144] -->
+                            <pre class="log">done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (2.0s)</pre>
+                        </td>
+                        <td>Succeeded in 2.327s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And user navigates to ARM Page</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAct: Scenario - Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 144] -->
+                            <pre class="log">done: VariableLoanPaymentScheuledValidationSteps.WhenUserNavigatesToARMPage() (1.1s)</pre>
+                        </td>
+                        <td>Succeeded in 1.337s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">Then updated/computed Payment Stream Number value should display on ARM Worst Case</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAssert: Scenario - Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 144] -->
+                            <pre class="log">===========================================================
+ExpectedValue Row 1 :1
+ActualValue Row 1 :1
+============================================================
+===========================================================
+ExpectedValue Row 2 :2
+ActualValue Row 2 :2
+============================================================
+===========================================================
+ExpectedValue Row 3 :3
+ActualValue Row 3 :3
+============================================================
+===========================================================
+ExpectedValue Row 4 :4
+ActualValue Row 4 :4
+============================================================
+done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPaymentStreamNumberValueShouldDisplayOnArmWorstCase() (1.8s)</pre>
+                        </td>
+                        <td>Succeeded in 1.991s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And updated/computed Number of Payments value should display on ARM Worst Case</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAssert: Scenario - Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 144] -->
+                            <pre class="log">===========================================================
+ExpectedValue Row 1 :36
+ActualValue Row 1 :36
+============================================================
+===========================================================
+ExpectedValue Row 2 :36
+ActualValue Row 2 :36
+============================================================
+===========================================================
+ExpectedValue Row 3 :36
+ActualValue Row 3 :36
+============================================================
+===========================================================
+ExpectedValue Row 4 :251
+ActualValue Row 4 :251
+============================================================
+done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedNumberOfPaymentsValueShouldDisplayOnArmWorstCase() (1.8s)</pre>
+                        </td>
+                        <td>Succeeded in 2.005s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And updated/computed Payment Amount value should display on ARM Worst Case</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAssert: Scenario - Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 144] -->
+                            <pre class="log">===========================================================
+ExpectedValue Row 1 :606.68
+ActualValue Row 1 :606.68
+============================================================
+===========================================================
+ExpectedValue Row 2 :751.43
+ActualValue Row 2 :751.43
+============================================================
+NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 3 with the difference of 0.00999999999999091
+  Expected: 897.75d
+  But was:  897.74000000000001d
+
+   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+   at TRID.StepDefinitions.VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnArmWorstCase() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\VariableLoanPaymentScheuledValidationSteps.cs:line 379
+===========================================================
+ExpectedValue Row 4 :1042.01
+ActualValue Row 4 :1042.01
+============================================================
+done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnArmWorstCase() (2.0s)</pre>
+                        </td>
+                        <td>Succeeded in 2.187s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And updated/computed Period Payment value should display on ARM Worst Case</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAssert: Scenario - Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 144] -->
+                            <pre class="log">===========================================================
+ExpectedValue Row 1 :606.68
+ActualValue Row 1 :606.68
+============================================================
+===========================================================
+ExpectedValue Row 2 :751.43
+ActualValue Row 2 :751.43
+============================================================
+NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 3 with the difference of 0.00999999999999091
+  Expected: 897.75d
+  But was:  897.74000000000001d
+
+   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+   at TRID.StepDefinitions.VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPeriodPaymentValueShouldDisplayOnArmWorstCase() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\VariableLoanPaymentScheuledValidationSteps.cs:line 413
+===========================================================
+ExpectedValue Row 4 :1042.01
+ActualValue Row 4 :1042.01
+============================================================
+done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPeriodPaymentValueShouldDisplayOnArmWorstCase() (2.0s)</pre>
+                        </td>
+                        <td>Succeeded in 2.184s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And updated/computed Period PMI value should display on ARM Worst Case</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAssert: Scenario - Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 144] -->
+                            <pre class="log">===========================================================
+ExpectedValue Row 1 :0
+ActualValue Row 1 :0
+============================================================
+===========================================================
+ExpectedValue Row 2 :0
+ActualValue Row 2 :0
+============================================================
+===========================================================
+ExpectedValue Row 3 :0
+ActualValue Row 3 :0
+============================================================
+===========================================================
+ExpectedValue Row 4 :0
+ActualValue Row 4 :0
+============================================================
+done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPeriodPmiValueShouldDisplayOnArmWorstCase() (1.9s)</pre>
+                        </td>
+                        <td>Succeeded in 2.092s</td>
+                    </tr>
+            </table>
+            <a name="t2122700716.0" />
+            <h3>Scenario: Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 145 (in TRID, VariableLoanPaymentScheuledValidation)</h3>
+            <ul>
+                <li>Status: Succeeded</li>
+                <li>Start time: 8/10/2017 10:44:32 AM</li>
+                <li>Execution time (sec): 17.3112879</li>
+                <li>Thread: #0</li>
+            </ul>
+            <table class="testEvents">
+                <tr>
+                    <th>Steps</th>
+                    <th>Trace</th>
+                    <th>Result</th>
+                </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">Given user is at TRID application homepage</pre>
+                        </td>
+                        <td>
+                            <!-- [TestArrange: Scenario - Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 145] -->
+                            <pre class="log">done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (1.5s)</pre>
+                        </td>
+                        <td>Succeeded in 1.812s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And user have ARM Worst Case variable loan data from excel sheet ARMWorstCase for the scenario 9</pre>
+                        </td>
+                        <td>
+                            <!-- [TestArrange: Scenario - Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 145] -->
+                            <pre class="log">done: VariableLoanPaymentScheuledValidationSteps.GivenUserHaveARMWorstCaseVariableLoanDataFromExcelSheetForTheScenario(&quot;ARMWorstCase&quot;, 9) (0.6s)</pre>
+                        </td>
+                        <td>Succeeded in 0.963s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">When user upload json file for the scenario</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAct: Scenario - Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 145] -->
+                            <pre class="log">done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (2.0s)</pre>
+                        </td>
+                        <td>Succeeded in 2.333s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And user navigates to ARM Page</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAct: Scenario - Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 145] -->
+                            <pre class="log">done: VariableLoanPaymentScheuledValidationSteps.WhenUserNavigatesToARMPage() (1.1s)</pre>
+                        </td>
+                        <td>Succeeded in 1.327s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">Then updated/computed Payment Stream Number value should display on ARM Worst Case</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAssert: Scenario - Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 145] -->
+                            <pre class="log">===========================================================
+ExpectedValue Row 1 :1
+ActualValue Row 1 :1
+============================================================
+===========================================================
+ExpectedValue Row 2 :2
+ActualValue Row 2 :2
+============================================================
+===========================================================
+ExpectedValue Row 3 :3
+ActualValue Row 3 :3
+============================================================
+===========================================================
+ExpectedValue Row 4 :4
+ActualValue Row 4 :4
+============================================================
+done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPaymentStreamNumberValueShouldDisplayOnArmWorstCase() (1.8s)</pre>
+                        </td>
+                        <td>Succeeded in 1.989s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And updated/computed Number of Payments value should display on ARM Worst Case</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAssert: Scenario - Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 145] -->
+                            <pre class="log">===========================================================
+ExpectedValue Row 1 :36
+ActualValue Row 1 :36
+============================================================
+===========================================================
+ExpectedValue Row 2 :36
+ActualValue Row 2 :36
+============================================================
+===========================================================
+ExpectedValue Row 3 :36
+ActualValue Row 3 :36
+============================================================
+===========================================================
+ExpectedValue Row 4 :251
+ActualValue Row 4 :251
+============================================================
+done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedNumberOfPaymentsValueShouldDisplayOnArmWorstCase() (1.8s)</pre>
+                        </td>
+                        <td>Succeeded in 2.055s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And updated/computed Payment Amount value should display on ARM Worst Case</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAssert: Scenario - Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 145] -->
+                            <pre class="log">===========================================================
+ExpectedValue Row 1 :606.68
+ActualValue Row 1 :606.68
+============================================================
+===========================================================
+ExpectedValue Row 2 :751.43
+ActualValue Row 2 :751.43
+============================================================
+NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 3 with the difference of 0.00999999999999091
+  Expected: 897.75d
+  But was:  897.74000000000001d
+
+   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+   at TRID.StepDefinitions.VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnArmWorstCase() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\VariableLoanPaymentScheuledValidationSteps.cs:line 379
+===========================================================
+ExpectedValue Row 4 :1042.01
+ActualValue Row 4 :1042.01
+============================================================
+done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnArmWorstCase() (2.0s)</pre>
+                        </td>
+                        <td>Succeeded in 2.207s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And updated/computed Period Payment value should display on ARM Worst Case</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAssert: Scenario - Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 145] -->
+                            <pre class="log">===========================================================
+ExpectedValue Row 1 :606.68
+ActualValue Row 1 :606.68
+============================================================
+===========================================================
+ExpectedValue Row 2 :751.43
+ActualValue Row 2 :751.43
+============================================================
+NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 3 with the difference of 0.00999999999999091
+  Expected: 897.75d
+  But was:  897.74000000000001d
+
+   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+   at TRID.StepDefinitions.VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPeriodPaymentValueShouldDisplayOnArmWorstCase() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\VariableLoanPaymentScheuledValidationSteps.cs:line 413
+===========================================================
+ExpectedValue Row 4 :1042.01
+ActualValue Row 4 :1042.01
+============================================================
+done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPeriodPaymentValueShouldDisplayOnArmWorstCase() (2.1s)</pre>
+                        </td>
+                        <td>Succeeded in 2.321s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And updated/computed Period PMI value should display on ARM Worst Case</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAssert: Scenario - Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 145] -->
+                            <pre class="log">===========================================================
+ExpectedValue Row 1 :0
+ActualValue Row 1 :0
+============================================================
+===========================================================
+ExpectedValue Row 2 :0
+ActualValue Row 2 :0
+============================================================
+===========================================================
+ExpectedValue Row 3 :0
+ActualValue Row 3 :0
+============================================================
+===========================================================
+ExpectedValue Row 4 :0
+ActualValue Row 4 :0
+============================================================
+done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPeriodPmiValueShouldDisplayOnArmWorstCase() (1.8s)</pre>
+                        </td>
+                        <td>Succeeded in 1.998s</td>
+                    </tr>
+            </table>
+            <a name="t-1686841428.0" />
+            <h3>Scenario: Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 146 (in TRID, VariableLoanPaymentScheuledValidation)</h3>
+            <ul>
+                <li>Status: Succeeded</li>
+                <li>Start time: 8/10/2017 10:44:49 AM</li>
+                <li>Execution time (sec): 17.2194821</li>
+                <li>Thread: #0</li>
+            </ul>
+            <table class="testEvents">
+                <tr>
+                    <th>Steps</th>
+                    <th>Trace</th>
+                    <th>Result</th>
+                </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">Given user is at TRID application homepage</pre>
+                        </td>
+                        <td>
+                            <!-- [TestArrange: Scenario - Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 146] -->
+                            <pre class="log">done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (1.5s)</pre>
+                        </td>
+                        <td>Succeeded in 1.81s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And user have ARM Worst Case variable loan data from excel sheet ARMWorstCase for the scenario 10</pre>
+                        </td>
+                        <td>
+                            <!-- [TestArrange: Scenario - Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 146] -->
+                            <pre class="log">done: VariableLoanPaymentScheuledValidationSteps.GivenUserHaveARMWorstCaseVariableLoanDataFromExcelSheetForTheScenario(&quot;ARMWorstCase&quot;, 10) (0.6s)</pre>
+                        </td>
+                        <td>Succeeded in 0.989s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">When user upload json file for the scenario</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAct: Scenario - Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 146] -->
+                            <pre class="log">done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (2.1s)</pre>
+                        </td>
+                        <td>Succeeded in 2.347s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And user navigates to ARM Page</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAct: Scenario - Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 146] -->
+                            <pre class="log">done: VariableLoanPaymentScheuledValidationSteps.WhenUserNavigatesToARMPage() (1.1s)</pre>
+                        </td>
+                        <td>Succeeded in 1.385s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">Then updated/computed Payment Stream Number value should display on ARM Worst Case</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAssert: Scenario - Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 146] -->
+                            <pre class="log">===========================================================
+ExpectedValue Row 1 :1
+ActualValue Row 1 :1
+============================================================
+===========================================================
+ExpectedValue Row 2 :2
+ActualValue Row 2 :2
+============================================================
+===========================================================
+ExpectedValue Row 3 :3
+ActualValue Row 3 :3
+============================================================
+===========================================================
+ExpectedValue Row 4 :4
+ActualValue Row 4 :4
+============================================================
+done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPaymentStreamNumberValueShouldDisplayOnArmWorstCase() (1.8s)</pre>
+                        </td>
+                        <td>Succeeded in 2.008s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And updated/computed Number of Payments value should display on ARM Worst Case</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAssert: Scenario - Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 146] -->
+                            <pre class="log">===========================================================
+ExpectedValue Row 1 :36
+ActualValue Row 1 :36
+============================================================
+===========================================================
+ExpectedValue Row 2 :36
+ActualValue Row 2 :36
+============================================================
+===========================================================
+ExpectedValue Row 3 :36
+ActualValue Row 3 :36
+============================================================
+===========================================================
+ExpectedValue Row 4 :251
+ActualValue Row 4 :251
+============================================================
+done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedNumberOfPaymentsValueShouldDisplayOnArmWorstCase() (1.8s)</pre>
+                        </td>
+                        <td>Succeeded in 2.009s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And updated/computed Payment Amount value should display on ARM Worst Case</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAssert: Scenario - Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 146] -->
+                            <pre class="log">===========================================================
+ExpectedValue Row 1 :606.68
+ActualValue Row 1 :606.68
+============================================================
+===========================================================
+ExpectedValue Row 2 :751.43
+ActualValue Row 2 :751.43
+============================================================
+NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 3 with the difference of 0.00999999999999091
+  Expected: 897.75d
+  But was:  897.74000000000001d
+
+   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+   at TRID.StepDefinitions.VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnArmWorstCase() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\VariableLoanPaymentScheuledValidationSteps.cs:line 379
+===========================================================
+ExpectedValue Row 4 :1042.01
+ActualValue Row 4 :1042.01
+============================================================
+done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnArmWorstCase() (2.0s)</pre>
+                        </td>
+                        <td>Succeeded in 2.196s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And updated/computed Period Payment value should display on ARM Worst Case</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAssert: Scenario - Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 146] -->
+                            <pre class="log">===========================================================
+ExpectedValue Row 1 :606.68
+ActualValue Row 1 :606.68
+============================================================
+===========================================================
+ExpectedValue Row 2 :751.43
+ActualValue Row 2 :751.43
+============================================================
+NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 3 with the difference of 0.00999999999999091
+  Expected: 897.75d
+  But was:  897.74000000000001d
+
+   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+   at TRID.StepDefinitions.VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPeriodPaymentValueShouldDisplayOnArmWorstCase() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\VariableLoanPaymentScheuledValidationSteps.cs:line 413
+===========================================================
+ExpectedValue Row 4 :1042.01
+ActualValue Row 4 :1042.01
+============================================================
+done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPeriodPaymentValueShouldDisplayOnArmWorstCase() (2.0s)</pre>
+                        </td>
+                        <td>Succeeded in 2.171s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And updated/computed Period PMI value should display on ARM Worst Case</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAssert: Scenario - Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 146] -->
+                            <pre class="log">===========================================================
+ExpectedValue Row 1 :0
+ActualValue Row 1 :0
+============================================================
+===========================================================
+ExpectedValue Row 2 :0
+ActualValue Row 2 :0
+============================================================
+===========================================================
+ExpectedValue Row 3 :0
+ActualValue Row 3 :0
+============================================================
+===========================================================
+ExpectedValue Row 4 :0
+ActualValue Row 4 :0
+============================================================
+done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPeriodPmiValueShouldDisplayOnArmWorstCase() (1.8s)</pre>
+                        </td>
+                        <td>Succeeded in 2.002s</td>
+                    </tr>
+            </table>
+            <a name="t399497132.0" />
+            <h3>Scenario: Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 147 (in TRID, VariableLoanPaymentScheuledValidation)</h3>
+            <ul>
+                <li>Status: CleanupFailed</li>
+                <li>Start time: 8/10/2017 10:45:07 AM</li>
+                <li>Execution time (sec): 41.9229011</li>
+                <li>Thread: #0</li>
+                <li>Error: Test Case failed</li>
+            </ul>
+            <table class="testEvents">
+                <tr>
+                    <th>Steps</th>
+                    <th>Trace</th>
+                    <th>Result</th>
+                </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">Given user is at TRID application homepage</pre>
+                        </td>
+                        <td>
+                            <!-- [TestArrange: Scenario - Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 147] -->
+                            <pre class="log">done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (1.6s)</pre>
+                        </td>
+                        <td>Succeeded in 1.905s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And user have ARM Worst Case variable loan data from excel sheet ARMWorstCase for the scenario 11</pre>
+                        </td>
+                        <td>
+                            <!-- [TestArrange: Scenario - Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 147] -->
+                            <pre class="log">done: VariableLoanPaymentScheuledValidationSteps.GivenUserHaveARMWorstCaseVariableLoanDataFromExcelSheetForTheScenario(&quot;ARMWorstCase&quot;, 11) (0.7s)</pre>
+                        </td>
+                        <td>Succeeded in 0.989s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">When user upload json file for the scenario</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAct: Scenario - Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 147] -->
+                            <pre class="log">done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (2.2s)</pre>
+                        </td>
+                        <td>Succeeded in 2.447s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And user navigates to ARM Page</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAct: Scenario - Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 147] -->
+                            <pre class="log">done: VariableLoanPaymentScheuledValidationSteps.WhenUserNavigatesToARMPage() (1.2s)</pre>
+                        </td>
+                        <td>Succeeded in 1.461s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">Then updated/computed Payment Stream Number value should display on ARM Worst Case</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAssert: Scenario - Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 147] -->
+                            <pre class="log">===========================================================
+ExpectedValue Row 1 :1
+ActualValue Row 1 :1
+============================================================
+===========================================================
+ExpectedValue Row 2 :2
+ActualValue Row 2 :2
+============================================================
+===========================================================
+ExpectedValue Row 3 :3
+ActualValue Row 3 :3
+============================================================
+===========================================================
+ExpectedValue Row 4 :4
+ActualValue Row 4 :4
+============================================================
+done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPaymentStreamNumberValueShouldDisplayOnArmWorstCase() (2.0s)</pre>
+                        </td>
+                        <td>Succeeded in 2.254s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And updated/computed Number of Payments value should display on ARM Worst Case</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAssert: Scenario - Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 147] -->
+                            <pre class="log">===========================================================
+ExpectedValue Row 1 :36
+ActualValue Row 1 :36
+============================================================
+===========================================================
+ExpectedValue Row 2 :36
+ActualValue Row 2 :36
+============================================================
+===========================================================
+ExpectedValue Row 3 :36
+ActualValue Row 3 :36
+============================================================
+===========================================================
+ExpectedValue Row 4 :251
+ActualValue Row 4 :251
+============================================================
+done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedNumberOfPaymentsValueShouldDisplayOnArmWorstCase() (1.8s)</pre>
+                        </td>
+                        <td>Succeeded in 2.063s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And updated/computed Payment Amount value should display on ARM Worst Case</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAssert: Scenario - Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 147] -->
+                            <pre class="log">NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 1 with the difference of 0.0900000000000318
+  Expected: 828.10000000000002d
+  But was:  828.00999999999999d
+
+   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+   at TRID.StepDefinitions.VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnArmWorstCase() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\VariableLoanPaymentScheuledValidationSteps.cs:line 379
+===========================================================
+ExpectedValue Row 2 :995.83
+ActualValue Row 2 :995.83
+============================================================
+NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 3 with the difference of 0.299999999999955
+  Expected: 1163.3900000000001d
+  But was:  1163.6900000000001d
+
+   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+   at TRID.StepDefinitions.VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnArmWorstCase() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\VariableLoanPaymentScheuledValidationSteps.cs:line 379
+===========================================================
+ExpectedValue Row 4 :1328.71
+ActualValue Row 4 :1328.71
+============================================================
+done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnArmWorstCase() (2.2s)</pre>
+                        </td>
+                        <td>Succeeded in 2.404s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And updated/computed Period Payment value should display on ARM Worst Case</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAssert: Scenario - Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 147] -->
+                            <pre class="log">NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 1 with the difference of 0.0900000000000318
+  Expected: 828.10000000000002d
+  But was:  828.00999999999999d
+
+   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+   at TRID.StepDefinitions.VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPeriodPaymentValueShouldDisplayOnArmWorstCase() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\VariableLoanPaymentScheuledValidationSteps.cs:line 413
+===========================================================
+ExpectedValue Row 2 :995.83
+ActualValue Row 2 :995.83
+============================================================
+NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 3 with the difference of 0.299999999999955
+  Expected: 1163.3900000000001d
+  But was:  1163.6900000000001d
+
+   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+   at TRID.StepDefinitions.VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPeriodPaymentValueShouldDisplayOnArmWorstCase() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\VariableLoanPaymentScheuledValidationSteps.cs:line 413
+===========================================================
+ExpectedValue Row 4 :1328.71
+ActualValue Row 4 :1328.71
+============================================================
+done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPeriodPaymentValueShouldDisplayOnArmWorstCase() (2.2s)</pre>
+                        </td>
+                        <td>Succeeded in 2.418s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And updated/computed Period PMI value should display on ARM Worst Case</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAssert: Scenario - Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 147] -->
+                            <pre class="log">===========================================================
+ExpectedValue Row 1 :0
+ActualValue Row 1 :0
+============================================================
+===========================================================
+ExpectedValue Row 2 :0
+ActualValue Row 2 :0
+============================================================
+===========================================================
+ExpectedValue Row 3 :0
+ActualValue Row 3 :0
+============================================================
+===========================================================
+ExpectedValue Row 4 :0
+ActualValue Row 4 :0
+============================================================
+done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPeriodPmiValueShouldDisplayOnArmWorstCase() (1.8s)</pre>
+                        </td>
+                        <td>Succeeded in 2.019s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log"></pre>
+                        </td>
+                        <td>
+                            <!-- [Cleanup: TestAssembly - TRID] -->
+                            <pre class="log">##########################################################
+##########################################################
+====================================================================================
+Scenario Number : 147
+The total number of cards Failue: 22
+Name of cards Failed: || AwcPaymentAmount[2] || : NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 3 with the difference of 0.00999999999999091
+  Expected: 897.75d
+  But was:  897.74000000000001d
+
+   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+   at TRID.StepDefinitions.VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnArmWorstCase() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\VariableLoanPaymentScheuledValidationSteps.cs:line 379 
+ ====================================================================================
+|| AwcPaymentSchedulePeriodPayment[2] || : NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 3 with the difference of 0.00999999999999091
+  Expected: 897.75d
+  But was:  897.74000000000001d
+
+   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+   at TRID.StepDefinitions.VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPeriodPaymentValueShouldDisplayOnArmWorstCase() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\VariableLoanPaymentScheuledValidationSteps.cs:line 413 
+ ====================================================================================
+|| AwcPaymentAmount[2] || : NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 3 with the difference of 0.00999999999999091
+  Expected: 897.75d
+  But was:  897.74000000000001d
+
+   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+   at TRID.StepDefinitions.VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnArmWorstCase() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\VariableLoanPaymentScheuledValidationSteps.cs:line 379 
+ ====================================================================================
+|| AwcPaymentSchedulePeriodPayment[2] || : NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 3 with the difference of 0.00999999999999091
+  Expected: 897.75d
+  But was:  897.74000000000001d
+
+   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+   at TRID.StepDefinitions.VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPeriodPaymentValueShouldDisplayOnArmWorstCase() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\VariableLoanPaymentScheuledValidationSteps.cs:line 413 
+ ====================================================================================
+|| AwcPaymentAmount[2] || : NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 3 with the difference of 0.00999999999999091
+  Expected: 897.75d
+  But was:  897.74000000000001d
+
+   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+   at TRID.StepDefinitions.VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnArmWorstCase() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\VariableLoanPaymentScheuledValidationSteps.cs:line 379 
+ ====================================================================================
+|| AwcPaymentSchedulePeriodPayment[2] || : NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 3 with the difference of 0.00999999999999091
+  Expected: 897.75d
+  But was:  897.74000000000001d
+
+   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+   at TRID.StepDefinitions.VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPeriodPaymentValueShouldDisplayOnArmWorstCase() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\VariableLoanPaymentScheuledValidationSteps.cs:line 413 
+ ====================================================================================
+|| AwcPaymentAmount[2] || : NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 3 with the difference of 0.00999999999999091
+  Expected: 897.75d
+  But was:  897.74000000000001d
+
+   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+   at TRID.StepDefinitions.VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnArmWorstCase() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\VariableLoanPaymentScheuledValidationSteps.cs:line 379 
+ ====================================================================================
+|| AwcPaymentSchedulePeriodPayment[2] || : NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 3 with the difference of 0.00999999999999091
+  Expected: 897.75d
+  But was:  897.74000000000001d
+
+   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+   at TRID.StepDefinitions.VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPeriodPaymentValueShouldDisplayOnArmWorstCase() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\VariableLoanPaymentScheuledValidationSteps.cs:line 413 
+ ====================================================================================
+|| AwcPaymentAmount[2] || : NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 3 with the difference of 0.00999999999999091
+  Expected: 897.75d
+  But was:  897.74000000000001d
+
+   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+   at TRID.StepDefinitions.VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnArmWorstCase() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\VariableLoanPaymentScheuledValidationSteps.cs:line 379 
+ ====================================================================================
+|| AwcPaymentSchedulePeriodPayment[2] || : NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 3 with the difference of 0.00999999999999091
+  Expected: 897.75d
+  But was:  897.74000000000001d
+
+   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+   at TRID.StepDefinitions.VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPeriodPaymentValueShouldDisplayOnArmWorstCase() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\VariableLoanPaymentScheuledValidationSteps.cs:line 413 
+ ====================================================================================
+|| AwcPaymentAmount[2] || : NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 3 with the difference of 0.00999999999999091
+  Expected: 897.75d
+  But was:  897.74000000000001d
+
+   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+   at TRID.StepDefinitions.VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnArmWorstCase() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\VariableLoanPaymentScheuledValidationSteps.cs:line 379 
+ ====================================================================================
+|| AwcPaymentSchedulePeriodPayment[2] || : NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 3 with the difference of 0.00999999999999091
+  Expected: 897.75d
+  But was:  897.74000000000001d
+
+   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+   at TRID.StepDefinitions.VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPeriodPaymentValueShouldDisplayOnArmWorstCase() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\VariableLoanPaymentScheuledValidationSteps.cs:line 413 
+ ====================================================================================
+|| AwcPaymentAmount[2] || : NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 3 with the difference of 0.00999999999999091
+  Expected: 897.75d
+  But was:  897.74000000000001d
+
+   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+   at TRID.StepDefinitions.VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnArmWorstCase() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\VariableLoanPaymentScheuledValidationSteps.cs:line 379 
+ ====================================================================================
+|| AwcPaymentSchedulePeriodPayment[2] || : NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 3 with the difference of 0.00999999999999091
+  Expected: 897.75d
+  But was:  897.74000000000001d
+
+   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+   at TRID.StepDefinitions.VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPeriodPaymentValueShouldDisplayOnArmWorstCase() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\VariableLoanPaymentScheuledValidationSteps.cs:line 413 
+ ====================================================================================
+|| AwcPaymentAmount[2] || : NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 3 with the difference of 0.00999999999999091
+  Expected: 897.75d
+  But was:  897.74000000000001d
+
+   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+   at TRID.StepDefinitions.VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnArmWorstCase() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\VariableLoanPaymentScheuledValidationSteps.cs:line 379 
+ ====================================================================================
+|| AwcPaymentSchedulePeriodPayment[2] || : NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 3 with the difference of 0.00999999999999091
+  Expected: 897.75d
+  But was:  897.74000000000001d
+
+   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+   at TRID.StepDefinitions.VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPeriodPaymentValueShouldDisplayOnArmWorstCase() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\VariableLoanPaymentScheuledValidationSteps.cs:line 413 
+ ====================================================================================
+|| AwcPaymentAmount[2] || : NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 3 with the difference of 0.00999999999999091
+  Expected: 897.75d
+  But was:  897.74000000000001d
+
+   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+   at TRID.StepDefinitions.VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnArmWorstCase() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\VariableLoanPaymentScheuledValidationSteps.cs:line 379 
+ ====================================================================================
+|| AwcPaymentSchedulePeriodPayment[2] || : NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 3 with the difference of 0.00999999999999091
+  Expected: 897.75d
+  But was:  897.74000000000001d
+
+   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+   at TRID.StepDefinitions.VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPeriodPaymentValueShouldDisplayOnArmWorstCase() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\VariableLoanPaymentScheuledValidationSteps.cs:line 413 
+ ====================================================================================
+|| AwcPaymentAmount[0] || : NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 1 with the difference of 0.0900000000000318
+  Expected: 828.10000000000002d
+  But was:  828.00999999999999d
+
+   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+   at TRID.StepDefinitions.VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnArmWorstCase() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\VariableLoanPaymentScheuledValidationSteps.cs:line 379 
+ ====================================================================================
+|| AwcPaymentAmount[2] || : NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 3 with the difference of 0.299999999999955
+  Expected: 1163.3900000000001d
+  But was:  1163.6900000000001d
+
+   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+   at TRID.StepDefinitions.VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnArmWorstCase() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\VariableLoanPaymentScheuledValidationSteps.cs:line 379 
+ ====================================================================================
+|| AwcPaymentSchedulePeriodPayment[0] || : NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 1 with the difference of 0.0900000000000318
+  Expected: 828.10000000000002d
+  But was:  828.00999999999999d
+
+   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+   at TRID.StepDefinitions.VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPeriodPaymentValueShouldDisplayOnArmWorstCase() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\VariableLoanPaymentScheuledValidationSteps.cs:line 413 
+ ====================================================================================
+|| AwcPaymentSchedulePeriodPayment[2] || : NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 3 with the difference of 0.299999999999955
+  Expected: 1163.3900000000001d
+  But was:  1163.6900000000001d
+
+   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+   at TRID.StepDefinitions.VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPeriodPaymentValueShouldDisplayOnArmWorstCase() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\VariableLoanPaymentScheuledValidationSteps.cs:line 413 
+ ====================================================================================
+
+====================================================================================
+##########################################################
+##########################################################</pre>
+                                <div class="errorMessage">Test Case failed</div>
+                                <pre class="stackTrace">System.Exception: Test Case failed
+   at TRID.StepDefinitions.VariableLoanPaymentScheuledValidationSteps.TearDown() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\VariableLoanPaymentScheuledValidationSteps.cs:line 558
+   at lambda_method(Closure , IContextManager )
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.FireEvents(HookType bindingEvent)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnTestRunEnd()
+   at TechTalk.SpecFlow.TestRunner.OnTestRunEnd()
+   at TRID.FeatureFiles.AmortizationValidationFeature.TestRunCleanup()
+   at TechTalk.SpecRun.Framework.TaskExecutors.StaticOrInstanceMethodExecutor.ExecuteInternal(ITestThreadExecutionContext testThreadExecutionContext)
+   at TechTalk.SpecRun.Framework.TaskExecutors.StaticOrInstanceMethodExecutor.Execute(ITestThreadExecutionContext testThreadExecutionContext)
+   at TechTalk.SpecRun.Framework.TaskExecutors.ChainedTaskExecutor.Execute(ITestThreadExecutionContext testThreadExecutionContext)
+   at TechTalk.SpecRun.Framework.TestAssemblyExecutor.ExecuteTestNodeTask(TestNode testNode, ITaskExecutor task, TraceEventType eventType)</pre>
+                        </td>
+                        <td>Failed in 23.652s</td>
+                    </tr>
+            </table>
+	</body>
+</html>
+</a><div style='position: absolute; top:0px; right:10px; z-index: 1000; text-align: right; font-size: small; color: #FF5555'>
+Generated by an evaluation version of SpecRun.<br />
+This version can be used for evaluation purposes only.<br />
+For obtaining a registered license please visit <a href='http://www.specflow.org/plus'>http://www.specflow.org/plus</a>.
+</div>

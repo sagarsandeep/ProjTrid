@@ -1,0 +1,296 @@
+﻿VS filter: testpath:TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Closing+Disclosure+page%2c+051
+Discovering target: Default
+Discovering tests from assembly: F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\bin\Debug\TRID.dll
+Appdomain Disposed
+Test Suite Dump
+#0: TRID/Default - 
+#1: Default - 
+#2: TRID - 
+#136: CardsValidation - 
+#192: Uploading JSON file and Validating cards value on Closing Disclosure page, 051 - TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Closing+Disclosure+page%2c+051
+End: Test Suite Dump
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #192 from normal test queue 
+Thread#0:Scheduler: considering testitem #192 for thread
+Thread#0:Scheduler: using testitem #192 for thread
+Thread#0:Scheduler: Test #192 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread #0: creating new test thread executor for TRID, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null (target: Default)
+Loading SpecRun type 'TechTalk.SpecRun.Framework.TestAssemblyExecutor' from: C:\Users\sandees\AppData\Local\Temp\VisualStudioTestExplorerExtensions\SpecRun.Runner.1.5.2\tools\TechTalk.SpecRun.Framework.Executor.dll
+Thread#0: Test #192/0 is started on thread #0
+Thread#0:B:Given user is at TRID application homepage
+Thread#0:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (37.5s)
+Thread#0:B:And user have closing disclosure data from excel sheet ClosingDisclosure for the scenario 29
+Thread#0:T:done: CardsValidationSteps.GivenUserHaveClosingDisclosureDataFromExcelSheetForTheScenario("ClosingDisclosure", 29) (1.0s)
+Thread#0:B:When user upload json file for the scenario
+Thread#0:T:done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (2.0s)
+Thread#0:B:And user navigates to Closing Disclosure Cards Page
+Thread#0:T:done: CardsValidationSteps.WhenUserNavigatesToClosingDisclosureCardsPage() (1.2s)
+Thread#0:B:Then updated/computed Principal and Interest value should display on Closing Disclosure
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :303.34
+Thread#0:T:ActualComputedValue :303.34
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :303.34
+Thread#0:T:ActualDisclosedValue :303.34
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedPrincipalAndInterestValueShouldDisplayOnClosingDisclosure() (0.4s)
+Thread#0:B:And updated/computed Mortgage Insurance value should display on Closing Disclosure
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :0
+Thread#0:T:ActualComputedValue :0
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :0
+Thread#0:T:ActualDisclosedValue :0
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedMortgageInsuranceValueShouldDisplayOnClosingDisclosure() (0.4s)
+Thread#0:B:And updated/computed Scheduled PMI Termination Date value should display on Closing Disclosure
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :(C): N/A
+Thread#0:T:ActualComputedValue :(C): N/A
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :(D): N/A
+Thread#0:T:ActualDisclosedValue :(D): N/A
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :(V): N/A Days
+Thread#0:T:ActualVarianceValue :(V): N/A Days
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedScheduledPmiTerminationDateValueShouldDisplayOnClosingDisclosure() (0.4s)
+Thread#0:B:And updated/computed Estimated Total Monthly Payment value should display on Closing Disclosure
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :303.34
+Thread#0:T:ActualComputedValue :303.34
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :303.34
+Thread#0:T:ActualDisclosedValue :303.34
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedEstimatedTotalMonthlyPaymentValueShouldDisplayOnClosingDisclosure() (0.4s)
+Thread#0:B:And updated/computed APR value should display on Closing Disclosure
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :3.832
+Thread#0:T:ActualComputedValue :3.832
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :3.832
+Thread#0:T:ActualDisclosedValue :3.832
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedAprValueShouldDisplayOnClosingDisclosure() (0.4s)
+Thread#0:B:And APRWIN info value should display on Closing Disclosure
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedInfoValue :3.832
+Thread#0:T:ActualIfoValue :3.832
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenAprwinInfoValueShouldDisplayOnClosingDisclosure() (0.1s)
+Thread#0:B:And updated/computed Balloon Amount value should display on Closing Disclosure
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :98.13
+Thread#0:T:ActualComputedValue :98.13
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :98.13
+Thread#0:T:ActualDisclosedValue :98.13
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedBalloonAmountValueShouldDisplayOnClosingDisclosure() (0.4s)
+Thread#0:B:And updated/computed Total of Payments value should display on Closing Disclosure
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :206162.63
+Thread#0:T:ActualComputedValue :206162.63
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :206162.63
+Thread#0:T:ActualDisclosedValue :206162.63
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedTotalOfPaymentsValueShouldDisplayOnClosingDisclosure() (0.4s)
+Thread#0:B:And updated/computed Finance Charge value should display on Closing Disclosure
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :75162.63
+Thread#0:T:ActualComputedValue :75162.63
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :75162.63
+Thread#0:T:ActualDisclosedValue :75162.63
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedFinanceChargeValueShouldDisplayOnClosingDisclosure() (0.4s)
+Thread#0:B:And updated/computed Prepaid Charges value should display on Closing Disclosure
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :1310
+Thread#0:T:ActualComputedValue :1310
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :1310
+Thread#0:T:ActualDisclosedValue :1310
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedPrepaidChargesValueShouldDisplayOnClosingDisclosure() (0.4s)
+Thread#0:B:And updated/computed Amount Financed value should display on Closing Disclosure
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :129690
+Thread#0:T:ActualComputedValue :129690
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :129690
+Thread#0:T:ActualDisclosedValue :129690
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedAmountFinancedValueShouldDisplayOnClosingDisclosure() (0.4s)
+Thread#0:B:And updated/computed TIP value should display on Closing Disclosure
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :56.38
+Thread#0:T:ActualComputedValue :56.38
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :56.38
+Thread#0:T:ActualDisclosedValue :56.38
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedTipValueShouldDisplayOnClosingDisclosure() (0.4s)
+Thread#0:B:And updated/computed Escrow Property Costs over one year 11 Months value should display on Closing Disclosure
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :0
+Thread#0:T:ActualComputedValue :0
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :0
+Thread#0:T:ActualDisclosedValue :0
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedEscrowPropertyCostsOverOneYear11MonthsValueShouldDisplayOnClosingDisclosure() (0.5s)
+Thread#0:B:And updated/computed Escrow Property Costs over one year 12 Months value should display on Closing Disclosure
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :0
+Thread#0:T:ActualComputedValue :0
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :0
+Thread#0:T:ActualDisclosedValue :0
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedEscrowPropertyCostsOverOneYear12MonthsValueShouldDisplayOnClosingDisclosure() (0.4s)
+Thread#0:B:And updated/computed Initial Escrow Payment value should display on Closing Disclosure
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :0
+Thread#0:T:ActualComputedValue :0
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :0
+Thread#0:T:ActualDisclosedValue :0
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedInitialEscrowPaymentValueShouldDisplayOnClosingDisclosure() (0.4s)
+Thread#0:B:And updated/computed Non Escrow Property Costs over one year value should display on Closing Disclosure
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :3300
+Thread#0:T:ActualComputedValue :3300
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :3300
+Thread#0:T:ActualDisclosedValue :3300
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedNonEscrowPropertyCostsOverOneYearValueShouldDisplayOnClosingDisclosure() (0.4s)
+Thread#0:B:And updated/computed Estimated Escrow value should display on Closing Disclosure
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedComputedValue :0
+Thread#0:T:ActualComputedValue :0
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedDisclosedValue :0
+Thread#0:T:ActualDisclosedValue :0
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedVarianceValue :0
+Thread#0:T:ActualVarianceValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedEstimatedEscrowValueShouldDisplayOnClosingDisclosure() (0.4s)
+Thread#0:B:And updated/computed Estimated Taxes, Insurance & Assessments value should display on Closing Disclosure
+Thread#0:T:NUnit.Framework.AssertionException:   Computed value does not match as expected with the difference of 0.0100000000000051
+Thread#0:T:  Expected: 126.93000000000001d
+Thread#0:T:  But was:  126.92d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.CardsValidationSteps.ThenUpdatedComputedEstimatedTaxesInsuranceAssessmentsValueShouldDisplayOnClosingDisclosure() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\CardsValidationSteps.cs:line 1369
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedEstimatedTaxesInsuranceAssessmentsValueShouldDisplayOnClosingDisclosure() (0.2s)
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: at the end of normal test queue
+Thread#0:Scheduler: enumerator for thread is at end
+Thread#0:Scheduler: No more tests for thread 
+Thread#0:T:##########################################################
+Thread#0:T:##########################################################
+Thread#0:T:====================================================================================
+Thread#0:T:Scenario Number : 51
+Thread#0:T:The total number of cards Failue: 1
+Thread#0:T:Name of cards Failed: || EstimatedTaxesInsuranceAssessments || : NUnit.Framework.AssertionException:   Computed value does not match as expected with the difference of 0.0100000000000051
+Thread#0:T:  Expected: 126.93000000000001d
+Thread#0:T:  But was:  126.92d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.CardsValidationSteps.ThenUpdatedComputedEstimatedTaxesInsuranceAssessmentsValueShouldDisplayOnClosingDisclosure() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\CardsValidationSteps.cs:line 1369 
+Thread#0:T: ====================================================================================
+Thread#0:T:====================================================================================
+Thread#0:T:##########################################################
+Thread#0:T:##########################################################
+Thread#0: Test #192/0 is finished on thread #0 as CleanupFailed within 57.4077688 seconds
+Appdomain Disposed
+Thread#-1:Scheduler: get next test for thread
+Thread#:Scheduler: at the end of normal test queue
+Thread#-1:Scheduler: enumerator for thread is at end
+Total: 1
+Succeeded: 0
+Ignored: 0
+Pending: 0
+Skipped: 0
+Failed: 1

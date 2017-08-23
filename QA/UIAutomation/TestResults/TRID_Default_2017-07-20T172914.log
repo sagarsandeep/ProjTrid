@@ -1,0 +1,504 @@
+﻿VS filter: testpath:TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+143 | testpath:TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+141 | testpath:TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+145 | testpath:TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+142 | testpath:TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+144 | testpath:TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+140 | testpath:TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+147 | testpath:TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+139 | testpath:TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+146 | testpath:TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+138
+Discovering target: Default
+Discovering tests from assembly: F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\bin\Debug\TRID.dll
+Appdomain Disposed
+Test Suite Dump
+#0: TRID/Default - 
+#1: Default - 
+#2: TRID - 
+#136: CardsValidation - 
+#145: Uploading JSON file and Validating cards value on Loan Estimate page, 138 - TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+138
+#146: Uploading JSON file and Validating cards value on Loan Estimate page, 139 - TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+139
+#147: Uploading JSON file and Validating cards value on Loan Estimate page, 140 - TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+140
+#148: Uploading JSON file and Validating cards value on Loan Estimate page, 141 - TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+141
+#149: Uploading JSON file and Validating cards value on Loan Estimate page, 142 - TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+142
+#150: Uploading JSON file and Validating cards value on Loan Estimate page, 143 - TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+143
+#151: Uploading JSON file and Validating cards value on Loan Estimate page, 144 - TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+144
+#152: Uploading JSON file and Validating cards value on Loan Estimate page, 145 - TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+145
+#153: Uploading JSON file and Validating cards value on Loan Estimate page, 146 - TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+146
+#154: Uploading JSON file and Validating cards value on Loan Estimate page, 147 - TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Loan+Estimate+page%2c+147
+End: Test Suite Dump
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #145 from normal test queue 
+Thread#0:Scheduler: considering testitem #145 for thread
+Thread#0:Scheduler: using testitem #145 for thread
+Thread#0:Scheduler: Test #145 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread #0: creating new test thread executor for TRID, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null (target: Default)
+Loading SpecRun type 'TechTalk.SpecRun.Framework.TestAssemblyExecutor' from: C:\Users\sandees\AppData\Local\Temp\VisualStudioTestExplorerExtensions\SpecRun.Runner.1.5.2\tools\TechTalk.SpecRun.Framework.Executor.dll
+Thread#0: Test #145/0 is started on thread #0
+Thread#0:B:Given user is at TRID application homepage
+Thread#0:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (21.3s)
+Thread#0:B:And user have closing disclosure data from excel sheet ClosingDisclosure for the scenario 116
+Thread#0:T:done: CardsValidationSteps.GivenUserHaveClosingDisclosureDataFromExcelSheetForTheScenario("ClosingDisclosure", 116) (1.1s)
+Thread#0:B:When user upload json file for the scenario
+Thread#0:T:done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (2.0s)
+Thread#0:B:And user navigates to Loan Estimate Cards Page
+Thread#0:T:done: CardsValidationSteps.WhenUserNavigatesToLoanEstimateCardsPage() (0.9s)
+Thread#0:B:Then updated/computed in 5 Years value should display on Loan Estimate
+Thread#0:T:NUnit.Framework.AssertionException:   Computed value does not match as expected with the difference of 35619.66
+Thread#0:T:  Expected: 0.0d
+Thread#0:T:  But was:  35619.660000000003d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.CardsValidationSteps.ThenUpdatedComputedIn5YearsValueShouldDisplayOnLoanEstimate() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\CardsValidationSteps.cs:line 1419
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsValueShouldDisplayOnLoanEstimate() (0.3s)
+Thread#0:B:And updated/computed in 5 Years principal value should display on Loan Estimate
+Thread#0:T:NUnit.Framework.AssertionException:   Computed value does not match as expected with the difference of 13440.32
+Thread#0:T:  Expected: 0.0d
+Thread#0:T:  But was:  13440.32d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.CardsValidationSteps.ThenUpdatedComputedIn5YearsPrincipalValueShouldDisplayOnLoanEstimate() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\CardsValidationSteps.cs:line 1468
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsPrincipalValueShouldDisplayOnLoanEstimate() (0.3s)
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #146 from normal test queue 
+Thread#0:Scheduler: considering testitem #146 for thread
+Thread#0:Scheduler: using testitem #146 for thread
+Thread#0:Scheduler: Test #146 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #145/0 is finished on thread #0 as Succeeded within 26.3202116 seconds
+Thread#0: Test #146/0 is started on thread #0
+Thread#0:B:Given user is at TRID application homepage
+Thread#0:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (1.9s)
+Thread#0:B:And user have closing disclosure data from excel sheet ClosingDisclosure for the scenario 117
+Thread#0:T:done: CardsValidationSteps.GivenUserHaveClosingDisclosureDataFromExcelSheetForTheScenario("ClosingDisclosure", 117) (1.0s)
+Thread#0:B:When user upload json file for the scenario
+Thread#0:T:done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (2.0s)
+Thread#0:B:And user navigates to Loan Estimate Cards Page
+Thread#0:T:done: CardsValidationSteps.WhenUserNavigatesToLoanEstimateCardsPage() (0.4s)
+Thread#0:B:Then updated/computed in 5 Years value should display on Loan Estimate
+Thread#0:T:NUnit.Framework.AssertionException:   Computed value does not match as expected with the difference of 35619.66
+Thread#0:T:  Expected: 0.0d
+Thread#0:T:  But was:  35619.660000000003d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.CardsValidationSteps.ThenUpdatedComputedIn5YearsValueShouldDisplayOnLoanEstimate() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\CardsValidationSteps.cs:line 1419
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsValueShouldDisplayOnLoanEstimate() (0.3s)
+Thread#0:B:And updated/computed in 5 Years principal value should display on Loan Estimate
+Thread#0:T:NUnit.Framework.AssertionException:   Computed value does not match as expected with the difference of 13440.32
+Thread#0:T:  Expected: 0.0d
+Thread#0:T:  But was:  13440.32d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.CardsValidationSteps.ThenUpdatedComputedIn5YearsPrincipalValueShouldDisplayOnLoanEstimate() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\CardsValidationSteps.cs:line 1468
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsPrincipalValueShouldDisplayOnLoanEstimate() (0.3s)
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #147 from normal test queue 
+Thread#0:Scheduler: considering testitem #147 for thread
+Thread#0:Scheduler: using testitem #147 for thread
+Thread#0:Scheduler: Test #147 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #146/0 is finished on thread #0 as Succeeded within 6.5400467 seconds
+Thread#0: Test #147/0 is started on thread #0
+Thread#0:B:Given user is at TRID application homepage
+Thread#0:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (1.1s)
+Thread#0:B:And user have closing disclosure data from excel sheet ClosingDisclosure for the scenario 118
+Thread#0:T:done: CardsValidationSteps.GivenUserHaveClosingDisclosureDataFromExcelSheetForTheScenario("ClosingDisclosure", 118) (1.0s)
+Thread#0:B:When user upload json file for the scenario
+Thread#0:T:done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (2.0s)
+Thread#0:B:And user navigates to Loan Estimate Cards Page
+Thread#0:T:done: CardsValidationSteps.WhenUserNavigatesToLoanEstimateCardsPage() (0.3s)
+Thread#0:B:Then updated/computed in 5 Years value should display on Loan Estimate
+Thread#0:T:NUnit.Framework.AssertionException:   Computed value does not match as expected with the difference of 35619.66
+Thread#0:T:  Expected: 0.0d
+Thread#0:T:  But was:  35619.660000000003d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.CardsValidationSteps.ThenUpdatedComputedIn5YearsValueShouldDisplayOnLoanEstimate() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\CardsValidationSteps.cs:line 1419
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsValueShouldDisplayOnLoanEstimate() (0.3s)
+Thread#0:B:And updated/computed in 5 Years principal value should display on Loan Estimate
+Thread#0:T:NUnit.Framework.AssertionException:   Computed value does not match as expected with the difference of 13440.32
+Thread#0:T:  Expected: 0.0d
+Thread#0:T:  But was:  13440.32d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.CardsValidationSteps.ThenUpdatedComputedIn5YearsPrincipalValueShouldDisplayOnLoanEstimate() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\CardsValidationSteps.cs:line 1468
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsPrincipalValueShouldDisplayOnLoanEstimate() (0.3s)
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #148 from normal test queue 
+Thread#0:Scheduler: considering testitem #148 for thread
+Thread#0:Scheduler: using testitem #148 for thread
+Thread#0:Scheduler: Test #148 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #147/0 is finished on thread #0 as Succeeded within 5.7670926 seconds
+Thread#0: Test #148/0 is started on thread #0
+Thread#0:B:Given user is at TRID application homepage
+Thread#0:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (1.2s)
+Thread#0:B:And user have closing disclosure data from excel sheet ClosingDisclosure for the scenario 119
+Thread#0:T:done: CardsValidationSteps.GivenUserHaveClosingDisclosureDataFromExcelSheetForTheScenario("ClosingDisclosure", 119) (1.0s)
+Thread#0:B:When user upload json file for the scenario
+Thread#0:T:done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (2.0s)
+Thread#0:B:And user navigates to Loan Estimate Cards Page
+Thread#0:T:done: CardsValidationSteps.WhenUserNavigatesToLoanEstimateCardsPage() (0.3s)
+Thread#0:B:Then updated/computed in 5 Years value should display on Loan Estimate
+Thread#0:T:NUnit.Framework.AssertionException:   Computed value does not match as expected with the difference of 36840.01
+Thread#0:T:  Expected: 0.0d
+Thread#0:T:  But was:  36840.010000000002d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.CardsValidationSteps.ThenUpdatedComputedIn5YearsValueShouldDisplayOnLoanEstimate() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\CardsValidationSteps.cs:line 1419
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsValueShouldDisplayOnLoanEstimate() (0.3s)
+Thread#0:B:And updated/computed in 5 Years principal value should display on Loan Estimate
+Thread#0:T:NUnit.Framework.AssertionException:   Computed value does not match as expected with the difference of 12826.63
+Thread#0:T:  Expected: 0.0d
+Thread#0:T:  But was:  12826.629999999999d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.CardsValidationSteps.ThenUpdatedComputedIn5YearsPrincipalValueShouldDisplayOnLoanEstimate() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\CardsValidationSteps.cs:line 1468
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsPrincipalValueShouldDisplayOnLoanEstimate() (0.3s)
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #149 from normal test queue 
+Thread#0:Scheduler: considering testitem #149 for thread
+Thread#0:Scheduler: using testitem #149 for thread
+Thread#0:Scheduler: Test #149 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #148/0 is finished on thread #0 as Succeeded within 5.772358 seconds
+Thread#0: Test #149/0 is started on thread #0
+Thread#0:B:Given user is at TRID application homepage
+Thread#0:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (1.2s)
+Thread#0:B:And user have closing disclosure data from excel sheet ClosingDisclosure for the scenario 120
+Thread#0:T:done: CardsValidationSteps.GivenUserHaveClosingDisclosureDataFromExcelSheetForTheScenario("ClosingDisclosure", 120) (1.1s)
+Thread#0:B:When user upload json file for the scenario
+Thread#0:T:done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (2.0s)
+Thread#0:B:And user navigates to Loan Estimate Cards Page
+Thread#0:T:done: CardsValidationSteps.WhenUserNavigatesToLoanEstimateCardsPage() (0.4s)
+Thread#0:B:Then updated/computed in 5 Years value should display on Loan Estimate
+Thread#0:T:NUnit.Framework.AssertionException:   Computed value does not match as expected with the difference of 41292.46
+Thread#0:T:  Expected: 0.0d
+Thread#0:T:  But was:  41292.459999999999d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.CardsValidationSteps.ThenUpdatedComputedIn5YearsValueShouldDisplayOnLoanEstimate() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\CardsValidationSteps.cs:line 1419
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsValueShouldDisplayOnLoanEstimate() (0.3s)
+Thread#0:B:And updated/computed in 5 Years principal value should display on Loan Estimate
+Thread#0:T:NUnit.Framework.AssertionException:   Computed value does not match as expected with the difference of 11123.49
+Thread#0:T:  Expected: 0.0d
+Thread#0:T:  But was:  11123.49d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.CardsValidationSteps.ThenUpdatedComputedIn5YearsPrincipalValueShouldDisplayOnLoanEstimate() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\CardsValidationSteps.cs:line 1468
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsPrincipalValueShouldDisplayOnLoanEstimate() (0.3s)
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #150 from normal test queue 
+Thread#0:Scheduler: considering testitem #150 for thread
+Thread#0:Scheduler: using testitem #150 for thread
+Thread#0:Scheduler: Test #150 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #149/0 is finished on thread #0 as Succeeded within 6.0160916 seconds
+Thread#0: Test #150/0 is started on thread #0
+Thread#0:B:Given user is at TRID application homepage
+Thread#0:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (1.2s)
+Thread#0:B:And user have closing disclosure data from excel sheet ClosingDisclosure for the scenario 121
+Thread#0:T:done: CardsValidationSteps.GivenUserHaveClosingDisclosureDataFromExcelSheetForTheScenario("ClosingDisclosure", 121) (0.9s)
+Thread#0:B:When user upload json file for the scenario
+Thread#0:T:done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (2.0s)
+Thread#0:B:And user navigates to Loan Estimate Cards Page
+Thread#0:T:done: CardsValidationSteps.WhenUserNavigatesToLoanEstimateCardsPage() (0.4s)
+Thread#0:B:Then updated/computed in 5 Years value should display on Loan Estimate
+Thread#0:T:NUnit.Framework.AssertionException:   Computed value does not match as expected with the difference of 36840.01
+Thread#0:T:  Expected: 0.0d
+Thread#0:T:  But was:  36840.010000000002d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.CardsValidationSteps.ThenUpdatedComputedIn5YearsValueShouldDisplayOnLoanEstimate() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\CardsValidationSteps.cs:line 1419
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsValueShouldDisplayOnLoanEstimate() (0.3s)
+Thread#0:B:And updated/computed in 5 Years principal value should display on Loan Estimate
+Thread#0:T:NUnit.Framework.AssertionException:   Computed value does not match as expected with the difference of 12826.63
+Thread#0:T:  Expected: 0.0d
+Thread#0:T:  But was:  12826.629999999999d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.CardsValidationSteps.ThenUpdatedComputedIn5YearsPrincipalValueShouldDisplayOnLoanEstimate() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\CardsValidationSteps.cs:line 1468
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsPrincipalValueShouldDisplayOnLoanEstimate() (0.3s)
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #151 from normal test queue 
+Thread#0:Scheduler: considering testitem #151 for thread
+Thread#0:Scheduler: using testitem #151 for thread
+Thread#0:Scheduler: Test #151 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #150/0 is finished on thread #0 as Succeeded within 5.7558239 seconds
+Thread#0: Test #151/0 is started on thread #0
+Thread#0:B:Given user is at TRID application homepage
+Thread#0:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (1.3s)
+Thread#0:B:And user have closing disclosure data from excel sheet ClosingDisclosure for the scenario 122
+Thread#0:T:done: CardsValidationSteps.GivenUserHaveClosingDisclosureDataFromExcelSheetForTheScenario("ClosingDisclosure", 122) (1.0s)
+Thread#0:B:When user upload json file for the scenario
+Thread#0:T:done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (2.0s)
+Thread#0:B:And user navigates to Loan Estimate Cards Page
+Thread#0:T:done: CardsValidationSteps.WhenUserNavigatesToLoanEstimateCardsPage() (0.4s)
+Thread#0:B:Then updated/computed in 5 Years value should display on Loan Estimate
+Thread#0:T:NUnit.Framework.AssertionException:   Computed value does not match as expected with the difference of 36400.89
+Thread#0:T:  Expected: 0.0d
+Thread#0:T:  But was:  36400.889999999999d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.CardsValidationSteps.ThenUpdatedComputedIn5YearsValueShouldDisplayOnLoanEstimate() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\CardsValidationSteps.cs:line 1419
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsValueShouldDisplayOnLoanEstimate() (0.3s)
+Thread#0:B:And updated/computed in 5 Years principal value should display on Loan Estimate
+Thread#0:T:NUnit.Framework.AssertionException:   Computed value does not match as expected with the difference of 12998.68
+Thread#0:T:  Expected: 0.0d
+Thread#0:T:  But was:  12998.68d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.CardsValidationSteps.ThenUpdatedComputedIn5YearsPrincipalValueShouldDisplayOnLoanEstimate() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\CardsValidationSteps.cs:line 1468
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsPrincipalValueShouldDisplayOnLoanEstimate() (0.3s)
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #152 from normal test queue 
+Thread#0:Scheduler: considering testitem #152 for thread
+Thread#0:Scheduler: using testitem #152 for thread
+Thread#0:Scheduler: Test #152 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #151/0 is finished on thread #0 as Succeeded within 5.9412094 seconds
+Thread#0: Test #152/0 is started on thread #0
+Thread#0:B:Given user is at TRID application homepage
+Thread#0:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (1.2s)
+Thread#0:B:And user have closing disclosure data from excel sheet ClosingDisclosure for the scenario 123
+Thread#0:T:done: CardsValidationSteps.GivenUserHaveClosingDisclosureDataFromExcelSheetForTheScenario("ClosingDisclosure", 123) (1.0s)
+Thread#0:B:When user upload json file for the scenario
+Thread#0:T:done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (1.9s)
+Thread#0:B:And user navigates to Loan Estimate Cards Page
+Thread#0:T:done: CardsValidationSteps.WhenUserNavigatesToLoanEstimateCardsPage() (0.4s)
+Thread#0:B:Then updated/computed in 5 Years value should display on Loan Estimate
+Thread#0:T:NUnit.Framework.AssertionException:   Computed value does not match as expected with the difference of 36400.89
+Thread#0:T:  Expected: 0.0d
+Thread#0:T:  But was:  36400.889999999999d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.CardsValidationSteps.ThenUpdatedComputedIn5YearsValueShouldDisplayOnLoanEstimate() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\CardsValidationSteps.cs:line 1419
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsValueShouldDisplayOnLoanEstimate() (0.3s)
+Thread#0:B:And updated/computed in 5 Years principal value should display on Loan Estimate
+Thread#0:T:NUnit.Framework.AssertionException:   Computed value does not match as expected with the difference of 12998.68
+Thread#0:T:  Expected: 0.0d
+Thread#0:T:  But was:  12998.68d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.CardsValidationSteps.ThenUpdatedComputedIn5YearsPrincipalValueShouldDisplayOnLoanEstimate() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\CardsValidationSteps.cs:line 1468
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsPrincipalValueShouldDisplayOnLoanEstimate() (0.3s)
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #153 from normal test queue 
+Thread#0:Scheduler: considering testitem #153 for thread
+Thread#0:Scheduler: using testitem #153 for thread
+Thread#0:Scheduler: Test #153 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #152/0 is finished on thread #0 as Succeeded within 5.7808356 seconds
+Thread#0: Test #153/0 is started on thread #0
+Thread#0:B:Given user is at TRID application homepage
+Thread#0:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (1.2s)
+Thread#0:B:And user have closing disclosure data from excel sheet ClosingDisclosure for the scenario 124
+Thread#0:T:done: CardsValidationSteps.GivenUserHaveClosingDisclosureDataFromExcelSheetForTheScenario("ClosingDisclosure", 124) (1.0s)
+Thread#0:B:When user upload json file for the scenario
+Thread#0:T:done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (1.9s)
+Thread#0:B:And user navigates to Loan Estimate Cards Page
+Thread#0:T:done: CardsValidationSteps.WhenUserNavigatesToLoanEstimateCardsPage() (0.4s)
+Thread#0:B:Then updated/computed in 5 Years value should display on Loan Estimate
+Thread#0:T:NUnit.Framework.AssertionException:   Computed value does not match as expected with the difference of 36400.89
+Thread#0:T:  Expected: 0.0d
+Thread#0:T:  But was:  36400.889999999999d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.CardsValidationSteps.ThenUpdatedComputedIn5YearsValueShouldDisplayOnLoanEstimate() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\CardsValidationSteps.cs:line 1419
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsValueShouldDisplayOnLoanEstimate() (0.3s)
+Thread#0:B:And updated/computed in 5 Years principal value should display on Loan Estimate
+Thread#0:T:NUnit.Framework.AssertionException:   Computed value does not match as expected with the difference of 12998.68
+Thread#0:T:  Expected: 0.0d
+Thread#0:T:  But was:  12998.68d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.CardsValidationSteps.ThenUpdatedComputedIn5YearsPrincipalValueShouldDisplayOnLoanEstimate() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\CardsValidationSteps.cs:line 1468
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsPrincipalValueShouldDisplayOnLoanEstimate() (0.3s)
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #154 from normal test queue 
+Thread#0:Scheduler: considering testitem #154 for thread
+Thread#0:Scheduler: using testitem #154 for thread
+Thread#0:Scheduler: Test #154 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #153/0 is finished on thread #0 as Succeeded within 5.8188859 seconds
+Thread#0: Test #154/0 is started on thread #0
+Thread#0:B:Given user is at TRID application homepage
+Thread#0:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (1.2s)
+Thread#0:B:And user have closing disclosure data from excel sheet ClosingDisclosure for the scenario 125
+Thread#0:T:done: CardsValidationSteps.GivenUserHaveClosingDisclosureDataFromExcelSheetForTheScenario("ClosingDisclosure", 125) (0.9s)
+Thread#0:B:When user upload json file for the scenario
+Thread#0:T:done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (1.9s)
+Thread#0:B:And user navigates to Loan Estimate Cards Page
+Thread#0:T:done: CardsValidationSteps.WhenUserNavigatesToLoanEstimateCardsPage() (0.4s)
+Thread#0:B:Then updated/computed in 5 Years value should display on Loan Estimate
+Thread#0:T:NUnit.Framework.AssertionException:   Computed value does not match as expected with the difference of 35619.66
+Thread#0:T:  Expected: 0.0d
+Thread#0:T:  But was:  35619.660000000003d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.CardsValidationSteps.ThenUpdatedComputedIn5YearsValueShouldDisplayOnLoanEstimate() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\CardsValidationSteps.cs:line 1419
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsValueShouldDisplayOnLoanEstimate() (0.3s)
+Thread#0:B:And updated/computed in 5 Years principal value should display on Loan Estimate
+Thread#0:T:NUnit.Framework.AssertionException:   Computed value does not match as expected with the difference of 13440.32
+Thread#0:T:  Expected: 0.0d
+Thread#0:T:  But was:  13440.32d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.CardsValidationSteps.ThenUpdatedComputedIn5YearsPrincipalValueShouldDisplayOnLoanEstimate() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\CardsValidationSteps.cs:line 1468
+Thread#0:T:done: CardsValidationSteps.ThenUpdatedComputedIn5YearsPrincipalValueShouldDisplayOnLoanEstimate() (0.3s)
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: at the end of normal test queue
+Thread#0:Scheduler: enumerator for thread is at end
+Thread#0:Scheduler: No more tests for thread 
+Thread#0:T:##########################################################
+Thread#0:T:##########################################################
+Thread#0:T:====================================================================================
+Thread#0:T:Scenario Number : 147
+Thread#0:T:The total number of cards Failue: 20
+Thread#0:T:Name of cards Failed: || In5Years || : NUnit.Framework.AssertionException:   Computed value does not match as expected with the difference of 35619.66
+Thread#0:T:  Expected: 0.0d
+Thread#0:T:  But was:  35619.660000000003d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.CardsValidationSteps.ThenUpdatedComputedIn5YearsValueShouldDisplayOnLoanEstimate() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\CardsValidationSteps.cs:line 1419 
+Thread#0:T: ====================================================================================
+Thread#0:T:|| In5YearsPrincipal || : NUnit.Framework.AssertionException:   Computed value does not match as expected with the difference of 13440.32
+Thread#0:T:  Expected: 0.0d
+Thread#0:T:  But was:  13440.32d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.CardsValidationSteps.ThenUpdatedComputedIn5YearsPrincipalValueShouldDisplayOnLoanEstimate() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\CardsValidationSteps.cs:line 1468 
+Thread#0:T: ====================================================================================
+Thread#0:T:|| In5Years || : NUnit.Framework.AssertionException:   Computed value does not match as expected with the difference of 35619.66
+Thread#0:T:  Expected: 0.0d
+Thread#0:T:  But was:  35619.660000000003d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.CardsValidationSteps.ThenUpdatedComputedIn5YearsValueShouldDisplayOnLoanEstimate() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\CardsValidationSteps.cs:line 1419 
+Thread#0:T: ====================================================================================
+Thread#0:T:|| In5YearsPrincipal || : NUnit.Framework.AssertionException:   Computed value does not match as expected with the difference of 13440.32
+Thread#0:T:  Expected: 0.0d
+Thread#0:T:  But was:  13440.32d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.CardsValidationSteps.ThenUpdatedComputedIn5YearsPrincipalValueShouldDisplayOnLoanEstimate() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\CardsValidationSteps.cs:line 1468 
+Thread#0:T: ====================================================================================
+Thread#0:T:|| In5Years || : NUnit.Framework.AssertionException:   Computed value does not match as expected with the difference of 35619.66
+Thread#0:T:  Expected: 0.0d
+Thread#0:T:  But was:  35619.660000000003d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.CardsValidationSteps.ThenUpdatedComputedIn5YearsValueShouldDisplayOnLoanEstimate() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\CardsValidationSteps.cs:line 1419 
+Thread#0:T: ====================================================================================
+Thread#0:T:|| In5YearsPrincipal || : NUnit.Framework.AssertionException:   Computed value does not match as expected with the difference of 13440.32
+Thread#0:T:  Expected: 0.0d
+Thread#0:T:  But was:  13440.32d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.CardsValidationSteps.ThenUpdatedComputedIn5YearsPrincipalValueShouldDisplayOnLoanEstimate() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\CardsValidationSteps.cs:line 1468 
+Thread#0:T: ====================================================================================
+Thread#0:T:|| In5Years || : NUnit.Framework.AssertionException:   Computed value does not match as expected with the difference of 36840.01
+Thread#0:T:  Expected: 0.0d
+Thread#0:T:  But was:  36840.010000000002d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.CardsValidationSteps.ThenUpdatedComputedIn5YearsValueShouldDisplayOnLoanEstimate() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\CardsValidationSteps.cs:line 1419 
+Thread#0:T: ====================================================================================
+Thread#0:T:|| In5YearsPrincipal || : NUnit.Framework.AssertionException:   Computed value does not match as expected with the difference of 12826.63
+Thread#0:T:  Expected: 0.0d
+Thread#0:T:  But was:  12826.629999999999d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.CardsValidationSteps.ThenUpdatedComputedIn5YearsPrincipalValueShouldDisplayOnLoanEstimate() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\CardsValidationSteps.cs:line 1468 
+Thread#0:T: ====================================================================================
+Thread#0:T:|| In5Years || : NUnit.Framework.AssertionException:   Computed value does not match as expected with the difference of 41292.46
+Thread#0:T:  Expected: 0.0d
+Thread#0:T:  But was:  41292.459999999999d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.CardsValidationSteps.ThenUpdatedComputedIn5YearsValueShouldDisplayOnLoanEstimate() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\CardsValidationSteps.cs:line 1419 
+Thread#0:T: ====================================================================================
+Thread#0:T:|| In5YearsPrincipal || : NUnit.Framework.AssertionException:   Computed value does not match as expected with the difference of 11123.49
+Thread#0:T:  Expected: 0.0d
+Thread#0:T:  But was:  11123.49d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.CardsValidationSteps.ThenUpdatedComputedIn5YearsPrincipalValueShouldDisplayOnLoanEstimate() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\CardsValidationSteps.cs:line 1468 
+Thread#0:T: ====================================================================================
+Thread#0:T:|| In5Years || : NUnit.Framework.AssertionException:   Computed value does not match as expected with the difference of 36840.01
+Thread#0:T:  Expected: 0.0d
+Thread#0:T:  But was:  36840.010000000002d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.CardsValidationSteps.ThenUpdatedComputedIn5YearsValueShouldDisplayOnLoanEstimate() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\CardsValidationSteps.cs:line 1419 
+Thread#0:T: ====================================================================================
+Thread#0:T:|| In5YearsPrincipal || : NUnit.Framework.AssertionException:   Computed value does not match as expected with the difference of 12826.63
+Thread#0:T:  Expected: 0.0d
+Thread#0:T:  But was:  12826.629999999999d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.CardsValidationSteps.ThenUpdatedComputedIn5YearsPrincipalValueShouldDisplayOnLoanEstimate() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\CardsValidationSteps.cs:line 1468 
+Thread#0:T: ====================================================================================
+Thread#0:T:|| In5Years || : NUnit.Framework.AssertionException:   Computed value does not match as expected with the difference of 36400.89
+Thread#0:T:  Expected: 0.0d
+Thread#0:T:  But was:  36400.889999999999d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.CardsValidationSteps.ThenUpdatedComputedIn5YearsValueShouldDisplayOnLoanEstimate() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\CardsValidationSteps.cs:line 1419 
+Thread#0:T: ====================================================================================
+Thread#0:T:|| In5YearsPrincipal || : NUnit.Framework.AssertionException:   Computed value does not match as expected with the difference of 12998.68
+Thread#0:T:  Expected: 0.0d
+Thread#0:T:  But was:  12998.68d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.CardsValidationSteps.ThenUpdatedComputedIn5YearsPrincipalValueShouldDisplayOnLoanEstimate() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\CardsValidationSteps.cs:line 1468 
+Thread#0:T: ====================================================================================
+Thread#0:T:|| In5Years || : NUnit.Framework.AssertionException:   Computed value does not match as expected with the difference of 36400.89
+Thread#0:T:  Expected: 0.0d
+Thread#0:T:  But was:  36400.889999999999d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.CardsValidationSteps.ThenUpdatedComputedIn5YearsValueShouldDisplayOnLoanEstimate() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\CardsValidationSteps.cs:line 1419 
+Thread#0:T: ====================================================================================
+Thread#0:T:|| In5YearsPrincipal || : NUnit.Framework.AssertionException:   Computed value does not match as expected with the difference of 12998.68
+Thread#0:T:  Expected: 0.0d
+Thread#0:T:  But was:  12998.68d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.CardsValidationSteps.ThenUpdatedComputedIn5YearsPrincipalValueShouldDisplayOnLoanEstimate() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\CardsValidationSteps.cs:line 1468 
+Thread#0:T: ====================================================================================
+Thread#0:T:|| In5Years || : NUnit.Framework.AssertionException:   Computed value does not match as expected with the difference of 36400.89
+Thread#0:T:  Expected: 0.0d
+Thread#0:T:  But was:  36400.889999999999d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.CardsValidationSteps.ThenUpdatedComputedIn5YearsValueShouldDisplayOnLoanEstimate() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\CardsValidationSteps.cs:line 1419 
+Thread#0:T: ====================================================================================
+Thread#0:T:|| In5YearsPrincipal || : NUnit.Framework.AssertionException:   Computed value does not match as expected with the difference of 12998.68
+Thread#0:T:  Expected: 0.0d
+Thread#0:T:  But was:  12998.68d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.CardsValidationSteps.ThenUpdatedComputedIn5YearsPrincipalValueShouldDisplayOnLoanEstimate() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\CardsValidationSteps.cs:line 1468 
+Thread#0:T: ====================================================================================
+Thread#0:T:|| In5Years || : NUnit.Framework.AssertionException:   Computed value does not match as expected with the difference of 35619.66
+Thread#0:T:  Expected: 0.0d
+Thread#0:T:  But was:  35619.660000000003d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.CardsValidationSteps.ThenUpdatedComputedIn5YearsValueShouldDisplayOnLoanEstimate() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\CardsValidationSteps.cs:line 1419 
+Thread#0:T: ====================================================================================
+Thread#0:T:|| In5YearsPrincipal || : NUnit.Framework.AssertionException:   Computed value does not match as expected with the difference of 13440.32
+Thread#0:T:  Expected: 0.0d
+Thread#0:T:  But was:  13440.32d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.CardsValidationSteps.ThenUpdatedComputedIn5YearsPrincipalValueShouldDisplayOnLoanEstimate() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\CardsValidationSteps.cs:line 1468 
+Thread#0:T: ====================================================================================
+Thread#0:T:====================================================================================
+Thread#0:T:##########################################################
+Thread#0:T:##########################################################
+Thread#0: Test #154/0 is finished on thread #0 as CleanupFailed within 20.0397838 seconds
+Appdomain Disposed
+Thread#-1:Scheduler: get next test for thread
+Thread#:Scheduler: at the end of normal test queue
+Thread#-1:Scheduler: enumerator for thread is at end
+Total: 10
+Succeeded: 9
+Ignored: 0
+Pending: 0
+Skipped: 0
+Failed: 1

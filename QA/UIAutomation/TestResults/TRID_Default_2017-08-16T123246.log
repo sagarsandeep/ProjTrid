@@ -1,0 +1,74 @@
+﻿VS filter: testpath:TestAssembly:TRID/Feature:VariableLoanPaymentScheuledValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+Best+Case+on+Arms+page%2c+140 | testpath:TestAssembly:TRID/Feature:VariableLoanPaymentScheuledValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+Best+Case+on+Arms+page%2c+143 | testpath:TestAssembly:TRID/Feature:VariableLoanPaymentScheuledValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+Best+Case+on+Arms+page%2c+145 | testpath:TestAssembly:TRID/Feature:VariableLoanPaymentScheuledValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+Best+Case+on+Arms+page%2c+139 | testpath:TestAssembly:TRID/Feature:VariableLoanPaymentScheuledValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+Best+Case+on+Arms+page%2c+144 | testpath:TestAssembly:TRID/Feature:VariableLoanPaymentScheuledValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+Best+Case+on+Arms+page%2c+147 | testpath:TestAssembly:TRID/Feature:VariableLoanPaymentScheuledValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+Best+Case+on+Arms+page%2c+138 | testpath:TestAssembly:TRID/Feature:VariableLoanPaymentScheuledValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+Best+Case+on+Arms+page%2c+146 | testpath:TestAssembly:TRID/Feature:VariableLoanPaymentScheuledValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+Best+Case+on+Arms+page%2c+142 | testpath:TestAssembly:TRID/Feature:VariableLoanPaymentScheuledValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+Best+Case+on+Arms+page%2c+141
+Discovering target: Default
+Discovering tests from assembly: F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\bin\Debug\TRID.dll
+Appdomain Disposed
+Test Suite Dump
+#0: TRID/Default - 
+#1: Default - 
+#2: TRID - 
+#456: VariableLoanPaymentScheuledValidation - 
+#477: Uploading JSON file and validating Payment Schedule Best Case on Arms page, 138 - TestAssembly:TRID/Feature:VariableLoanPaymentScheuledValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+Best+Case+on+Arms+page%2c+138
+#478: Uploading JSON file and validating Payment Schedule Best Case on Arms page, 139 - TestAssembly:TRID/Feature:VariableLoanPaymentScheuledValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+Best+Case+on+Arms+page%2c+139
+#479: Uploading JSON file and validating Payment Schedule Best Case on Arms page, 140 - TestAssembly:TRID/Feature:VariableLoanPaymentScheuledValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+Best+Case+on+Arms+page%2c+140
+#480: Uploading JSON file and validating Payment Schedule Best Case on Arms page, 141 - TestAssembly:TRID/Feature:VariableLoanPaymentScheuledValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+Best+Case+on+Arms+page%2c+141
+#481: Uploading JSON file and validating Payment Schedule Best Case on Arms page, 142 - TestAssembly:TRID/Feature:VariableLoanPaymentScheuledValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+Best+Case+on+Arms+page%2c+142
+#482: Uploading JSON file and validating Payment Schedule Best Case on Arms page, 143 - TestAssembly:TRID/Feature:VariableLoanPaymentScheuledValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+Best+Case+on+Arms+page%2c+143
+#483: Uploading JSON file and validating Payment Schedule Best Case on Arms page, 144 - TestAssembly:TRID/Feature:VariableLoanPaymentScheuledValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+Best+Case+on+Arms+page%2c+144
+#484: Uploading JSON file and validating Payment Schedule Best Case on Arms page, 145 - TestAssembly:TRID/Feature:VariableLoanPaymentScheuledValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+Best+Case+on+Arms+page%2c+145
+#485: Uploading JSON file and validating Payment Schedule Best Case on Arms page, 146 - TestAssembly:TRID/Feature:VariableLoanPaymentScheuledValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+Best+Case+on+Arms+page%2c+146
+#486: Uploading JSON file and validating Payment Schedule Best Case on Arms page, 147 - TestAssembly:TRID/Feature:VariableLoanPaymentScheuledValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+Best+Case+on+Arms+page%2c+147
+End: Test Suite Dump
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #477 from normal test queue 
+Thread#0:Scheduler: considering testitem #477 for thread
+Thread#0:Scheduler: using testitem #477 for thread
+Thread#0:Scheduler: Test #477 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread #0: creating new test thread executor for TRID, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null (target: Default)
+Loading SpecRun type 'TechTalk.SpecRun.Framework.TestAssemblyExecutor' from: C:\Users\sandees\AppData\Local\Temp\VisualStudioTestExplorerExtensions\SpecRun.Runner.1.5.2\tools\TechTalk.SpecRun.Framework.Executor.dll
+Thread#0: Test #477/0 is started on thread #0
+Thread#0:B:Given user is at TRID application homepage
+Thread#0:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (26.8s)
+Thread#0:B:And user have ARM Best Case variable loan data from excel sheet ARMBestCase for the scenario 2
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.GivenUserHaveARMBestCaseVariableLoanDataFromExcelSheetForTheScenario("ARMBestCase", 2) (1.7s)
+Thread#0:B:When user upload json file for the scenario
+Thread#0:T:done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (2.0s)
+Thread#0:B:Then user navigates to ARM Page
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.ThenUserNavigatesToARMPage() (1.6s)
+Thread#0:B:And updated/computed Payment Stream Number value should display on ARM Best Case
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :1
+Thread#0:T:ActualValue Row 1 :1
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :2
+Thread#0:T:ActualValue Row 2 :2
+Thread#0:T:============================================================
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPaymentStreamNumberValueShouldDisplayOnArmBestCase() (0.2s)
+Thread#0:B:And updated/computed Number of Payments value should display on ARM Best Case
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :36
+Thread#0:T:ActualValue Row 1 :36
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :323
+Thread#0:T:ActualValue Row 2 :323
+Thread#0:T:============================================================
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedNumberOfPaymentsValueShouldDisplayOnArmBestCase() (0.1s)
+Thread#0:B:And updated/computed Payment Amount value should display on ARM Best Case
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :606.68
+Thread#0:T:ActualValue Row 1 :606.68
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :524.54
+Thread#0:T:ActualValue Row 2 :524.54
+Thread#0:T:============================================================
+Thread#0:T:done: VariableLoanPaymentScheuledValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnArmBestCase() (0.1s)
+Thread#0:B:And updated/computed Principal and Interest Payment value should display on ARM Best Case
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :606.68
+Thread#0:T:ActualValue Row 1 :606.68
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+T

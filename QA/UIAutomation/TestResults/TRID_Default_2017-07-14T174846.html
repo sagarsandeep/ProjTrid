@@ -1,0 +1,2866 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		<title>TRID Test Execution Report</title>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.6.2.min.js"></script>
+        <script type="text/javascript">
+            /**
+            * jQuery.fn.sortElements
+            * --------------
+            * #author James Padolsey (http://james.padolsey.com)
+            * #version 0.11
+            * #updated 18-MAR-2010
+            * #url https://raw.github.com/jamespadolsey/jQuery-Plugins/master/sortElements/jquery.sortElements.js
+            * --------------
+            * #param Function comparator:
+            *   Exactly the same behaviour as [1,2,3].sort(comparator)
+            *   
+            * #param Function getSortable
+            *   A function that should return the element that is
+            *   to be sorted. The comparator will run on the
+            *   current collection, but you may want the actual
+            *   resulting sort to occur on a parent or another
+            *   associated element.
+            *   
+            *   E.g. $('td').sortElements(comparator, function(){
+            *      return this.parentNode; 
+            *   })
+            *   
+            *   The <td>'s parent (<tr>) will be sorted instead
+            *   of the <td> itself.
+            */
+            jQuery.fn.sortElements = (function () {
+
+                var sort = [].sort;
+
+                return function (comparator, getSortable) {
+
+                    getSortable = getSortable || function () { return this; };
+
+                    var placements = this.map(function () {
+
+                        var sortElement = getSortable.call(this),
+                parentNode = sortElement.parentNode,
+
+                        // Since the element itself will change position, we have
+                        // to have some way of storing it's original position in
+                        // the DOM. The easiest way is to have a 'flag' node:
+                nextSibling = parentNode.insertBefore(
+                    document.createTextNode(''),
+                    sortElement.nextSibling
+                );
+
+                        return function () {
+
+                            if (parentNode === this) {
+                                throw new Error(
+                        "You can't sort elements if any one is a descendant of another."
+                    );
+                            }
+
+                            // Insert before flag:
+                            parentNode.insertBefore(this, nextSibling);
+                            // Remove flag:
+                            parentNode.removeChild(nextSibling);
+
+                        };
+
+                    });
+
+                    return sort.call(this, comparator).each(function (i) {
+                        placements[i].call(getSortable.call(this));
+                    });
+
+                };
+
+            })();
+        </script>
+        <script type="text/javascript">
+            jQuery.fn.setBarSizes = (function () {
+                return function (metricName, maxBarSize, min) {
+                    var max = Math.max.apply(Math, $.makeArray($(this).map(function () { return Number($(this).attr('data-sr-' + metricName)); })));
+                    var scale = 1.0;
+                    while (max > 0.0 && max <= 10.0) {
+                        scale = scale * 10.0;
+                        max = max * 10.0;
+                    }
+                    max = (Math.ceil(max / 2) * 2) / scale;
+
+                    this.each(function () {
+                        var barAnchor = $(this).find('a');
+                        var actual = $(this).attr('data-sr-' + metricName);
+                        var newHeight = Math.max(Math.round(maxBarSize * (actual - min) / (max - min)), 2);
+                        barAnchor.css({ height: newHeight });
+                    });
+
+                    var unit = "";
+                    if (metricName.substr(metricName.length - 4, 4) === "time")
+                        unit = "s";
+
+                    $('#testview .scale-min-label').each(function () {
+                        $(this).text(min.toString() + unit);
+                    });
+                    $('#testview .scale-max-label').each(function () {
+                        $(this).text(max.toString() + unit);
+                    });
+                    var mid = max / 2;
+                    $('#testview .scale-mid-label').each(function () {
+                        $(this).text(mid.toString() + unit);
+                    });
+                };
+            })();
+
+            function getComparer(metricName, isDesc) {
+                return function (a, b) {
+                    var aNumber = Number($(a).attr('data-sr-' + metricName));
+                    var bNumber = Number($(b).attr('data-sr-' + metricName));
+                    var result = aNumber > bNumber ? 1 : (aNumber < bNumber ? -1 : 0);
+                    if (isDesc)
+                        result = -1 * result;
+
+                    if (result == 0 && metricName != "order")
+                        result = getComparer("order", false)(a, b);
+
+                    return result;
+                };
+            }
+
+            var currentSort = "";
+            function doSort(allowToggleDesc) {
+                var newSort = $("input[name='barSortOrder']:checked").val();
+                if (allowToggleDesc && currentSort == newSort) {
+                    $('#barSortDesc').click();
+                    doSort(false);
+                    return;
+                }
+                currentSort = newSort;
+                $('#testview td.testview-item').sortElements(getComparer(newSort, $('#barSortDesc').is(':checked')));
+            }
+
+
+            function doSetHeights(allowSort) {
+                var selectedMetric = $("input[name='barHeight']:checked").val();
+                $('#testview td.testview-item').setBarSizes(selectedMetric, 60, 0.0);
+
+                if (allowSort && currentSort != selectedMetric) {
+                    var $radios = $("input[name='barSortOrder']");
+                    $radios.filter('[value=' + selectedMetric + ']').attr('checked', true);
+                    $("#barSortDesc").attr("checked", [true]);
+                    doSort(false);
+                }
+            }
+
+            $(document).ready(function () {
+                $("input[name='barSortOrder']").click(function () { doSort(true); return true; });
+                $("input[name='barSortDesc']").change(function () { doSort(false); });
+                $("input[name='barHeight']").change(function () { doSetHeights(true); });
+
+                doSort(false);
+                doSetHeights(false);
+
+                $("div.scrollable").css({ 'overflow': 'auto' });
+            });
+        </script>
+
+        <style type="text/css">
+            body 
+            {
+                color: #000000;
+                font-family: Arial,Liberation Sans,DejaVu Sans,sans-serif;
+                line-height: 130%;
+            }
+            h1 {
+                font-family: Trebuchet MS,Liberation Sans,DejaVu Sans,sans-serif;
+                font-size: 170%;
+                font-weight: bold;
+            }            
+            h2 {
+                font-family: Trebuchet MS,Liberation Sans,DejaVu Sans,sans-serif;
+                font-size: 130%;
+                font-weight: bold;
+                margin-bottom: 5px;
+            }            
+            h3 {
+                font-family: Trebuchet MS,Liberation Sans,DejaVu Sans,sans-serif;
+                font-size: 120%;
+                font-weight: bold;
+                margin-bottom: 5px;
+            }            
+            a.bar
+            {
+                text-decoration: none;
+                display: block;
+                line-height: 1px;
+            }
+            .description
+            {
+                font-style: italic;
+            }
+            .log 
+            {
+                width: 600px;
+                white-space: pre-wrap;
+                display: block;
+                margin: 0px;
+            }
+            .errorMessage 
+            {
+                width: 600px;
+                color: Red;
+                font-weight: bold;
+            }
+            .stackTrace 
+            {
+                width: 600px;
+                white-space: pre-wrap;
+                font-style: italic;
+                color: Red;
+                display: block;
+            }
+            table.testEvents
+            {
+                border: solid 1px #e8eef4;
+                border-collapse: collapse;
+            }
+            table.testEvents td
+            {
+                vertical-align: top;
+                padding: 5px;
+                border: solid 1px #e8eef4;
+            }
+            table.testEvents th
+            {
+                padding: 6px 5px;
+                text-align: left;
+                background-color: #e8eef4;
+                border: solid 1px #e8eef4;                
+            }
+            .comment
+            {
+                font-style: italic;
+                font-size: smaller;
+            }
+            .startupBar
+            {
+                background-color: #EEEEEE;
+                cursor: default;
+            }
+            
+            .colorSucceeded
+            {
+                background-color: #90ED7B;
+            }
+            .colorIgnored
+            {
+                background-color: #FFFF85;
+            }
+            .colorPending
+            {
+                background-color: #D47BED;
+            }
+            .colorNothingToRun
+            {
+                background-color: #CCCCFF;
+            }
+            .colorSkipped
+            {
+                background-color: #CCCCFF;
+            }
+            .colorInconclusive
+            {
+                background-color: #7BEDED;
+            }
+            .colorCleanupFailed
+            {
+                background-color: #FFCCCC;
+            }
+            .colorRandomlyFailed
+            {
+                background-color: #EDB07B;
+            }
+            .colorFailed
+            {
+                background-color: #ED5F5F;
+            }
+            .colorInitializationFailed
+            {
+                background-color: #FF0000;
+            }
+            .colorFrameworkError
+            {
+                background-color: #FF0000;
+            }
+            ul.subNodeLinks
+            {
+                padding-left: 20px;
+                margin: 0px;
+            }
+            ul.subNodeLinks li
+            {
+                list-style: none;
+            }
+            
+            /* views general */
+            div.scrollable
+            {
+                /*overflow: auto; - thsi has to be set from js, because of an IE9 bug */
+            }
+            div.viewbox
+            {
+                position: relative;
+                border: 3px solid #e8eef4;
+            }
+            div.viewbox table
+            {
+                border: 0px;
+            }
+                        
+            /* testview */
+            #testview
+            {
+                padding-top: 23px;
+            }
+            
+            table.testview-items td
+            {
+                vertical-align: bottom;
+                padding: 0px 1px 0px 1px;
+            }
+            td.right-padding, td.left-padding
+            {
+                width: 25px;
+                min-width: 25px;
+            }
+            table.testview-items a.bar
+            {
+                width: 5px;
+            }
+            table.testview-items tr.testview-items-row
+            {
+                height: 60px;
+            }
+            
+            /* scale */
+            table.vertical-scale 
+            {
+                position: absolute;
+                top: 23px;
+                left: 0px;
+                width: 100%;
+                z-index: -100;
+            }
+            table.vertical-scale td, tr.horizontal-scale td
+            {
+                font-size: 60%;
+                line-height: normal;
+            }
+            table.vertical-scale tr.scale-max, table.vertical-scale tr.scale-mid 
+            {
+                height: 30px;
+            }
+            tr.horizontal-scale, table.vertical-scale tr.scale-min 
+            {
+                height: 12px;
+            }
+            
+            td.scale-max-label, td.scale-mid-label, td.scale-min-label
+            {
+                border-top: solid 1px #E6E6E6;
+                text-align: left;
+                vertical-align: top;
+            }
+            td.scale-10-label
+            {
+                border-left: solid 1px #E6E6E6;
+                text-align: left;
+                vertical-align: bottom;
+                padding-left: 1px;
+            }
+            tr.scale-mid td, tr.scale-min td, tr.scale-max td
+            {
+                border-top: solid 1px #E6E6E6;
+            }
+           
+            
+            /* bar-control */
+            #bar-control
+            {
+                font-size: 60%;
+                line-height: normal;
+                position: absolute;
+                right: 0px;
+                top: 0px;
+            }
+            #bar-control label
+            {
+                font-weight: bold;
+                vertical-align: middle;
+            }
+            #bar-control .option
+            {
+                vertical-align: middle;
+                text-transform: lowercase;
+            }
+            #bar-control input[type="checkbox"]
+            {
+                padding: 0 2px 0 3px;
+            }
+            #bar-control input
+            {
+                vertical-align: top;
+                height: 12px;
+                margin: 0px;
+                padding: 0px;
+            }
+            #bar-control div
+            {
+                float: right;
+                margin: 3px 5px 3px 5px;
+            }
+            
+            
+            /* timeline view */
+            #timelineview
+            {
+                padding-top: 5px;
+            }
+            table.timelineview a
+            {
+                height: 20px;
+            }
+            table.timelineview td
+            {
+                vertical-align: bottom;
+                padding: 0px 1px 0px 0px;
+                border: 0px;
+            }
+            tr.thread-items-row
+            {
+                height: 25px;
+            }
+            tr.thread-items-row td
+            {
+                vertical-align: bottom;
+            }
+            td.thread-label
+            {
+                padding: 0px 6px 0px 6px;
+                text-align: right;
+                line-height: 18px;
+                vertical-align: bottom;
+            }
+            th.thread-label
+            {
+                padding: 3px 6px 0px 6px;
+                line-height: 18px;
+                text-align: left;
+                vertical-align: bottom;
+            }
+        </style>
+	</head>
+	<body>
+        <h1>TRID Test Execution Report</h1>
+        <ul>
+            <li>Project: TRID</li>
+            <li>Configuration: Default</li>
+            <li>Test Assemblies: F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\bin\Debug\TRID.dll</li>
+            <li>Start Time: 7/14/2017 5:48:55 PM</li>
+            <li>Duration: 00:01:32.0817465</li>
+            <li>Test Threads: 10</li>
+        </ul>
+
+        <h2>Result: 3 failed (test cleanup falied for 3)</h2>
+        <table class="testEvents">
+                <tr>
+        <th colspan="2">Success rate</th>
+        <th>Tests</th>
+        <th>Succeeded</th>
+        <th>Failed</th>
+        <th>Pending</th>
+        <th>Ignored</th>
+        <th>Skipped</th>
+    </tr>
+
+                <tr>
+            <td>
+            0%
+    </td>
+    <td>
+        <table class="timelineview" cellpadding="0" cellspacing="0">
+            <tr>
+                    <td>
+                        <a class="bar colorCleanupFailed" 
+                                style="width: 199px;" 
+                                title="test cleanup falied for 3" 
+                                                    href="#error_summary"
+                                />
+                    </td>
+            </tr>
+        </table>
+    </td>
+    <td>3</td>
+    <td>0</td>
+    <td>3</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+
+    </tr>
+
+        </table>
+        
+        <h2>Test Timeline Summary</h2>
+
+        <div id="timelineview" class="viewbox">
+            <div class="scrollable">
+                <table cellpadding="0" cellspacing="0">
+                    <tr>
+                        <th class="thread-label" colspan="2">thread</th>
+                    </tr>
+                        <tr class="thread-items-row">
+                            <td class="thread-label" title="Machine: SLBLR-LT-231">#0</td>
+                            <td colspan="1">
+                                <table class="timelineview" cellpadding="0" cellspacing="0">
+                                    <tr>
+
+                                            <td>
+        <a
+            class="bar startupBar" 
+            style="width: 3px;" 
+                title="test thread startup" 
+        >&nbsp;</a>
+    </td>
+
+    <td>
+        <a
+            class="bar colorCleanupFailed" 
+            style="width: 15px;" 
+                title="Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 001 (in AmortizationValidation)" 
+                href="#t-326752725.0"
+        >&nbsp;</a>
+    </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr class="thread-items-row">
+                            <td class="thread-label" title="Machine: SLBLR-LT-231">#1</td>
+                            <td colspan="1">
+                                <table class="timelineview" cellpadding="0" cellspacing="0">
+                                    <tr>
+
+                                            <td>
+        <a
+            class="bar startupBar" 
+            style="width: 3px;" 
+                title="test thread startup" 
+        >&nbsp;</a>
+    </td>
+
+    <td>
+        <a
+            class="bar colorCleanupFailed" 
+            style="width: 16px;" 
+                title="Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 002 (in AmortizationValidation)" 
+                href="#t-326818261.0"
+        >&nbsp;</a>
+    </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr class="thread-items-row">
+                            <td class="thread-label" title="Machine: SLBLR-LT-231">#2</td>
+                            <td colspan="1">
+                                <table class="timelineview" cellpadding="0" cellspacing="0">
+                                    <tr>
+
+                                            <td>
+        <a
+            class="bar startupBar" 
+            style="width: 3px;" 
+                title="test thread startup" 
+        >&nbsp;</a>
+    </td>
+
+    <td>
+        <a
+            class="bar colorCleanupFailed" 
+            style="width: 16px;" 
+                title="Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 003 (in AmortizationValidation)" 
+                href="#t-326883797.0"
+        >&nbsp;</a>
+    </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr class="thread-items-row">
+                            <td class="thread-label" title="Machine: SLBLR-LT-231">#3</td>
+                            <td colspan="1">
+                                <table class="timelineview" cellpadding="0" cellspacing="0">
+                                    <tr>
+
+                                            <td>
+        <a
+            class="bar startupBar" 
+            style="width: 3px;" 
+                title="test thread startup" 
+        >&nbsp;</a>
+    </td>
+
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr class="thread-items-row">
+                            <td class="thread-label" title="Machine: SLBLR-LT-231">#4</td>
+                            <td colspan="1">
+                                <table class="timelineview" cellpadding="0" cellspacing="0">
+                                    <tr>
+
+                                            <td>
+        <a
+            class="bar startupBar" 
+            style="width: 3px;" 
+                title="test thread startup" 
+        >&nbsp;</a>
+    </td>
+
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr class="thread-items-row">
+                            <td class="thread-label" title="Machine: SLBLR-LT-231">#5</td>
+                            <td colspan="1">
+                                <table class="timelineview" cellpadding="0" cellspacing="0">
+                                    <tr>
+
+                                            <td>
+        <a
+            class="bar startupBar" 
+            style="width: 3px;" 
+                title="test thread startup" 
+        >&nbsp;</a>
+    </td>
+
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr class="thread-items-row">
+                            <td class="thread-label" title="Machine: SLBLR-LT-231">#6</td>
+                            <td colspan="1">
+                                <table class="timelineview" cellpadding="0" cellspacing="0">
+                                    <tr>
+
+                                            <td>
+        <a
+            class="bar startupBar" 
+            style="width: 3px;" 
+                title="test thread startup" 
+        >&nbsp;</a>
+    </td>
+
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr class="thread-items-row">
+                            <td class="thread-label" title="Machine: SLBLR-LT-231">#7</td>
+                            <td colspan="1">
+                                <table class="timelineview" cellpadding="0" cellspacing="0">
+                                    <tr>
+
+                                            <td>
+        <a
+            class="bar startupBar" 
+            style="width: 3px;" 
+                title="test thread startup" 
+        >&nbsp;</a>
+    </td>
+
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr class="thread-items-row">
+                            <td class="thread-label" title="Machine: SLBLR-LT-231">#8</td>
+                            <td colspan="1">
+                                <table class="timelineview" cellpadding="0" cellspacing="0">
+                                    <tr>
+
+                                            <td>
+        <a
+            class="bar startupBar" 
+            style="width: 3px;" 
+                title="test thread startup" 
+        >&nbsp;</a>
+    </td>
+
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr class="thread-items-row">
+                            <td class="thread-label" title="Machine: SLBLR-LT-231">#9</td>
+                            <td colspan="1">
+                                <table class="timelineview" cellpadding="0" cellspacing="0">
+                                    <tr>
+
+                                            <td>
+        <a
+            class="bar startupBar" 
+            style="width: 3px;" 
+                title="test thread startup" 
+        >&nbsp;</a>
+    </td>
+
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    <tr class="horizontal-scale">
+                        <td>&nbsp;</td>
+                        <td class="scale-10-label">0s</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <h2>Test Result View</h2>
+        <div id="testview" class="viewbox">
+            <div id="bar-control">
+                <div id="bar-control-sort">
+                    <label>sort by:</label>
+                    <span class="option"><input type="radio" name="barSortOrder" value="exectime" />Time</span>
+                    <span class="option"><input type="radio" name="barSortOrder" value="acttime" />Act Time</span>
+                    <span class="option"><input type="radio" name="barSortOrder" value="order" />Execution</span>
+                    <span class="option"><input type="radio" name="barSortOrder" value="rescode" checked="checked" />Result</span>
+                    <span class="option"><input type="checkbox" name="barSortDesc" id="barSortDesc" checked="checked" />desc</span>
+                </div>
+                <div id="bar-control-heights">
+                    <label>heights:</label>
+                    <span class="option"><input type="radio" checked="checked" name="barHeight" value="exectime" />Time</span>
+                    <span class="option"><input type="radio" name="barHeight" value="acttime" />Act Time</span>
+                    
+                </div>
+            </div>
+            <table class="vertical-scale" cellpadding="0" cellspacing="0">
+                <tr class="scale-max">
+                    <td class="left-padding scale-max-label">&nbsp;</td>
+                    <td colspan="3">&nbsp;</td>
+                    <td class="right-padding">&nbsp;</td>
+                </tr>
+                <tr class="scale-mid">
+                    <td class="left-padding scale-mid-label">&nbsp;</td>
+                    <td colspan="3">&nbsp;</td>
+                    <td class="right-padding">&nbsp;</td>
+                </tr>
+                <tr class="scale-min">
+                    <td class="left-padding scale-min-label">&nbsp;</td>
+                    <td colspan="3">&nbsp;</td>
+                    <td class="right-padding">&nbsp;</td>
+                </tr>
+            </table>
+            <div class="scrollable">
+                <table class="testview-items" cellpadding="0" cellspacing="0">
+                    <tr class="testview-items-row">
+                        <td class="left-padding">&nbsp;</td>
+    <td class="testview-item" 
+        data-sr-exectime="88.6595349" data-sr-rescode="420" data-sr-order="1" data-sr-acttime="34.453">
+        <a
+            class="bar colorCleanupFailed" 
+            style="height: 58px;"
+            title="Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 001 (in AmortizationValidation)"
+            href="#t-326752725.0">&nbsp;</a>
+    </td>
+    <td class="testview-item" 
+        data-sr-exectime="90.314346" data-sr-rescode="420" data-sr-order="0" data-sr-acttime="36.184">
+        <a
+            class="bar colorCleanupFailed" 
+            style="height: 59px;"
+            title="Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 002 (in AmortizationValidation)"
+            href="#t-326818261.0">&nbsp;</a>
+    </td>
+    <td class="testview-item" 
+        data-sr-exectime="91.8409548" data-sr-rescode="420" data-sr-order="2" data-sr-acttime="33.715">
+        <a
+            class="bar colorCleanupFailed" 
+            style="height: 60px;"
+            title="Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 003 (in AmortizationValidation)"
+            href="#t-326883797.0">&nbsp;</a>
+    </td>
+                        <td class="right-padding">&nbsp;</td>
+                    </tr>
+                    <tr class="horizontal-scale">
+                        <td class="left-padding">&nbsp;</td>
+                        <td colspan="10">&nbsp;</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <h2>Feature Summary</h2>
+        <table class="testEvents">
+                <tr>
+            <th>Feature</th>
+        <th colspan="2">Success rate</th>
+        <th>Tests</th>
+        <th>Succeeded</th>
+        <th>Failed</th>
+        <th>Pending</th>
+        <th>Ignored</th>
+        <th>Skipped</th>
+    </tr>
+
+    <tr>
+            <td><a href="#f-2044306335">AmortizationValidation</a></td>
+            <td>
+            0%
+    </td>
+    <td>
+        <table class="timelineview" cellpadding="0" cellspacing="0">
+            <tr>
+                    <td>
+                        <a class="bar colorCleanupFailed" 
+                                style="width: 199px;" 
+                                title="test cleanup falied for 3" 
+                                                    href="#error_summary"
+                                />
+                    </td>
+            </tr>
+        </table>
+    </td>
+    <td>3</td>
+    <td>0</td>
+    <td>3</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+
+    </tr>
+        </table>
+
+        <a name="error_summary" />
+        <h2>Error Summary</h2>
+        <table class="testEvents">
+                <tr>
+            <th>Test</th>
+        <th colspan="2">Success rate</th>
+        <th>Tests</th>
+        <th>Succeeded</th>
+        <th>Failed</th>
+        <th>Pending</th>
+        <th>Ignored</th>
+        <th>Skipped</th>
+    </tr>
+
+                <tr>
+                    <td>
+                        <a href="#t-326752725.0">Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 001 (in TRID, AmortizationValidation)</a>
+                    </td>
+                        <td>
+            0%
+    </td>
+    <td>
+        <table class="timelineview" cellpadding="0" cellspacing="0">
+            <tr>
+                    <td>
+                        <a class="bar colorCleanupFailed" 
+                                style="width: 199px;" 
+                                title="test cleanup falied for 1" 
+                                                    href="#error_summary"
+                                />
+                    </td>
+            </tr>
+        </table>
+    </td>
+    <td>1</td>
+    <td>0</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+
+                </tr>
+                <tr>
+                    <td colspan="9" style="padding-left: 20px;"><div class="errorMessage">Error: Test Case failed</div></td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="#t-326818261.0">Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 002 (in TRID, AmortizationValidation)</a>
+                    </td>
+                        <td>
+            0%
+    </td>
+    <td>
+        <table class="timelineview" cellpadding="0" cellspacing="0">
+            <tr>
+                    <td>
+                        <a class="bar colorCleanupFailed" 
+                                style="width: 199px;" 
+                                title="test cleanup falied for 1" 
+                                                    href="#error_summary"
+                                />
+                    </td>
+            </tr>
+        </table>
+    </td>
+    <td>1</td>
+    <td>0</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+
+                </tr>
+                <tr>
+                    <td colspan="9" style="padding-left: 20px;"><div class="errorMessage">Error: Test Case failed</div></td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="#t-326883797.0">Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 003 (in TRID, AmortizationValidation)</a>
+                    </td>
+                        <td>
+            0%
+    </td>
+    <td>
+        <table class="timelineview" cellpadding="0" cellspacing="0">
+            <tr>
+                    <td>
+                        <a class="bar colorCleanupFailed" 
+                                style="width: 199px;" 
+                                title="test cleanup falied for 1" 
+                                                    href="#error_summary"
+                                />
+                    </td>
+            </tr>
+        </table>
+    </td>
+    <td>1</td>
+    <td>0</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+
+                </tr>
+                <tr>
+                    <td colspan="9" style="padding-left: 20px;"><div class="errorMessage">Error: Test Case failed</div></td>
+                </tr>
+        </table>
+
+        <h2>Scenario Summary</h2>
+            <a name="f-2044306335" />
+            <h3>Feature: AmortizationValidation</h3>
+            <table class="testEvents">
+                    <tr>
+            <th>Test</th>
+        <th colspan="2">Success rate</th>
+        <th>Tests</th>
+        <th>Succeeded</th>
+        <th>Failed</th>
+        <th>Pending</th>
+        <th>Ignored</th>
+        <th>Skipped</th>
+    </tr>
+
+                    <tr>
+                        <td>
+                                    <a href="#t-326752725.0">Scenario: Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 001</a>
+
+                        </td>
+                            <td>
+            0%
+    </td>
+    <td>
+        <table class="timelineview" cellpadding="0" cellspacing="0">
+            <tr>
+                    <td>
+                        <a class="bar colorCleanupFailed" 
+                                style="width: 199px;" 
+                                title="test cleanup falied for 1" 
+                                                    href="#error_summary"
+                                />
+                    </td>
+            </tr>
+        </table>
+    </td>
+    <td>1</td>
+    <td>0</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                                    <a href="#t-326818261.0">Scenario: Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 002</a>
+
+                        </td>
+                            <td>
+            0%
+    </td>
+    <td>
+        <table class="timelineview" cellpadding="0" cellspacing="0">
+            <tr>
+                    <td>
+                        <a class="bar colorCleanupFailed" 
+                                style="width: 199px;" 
+                                title="test cleanup falied for 1" 
+                                                    href="#error_summary"
+                                />
+                    </td>
+            </tr>
+        </table>
+    </td>
+    <td>1</td>
+    <td>0</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                                    <a href="#t-326883797.0">Scenario: Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 003</a>
+
+                        </td>
+                            <td>
+            0%
+    </td>
+    <td>
+        <table class="timelineview" cellpadding="0" cellspacing="0">
+            <tr>
+                    <td>
+                        <a class="bar colorCleanupFailed" 
+                                style="width: 199px;" 
+                                title="test cleanup falied for 1" 
+                                                    href="#error_summary"
+                                />
+                    </td>
+            </tr>
+        </table>
+    </td>
+    <td>1</td>
+    <td>0</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+
+                    </tr>
+            </table>
+
+        <h2>Execution Details</h2>
+            <a name="t-326818261.0" />
+            <h3>Scenario: Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 002 (in TRID, AmortizationValidation)</h3>
+            <ul>
+                <li>Status: CleanupFailed</li>
+                <li>Start time: 7/14/2017 5:48:55 PM</li>
+                <li>Execution time (sec): 90.314346</li>
+                <li>Thread: #1</li>
+                <li>Error: Test Case failed</li>
+            </ul>
+            <table class="testEvents">
+                <tr>
+                    <th>Steps</th>
+                    <th>Trace</th>
+                    <th>Result</th>
+                </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">Given user is at TRID application homepage</pre>
+                        </td>
+                        <td>
+                            <!-- [TestArrange: Scenario - Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 002] -->
+                            <pre class="log">done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (26.0s)</pre>
+                        </td>
+                        <td>Succeeded in 26.084s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And user have closing disclosure data from excel sheet ClosingDisclosure for the scenario 3</pre>
+                        </td>
+                        <td>
+                            <!-- [TestArrange: Scenario - Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 002] -->
+                            <pre class="log">done: CardsValidationSteps.GivenUserHaveClosingDisclosureDataFromExcelSheetForTheScenario(&quot;ClosingDisclosure&quot;, 3) (1.3s)</pre>
+                        </td>
+                        <td>Succeeded in 1.278s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And user have Mortgage Insurance data from excel sheet MortgageInsurance for the scenario 3</pre>
+                        </td>
+                        <td>
+                            <!-- [TestArrange: Scenario - Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 002] -->
+                            <pre class="log">done: CardsValidationSteps.GivenUserHaveMortgageInsuranceDataFromExcelSheetForTheScenarioMortgageInsurance(&quot;MortgageInsurance&quot;, 3) (0.7s)</pre>
+                        </td>
+                        <td>Succeeded in 0.668s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And user have variable loan data from excel sheet ARM Terms for the scenario 1</pre>
+                        </td>
+                        <td>
+                            <!-- [TestArrange: Scenario - Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 002] -->
+                            <pre class="log">done: CardsValidationSteps.GivenUserHaveVariableLoanDataFromExcelSheetForTheScenario(&quot;ARM Terms&quot;, 1) (1.9s)</pre>
+                        </td>
+                        <td>Succeeded in 1.879s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And user have Prepaid Charges data from excel sheet PrepaidCharges for the scenario 3</pre>
+                        </td>
+                        <td>
+                            <!-- [TestArrange: Scenario - Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 002] -->
+                            <pre class="log">done: CardsValidationSteps.GivenUserHavePrepaidChargesDataFromExcelSheetPrepaidChargesForTheScenario(&quot;PrepaidCharges&quot;, 3) (1.6s)</pre>
+                        </td>
+                        <td>Succeeded in 1.557s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And user have Export data from excel sheet Export for the scenario 3</pre>
+                        </td>
+                        <td>
+                            <!-- [TestArrange: Scenario - Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 002] -->
+                            <pre class="log">done: CardsValidationSteps.GivenUserHaveExportDataFromExcelSheetExportForTheScenario(&quot;Export&quot;, 3) (1.0s)</pre>
+                        </td>
+                        <td>Succeeded in 1.037s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And user have Escrow Grid data from excel sheet EscrowGrid for the scenario 3</pre>
+                        </td>
+                        <td>
+                            <!-- [TestArrange: Scenario - Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 002] -->
+                            <pre class="log">done: CardsValidationSteps.GivenUserHaveEscrowGridDataFromExcelSheetForTheScenario(&quot;EscrowGrid&quot;, 3) (1.5s)</pre>
+                        </td>
+                        <td>Succeeded in 1.452s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And user have Payment Schedule data from excel sheet PaymentSchedule for the scenario 3</pre>
+                        </td>
+                        <td>
+                            <!-- [TestArrange: Scenario - Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 002] -->
+                            <pre class="log">done: AmortizationValidationSteps.GivenUserHavePaymentScheduleDataFromExcelSheetForTheScenario(&quot;PaymentSchedule&quot;, 3) (1.5s)</pre>
+                        </td>
+                        <td>Succeeded in 1.453s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">When user navigate to Loan Inputs Page</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAct: Scenario - Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 002] -->
+                            <pre class="log">done: CardsValidationSteps.WhenUserNavigateToLoanInputsPage() (2.7s)</pre>
+                        </td>
+                        <td>Succeeded in 2.732s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And user selects Calculation Method</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAct: Scenario - Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 002] -->
+                            <pre class="log">done: CardsValidationSteps.WhenUserSelectsCalculationMethodInClosingDisclosurePage() (0.3s)</pre>
+                        </td>
+                        <td>Succeeded in 0.282s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And user selects loan type</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAct: Scenario - Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 002] -->
+                            <pre class="log">done: CardsValidationSteps.WhenUserSelectsLoanTypeInClosingDisclosurePage() (0.3s)</pre>
+                        </td>
+                        <td>Succeeded in 0.27s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And user selects Frequency of Payments</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAct: Scenario - Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 002] -->
+                            <pre class="log">done: CardsValidationSteps.WhenUserSelectsFrequencyOfPaymentsInClosingDisclosurePage() (0.2s)</pre>
+                        </td>
+                        <td>Succeeded in 0.233s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And user selects Loan Term</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAct: Scenario - Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 002] -->
+                            <pre class="log">done: CardsValidationSteps.WhenUserSelectsLoanTermInClosingDisclosurePage() (0.2s)</pre>
+                        </td>
+                        <td>Succeeded in 0.166s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And user selects Repayment Term Type</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAct: Scenario - Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 002] -->
+                            <pre class="log">done: CardsValidationSteps.WhenUserSelectsRepaymentTermTypeInClosingDisclosurePage() (0.3s)</pre>
+                        </td>
+                        <td>Succeeded in 0.286s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And user enters Loan detail input values for computation</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAct: Scenario - Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 002] -->
+                            <pre class="log">done: CardsValidationSteps.WhenUserEntersLoanDetailInputValuesForComputationforClosingDisclosurepage() (4.1s)</pre>
+                        </td>
+                        <td>Succeeded in 4.052s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And user enters pmi rate values</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAct: Scenario - Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 002] -->
+                            <pre class="log">done: CardsValidationSteps.WhenUserEntersPmiRateValues() (3.3s)</pre>
+                        </td>
+                        <td>Succeeded in 3.383s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And user enters other pmi input values</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAct: Scenario - Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 002] -->
+                            <pre class="log">done: CardsValidationSteps.WhenUserEntersOtherPmiInputValues() (1.9s)</pre>
+                        </td>
+                        <td>Succeeded in 2.139s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And user enters Escrow Grid Input values</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAct: Scenario - Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 002] -->
+                            <pre class="log">done: CardsValidationSteps.WhenUserEntersEscrowGridInputValues() (9.8s)</pre>
+                        </td>
+                        <td>Succeeded in 10.023s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And user enters all input values for Prepaid Charges</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAct: Scenario - Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 002] -->
+                            <pre class="log">done: CardsValidationSteps.WhenUserEntersAllInputValuesForPrepaidCharges() (5.2s)</pre>
+                        </td>
+                        <td>Succeeded in 5.384s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And user enters input value for prepaid custom fields</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAct: Scenario - Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 002] -->
+                            <pre class="log">done: CardsValidationSteps.WhenUserEntersInputValueForPrepaidCustomFields() (0.0s)</pre>
+                        </td>
+                        <td>Succeeded in 0.183s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And user navigates to Disclosure Inputs Page</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAct: Scenario - Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 002] -->
+                            <pre class="log">done: CardsValidationSteps.WhenUserNavigatesToDisclosureInputsPage() (0.6s)</pre>
+                        </td>
+                        <td>Succeeded in 0.807s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And user enters disclosed input values for Closing Disclosure Loan Terms &amp; Projected Payments</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAct: Scenario - Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 002] -->
+                            <pre class="log">done: CardsValidationSteps.WhenUserEntersDisclosedInputValuesForClosingDisclosureLoanTermsProjectedPayments() (1.3s)</pre>
+                        </td>
+                        <td>Succeeded in 1.473s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And user enters disclosed input values for Closing Disclosure Loan Calculations</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAct: Scenario - Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 002] -->
+                            <pre class="log">done: CardsValidationSteps.WhenUserEntersDisclosedInputValuesForClosingDisclosureLoanCalculations() (1.3s)</pre>
+                        </td>
+                        <td>Succeeded in 1.479s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And user enters disclosed input values for Property Cost and Escrow</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAct: Scenario - Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 002] -->
+                            <pre class="log">done: CardsValidationSteps.WhenUserEntersDisclosedInputValuesForPropertyCostAndEscrow() (0.7s)</pre>
+                        </td>
+                        <td>Succeeded in 0.859s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And user navigates to Loan Estimate Cards Page</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAct: Scenario - Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 002] -->
+                            <pre class="log">done: CardsValidationSteps.WhenUserNavigatesToLoanEstimateCardsPage() (0.9s)</pre>
+                        </td>
+                        <td>Succeeded in 1.096s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And user enters disclsoed input values for Loan Estimate - Comparisons</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAct: Scenario - Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 002] -->
+                            <pre class="log">done: CardsValidationSteps.WhenUserEntersDisclsoedInputValuesForLoanEstimate_Comparisons() (0.6s)</pre>
+                        </td>
+                        <td>Succeeded in 0.752s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And user navigates to Amortization Page</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAct: Scenario - Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 002] -->
+                            <pre class="log">done: AmortizationValidationSteps.WhenUserNavigatesToAmortizationPage() (0.4s)</pre>
+                        </td>
+                        <td>Succeeded in 0.584s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">Then updated/computed Payment Stream Number value should display on Payment Schedule Grid</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAssert: Scenario - Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 002] -->
+                            <pre class="log">===========================================================
+ExpectedValue Row 1 :1
+ActualValue Row 1 :1
+============================================================
+===========================================================
+ExpectedValue Row 2 :2
+ActualValue Row 2 :2
+============================================================
+===========================================================
+ExpectedValue Row 3 :3
+ActualValue Row 3 :3
+============================================================
+done: AmortizationValidationSteps.ThenUpdatedComputedPaymentStreamNumberValueShouldDisplayOnPaymentScheduleGrid() (1.5s)</pre>
+                        </td>
+                        <td>Succeeded in 1.612s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And updated/computed Number of Payments value should display on Payment Schedule Grid</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAssert: Scenario - Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 002] -->
+                            <pre class="log">===========================================================
+ExpectedValue Row 1 :24
+ActualValue Row 1 :24
+============================================================
+===========================================================
+ExpectedValue Row 2 :155
+ActualValue Row 2 :155
+============================================================
+===========================================================
+ExpectedValue Row 3 :1
+ActualValue Row 3 :1
+============================================================
+done: AmortizationValidationSteps.ThenUpdatedComputedNumberOfPaymentsValueShouldDisplayOnPaymentScheduleGrid() (1.1s)</pre>
+                        </td>
+                        <td>Succeeded in 1.228s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And updated/computed Payment Amount value should display on Payment Schedule Grid</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAssert: Scenario - Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 002] -->
+                            <pre class="log">===========================================================
+ExpectedValue Row 1 :1295.61
+ActualValue Row 1 :1295.61
+============================================================
+NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 2 with the difference of 0.649999999999864
+  Expected: 1214.1800000000001d
+  But was:  1214.8299999999999d
+
+   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 132
+===========================================================
+ExpectedValue Row 3 :1213.08
+ActualValue Row 3 :1213.08
+============================================================
+done: AmortizationValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnPaymentScheduleGrid() (1.2s)</pre>
+                        </td>
+                        <td>Succeeded in 1.301s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And updated/computed Payment Amount value should display on Payment Schedule Grid</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAssert: Scenario - Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 002] -->
+                            <pre class="log">===========================================================
+ExpectedValue Row 1 :1295.61
+ActualValue Row 1 :1295.61
+============================================================
+NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 2 with the difference of 0.649999999999864
+  Expected: 1214.1800000000001d
+  But was:  1214.8299999999999d
+
+   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 132
+===========================================================
+ExpectedValue Row 3 :1213.08
+ActualValue Row 3 :1213.08
+============================================================
+done: AmortizationValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnPaymentScheduleGrid() (1.0s)</pre>
+                        </td>
+                        <td>Succeeded in 1.156s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And updated/computed Period Payment value should display on Payment Schedule Grid</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAssert: Scenario - Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 002] -->
+                            <pre class="log">===========================================================
+ExpectedValue Row 1 :1214.83
+ActualValue Row 1 :1214.83
+============================================================
+===========================================================
+ExpectedValue Row 2 :1214.83
+ActualValue Row 2 :1214.83
+============================================================
+===========================================================
+ExpectedValue Row 3 :1213.08
+ActualValue Row 3 :1213.08
+============================================================
+done: AmortizationValidationSteps.ThenUpdatedComputedPeriodPaymentValueShouldDisplayOnPaymentScheduleGrid() (0.9s)</pre>
+                        </td>
+                        <td>Succeeded in 1.052s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And updated/computed Ins Escrowed Amount value should display on Payment Schedule Grid</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAssert: Scenario - Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 002] -->
+                            <pre class="log">OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//section[@id=&#39;PaymentScheduleOutputAPR&#39;]//tr[1]/td[6]&quot;}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+   at OpenQA.Selenium.By.&lt;&gt;c__DisplayClasse.&lt;XPath&gt;b__c(ISearchContext context)
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\ActionClasses\UIActions.cs:line 37
+   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedInsEscrowedAmountValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 231
+OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//section[@id=&#39;PaymentScheduleOutputAPR&#39;]//tr[2]/td[6]&quot;}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+   at OpenQA.Selenium.By.&lt;&gt;c__DisplayClasse.&lt;XPath&gt;b__c(ISearchContext context)
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\ActionClasses\UIActions.cs:line 37
+   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedInsEscrowedAmountValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 231
+OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//section[@id=&#39;PaymentScheduleOutputAPR&#39;]//tr[3]/td[6]&quot;}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+   at OpenQA.Selenium.By.&lt;&gt;c__DisplayClasse.&lt;XPath&gt;b__c(ISearchContext context)
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\ActionClasses\UIActions.cs:line 37
+   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedInsEscrowedAmountValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 231
+done: AmortizationValidationSteps.ThenUpdatedComputedInsEscrowedAmountValueShouldDisplayOnPaymentScheduleGrid() (2.5s)</pre>
+                        </td>
+                        <td>Succeeded in 2.639s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And updated/computed Tax Escrowed Amount value should display on Payment Schedule Grid</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAssert: Scenario - Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 002] -->
+                            <pre class="log">OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//section[@id=&#39;PaymentScheduleOutputAPR&#39;]//tr[1]/td[7]&quot;}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+   at OpenQA.Selenium.By.&lt;&gt;c__DisplayClasse.&lt;XPath&gt;b__c(ISearchContext context)
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\ActionClasses\UIActions.cs:line 37
+   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedTaxEscrowedAmountValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 265
+OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//section[@id=&#39;PaymentScheduleOutputAPR&#39;]//tr[2]/td[7]&quot;}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+   at OpenQA.Selenium.By.&lt;&gt;c__DisplayClasse.&lt;XPath&gt;b__c(ISearchContext context)
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\ActionClasses\UIActions.cs:line 37
+   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedTaxEscrowedAmountValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 265
+OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//section[@id=&#39;PaymentScheduleOutputAPR&#39;]//tr[3]/td[7]&quot;}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+   at OpenQA.Selenium.By.&lt;&gt;c__DisplayClasse.&lt;XPath&gt;b__c(ISearchContext context)
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\ActionClasses\UIActions.cs:line 37
+   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedTaxEscrowedAmountValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 265
+done: AmortizationValidationSteps.ThenUpdatedComputedTaxEscrowedAmountValueShouldDisplayOnPaymentScheduleGrid() (2.6s)</pre>
+                        </td>
+                        <td>Succeeded in 2.769s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log"></pre>
+                        </td>
+                        <td>
+                            <!-- [Cleanup: TestAssembly - TRID] -->
+                            <pre class="log">##########################################################
+##########################################################
+====================================================================================
+Scenario Number : 2
+The total number of cards Failue: 8
+Name of cards Failed: || PaymentAmount[1] || : NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 2 with the difference of 0.649999999999864
+  Expected: 1214.1800000000001d
+  But was:  1214.8299999999999d
+
+   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 132 
+ ====================================================================================
+|| PaymentAmount[1] || : NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 2 with the difference of 0.649999999999864
+  Expected: 1214.1800000000001d
+  But was:  1214.8299999999999d
+
+   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 132 
+ ====================================================================================
+|| InsEscrowedAmount[0] || : OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//section[@id=&#39;PaymentScheduleOutputAPR&#39;]//tr[1]/td[6]&quot;}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+   at OpenQA.Selenium.By.&lt;&gt;c__DisplayClasse.&lt;XPath&gt;b__c(ISearchContext context)
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\ActionClasses\UIActions.cs:line 37
+   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedInsEscrowedAmountValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 231 
+ ====================================================================================
+|| InsEscrowedAmount[1] || : OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//section[@id=&#39;PaymentScheduleOutputAPR&#39;]//tr[2]/td[6]&quot;}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+   at OpenQA.Selenium.By.&lt;&gt;c__DisplayClasse.&lt;XPath&gt;b__c(ISearchContext context)
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\ActionClasses\UIActions.cs:line 37
+   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedInsEscrowedAmountValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 231 
+ ====================================================================================
+|| InsEscrowedAmount[2] || : OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//section[@id=&#39;PaymentScheduleOutputAPR&#39;]//tr[3]/td[6]&quot;}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+   at OpenQA.Selenium.By.&lt;&gt;c__DisplayClasse.&lt;XPath&gt;b__c(ISearchContext context)
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\ActionClasses\UIActions.cs:line 37
+   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedInsEscrowedAmountValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 231 
+ ====================================================================================
+|| TaxEscrowedAmount[0] || : OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//section[@id=&#39;PaymentScheduleOutputAPR&#39;]//tr[1]/td[7]&quot;}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+   at OpenQA.Selenium.By.&lt;&gt;c__DisplayClasse.&lt;XPath&gt;b__c(ISearchContext context)
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\ActionClasses\UIActions.cs:line 37
+   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedTaxEscrowedAmountValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 265 
+ ====================================================================================
+|| TaxEscrowedAmount[1] || : OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//section[@id=&#39;PaymentScheduleOutputAPR&#39;]//tr[2]/td[7]&quot;}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+   at OpenQA.Selenium.By.&lt;&gt;c__DisplayClasse.&lt;XPath&gt;b__c(ISearchContext context)
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\ActionClasses\UIActions.cs:line 37
+   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedTaxEscrowedAmountValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 265 
+ ====================================================================================
+|| TaxEscrowedAmount[2] || : OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//section[@id=&#39;PaymentScheduleOutputAPR&#39;]//tr[3]/td[7]&quot;}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+   at OpenQA.Selenium.By.&lt;&gt;c__DisplayClasse.&lt;XPath&gt;b__c(ISearchContext context)
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\ActionClasses\UIActions.cs:line 37
+   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedTaxEscrowedAmountValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 265 
+ ====================================================================================
+
+====================================================================================
+##########################################################
+##########################################################</pre>
+                                <div class="errorMessage">Test Case failed</div>
+                                <pre class="stackTrace">System.Exception: Test Case failed
+   at TRID.StepDefinitions.AmortizationValidationSteps.TearDown() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 307
+   at lambda_method(Closure , IContextManager )
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.FireEvents(HookType bindingEvent)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnTestRunEnd()
+   at TechTalk.SpecFlow.TestRunner.OnTestRunEnd()
+   at TRID.FeatureFiles.AmortizationValidationFeature.TestRunCleanup()
+   at TechTalk.SpecRun.Framework.TaskExecutors.StaticOrInstanceMethodExecutor.ExecuteInternal(ITestThreadExecutionContext testThreadExecutionContext)
+   at TechTalk.SpecRun.Framework.TaskExecutors.StaticOrInstanceMethodExecutor.Execute(ITestThreadExecutionContext testThreadExecutionContext)
+   at TechTalk.SpecRun.Framework.TaskExecutors.ChainedTaskExecutor.Execute(ITestThreadExecutionContext testThreadExecutionContext)
+   at TechTalk.SpecRun.Framework.TestAssemblyExecutor.ExecuteTestNodeTask(TestNode testNode, ITaskExecutor task, TraceEventType eventType)</pre>
+                        </td>
+                        <td>Failed in 6.689s</td>
+                    </tr>
+            </table>
+            <a name="t-326752725.0" />
+            <h3>Scenario: Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 001 (in TRID, AmortizationValidation)</h3>
+            <ul>
+                <li>Status: CleanupFailed</li>
+                <li>Start time: 7/14/2017 5:48:55 PM</li>
+                <li>Execution time (sec): 88.6595349</li>
+                <li>Thread: #0</li>
+                <li>Error: Test Case failed</li>
+            </ul>
+            <table class="testEvents">
+                <tr>
+                    <th>Steps</th>
+                    <th>Trace</th>
+                    <th>Result</th>
+                </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">Given user is at TRID application homepage</pre>
+                        </td>
+                        <td>
+                            <!-- [TestArrange: Scenario - Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 001] -->
+                            <pre class="log">done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (28.0s)</pre>
+                        </td>
+                        <td>Succeeded in 27.993s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And user have closing disclosure data from excel sheet ClosingDisclosure for the scenario 2</pre>
+                        </td>
+                        <td>
+                            <!-- [TestArrange: Scenario - Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 001] -->
+                            <pre class="log">done: CardsValidationSteps.GivenUserHaveClosingDisclosureDataFromExcelSheetForTheScenario(&quot;ClosingDisclosure&quot;, 2) (2.8s)</pre>
+                        </td>
+                        <td>Succeeded in 2.81s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And user have Mortgage Insurance data from excel sheet MortgageInsurance for the scenario 2</pre>
+                        </td>
+                        <td>
+                            <!-- [TestArrange: Scenario - Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 001] -->
+                            <pre class="log">done: CardsValidationSteps.GivenUserHaveMortgageInsuranceDataFromExcelSheetForTheScenarioMortgageInsurance(&quot;MortgageInsurance&quot;, 2) (1.1s)</pre>
+                        </td>
+                        <td>Succeeded in 1.113s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And user have variable loan data from excel sheet ARM Terms for the scenario 1</pre>
+                        </td>
+                        <td>
+                            <!-- [TestArrange: Scenario - Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 001] -->
+                            <pre class="log">done: CardsValidationSteps.GivenUserHaveVariableLoanDataFromExcelSheetForTheScenario(&quot;ARM Terms&quot;, 1) (1.4s)</pre>
+                        </td>
+                        <td>Succeeded in 1.403s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And user have Prepaid Charges data from excel sheet PrepaidCharges for the scenario 2</pre>
+                        </td>
+                        <td>
+                            <!-- [TestArrange: Scenario - Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 001] -->
+                            <pre class="log">done: CardsValidationSteps.GivenUserHavePrepaidChargesDataFromExcelSheetPrepaidChargesForTheScenario(&quot;PrepaidCharges&quot;, 2) (1.5s)</pre>
+                        </td>
+                        <td>Succeeded in 1.514s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And user have Export data from excel sheet Export for the scenario 2</pre>
+                        </td>
+                        <td>
+                            <!-- [TestArrange: Scenario - Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 001] -->
+                            <pre class="log">done: CardsValidationSteps.GivenUserHaveExportDataFromExcelSheetExportForTheScenario(&quot;Export&quot;, 2) (1.3s)</pre>
+                        </td>
+                        <td>Succeeded in 1.309s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And user have Escrow Grid data from excel sheet EscrowGrid for the scenario 2</pre>
+                        </td>
+                        <td>
+                            <!-- [TestArrange: Scenario - Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 001] -->
+                            <pre class="log">done: CardsValidationSteps.GivenUserHaveEscrowGridDataFromExcelSheetForTheScenario(&quot;EscrowGrid&quot;, 2) (1.0s)</pre>
+                        </td>
+                        <td>Succeeded in 1.004s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And user have Payment Schedule data from excel sheet PaymentSchedule for the scenario 2</pre>
+                        </td>
+                        <td>
+                            <!-- [TestArrange: Scenario - Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 001] -->
+                            <pre class="log">done: AmortizationValidationSteps.GivenUserHavePaymentScheduleDataFromExcelSheetForTheScenario(&quot;PaymentSchedule&quot;, 2) (1.6s)</pre>
+                        </td>
+                        <td>Succeeded in 1.61s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">When user navigate to Loan Inputs Page</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAct: Scenario - Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 001] -->
+                            <pre class="log">done: CardsValidationSteps.WhenUserNavigateToLoanInputsPage() (2.3s)</pre>
+                        </td>
+                        <td>Succeeded in 2.319s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And user selects Calculation Method</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAct: Scenario - Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 001] -->
+                            <pre class="log">done: CardsValidationSteps.WhenUserSelectsCalculationMethodInClosingDisclosurePage() (0.3s)</pre>
+                        </td>
+                        <td>Succeeded in 0.259s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And user selects loan type</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAct: Scenario - Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 001] -->
+                            <pre class="log">done: CardsValidationSteps.WhenUserSelectsLoanTypeInClosingDisclosurePage() (0.2s)</pre>
+                        </td>
+                        <td>Succeeded in 0.204s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And user selects Frequency of Payments</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAct: Scenario - Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 001] -->
+                            <pre class="log">done: CardsValidationSteps.WhenUserSelectsFrequencyOfPaymentsInClosingDisclosurePage() (0.2s)</pre>
+                        </td>
+                        <td>Succeeded in 0.185s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And user selects Loan Term</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAct: Scenario - Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 001] -->
+                            <pre class="log">done: CardsValidationSteps.WhenUserSelectsLoanTermInClosingDisclosurePage() (0.1s)</pre>
+                        </td>
+                        <td>Succeeded in 0.146s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And user selects Repayment Term Type</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAct: Scenario - Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 001] -->
+                            <pre class="log">done: CardsValidationSteps.WhenUserSelectsRepaymentTermTypeInClosingDisclosurePage() (0.2s)</pre>
+                        </td>
+                        <td>Succeeded in 0.173s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And user enters Loan detail input values for computation</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAct: Scenario - Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 001] -->
+                            <pre class="log">done: CardsValidationSteps.WhenUserEntersLoanDetailInputValuesForComputationforClosingDisclosurepage() (3.9s)</pre>
+                        </td>
+                        <td>Succeeded in 3.914s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And user enters pmi rate values</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAct: Scenario - Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 001] -->
+                            <pre class="log">done: CardsValidationSteps.WhenUserEntersPmiRateValues() (4.1s)</pre>
+                        </td>
+                        <td>Succeeded in 4.176s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And user enters other pmi input values</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAct: Scenario - Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 001] -->
+                            <pre class="log">done: CardsValidationSteps.WhenUserEntersOtherPmiInputValues() (1.6s)</pre>
+                        </td>
+                        <td>Succeeded in 1.843s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And user enters Escrow Grid Input values</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAct: Scenario - Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 001] -->
+                            <pre class="log">done: CardsValidationSteps.WhenUserEntersEscrowGridInputValues() (7.3s)</pre>
+                        </td>
+                        <td>Succeeded in 7.491s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And user enters all input values for Prepaid Charges</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAct: Scenario - Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 001] -->
+                            <pre class="log">done: CardsValidationSteps.WhenUserEntersAllInputValuesForPrepaidCharges() (5.0s)</pre>
+                        </td>
+                        <td>Succeeded in 5.181s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And user enters input value for prepaid custom fields</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAct: Scenario - Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 001] -->
+                            <pre class="log">done: CardsValidationSteps.WhenUserEntersInputValueForPrepaidCustomFields() (0.0s)</pre>
+                        </td>
+                        <td>Succeeded in 0.197s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And user navigates to Disclosure Inputs Page</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAct: Scenario - Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 001] -->
+                            <pre class="log">done: CardsValidationSteps.WhenUserNavigatesToDisclosureInputsPage() (0.7s)</pre>
+                        </td>
+                        <td>Succeeded in 0.851s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And user enters disclosed input values for Closing Disclosure Loan Terms &amp; Projected Payments</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAct: Scenario - Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 001] -->
+                            <pre class="log">done: CardsValidationSteps.WhenUserEntersDisclosedInputValuesForClosingDisclosureLoanTermsProjectedPayments() (1.3s)</pre>
+                        </td>
+                        <td>Succeeded in 1.427s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And user enters disclosed input values for Closing Disclosure Loan Calculations</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAct: Scenario - Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 001] -->
+                            <pre class="log">done: CardsValidationSteps.WhenUserEntersDisclosedInputValuesForClosingDisclosureLoanCalculations() (1.3s)</pre>
+                        </td>
+                        <td>Succeeded in 1.532s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And user enters disclosed input values for Property Cost and Escrow</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAct: Scenario - Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 001] -->
+                            <pre class="log">done: CardsValidationSteps.WhenUserEntersDisclosedInputValuesForPropertyCostAndEscrow() (0.7s)</pre>
+                        </td>
+                        <td>Succeeded in 0.864s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And user navigates to Loan Estimate Cards Page</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAct: Scenario - Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 001] -->
+                            <pre class="log">done: CardsValidationSteps.WhenUserNavigatesToLoanEstimateCardsPage() (0.9s)</pre>
+                        </td>
+                        <td>Succeeded in 1.047s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And user enters disclsoed input values for Loan Estimate - Comparisons</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAct: Scenario - Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 001] -->
+                            <pre class="log">done: CardsValidationSteps.WhenUserEntersDisclsoedInputValuesForLoanEstimate_Comparisons() (0.8s)</pre>
+                        </td>
+                        <td>Succeeded in 0.916s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And user navigates to Amortization Page</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAct: Scenario - Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 001] -->
+                            <pre class="log">done: AmortizationValidationSteps.WhenUserNavigatesToAmortizationPage() (1.6s)</pre>
+                        </td>
+                        <td>Succeeded in 1.727s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">Then updated/computed Payment Stream Number value should display on Payment Schedule Grid</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAssert: Scenario - Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 001] -->
+                            <pre class="log">===========================================================
+ExpectedValue Row 1 :1
+ActualValue Row 1 :1
+============================================================
+===========================================================
+ExpectedValue Row 2 :2
+ActualValue Row 2 :2
+============================================================
+===========================================================
+ExpectedValue Row 3 :3
+ActualValue Row 3 :3
+============================================================
+done: AmortizationValidationSteps.ThenUpdatedComputedPaymentStreamNumberValueShouldDisplayOnPaymentScheduleGrid() (1.0s)</pre>
+                        </td>
+                        <td>Succeeded in 1.18s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And updated/computed Number of Payments value should display on Payment Schedule Grid</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAssert: Scenario - Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 001] -->
+                            <pre class="log">===========================================================
+ExpectedValue Row 1 :48
+ActualValue Row 1 :48
+============================================================
+===========================================================
+ExpectedValue Row 2 :311
+ActualValue Row 2 :311
+============================================================
+===========================================================
+ExpectedValue Row 3 :1
+ActualValue Row 3 :1
+============================================================
+done: AmortizationValidationSteps.ThenUpdatedComputedNumberOfPaymentsValueShouldDisplayOnPaymentScheduleGrid() (1.0s)</pre>
+                        </td>
+                        <td>Succeeded in 1.13s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And updated/computed Payment Amount value should display on Payment Schedule Grid</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAssert: Scenario - Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 001] -->
+                            <pre class="log">===========================================================
+ExpectedValue Row 1 :647.3
+ActualValue Row 1 :647.3
+============================================================
+===========================================================
+ExpectedValue Row 2 :606.91
+ActualValue Row 2 :606.91
+============================================================
+===========================================================
+ExpectedValue Row 3 :605.2
+ActualValue Row 3 :605.2
+============================================================
+done: AmortizationValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnPaymentScheduleGrid() (1.0s)</pre>
+                        </td>
+                        <td>Succeeded in 1.122s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And updated/computed Payment Amount value should display on Payment Schedule Grid</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAssert: Scenario - Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 001] -->
+                            <pre class="log">===========================================================
+ExpectedValue Row 1 :647.3
+ActualValue Row 1 :647.3
+============================================================
+===========================================================
+ExpectedValue Row 2 :606.91
+ActualValue Row 2 :606.91
+============================================================
+===========================================================
+ExpectedValue Row 3 :605.2
+ActualValue Row 3 :605.2
+============================================================
+done: AmortizationValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnPaymentScheduleGrid() (0.8s)</pre>
+                        </td>
+                        <td>Succeeded in 0.967s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And updated/computed Period Payment value should display on Payment Schedule Grid</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAssert: Scenario - Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 001] -->
+                            <pre class="log">===========================================================
+ExpectedValue Row 1 :606.91
+ActualValue Row 1 :606.91
+============================================================
+===========================================================
+ExpectedValue Row 2 :606.91
+ActualValue Row 2 :606.91
+============================================================
+===========================================================
+ExpectedValue Row 3 :605.2
+ActualValue Row 3 :605.2
+============================================================
+done: AmortizationValidationSteps.ThenUpdatedComputedPeriodPaymentValueShouldDisplayOnPaymentScheduleGrid() (0.9s)</pre>
+                        </td>
+                        <td>Succeeded in 1.087s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And updated/computed Ins Escrowed Amount value should display on Payment Schedule Grid</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAssert: Scenario - Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 001] -->
+                            <pre class="log">OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//section[@id=&#39;PaymentScheduleOutputAPR&#39;]//tr[1]/td[6]&quot;}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+   at OpenQA.Selenium.By.&lt;&gt;c__DisplayClasse.&lt;XPath&gt;b__c(ISearchContext context)
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\ActionClasses\UIActions.cs:line 37
+   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedInsEscrowedAmountValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 231
+OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//section[@id=&#39;PaymentScheduleOutputAPR&#39;]//tr[2]/td[6]&quot;}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+   at OpenQA.Selenium.By.&lt;&gt;c__DisplayClasse.&lt;XPath&gt;b__c(ISearchContext context)
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\ActionClasses\UIActions.cs:line 37
+   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedInsEscrowedAmountValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 231
+OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//section[@id=&#39;PaymentScheduleOutputAPR&#39;]//tr[3]/td[6]&quot;}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+   at OpenQA.Selenium.By.&lt;&gt;c__DisplayClasse.&lt;XPath&gt;b__c(ISearchContext context)
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\ActionClasses\UIActions.cs:line 37
+   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedInsEscrowedAmountValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 231
+done: AmortizationValidationSteps.ThenUpdatedComputedInsEscrowedAmountValueShouldDisplayOnPaymentScheduleGrid() (2.6s)</pre>
+                        </td>
+                        <td>Succeeded in 2.749s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And updated/computed Tax Escrowed Amount value should display on Payment Schedule Grid</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAssert: Scenario - Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 001] -->
+                            <pre class="log">OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//section[@id=&#39;PaymentScheduleOutputAPR&#39;]//tr[1]/td[7]&quot;}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+   at OpenQA.Selenium.By.&lt;&gt;c__DisplayClasse.&lt;XPath&gt;b__c(ISearchContext context)
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\ActionClasses\UIActions.cs:line 37
+   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedTaxEscrowedAmountValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 265
+OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//section[@id=&#39;PaymentScheduleOutputAPR&#39;]//tr[2]/td[7]&quot;}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+   at OpenQA.Selenium.By.&lt;&gt;c__DisplayClasse.&lt;XPath&gt;b__c(ISearchContext context)
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\ActionClasses\UIActions.cs:line 37
+   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedTaxEscrowedAmountValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 265
+done: AmortizationValidationSteps.ThenUpdatedComputedTaxEscrowedAmountValueShouldDisplayOnPaymentScheduleGrid() (1.7s)</pre>
+                        </td>
+                        <td>Succeeded in 1.877s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log"></pre>
+                        </td>
+                        <td>
+                            <!-- [Cleanup: TestAssembly - TRID] -->
+                            <pre class="log">##########################################################
+##########################################################
+====================================================================================
+Scenario Number : 1
+The total number of cards Failue: 5
+Name of cards Failed: || InsEscrowedAmount[0] || : OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//section[@id=&#39;PaymentScheduleOutputAPR&#39;]//tr[1]/td[6]&quot;}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+   at OpenQA.Selenium.By.&lt;&gt;c__DisplayClasse.&lt;XPath&gt;b__c(ISearchContext context)
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\ActionClasses\UIActions.cs:line 37
+   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedInsEscrowedAmountValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 231 
+ ====================================================================================
+|| InsEscrowedAmount[1] || : OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//section[@id=&#39;PaymentScheduleOutputAPR&#39;]//tr[2]/td[6]&quot;}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+   at OpenQA.Selenium.By.&lt;&gt;c__DisplayClasse.&lt;XPath&gt;b__c(ISearchContext context)
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\ActionClasses\UIActions.cs:line 37
+   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedInsEscrowedAmountValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 231 
+ ====================================================================================
+|| InsEscrowedAmount[2] || : OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//section[@id=&#39;PaymentScheduleOutputAPR&#39;]//tr[3]/td[6]&quot;}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+   at OpenQA.Selenium.By.&lt;&gt;c__DisplayClasse.&lt;XPath&gt;b__c(ISearchContext context)
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\ActionClasses\UIActions.cs:line 37
+   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedInsEscrowedAmountValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 231 
+ ====================================================================================
+|| TaxEscrowedAmount[0] || : OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//section[@id=&#39;PaymentScheduleOutputAPR&#39;]//tr[1]/td[7]&quot;}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+   at OpenQA.Selenium.By.&lt;&gt;c__DisplayClasse.&lt;XPath&gt;b__c(ISearchContext context)
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\ActionClasses\UIActions.cs:line 37
+   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedTaxEscrowedAmountValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 265 
+ ====================================================================================
+|| TaxEscrowedAmount[1] || : OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//section[@id=&#39;PaymentScheduleOutputAPR&#39;]//tr[2]/td[7]&quot;}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+   at OpenQA.Selenium.By.&lt;&gt;c__DisplayClasse.&lt;XPath&gt;b__c(ISearchContext context)
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\ActionClasses\UIActions.cs:line 37
+   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedTaxEscrowedAmountValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 265 
+ ====================================================================================
+
+====================================================================================
+##########################################################
+##########################################################</pre>
+                                <div class="errorMessage">Test Case failed</div>
+                                <pre class="stackTrace">System.Exception: Test Case failed
+   at TRID.StepDefinitions.AmortizationValidationSteps.TearDown() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 307
+   at lambda_method(Closure , IContextManager )
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.FireEvents(HookType bindingEvent)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnTestRunEnd()
+   at TechTalk.SpecFlow.TestRunner.OnTestRunEnd()
+   at TRID.FeatureFiles.AmortizationValidationFeature.TestRunCleanup()
+   at TechTalk.SpecRun.Framework.TaskExecutors.StaticOrInstanceMethodExecutor.ExecuteInternal(ITestThreadExecutionContext testThreadExecutionContext)
+   at TechTalk.SpecRun.Framework.TaskExecutors.StaticOrInstanceMethodExecutor.Execute(ITestThreadExecutionContext testThreadExecutionContext)
+   at TechTalk.SpecRun.Framework.TaskExecutors.ChainedTaskExecutor.Execute(ITestThreadExecutionContext testThreadExecutionContext)
+   at TechTalk.SpecRun.Framework.TestAssemblyExecutor.ExecuteTestNodeTask(TestNode testNode, ITaskExecutor task, TraceEventType eventType)</pre>
+                        </td>
+                        <td>Failed in 5.071s</td>
+                    </tr>
+            </table>
+            <a name="t-326883797.0" />
+            <h3>Scenario: Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 003 (in TRID, AmortizationValidation)</h3>
+            <ul>
+                <li>Status: CleanupFailed</li>
+                <li>Start time: 7/14/2017 5:48:55 PM</li>
+                <li>Execution time (sec): 91.8409548</li>
+                <li>Thread: #2</li>
+                <li>Error: Test Case failed</li>
+            </ul>
+            <table class="testEvents">
+                <tr>
+                    <th>Steps</th>
+                    <th>Trace</th>
+                    <th>Result</th>
+                </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">Given user is at TRID application homepage</pre>
+                        </td>
+                        <td>
+                            <!-- [TestArrange: Scenario - Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 003] -->
+                            <pre class="log">done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (28.2s)</pre>
+                        </td>
+                        <td>Succeeded in 28.206s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And user have closing disclosure data from excel sheet ClosingDisclosure for the scenario 4</pre>
+                        </td>
+                        <td>
+                            <!-- [TestArrange: Scenario - Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 003] -->
+                            <pre class="log">done: CardsValidationSteps.GivenUserHaveClosingDisclosureDataFromExcelSheetForTheScenario(&quot;ClosingDisclosure&quot;, 4) (3.7s)</pre>
+                        </td>
+                        <td>Succeeded in 3.728s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And user have Mortgage Insurance data from excel sheet MortgageInsurance for the scenario 4</pre>
+                        </td>
+                        <td>
+                            <!-- [TestArrange: Scenario - Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 003] -->
+                            <pre class="log">done: CardsValidationSteps.GivenUserHaveMortgageInsuranceDataFromExcelSheetForTheScenarioMortgageInsurance(&quot;MortgageInsurance&quot;, 4) (1.5s)</pre>
+                        </td>
+                        <td>Succeeded in 1.539s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And user have variable loan data from excel sheet ARM Terms for the scenario 1</pre>
+                        </td>
+                        <td>
+                            <!-- [TestArrange: Scenario - Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 003] -->
+                            <pre class="log">done: CardsValidationSteps.GivenUserHaveVariableLoanDataFromExcelSheetForTheScenario(&quot;ARM Terms&quot;, 1) (1.9s)</pre>
+                        </td>
+                        <td>Succeeded in 1.915s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And user have Prepaid Charges data from excel sheet PrepaidCharges for the scenario 4</pre>
+                        </td>
+                        <td>
+                            <!-- [TestArrange: Scenario - Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 003] -->
+                            <pre class="log">done: CardsValidationSteps.GivenUserHavePrepaidChargesDataFromExcelSheetPrepaidChargesForTheScenario(&quot;PrepaidCharges&quot;, 4) (1.5s)</pre>
+                        </td>
+                        <td>Succeeded in 1.515s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And user have Export data from excel sheet Export for the scenario 4</pre>
+                        </td>
+                        <td>
+                            <!-- [TestArrange: Scenario - Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 003] -->
+                            <pre class="log">done: CardsValidationSteps.GivenUserHaveExportDataFromExcelSheetExportForTheScenario(&quot;Export&quot;, 4) (1.3s)</pre>
+                        </td>
+                        <td>Succeeded in 1.26s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And user have Escrow Grid data from excel sheet EscrowGrid for the scenario 4</pre>
+                        </td>
+                        <td>
+                            <!-- [TestArrange: Scenario - Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 003] -->
+                            <pre class="log">done: CardsValidationSteps.GivenUserHaveEscrowGridDataFromExcelSheetForTheScenario(&quot;EscrowGrid&quot;, 4) (1.0s)</pre>
+                        </td>
+                        <td>Succeeded in 0.97s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And user have Payment Schedule data from excel sheet PaymentSchedule for the scenario 4</pre>
+                        </td>
+                        <td>
+                            <!-- [TestArrange: Scenario - Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 003] -->
+                            <pre class="log">done: AmortizationValidationSteps.GivenUserHavePaymentScheduleDataFromExcelSheetForTheScenario(&quot;PaymentSchedule&quot;, 4) (0.9s)</pre>
+                        </td>
+                        <td>Succeeded in 0.909s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">When user navigate to Loan Inputs Page</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAct: Scenario - Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 003] -->
+                            <pre class="log">done: CardsValidationSteps.WhenUserNavigateToLoanInputsPage() (2.2s)</pre>
+                        </td>
+                        <td>Succeeded in 2.189s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And user selects Calculation Method</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAct: Scenario - Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 003] -->
+                            <pre class="log">done: CardsValidationSteps.WhenUserSelectsCalculationMethodInClosingDisclosurePage() (0.3s)</pre>
+                        </td>
+                        <td>Succeeded in 0.253s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And user selects loan type</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAct: Scenario - Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 003] -->
+                            <pre class="log">done: CardsValidationSteps.WhenUserSelectsLoanTypeInClosingDisclosurePage() (0.2s)</pre>
+                        </td>
+                        <td>Succeeded in 0.224s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And user selects Frequency of Payments</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAct: Scenario - Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 003] -->
+                            <pre class="log">done: CardsValidationSteps.WhenUserSelectsFrequencyOfPaymentsInClosingDisclosurePage() (0.2s)</pre>
+                        </td>
+                        <td>Succeeded in 0.208s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And user selects Loan Term</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAct: Scenario - Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 003] -->
+                            <pre class="log">done: CardsValidationSteps.WhenUserSelectsLoanTermInClosingDisclosurePage() (0.2s)</pre>
+                        </td>
+                        <td>Succeeded in 0.182s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And user selects Repayment Term Type</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAct: Scenario - Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 003] -->
+                            <pre class="log">done: CardsValidationSteps.WhenUserSelectsRepaymentTermTypeInClosingDisclosurePage() (0.2s)</pre>
+                        </td>
+                        <td>Succeeded in 0.189s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And user enters Loan detail input values for computation</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAct: Scenario - Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 003] -->
+                            <pre class="log">done: CardsValidationSteps.WhenUserEntersLoanDetailInputValuesForComputationforClosingDisclosurepage() (4.2s)</pre>
+                        </td>
+                        <td>Succeeded in 4.226s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And user enters pmi rate values</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAct: Scenario - Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 003] -->
+                            <pre class="log">done: CardsValidationSteps.WhenUserEntersPmiRateValues() (3.9s)</pre>
+                        </td>
+                        <td>Succeeded in 4.012s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And user enters other pmi input values</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAct: Scenario - Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 003] -->
+                            <pre class="log">done: CardsValidationSteps.WhenUserEntersOtherPmiInputValues() (1.5s)</pre>
+                        </td>
+                        <td>Succeeded in 1.706s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And user enters Escrow Grid Input values</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAct: Scenario - Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 003] -->
+                            <pre class="log">done: CardsValidationSteps.WhenUserEntersEscrowGridInputValues() (7.1s)</pre>
+                        </td>
+                        <td>Succeeded in 7.308s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And user enters all input values for Prepaid Charges</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAct: Scenario - Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 003] -->
+                            <pre class="log">done: CardsValidationSteps.WhenUserEntersAllInputValuesForPrepaidCharges() (4.9s)</pre>
+                        </td>
+                        <td>Succeeded in 5.11s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And user enters input value for prepaid custom fields</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAct: Scenario - Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 003] -->
+                            <pre class="log">done: CardsValidationSteps.WhenUserEntersInputValueForPrepaidCustomFields() (0.0s)</pre>
+                        </td>
+                        <td>Succeeded in 0.157s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And user navigates to Disclosure Inputs Page</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAct: Scenario - Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 003] -->
+                            <pre class="log">done: CardsValidationSteps.WhenUserNavigatesToDisclosureInputsPage() (0.8s)</pre>
+                        </td>
+                        <td>Succeeded in 0.942s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And user enters disclosed input values for Closing Disclosure Loan Terms &amp; Projected Payments</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAct: Scenario - Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 003] -->
+                            <pre class="log">done: CardsValidationSteps.WhenUserEntersDisclosedInputValuesForClosingDisclosureLoanTermsProjectedPayments() (1.3s)</pre>
+                        </td>
+                        <td>Succeeded in 1.425s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And user enters disclosed input values for Closing Disclosure Loan Calculations</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAct: Scenario - Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 003] -->
+                            <pre class="log">done: CardsValidationSteps.WhenUserEntersDisclosedInputValuesForClosingDisclosureLoanCalculations() (1.4s)</pre>
+                        </td>
+                        <td>Succeeded in 1.527s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And user enters disclosed input values for Property Cost and Escrow</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAct: Scenario - Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 003] -->
+                            <pre class="log">done: CardsValidationSteps.WhenUserEntersDisclosedInputValuesForPropertyCostAndEscrow() (0.6s)</pre>
+                        </td>
+                        <td>Succeeded in 0.724s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And user navigates to Loan Estimate Cards Page</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAct: Scenario - Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 003] -->
+                            <pre class="log">done: CardsValidationSteps.WhenUserNavigatesToLoanEstimateCardsPage() (1.4s)</pre>
+                        </td>
+                        <td>Succeeded in 1.504s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And user enters disclsoed input values for Loan Estimate - Comparisons</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAct: Scenario - Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 003] -->
+                            <pre class="log">done: CardsValidationSteps.WhenUserEntersDisclsoedInputValuesForLoanEstimate_Comparisons() (0.7s)</pre>
+                        </td>
+                        <td>Succeeded in 0.88s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And user navigates to Amortization Page</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAct: Scenario - Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 003] -->
+                            <pre class="log">done: AmortizationValidationSteps.WhenUserNavigatesToAmortizationPage() (0.8s)</pre>
+                        </td>
+                        <td>Succeeded in 0.952s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">Then updated/computed Payment Stream Number value should display on Payment Schedule Grid</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAssert: Scenario - Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 003] -->
+                            <pre class="log">===========================================================
+ExpectedValue Row 1 :1
+ActualValue Row 1 :1
+============================================================
+===========================================================
+ExpectedValue Row 2 :2
+ActualValue Row 2 :2
+============================================================
+===========================================================
+ExpectedValue Row 3 :3
+ActualValue Row 3 :3
+============================================================
+done: AmortizationValidationSteps.ThenUpdatedComputedPaymentStreamNumberValueShouldDisplayOnPaymentScheduleGrid() (2.1s)</pre>
+                        </td>
+                        <td>Succeeded in 2.258s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And updated/computed Number of Payments value should display on Payment Schedule Grid</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAssert: Scenario - Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 003] -->
+                            <pre class="log">NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 1 with the difference of 6
+  Expected: 89.0d
+  But was:  83.0d
+
+   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedNumberOfPaymentsValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 98
+===========================================================
+ExpectedValue Row 2 :592
+ActualValue Row 2 :592
+============================================================
+===========================================================
+ExpectedValue Row 3 :1
+ActualValue Row 3 :1
+============================================================
+done: AmortizationValidationSteps.ThenUpdatedComputedNumberOfPaymentsValueShouldDisplayOnPaymentScheduleGrid() (1.2s)</pre>
+                        </td>
+                        <td>Succeeded in 1.299s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And updated/computed Payment Amount value should display on Payment Schedule Grid</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAssert: Scenario - Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 003] -->
+                            <pre class="log">===========================================================
+ExpectedValue Row 1 :321.98
+ActualValue Row 1 :321.98
+============================================================
+===========================================================
+ExpectedValue Row 2 :303.34
+ActualValue Row 2 :303.34
+============================================================
+===========================================================
+ExpectedValue Row 3 :98.13
+ActualValue Row 3 :98.13
+============================================================
+done: AmortizationValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnPaymentScheduleGrid() (1.0s)</pre>
+                        </td>
+                        <td>Succeeded in 1.113s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And updated/computed Payment Amount value should display on Payment Schedule Grid</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAssert: Scenario - Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 003] -->
+                            <pre class="log">===========================================================
+ExpectedValue Row 1 :321.98
+ActualValue Row 1 :321.98
+============================================================
+===========================================================
+ExpectedValue Row 2 :303.34
+ActualValue Row 2 :303.34
+============================================================
+===========================================================
+ExpectedValue Row 3 :98.13
+ActualValue Row 3 :98.13
+============================================================
+done: AmortizationValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnPaymentScheduleGrid() (0.9s)</pre>
+                        </td>
+                        <td>Succeeded in 1.027s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And updated/computed Period Payment value should display on Payment Schedule Grid</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAssert: Scenario - Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 003] -->
+                            <pre class="log">===========================================================
+ExpectedValue Row 1 :303.34
+ActualValue Row 1 :303.34
+============================================================
+===========================================================
+ExpectedValue Row 2 :303.34
+ActualValue Row 2 :303.34
+============================================================
+===========================================================
+ExpectedValue Row 3 :98.13
+ActualValue Row 3 :98.13
+============================================================
+done: AmortizationValidationSteps.ThenUpdatedComputedPeriodPaymentValueShouldDisplayOnPaymentScheduleGrid() (1.0s)</pre>
+                        </td>
+                        <td>Succeeded in 1.153s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And updated/computed Ins Escrowed Amount value should display on Payment Schedule Grid</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAssert: Scenario - Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 003] -->
+                            <pre class="log">OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//section[@id=&#39;PaymentScheduleOutputAPR&#39;]//tr[1]/td[6]&quot;}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+   at OpenQA.Selenium.By.&lt;&gt;c__DisplayClasse.&lt;XPath&gt;b__c(ISearchContext context)
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\ActionClasses\UIActions.cs:line 37
+   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedInsEscrowedAmountValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 231
+OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//section[@id=&#39;PaymentScheduleOutputAPR&#39;]//tr[2]/td[6]&quot;}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+   at OpenQA.Selenium.By.&lt;&gt;c__DisplayClasse.&lt;XPath&gt;b__c(ISearchContext context)
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\ActionClasses\UIActions.cs:line 37
+   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedInsEscrowedAmountValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 231
+OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//section[@id=&#39;PaymentScheduleOutputAPR&#39;]//tr[3]/td[6]&quot;}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+   at OpenQA.Selenium.By.&lt;&gt;c__DisplayClasse.&lt;XPath&gt;b__c(ISearchContext context)
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\ActionClasses\UIActions.cs:line 37
+   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedInsEscrowedAmountValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 231
+done: AmortizationValidationSteps.ThenUpdatedComputedInsEscrowedAmountValueShouldDisplayOnPaymentScheduleGrid() (2.6s)</pre>
+                        </td>
+                        <td>Succeeded in 2.692s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log">And updated/computed Tax Escrowed Amount value should display on Payment Schedule Grid</pre>
+                        </td>
+                        <td>
+                            <!-- [TestAssert: Scenario - Giving inputs from Excel file and validating Payment Schedule values on Amortization page, 003] -->
+                            <pre class="log">OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//section[@id=&#39;PaymentScheduleOutputAPR&#39;]//tr[1]/td[7]&quot;}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+   at OpenQA.Selenium.By.&lt;&gt;c__DisplayClasse.&lt;XPath&gt;b__c(ISearchContext context)
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\ActionClasses\UIActions.cs:line 37
+   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedTaxEscrowedAmountValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 265
+OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//section[@id=&#39;PaymentScheduleOutputAPR&#39;]//tr[2]/td[7]&quot;}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+   at OpenQA.Selenium.By.&lt;&gt;c__DisplayClasse.&lt;XPath&gt;b__c(ISearchContext context)
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\ActionClasses\UIActions.cs:line 37
+   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedTaxEscrowedAmountValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 265
+OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//section[@id=&#39;PaymentScheduleOutputAPR&#39;]//tr[3]/td[7]&quot;}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+   at OpenQA.Selenium.By.&lt;&gt;c__DisplayClasse.&lt;XPath&gt;b__c(ISearchContext context)
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\ActionClasses\UIActions.cs:line 37
+   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedTaxEscrowedAmountValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 265
+done: AmortizationValidationSteps.ThenUpdatedComputedTaxEscrowedAmountValueShouldDisplayOnPaymentScheduleGrid() (2.6s)</pre>
+                        </td>
+                        <td>Succeeded in 2.751s</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <pre class="log"></pre>
+                        </td>
+                        <td>
+                            <!-- [Cleanup: TestAssembly - TRID] -->
+                            <pre class="log">##########################################################
+##########################################################
+====================================================================================
+Scenario Number : 3
+The total number of cards Failue: 7
+Name of cards Failed: || PaymentScheduleNumberOfPayments[0] || : NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 1 with the difference of 6
+  Expected: 89.0d
+  But was:  83.0d
+
+   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedNumberOfPaymentsValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 98 
+ ====================================================================================
+|| InsEscrowedAmount[0] || : OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//section[@id=&#39;PaymentScheduleOutputAPR&#39;]//tr[1]/td[6]&quot;}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+   at OpenQA.Selenium.By.&lt;&gt;c__DisplayClasse.&lt;XPath&gt;b__c(ISearchContext context)
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\ActionClasses\UIActions.cs:line 37
+   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedInsEscrowedAmountValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 231 
+ ====================================================================================
+|| InsEscrowedAmount[1] || : OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//section[@id=&#39;PaymentScheduleOutputAPR&#39;]//tr[2]/td[6]&quot;}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+   at OpenQA.Selenium.By.&lt;&gt;c__DisplayClasse.&lt;XPath&gt;b__c(ISearchContext context)
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\ActionClasses\UIActions.cs:line 37
+   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedInsEscrowedAmountValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 231 
+ ====================================================================================
+|| InsEscrowedAmount[2] || : OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//section[@id=&#39;PaymentScheduleOutputAPR&#39;]//tr[3]/td[6]&quot;}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+   at OpenQA.Selenium.By.&lt;&gt;c__DisplayClasse.&lt;XPath&gt;b__c(ISearchContext context)
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\ActionClasses\UIActions.cs:line 37
+   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedInsEscrowedAmountValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 231 
+ ====================================================================================
+|| TaxEscrowedAmount[0] || : OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//section[@id=&#39;PaymentScheduleOutputAPR&#39;]//tr[1]/td[7]&quot;}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+   at OpenQA.Selenium.By.&lt;&gt;c__DisplayClasse.&lt;XPath&gt;b__c(ISearchContext context)
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\ActionClasses\UIActions.cs:line 37
+   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedTaxEscrowedAmountValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 265 
+ ====================================================================================
+|| TaxEscrowedAmount[1] || : OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//section[@id=&#39;PaymentScheduleOutputAPR&#39;]//tr[2]/td[7]&quot;}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+   at OpenQA.Selenium.By.&lt;&gt;c__DisplayClasse.&lt;XPath&gt;b__c(ISearchContext context)
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\ActionClasses\UIActions.cs:line 37
+   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedTaxEscrowedAmountValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 265 
+ ====================================================================================
+|| TaxEscrowedAmount[2] || : OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//section[@id=&#39;PaymentScheduleOutputAPR&#39;]//tr[3]/td[7]&quot;}
+  (Session info: chrome=59.0.3071.115)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+   at OpenQA.Selenium.By.&lt;&gt;c__DisplayClasse.&lt;XPath&gt;b__c(ISearchContext context)
+   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\ActionClasses\UIActions.cs:line 37
+   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedTaxEscrowedAmountValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 265 
+ ====================================================================================
+
+====================================================================================
+##########################################################
+##########################################################</pre>
+                                <div class="errorMessage">Test Case failed</div>
+                                <pre class="stackTrace">System.Exception: Test Case failed
+   at TRID.StepDefinitions.AmortizationValidationSteps.TearDown() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 307
+   at lambda_method(Closure , IContextManager )
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.FireEvents(HookType bindingEvent)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnTestRunEnd()
+   at TechTalk.SpecFlow.TestRunner.OnTestRunEnd()
+   at TRID.FeatureFiles.AmortizationValidationFeature.TestRunCleanup()
+   at TechTalk.SpecRun.Framework.TaskExecutors.StaticOrInstanceMethodExecutor.ExecuteInternal(ITestThreadExecutionContext testThreadExecutionContext)
+   at TechTalk.SpecRun.Framework.TaskExecutors.StaticOrInstanceMethodExecutor.Execute(ITestThreadExecutionContext testThreadExecutionContext)
+   at TechTalk.SpecRun.Framework.TaskExecutors.ChainedTaskExecutor.Execute(ITestThreadExecutionContext testThreadExecutionContext)
+   at TechTalk.SpecRun.Framework.TestAssemblyExecutor.ExecuteTestNodeTask(TestNode testNode, ITaskExecutor task, TraceEventType eventType)</pre>
+                        </td>
+                        <td>Failed in 5.52s</td>
+                    </tr>
+            </table>
+	</body>
+</html>
+</a><div style='position: absolute; top:0px; right:10px; z-index: 1000; text-align: right; font-size: small; color: #FF5555'>
+Generated by an evaluation version of SpecRun.<br />
+This version can be used for evaluation purposes only.<br />
+For obtaining a registered license please visit <a href='http://www.specflow.org/plus'>http://www.specflow.org/plus</a>.
+</div>

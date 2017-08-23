@@ -1,0 +1,160 @@
+﻿VS filter: testpath:TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+041
+Discovering target: Default
+Discovering tests from assembly: F:\Projects\TRID QA\QA\UI Automation\SpecFramework\bin\Debug\TRID.dll
+Appdomain Disposed
+Test Suite Dump
+#0: TRID/Default - 
+#1: Default - 
+#2: TRID - 
+#3: AmortizationValidation - 
+#86: Uploading JSON file and validating Payment Schedule values on Amortization page, 041 - TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+041
+End: Test Suite Dump
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #86 from normal test queue 
+Thread#0:Scheduler: considering testitem #86 for thread
+Thread#0:Scheduler: using testitem #86 for thread
+Thread#0:Scheduler: Test #86 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread #0: creating new test thread executor for TRID, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null (target: Default)
+Thread#1:Scheduler: get next test for thread
+Thread#:Scheduler: at the end of normal test queue
+Thread#1:Scheduler: enumerator for thread is at end
+Thread#1:Scheduler: No more tests for thread 
+Thread#2:Scheduler: get next test for thread
+Thread#:Scheduler: at the end of normal test queue
+Thread#2:Scheduler: enumerator for thread is at end
+Thread#2:Scheduler: No more tests for thread 
+Thread#3:Scheduler: get next test for thread
+Thread#:Scheduler: at the end of normal test queue
+Thread#3:Scheduler: enumerator for thread is at end
+Thread#3:Scheduler: No more tests for thread 
+Thread#4:Scheduler: get next test for thread
+Thread#:Scheduler: at the end of normal test queue
+Thread#4:Scheduler: enumerator for thread is at end
+Thread#4:Scheduler: No more tests for thread 
+Thread#5:Scheduler: get next test for thread
+Thread#:Scheduler: at the end of normal test queue
+Thread#5:Scheduler: enumerator for thread is at end
+Thread#5:Scheduler: No more tests for thread 
+Thread#6:Scheduler: get next test for thread
+Loading SpecRun type 'TechTalk.SpecRun.Framework.TestAssemblyExecutor' from: C:\Users\sandees\AppData\Local\Temp\VisualStudioTestExplorerExtensions\SpecRun.Runner.1.5.2\tools\TechTalk.SpecRun.Framework.Executor.dll
+Thread#:Scheduler: at the end of normal test queue
+Thread#6:Scheduler: enumerator for thread is at end
+Thread#6:Scheduler: No more tests for thread 
+Thread#7:Scheduler: get next test for thread
+Thread#:Scheduler: at the end of normal test queue
+Thread#7:Scheduler: enumerator for thread is at end
+Thread#7:Scheduler: No more tests for thread 
+Thread#8:Scheduler: get next test for thread
+Thread#:Scheduler: at the end of normal test queue
+Thread#8:Scheduler: enumerator for thread is at end
+Thread#8:Scheduler: No more tests for thread 
+Thread#9:Scheduler: get next test for thread
+Thread#:Scheduler: at the end of normal test queue
+Thread#9:Scheduler: enumerator for thread is at end
+Thread#9:Scheduler: No more tests for thread 
+Thread#0: Test #86/0 is started on thread #0
+Thread#0:B:Given user is at TRID application homepage
+Thread#0:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (31.7s)
+Thread#0:B:And user have Payment Schedule data from excel sheet PaymentSchedule for the scenario 25
+Thread#0:T:done: AmortizationValidationSteps.GivenUserHavePaymentScheduleDataFromExcelSheetForTheScenario("PaymentSchedule", 25) (0.6s)
+Thread#0:B:When user upload json file for the scenario
+Thread#0:T:done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (1.9s)
+Thread#0:B:And user navigates to Amortization Page
+Thread#0:T:done: AmortizationValidationSteps.WhenUserNavigatesToAmortizationPage() (1.3s)
+Thread#0:B:Then updated/computed Payment Stream Number value should display on Payment Schedule Grid
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :1
+Thread#0:T:ActualValue Row 1 :1
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :2
+Thread#0:T:ActualValue Row 2 :2
+Thread#0:T:============================================================
+Thread#0:T:done: AmortizationValidationSteps.ThenUpdatedComputedPaymentStreamNumberValueShouldDisplayOnPaymentScheduleGrid() (0.3s)
+Thread#0:B:And updated/computed Number of Payments value should display on Payment Schedule Grid
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :359
+Thread#0:T:ActualValue Row 1 :359
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :1
+Thread#0:T:ActualValue Row 2 :1
+Thread#0:T:============================================================
+Thread#0:T:done: AmortizationValidationSteps.ThenUpdatedComputedNumberOfPaymentsValueShouldDisplayOnPaymentScheduleGrid() (0.3s)
+Thread#0:B:And updated/computed Payment Amount value should display on Payment Schedule Grid
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :606.91
+Thread#0:T:ActualValue Row 1 :606.91
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :605.2
+Thread#0:T:ActualValue Row 2 :605.2
+Thread#0:T:============================================================
+Thread#0:T:done: AmortizationValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnPaymentScheduleGrid() (0.3s)
+Thread#0:B:And updated/computed Period Payment value should display on Payment Schedule Grid
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :606.91
+Thread#0:T:ActualValue Row 1 :606.91
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :605.2
+Thread#0:T:ActualValue Row 2 :605.2
+Thread#0:T:============================================================
+Thread#0:T:done: AmortizationValidationSteps.ThenUpdatedComputedPeriodPaymentValueShouldDisplayOnPaymentScheduleGrid() (0.3s)
+Thread#0:B:And updated/computed Period PMI value should display on Payment Schedule Grid
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :0
+Thread#0:T:ActualValue Row 1 :0
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :0
+Thread#0:T:ActualValue Row 2 :0
+Thread#0:T:============================================================
+Thread#0:T:OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//section[@id='PaymentScheduleOutputAPR']//tr[3]/td[5]"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedPeriodPmiValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 191
+Thread#0:T:done: AmortizationValidationSteps.ThenUpdatedComputedPeriodPmiValueShouldDisplayOnPaymentScheduleGrid() (0.7s)
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: at the end of normal test queue
+Thread#0:Scheduler: enumerator for thread is at end
+Thread#0:Scheduler: No more tests for thread 
+Thread#0:T:####################################################################################
+Thread#0:T:====================================================================================
+Thread#0:T:Scenario Number : 41
+Thread#0:T:The total number of cards Failue: 1
+Thread#0:T:Name of cards Failed: || PaymentSchedulePeriodPmi[2] || : OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//section[@id='PaymentScheduleOutputAPR']//tr[3]/td[5]"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedPeriodPmiValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 191 
+Thread#0:T: ====================================================================================
+Thread#0:T:====================================================================================
+Thread#0:T:####################################################################################
+Thread#0: Test #86/0 is finished on thread #0 as CleanupFailed within 38.5489387 seconds
+Appdomain Disposed
+Thread#-1:Scheduler: get next test for thread
+Thread#:Scheduler: at the end of normal test queue
+Thread#-1:Scheduler: enumerator for thread is at end
+Total: 1
+Succeeded: 0
+Ignored: 0
+Pending: 0
+Skipped: 0
+Failed: 1

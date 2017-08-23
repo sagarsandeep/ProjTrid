@@ -1,0 +1,83 @@
+F:\Projects\TRID\SpecFramework\bin\Debug\Default.srprofile
+F:\Projects\TRID\SpecFramework\bin\Debug\TRID.dll.config
+F:\Projects\TRID\SpecFramework\bin\Debug\TRID.dll
+F:\Projects\TRID\SpecFramework\bin\Debug\TRID.pdb
+F:\Projects\TRID\SpecFramework\bin\Debug\JiraRestClient.dll
+F:\Projects\TRID\SpecFramework\bin\Debug\Newtonsoft.Json.dll
+F:\Projects\TRID\SpecFramework\bin\Debug\nunit.framework.dll
+F:\Projects\TRID\SpecFramework\bin\Debug\RestSharp.dll
+F:\Projects\TRID\SpecFramework\bin\Debug\Selenium.WebDriverBackedSelenium.dll
+F:\Projects\TRID\SpecFramework\bin\Debug\SpecRun.SpecFlowPlugin.dll
+F:\Projects\TRID\SpecFramework\bin\Debug\System.Net.Http.Formatting.dll
+F:\Projects\TRID\SpecFramework\bin\Debug\TechTalk.JiraRestClient.dll
+F:\Projects\TRID\SpecFramework\bin\Debug\TechTalk.SpecFlow.dll
+F:\Projects\TRID\SpecFramework\bin\Debug\TechTalk.SpecRun.dll
+F:\Projects\TRID\SpecFramework\bin\Debug\ThoughtWorks.Selenium.Core.dll
+F:\Projects\TRID\SpecFramework\bin\Debug\WebDriver.dll
+F:\Projects\TRID\SpecFramework\bin\Debug\WebDriver.Support.dll
+F:\Projects\TRID\SpecFramework\bin\Debug\Newtonsoft.Json.xml
+F:\Projects\TRID\SpecFramework\bin\Debug\nunit.framework.xml
+F:\Projects\TRID\SpecFramework\bin\Debug\RestSharp.xml
+F:\Projects\TRID\SpecFramework\bin\Debug\Selenium.WebDriverBackedSelenium.xml
+F:\Projects\TRID\SpecFramework\bin\Debug\ThoughtWorks.Selenium.Core.xml
+F:\Projects\TRID\SpecFramework\bin\Debug\WebDriver.xml
+F:\Projects\TRID\SpecFramework\bin\Debug\WebDriver.Support.xml
+F:\Projects\TRID\SpecFramework\obj\Debug\TRID.csprojResolveAssemblyReference.cache
+F:\Projects\TRID\SpecFramework\obj\Debug\TRID.csproj.ResolveComReference.cache
+F:\Projects\TRID\SpecFramework\obj\Debug\TRID.dll
+F:\Projects\TRID\SpecFramework\obj\Debug\TRID.pdb
+F:\Projects\TRID QA\QA\UI Automation\SpecFramework\bin\Debug\Default.srprofile
+F:\Projects\TRID QA\QA\UI Automation\SpecFramework\bin\Debug\TRID.dll.config
+F:\Projects\TRID QA\QA\UI Automation\SpecFramework\bin\Debug\TRID.dll
+F:\Projects\TRID QA\QA\UI Automation\SpecFramework\bin\Debug\TRID.pdb
+F:\Projects\TRID QA\QA\UI Automation\SpecFramework\bin\Debug\JiraRestClient.dll
+F:\Projects\TRID QA\QA\UI Automation\SpecFramework\bin\Debug\Newtonsoft.Json.dll
+F:\Projects\TRID QA\QA\UI Automation\SpecFramework\bin\Debug\nunit.framework.dll
+F:\Projects\TRID QA\QA\UI Automation\SpecFramework\bin\Debug\RestSharp.dll
+F:\Projects\TRID QA\QA\UI Automation\SpecFramework\bin\Debug\Selenium.WebDriverBackedSelenium.dll
+F:\Projects\TRID QA\QA\UI Automation\SpecFramework\bin\Debug\SpecRun.SpecFlowPlugin.dll
+F:\Projects\TRID QA\QA\UI Automation\SpecFramework\bin\Debug\System.Net.Http.Formatting.dll
+F:\Projects\TRID QA\QA\UI Automation\SpecFramework\bin\Debug\TechTalk.JiraRestClient.dll
+F:\Projects\TRID QA\QA\UI Automation\SpecFramework\bin\Debug\TechTalk.SpecFlow.dll
+F:\Projects\TRID QA\QA\UI Automation\SpecFramework\bin\Debug\TechTalk.SpecRun.dll
+F:\Projects\TRID QA\QA\UI Automation\SpecFramework\bin\Debug\ThoughtWorks.Selenium.Core.dll
+F:\Projects\TRID QA\QA\UI Automation\SpecFramework\bin\Debug\WebDriver.dll
+F:\Projects\TRID QA\QA\UI Automation\SpecFramework\bin\Debug\WebDriver.Support.dll
+F:\Projects\TRID QA\QA\UI Automation\SpecFramework\bin\Debug\Newtonsoft.Json.xml
+F:\Projects\TRID QA\QA\UI Automation\SpecFramework\bin\Debug\nunit.framework.xml
+F:\Projects\TRID QA\QA\UI Automation\SpecFramework\bin\Debug\RestSharp.xml
+F:\Projects\TRID QA\QA\UI Automation\SpecFramework\bin\Debug\Selenium.WebDriverBackedSelenium.xml
+F:\Projects\TRID QA\QA\UI Automation\SpecFramework\bin\Debug\ThoughtWorks.Selenium.Core.xml
+F:\Projects\TRID QA\QA\UI Automation\SpecFramework\bin\Debug\WebDriver.xml
+F:\Projects\TRID QA\QA\UI Automation\SpecFramework\bin\Debug\WebDriver.Support.xml
+F:\Projects\TRID QA\QA\UI Automation\SpecFramework\obj\Debug\TRID.csproj.ResolveComReference.cache
+F:\Projects\TRID QA\QA\UI Automation\SpecFramework\obj\Debug\TRID.dll
+F:\Projects\TRID QA\QA\UI Automation\SpecFramework\obj\Debug\TRID.pdb
+F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\bin\Debug\Default.srprofile
+F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\bin\Debug\TRID.dll.config
+F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\bin\Debug\TRID.dll
+F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\bin\Debug\TRID.pdb
+F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\bin\Debug\JiraRestClient.dll
+F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\bin\Debug\Newtonsoft.Json.dll
+F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\bin\Debug\nunit.framework.dll
+F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\bin\Debug\RestSharp.dll
+F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\bin\Debug\Selenium.WebDriverBackedSelenium.dll
+F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\bin\Debug\SpecRun.SpecFlowPlugin.dll
+F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\bin\Debug\System.Net.Http.Formatting.dll
+F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\bin\Debug\TechTalk.JiraRestClient.dll
+F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\bin\Debug\TechTalk.SpecFlow.dll
+F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\bin\Debug\TechTalk.SpecRun.dll
+F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\bin\Debug\ThoughtWorks.Selenium.Core.dll
+F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\bin\Debug\WebDriver.dll
+F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\bin\Debug\WebDriver.Support.dll
+F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\bin\Debug\Newtonsoft.Json.xml
+F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\bin\Debug\nunit.framework.xml
+F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\bin\Debug\RestSharp.xml
+F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\bin\Debug\Selenium.WebDriverBackedSelenium.xml
+F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\bin\Debug\ThoughtWorks.Selenium.Core.xml
+F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\bin\Debug\WebDriver.xml
+F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\bin\Debug\WebDriver.Support.xml
+F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\obj\Debug\TRID.csprojResolveAssemblyReference.cache
+F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\obj\Debug\TRID.csproj.ResolveComReference.cache
+F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\obj\Debug\TRID.dll
+F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\obj\Debug\TRID.pdb

@@ -1,0 +1,1529 @@
+﻿VS filter: testpath:TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+019 | testpath:TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+043 | testpath:TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+070 | testpath:TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+073 | testpath:TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+042 | testpath:TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+117 | testpath:TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+054 | testpath:TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+044 | testpath:TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+011 | testpath:TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+041 | testpath:TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+113 | testpath:TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+071 | testpath:TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+051 | testpath:TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+017 | testpath:TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+040 | testpath:TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+003 | testpath:TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+012 | testpath:TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+057 | testpath:TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+014 | testpath:TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+002 | testpath:TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+111 | testpath:TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+115 | testpath:TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+114 | testpath:TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+052 | testpath:TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+116 | testpath:TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+072 | testpath:TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+055 | testpath:TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+013 | testpath:TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+001 | testpath:TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+075 | testpath:TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+090 | testpath:TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+091 | testpath:TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+020 | testpath:TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+004 | testpath:TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+093 | testpath:TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+007 | testpath:TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+022 | testpath:TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+110 | testpath:TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+074 | testpath:TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+021 | testpath:TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+095 | testpath:TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+094 | testpath:TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+053 | testpath:TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+097 | testpath:TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+006 | testpath:TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+056 | testpath:TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+112 | testpath:TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+009 | testpath:TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+016 | testpath:TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+050 | testpath:TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+008 | testpath:TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+076 | testpath:TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+096 | testpath:TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+077 | testpath:TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+092
+Discovering target: Default
+Discovering tests from assembly: F:\Projects\TRID QA\QA\UI Automation\SpecFramework\bin\Debug\TRID.dll
+Appdomain Disposed
+Test Suite Dump
+#0: TRID/Default - 
+#1: Default - 
+#2: TRID - 
+#3: AmortizationValidation - 
+#63: Uploading JSON file and validating Payment Schedule values on Amortization page, 001 - TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+001
+#64: Uploading JSON file and validating Payment Schedule values on Amortization page, 002 - TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+002
+#65: Uploading JSON file and validating Payment Schedule values on Amortization page, 003 - TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+003
+#66: Uploading JSON file and validating Payment Schedule values on Amortization page, 004 - TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+004
+#67: Uploading JSON file and validating Payment Schedule values on Amortization page, 006 - TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+006
+#68: Uploading JSON file and validating Payment Schedule values on Amortization page, 007 - TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+007
+#69: Uploading JSON file and validating Payment Schedule values on Amortization page, 008 - TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+008
+#70: Uploading JSON file and validating Payment Schedule values on Amortization page, 009 - TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+009
+#71: Uploading JSON file and validating Payment Schedule values on Amortization page, 011 - TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+011
+#72: Uploading JSON file and validating Payment Schedule values on Amortization page, 012 - TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+012
+#73: Uploading JSON file and validating Payment Schedule values on Amortization page, 013 - TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+013
+#74: Uploading JSON file and validating Payment Schedule values on Amortization page, 014 - TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+014
+#75: Uploading JSON file and validating Payment Schedule values on Amortization page, 016 - TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+016
+#76: Uploading JSON file and validating Payment Schedule values on Amortization page, 017 - TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+017
+#77: Uploading JSON file and validating Payment Schedule values on Amortization page, 019 - TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+019
+#78: Uploading JSON file and validating Payment Schedule values on Amortization page, 020 - TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+020
+#79: Uploading JSON file and validating Payment Schedule values on Amortization page, 021 - TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+021
+#80: Uploading JSON file and validating Payment Schedule values on Amortization page, 022 - TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+022
+#85: Uploading JSON file and validating Payment Schedule values on Amortization page, 040 - TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+040
+#86: Uploading JSON file and validating Payment Schedule values on Amortization page, 041 - TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+041
+#87: Uploading JSON file and validating Payment Schedule values on Amortization page, 042 - TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+042
+#88: Uploading JSON file and validating Payment Schedule values on Amortization page, 043 - TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+043
+#89: Uploading JSON file and validating Payment Schedule values on Amortization page, 044 - TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+044
+#90: Uploading JSON file and validating Payment Schedule values on Amortization page, 050 - TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+050
+#91: Uploading JSON file and validating Payment Schedule values on Amortization page, 051 - TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+051
+#92: Uploading JSON file and validating Payment Schedule values on Amortization page, 052 - TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+052
+#93: Uploading JSON file and validating Payment Schedule values on Amortization page, 053 - TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+053
+#94: Uploading JSON file and validating Payment Schedule values on Amortization page, 054 - TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+054
+#95: Uploading JSON file and validating Payment Schedule values on Amortization page, 055 - TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+055
+#96: Uploading JSON file and validating Payment Schedule values on Amortization page, 056 - TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+056
+#97: Uploading JSON file and validating Payment Schedule values on Amortization page, 057 - TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+057
+#98: Uploading JSON file and validating Payment Schedule values on Amortization page, 070 - TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+070
+#99: Uploading JSON file and validating Payment Schedule values on Amortization page, 071 - TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+071
+#100: Uploading JSON file and validating Payment Schedule values on Amortization page, 072 - TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+072
+#101: Uploading JSON file and validating Payment Schedule values on Amortization page, 073 - TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+073
+#102: Uploading JSON file and validating Payment Schedule values on Amortization page, 074 - TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+074
+#103: Uploading JSON file and validating Payment Schedule values on Amortization page, 075 - TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+075
+#104: Uploading JSON file and validating Payment Schedule values on Amortization page, 076 - TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+076
+#105: Uploading JSON file and validating Payment Schedule values on Amortization page, 077 - TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+077
+#106: Uploading JSON file and validating Payment Schedule values on Amortization page, 090 - TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+090
+#107: Uploading JSON file and validating Payment Schedule values on Amortization page, 091 - TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+091
+#108: Uploading JSON file and validating Payment Schedule values on Amortization page, 092 - TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+092
+#109: Uploading JSON file and validating Payment Schedule values on Amortization page, 093 - TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+093
+#110: Uploading JSON file and validating Payment Schedule values on Amortization page, 094 - TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+094
+#111: Uploading JSON file and validating Payment Schedule values on Amortization page, 095 - TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+095
+#112: Uploading JSON file and validating Payment Schedule values on Amortization page, 096 - TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+096
+#113: Uploading JSON file and validating Payment Schedule values on Amortization page, 097 - TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+097
+#114: Uploading JSON file and validating Payment Schedule values on Amortization page, 110 - TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+110
+#115: Uploading JSON file and validating Payment Schedule values on Amortization page, 111 - TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+111
+#116: Uploading JSON file and validating Payment Schedule values on Amortization page, 112 - TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+112
+#117: Uploading JSON file and validating Payment Schedule values on Amortization page, 113 - TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+113
+#118: Uploading JSON file and validating Payment Schedule values on Amortization page, 114 - TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+114
+#119: Uploading JSON file and validating Payment Schedule values on Amortization page, 115 - TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+115
+#120: Uploading JSON file and validating Payment Schedule values on Amortization page, 116 - TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+116
+#121: Uploading JSON file and validating Payment Schedule values on Amortization page, 117 - TestAssembly:TRID/Feature:AmortizationValidation/Scenario:Uploading+JSON+file+and+validating+Payment+Schedule+values+on+Amortization+page%2c+117
+End: Test Suite Dump
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #63 from normal test queue 
+Thread#0:Scheduler: considering testitem #63 for thread
+Thread#0:Scheduler: using testitem #63 for thread
+Thread#0:Scheduler: Test #63 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread #0: creating new test thread executor for TRID, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null (target: Default)
+Loading SpecRun type 'TechTalk.SpecRun.Framework.TestAssemblyExecutor' from: C:\Users\sandees\AppData\Local\Temp\VisualStudioTestExplorerExtensions\SpecRun.Runner.1.5.2\tools\TechTalk.SpecRun.Framework.Executor.dll
+Thread#0: Test #63/0 is started on thread #0
+Thread#0:B:Given user is at TRID application homepage
+Thread#0:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (39.1s)
+Thread#0:B:And user have Payment Schedule data from excel sheet PaymentSchedule for the scenario 2
+Thread#0:T:done: AmortizationValidationSteps.GivenUserHavePaymentScheduleDataFromExcelSheetForTheScenario("PaymentSchedule", 2) (0.6s)
+Thread#0:B:When user upload json file for the scenario
+Thread#0:T:done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (1.9s)
+Thread#0:B:And user navigates to Amortization Page
+Thread#0:T:done: AmortizationValidationSteps.WhenUserNavigatesToAmortizationPage() (1.5s)
+Thread#0:B:Then updated/computed Payment Stream Number value should display on Payment Schedule Grid
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :1
+Thread#0:T:ActualValue Row 1 :1
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :2
+Thread#0:T:ActualValue Row 2 :2
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 3 :3
+Thread#0:T:ActualValue Row 3 :3
+Thread#0:T:============================================================
+Thread#0:T:done: AmortizationValidationSteps.ThenUpdatedComputedPaymentStreamNumberValueShouldDisplayOnPaymentScheduleGrid() (0.8s)
+Thread#0:B:And updated/computed Number of Payments value should display on Payment Schedule Grid
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :48
+Thread#0:T:ActualValue Row 1 :48
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :311
+Thread#0:T:ActualValue Row 2 :311
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 3 :1
+Thread#0:T:ActualValue Row 3 :1
+Thread#0:T:============================================================
+Thread#0:T:done: AmortizationValidationSteps.ThenUpdatedComputedNumberOfPaymentsValueShouldDisplayOnPaymentScheduleGrid() (0.8s)
+Thread#0:B:And updated/computed Payment Amount value should display on Payment Schedule Grid
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :647.3
+Thread#0:T:ActualValue Row 1 :647.3
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :606.91
+Thread#0:T:ActualValue Row 2 :606.91
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 3 :605.2
+Thread#0:T:ActualValue Row 3 :605.2
+Thread#0:T:============================================================
+Thread#0:T:done: AmortizationValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnPaymentScheduleGrid() (0.8s)
+Thread#0:B:And updated/computed Period Payment value should display on Payment Schedule Grid
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :606.91
+Thread#0:T:ActualValue Row 1 :606.91
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :606.91
+Thread#0:T:ActualValue Row 2 :606.91
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 3 :605.2
+Thread#0:T:ActualValue Row 3 :605.2
+Thread#0:T:============================================================
+Thread#0:T:done: AmortizationValidationSteps.ThenUpdatedComputedPeriodPaymentValueShouldDisplayOnPaymentScheduleGrid() (0.8s)
+Thread#0:B:And updated/computed Period PMI value should display on Payment Schedule Grid
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :40.39
+Thread#0:T:ActualValue Row 1 :40.39
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :0
+Thread#0:T:ActualValue Row 2 :0
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 3 :0
+Thread#0:T:ActualValue Row 3 :0
+Thread#0:T:============================================================
+Thread#0:T:done: AmortizationValidationSteps.ThenUpdatedComputedPeriodPmiValueShouldDisplayOnPaymentScheduleGrid() (0.8s)
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #64 from normal test queue 
+Thread#0:Scheduler: considering testitem #64 for thread
+Thread#0:Scheduler: using testitem #64 for thread
+Thread#0:Scheduler: Test #64 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #63/0 is finished on thread #0 as Succeeded within 48.1017614 seconds
+Thread#0: Test #64/0 is started on thread #0
+Thread#0:B:Given user is at TRID application homepage
+Thread#0:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (2.0s)
+Thread#0:B:And user have Payment Schedule data from excel sheet PaymentSchedule for the scenario 3
+Thread#0:T:done: AmortizationValidationSteps.GivenUserHavePaymentScheduleDataFromExcelSheetForTheScenario("PaymentSchedule", 3) (0.6s)
+Thread#0:B:When user upload json file for the scenario
+Thread#0:T:done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (1.9s)
+Thread#0:B:And user navigates to Amortization Page
+Thread#0:T:done: AmortizationValidationSteps.WhenUserNavigatesToAmortizationPage() (0.7s)
+Thread#0:B:Then updated/computed Payment Stream Number value should display on Payment Schedule Grid
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :1
+Thread#0:T:ActualValue Row 1 :1
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :2
+Thread#0:T:ActualValue Row 2 :2
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 3 :3
+Thread#0:T:ActualValue Row 3 :3
+Thread#0:T:============================================================
+Thread#0:T:OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//section[@id='PaymentScheduleOutputAPR']//tr[4]/td[1]"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedPaymentStreamNumberValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 55
+Thread#0:T:OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//section[@id='PaymentScheduleOutputAPR']//tr[5]/td[1]"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedPaymentStreamNumberValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 55
+Thread#0:T:OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//section[@id='PaymentScheduleOutputAPR']//tr[6]/td[1]"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedPaymentStreamNumberValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 55
+Thread#0:T:done: AmortizationValidationSteps.ThenUpdatedComputedPaymentStreamNumberValueShouldDisplayOnPaymentScheduleGrid() (2.9s)
+Thread#0:B:And updated/computed Number of Payments value should display on Payment Schedule Grid
+Thread#0:T:NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 1 with the difference of 24
+Thread#0:T:  Expected: 48.0d
+Thread#0:T:  But was:  24.0d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedNumberOfPaymentsValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 92
+Thread#0:T:NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 2 with the difference of 156
+Thread#0:T:  Expected: 311.0d
+Thread#0:T:  But was:  155.0d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedNumberOfPaymentsValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 92
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 3 :1
+Thread#0:T:ActualValue Row 3 :1
+Thread#0:T:============================================================
+Thread#0:T:OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//section[@id='PaymentScheduleOutputAPR']//tr[4]/td[2]"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedNumberOfPaymentsValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 89
+Thread#0:T:OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//section[@id='PaymentScheduleOutputAPR']//tr[5]/td[2]"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedNumberOfPaymentsValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 89
+Thread#0:T:OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//section[@id='PaymentScheduleOutputAPR']//tr[6]/td[2]"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedNumberOfPaymentsValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 89
+Thread#0:T:done: AmortizationValidationSteps.ThenUpdatedComputedNumberOfPaymentsValueShouldDisplayOnPaymentScheduleGrid() (3.1s)
+Thread#0:B:And updated/computed Payment Amount value should display on Payment Schedule Grid
+Thread#0:T:NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 1 with the difference of 648.31
+Thread#0:T:  Expected: 647.29999999999995d
+Thread#0:T:  But was:  1295.6099999999999d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 126
+Thread#0:T:NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 2 with the difference of 607.92
+Thread#0:T:  Expected: 606.90999999999997d
+Thread#0:T:  But was:  1214.8299999999999d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 126
+Thread#0:T:NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 3 with the difference of 607.88
+Thread#0:T:  Expected: 605.20000000000005d
+Thread#0:T:  But was:  1213.0799999999999d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 126
+Thread#0:T:OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//section[@id='PaymentScheduleOutputAPR']//tr[4]/td[3]"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 123
+Thread#0:T:OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//section[@id='PaymentScheduleOutputAPR']//tr[5]/td[3]"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 123
+Thread#0:T:OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//section[@id='PaymentScheduleOutputAPR']//tr[6]/td[3]"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 123
+Thread#0:T:done: AmortizationValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnPaymentScheduleGrid() (3.2s)
+Thread#0:B:And updated/computed Period Payment value should display on Payment Schedule Grid
+Thread#0:T:NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 1 with the difference of 607.92
+Thread#0:T:  Expected: 606.90999999999997d
+Thread#0:T:  But was:  1214.8299999999999d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedPeriodPaymentValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 160
+Thread#0:T:NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 2 with the difference of 607.92
+Thread#0:T:  Expected: 606.90999999999997d
+Thread#0:T:  But was:  1214.8299999999999d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedPeriodPaymentValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 160
+Thread#0:T:NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 3 with the difference of 607.88
+Thread#0:T:  Expected: 605.20000000000005d
+Thread#0:T:  But was:  1213.0799999999999d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedPeriodPaymentValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 160
+Thread#0:T:OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//section[@id='PaymentScheduleOutputAPR']//tr[4]/td[4]"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedPeriodPaymentValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 157
+Thread#0:T:OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//section[@id='PaymentScheduleOutputAPR']//tr[5]/td[4]"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedPeriodPaymentValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 157
+Thread#0:T:OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//section[@id='PaymentScheduleOutputAPR']//tr[6]/td[4]"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedPeriodPaymentValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 157
+Thread#0:T:done: AmortizationValidationSteps.ThenUpdatedComputedPeriodPaymentValueShouldDisplayOnPaymentScheduleGrid() (3.3s)
+Thread#0:B:And updated/computed Period PMI value should display on Payment Schedule Grid
+Thread#0:T:NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 1 with the difference of 40.39
+Thread#0:T:  Expected: 40.390000000000001d
+Thread#0:T:  But was:  80.780000000000001d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedPeriodPmiValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 194
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :0
+Thread#0:T:ActualValue Row 2 :0
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 3 :0
+Thread#0:T:ActualValue Row 3 :0
+Thread#0:T:============================================================
+Thread#0:T:OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//section[@id='PaymentScheduleOutputAPR']//tr[4]/td[5]"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedPeriodPmiValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 191
+Thread#0:T:OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//section[@id='PaymentScheduleOutputAPR']//tr[5]/td[5]"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedPeriodPmiValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 191
+Thread#0:T:OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//section[@id='PaymentScheduleOutputAPR']//tr[6]/td[5]"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedPeriodPmiValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 191
+Thread#0:T:done: AmortizationValidationSteps.ThenUpdatedComputedPeriodPmiValueShouldDisplayOnPaymentScheduleGrid() (3.1s)
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #65 from normal test queue 
+Thread#0:Scheduler: considering testitem #65 for thread
+Thread#0:Scheduler: using testitem #65 for thread
+Thread#0:Scheduler: Test #65 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #64/0 is finished on thread #0 as Succeeded within 22.0459065 seconds
+Thread#0: Test #65/0 is started on thread #0
+Thread#0:B:Given user is at TRID application homepage
+Thread#0:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (1.5s)
+Thread#0:B:And user have Payment Schedule data from excel sheet PaymentSchedule for the scenario 4
+Thread#0:T:done: AmortizationValidationSteps.GivenUserHavePaymentScheduleDataFromExcelSheetForTheScenario("PaymentSchedule", 4) (0.6s)
+Thread#0:B:When user upload json file for the scenario
+Thread#0:T:done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (1.9s)
+Thread#0:B:And user navigates to Amortization Page
+Thread#0:T:done: AmortizationValidationSteps.WhenUserNavigatesToAmortizationPage() (1.6s)
+Thread#0:B:Then updated/computed Payment Stream Number value should display on Payment Schedule Grid
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :1
+Thread#0:T:ActualValue Row 1 :1
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :2
+Thread#0:T:ActualValue Row 2 :2
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 3 :3
+Thread#0:T:ActualValue Row 3 :3
+Thread#0:T:============================================================
+Thread#0:T:OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//section[@id='PaymentScheduleOutputAPR']//tr[4]/td[1]"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedPaymentStreamNumberValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 55
+Thread#0:T:OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//section[@id='PaymentScheduleOutputAPR']//tr[5]/td[1]"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedPaymentStreamNumberValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 55
+Thread#0:T:OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//section[@id='PaymentScheduleOutputAPR']//tr[6]/td[1]"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedPaymentStreamNumberValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 55
+Thread#0:T:OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//section[@id='PaymentScheduleOutputAPR']//tr[7]/td[1]"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedPaymentStreamNumberValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 55
+Thread#0:T:OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//section[@id='PaymentScheduleOutputAPR']//tr[8]/td[1]"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedPaymentStreamNumberValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 55
+Thread#0:T:OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//section[@id='PaymentScheduleOutputAPR']//tr[9]/td[1]"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedPaymentStreamNumberValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 55
+Thread#0:T:done: AmortizationValidationSteps.ThenUpdatedComputedPaymentStreamNumberValueShouldDisplayOnPaymentScheduleGrid() (5.7s)
+Thread#0:B:And updated/computed Number of Payments value should display on Payment Schedule Grid
+Thread#0:T:NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 1 with the difference of 35
+Thread#0:T:  Expected: 48.0d
+Thread#0:T:  But was:  83.0d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedNumberOfPaymentsValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 92
+Thread#0:T:NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 2 with the difference of 281
+Thread#0:T:  Expected: 311.0d
+Thread#0:T:  But was:  592.0d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedNumberOfPaymentsValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 92
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 3 :1
+Thread#0:T:ActualValue Row 3 :1
+Thread#0:T:============================================================
+Thread#0:T:OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//section[@id='PaymentScheduleOutputAPR']//tr[4]/td[2]"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedNumberOfPaymentsValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 89
+Thread#0:T:OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//section[@id='PaymentScheduleOutputAPR']//tr[5]/td[2]"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedNumberOfPaymentsValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 89
+Thread#0:T:OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//section[@id='PaymentScheduleOutputAPR']//tr[6]/td[2]"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedNumberOfPaymentsValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 89
+Thread#0:T:OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//section[@id='PaymentScheduleOutputAPR']//tr[7]/td[2]"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedNumberOfPaymentsValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 89
+Thread#0:T:OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//section[@id='PaymentScheduleOutputAPR']//tr[8]/td[2]"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedNumberOfPaymentsValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 89
+Thread#0:T:OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//section[@id='PaymentScheduleOutputAPR']//tr[9]/td[2]"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedNumberOfPaymentsValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 89
+Thread#0:T:done: AmortizationValidationSteps.ThenUpdatedComputedNumberOfPaymentsValueShouldDisplayOnPaymentScheduleGrid() (5.6s)
+Thread#0:B:And updated/computed Payment Amount value should display on Payment Schedule Grid
+Thread#0:T:NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 1 with the difference of 325.32
+Thread#0:T:  Expected: 647.29999999999995d
+Thread#0:T:  But was:  321.98000000000002d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 126
+Thread#0:T:NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 2 with the difference of 303.57
+Thread#0:T:  Expected: 606.90999999999997d
+Thread#0:T:  But was:  303.33999999999997d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 126
+Thread#0:T:NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 3 with the difference of 507.07
+Thread#0:T:  Expected: 605.20000000000005d
+Thread#0:T:  But was:  98.129999999999995d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 126
+Thread#0:T:OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//section[@id='PaymentScheduleOutputAPR']//tr[4]/td[3]"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 123
+Thread#0:T:OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//section[@id='PaymentScheduleOutputAPR']//tr[5]/td[3]"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 123
+Thread#0:T:OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//section[@id='PaymentScheduleOutputAPR']//tr[6]/td[3]"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 123
+Thread#0:T:OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//section[@id='PaymentScheduleOutputAPR']//tr[7]/td[3]"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 123
+Thread#0:T:OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//section[@id='PaymentScheduleOutputAPR']//tr[8]/td[3]"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 123
+Thread#0:T:OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//section[@id='PaymentScheduleOutputAPR']//tr[9]/td[3]"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 123
+Thread#0:T:done: AmortizationValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnPaymentScheduleGrid() (5.5s)
+Thread#0:B:And updated/computed Period Payment value should display on Payment Schedule Grid
+Thread#0:T:NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 1 with the difference of 303.57
+Thread#0:T:  Expected: 606.90999999999997d
+Thread#0:T:  But was:  303.33999999999997d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedPeriodPaymentValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 160
+Thread#0:T:NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 2 with the difference of 303.57
+Thread#0:T:  Expected: 606.90999999999997d
+Thread#0:T:  But was:  303.33999999999997d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedPeriodPaymentValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 160
+Thread#0:T:NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 3 with the difference of 507.07
+Thread#0:T:  Expected: 605.20000000000005d
+Thread#0:T:  But was:  98.129999999999995d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedPeriodPaymentValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 160
+Thread#0:T:OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//section[@id='PaymentScheduleOutputAPR']//tr[4]/td[4]"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedPeriodPaymentValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 157
+Thread#0:T:OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//section[@id='PaymentScheduleOutputAPR']//tr[5]/td[4]"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedPeriodPaymentValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 157
+Thread#0:T:OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//section[@id='PaymentScheduleOutputAPR']//tr[6]/td[4]"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedPeriodPaymentValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 157
+Thread#0:T:OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//section[@id='PaymentScheduleOutputAPR']//tr[7]/td[4]"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedPeriodPaymentValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 157
+Thread#0:T:OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//section[@id='PaymentScheduleOutputAPR']//tr[8]/td[4]"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedPeriodPaymentValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 157
+Thread#0:T:OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//section[@id='PaymentScheduleOutputAPR']//tr[9]/td[4]"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedPeriodPaymentValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 157
+Thread#0:T:done: AmortizationValidationSteps.ThenUpdatedComputedPeriodPaymentValueShouldDisplayOnPaymentScheduleGrid() (6.4s)
+Thread#0:B:And updated/computed Period PMI value should display on Payment Schedule Grid
+Thread#0:T:NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 1 with the difference of 21.75
+Thread#0:T:  Expected: 40.390000000000001d
+Thread#0:T:  But was:  18.640000000000001d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedPeriodPmiValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 194
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :0
+Thread#0:T:ActualValue Row 2 :0
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 3 :0
+Thread#0:T:ActualValue Row 3 :0
+Thread#0:T:============================================================
+Thread#0:T:OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//section[@id='PaymentScheduleOutputAPR']//tr[4]/td[5]"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedPeriodPmiValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 191
+Thread#0:T:OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//section[@id='PaymentScheduleOutputAPR']//tr[5]/td[5]"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedPeriodPmiValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 191
+Thread#0:T:OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//section[@id='PaymentScheduleOutputAPR']//tr[6]/td[5]"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedPeriodPmiValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 191
+Thread#0:T:OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//section[@id='PaymentScheduleOutputAPR']//tr[7]/td[5]"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedPeriodPmiValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 191
+Thread#0:T:OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//section[@id='PaymentScheduleOutputAPR']//tr[8]/td[5]"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedPeriodPmiValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 191
+Thread#0:T:OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//section[@id='PaymentScheduleOutputAPR']//tr[9]/td[5]"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedPeriodPmiValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 191
+Thread#0:T:done: AmortizationValidationSteps.ThenUpdatedComputedPeriodPmiValueShouldDisplayOnPaymentScheduleGrid() (5.3s)
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #66 from normal test queue 
+Thread#0:Scheduler: considering testitem #66 for thread
+Thread#0:Scheduler: using testitem #66 for thread
+Thread#0:Scheduler: Test #66 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #65/0 is finished on thread #0 as Succeeded within 35.3489712 seconds
+Thread#0: Test #66/0 is started on thread #0
+Thread#0:B:Given user is at TRID application homepage
+Thread#0:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (1.7s)
+Thread#0:B:And user have Payment Schedule data from excel sheet PaymentSchedule for the scenario 5
+Thread#0:T:done: AmortizationValidationSteps.GivenUserHavePaymentScheduleDataFromExcelSheetForTheScenario("PaymentSchedule", 5) (0.6s)
+Thread#0:B:When user upload json file for the scenario
+Thread#0:T:done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (1.9s)
+Thread#0:B:And user navigates to Amortization Page
+Thread#0:T:done: AmortizationValidationSteps.WhenUserNavigatesToAmortizationPage() (1.7s)
+Thread#0:B:Then updated/computed Payment Stream Number value should display on Payment Schedule Grid
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 1 :1
+Thread#0:T:ActualValue Row 1 :1
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :2
+Thread#0:T:ActualValue Row 2 :2
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 3 :3
+Thread#0:T:ActualValue Row 3 :3
+Thread#0:T:============================================================
+Thread#0:T:OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//section[@id='PaymentScheduleOutputAPR']//tr[4]/td[1]"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedPaymentStreamNumberValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 55
+Thread#0:T:OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//section[@id='PaymentScheduleOutputAPR']//tr[5]/td[1]"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedPaymentStreamNumberValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 55
+Thread#0:T:OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//section[@id='PaymentScheduleOutputAPR']//tr[6]/td[1]"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedPaymentStreamNumberValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 55
+Thread#0:T:OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//section[@id='PaymentScheduleOutputAPR']//tr[7]/td[1]"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedPaymentStreamNumberValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 55
+Thread#0:T:OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//section[@id='PaymentScheduleOutputAPR']//tr[8]/td[1]"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedPaymentStreamNumberValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 55
+Thread#0:T:OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//section[@id='PaymentScheduleOutputAPR']//tr[9]/td[1]"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedPaymentStreamNumberValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 55
+Thread#0:T:OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//section[@id='PaymentScheduleOutputAPR']//tr[10]/td[1]"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedPaymentStreamNumberValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 55
+Thread#0:T:OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//section[@id='PaymentScheduleOutputAPR']//tr[11]/td[1]"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedPaymentStreamNumberValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 55
+Thread#0:T:OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//section[@id='PaymentScheduleOutputAPR']//tr[12]/td[1]"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedPaymentStreamNumberValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 55
+Thread#0:T:done: AmortizationValidationSteps.ThenUpdatedComputedPaymentStreamNumberValueShouldDisplayOnPaymentScheduleGrid() (7.3s)
+Thread#0:B:And updated/computed Number of Payments value should display on Payment Schedule Grid
+Thread#0:T:NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 1 with the difference of 47
+Thread#0:T:  Expected: 48.0d
+Thread#0:T:  But was:  95.0d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedNumberOfPaymentsValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 92
+Thread#0:T:NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 2 with the difference of 312
+Thread#0:T:  Expected: 311.0d
+Thread#0:T:  But was:  623.0d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedNumberOfPaymentsValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 92
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 3 :1
+Thread#0:T:ActualValue Row 3 :1
+Thread#0:T:============================================================
+Thread#0:T:OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//section[@id='PaymentScheduleOutputAPR']//tr[4]/td[2]"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedNumberOfPaymentsValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 89
+Thread#0:T:OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//section[@id='PaymentScheduleOutputAPR']//tr[5]/td[2]"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedNumberOfPaymentsValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 89
+Thread#0:T:OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//section[@id='PaymentScheduleOutputAPR']//tr[6]/td[2]"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedNumberOfPaymentsValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 89
+Thread#0:T:OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//section[@id='PaymentScheduleOutputAPR']//tr[7]/td[2]"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedNumberOfPaymentsValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 89
+Thread#0:T:OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//section[@id='PaymentScheduleOutputAPR']//tr[8]/td[2]"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedNumberOfPaymentsValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 89
+Thread#0:T:OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//section[@id='PaymentScheduleOutputAPR']//tr[9]/td[2]"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedNumberOfPaymentsValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 89
+Thread#0:T:OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//section[@id='PaymentScheduleOutputAPR']//tr[10]/td[2]"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedNumberOfPaymentsValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 89
+Thread#0:T:OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//section[@id='PaymentScheduleOutputAPR']//tr[11]/td[2]"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedNumberOfPaymentsValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 89
+Thread#0:T:OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//section[@id='PaymentScheduleOutputAPR']//tr[12]/td[2]"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedNumberOfPaymentsValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 89
+Thread#0:T:done: AmortizationValidationSteps.ThenUpdatedComputedNumberOfPaymentsValueShouldDisplayOnPaymentScheduleGrid() (8.4s)
+Thread#0:B:And updated/computed Payment Amount value should display on Payment Schedule Grid
+Thread#0:T:NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 1 with the difference of 323.53
+Thread#0:T:  Expected: 647.29999999999995d
+Thread#0:T:  But was:  323.76999999999998d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 126
+Thread#0:T:NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 2 with the difference of 303.34
+Thread#0:T:  Expected: 606.90999999999997d
+Thread#0:T:  But was:  303.56999999999999d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 126
+Thread#0:T:NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 3 with the difference of 349.08
+Thread#0:T:  Expected: 605.20000000000005d
+Thread#0:T:  But was:  256.12d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 126
+Thread#0:T:OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//section[@id='PaymentScheduleOutputAPR']//tr[4]/td[3]"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 123
+Thread#0:T:OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//section[@id='PaymentScheduleOutputAPR']//tr[5]/td[3]"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 123
+Thread#0:T:OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//section[@id='PaymentScheduleOutputAPR']//tr[6]/td[3]"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 123
+Thread#0:T:OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//section[@id='PaymentScheduleOutputAPR']//tr[7]/td[3]"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 123
+Thread#0:T:OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//section[@id='PaymentScheduleOutputAPR']//tr[8]/td[3]"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 123
+Thread#0:T:OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//section[@id='PaymentScheduleOutputAPR']//tr[9]/td[3]"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 123
+Thread#0:T:OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//section[@id='PaymentScheduleOutputAPR']//tr[10]/td[3]"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 123
+Thread#0:T:OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//section[@id='PaymentScheduleOutputAPR']//tr[11]/td[3]"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 123
+Thread#0:T:OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//section[@id='PaymentScheduleOutputAPR']//tr[12]/td[3]"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 123
+Thread#0:T:done: AmortizationValidationSteps.ThenUpdatedComputedPaymentAmountValueShouldDisplayOnPaymentScheduleGrid() (7.5s)
+Thread#0:B:And updated/computed Period Payment value should display on Payment Schedule Grid
+Thread#0:T:NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 1 with the difference of 303.34
+Thread#0:T:  Expected: 606.90999999999997d
+Thread#0:T:  But was:  303.56999999999999d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedPeriodPaymentValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 160
+Thread#0:T:NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 2 with the difference of 303.34
+Thread#0:T:  Expected: 606.90999999999997d
+Thread#0:T:  But was:  303.56999999999999d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedPeriodPaymentValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 160
+Thread#0:T:NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 3 with the difference of 349.08
+Thread#0:T:  Expected: 605.20000000000005d
+Thread#0:T:  But was:  256.12d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedPeriodPaymentValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 160
+Thread#0:T:OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//section[@id='PaymentScheduleOutputAPR']//tr[4]/td[4]"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedPeriodPaymentValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 157
+Thread#0:T:OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//section[@id='PaymentScheduleOutputAPR']//tr[5]/td[4]"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedPeriodPaymentValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 157
+Thread#0:T:OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//section[@id='PaymentScheduleOutputAPR']//tr[6]/td[4]"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedPeriodPaymentValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 157
+Thread#0:T:OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//section[@id='PaymentScheduleOutputAPR']//tr[7]/td[4]"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedPeriodPaymentValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 157
+Thread#0:T:OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//section[@id='PaymentScheduleOutputAPR']//tr[8]/td[4]"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedPeriodPaymentValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 157
+Thread#0:T:OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//section[@id='PaymentScheduleOutputAPR']//tr[9]/td[4]"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedPeriodPaymentValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 157
+Thread#0:T:OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//section[@id='PaymentScheduleOutputAPR']//tr[10]/td[4]"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedPeriodPaymentValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 157
+Thread#0:T:OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//section[@id='PaymentScheduleOutputAPR']//tr[11]/td[4]"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedPeriodPaymentValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 157
+Thread#0:T:OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//section[@id='PaymentScheduleOutputAPR']//tr[12]/td[4]"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedPeriodPaymentValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 157
+Thread#0:T:done: AmortizationValidationSteps.ThenUpdatedComputedPeriodPaymentValueShouldDisplayOnPaymentScheduleGrid() (7.7s)
+Thread#0:B:And updated/computed Period PMI value should display on Payment Schedule Grid
+Thread#0:T:NUnit.Framework.AssertionException:   Actual value does not match as expected for the row 1 with the difference of 20.19
+Thread#0:T:  Expected: 40.390000000000001d
+Thread#0:T:  But was:  20.199999999999999d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedPeriodPmiValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 194
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 2 :0
+Thread#0:T:ActualValue Row 2 :0
+Thread#0:T:============================================================
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedValue Row 3 :0
+Thread#0:T:ActualValue Row 3 :0
+Thread#0:T:============================================================
+Thread#0:T:OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//section[@id='PaymentScheduleOutputAPR']//tr[4]/td[5]"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedPeriodPmiValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 191
+Thread#0:T:OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//section[@id='PaymentScheduleOutputAPR']//tr[5]/td[5]"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedPeriodPmiValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 191
+Thread#0:T:OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//section[@id='PaymentScheduleOutputAPR']//tr[6]/td[5]"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedPeriodPmiValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 191
+Thread#0:T:OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//section[@id='PaymentScheduleOutputAPR']//tr[7]/td[5]"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedPeriodPmiValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 191
+Thread#0:T:OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//section[@id='PaymentScheduleOutputAPR']//tr[8]/td[5]"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedPeriodPmiValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 191
+Thread#0:T:OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//section[@id='PaymentScheduleOutputAPR']//tr[9]/td[5]"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedPeriodPmiValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 191
+Thread#0:T:OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//section[@id='PaymentScheduleOutputAPR']//tr[10]/td[5]"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+Thread#0:T:   at TRID.ActionClasses.UIActions.GetText(By element) in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\ActionClasses\UIActions.cs:line 37
+Thread#0:T:   at TRID.StepDefinitions.AmortizationValidationSteps.ThenUpdatedComputedPeriodPmiValueShouldDisplayOnPaymentScheduleGrid() in F:\Projects\TRID QA\QA\UI Automation\SpecFramework\StepDefinitions\AmortizationValidationSteps.cs:line 191
+Thread#0:T:OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//section[@id='PaymentScheduleOutputAPR']//tr[11]/td[5]"}
+Thread#0:T:  (Session info: chrome=59.0.3071.115)
+Thread#0:T:  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+Thread#0:T:   at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.By.FindElement(ISearchContext context)
+Thread#0:T:   at OpenQA.Selenium.Remote.RemoteWebD

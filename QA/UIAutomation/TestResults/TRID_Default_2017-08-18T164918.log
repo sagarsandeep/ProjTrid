@@ -1,0 +1,72 @@
+﻿VS filter: testpath:TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Closing+Disclosure+page%2c+001
+Discovering target: Default
+Discovering tests from assembly: F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\bin\Debug\TRID.dll
+Appdomain Disposed
+Test Suite Dump
+#0: TRID/Default - 
+#1: Default - 
+#2: TRID - 
+#154: CardsValidation - 
+#303: Uploading JSON file and Validating cards value on Closing Disclosure page, 001 - TestAssembly:TRID/Feature:CardsValidation/Scenario:Uploading+JSON+file+and+Validating+cards+value+on+Closing+Disclosure+page%2c+001
+End: Test Suite Dump
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #303 from normal test queue 
+Thread#0:Scheduler: considering testitem #303 for thread
+Thread#0:Scheduler: using testitem #303 for thread
+Thread#0:Scheduler: Test #303 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread #0: creating new test thread executor for TRID, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null (target: Default)
+Loading SpecRun type 'TechTalk.SpecRun.Framework.TestAssemblyExecutor' from: C:\Users\sandees\AppData\Local\Temp\VisualStudioTestExplorerExtensions\SpecRun.Runner.1.5.2\tools\TechTalk.SpecRun.Framework.Executor.dll
+Thread#0: Test #303/0 is started on thread #0
+Thread#0:B:Given user is at TRID application homepage
+Thread#0:T:binding error: Ambiguous step definitions found for step 'Given user is at TRID application homepage': CardsValidationSteps.GivenUserIsAtTridApplicationHomepage(), CardsValidationSteps.GivenUserIsAtTridApplicationHomepage()
+Thread#0:B:And user have closing disclosure data from excel sheet ClosingDisclosure for the scenario 2
+Thread#0:T:binding error: Ambiguous step definitions found for step 'Given user have closing disclosure data from excel sheet ClosingDisclosure for the scenario 2': CardsValidationSteps.GivenUserHaveClosingDisclosureDataFromExcelSheetForTheScenario(String, Int32), CardsValidationSteps.GivenUserHaveClosingDisclosureDataFromExcelSheetForTheScenario(String, Int32)
+Thread#0:B:When user upload json file for the scenario
+Thread#0:T:binding error: Ambiguous step definitions found for step 'When user upload json file for the scenario': CardsValidationSteps.WhenUserUploadJsonFileForTheScenario(), CardsValidationSteps.WhenUserUploadJsonFileForTheScenario()
+Thread#0:B:Then user navigates to Closing Disclosure Cards Page
+Thread#0:T:binding error: Ambiguous step definitions found for step 'Then user navigates to Closing Disclosure Cards Page': CardsValidationSteps.ThenUserNavigatesToClosingDisclosureCardsPage(), CardsValidationSteps.ThenUserNavigatesToClosingDisclosureCardsPage()
+Thread#0:B:And updated/computed Principal and Interest value should display on Closing Disclosure
+Thread#0:T:binding error: Ambiguous step definitions found for step 'Then updated/computed Principal and Interest value should display on Closing Disclosure': CardsValidationSteps.ThenUpdatedComputedPrincipalAndInterestValueShouldDisplayOnClosingDisclosure(), CardsValidationSteps.ThenUpdatedComputedPrincipalAndInterestValueShouldDisplayOnClosingDisclosure()
+Thread#0:B:And updated/computed Mortgage Insurance value should display on Closing Disclosure
+Thread#0:T:binding error: Ambiguous step definitions found for step 'Then updated/computed Mortgage Insurance value should display on Closing Disclosure': CardsValidationSteps.ThenUpdatedComputedMortgageInsuranceValueShouldDisplayOnClosingDisclosure(), CardsValidationSteps.ThenUpdatedComputedMortgageInsuranceValueShouldDisplayOnClosingDisclosure()
+Thread#0:B:And updated/computed Estimated Total Monthly Payment value should display on Closing Disclosure
+Thread#0:T:binding error: Ambiguous step definitions found for step 'Then updated/computed Estimated Total Monthly Payment value should display on Closing Disclosure': CardsValidationSteps.ThenUpdatedComputedEstimatedTotalMonthlyPaymentValueShouldDisplayOnClosingDisclosure(), CardsValidationSteps.ThenUpdatedComputedEstimatedTotalMonthlyPaymentValueShouldDisplayOnClosingDisclosure()
+Thread#0:B:And updated/computed APR value should display on Closing Disclosure
+Thread#0:T:binding error: Ambiguous step definitions found for step 'Then updated/computed APR value should display on Closing Disclosure': CardsValidationSteps.ThenUpdatedComputedAprValueShouldDisplayOnClosingDisclosure(), CardsValidationSteps.ThenUpdatedComputedAprValueShouldDisplayOnClosingDisclosure()
+Thread#0:B:And APRWIN info value should display on Closing Disclosure
+Thread#0:T:binding error: Ambiguous step definitions found for step 'Then APRWIN info value should display on Closing Disclosure': CardsValidationSteps.ThenAprwinInfoValueShouldDisplayOnClosingDisclosure(), CardsValidationSteps.ThenAprwinInfoValueShouldDisplayOnClosingDisclosure()
+Thread#0:B:And updated/computed Balloon Amount value should display on Closing Disclosure
+Thread#0:T:binding error: Ambiguous step definitions found for step 'Then updated/computed Balloon Amount value should display on Closing Disclosure': CardsValidationSteps.ThenUpdatedComputedBalloonAmountValueShouldDisplayOnClosingDisclosure(), CardsValidationSteps.ThenUpdatedComputedBalloonAmountValueShouldDisplayOnClosingDisclosure()
+Thread#0:B:And updated/computed Total of Payments value should display on Closing Disclosure
+Thread#0:T:binding error: Ambiguous step definitions found for step 'Then updated/computed Total of Payments value should display on Closing Disclosure': CardsValidationSteps.ThenUpdatedComputedTotalOfPaymentsValueShouldDisplayOnClosingDisclosure(), CardsValidationSteps.ThenUpdatedComputedTotalOfPaymentsValueShouldDisplayOnClosingDisclosure()
+Thread#0:B:And updated/computed Finance Charge value should display on Closing Disclosure
+Thread#0:T:binding error: Ambiguous step definitions found for step 'Then updated/computed Finance Charge value should display on Closing Disclosure': CardsValidationSteps.ThenUpdatedComputedFinanceChargeValueShouldDisplayOnClosingDisclosure(), CardsValidationSteps.ThenUpdatedComputedFinanceChargeValueShouldDisplayOnClosingDisclosure()
+Thread#0:B:And updated/computed Amount Financed value should display on Closing Disclosure
+Thread#0:T:binding error: Ambiguous step definitions found for step 'Then updated/computed Amount Financed value should display on Closing Disclosure': CardsValidationSteps.ThenUpdatedComputedAmountFinancedValueShouldDisplayOnClosingDisclosure(), CardsValidationSteps.ThenUpdatedComputedAmountFinancedValueShouldDisplayOnClosingDisclosure()
+Thread#0:B:And updated/computed TIP value should display on Closing Disclosure
+Thread#0:T:binding error: Ambiguous step definitions found for step 'Then updated/computed TIP value should display on Closing Disclosure': CardsValidationSteps.ThenUpdatedComputedTipValueShouldDisplayOnClosingDisclosure(), CardsValidationSteps.ThenUpdatedComputedTipValueShouldDisplayOnClosingDisclosure()
+Thread#0:B:And updated/computed Escrowed Prop Costs Over Year 1 from consummation date value should display on Closing Disclosure
+Thread#0:T:binding error: Ambiguous step definitions found for step 'Then updated/computed Escrowed Prop Costs Over Year 1 from consummation date value should display on Closing Disclosure': CardsValidationSteps.ThenUpdatedComputedEscrowedPropCostsOverYear1FromConsummationDateValueShouldDisplayOnClosingDisclosure(), CardsValidationSteps.ThenUpdatedComputedEscrowedPropCostsOverYear1FromConsummationDateValueShouldDisplayOnClosingDisclosure()
+Thread#0:B:And updated/computed Escrowed Property Costs Over Year 1 from date of 1st loan payment value should display on Closing Disclosure
+Thread#0:T:binding error: Ambiguous step definitions found for step 'Then updated/computed Escrowed Property Costs Over Year 1 from date of 1st loan payment value should display on Closing Disclosure': CardsValidationSteps.ThenUpdatedComputedEscrowedPropertyCostsOverYear1FromDateOf1StLoanPaymentValueShouldDisplayOnClosingDisclosure(), CardsValidationSteps.ThenUpdatedComputedEscrowedPropertyCostsOverYear1FromDateOf1StLoanPaymentValueShouldDisplayOnClosingDisclosure()
+Thread#0:B:And updated/computed Initial Escrow Payment value should display on Closing Disclosure
+Thread#0:T:binding error: Ambiguous step definitions found for step 'Then updated/computed Initial Escrow Payment value should display on Closing Disclosure': CardsValidationSteps.ThenUpdatedComputedInitialEscrowPaymentValueShouldDisplayOnClosingDisclosure(), CardsValidationSteps.ThenUpdatedComputedInitialEscrowPaymentValueShouldDisplayOnClosingDisclosure()
+Thread#0:B:And updated/computed Non Escrow Property Costs over one year value should display on Closing Disclosure
+Thread#0:T:binding error: Ambiguous step definitions found for step 'Then updated/computed Non Escrow Property Costs over one year value should display on Closing Disclosure': CardsValidationSteps.ThenUpdatedComputedNonEscrowPropertyCostsOverOneYearValueShouldDisplayOnClosingDisclosure(), CardsValidationSteps.ThenUpdatedComputedNonEscrowPropertyCostsOverOneYearValueShouldDisplayOnClosingDisclosure()
+Thread#0:B:And updated/computed Estimated Escrow value should display on Closing Disclosure
+Thread#0:T:binding error: Ambiguous step definitions found for step 'Then updated/computed Estimated Escrow value should display on Closing Disclosure': CardsValidationSteps.ThenUpdatedComputedEstimatedEscrowValueShouldDisplayOnClosingDisclosure(), CardsValidationSteps.ThenUpdatedComputedEstimatedEscrowValueShouldDisplayOnClosingDisclosure()
+Thread#0:B:And updated/computed Estimated Taxes, Insurance & Assessments value should display on Closing Disclosure
+Thread#0:T:binding error: Ambiguous step definitions found for step 'Then updated/computed Estimated Taxes, Insurance & Assessments value should display on Closing Disclosure': CardsValidationSteps.ThenUpdatedComputedEstimatedTaxesInsuranceAssessmentsValueShouldDisplayOnClosingDisclosure(), CardsValidationSteps.ThenUpdatedComputedEstimatedTaxesInsuranceAssessmentsValueShouldDisplayOnClosingDisclosure()
+Thread#0:B:And user navigates to MI Inputs and Results Page
+Thread#0:T:binding error: Ambiguous step definitions found for step 'Then user navigates to MI Inputs and Results Page': CardsValidationSteps.ThenUserNavigatesToMIInputsAndResultsPage(), CardsValidationSteps.ThenUserNavigatesToMIInputsAndResultsPage()
+Thread#0:B:And updated/computed Scheduled PMI Termination Date value should display on Closing Disclosure
+Thread#0:T:binding error: Ambiguous step definitions found for step 'Then updated/computed Scheduled PMI Termination Date value should display on Closing Disclosure': CardsValidationSteps.ThenUpdatedComputedScheduledPmiTerminationDateValueShouldDisplayOnClosingDisclosure(), CardsValidationSteps.ThenUpdatedComputedScheduledPmiTerminationDateValueShouldDisplayOnClosingDisclosure()
+Thread#0:B:And updated/computed Cancel Date value should display on Closing Disclosure
+Thread#0:T:binding error: Ambiguous step definitions found for step 'Then updated/computed Cancel Date value should display on Closing Disclosure': CardsValidationSteps.ThenUpdatedComputedCancelDateValueShouldDisplayOnClosingDisclosure(), CardsValidationSteps.ThenUpdatedComputedCancelDateValueShouldDisplayOnClosingDisclosure()
+Thread#0:B:And updated/computed Upfront MIP values value should display on Closing Disclosure
+Thread#0:T:binding error: Ambiguous step definitions found for step 'Then updated/computed Upfront MIP values value should display on Closing Disclosure': CardsValidationSteps.ThenUpdatedComputedUpfrontMipValuesValueShouldDisplayOnClosingDisclosure(), CardsValidationSteps.ThenUpdatedComputedUpfrontMipValuesValueShouldDisplayOnClosingDisclosure()
+Thread#0:B:And user navigates to Loan Estimate Cards Page
+Thread#0:T:binding error: Ambiguous step definitions found for step 'Then user navigates to Loan Estimate Cards Page': CardsValidationSteps.ThenUserNavigatesToLoanEstimateCardsPage(), CardsValidationSteps.ThenUserNavigatesToLoanEstimateCardsPage()
+Thread#0:B:And updated/computed in 5 Years value should display on Loan Estimate
+Thread#0:T:binding error: Ambiguous step definitions found for step 'Then updated/comput

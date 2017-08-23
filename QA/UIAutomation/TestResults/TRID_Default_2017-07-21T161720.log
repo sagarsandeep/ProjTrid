@@ -1,0 +1,227 @@
+﻿VS filter: testpath:TestAssembly:TRID/Feature:EscrowInfoCardsValidation/Scenario:Uploading+JSON+file+and+validating+Escrow+Info+cards+value+on+Escrow+Info+page%2c+070
+Discovering target: Default
+Discovering tests from assembly: F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\bin\Debug\TRID.dll
+Appdomain Disposed
+Test Suite Dump
+#0: TRID/Default - 
+#1: Default - 
+#2: TRID - 
+#407: EscrowInfoCardsValidation - 
+#522: Uploading JSON file and validating Escrow Info cards value on Escrow Info page, 070 - TestAssembly:TRID/Feature:EscrowInfoCardsValidation/Scenario:Uploading+JSON+file+and+validating+Escrow+Info+cards+value+on+Escrow+Info+page%2c+070
+End: Test Suite Dump
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: testitem #522 from normal test queue 
+Thread#0:Scheduler: considering testitem #522 for thread
+Thread#0:Scheduler: using testitem #522 for thread
+Thread#0:Scheduler: Test #522 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread #0: creating new test thread executor for TRID, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null (target: Default)
+Loading SpecRun type 'TechTalk.SpecRun.Framework.TestAssemblyExecutor' from: C:\Users\sandees\AppData\Local\Temp\VisualStudioTestExplorerExtensions\SpecRun.Runner.1.5.2\tools\TechTalk.SpecRun.Framework.Executor.dll
+Thread#0: Test #522/0 is started on thread #0
+Thread#0:B:Given user is at TRID application homepage
+Thread#0:T:done: CardsValidationSteps.GivenUserIsAtTridApplicationHomepage() (42.9s)
+Thread#0:B:And user have Escrow Info data from excel sheet EscrowInfo for the scenario 49
+Thread#0:T:done: EscrowInfoCardsValidationSteps.GivenUserHaveEscrowInfoDataFromExcelSheetForTheScenario("EscrowInfo", 49) (0.8s)
+Thread#0:B:When user upload json file for the scenario
+Thread#0:T:done: CardsValidationSteps.WhenUserUploadJsonFileForTheScenario() (2.0s)
+Thread#0:B:And user navigates to Escrow Info Cards Page
+Thread#0:T:done: EscrowInfoCardsValidationSteps.WhenUserNavigatesToEscrowInfoCardsPage() (0.9s)
+Thread#0:B:Then updated/computed Insurance Initial Deposit value should display on Escrow Info
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedInfoValue :0
+Thread#0:T:ActualInfoValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedInsuranceInitialDepositValueShouldDisplayOnEscrowInfo() (0.4s)
+Thread#0:B:And updated/computed Insurance Period Deposit value should display on Escrow Info
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedInfoValue :0
+Thread#0:T:ActualInfoValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedInsurancePeriodDepositValueShouldDisplayOnEscrowInfo() (0.3s)
+Thread#0:B:And updated/computed Insurance Low Balance value should display on Escrow Info
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedInfoValue :0
+Thread#0:T:ActualInfoValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedInsuranceLowBalanceValueShouldDisplayOnEscrowInfo() (0.3s)
+Thread#0:B:And updated/computed Insurance Cushion value should display on Escrow Info
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedInfoValue :0
+Thread#0:T:ActualInfoValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedInsuranceCushionValueShouldDisplayOnEscrowInfo() (0.3s)
+Thread#0:B:And updated/computed Insurance Total Annual Disbursed value should display on Escrow Info
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedInfoValue :0
+Thread#0:T:ActualInfoValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedInsuranceTotalAnnualDisbursedValueShouldDisplayOnEscrowInfo() (0.3s)
+Thread#0:B:And updated/computed Tax Initial Deposit value should display on Escrow Info
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedInfoValue :0
+Thread#0:T:ActualInfoValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedTaxInitialDepositValueShouldDisplayOnEscrowInfo() (0.3s)
+Thread#0:B:And updated/computed Tax Period Deposit value should display on Escrow Info
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedInfoValue :0
+Thread#0:T:ActualInfoValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedTaxPeriodDepositValueShouldDisplayOnEscrowInfo() (0.3s)
+Thread#0:B:And updated/computed Tax Low Balance value should display on Escrow Info
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedInfoValue :0
+Thread#0:T:ActualInfoValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedTaxLowBalanceValueShouldDisplayOnEscrowInfo() (0.3s)
+Thread#0:B:And updated/computed Tax Cushion value should display on Escrow Info
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedInfoValue :0
+Thread#0:T:ActualInfoValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedTaxCushionValueShouldDisplayOnEscrowInfo() (0.3s)
+Thread#0:B:And updated/computed Tax Total Annual Disbursed value should display on Escrow Info
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedInfoValue :0
+Thread#0:T:ActualInfoValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedTaxTotalAnnualDisbursedValueShouldDisplayOnEscrowInfo() (0.3s)
+Thread#0:B:And updated/computed PMI Initial Deposit value should display on Escrow Info
+Thread#0:T:NUnit.Framework.AssertionException:   PMI Initial Deposit value does not match as expected with the difference of 80.78
+Thread#0:T:  Expected: 0.0d
+Thread#0:T:  But was:  80.780000000000001d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.EscrowInfoCardsValidationSteps.ThenUpdatedComputedPmiInitialDepositValueShouldDisplayOnEscrowInfo() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\EscrowInfoCardsValidationSteps.cs:line 398
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedPmiInitialDepositValueShouldDisplayOnEscrowInfo() (0.4s)
+Thread#0:B:And updated/computed PMI Period Deposit value should display on Escrow Info
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedInfoValue :80.78
+Thread#0:T:ActualInfoValue :80.78
+Thread#0:T:============================================================
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedPmiPeriodDepositValueShouldDisplayOnEscrowInfo() (0.3s)
+Thread#0:B:And updated/computed PMI Low Balance value should display on Escrow Info
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedInfoValue :0
+Thread#0:T:ActualInfoValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedPmiLowBalanceValueShouldDisplayOnEscrowInfo() (0.3s)
+Thread#0:B:And updated/computed PMI Cushion value should display on Escrow Info
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedInfoValue :0
+Thread#0:T:ActualInfoValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedPmiCushionValueShouldDisplayOnEscrowInfo() (0.3s)
+Thread#0:B:And updated/computed PMI Total Annual Disbursed value should display on Escrow Info
+Thread#0:T:NUnit.Framework.AssertionException:   PMI Total Annual Disbursed value does not match as expected with the difference of 484.68
+Thread#0:T:  Expected: 484.68000000000001d
+Thread#0:T:  But was:  0.0d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.EscrowInfoCardsValidationSteps.ThenUpdatedComputedPmiTotalAnnualDisbursedValueShouldDisplayOnEscrowInfo() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\EscrowInfoCardsValidationSteps.cs:line 533
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedPmiTotalAnnualDisbursedValueShouldDisplayOnEscrowInfo() (0.4s)
+Thread#0:B:And updated/computed Other1 Initial Deposit value should display on Escrow Info
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedOther1InitialDepositValueShouldDisplayOnEscrowInfo() (0.0s)
+Thread#0:B:And updated/computed Other1 Period Deposit value should display on Escrow Info
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedOther1PeriodDepositValueShouldDisplayOnEscrowInfo() (0.0s)
+Thread#0:B:And updated/computed Other1 Low Balance value should display on Escrow Info
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedOther1LowBalanceValueShouldDisplayOnEscrowInfo() (0.0s)
+Thread#0:B:And updated/computed Other1 Cushion value should display on Escrow Info
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedOther1CushionValueShouldDisplayOnEscrowInfo() (0.0s)
+Thread#0:B:And updated/computed Other1 Total Annual Disbursed value should display on Escrow Info
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedOther1TotalAnnualDisbursedValueShouldDisplayOnEscrowInfo() (0.0s)
+Thread#0:B:And updated/computed Other2 Initial Deposit value should display on Escrow Info
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedOther2InitialDepositValueShouldDisplayOnEscrowInfo() (0.0s)
+Thread#0:B:And updated/computed Other2 Period Deposit value should display on Escrow Info
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedOther2PeriodDepositValueShouldDisplayOnEscrowInfo() (0.0s)
+Thread#0:B:And updated/computed Other2 Low Balance value should display on Escrow Info
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedOther2LowBalanceValueShouldDisplayOnEscrowInfo() (0.0s)
+Thread#0:B:And updated/computed Other2 Cushion value should display on Escrow Info
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedOther2CushionValueShouldDisplayOnEscrowInfo() (0.0s)
+Thread#0:B:And updated/computed Other2 Total Annual Disbursed value should display on Escrow Info
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedOther2TotalAnnualDisbursedValueShouldDisplayOnEscrowInfo() (0.0s)
+Thread#0:B:And updated/computed Aggregate Initial Deposit value should display on Escrow Info
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedInfoValue :0
+Thread#0:T:ActualInfoValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedAggregateInitialDepositValueShouldDisplayOnEscrowInfo() (0.3s)
+Thread#0:B:And updated/computed Aggregate Period Deposit value should display on Escrow Info
+Thread#0:T:NUnit.Framework.AssertionException:   Aggregate Period Deposit value does not match as expected with the difference of 80.78
+Thread#0:T:  Expected: 80.780000000000001d
+Thread#0:T:  But was:  0.0d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.EscrowInfoCardsValidationSteps.ThenUpdatedComputedAggregatePeriodDepositValueShouldDisplayOnEscrowInfo() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\EscrowInfoCardsValidationSteps.cs:line 945
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedAggregatePeriodDepositValueShouldDisplayOnEscrowInfo() (0.4s)
+Thread#0:B:And updated/computed Aggregate Low Balance value should display on Escrow Info
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedInfoValue :0
+Thread#0:T:ActualInfoValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedAggregateLowBalanceValueShouldDisplayOnEscrowInfo() (0.3s)
+Thread#0:B:And updated/computed Aggregate Cushion value should display on Escrow Info
+Thread#0:T:===========================================================
+Thread#0:T:ExpectedInfoValue :0
+Thread#0:T:ActualInfoValue :0
+Thread#0:T:============================================================
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedAggregateCushionValueShouldDisplayOnEscrowInfo() (0.3s)
+Thread#0:B:And updated/computed Aggregate Total Annual Disbursed value should display on Escrow Info
+Thread#0:T:NUnit.Framework.AssertionException:   Aggregate Total Annual Disbursed value does not match as expected with the difference of 565.46
+Thread#0:T:  Expected: 484.68000000000001d
+Thread#0:T:  But was:  -80.780000000000001d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.EscrowInfoCardsValidationSteps.ThenUpdatedComputedAggregateTotalAnnualDisbursedValueShouldDisplayOnEscrowInfo() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\EscrowInfoCardsValidationSteps.cs:line 1053
+Thread#0:T:done: EscrowInfoCardsValidationSteps.ThenUpdatedComputedAggregateTotalAnnualDisbursedValueShouldDisplayOnEscrowInfo() (0.4s)
+Thread#0:Scheduler: get next test for thread
+Thread#:Scheduler: at the end of normal test queue
+Thread#0:Scheduler: enumerator for thread is at end
+Thread#0:Scheduler: No more tests for thread 
+Thread#0:T:##########################################################
+Thread#0:T:##########################################################
+Thread#0:T:====================================================================================
+Thread#0:T:Scenario Number : 70
+Thread#0:T:The total number of cards Failue: 4
+Thread#0:T:Name of cards Failed: || PMIInitialDeposit || : NUnit.Framework.AssertionException:   PMI Initial Deposit value does not match as expected with the difference of 80.78
+Thread#0:T:  Expected: 0.0d
+Thread#0:T:  But was:  80.780000000000001d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.EscrowInfoCardsValidationSteps.ThenUpdatedComputedPmiInitialDepositValueShouldDisplayOnEscrowInfo() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\EscrowInfoCardsValidationSteps.cs:line 398 
+Thread#0:T: ====================================================================================
+Thread#0:T:|| PMITotalAnnualDisbursed || : NUnit.Framework.AssertionException:   PMI Total Annual Disbursed value does not match as expected with the difference of 484.68
+Thread#0:T:  Expected: 484.68000000000001d
+Thread#0:T:  But was:  0.0d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.EscrowInfoCardsValidationSteps.ThenUpdatedComputedPmiTotalAnnualDisbursedValueShouldDisplayOnEscrowInfo() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\EscrowInfoCardsValidationSteps.cs:line 533 
+Thread#0:T: ====================================================================================
+Thread#0:T:|| AggregatePeriodDeposit || : NUnit.Framework.AssertionException:   Aggregate Period Deposit value does not match as expected with the difference of 80.78
+Thread#0:T:  Expected: 80.780000000000001d
+Thread#0:T:  But was:  0.0d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.EscrowInfoCardsValidationSteps.ThenUpdatedComputedAggregatePeriodDepositValueShouldDisplayOnEscrowInfo() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\EscrowInfoCardsValidationSteps.cs:line 945 
+Thread#0:T: ====================================================================================
+Thread#0:T:|| AggregateTotalAnnualDisbursed || : NUnit.Framework.AssertionException:   Aggregate Total Annual Disbursed value does not match as expected with the difference of 565.46
+Thread#0:T:  Expected: 484.68000000000001d
+Thread#0:T:  But was:  -80.780000000000001d
+Thread#0:T:   at NUnit.Framework.Assert.That[TActual](TActual actual, IResolveConstraint expression, String message, Object[] args)
+Thread#0:T:   at NUnit.Framework.Assert.AreEqual(Object expected, Object actual, String message, Object[] args)
+Thread#0:T:   at TRID.StepDefinitions.EscrowInfoCardsValidationSteps.ThenUpdatedComputedAggregateTotalAnnualDisbursedValueShouldDisplayOnEscrowInfo() in F:\Projects\TRID QA\trid-462743\QA\UIAutomation\SpecFramework\StepDefinitions\EscrowInfoCardsValidationSteps.cs:line 1053 
+Thread#0:T: ====================================================================================
+Thread#0:T:====================================================================================
+Thread#0:T:##########################################################
+Thread#0:T:##########################################################
+Thread#0: Test #522/0 is finished on thread #0 as CleanupFailed within 62.9698404 seconds
+Appdomain Disposed
+Thread#-1:Scheduler: get next test for thread
+Thread#:Scheduler: at the end of normal test queue
+Thread#-1:Scheduler: enumerator for thread is at end
+Total: 1
+Succeeded: 0
+Ignored: 0
+Pending: 0
+Skipped: 0
+Failed: 1
