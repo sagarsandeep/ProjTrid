@@ -11,7 +11,6 @@ namespace TRID.ProjectLibs.Common
         #region Assiging Variables 
 
         public static string ScenarioNo = "";
-        public static string ProductType = "";
         public static string CalculationMethod = "";
         public static string LoanType = "";
         public static string FrequencyOfPayments = "";
@@ -32,8 +31,8 @@ namespace TRID.ProjectLibs.Common
         public static string DateOfFirstPayment = "";
         public static string PrincipalAndInterestPayment = "";
         public static string DailyInterestPaidAtClosing = "";
-        public static string PmiorMipTerminationCriteria = "";
-        public static string PmiorMipTerminationValue = "";
+        public static string DropOffCriteria = "";
+        public static string DropOffCriteriaValue = "";
         public static string LoanDetailsEstimatedEscrow = "";
         public static string DisclosedMonthlyPrincipalAndInterest = "";
         public static string DisclosedMortgageInsurance = "";
@@ -228,23 +227,23 @@ namespace TRID.ProjectLibs.Common
         public static string AggregateTotalAnnualDisbursed = "";      
 
         public static int NumberOfRowCounts = 0;
-        public static Dictionary<string, string> EscrowDisbursmentGridInputs1 = new Dictionary<string, string>();
-        public static Dictionary<string, string> EscrowDisbursmentGridInputs2 = new Dictionary<string, string>();
-        public static Dictionary<string, string> EscrowDisbursmentGridInputs3 = new Dictionary<string, string>();
-        public static Dictionary<string, string> EscrowDisbursmentGridInputs4 = new Dictionary<string, string>();
-        public static Dictionary<string, string> EscrowDisbursmentGridInputs5 = new Dictionary<string, string>();
-        public static Dictionary<string, string> EscrowDisbursmentGridInputs6 = new Dictionary<string, string>();
-        public static Dictionary<string, string> EscrowDisbursmentGridInputs7 = new Dictionary<string, string>();
-        public static Dictionary<string, string> EscrowDisbursmentGridInputs8 = new Dictionary<string, string>();
+        public static Dictionary<string, string> EscrowPropertyCostsGridInputs1 = new Dictionary<string, string>();
+        public static Dictionary<string, string> EscrowPropertyCostsGridInputs2 = new Dictionary<string, string>();
+        public static Dictionary<string, string> EscrowPropertyCostsGridInputs3 = new Dictionary<string, string>();
+        public static Dictionary<string, string> EscrowPropertyCostsGridInputs4 = new Dictionary<string, string>();
+        public static Dictionary<string, string> EscrowPropertyCostsGridInputs5 = new Dictionary<string, string>();
+        public static Dictionary<string, string> EscrowPropertyCostsGridInputs6 = new Dictionary<string, string>();
+        public static Dictionary<string, string> EscrowPropertyCostsGridInputs7 = new Dictionary<string, string>();
+        public static Dictionary<string, string> EscrowPropertyCostsGridInputs8 = new Dictionary<string, string>();
 
-        public static Dictionary<string, string> EscrowInstallementGridInputs1 = new Dictionary<string, string>();
-        public static Dictionary<string, string> EscrowInstallementGridInputs2 = new Dictionary<string, string>();
-        public static Dictionary<string, string> EscrowInstallementGridInputs3 = new Dictionary<string, string>();
-        public static Dictionary<string, string> EscrowInstallementGridInputs4 = new Dictionary<string, string>();
-        public static Dictionary<string, string> EscrowInstallementGridInputs5 = new Dictionary<string, string>();
-        public static Dictionary<string, string> EscrowInstallementGridInputs6 = new Dictionary<string, string>();
-        public static Dictionary<string, string> EscrowInstallementGridInputs7 = new Dictionary<string, string>();
-        public static Dictionary<string, string> EscrowInstallementGridInputs8 = new Dictionary<string, string>();
+        public static Dictionary<string, string> EscrowPropertyCostInstallmentsGridInputs1 = new Dictionary<string, string>();
+        public static Dictionary<string, string> EscrowPropertyCostInstallmentsGridInputs2 = new Dictionary<string, string>();
+        public static Dictionary<string, string> EscrowPropertyCostInstallmentsGridInputs3 = new Dictionary<string, string>();
+        public static Dictionary<string, string> EscrowPropertyCostInstallmentsGridInputs4 = new Dictionary<string, string>();
+        public static Dictionary<string, string> EscrowPropertyCostInstallmentsGridInputs5 = new Dictionary<string, string>();
+        public static Dictionary<string, string> EscrowPropertyCostInstallmentsGridInputs6 = new Dictionary<string, string>();
+        public static Dictionary<string, string> EscrowPropertyCostInstallmentsGridInputs7 = new Dictionary<string, string>();
+        public static Dictionary<string, string> EscrowPropertyCostInstallmentsGridInputs8 = new Dictionary<string, string>();
 
 
         #endregion
@@ -256,88 +255,86 @@ namespace TRID.ProjectLibs.Common
             if (sheetName == "ClosingDisclosure")
             {
                 if (col == 1 ) ScenarioNo = stringValue;
-                if (col == 4 ) DateOfLoan = stringValue;
-                if (col == 5 ) DateInterestBeginToAccrue = stringValue;
-                if (col == 6 ) DateOfFirstPayment = stringValue;
-                if (col == 7 ) ProductType = stringValue;
-                if (col == 8 ) LoanType = stringValue;
-                if (col == 9 ) CalculationMethod = stringValue;              
-                if (col == 10) FrequencyOfPayments = stringValue;
-                if (col == 11 ) NumberOfMthsOrDaysInUnitPeriod = stringValue;
-                if (col == 12) LoanTerm = stringValue;
-                if (col == 13) AmortizationPeriodMonths = stringValue;
-                if (col == 14) NumberOfPayments = stringValue;
-                if (col == 15) AdvanceType = stringValue;
-                if (col == 16) RepaymentTermType = stringValue;
-                if (col == 17) RateOfInterest = stringValue;
-                if (col == 18) LoanAmountOrCommitmentAmount = stringValue;                                        
-                if (col == 19) PrincipalAndInterestPayment = stringValue;
-                if (col == 20) DailyInterestPaidAtClosing = stringValue;
-                if (col == 21) BaseLoanAmount = stringValue;
-                if (col == 22) UpfrontLoanFactor = stringValue;
-                if (col == 23) AnnualMip = stringValue;
-                if (col == 24) UpfrontMipFinanced = stringValue;
-                if (col == 25) DisclosedMonthlyPrincipalAndInterest = stringValue;
-                if (col == 26) DisclosedMortgageInsurance = stringValue;
-                //if (col == 27) Monthly Escrow = stringValue;
-                if (col == 28) DisclosedPeriodEscrowPayment = stringValue;
-                if (col == 29) DisclosedEstimatedTotalMonthlyPayment = stringValue;
-                if (col == 30) DisclosedFinalOrBalloonPayment = stringValue;
-                if (col == 31) DisclosedEstimatedTaxesInsuranceAssessments = stringValue;
-                if (col == 32) DsclEscrowedPropertyCostsOverYearOne = stringValue;
-                if (col == 33) DisclosedNonEscrowPropertyOverYearOne = stringValue;
-                if (col == 34) DisclosedInitialEscrowPayment = stringValue;
-                if (col == 35) DisclosedTotalOfPayment = stringValue;
-                if (col == 36) DisclosedFinanceCharge = stringValue;
-                if (col == 37) DisclosedAmountFinanced = stringValue;
-                if (col == 38) DisclosedApr = stringValue;
-                if (col == 39) DisclosedTip = stringValue;
-                if (col == 40) DisclosedPmiTerminationDate = stringValue;
-                if (col == 41) DisclosedPmiCancelDate = stringValue;
-                if (col == 42) DisclosedUpfrontMip = stringValue;
-                if (col == 43) DiscLosedIn5Years = stringValue;
-                if (col == 44) DiscLosedIn5YearsPrincipal = stringValue;              
-                if (col == 45) PrincipalAndInt = stringValue;
-                if (col == 46) MortgageInsurance = stringValue;
-                if (col == 47) EstimatedTotalMonthlyPayment = stringValue;
-                if (col == 48) Apr = stringValue;
-                if (col == 49) AprWin = stringValue;
-                if (col == 50) DifferentFinalOrBalloonPayment = stringValue;
-                if (col == 51) TotalOfPayments = stringValue;
-                if (col == 52) FinanceCharge = stringValue;
-                if (col == 53) AmountFinanced = stringValue;
-                if (col == 54) Tip = stringValue;
-                if (col == 55) EscrowedPropCostsOverYear1FromConsummationDate = stringValue;
-                if (col == 56) EscrowedPropertyCostsOverYear1FromDateOf1stLoanPayment = stringValue;
-                if (col == 57) InitialEscrowPayment = stringValue;
-                if (col == 58) NonEscrowPropertyOverYear1 = stringValue;
-                if (col == 59) EstimatedEscrow = stringValue;
-                if (col == 60) EstimatedTaxesInsuranceAssessments = stringValue;
-                if (col == 61) ScheduledPmiTerminationDate = stringValue;
-                if (col == 62) PmiCancelDate = stringValue;
-                if (col == 63) UpfrontMip = stringValue;
-                if (col == 64) In5Years = stringValue;
-                if (col == 65) In5YearsPrincipal = stringValue;
-                if (col == 66) VariancePrincipalAndInt = stringValue;
-                if (col == 67) VarianceMortgageInsurance = stringValue;
-                if (col == 68) VarianceEstimatedTotalMonthlyPayment = stringValue;
-                if (col == 69) VarianceApr = stringValue;
-                if (col == 70) VarianceDifferentFinalOrBalloonPayment = stringValue;
-                if (col == 71) VarianceTotalOfPayments = stringValue;
-                if (col == 72) VarianceFinanceCharge = stringValue;
-                if (col == 73) VarianceAmountFinanced = stringValue;
-                if (col == 74) VarianceTip = stringValue;
-                if (col == 75) VarianceEscrowedPropCostsOverYear1FromConsummationDate = stringValue;
-                if (col == 76) VarianceEscrowedPropertyCostsOverYear1FromDateOf1StLoanPayment = stringValue;
-                if (col == 77) VarianceInitialEscrowPayment = stringValue;
-                if (col == 78) VarianceNonEscrowPropertyOverYear1 = stringValue;
-                if (col == 79) VarianceEstimatedEscrow = stringValue;
-                if (col == 80) VarianceEstimatedTaxesInsuranceAssessments = stringValue;
-                if (col == 81) VarianceScheduledPmiTerminationDate = stringValue;
-                if (col == 82) VariancePmiCancelDate = stringValue;
-                if (col == 83) VarianceUpfrontMip = stringValue;
-                if (col == 84) VarianceIn5Years = stringValue;
-                if (col == 85) VarianceIn5YearsPrincipal = stringValue;
+                if (col == 4 ) LoanType = stringValue;
+                if (col == 5 ) CalculationMethod = stringValue;              
+                if (col == 6 ) FrequencyOfPayments = stringValue;
+                if (col == 7 ) NumberOfMthsOrDaysInUnitPeriod = stringValue;
+                if (col == 8 ) LoanTerm = stringValue;
+                if (col == 9 ) AmortizationPeriodMonths = stringValue;
+                if (col == 10) NumberOfPayments = stringValue;
+                if (col == 11) AdvanceType = stringValue;
+                if (col == 12) RepaymentTermType = stringValue;
+                if (col == 13) RateOfInterest = stringValue;
+                if (col == 14) LoanAmountOrCommitmentAmount = stringValue;                                        
+                if (col == 15) DateOfLoan = stringValue;
+                if (col == 16) DateInterestBeginToAccrue = stringValue;
+                if (col == 17) DateOfFirstPayment = stringValue;
+                if (col == 18) PrincipalAndInterestPayment = stringValue;
+                if (col == 19) DailyInterestPaidAtClosing = stringValue;
+                if (col == 20) BaseLoanAmount = stringValue;
+                if (col == 21) UpfrontLoanFactor = stringValue;
+                if (col == 22) AnnualMip = stringValue;
+                if (col == 23) UpfrontMipFinanced = stringValue;
+                if (col == 24) DisclosedMonthlyPrincipalAndInterest = stringValue;
+                if (col == 25) DisclosedMortgageInsurance = stringValue;
+                if (col == 27) DisclosedPeriodEscrowPayment = stringValue;
+                if (col == 28) DisclosedEstimatedTotalMonthlyPayment = stringValue;
+                if (col == 29) DisclosedFinalOrBalloonPayment = stringValue;
+                if (col == 30) DisclosedEstimatedTaxesInsuranceAssessments = stringValue;
+                if (col == 31) DsclEscrowedPropertyCostsOverYearOne = stringValue;
+                if (col == 32) DisclosedNonEscrowPropertyOverYearOne = stringValue;
+                if (col == 33) DisclosedInitialEscrowPayment = stringValue;
+                if (col == 34) DisclosedTotalOfPayment = stringValue;
+                if (col == 35) DisclosedFinanceCharge = stringValue;
+                if (col == 36) DisclosedAmountFinanced = stringValue;
+                if (col == 37) DisclosedApr = stringValue;
+                if (col == 38) DisclosedTip = stringValue;
+                if (col == 39) DisclosedPmiTerminationDate = stringValue;
+                if (col == 40) DisclosedPmiCancelDate = stringValue;
+                if (col == 41) DisclosedUpfrontMip = stringValue;
+                if (col == 42) DiscLosedIn5Years = stringValue;
+                if (col == 43) DiscLosedIn5YearsPrincipal = stringValue;              
+                if (col == 44) PrincipalAndInt = stringValue;
+                if (col == 45) MortgageInsurance = stringValue;
+                if (col == 46) EstimatedTotalMonthlyPayment = stringValue;
+                if (col == 47) Apr = stringValue;
+                if (col == 48) AprWin = stringValue;
+                if (col == 49) DifferentFinalOrBalloonPayment = stringValue;
+                if (col == 50) TotalOfPayments = stringValue;
+                if (col == 51) FinanceCharge = stringValue;
+                if (col == 52) AmountFinanced = stringValue;
+                if (col == 53) Tip = stringValue;
+                if (col == 54) EscrowedPropCostsOverYear1FromConsummationDate = stringValue;
+                if (col == 55) EscrowedPropertyCostsOverYear1FromDateOf1stLoanPayment = stringValue;
+                if (col == 56) InitialEscrowPayment = stringValue;
+                if (col == 57) NonEscrowPropertyOverYear1 = stringValue;
+                if (col == 58) EstimatedEscrow = stringValue;
+                if (col == 59) EstimatedTaxesInsuranceAssessments = stringValue;
+                if (col == 60) ScheduledPmiTerminationDate = stringValue;
+                if (col == 61) PmiCancelDate = stringValue;
+                if (col == 62) UpfrontMip = stringValue;
+                if (col == 63) In5Years = stringValue;
+                if (col == 64) In5YearsPrincipal = stringValue;
+                if (col == 65) VariancePrincipalAndInt = stringValue;
+                if (col == 66) VarianceMortgageInsurance = stringValue;
+                if (col == 67) VarianceEstimatedTotalMonthlyPayment = stringValue;
+                if (col == 68) VarianceApr = stringValue;
+                if (col == 69) VarianceDifferentFinalOrBalloonPayment = stringValue;
+                if (col == 70) VarianceTotalOfPayments = stringValue;
+                if (col == 71) VarianceFinanceCharge = stringValue;
+                if (col == 72) VarianceAmountFinanced = stringValue;
+                if (col == 73) VarianceTip = stringValue;
+                if (col == 74) VarianceEscrowedPropCostsOverYear1FromConsummationDate = stringValue;
+                if (col == 75) VarianceEscrowedPropertyCostsOverYear1FromDateOf1StLoanPayment = stringValue;
+                if (col == 76) VarianceInitialEscrowPayment = stringValue;
+                if (col == 77) VarianceNonEscrowPropertyOverYear1 = stringValue;
+                if (col == 78) VarianceEstimatedEscrow = stringValue;
+                if (col == 79) VarianceEstimatedTaxesInsuranceAssessments = stringValue;
+                if (col == 80) VarianceScheduledPmiTerminationDate = stringValue;
+                if (col == 81) VariancePmiCancelDate = stringValue;
+                if (col == 82) VarianceUpfrontMip = stringValue;
+                if (col == 83) VarianceIn5Years = stringValue;
+                if (col == 84) VarianceIn5YearsPrincipal = stringValue;
             }
 
             #endregion
@@ -408,8 +405,8 @@ namespace TRID.ProjectLibs.Common
                 if (col == 5) FrequencyOfDisbursement = stringValue;
                 if (col == 6) DateOfFirstMonthlyPmiDisbursement = stringValue;
                 if (col == 7) LowerOfCostOfAppraisal = stringValue;            
-                if (col == 8) PmiorMipTerminationCriteria = stringValue;
-                if (col == 9) PmiorMipTerminationValue = stringValue;
+                if (col == 8) DropOffCriteria = stringValue;
+                if (col == 9) DropOffCriteriaValue = stringValue;
             }              
                            
             #endregion
@@ -554,9 +551,9 @@ namespace TRID.ProjectLibs.Common
                     if (stringValue != "")
                     {
                         var splitString = stringValue.Split(',');
-                        EscrowDisbursmentGridInputs1.Add("EscrowDisbursmentType", splitString[0]);
-                        EscrowDisbursmentGridInputs1.Add("IsEscrowed", splitString[1]);
-                        EscrowDisbursmentGridInputs1.Add("EscrowCushion", splitString[2]);
+                        EscrowPropertyCostsGridInputs1.Add("PropertyCostType", splitString[0]);
+                        EscrowPropertyCostsGridInputs1.Add("Escrowed", splitString[1]);
+                        EscrowPropertyCostsGridInputs1.Add("Cushion", splitString[2]);
                         NumberOfRowCounts += 1;
                     }
 
@@ -564,9 +561,9 @@ namespace TRID.ProjectLibs.Common
                     if (stringValue != "")
                     {
                         var splitString = stringValue.Split(',');
-                        EscrowDisbursmentGridInputs2.Add("EscrowDisbursmentType", splitString[0]);
-                        EscrowDisbursmentGridInputs2.Add("IsEscrowed", splitString[1]);
-                        EscrowDisbursmentGridInputs2.Add("EscrowCushion", splitString[2]);
+                        EscrowPropertyCostsGridInputs2.Add("PropertyCostType", splitString[0]);
+                        EscrowPropertyCostsGridInputs2.Add("Escrowed", splitString[1]);
+                        EscrowPropertyCostsGridInputs2.Add("Cushion", splitString[2]);
                         NumberOfRowCounts += 1;
                     }
 
@@ -574,9 +571,9 @@ namespace TRID.ProjectLibs.Common
                     if (stringValue != "")
                     {
                         var splitString = stringValue.Split(',');
-                        EscrowDisbursmentGridInputs3.Add("EscrowDisbursmentType", splitString[0]);
-                        EscrowDisbursmentGridInputs3.Add("IsEscrowed", splitString[1]);
-                        EscrowDisbursmentGridInputs3.Add("EscrowCushion", splitString[2]);
+                        EscrowPropertyCostsGridInputs3.Add("PropertyCostType", splitString[0]);
+                        EscrowPropertyCostsGridInputs3.Add("Escrowed", splitString[1]);
+                        EscrowPropertyCostsGridInputs3.Add("Cushion", splitString[2]);
                         NumberOfRowCounts += 1;
                     }
 
@@ -584,9 +581,9 @@ namespace TRID.ProjectLibs.Common
                     if (stringValue != "")
                     {
                         var splitString = stringValue.Split(',');
-                        EscrowDisbursmentGridInputs4.Add("EscrowDisbursmentType", splitString[0]);
-                        EscrowDisbursmentGridInputs4.Add("IsEscrowed", splitString[1]);
-                        EscrowDisbursmentGridInputs4.Add("EscrowCushion", splitString[2]);
+                        EscrowPropertyCostsGridInputs4.Add("PropertyCostType", splitString[0]);
+                        EscrowPropertyCostsGridInputs4.Add("Escrowed", splitString[1]);
+                        EscrowPropertyCostsGridInputs4.Add("Cushion", splitString[2]);
                         NumberOfRowCounts += 1;
                     }
 
@@ -594,9 +591,9 @@ namespace TRID.ProjectLibs.Common
                     if (stringValue != "")
                     {
                         var splitString = stringValue.Split(',');
-                        EscrowDisbursmentGridInputs5.Add("EscrowDisbursmentType", splitString[0]);
-                        EscrowDisbursmentGridInputs5.Add("IsEscrowed", splitString[1]);
-                        EscrowDisbursmentGridInputs5.Add("EscrowCushion", splitString[2]);
+                        EscrowPropertyCostsGridInputs5.Add("PropertyCostType", splitString[0]);
+                        EscrowPropertyCostsGridInputs5.Add("Escrowed", splitString[1]);
+                        EscrowPropertyCostsGridInputs5.Add("Cushion", splitString[2]);
                         NumberOfRowCounts += 1;
                     }
 
@@ -604,9 +601,9 @@ namespace TRID.ProjectLibs.Common
                     if (stringValue != "")
                     {
                         var splitString = stringValue.Split(',');
-                        EscrowDisbursmentGridInputs6.Add("EscrowDisbursmentType", splitString[0]);
-                        EscrowDisbursmentGridInputs6.Add("IsEscrowed", splitString[1]);
-                        EscrowDisbursmentGridInputs6.Add("EscrowCushion", splitString[2]);
+                        EscrowPropertyCostsGridInputs6.Add("PropertyCostType", splitString[0]);
+                        EscrowPropertyCostsGridInputs6.Add("Escrowed", splitString[1]);
+                        EscrowPropertyCostsGridInputs6.Add("Cushion", splitString[2]);
                         NumberOfRowCounts += 1;
                     }
 
@@ -614,9 +611,9 @@ namespace TRID.ProjectLibs.Common
                     if (stringValue != "")
                     {
                         var splitString = stringValue.Split(',');
-                        EscrowDisbursmentGridInputs7.Add("EscrowDisbursmentType", splitString[0]);
-                        EscrowDisbursmentGridInputs7.Add("IsEscrowed", splitString[1]);
-                        EscrowDisbursmentGridInputs7.Add("EscrowCushion", splitString[2]);
+                        EscrowPropertyCostsGridInputs7.Add("PropertyCostType", splitString[0]);
+                        EscrowPropertyCostsGridInputs7.Add("Escrowed", splitString[1]);
+                        EscrowPropertyCostsGridInputs7.Add("Cushion", splitString[2]);
                         NumberOfRowCounts += 1;
                     }
 
@@ -624,9 +621,9 @@ namespace TRID.ProjectLibs.Common
                     if (stringValue != "")
                     {
                         var splitString = stringValue.Split(',');
-                        EscrowDisbursmentGridInputs8.Add("EscrowDisbursmentType", splitString[0]);
-                        EscrowDisbursmentGridInputs8.Add("IsEscrowed", splitString[1]);
-                        EscrowDisbursmentGridInputs8.Add("EscrowCushion", splitString[2]);
+                        EscrowPropertyCostsGridInputs8.Add("PropertyCostType", splitString[0]);
+                        EscrowPropertyCostsGridInputs8.Add("Escrowed", splitString[1]);
+                        EscrowPropertyCostsGridInputs8.Add("Cushion", splitString[2]);
                         NumberOfRowCounts += 1;
                     }
 
@@ -635,10 +632,11 @@ namespace TRID.ProjectLibs.Common
                     if (stringValue != "")
                     {
                         var splitString = stringValue.Split(',');
-                        EscrowInstallementGridInputs1.Add("Number", splitString[0]);
-                        EscrowInstallementGridInputs1.Add("Amount", splitString[1]);
-                        EscrowInstallementGridInputs1.Add("DatePaid/Disbursed", splitString[2]);
-                        EscrowInstallementGridInputs1.Add("EscrowDisbursmentType", splitString[3]);
+                        EscrowPropertyCostInstallmentsGridInputs1.Add("Number", splitString[0]);
+                        EscrowPropertyCostInstallmentsGridInputs1.Add("Amount", splitString[1]);
+                        EscrowPropertyCostInstallmentsGridInputs1.Add("DatePaid/Disbursed", splitString[2]);
+                        EscrowPropertyCostInstallmentsGridInputs1.Add("PropertyCostType", splitString[3]);
+                        EscrowPropertyCostInstallmentsGridInputs1.Add("VoluntaryContribution", splitString[4]);
                         NumberOfRowCounts += 1;
                     }
 
@@ -646,10 +644,11 @@ namespace TRID.ProjectLibs.Common
                     if (stringValue != "")
                     {
                         var splitString = stringValue.Split(',');
-                        EscrowInstallementGridInputs2.Add("Number", splitString[0]);
-                        EscrowInstallementGridInputs2.Add("Amount", splitString[1]);
-                        EscrowInstallementGridInputs2.Add("DatePaid/Disbursed", splitString[2]);
-                        EscrowInstallementGridInputs2.Add("EscrowDisbursmentType", splitString[3]);
+                        EscrowPropertyCostInstallmentsGridInputs2.Add("Number", splitString[0]);
+                        EscrowPropertyCostInstallmentsGridInputs2.Add("Amount", splitString[1]);
+                        EscrowPropertyCostInstallmentsGridInputs2.Add("DatePaid/Disbursed", splitString[2]);
+                        EscrowPropertyCostInstallmentsGridInputs2.Add("PropertyCostType", splitString[3]);
+                        EscrowPropertyCostInstallmentsGridInputs2.Add("VoluntaryContribution", splitString[4]);
                         NumberOfRowCounts += 1;
                     }
 
@@ -657,10 +656,11 @@ namespace TRID.ProjectLibs.Common
                     if (stringValue != "")
                     {
                         var splitString = stringValue.Split(',');
-                        EscrowInstallementGridInputs3.Add("Number", splitString[0]);
-                        EscrowInstallementGridInputs3.Add("Amount", splitString[1]);
-                        EscrowInstallementGridInputs3.Add("DatePaid/Disbursed", splitString[2]);
-                        EscrowInstallementGridInputs3.Add("EscrowDisbursmentType", splitString[3]);
+                        EscrowPropertyCostInstallmentsGridInputs3.Add("Number", splitString[0]);
+                        EscrowPropertyCostInstallmentsGridInputs3.Add("Amount", splitString[1]);
+                        EscrowPropertyCostInstallmentsGridInputs3.Add("DatePaid/Disbursed", splitString[2]);
+                        EscrowPropertyCostInstallmentsGridInputs3.Add("PropertyCostType", splitString[3]);
+                        EscrowPropertyCostInstallmentsGridInputs3.Add("VoluntaryContribution", splitString[4]);
                         NumberOfRowCounts += 1;
                     }
 
@@ -668,10 +668,11 @@ namespace TRID.ProjectLibs.Common
                     if (stringValue != "")
                     {
                         var splitString = stringValue.Split(',');
-                        EscrowInstallementGridInputs4.Add("Number", splitString[0]);
-                        EscrowInstallementGridInputs4.Add("Amount", splitString[1]);
-                        EscrowInstallementGridInputs4.Add("DatePaid/Disbursed", splitString[2]);
-                        EscrowInstallementGridInputs4.Add("EscrowDisbursmentType", splitString[3]);
+                        EscrowPropertyCostInstallmentsGridInputs4.Add("Number", splitString[0]);
+                        EscrowPropertyCostInstallmentsGridInputs4.Add("Amount", splitString[1]);
+                        EscrowPropertyCostInstallmentsGridInputs4.Add("DatePaid/Disbursed", splitString[2]);
+                        EscrowPropertyCostInstallmentsGridInputs4.Add("PropertyCostType", splitString[3]);
+                        EscrowPropertyCostInstallmentsGridInputs4.Add("VoluntaryContribution", splitString[4]);
                         NumberOfRowCounts += 1;
                     }
 
@@ -679,10 +680,11 @@ namespace TRID.ProjectLibs.Common
                     if (stringValue != "")
                     {
                         var splitString = stringValue.Split(',');
-                        EscrowInstallementGridInputs5.Add("Number", splitString[0]);
-                        EscrowInstallementGridInputs5.Add("Amount", splitString[1]);
-                        EscrowInstallementGridInputs5.Add("DatePaid/Disbursed", splitString[2]);
-                        EscrowInstallementGridInputs5.Add("EscrowDisbursmentType", splitString[3]);
+                        EscrowPropertyCostInstallmentsGridInputs5.Add("Number", splitString[0]);
+                        EscrowPropertyCostInstallmentsGridInputs5.Add("Amount", splitString[1]);
+                        EscrowPropertyCostInstallmentsGridInputs5.Add("DatePaid/Disbursed", splitString[2]);
+                        EscrowPropertyCostInstallmentsGridInputs5.Add("PropertyCostType", splitString[3]);
+                        EscrowPropertyCostInstallmentsGridInputs5.Add("VoluntaryContribution", splitString[4]);
                         NumberOfRowCounts += 1;
                     }
 
@@ -690,10 +692,11 @@ namespace TRID.ProjectLibs.Common
                     if (stringValue != "")
                     {
                         var splitString = stringValue.Split(',');
-                        EscrowInstallementGridInputs6.Add("Number", splitString[0]);
-                        EscrowInstallementGridInputs6.Add("Amount", splitString[1]);
-                        EscrowInstallementGridInputs6.Add("DatePaid/Disbursed", splitString[2]);
-                        EscrowInstallementGridInputs6.Add("EscrowDisbursmentType", splitString[3]);
+                        EscrowPropertyCostInstallmentsGridInputs6.Add("Number", splitString[0]);
+                        EscrowPropertyCostInstallmentsGridInputs6.Add("Amount", splitString[1]);
+                        EscrowPropertyCostInstallmentsGridInputs6.Add("DatePaid/Disbursed", splitString[2]);
+                        EscrowPropertyCostInstallmentsGridInputs6.Add("PropertyCostType", splitString[3]);
+                        EscrowPropertyCostInstallmentsGridInputs6.Add("VoluntaryContribution", splitString[4]);
                         NumberOfRowCounts += 1;
                     }
 
@@ -701,10 +704,11 @@ namespace TRID.ProjectLibs.Common
                     if (stringValue != "")
                     {
                         var splitString = stringValue.Split(',');
-                        EscrowInstallementGridInputs7.Add("Number", splitString[0]);
-                        EscrowInstallementGridInputs7.Add("Amount", splitString[1]);
-                        EscrowInstallementGridInputs7.Add("DatePaid/Disbursed", splitString[2]);
-                        EscrowInstallementGridInputs7.Add("EscrowDisbursmentType", splitString[3]);
+                        EscrowPropertyCostInstallmentsGridInputs7.Add("Number", splitString[0]);
+                        EscrowPropertyCostInstallmentsGridInputs7.Add("Amount", splitString[1]);
+                        EscrowPropertyCostInstallmentsGridInputs7.Add("DatePaid/Disbursed", splitString[2]);
+                        EscrowPropertyCostInstallmentsGridInputs7.Add("PropertyCostType", splitString[3]);
+                        EscrowPropertyCostInstallmentsGridInputs7.Add("VoluntaryContribution", splitString[4]);
                         NumberOfRowCounts += 1;
                     }
 
@@ -712,10 +716,11 @@ namespace TRID.ProjectLibs.Common
                     if (stringValue != "")
                     {
                         var splitString = stringValue.Split(',');
-                        EscrowInstallementGridInputs8.Add("Number", splitString[0]);
-                        EscrowInstallementGridInputs8.Add("Amount", splitString[1]);
-                        EscrowInstallementGridInputs8.Add("DatePaid/Disbursed", splitString[2]);
-                        EscrowInstallementGridInputs8.Add("EscrowDisbursmentType", splitString[3]);
+                        EscrowPropertyCostInstallmentsGridInputs8.Add("Number", splitString[0]);
+                        EscrowPropertyCostInstallmentsGridInputs8.Add("Amount", splitString[1]);
+                        EscrowPropertyCostInstallmentsGridInputs8.Add("DatePaid/Disbursed", splitString[2]);
+                        EscrowPropertyCostInstallmentsGridInputs8.Add("PropertyCostType", splitString[3]);
+                        EscrowPropertyCostInstallmentsGridInputs8.Add("VoluntaryContribution", splitString[4]);
                         NumberOfRowCounts += 1;
                     }
             }

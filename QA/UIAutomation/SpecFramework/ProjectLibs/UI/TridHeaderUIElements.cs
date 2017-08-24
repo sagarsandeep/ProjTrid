@@ -17,7 +17,7 @@ namespace TRID.ProjectLibs.UI
         public static By CdResultsLink = By.LinkText("CD Results");
         public static By EscrowLink = By.LinkText("Escrow");
         public static By AmortizationLink = By.LinkText("Amortization");
-        public static By EscrowTrialBalanceLink = By.LinkText("Escrow Trial Bal");
+        public static By EscrowTrialBalanceLink = By.LinkText("Escrow Trial Balance");
         public static By VariableAmortizationLink = By.LinkText("Variable Amortization");
         public static By ExportLink = By.LinkText("Export");
         public static By EscrowGrid = By.LinkText("EscrowGrid");

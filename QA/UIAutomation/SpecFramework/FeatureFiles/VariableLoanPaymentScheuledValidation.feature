@@ -10,13 +10,12 @@ Given user is at TRID application homepage
 	And user have Export data from excel sheet <eSheetName> for the scenario <RowNumber>
 	And user have Escrow Grid data from excel sheet <egSheetName> for the scenario <RowNumber>
 When user navigate to Loan Inputs Page
-    And user enters Loan detail input values for computation
-	And User selects Product Type
-	And user selects loan type
 	And user selects Calculation Method
+	And user selects loan type
 	And user selects Frequency of Payments
 	And user selects Loan Term
 	And user selects Repayment Term Type
+    And user enters Loan detail input values for computation	
 	And user enters Escrow Grid Input values
 	And user enters all input values for Prepaid Charges
 	And user enters input value for prepaid custom fields
@@ -68,13 +67,12 @@ Given user is at TRID application homepage
 	And user have Export data from excel sheet <eSheetName> for the scenario <RowNumber>
 	And user have Escrow Grid data from excel sheet <egSheetName> for the scenario <RowNumber>
 When user navigate to Loan Inputs Page
-    And user enters Loan detail input values for computation
-	And User selects Product Type
-	And user selects loan type
 	And user selects Calculation Method
+	And user selects loan type
 	And user selects Frequency of Payments
 	And user selects Loan Term
 	And user selects Repayment Term Type
+    And user enters Loan detail input values for computation	
 	And user enters Escrow Grid Input values
 	And user enters all input values for Prepaid Charges
 	And user enters input value for prepaid custom fields
@@ -96,8 +94,8 @@ Then user navigates to ARM Page
 	And updated/computed Payment Stream Number value should display on ARM Worst Case
 	And updated/computed Number of Payments value should display on ARM Worst Case
 	And updated/computed Payment Amount value should display on ARM Worst Case
-	And updated/computed Principal and Interest Payment value should display on ARM Worst Case
-	And updated/computed PMI Payment value should display on ARM Worst Case
+	And updated/computed Period Payment value should display on ARM Worst Case
+	And updated/computed Period PMI value should display on ARM Worst Case
 	#And updated/computed Ins Escrowed Amount value should display on ARM Worst Case
 	#And updated/computed Tax Escrowed Amount value should display on ARM Worst Case
 Examples:
@@ -148,8 +146,8 @@ Then user navigates to ARM Page
 	And updated/computed Payment Stream Number value should display on ARM Worst Case
 	And updated/computed Number of Payments value should display on ARM Worst Case
 	And updated/computed Payment Amount value should display on ARM Worst Case
-	And updated/computed Principal and Interest Payment value should display on ARM Worst Case
-	And updated/computed PMI Payment value should display on ARM Worst Case
+	And updated/computed Period Payment value should display on ARM Worst Case
+	And updated/computed Period PMI value should display on ARM Worst Case
 	#And updated/computed Ins Escrowed Amount value should display on ARM Worst Case
 	#And updated/computed Tax Escrowed Amount value should display on ARM Worst Case
 	Examples:

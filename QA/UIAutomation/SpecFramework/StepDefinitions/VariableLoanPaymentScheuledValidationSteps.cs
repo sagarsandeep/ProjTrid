@@ -81,7 +81,6 @@ namespace TRID.StepDefinitions
                                     " \n ====================================================================================\n";
                 }
             }
-            ProjActions.CreateCsvFile(TotalValueDifference == 0 ? "Matched" : "Not Matched");
         }
 
         [Then(@"updated/computed Number of Payments value should display on ARM Best Case")]
@@ -112,7 +111,10 @@ namespace TRID.StepDefinitions
                     CardsFailure += "|| AbcPaymentScheduleNumberOfPayments[" + rowIndex + "] || : " + e + " \n ====================================================================================\n";
                 }
             }
-            ProjActions.CreateCsvFile(TotalValueDifference == 0 ? "Matched" : "Not Matched");
+            if (TotalValueDifference == 0)
+                ProjActions.CreateCsvFile("Matched");
+            else
+                ProjActions.CreateCsvFile("Not Matched");
         }
         
         [Then(@"updated/computed Payment Amount value should display on ARM Best Case")]
@@ -143,7 +145,10 @@ namespace TRID.StepDefinitions
                     CardsFailure += "|| AbcPaymentAmount[" + rowIndex + "] || : " + e + " \n ====================================================================================\n";
                 }
             }
-            ProjActions.CreateCsvFile(TotalValueDifference == 0 ? "Matched" : "Not Matched");
+            if (TotalValueDifference == 0)
+                ProjActions.CreateCsvFile("Matched");
+            else
+                ProjActions.CreateCsvFile("Not Matched");
         }
         
         [Then(@"updated/computed Principal and Interest Payment value should display on ARM Best Case")]
@@ -174,7 +179,10 @@ namespace TRID.StepDefinitions
                     CardsFailure += "|| AbcPaymentSchedulePrincipalAndInterestPayment[" + rowIndex + "] || : " + e + " \n ====================================================================================\n";
                 }
             }
-            ProjActions.CreateCsvFile(TotalValueDifference == 0 ? "Matched" : "Not Matched");
+            if (TotalValueDifference == 0)
+                ProjActions.CreateCsvFile("Matched");
+            else
+                ProjActions.CreateCsvFile("Not Matched");
         }
 
         [Then(@"updated/computed PMI Payment value should display on ARM Best Case")]
@@ -205,7 +213,10 @@ namespace TRID.StepDefinitions
                     CardsFailure += "|| AbcPaymentSchedulePmiPayment[" + rowIndex + "] || : " + e + " \n ====================================================================================\n";
                 }
             }
-            ProjActions.CreateCsvFile(TotalValueDifference == 0 ? "Matched" : "Not Matched");
+            if (TotalValueDifference == 0)
+                ProjActions.CreateCsvFile("Matched");
+            else
+                ProjActions.CreateCsvFile("Not Matched");
         }
 
 
@@ -237,7 +248,10 @@ namespace TRID.StepDefinitions
                     CardsFailure += "|| AbcInsEscrowedAmount[" + rowIndex + "] || : " + e + " \n ====================================================================================\n";
                 }
             }
-            ProjActions.CreateCsvFile(TotalValueDifference == 0 ? "Matched" : "Not Matched");
+            if (TotalValueDifference == 0)
+                ProjActions.CreateCsvFile("Matched");
+            else
+                ProjActions.CreateCsvFile("Not Matched");
         }
         
         [Then(@"updated/computed Tax Escrowed Amount value should display on ARM Best Case")]
@@ -268,7 +282,10 @@ namespace TRID.StepDefinitions
                     CardsFailure += "|| AbcTaxEscrowedAmount[" + rowIndex + "] || : " + e + " \n ====================================================================================\n";
                 }
             }
-            ProjActions.CreateCsvFile(TotalValueDifference == 0 ? "Matched" : "Not Matched");
+            if (TotalValueDifference == 0)
+                ProjActions.CreateCsvFile("Matched");
+            else
+                ProjActions.CreateCsvFile("Not Matched");
         }
 
 
@@ -307,7 +324,6 @@ namespace TRID.StepDefinitions
                                     " \n ====================================================================================\n";
                 }
             }
-            ProjActions.CreateCsvFile(TotalValueDifference == 0 ? "Matched" : "Not Matched");
         }
 
         [Then(@"updated/computed Number of Payments value should display on ARM Worst Case")]
@@ -338,7 +354,10 @@ namespace TRID.StepDefinitions
                     CardsFailure += "|| AwcPaymentScheduleNumberOfPayments[" + rowIndex + "] || : " + e + " \n ====================================================================================\n";
                 }
             }
-            ProjActions.CreateCsvFile(TotalValueDifference == 0 ? "Matched" : "Not Matched");
+            if (TotalValueDifference == 0)
+                ProjActions.CreateCsvFile("Matched");
+            else
+                ProjActions.CreateCsvFile("Not Matched");
         }
 
         [Then(@"updated/computed Payment Amount value should display on ARM Worst Case")]
@@ -369,11 +388,14 @@ namespace TRID.StepDefinitions
                     CardsFailure += "|| AwcPaymentAmount[" + rowIndex + "] || : " + e + " \n ====================================================================================\n";
                 }
             }
-            ProjActions.CreateCsvFile(TotalValueDifference == 0 ? "Matched" : "Not Matched");
+            if (TotalValueDifference == 0)
+                ProjActions.CreateCsvFile("Matched");
+            else
+                ProjActions.CreateCsvFile("Not Matched");
         }
 
-        [Then(@"updated/computed Principal and Interest Payment value should display on ARM Worst Case")]
-        public void ThenUpdatedComputePrincipalAndInterestPaymentValueShouldDisplayOnArmWorstCase()
+        [Then(@"updated/computed Period Payment value should display on ARM Worst Case")]
+        public void ThenUpdatedComputedPeriodPaymentValueShouldDisplayOnArmWorstCase()
         {
             TotalValueDifference = 0;
             for (var rowIndex = 0; rowIndex < TridVariable.AwcPaymentSchedulePeriodPayment.Count-1; rowIndex++)
@@ -400,10 +422,13 @@ namespace TRID.StepDefinitions
                     CardsFailure += "|| AwcPaymentSchedulePeriodPayment[" + rowIndex + "] || : " + e + " \n ====================================================================================\n";
                 }
             }
-            ProjActions.CreateCsvFile(TotalValueDifference == 0 ? "Matched" : "Not Matched");
+            if (TotalValueDifference == 0)
+                ProjActions.CreateCsvFile("Matched");
+            else
+                ProjActions.CreateCsvFile("Not Matched");
         }
 
-        [Then(@"updated/computed PMI Payment value should display on ARM Worst Case")]
+        [Then(@"updated/computed Period PMI value should display on ARM Worst Case")]
         public void ThenUpdatedComputedPeriodPmiValueShouldDisplayOnArmWorstCase()
         {
             TotalValueDifference = 0;
@@ -431,7 +456,10 @@ namespace TRID.StepDefinitions
                     CardsFailure += "|| AwcPaymentSchedulePeriodPmi[" + rowIndex + "] || : " + e + " \n ====================================================================================\n";
                 }
             }
-            ProjActions.CreateCsvFile(TotalValueDifference == 0 ? "Matched" : "Not Matched");
+            if (TotalValueDifference == 0)
+                ProjActions.CreateCsvFile("Matched");
+            else
+                ProjActions.CreateCsvFile("Not Matched");
         }
 
         [Then(@"updated/computed Ins Escrowed Amount value should display on ARM Worst Case")]
@@ -462,7 +490,10 @@ namespace TRID.StepDefinitions
                     CardsFailure += "|| AwcInsEscrowedAmount[" + rowIndex + "] || : " + e + " \n ====================================================================================\n";
                 }
             }
-            ProjActions.CreateCsvFile(TotalValueDifference == 0 ? "Matched" : "Not Matched");
+            if (TotalValueDifference == 0)
+                ProjActions.CreateCsvFile("Matched");
+            else
+                ProjActions.CreateCsvFile("Not Matched");
         }
 
         [Then(@"updated/computed Tax Escrowed Amount value should display on ARM Worst Case")]
@@ -493,7 +524,10 @@ namespace TRID.StepDefinitions
                     CardsFailure += "|| AwcTaxEscrowedAmount[" + rowIndex + "] || : " + e + " \n ====================================================================================\n";
                 }
             }
-            ProjActions.CreateCsvFile(TotalValueDifference == 0 ? "Matched" : "Not Matched");
+            if (TotalValueDifference == 0)
+                ProjActions.CreateCsvFile("Matched");
+            else
+                ProjActions.CreateCsvFile("Not Matched");
         }
 
 

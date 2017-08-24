@@ -87,67 +87,65 @@ testRunner.Given("user is at TRID application homepage", ((string)(null)), ((Tec
 #line 12
 testRunner.When("user navigate to Loan Inputs Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 13
-    testRunner.And("user enters Loan detail input values for computation", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 14
- testRunner.And("User selects Product Type", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 15
- testRunner.And("user selects loan type", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 16
  testRunner.And("user selects Calculation Method", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 17
+#line 14
+ testRunner.And("user selects loan type", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 15
  testRunner.And("user selects Frequency of Payments", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 18
+#line 16
  testRunner.And("user selects Loan Term", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 19
+#line 17
  testRunner.And("user selects Repayment Term Type", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 20
+#line 18
+    testRunner.And("user enters Loan detail input values for computation", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 19
  testRunner.And("user enters Escrow Grid Input values", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 21
+#line 20
  testRunner.And("user enters all input values for Prepaid Charges", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 22
+#line 21
  testRunner.And("user enters input value for prepaid custom fields", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 23
+#line 22
  testRunner.And("user navigates to MI Inputs and Results Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 24
+#line 23
  testRunner.And("user enters pmi rate values", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 25
+#line 24
  testRunner.And("user enters other pmi input values", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 26
+#line 25
  testRunner.And("user enters FHA/USDA Loan Details", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 27
+#line 26
  testRunner.And("user enters disclosed input values for Mortgage Insurance", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 28
+#line 27
  testRunner.And("user navigates to Disclosure Inputs Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 29
+#line 28
  testRunner.And("user enters disclosed input values for Closing Disclosure Loan Terms & Projected " +
                     "Payments", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 30
+#line 29
  testRunner.And("user enters disclosed input values for Closing Disclosure Loan Calculations", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 31
+#line 30
  testRunner.And("user enters disclosed input values for Property Cost and Escrow", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 32
+#line 31
  testRunner.And("user navigates to Loan Estimate Cards Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 33
+#line 32
  testRunner.And("user enters disclsoed input values for Loan Estimate - Comparisons", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 37
+#line 36
 testRunner.Then("user navigates to ARM Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line 38
+#line 37
  testRunner.And("updated/computed Payment Stream Number value should display on ARM Best Case", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 39
+#line 38
  testRunner.And("updated/computed Number of Payments value should display on ARM Best Case", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 40
+#line 39
  testRunner.And("updated/computed Payment Amount value should display on ARM Best Case", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 41
+#line 40
  testRunner.And("updated/computed Principal and Interest Payment value should display on ARM Best " +
                     "Case", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 42
+#line 41
  testRunner.And("updated/computed PMI Payment value should display on ARM Best Case", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             this.ScenarioCleanup();
         }
         
         [TechTalk.SpecRun.ScenarioAttribute("Giving inputs from Excel file and validating Payment Schedule Best Case on Arms p" +
-            "age, 138", SourceLine=46)]
+            "age, 138", SourceLine=45)]
         public virtual void GivingInputsFromExcelFileAndValidatingPaymentScheduleBestCaseOnArmsPage_138()
         {
             this.GivingInputsFromExcelFileAndValidatingPaymentScheduleBestCaseOnArmsPage("138", "124", "PrepaidCharges", "MortgageInsurance", "ClosingDisclosure", "2", "ARMTerms", "ARMBestCase", "Export", "EscrowGrid", ((string[])(null)));
@@ -155,7 +153,7 @@ testRunner.Then("user navigates to ARM Page", ((string)(null)), ((TechTalk.SpecF
         }
         
         [TechTalk.SpecRun.ScenarioAttribute("Giving inputs from Excel file and validating Payment Schedule Best Case on Arms p" +
-            "age, 139", SourceLine=46)]
+            "age, 139", SourceLine=45)]
         public virtual void GivingInputsFromExcelFileAndValidatingPaymentScheduleBestCaseOnArmsPage_139()
         {
             this.GivingInputsFromExcelFileAndValidatingPaymentScheduleBestCaseOnArmsPage("139", "125", "PrepaidCharges", "MortgageInsurance", "ClosingDisclosure", "3", "ARMTerms", "ARMBestCase", "Export", "EscrowGrid", ((string[])(null)));
@@ -163,7 +161,7 @@ testRunner.Then("user navigates to ARM Page", ((string)(null)), ((TechTalk.SpecF
         }
         
         [TechTalk.SpecRun.ScenarioAttribute("Giving inputs from Excel file and validating Payment Schedule Best Case on Arms p" +
-            "age, 140", SourceLine=46)]
+            "age, 140", SourceLine=45)]
         public virtual void GivingInputsFromExcelFileAndValidatingPaymentScheduleBestCaseOnArmsPage_140()
         {
             this.GivingInputsFromExcelFileAndValidatingPaymentScheduleBestCaseOnArmsPage("140", "126", "PrepaidCharges", "MortgageInsurance", "ClosingDisclosure", "4", "ARMTerms", "ARMBestCase", "Export", "EscrowGrid", ((string[])(null)));
@@ -171,7 +169,7 @@ testRunner.Then("user navigates to ARM Page", ((string)(null)), ((TechTalk.SpecF
         }
         
         [TechTalk.SpecRun.ScenarioAttribute("Giving inputs from Excel file and validating Payment Schedule Best Case on Arms p" +
-            "age, 141", SourceLine=46)]
+            "age, 141", SourceLine=45)]
         public virtual void GivingInputsFromExcelFileAndValidatingPaymentScheduleBestCaseOnArmsPage_141()
         {
             this.GivingInputsFromExcelFileAndValidatingPaymentScheduleBestCaseOnArmsPage("141", "127", "PrepaidCharges", "MortgageInsurance", "ClosingDisclosure", "5", "ARMTerms", "ARMBestCase", "Export", "EscrowGrid", ((string[])(null)));
@@ -179,7 +177,7 @@ testRunner.Then("user navigates to ARM Page", ((string)(null)), ((TechTalk.SpecF
         }
         
         [TechTalk.SpecRun.ScenarioAttribute("Giving inputs from Excel file and validating Payment Schedule Best Case on Arms p" +
-            "age, 142", SourceLine=46)]
+            "age, 142", SourceLine=45)]
         public virtual void GivingInputsFromExcelFileAndValidatingPaymentScheduleBestCaseOnArmsPage_142()
         {
             this.GivingInputsFromExcelFileAndValidatingPaymentScheduleBestCaseOnArmsPage("142", "128", "PrepaidCharges", "MortgageInsurance", "ClosingDisclosure", "6", "ARMTerms", "ARMBestCase", "Export", "EscrowGrid", ((string[])(null)));
@@ -187,7 +185,7 @@ testRunner.Then("user navigates to ARM Page", ((string)(null)), ((TechTalk.SpecF
         }
         
         [TechTalk.SpecRun.ScenarioAttribute("Giving inputs from Excel file and validating Payment Schedule Best Case on Arms p" +
-            "age, 143", SourceLine=46)]
+            "age, 143", SourceLine=45)]
         public virtual void GivingInputsFromExcelFileAndValidatingPaymentScheduleBestCaseOnArmsPage_143()
         {
             this.GivingInputsFromExcelFileAndValidatingPaymentScheduleBestCaseOnArmsPage("143", "129", "PrepaidCharges", "MortgageInsurance", "ClosingDisclosure", "7", "ARMTerms", "ARMBestCase", "Export", "EscrowGrid", ((string[])(null)));
@@ -195,7 +193,7 @@ testRunner.Then("user navigates to ARM Page", ((string)(null)), ((TechTalk.SpecF
         }
         
         [TechTalk.SpecRun.ScenarioAttribute("Giving inputs from Excel file and validating Payment Schedule Best Case on Arms p" +
-            "age, 144", SourceLine=46)]
+            "age, 144", SourceLine=45)]
         public virtual void GivingInputsFromExcelFileAndValidatingPaymentScheduleBestCaseOnArmsPage_144()
         {
             this.GivingInputsFromExcelFileAndValidatingPaymentScheduleBestCaseOnArmsPage("144", "130", "PrepaidCharges", "MortgageInsurance", "ClosingDisclosure", "8", "ARMTerms", "ARMBestCase", "Export", "EscrowGrid", ((string[])(null)));
@@ -203,7 +201,7 @@ testRunner.Then("user navigates to ARM Page", ((string)(null)), ((TechTalk.SpecF
         }
         
         [TechTalk.SpecRun.ScenarioAttribute("Giving inputs from Excel file and validating Payment Schedule Best Case on Arms p" +
-            "age, 145", SourceLine=46)]
+            "age, 145", SourceLine=45)]
         public virtual void GivingInputsFromExcelFileAndValidatingPaymentScheduleBestCaseOnArmsPage_145()
         {
             this.GivingInputsFromExcelFileAndValidatingPaymentScheduleBestCaseOnArmsPage("145", "131", "PrepaidCharges", "MortgageInsurance", "ClosingDisclosure", "9", "ARMTerms", "ARMBestCase", "Export", "EscrowGrid", ((string[])(null)));
@@ -211,7 +209,7 @@ testRunner.Then("user navigates to ARM Page", ((string)(null)), ((TechTalk.SpecF
         }
         
         [TechTalk.SpecRun.ScenarioAttribute("Giving inputs from Excel file and validating Payment Schedule Best Case on Arms p" +
-            "age, 146", SourceLine=46)]
+            "age, 146", SourceLine=45)]
         public virtual void GivingInputsFromExcelFileAndValidatingPaymentScheduleBestCaseOnArmsPage_146()
         {
             this.GivingInputsFromExcelFileAndValidatingPaymentScheduleBestCaseOnArmsPage("146", "132", "PrepaidCharges", "MortgageInsurance", "ClosingDisclosure", "10", "ARMTerms", "ARMBestCase", "Export", "EscrowGrid", ((string[])(null)));
@@ -219,7 +217,7 @@ testRunner.Then("user navigates to ARM Page", ((string)(null)), ((TechTalk.SpecF
         }
         
         [TechTalk.SpecRun.ScenarioAttribute("Giving inputs from Excel file and validating Payment Schedule Best Case on Arms p" +
-            "age, 147", SourceLine=46)]
+            "age, 147", SourceLine=45)]
         public virtual void GivingInputsFromExcelFileAndValidatingPaymentScheduleBestCaseOnArmsPage_147()
         {
             this.GivingInputsFromExcelFileAndValidatingPaymentScheduleBestCaseOnArmsPage("147", "133", "PrepaidCharges", "MortgageInsurance", "ClosingDisclosure", "11", "ARMTerms", "ARMBestCase", "Export", "EscrowGrid", ((string[])(null)));
@@ -230,89 +228,86 @@ testRunner.Then("user navigates to ARM Page", ((string)(null)), ((TechTalk.SpecF
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Giving inputs from Excel file and validating Payment Schedule Worst Case on Arms " +
                     "page", exampleTags);
-#line 61
+#line 60
 this.ScenarioSetup(scenarioInfo);
-#line 62
+#line 61
 testRunner.Given("user is at TRID application homepage", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 63
+#line 62
  testRunner.And(string.Format("user have closing disclosure data from excel sheet {0} for the scenario {1}", cdSheetName, rowNumber), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 64
+#line 63
  testRunner.And(string.Format("user have Mortgage Insurance data from excel sheet {0} for the scenario {1}", miSheetName, rowNumber), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 65
+#line 64
  testRunner.And(string.Format("user have variable loan data from excel sheet {0} for the scenario {1}", aSheetName, aRowNumber), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 66
+#line 65
  testRunner.And(string.Format("user have ARM Worst Case variable loan data from excel sheet {0} for the scenario" +
                         " {1}", awcSheetName, aRowNumber), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 67
+#line 66
  testRunner.And(string.Format("user have Prepaid Charges data from excel sheet {0} for the scenario {1}", pcSheetName, rowNumber), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 68
+#line 67
  testRunner.And(string.Format("user have Export data from excel sheet {0} for the scenario {1}", eSheetName, rowNumber), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 69
+#line 68
  testRunner.And(string.Format("user have Escrow Grid data from excel sheet {0} for the scenario {1}", egSheetName, rowNumber), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 70
+#line 69
 testRunner.When("user navigate to Loan Inputs Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 71
-    testRunner.And("user enters Loan detail input values for computation", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 72
- testRunner.And("User selects Product Type", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 73
- testRunner.And("user selects loan type", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 74
+#line 70
  testRunner.And("user selects Calculation Method", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 75
+#line 71
+ testRunner.And("user selects loan type", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 72
  testRunner.And("user selects Frequency of Payments", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 76
+#line 73
  testRunner.And("user selects Loan Term", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 77
+#line 74
  testRunner.And("user selects Repayment Term Type", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 78
+#line 75
+    testRunner.And("user enters Loan detail input values for computation", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 76
  testRunner.And("user enters Escrow Grid Input values", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 79
+#line 77
  testRunner.And("user enters all input values for Prepaid Charges", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 80
+#line 78
  testRunner.And("user enters input value for prepaid custom fields", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 81
+#line 79
  testRunner.And("user navigates to MI Inputs and Results Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 82
+#line 80
  testRunner.And("user enters pmi rate values", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 83
+#line 81
  testRunner.And("user enters other pmi input values", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 84
+#line 82
  testRunner.And("user enters FHA/USDA Loan Details", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 85
+#line 83
  testRunner.And("user enters disclosed input values for Mortgage Insurance", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 86
+#line 84
  testRunner.And("user navigates to Disclosure Inputs Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 87
+#line 85
  testRunner.And("user enters disclosed input values for Closing Disclosure Loan Terms & Projected " +
                     "Payments", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 88
+#line 86
  testRunner.And("user enters disclosed input values for Closing Disclosure Loan Calculations", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 89
+#line 87
  testRunner.And("user enters disclosed input values for Property Cost and Escrow", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 90
+#line 88
  testRunner.And("user navigates to Loan Estimate Cards Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 91
+#line 89
  testRunner.And("user enters disclsoed input values for Loan Estimate - Comparisons", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 95
+#line 93
 testRunner.Then("user navigates to ARM Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line 96
+#line 94
  testRunner.And("updated/computed Payment Stream Number value should display on ARM Worst Case", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 97
+#line 95
  testRunner.And("updated/computed Number of Payments value should display on ARM Worst Case", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 98
+#line 96
  testRunner.And("updated/computed Payment Amount value should display on ARM Worst Case", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 99
- testRunner.And("updated/computed Principal and Interest Payment value should display on ARM Worst" +
-                    " Case", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 100
- testRunner.And("updated/computed PMI Payment value should display on ARM Worst Case", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 97
+ testRunner.And("updated/computed Period Payment value should display on ARM Worst Case", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 98
+ testRunner.And("updated/computed Period PMI value should display on ARM Worst Case", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             this.ScenarioCleanup();
         }
         
         [TechTalk.SpecRun.ScenarioAttribute("Giving inputs from Excel file and validating Payment Schedule Worst Case on Arms " +
-            "page, 138", SourceLine=104)]
+            "page, 138", SourceLine=102)]
         public virtual void GivingInputsFromExcelFileAndValidatingPaymentScheduleWorstCaseOnArmsPage_138()
         {
             this.GivingInputsFromExcelFileAndValidatingPaymentScheduleWorstCaseOnArmsPage("138", "124", "PrepaidCharges", "MortgageInsurance", "ClosingDisclosure", "2", "ARMTerms", "ARMWorstCase", "Export", "EscrowGrid", ((string[])(null)));
@@ -320,7 +315,7 @@ testRunner.Then("user navigates to ARM Page", ((string)(null)), ((TechTalk.SpecF
         }
         
         [TechTalk.SpecRun.ScenarioAttribute("Giving inputs from Excel file and validating Payment Schedule Worst Case on Arms " +
-            "page, 139", SourceLine=104)]
+            "page, 139", SourceLine=102)]
         public virtual void GivingInputsFromExcelFileAndValidatingPaymentScheduleWorstCaseOnArmsPage_139()
         {
             this.GivingInputsFromExcelFileAndValidatingPaymentScheduleWorstCaseOnArmsPage("139", "125", "PrepaidCharges", "MortgageInsurance", "ClosingDisclosure", "3", "ARMTerms", "ARMWorstCase", "Export", "EscrowGrid", ((string[])(null)));
@@ -328,7 +323,7 @@ testRunner.Then("user navigates to ARM Page", ((string)(null)), ((TechTalk.SpecF
         }
         
         [TechTalk.SpecRun.ScenarioAttribute("Giving inputs from Excel file and validating Payment Schedule Worst Case on Arms " +
-            "page, 140", SourceLine=104)]
+            "page, 140", SourceLine=102)]
         public virtual void GivingInputsFromExcelFileAndValidatingPaymentScheduleWorstCaseOnArmsPage_140()
         {
             this.GivingInputsFromExcelFileAndValidatingPaymentScheduleWorstCaseOnArmsPage("140", "126", "PrepaidCharges", "MortgageInsurance", "ClosingDisclosure", "4", "ARMTerms", "ARMWorstCase", "Export", "EscrowGrid", ((string[])(null)));
@@ -336,7 +331,7 @@ testRunner.Then("user navigates to ARM Page", ((string)(null)), ((TechTalk.SpecF
         }
         
         [TechTalk.SpecRun.ScenarioAttribute("Giving inputs from Excel file and validating Payment Schedule Worst Case on Arms " +
-            "page, 141", SourceLine=104)]
+            "page, 141", SourceLine=102)]
         public virtual void GivingInputsFromExcelFileAndValidatingPaymentScheduleWorstCaseOnArmsPage_141()
         {
             this.GivingInputsFromExcelFileAndValidatingPaymentScheduleWorstCaseOnArmsPage("141", "127", "PrepaidCharges", "MortgageInsurance", "ClosingDisclosure", "5", "ARMTerms", "ARMWorstCase", "Export", "EscrowGrid", ((string[])(null)));
@@ -344,7 +339,7 @@ testRunner.Then("user navigates to ARM Page", ((string)(null)), ((TechTalk.SpecF
         }
         
         [TechTalk.SpecRun.ScenarioAttribute("Giving inputs from Excel file and validating Payment Schedule Worst Case on Arms " +
-            "page, 142", SourceLine=104)]
+            "page, 142", SourceLine=102)]
         public virtual void GivingInputsFromExcelFileAndValidatingPaymentScheduleWorstCaseOnArmsPage_142()
         {
             this.GivingInputsFromExcelFileAndValidatingPaymentScheduleWorstCaseOnArmsPage("142", "128", "PrepaidCharges", "MortgageInsurance", "ClosingDisclosure", "6", "ARMTerms", "ARMWorstCase", "Export", "EscrowGrid", ((string[])(null)));
@@ -352,7 +347,7 @@ testRunner.Then("user navigates to ARM Page", ((string)(null)), ((TechTalk.SpecF
         }
         
         [TechTalk.SpecRun.ScenarioAttribute("Giving inputs from Excel file and validating Payment Schedule Worst Case on Arms " +
-            "page, 143", SourceLine=104)]
+            "page, 143", SourceLine=102)]
         public virtual void GivingInputsFromExcelFileAndValidatingPaymentScheduleWorstCaseOnArmsPage_143()
         {
             this.GivingInputsFromExcelFileAndValidatingPaymentScheduleWorstCaseOnArmsPage("143", "129", "PrepaidCharges", "MortgageInsurance", "ClosingDisclosure", "7", "ARMTerms", "ARMWorstCase", "Export", "EscrowGrid", ((string[])(null)));
@@ -360,7 +355,7 @@ testRunner.Then("user navigates to ARM Page", ((string)(null)), ((TechTalk.SpecF
         }
         
         [TechTalk.SpecRun.ScenarioAttribute("Giving inputs from Excel file and validating Payment Schedule Worst Case on Arms " +
-            "page, 144", SourceLine=104)]
+            "page, 144", SourceLine=102)]
         public virtual void GivingInputsFromExcelFileAndValidatingPaymentScheduleWorstCaseOnArmsPage_144()
         {
             this.GivingInputsFromExcelFileAndValidatingPaymentScheduleWorstCaseOnArmsPage("144", "130", "PrepaidCharges", "MortgageInsurance", "ClosingDisclosure", "8", "ARMTerms", "ARMWorstCase", "Export", "EscrowGrid", ((string[])(null)));
@@ -368,7 +363,7 @@ testRunner.Then("user navigates to ARM Page", ((string)(null)), ((TechTalk.SpecF
         }
         
         [TechTalk.SpecRun.ScenarioAttribute("Giving inputs from Excel file and validating Payment Schedule Worst Case on Arms " +
-            "page, 145", SourceLine=104)]
+            "page, 145", SourceLine=102)]
         public virtual void GivingInputsFromExcelFileAndValidatingPaymentScheduleWorstCaseOnArmsPage_145()
         {
             this.GivingInputsFromExcelFileAndValidatingPaymentScheduleWorstCaseOnArmsPage("145", "131", "PrepaidCharges", "MortgageInsurance", "ClosingDisclosure", "9", "ARMTerms", "ARMWorstCase", "Export", "EscrowGrid", ((string[])(null)));
@@ -376,7 +371,7 @@ testRunner.Then("user navigates to ARM Page", ((string)(null)), ((TechTalk.SpecF
         }
         
         [TechTalk.SpecRun.ScenarioAttribute("Giving inputs from Excel file and validating Payment Schedule Worst Case on Arms " +
-            "page, 146", SourceLine=104)]
+            "page, 146", SourceLine=102)]
         public virtual void GivingInputsFromExcelFileAndValidatingPaymentScheduleWorstCaseOnArmsPage_146()
         {
             this.GivingInputsFromExcelFileAndValidatingPaymentScheduleWorstCaseOnArmsPage("146", "132", "PrepaidCharges", "MortgageInsurance", "ClosingDisclosure", "10", "ARMTerms", "ARMWorstCase", "Export", "EscrowGrid", ((string[])(null)));
@@ -384,7 +379,7 @@ testRunner.Then("user navigates to ARM Page", ((string)(null)), ((TechTalk.SpecF
         }
         
         [TechTalk.SpecRun.ScenarioAttribute("Giving inputs from Excel file and validating Payment Schedule Worst Case on Arms " +
-            "page, 147", SourceLine=104)]
+            "page, 147", SourceLine=102)]
         public virtual void GivingInputsFromExcelFileAndValidatingPaymentScheduleWorstCaseOnArmsPage_147()
         {
             this.GivingInputsFromExcelFileAndValidatingPaymentScheduleWorstCaseOnArmsPage("147", "133", "PrepaidCharges", "MortgageInsurance", "ClosingDisclosure", "11", "ARMTerms", "ARMWorstCase", "Export", "EscrowGrid", ((string[])(null)));
@@ -394,96 +389,96 @@ testRunner.Then("user navigates to ARM Page", ((string)(null)), ((TechTalk.SpecF
         public virtual void UploadingJSONFileAndValidatingPaymentScheduleBestCaseOnArmsPage(string scenarioNo, string aRowNumber, string abcSheetName, string[] exampleTags)
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Uploading JSON file and validating Payment Schedule Best Case on Arms page", exampleTags);
-#line 117
+#line 115
 this.ScenarioSetup(scenarioInfo);
-#line 118
+#line 116
 testRunner.Given("user is at TRID application homepage", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 119
+#line 117
  testRunner.And(string.Format("user have ARM Best Case variable loan data from excel sheet {0} for the scenario " +
                         "{1}", abcSheetName, aRowNumber), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 120
+#line 118
 testRunner.When("user upload json file for the scenario", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 121
+#line 119
 testRunner.Then("user navigates to ARM Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line 122
+#line 120
  testRunner.And("updated/computed Payment Stream Number value should display on ARM Best Case", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 123
+#line 121
  testRunner.And("updated/computed Number of Payments value should display on ARM Best Case", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 124
+#line 122
  testRunner.And("updated/computed Payment Amount value should display on ARM Best Case", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 125
+#line 123
  testRunner.And("updated/computed Principal and Interest Payment value should display on ARM Best " +
                     "Case", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 126
+#line 124
  testRunner.And("updated/computed PMI Payment value should display on ARM Best Case", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             this.ScenarioCleanup();
         }
         
-        [TechTalk.SpecRun.ScenarioAttribute("Uploading JSON file and validating Payment Schedule Best Case on Arms page, 138", SourceLine=130)]
+        [TechTalk.SpecRun.ScenarioAttribute("Uploading JSON file and validating Payment Schedule Best Case on Arms page, 138", SourceLine=128)]
         public virtual void UploadingJSONFileAndValidatingPaymentScheduleBestCaseOnArmsPage_138()
         {
             this.UploadingJSONFileAndValidatingPaymentScheduleBestCaseOnArmsPage("138", "2", "ARMBestCase", ((string[])(null)));
 #line hidden
         }
         
-        [TechTalk.SpecRun.ScenarioAttribute("Uploading JSON file and validating Payment Schedule Best Case on Arms page, 139", SourceLine=130)]
+        [TechTalk.SpecRun.ScenarioAttribute("Uploading JSON file and validating Payment Schedule Best Case on Arms page, 139", SourceLine=128)]
         public virtual void UploadingJSONFileAndValidatingPaymentScheduleBestCaseOnArmsPage_139()
         {
             this.UploadingJSONFileAndValidatingPaymentScheduleBestCaseOnArmsPage("139", "3", "ARMBestCase", ((string[])(null)));
 #line hidden
         }
         
-        [TechTalk.SpecRun.ScenarioAttribute("Uploading JSON file and validating Payment Schedule Best Case on Arms page, 140", SourceLine=130)]
+        [TechTalk.SpecRun.ScenarioAttribute("Uploading JSON file and validating Payment Schedule Best Case on Arms page, 140", SourceLine=128)]
         public virtual void UploadingJSONFileAndValidatingPaymentScheduleBestCaseOnArmsPage_140()
         {
             this.UploadingJSONFileAndValidatingPaymentScheduleBestCaseOnArmsPage("140", "4", "ARMBestCase", ((string[])(null)));
 #line hidden
         }
         
-        [TechTalk.SpecRun.ScenarioAttribute("Uploading JSON file and validating Payment Schedule Best Case on Arms page, 141", SourceLine=130)]
+        [TechTalk.SpecRun.ScenarioAttribute("Uploading JSON file and validating Payment Schedule Best Case on Arms page, 141", SourceLine=128)]
         public virtual void UploadingJSONFileAndValidatingPaymentScheduleBestCaseOnArmsPage_141()
         {
             this.UploadingJSONFileAndValidatingPaymentScheduleBestCaseOnArmsPage("141", "5", "ARMBestCase", ((string[])(null)));
 #line hidden
         }
         
-        [TechTalk.SpecRun.ScenarioAttribute("Uploading JSON file and validating Payment Schedule Best Case on Arms page, 142", SourceLine=130)]
+        [TechTalk.SpecRun.ScenarioAttribute("Uploading JSON file and validating Payment Schedule Best Case on Arms page, 142", SourceLine=128)]
         public virtual void UploadingJSONFileAndValidatingPaymentScheduleBestCaseOnArmsPage_142()
         {
             this.UploadingJSONFileAndValidatingPaymentScheduleBestCaseOnArmsPage("142", "6", "ARMBestCase", ((string[])(null)));
 #line hidden
         }
         
-        [TechTalk.SpecRun.ScenarioAttribute("Uploading JSON file and validating Payment Schedule Best Case on Arms page, 143", SourceLine=130)]
+        [TechTalk.SpecRun.ScenarioAttribute("Uploading JSON file and validating Payment Schedule Best Case on Arms page, 143", SourceLine=128)]
         public virtual void UploadingJSONFileAndValidatingPaymentScheduleBestCaseOnArmsPage_143()
         {
             this.UploadingJSONFileAndValidatingPaymentScheduleBestCaseOnArmsPage("143", "7", "ARMBestCase", ((string[])(null)));
 #line hidden
         }
         
-        [TechTalk.SpecRun.ScenarioAttribute("Uploading JSON file and validating Payment Schedule Best Case on Arms page, 144", SourceLine=130)]
+        [TechTalk.SpecRun.ScenarioAttribute("Uploading JSON file and validating Payment Schedule Best Case on Arms page, 144", SourceLine=128)]
         public virtual void UploadingJSONFileAndValidatingPaymentScheduleBestCaseOnArmsPage_144()
         {
             this.UploadingJSONFileAndValidatingPaymentScheduleBestCaseOnArmsPage("144", "8", "ARMBestCase", ((string[])(null)));
 #line hidden
         }
         
-        [TechTalk.SpecRun.ScenarioAttribute("Uploading JSON file and validating Payment Schedule Best Case on Arms page, 145", SourceLine=130)]
+        [TechTalk.SpecRun.ScenarioAttribute("Uploading JSON file and validating Payment Schedule Best Case on Arms page, 145", SourceLine=128)]
         public virtual void UploadingJSONFileAndValidatingPaymentScheduleBestCaseOnArmsPage_145()
         {
             this.UploadingJSONFileAndValidatingPaymentScheduleBestCaseOnArmsPage("145", "9", "ARMBestCase", ((string[])(null)));
 #line hidden
         }
         
-        [TechTalk.SpecRun.ScenarioAttribute("Uploading JSON file and validating Payment Schedule Best Case on Arms page, 146", SourceLine=130)]
+        [TechTalk.SpecRun.ScenarioAttribute("Uploading JSON file and validating Payment Schedule Best Case on Arms page, 146", SourceLine=128)]
         public virtual void UploadingJSONFileAndValidatingPaymentScheduleBestCaseOnArmsPage_146()
         {
             this.UploadingJSONFileAndValidatingPaymentScheduleBestCaseOnArmsPage("146", "10", "ARMBestCase", ((string[])(null)));
 #line hidden
         }
         
-        [TechTalk.SpecRun.ScenarioAttribute("Uploading JSON file and validating Payment Schedule Best Case on Arms page, 147", SourceLine=130)]
+        [TechTalk.SpecRun.ScenarioAttribute("Uploading JSON file and validating Payment Schedule Best Case on Arms page, 147", SourceLine=128)]
         public virtual void UploadingJSONFileAndValidatingPaymentScheduleBestCaseOnArmsPage_147()
         {
             this.UploadingJSONFileAndValidatingPaymentScheduleBestCaseOnArmsPage("147", "11", "ARMBestCase", ((string[])(null)));
@@ -493,96 +488,95 @@ testRunner.Then("user navigates to ARM Page", ((string)(null)), ((TechTalk.SpecF
         public virtual void UploadingJSONFileAndValidatingPaymentScheduleWorstCaseOnArmsPage(string scenarioNo, string aRowNumber, string awcSheetName, string[] exampleTags)
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Uploading JSON file and validating Payment Schedule Worst Case on Arms page", exampleTags);
-#line 143
+#line 141
 this.ScenarioSetup(scenarioInfo);
-#line 144
+#line 142
 testRunner.Given("user is at TRID application homepage", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 145
+#line 143
  testRunner.And(string.Format("user have ARM Worst Case variable loan data from excel sheet {0} for the scenario" +
                         " {1}", awcSheetName, aRowNumber), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 146
+#line 144
 testRunner.When("user upload json file for the scenario", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 147
+#line 145
 testRunner.Then("user navigates to ARM Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line 148
+#line 146
  testRunner.And("updated/computed Payment Stream Number value should display on ARM Worst Case", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 149
+#line 147
  testRunner.And("updated/computed Number of Payments value should display on ARM Worst Case", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 150
+#line 148
  testRunner.And("updated/computed Payment Amount value should display on ARM Worst Case", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 151
- testRunner.And("updated/computed Principal and Interest Payment value should display on ARM Worst" +
-                    " Case", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 152
- testRunner.And("updated/computed PMI Payment value should display on ARM Worst Case", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 149
+ testRunner.And("updated/computed Period Payment value should display on ARM Worst Case", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 150
+ testRunner.And("updated/computed Period PMI value should display on ARM Worst Case", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             this.ScenarioCleanup();
         }
         
-        [TechTalk.SpecRun.ScenarioAttribute("Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 138", SourceLine=156)]
+        [TechTalk.SpecRun.ScenarioAttribute("Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 138", SourceLine=154)]
         public virtual void UploadingJSONFileAndValidatingPaymentScheduleWorstCaseOnArmsPage_138()
         {
             this.UploadingJSONFileAndValidatingPaymentScheduleWorstCaseOnArmsPage("138", "2", "ARMWorstCase", ((string[])(null)));
 #line hidden
         }
         
-        [TechTalk.SpecRun.ScenarioAttribute("Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 139", SourceLine=156)]
+        [TechTalk.SpecRun.ScenarioAttribute("Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 139", SourceLine=154)]
         public virtual void UploadingJSONFileAndValidatingPaymentScheduleWorstCaseOnArmsPage_139()
         {
             this.UploadingJSONFileAndValidatingPaymentScheduleWorstCaseOnArmsPage("139", "3", "ARMWorstCase", ((string[])(null)));
 #line hidden
         }
         
-        [TechTalk.SpecRun.ScenarioAttribute("Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 140", SourceLine=156)]
+        [TechTalk.SpecRun.ScenarioAttribute("Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 140", SourceLine=154)]
         public virtual void UploadingJSONFileAndValidatingPaymentScheduleWorstCaseOnArmsPage_140()
         {
             this.UploadingJSONFileAndValidatingPaymentScheduleWorstCaseOnArmsPage("140", "4", "ARMWorstCase", ((string[])(null)));
 #line hidden
         }
         
-        [TechTalk.SpecRun.ScenarioAttribute("Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 141", SourceLine=156)]
+        [TechTalk.SpecRun.ScenarioAttribute("Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 141", SourceLine=154)]
         public virtual void UploadingJSONFileAndValidatingPaymentScheduleWorstCaseOnArmsPage_141()
         {
             this.UploadingJSONFileAndValidatingPaymentScheduleWorstCaseOnArmsPage("141", "5", "ARMWorstCase", ((string[])(null)));
 #line hidden
         }
         
-        [TechTalk.SpecRun.ScenarioAttribute("Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 142", SourceLine=156)]
+        [TechTalk.SpecRun.ScenarioAttribute("Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 142", SourceLine=154)]
         public virtual void UploadingJSONFileAndValidatingPaymentScheduleWorstCaseOnArmsPage_142()
         {
             this.UploadingJSONFileAndValidatingPaymentScheduleWorstCaseOnArmsPage("142", "6", "ARMWorstCase", ((string[])(null)));
 #line hidden
         }
         
-        [TechTalk.SpecRun.ScenarioAttribute("Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 143", SourceLine=156)]
+        [TechTalk.SpecRun.ScenarioAttribute("Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 143", SourceLine=154)]
         public virtual void UploadingJSONFileAndValidatingPaymentScheduleWorstCaseOnArmsPage_143()
         {
             this.UploadingJSONFileAndValidatingPaymentScheduleWorstCaseOnArmsPage("143", "7", "ARMWorstCase", ((string[])(null)));
 #line hidden
         }
         
-        [TechTalk.SpecRun.ScenarioAttribute("Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 144", SourceLine=156)]
+        [TechTalk.SpecRun.ScenarioAttribute("Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 144", SourceLine=154)]
         public virtual void UploadingJSONFileAndValidatingPaymentScheduleWorstCaseOnArmsPage_144()
         {
             this.UploadingJSONFileAndValidatingPaymentScheduleWorstCaseOnArmsPage("144", "8", "ARMWorstCase", ((string[])(null)));
 #line hidden
         }
         
-        [TechTalk.SpecRun.ScenarioAttribute("Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 145", SourceLine=156)]
+        [TechTalk.SpecRun.ScenarioAttribute("Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 145", SourceLine=154)]
         public virtual void UploadingJSONFileAndValidatingPaymentScheduleWorstCaseOnArmsPage_145()
         {
             this.UploadingJSONFileAndValidatingPaymentScheduleWorstCaseOnArmsPage("145", "9", "ARMWorstCase", ((string[])(null)));
 #line hidden
         }
         
-        [TechTalk.SpecRun.ScenarioAttribute("Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 146", SourceLine=156)]
+        [TechTalk.SpecRun.ScenarioAttribute("Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 146", SourceLine=154)]
         public virtual void UploadingJSONFileAndValidatingPaymentScheduleWorstCaseOnArmsPage_146()
         {
             this.UploadingJSONFileAndValidatingPaymentScheduleWorstCaseOnArmsPage("146", "10", "ARMWorstCase", ((string[])(null)));
 #line hidden
         }
         
-        [TechTalk.SpecRun.ScenarioAttribute("Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 147", SourceLine=156)]
+        [TechTalk.SpecRun.ScenarioAttribute("Uploading JSON file and validating Payment Schedule Worst Case on Arms page, 147", SourceLine=154)]
         public virtual void UploadingJSONFileAndValidatingPaymentScheduleWorstCaseOnArmsPage_147()
         {
             this.UploadingJSONFileAndValidatingPaymentScheduleWorstCaseOnArmsPage("147", "11", "ARMWorstCase", ((string[])(null)));

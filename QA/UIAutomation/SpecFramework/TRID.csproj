@@ -158,6 +158,7 @@
     <Compile Include="StepDefinitions\AmortizationValidationSteps.cs" />
     <Compile Include="StepDefinitions\EscrowInfoCardsValidationSteps.cs" />
     <Compile Include="StepDefinitions\VariableLoanPaymentScheuledValidationSteps.cs" />
+    <Compile Include="TestClasses\LaunchTridApplication.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StepDefinitions\CardsValidationSteps.cs" />
     <Compile Include="TestClasses\TridTest.cs" />

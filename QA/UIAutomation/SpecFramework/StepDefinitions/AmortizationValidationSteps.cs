@@ -75,7 +75,10 @@ namespace TRID.StepDefinitions
                                     " \n ====================================================================================\n";
                 }
             }
-            ProjActions.CreateCsvFile(TotalValueDifference == 0 ? "Matched" : "Not Matched");
+            if (TotalValueDifference == 0)
+                ProjActions.CreateCsvFile("Matched");
+            else
+                ProjActions.CreateCsvFile("Not Matched");
         }
         
         [Then(@"updated/computed Number of Payments value should display on Payment Schedule Grid")]
@@ -106,7 +109,10 @@ namespace TRID.StepDefinitions
                     CardsFailure += "|| PaymentScheduleNumberOfPayments[" + rowIndex + "] || : " + e + " \n ====================================================================================\n";
                 }
             }
-            ProjActions.CreateCsvFile(TotalValueDifference == 0 ? "Matched" : "Not Matched");
+            if (TotalValueDifference == 0)
+                ProjActions.CreateCsvFile("Matched");
+            else
+                ProjActions.CreateCsvFile("Not Matched");
         }
         
         [Then(@"updated/computed Payment Amount value should display on Payment Schedule Grid")]
@@ -137,7 +143,10 @@ namespace TRID.StepDefinitions
                     CardsFailure += "|| PaymentAmount[" + rowIndex + "] || : " + e + " \n ====================================================================================\n";
                 }
             }
-            ProjActions.CreateCsvFile(TotalValueDifference == 0 ? "Matched" : "Not Matched");
+            if (TotalValueDifference == 0)
+                ProjActions.CreateCsvFile("Matched");
+            else
+                ProjActions.CreateCsvFile("Not Matched");
         }
         
         [Then(@"updated/computed Principal and Interest Payment value should display on Payment Schedule Grid")]
@@ -168,7 +177,10 @@ namespace TRID.StepDefinitions
                     CardsFailure += "|| PaymentSchedulePrincipalandInterestPayment[" + rowIndex + "] || : " + e + " \n ====================================================================================\n";
                 }
             }
-            ProjActions.CreateCsvFile(TotalValueDifference == 0 ? "Matched" : "Not Matched");
+            if (TotalValueDifference == 0)
+                ProjActions.CreateCsvFile("Matched");
+            else
+                ProjActions.CreateCsvFile("Not Matched");
         }
 
         [Then(@"updated/computed PMI Payment value should display on Payment Schedule Grid")]
@@ -199,7 +211,10 @@ namespace TRID.StepDefinitions
                     CardsFailure += "|| PaymentSchedulePmiPayement[" + rowIndex + "] || : " + e + " \n ====================================================================================\n";
                 }
             }
-            ProjActions.CreateCsvFile(TotalValueDifference == 0 ? "Matched" : "Not Matched");
+            if (TotalValueDifference == 0)
+                ProjActions.CreateCsvFile("Matched");
+            else
+                ProjActions.CreateCsvFile("Not Matched");
         }
 
         [Then(@"updated/computed Ins Escrowed Amount value should display on Payment Schedule Grid")]
@@ -230,7 +245,10 @@ namespace TRID.StepDefinitions
                     CardsFailure += "|| InsEscrowedAmount[" + rowIndex + "] || : " + e + " \n ====================================================================================\n";
                 }
             }
-            ProjActions.CreateCsvFile(TotalValueDifference == 0 ? "Matched" : "Not Matched");
+            if (TotalValueDifference == 0)
+                ProjActions.CreateCsvFile("Matched");
+            else
+                ProjActions.CreateCsvFile("Not Matched");
         }
 
         [Then(@"updated/computed Tax Escrowed Amount value should display on Payment Schedule Grid")]
@@ -261,7 +279,10 @@ namespace TRID.StepDefinitions
                     CardsFailure += "|| TaxEscrowedAmount[" + rowIndex + "] || : " + e + " \n ====================================================================================\n";
                 }
             }
-            ProjActions.CreateCsvFile(TotalValueDifference == 0 ? "Matched" : "Not Matched");
+            if (TotalValueDifference == 0)
+                ProjActions.CreateCsvFile("Matched");
+            else
+                ProjActions.CreateCsvFile("Not Matched");
         }
 
         #endregion

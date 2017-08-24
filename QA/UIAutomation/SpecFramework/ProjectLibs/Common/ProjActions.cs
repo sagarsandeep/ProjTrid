@@ -59,7 +59,7 @@ namespace TRID.ProjectLibs.Common
         }
 
         public static void CreateCsvFile(string newColumnValue)
-        {
+        {          
             string csvScenarioFilePath = CsvFilePath + @"\" + _getSheetName + @"\" + _getSheetName + "_"+ TridVariable.ScenarioNo + ".csv";
             if (File.Exists(csvScenarioFilePath))
             {
@@ -122,12 +122,12 @@ namespace TRID.ProjectLibs.Common
                     UIActions.GiveInput(AddNumber, firstAddNumber);
 
                     var firstAddBeginPeriod = TridVariable.FirstAddBeginPeriod;
-                    UIActions.Clear(AddBeginPmtNumber);
-                    UIActions.GiveInput(AddBeginPmtNumber, firstAddBeginPeriod);
+                    UIActions.Clear(AddBeginPeriod);
+                    UIActions.GiveInput(AddBeginPeriod, firstAddBeginPeriod);
 
                     var firstAddEndPeriod = TridVariable.FirstAddEndPeriod;
-                    UIActions.Clear(AddEndPmtNumber);
-                    UIActions.GiveInput(AddEndPmtNumber, firstAddEndPeriod);
+                    UIActions.Clear(AddEndPeriod);
+                    UIActions.GiveInput(AddEndPeriod, firstAddEndPeriod);
 
                     var firstAddPmiRate = TridVariable.FirstAddPmiRate;
                     UIActions.Clear(AddPmiRate);
@@ -140,12 +140,12 @@ namespace TRID.ProjectLibs.Common
                     UIActions.GiveInput(AddNumber, secondAddNumber);
 
                     var secondAddBeginPeriod = TridVariable.SecondAddBeginPeriod;
-                    UIActions.Clear(AddBeginPmtNumber);
-                    UIActions.GiveInput(AddBeginPmtNumber, secondAddBeginPeriod);
+                    UIActions.Clear(AddBeginPeriod);
+                    UIActions.GiveInput(AddBeginPeriod, secondAddBeginPeriod);
 
                     var secondAddEndPeriod = TridVariable.SecondAddEndPeriod;
-                    UIActions.Clear(AddEndPmtNumber);
-                    UIActions.GiveInput(AddEndPmtNumber, secondAddEndPeriod);
+                    UIActions.Clear(AddEndPeriod);
+                    UIActions.GiveInput(AddEndPeriod, secondAddEndPeriod);
 
                     var secondAddPmiRate = TridVariable.SecondAddPmiRate;
                     UIActions.Clear(AddPmiRate);
@@ -158,12 +158,12 @@ namespace TRID.ProjectLibs.Common
                     UIActions.GiveInput(AddNumber, thirdAddNumber);
 
                     var thirdAddBeginPeriod = TridVariable.ThirdAddBeginPeriod;
-                    UIActions.Clear(AddBeginPmtNumber);
-                    UIActions.GiveInput(AddBeginPmtNumber, thirdAddBeginPeriod);
+                    UIActions.Clear(AddBeginPeriod);
+                    UIActions.GiveInput(AddBeginPeriod, thirdAddBeginPeriod);
 
                     var thirdAddEndPeriod = TridVariable.ThirdAddEndPeriod;
-                    UIActions.Clear(AddEndPmtNumber);
-                    UIActions.GiveInput(AddEndPmtNumber, thirdAddEndPeriod);
+                    UIActions.Clear(AddEndPeriod);
+                    UIActions.GiveInput(AddEndPeriod, thirdAddEndPeriod);
 
                     var thirdAddPmiRate = TridVariable.ThirdAddPmiRate;
                     UIActions.Clear(AddPmiRate);
@@ -289,316 +289,348 @@ namespace TRID.ProjectLibs.Common
         public static void AddEscrowGridValues()
         {
             //Row 1
-            if (TridVariable.EscrowDisbursmentGridInputs1.Any())
+            if (TridVariable.EscrowPropertyCostsGridInputs1.Any())
             {
                 UIActions.Clear(PropertyCostType);
                 UIActions.GiveInput(PropertyCostType,
-                    TridVariable.EscrowDisbursmentGridInputs1["EscrowDisbursmentType"]);
+                    TridVariable.EscrowPropertyCostsGridInputs1["PropertyCostType"]);
 
-                LoanInputRadioButtonVariable();
-                UIActions.Click(IsEscrowed1);
+                EscrowRadioButtonVariable();
+                UIActions.Click(Escrowed1);
 
-                UIActions.Clear(EscrowCushion);
-                UIActions.GiveInput(EscrowCushion, TridVariable.EscrowDisbursmentGridInputs1["EscrowCushion"]);
+                UIActions.Clear(Cushion);
+                UIActions.GiveInput(Cushion, TridVariable.EscrowPropertyCostsGridInputs1["Cushion"]);
 
-                UIActions.Click(EscrowDisbursmentsAddButton);
+                UIActions.Click(EscrowPropertyCostsAddButton);
             }
 
             //Row 2
-            if (TridVariable.EscrowDisbursmentGridInputs2.Any())
+            if (TridVariable.EscrowPropertyCostsGridInputs2.Any())
             {
                 UIActions.Clear(PropertyCostType);
                 UIActions.GiveInput(PropertyCostType,
-                    TridVariable.EscrowDisbursmentGridInputs2["EscrowDisbursmentType"]);
+                    TridVariable.EscrowPropertyCostsGridInputs2["PropertyCostType"]);
 
-                LoanInputRadioButtonVariable();
-                UIActions.Click(IsEscrowed2);
+                EscrowRadioButtonVariable();
+                UIActions.Click(Escrowed2);
 
-                UIActions.Clear(EscrowCushion);
-                UIActions.GiveInput(EscrowCushion, TridVariable.EscrowDisbursmentGridInputs2["EscrowCushion"]);
+                UIActions.Clear(Cushion);
+                UIActions.GiveInput(Cushion, TridVariable.EscrowPropertyCostsGridInputs2["Cushion"]);
 
-                UIActions.Click(EscrowDisbursmentsAddButton);
+                UIActions.Click(EscrowPropertyCostsAddButton);
             }
 
             //Row 3
-            if (TridVariable.EscrowDisbursmentGridInputs3.Any())
+            if (TridVariable.EscrowPropertyCostsGridInputs3.Any())
             {
                 UIActions.Clear(PropertyCostType);
                 UIActions.GiveInput(PropertyCostType,
-                    TridVariable.EscrowDisbursmentGridInputs3["EscrowDisbursmentType"]);
+                    TridVariable.EscrowPropertyCostsGridInputs3["PropertyCostType"]);
 
-                LoanInputRadioButtonVariable();
-                UIActions.Click(IsEscrowed3);
+                EscrowRadioButtonVariable();
+                UIActions.Click(Escrowed3);
 
-                UIActions.Clear(EscrowCushion);
-                UIActions.GiveInput(EscrowCushion, TridVariable.EscrowDisbursmentGridInputs3["EscrowCushion"]);
+                UIActions.Clear(Cushion);
+                UIActions.GiveInput(Cushion, TridVariable.EscrowPropertyCostsGridInputs3["Cushion"]);
 
-                UIActions.Click(EscrowDisbursmentsAddButton);
+                UIActions.Click(EscrowPropertyCostsAddButton);
             }
 
             //Row 4
-            if (TridVariable.EscrowDisbursmentGridInputs4.Any())
+            if (TridVariable.EscrowPropertyCostsGridInputs4.Any())
             {
                 UIActions.Clear(PropertyCostType);
                 UIActions.GiveInput(PropertyCostType,
-                    TridVariable.EscrowDisbursmentGridInputs4["EscrowDisbursmentType"]);
+                    TridVariable.EscrowPropertyCostsGridInputs4["PropertyCostType"]);
 
-                LoanInputRadioButtonVariable();
-                UIActions.Click(IsEscrowed4);
+                EscrowRadioButtonVariable();
+                UIActions.Click(Escrowed4);
 
-                UIActions.Clear(EscrowCushion);
-                UIActions.GiveInput(EscrowCushion, TridVariable.EscrowDisbursmentGridInputs4["EscrowCushion"]);
+                UIActions.Clear(Cushion);
+                UIActions.GiveInput(Cushion, TridVariable.EscrowPropertyCostsGridInputs4["Cushion"]);
 
-                UIActions.Click(EscrowDisbursmentsAddButton);
+                UIActions.Click(EscrowPropertyCostsAddButton);
             }
 
             //Row 5
-            if (TridVariable.EscrowDisbursmentGridInputs5.Any())
+            if (TridVariable.EscrowPropertyCostsGridInputs5.Any())
             {
                 UIActions.Clear(PropertyCostType);
                 UIActions.GiveInput(PropertyCostType,
-                    TridVariable.EscrowDisbursmentGridInputs5["EscrowDisbursmentType"]);
+                    TridVariable.EscrowPropertyCostsGridInputs5["PropertyCostType"]);
 
-                LoanInputRadioButtonVariable();
-                UIActions.Click(IsEscrowed5);
+                EscrowRadioButtonVariable();
+                UIActions.Click(Escrowed5);
 
-                UIActions.Clear(EscrowCushion);
-                UIActions.GiveInput(EscrowCushion, TridVariable.EscrowDisbursmentGridInputs5["EscrowCushion"]);
+                UIActions.Clear(Cushion);
+                UIActions.GiveInput(Cushion, TridVariable.EscrowPropertyCostsGridInputs5["Cushion"]);
 
-                UIActions.Click(EscrowDisbursmentsAddButton);
+                UIActions.Click(EscrowPropertyCostsAddButton);
             }
 
 
             //Row 6
-            if (TridVariable.EscrowDisbursmentGridInputs6.Any())
+            if (TridVariable.EscrowPropertyCostsGridInputs6.Any())
             {
                 UIActions.Clear(PropertyCostType);
                 UIActions.GiveInput(PropertyCostType,
-                    TridVariable.EscrowDisbursmentGridInputs6["EscrowDisbursmentType"]);
+                    TridVariable.EscrowPropertyCostsGridInputs6["PropertyCostType"]);
 
-                LoanInputRadioButtonVariable();
-                UIActions.Click(IsEscrowed6);
+                EscrowRadioButtonVariable();
+                UIActions.Click(Escrowed6);
 
-                UIActions.Clear(EscrowCushion);
-                UIActions.GiveInput(EscrowCushion, TridVariable.EscrowDisbursmentGridInputs6["EscrowCushion"]);
+                UIActions.Clear(Cushion);
+                UIActions.GiveInput(Cushion, TridVariable.EscrowPropertyCostsGridInputs6["Cushion"]);
 
-                UIActions.Click(EscrowDisbursmentsAddButton);
+                UIActions.Click(EscrowPropertyCostsAddButton);
             }
 
             //Row 7
-            if (TridVariable.EscrowDisbursmentGridInputs7.Any())
+            if (TridVariable.EscrowPropertyCostsGridInputs7.Any())
             {
                 UIActions.Clear(PropertyCostType);
                 UIActions.GiveInput(PropertyCostType,
-                    TridVariable.EscrowDisbursmentGridInputs7["EscrowDisbursmentType"]);
+                    TridVariable.EscrowPropertyCostsGridInputs7["PropertyCostType"]);
 
-                LoanInputRadioButtonVariable();
-                UIActions.Click(IsEscrowed7);
+                EscrowRadioButtonVariable();
+                UIActions.Click(Escrowed7);
 
-                UIActions.Clear(EscrowCushion);
-                UIActions.GiveInput(EscrowCushion, TridVariable.EscrowDisbursmentGridInputs7["EscrowCushion"]);
+                UIActions.Clear(Cushion);
+                UIActions.GiveInput(Cushion, TridVariable.EscrowPropertyCostsGridInputs7["Cushion"]);
 
-                UIActions.Click(EscrowDisbursmentsAddButton);
+                UIActions.Click(EscrowPropertyCostsAddButton);
             }
 
             //Row 8
-            if (TridVariable.EscrowDisbursmentGridInputs8.Any())
+            if (TridVariable.EscrowPropertyCostsGridInputs8.Any())
             {
                 UIActions.Clear(PropertyCostType);
                 UIActions.GiveInput(PropertyCostType,
-                    TridVariable.EscrowDisbursmentGridInputs8["EscrowDisbursmentType"]);
+                    TridVariable.EscrowPropertyCostsGridInputs8["PropertyCostType"]);
 
-                LoanInputRadioButtonVariable();
-                UIActions.Click(IsEscrowed8);
+                EscrowRadioButtonVariable();
+                UIActions.Click(Escrowed8);
 
-                UIActions.Clear(EscrowCushion);
-                UIActions.GiveInput(EscrowCushion, TridVariable.EscrowDisbursmentGridInputs8["EscrowCushion"]);
+                UIActions.Clear(Cushion);
+                UIActions.GiveInput(Cushion, TridVariable.EscrowPropertyCostsGridInputs8["Cushion"]);
 
-                UIActions.Click(EscrowDisbursmentsAddButton);
+                UIActions.Click(EscrowPropertyCostsAddButton);
             }
 
 
             //Row 1
-            if (TridVariable.EscrowInstallementGridInputs1.Any())
+            if (TridVariable.EscrowPropertyCostInstallmentsGridInputs1.Any())
             {
-                UIActions.Clear(EscrowInstallmentNumber);
-                UIActions.GiveInput(EscrowInstallmentNumber, TridVariable.EscrowInstallementGridInputs1["Number"]);
+                UIActions.Clear(EscrowPropertyCostInstallmentNumber);
+                UIActions.GiveInput(EscrowPropertyCostInstallmentNumber, TridVariable.EscrowPropertyCostInstallmentsGridInputs1["Number"]);
 
-                UIActions.Clear(EscrowInstallmentAmount);
-                UIActions.GiveInput(EscrowInstallmentAmount, TridVariable.EscrowInstallementGridInputs1["Amount"]);
+                UIActions.Clear(EscrowPropertyCostInstallmentAmount);
+                UIActions.GiveInput(EscrowPropertyCostInstallmentAmount, TridVariable.EscrowPropertyCostInstallmentsGridInputs1["Amount"]);
 
-                UIActions.Clear(EscrowInstallmentDatePaidOrDisbursed);
-                UIActions.GiveInput(EscrowInstallmentDatePaidOrDisbursed,
-                    TridVariable.EscrowInstallementGridInputs1["DatePaid/Disbursed"]);
+                UIActions.Clear(EscrowPropertyCostInstallmentDatePaidOrDisbursed);
+                UIActions.GiveInput(EscrowPropertyCostInstallmentDatePaidOrDisbursed,
+                    TridVariable.EscrowPropertyCostInstallmentsGridInputs1["DatePaid/Disbursed"]);
 
-                UIActions.Clear(EscrowInstallmentDisbursmentType);
-                UIActions.GiveInput(EscrowInstallmentDisbursmentType,
-                    TridVariable.EscrowInstallementGridInputs1["EscrowDisbursmentType"]);
+                UIActions.Clear(EscrowPropertyCostInstallmentPropertyCostType);
+                UIActions.GiveInput(EscrowPropertyCostInstallmentPropertyCostType,
+                    TridVariable.EscrowPropertyCostInstallmentsGridInputs1["PropertyCostType"]);
 
                 Thread.Sleep(250);
                 UIActions.Click(EscrowDisbursmentTypeAutoSuggestion);
-                UIActions.Click(EscrowInstallmentAddButton);
+
+                EscrowRadioButtonVariable();
+                UIActions.Click(VoluntaryContribution1);
+
+                UIActions.Click(EscrowPropertyCostInstallmentAddButton);
             }
 
             //Row 2
-            if (TridVariable.EscrowInstallementGridInputs2.Any())
+            if (TridVariable.EscrowPropertyCostInstallmentsGridInputs2.Any())
             {
-                UIActions.Clear(EscrowInstallmentNumber);
-                UIActions.GiveInput(EscrowInstallmentNumber, TridVariable.EscrowInstallementGridInputs2["Number"]);
+                UIActions.Clear(EscrowPropertyCostInstallmentNumber);
+                UIActions.GiveInput(EscrowPropertyCostInstallmentNumber, TridVariable.EscrowPropertyCostInstallmentsGridInputs2["Number"]);
 
-                UIActions.Clear(EscrowInstallmentAmount);
-                UIActions.GiveInput(EscrowInstallmentAmount, TridVariable.EscrowInstallementGridInputs2["Amount"]);
+                UIActions.Clear(EscrowPropertyCostInstallmentAmount);
+                UIActions.GiveInput(EscrowPropertyCostInstallmentAmount, TridVariable.EscrowPropertyCostInstallmentsGridInputs2["Amount"]);
 
-                UIActions.Clear(EscrowInstallmentDatePaidOrDisbursed);
-                UIActions.GiveInput(EscrowInstallmentDatePaidOrDisbursed,
-                    TridVariable.EscrowInstallementGridInputs2["DatePaid/Disbursed"]);
+                UIActions.Clear(EscrowPropertyCostInstallmentDatePaidOrDisbursed);
+                UIActions.GiveInput(EscrowPropertyCostInstallmentDatePaidOrDisbursed,
+                    TridVariable.EscrowPropertyCostInstallmentsGridInputs2["DatePaid/Disbursed"]);
 
-                UIActions.Clear(EscrowInstallmentDisbursmentType);
-                UIActions.GiveInput(EscrowInstallmentDisbursmentType,
-                    TridVariable.EscrowInstallementGridInputs2["EscrowDisbursmentType"]);
+                UIActions.Clear(EscrowPropertyCostInstallmentPropertyCostType);
+                UIActions.GiveInput(EscrowPropertyCostInstallmentPropertyCostType,
+                    TridVariable.EscrowPropertyCostInstallmentsGridInputs2["PropertyCostType"]);
 
                 Thread.Sleep(250);
                 UIActions.Click(EscrowDisbursmentTypeAutoSuggestion);
-                UIActions.Click(EscrowInstallmentAddButton);
+
+                EscrowRadioButtonVariable();
+                UIActions.Click(VoluntaryContribution2);
+
+                UIActions.Click(EscrowPropertyCostInstallmentAddButton);
             }
 
             //Row 3
-            if (TridVariable.EscrowInstallementGridInputs3.Any())
+            if (TridVariable.EscrowPropertyCostInstallmentsGridInputs3.Any())
             {
-                UIActions.Clear(EscrowInstallmentNumber);
-                UIActions.GiveInput(EscrowInstallmentNumber, TridVariable.EscrowInstallementGridInputs3["Number"]);
+                UIActions.Clear(EscrowPropertyCostInstallmentNumber);
+                UIActions.GiveInput(EscrowPropertyCostInstallmentNumber, TridVariable.EscrowPropertyCostInstallmentsGridInputs3["Number"]);
 
-                UIActions.Clear(EscrowInstallmentAmount);
-                UIActions.GiveInput(EscrowInstallmentAmount, TridVariable.EscrowInstallementGridInputs3["Amount"]);
+                UIActions.Clear(EscrowPropertyCostInstallmentAmount);
+                UIActions.GiveInput(EscrowPropertyCostInstallmentAmount, TridVariable.EscrowPropertyCostInstallmentsGridInputs3["Amount"]);
 
-                UIActions.Clear(EscrowInstallmentDatePaidOrDisbursed);
-                UIActions.GiveInput(EscrowInstallmentDatePaidOrDisbursed,
-                    TridVariable.EscrowInstallementGridInputs3["DatePaid/Disbursed"]);
+                UIActions.Clear(EscrowPropertyCostInstallmentDatePaidOrDisbursed);
+                UIActions.GiveInput(EscrowPropertyCostInstallmentDatePaidOrDisbursed,
+                    TridVariable.EscrowPropertyCostInstallmentsGridInputs3["DatePaid/Disbursed"]);
 
-                UIActions.Clear(EscrowInstallmentDisbursmentType);
-                UIActions.GiveInput(EscrowInstallmentDisbursmentType,
-                    TridVariable.EscrowInstallementGridInputs3["EscrowDisbursmentType"]);
+                UIActions.Clear(EscrowPropertyCostInstallmentPropertyCostType);
+                UIActions.GiveInput(EscrowPropertyCostInstallmentPropertyCostType,
+                    TridVariable.EscrowPropertyCostInstallmentsGridInputs3["PropertyCostType"]);
 
                 Thread.Sleep(250);
                 UIActions.Click(EscrowDisbursmentTypeAutoSuggestion);
-                UIActions.Click(EscrowInstallmentAddButton);
+
+                EscrowRadioButtonVariable();
+                UIActions.Click(VoluntaryContribution3);
+
+                UIActions.Click(EscrowPropertyCostInstallmentAddButton);
             }
 
 
             //Row 4            
-            if (TridVariable.EscrowInstallementGridInputs4.Any())
+            if (TridVariable.EscrowPropertyCostInstallmentsGridInputs4.Any())
             {
-                UIActions.Clear(EscrowInstallmentNumber);
-                UIActions.GiveInput(EscrowInstallmentNumber, TridVariable.EscrowInstallementGridInputs4["Number"]);
+                UIActions.Clear(EscrowPropertyCostInstallmentNumber);
+                UIActions.GiveInput(EscrowPropertyCostInstallmentNumber, TridVariable.EscrowPropertyCostInstallmentsGridInputs4["Number"]);
 
-                UIActions.Clear(EscrowInstallmentAmount);
-                UIActions.GiveInput(EscrowInstallmentAmount, TridVariable.EscrowInstallementGridInputs4["Amount"]);
+                UIActions.Clear(EscrowPropertyCostInstallmentAmount);
+                UIActions.GiveInput(EscrowPropertyCostInstallmentAmount, TridVariable.EscrowPropertyCostInstallmentsGridInputs4["Amount"]);
 
-                UIActions.Clear(EscrowInstallmentDatePaidOrDisbursed);
-                UIActions.GiveInput(EscrowInstallmentDatePaidOrDisbursed,
-                    TridVariable.EscrowInstallementGridInputs4["DatePaid/Disbursed"]);
+                UIActions.Clear(EscrowPropertyCostInstallmentDatePaidOrDisbursed);
+                UIActions.GiveInput(EscrowPropertyCostInstallmentDatePaidOrDisbursed,
+                    TridVariable.EscrowPropertyCostInstallmentsGridInputs4["DatePaid/Disbursed"]);
 
-                UIActions.Clear(EscrowInstallmentDisbursmentType);
-                UIActions.GiveInput(EscrowInstallmentDisbursmentType,
-                    TridVariable.EscrowInstallementGridInputs4["EscrowDisbursmentType"]);
+                UIActions.Clear(EscrowPropertyCostInstallmentPropertyCostType);
+                UIActions.GiveInput(EscrowPropertyCostInstallmentPropertyCostType,
+                    TridVariable.EscrowPropertyCostInstallmentsGridInputs4["PropertyCostType"]);
 
                 Thread.Sleep(250);
                 UIActions.Click(EscrowDisbursmentTypeAutoSuggestion);
-                UIActions.Click(EscrowInstallmentAddButton);
+
+                EscrowRadioButtonVariable();
+                UIActions.Click(VoluntaryContribution4);
+
+                UIActions.Click(EscrowPropertyCostInstallmentAddButton);
             }
 
 
             //Row 5
-            if (TridVariable.EscrowInstallementGridInputs5.Any())
+            if (TridVariable.EscrowPropertyCostInstallmentsGridInputs5.Any())
             {
-                UIActions.Clear(EscrowInstallmentNumber);
-                UIActions.GiveInput(EscrowInstallmentNumber, TridVariable.EscrowInstallementGridInputs5["Number"]);
+                UIActions.Clear(EscrowPropertyCostInstallmentNumber);
+                UIActions.GiveInput(EscrowPropertyCostInstallmentNumber, TridVariable.EscrowPropertyCostInstallmentsGridInputs5["Number"]);
 
-                UIActions.Clear(EscrowInstallmentAmount);
-                UIActions.GiveInput(EscrowInstallmentAmount, TridVariable.EscrowInstallementGridInputs5["Amount"]);
+                UIActions.Clear(EscrowPropertyCostInstallmentAmount);
+                UIActions.GiveInput(EscrowPropertyCostInstallmentAmount, TridVariable.EscrowPropertyCostInstallmentsGridInputs5["Amount"]);
 
-                UIActions.Clear(EscrowInstallmentDatePaidOrDisbursed);
-                UIActions.GiveInput(EscrowInstallmentDatePaidOrDisbursed,
-                    TridVariable.EscrowInstallementGridInputs5["DatePaid/Disbursed"]);
+                UIActions.Clear(EscrowPropertyCostInstallmentDatePaidOrDisbursed);
+                UIActions.GiveInput(EscrowPropertyCostInstallmentDatePaidOrDisbursed,
+                    TridVariable.EscrowPropertyCostInstallmentsGridInputs5["DatePaid/Disbursed"]);
 
-                UIActions.Clear(EscrowInstallmentDisbursmentType);
-                UIActions.GiveInput(EscrowInstallmentDisbursmentType,
-                    TridVariable.EscrowInstallementGridInputs5["EscrowDisbursmentType"]);
+                UIActions.Clear(EscrowPropertyCostInstallmentPropertyCostType);
+                UIActions.GiveInput(EscrowPropertyCostInstallmentPropertyCostType,
+                    TridVariable.EscrowPropertyCostInstallmentsGridInputs5["PropertyCostType"]);
 
                 Thread.Sleep(250);
                 UIActions.Click(EscrowDisbursmentTypeAutoSuggestion);
-                UIActions.Click(EscrowInstallmentAddButton);
+
+                EscrowRadioButtonVariable();
+                UIActions.Click(VoluntaryContribution5);
+
+                UIActions.Click(EscrowPropertyCostInstallmentAddButton);
             }
 
 
             //Row 6
-            if (TridVariable.EscrowInstallementGridInputs6.Any())
+            if (TridVariable.EscrowPropertyCostInstallmentsGridInputs6.Any())
             {
-                UIActions.Clear(EscrowInstallmentNumber);
-                UIActions.GiveInput(EscrowInstallmentNumber, TridVariable.EscrowInstallementGridInputs6["Number"]);
+                UIActions.Clear(EscrowPropertyCostInstallmentNumber);
+                UIActions.GiveInput(EscrowPropertyCostInstallmentNumber, TridVariable.EscrowPropertyCostInstallmentsGridInputs6["Number"]);
 
-                UIActions.Clear(EscrowInstallmentAmount);
-                UIActions.GiveInput(EscrowInstallmentAmount, TridVariable.EscrowInstallementGridInputs6["Amount"]);
+                UIActions.Clear(EscrowPropertyCostInstallmentAmount);
+                UIActions.GiveInput(EscrowPropertyCostInstallmentAmount, TridVariable.EscrowPropertyCostInstallmentsGridInputs6["Amount"]);
 
-                UIActions.Clear(EscrowInstallmentDatePaidOrDisbursed);
-                UIActions.GiveInput(EscrowInstallmentDatePaidOrDisbursed,
-                    TridVariable.EscrowInstallementGridInputs6["DatePaid/Disbursed"]);
+                UIActions.Clear(EscrowPropertyCostInstallmentDatePaidOrDisbursed);
+                UIActions.GiveInput(EscrowPropertyCostInstallmentDatePaidOrDisbursed,
+                    TridVariable.EscrowPropertyCostInstallmentsGridInputs6["DatePaid/Disbursed"]);
 
-                UIActions.Clear(EscrowInstallmentDisbursmentType);
-                UIActions.GiveInput(EscrowInstallmentDisbursmentType,
-                    TridVariable.EscrowInstallementGridInputs6["EscrowDisbursmentType"]);
+                UIActions.Clear(EscrowPropertyCostInstallmentPropertyCostType);
+                UIActions.GiveInput(EscrowPropertyCostInstallmentPropertyCostType,
+                    TridVariable.EscrowPropertyCostInstallmentsGridInputs6["PropertyCostType"]);
 
                 Thread.Sleep(250);
                 UIActions.Click(EscrowDisbursmentTypeAutoSuggestion);
-                UIActions.Click(EscrowInstallmentAddButton);
+
+                EscrowRadioButtonVariable();
+                UIActions.Click(VoluntaryContribution6);
+
+                UIActions.Click(EscrowPropertyCostInstallmentAddButton);
             }
 
 
             //Row 7
-            if (TridVariable.EscrowInstallementGridInputs7.Any())
+            if (TridVariable.EscrowPropertyCostInstallmentsGridInputs7.Any())
             {
-                UIActions.Clear(EscrowInstallmentNumber);
-                UIActions.GiveInput(EscrowInstallmentNumber, TridVariable.EscrowInstallementGridInputs7["Number"]);
+                UIActions.Clear(EscrowPropertyCostInstallmentNumber);
+                UIActions.GiveInput(EscrowPropertyCostInstallmentNumber, TridVariable.EscrowPropertyCostInstallmentsGridInputs7["Number"]);
 
-                UIActions.Clear(EscrowInstallmentAmount);
-                UIActions.GiveInput(EscrowInstallmentAmount, TridVariable.EscrowInstallementGridInputs7["Amount"]);
+                UIActions.Clear(EscrowPropertyCostInstallmentAmount);
+                UIActions.GiveInput(EscrowPropertyCostInstallmentAmount, TridVariable.EscrowPropertyCostInstallmentsGridInputs7["Amount"]);
 
-                UIActions.Clear(EscrowInstallmentDatePaidOrDisbursed);
-                UIActions.GiveInput(EscrowInstallmentDatePaidOrDisbursed,
-                    TridVariable.EscrowInstallementGridInputs7["DatePaid/Disbursed"]);
+                UIActions.Clear(EscrowPropertyCostInstallmentDatePaidOrDisbursed);
+                UIActions.GiveInput(EscrowPropertyCostInstallmentDatePaidOrDisbursed,
+                    TridVariable.EscrowPropertyCostInstallmentsGridInputs7["DatePaid/Disbursed"]);
 
-                UIActions.Clear(EscrowInstallmentDisbursmentType);
-                UIActions.GiveInput(EscrowInstallmentDisbursmentType,
-                    TridVariable.EscrowInstallementGridInputs7["EscrowDisbursmentType"]);
+                UIActions.Clear(EscrowPropertyCostInstallmentPropertyCostType);
+                UIActions.GiveInput(EscrowPropertyCostInstallmentPropertyCostType,
+                    TridVariable.EscrowPropertyCostInstallmentsGridInputs7["PropertyCostType"]);
 
                 Thread.Sleep(250);
                 UIActions.Click(EscrowDisbursmentTypeAutoSuggestion);
-                UIActions.Click(EscrowInstallmentAddButton);
+
+                EscrowRadioButtonVariable();
+                UIActions.Click(VoluntaryContribution7);
+
+                UIActions.Click(EscrowPropertyCostInstallmentAddButton);
             }
 
 
             //Row 8
-            if (TridVariable.EscrowInstallementGridInputs8.Any())
+            if (TridVariable.EscrowPropertyCostInstallmentsGridInputs8.Any())
             {
-                UIActions.Clear(EscrowInstallmentNumber);
-                UIActions.GiveInput(EscrowInstallmentNumber,
-                    TridVariable.EscrowInstallementGridInputs8["Number"]);
+                UIActions.Clear(EscrowPropertyCostInstallmentNumber);
+                UIActions.GiveInput(EscrowPropertyCostInstallmentNumber,
+                    TridVariable.EscrowPropertyCostInstallmentsGridInputs8["Number"]);
 
-                UIActions.Clear(EscrowInstallmentAmount);
-                UIActions.GiveInput(EscrowInstallmentAmount,
-                    TridVariable.EscrowInstallementGridInputs8["Amount"]);
+                UIActions.Clear(EscrowPropertyCostInstallmentAmount);
+                UIActions.GiveInput(EscrowPropertyCostInstallmentAmount,
+                    TridVariable.EscrowPropertyCostInstallmentsGridInputs8["Amount"]);
 
-                UIActions.Clear(EscrowInstallmentDatePaidOrDisbursed);
-                UIActions.GiveInput(EscrowInstallmentDatePaidOrDisbursed,
-                    TridVariable.EscrowInstallementGridInputs8["DatePaid/Disbursed"]);
+                UIActions.Clear(EscrowPropertyCostInstallmentDatePaidOrDisbursed);
+                UIActions.GiveInput(EscrowPropertyCostInstallmentDatePaidOrDisbursed,
+                    TridVariable.EscrowPropertyCostInstallmentsGridInputs8["DatePaid/Disbursed"]);
 
-                UIActions.Clear(EscrowInstallmentDisbursmentType);
-                UIActions.GiveInput(EscrowInstallmentDisbursmentType,
-                    TridVariable.EscrowInstallementGridInputs8["EscrowDisbursmentType"]);
+                UIActions.Clear(EscrowPropertyCostInstallmentPropertyCostType);
+                UIActions.GiveInput(EscrowPropertyCostInstallmentPropertyCostType,
+                    TridVariable.EscrowPropertyCostInstallmentsGridInputs8["PropertyCostType"]);
 
                 Thread.Sleep(250);
                 UIActions.Click(EscrowDisbursmentTypeAutoSuggestion);
-                UIActions.Click(EscrowInstallmentAddButton);
+
+                EscrowRadioButtonVariable();
+                UIActions.Click(VoluntaryContribution8);
+
+                UIActions.Click(EscrowPropertyCostInstallmentAddButton);
             }
         }
     }
